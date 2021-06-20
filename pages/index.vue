@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Logo />
+      <button class="button is-primary">Primary</button>
       <h1 class="title">mujiota</h1>
       <div class="links">
         <a
