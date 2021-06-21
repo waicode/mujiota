@@ -14,7 +14,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -35,8 +35,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/date-fns',
-    '@nuxtjs/bulma',
     '@nuxt/content',
+    'nuxt-svg-loader',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

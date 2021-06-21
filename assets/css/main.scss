@@ -1,0 +1,10 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+// 背景色を灰色に
+$body-background-color: #eee;
+
+// ヘッダーナビの背景を透明に
+$navbar-background-color: transparent;
+
+@import '~bulma';
