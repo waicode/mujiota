@@ -21,9 +21,6 @@
               <a href="#" class="topnav-icon icon-sitemap">
                 <SitemapIconSvg />
               </a>
-              <a href="#" class="topnav-icon icon-email">
-                <EmailIconSvg />
-              </a>
             </div>
           </div>
         </div>
@@ -34,13 +31,11 @@
 <script>
 import MujiotaLogoSvg from '@/assets/images/shared/logo/mujiota-logo.svg'
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
-import EmailIconSvg from '@/assets/images/shared/icon/ic_email_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 export default {
   components: {
     MujiotaLogoSvg,
     SearchIconSvg,
-    EmailIconSvg,
     SitemapIconSvg,
   },
 }

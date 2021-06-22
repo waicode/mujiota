@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div class="wrapper columns">
-      <main class="main column is-four-fifths">
+      <main class="main column is-9">
         <Nuxt />
       </main>
       <aside class="sub column">
@@ -25,16 +25,19 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-body {
-  background-color: #eee;
-}
 $bg-secondary-color: #fafafa;
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 56px auto 96px;
   padding: 32px 24px 32px 0;
   background-color: $bg-secondary-color;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+.main {
+  width: calc(100% - 300px);
+}
+.sub {
+  min-width: 300px;
 }
 </style>

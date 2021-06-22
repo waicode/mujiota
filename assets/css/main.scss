@@ -7,4 +7,14 @@ $body-background-color: #eee;
 // ヘッダーナビの背景を透明に
 $navbar-background-color: transparent;
 
+// フォントを変更
+$family-primary: 'Montserrat', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+  meiryo, sans-serif;
+
+// テキストカラーを変更
+$text: #333;
+
+// 行の高さを日本語用に少し高く
+$body-line-height: 1.61;
+
 @import '~bulma';

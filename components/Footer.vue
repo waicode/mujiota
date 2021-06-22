@@ -4,6 +4,7 @@
       <ul>
         <li class="icon-twitter"><TwitterIconSvg /></li>
         <li class="icon-github"><GithubIconSvg /></li>
+        <li class="icon-email"><EmailIconSvg /></li>
       </ul>
     </div>
     <div class="content has-text-centered copyright">
@@ -14,10 +15,13 @@
 <script>
 import TwitterIconSvg from '@/assets/images/shared/icon/iconmonstr-twitter-1.svg'
 import GithubIconSvg from '@/assets/images/shared/icon/iconmonstr-github-1.svg'
+import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
+
 export default {
   components: {
     TwitterIconSvg,
     GithubIconSvg,
+    EmailIconSvg,
   },
 }
 </script>
@@ -44,6 +48,11 @@ export default {
           fill: #fff;
         }
         &.icon-github svg {
+          width: 48px;
+          height: 48px;
+          fill: #fff;
+        }
+        &.icon-email svg {
           width: 48px;
           height: 48px;
           fill: #fff;
