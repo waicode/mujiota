@@ -23,12 +23,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -37,6 +32,7 @@ export default {
     '@nuxtjs/date-fns',
     '@nuxt/content',
     'nuxt-svg-loader',
+    'nuxt-fontawesome',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -54,4 +50,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  fontawesome: {
+    component: 'fa',
+  },
 }
