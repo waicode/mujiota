@@ -33,6 +33,7 @@ export default {
     '@nuxt/content',
     'nuxt-svg-loader',
     'nuxt-fontawesome',
+    ['nuxt-lazy-load', {}],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

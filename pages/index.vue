@@ -2,19 +2,17 @@
   <div class="container">
     <div>
       <div>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
-        <p>test test test ...</p>
+        <Article />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Article from '@/components/Article'
+export default {
+  components: {
+    Article,
+  },
+}
 </script>
