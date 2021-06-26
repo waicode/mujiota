@@ -1,7 +1,6 @@
 <template>
-  <article>
+  <article v-if="article">
     <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
     <!-- <img :src="article.img" :alt="article.alt" /> -->
     <p>
       Article last updated:
@@ -15,8 +14,12 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('bulletproof-coffee', params.slug).fetch()
-
+    let article = ''
+    try {
+      article = await $content('articles', params.id, params.slug).fetch()
+    } catch {
+      // TODO:無い場合はリダイレクト
+    }
     return { article }
   },
 }
