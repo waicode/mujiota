@@ -42,7 +42,6 @@ export default {
   },
   mounted() {
     this.getContnt()
-    console.log('this.article', this.article)
   },
   methods: {
     dateFormatted(dateStr) {
@@ -57,9 +56,9 @@ export default {
       await this.$content('articles', this.id)
         .fetch()
         .then((res) => {
-          console.log('res', res)
           this.article = res[0]
         })
+        .catch()
     },
   },
 }
