@@ -49,7 +49,30 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     markdown: {
-      remarkPlugins: ['remark-emoji'],
+      apiPrefix: '_content',
+      dir: 'content',
+      fullTextSearchFields: ['title', 'description', 'slug', 'text'],
+      nestedProperties: [],
+      markdown: {
+        remarkPlugins: [
+          'remark-squeeze-paragraphs',
+          'remark-slug',
+          'remark-autolink-headings',
+          'remark-external-links',
+          'remark-footnotes',
+          'remark-emoji',
+          'remark-directive',
+        ],
+        rehypePlugins: [
+          'rehype-minify-whitespace',
+          'rehype-sort-attribute-values',
+          'rehype-sort-attributes',
+          'rehype-raw',
+        ],
+        prism: {
+          theme: 'prismjs/themes/prism-base16-ateliersulphurpool.light.css',
+        },
+      },
     },
   },
 

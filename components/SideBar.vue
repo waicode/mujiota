@@ -65,7 +65,7 @@
   </div>
 </template>
 <script>
-import Dropdown from '@/components/Dropdown'
+import Dropdown from '@/components/Parts/Dropdown'
 export default {
   components: {
     Dropdown,

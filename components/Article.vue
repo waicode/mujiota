@@ -1,17 +1,19 @@
 <template>
   <article class="archive">
-    <a href="#">
+    <NuxtLink :to="`/${article.id}/${article.slug}`">
       <div class="wrap">
         <div class="eyecatch">
-          <img :src="imgSrcPath" />
+          <AssetsImage
+            :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
+          />
         </div>
         <div class="contents">
           <h2 class="post-title">
-            {{ title }}
+            {{ article.title }}
           </h2>
           <div class="description">
             <p>
-              {{ description }}
+              {{ article.description }}
             </p>
           </div>
           <div class="meta-wrap">
@@ -22,7 +24,7 @@
                 :content="datePublished"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
-                <span>{{ dateFormatted(datePublished) }}</span>
+                <span>{{ dateFormatted(article.publishedAt) }}</span>
               </p>
               <p
                 class="date-updated"
@@ -30,65 +32,39 @@
                 :content="dateUpdated"
               >
                 <fa :icon="faRedoAlt" class="fa-redo-alt" />
-                <span>{{ dateFormatted(dateUpdated) }}</span>
+                <span>{{ dateFormatted(article.updatedAt) }}</span>
               </p>
             </div>
-            <div class="tags">
-              <span class="tag is-light">健康</span>
-              <span class="tag is-light">コーヒー</span>
+            <div v-if="article.tags">
+              <div v-for="tag in article.tags" :key="tag" class="tags">
+                <span class="tag is-light">{{ tag }}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
+    </NuxtLink>
   </article>
 </template>
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import { format } from 'date-fns'
+import AssetsImage from '@/components/AssetsImage.vue'
 export default {
+  components: {
+    AssetsImage,
+  },
   props: {
-    postId: {
+    article: {
       require: true,
-      type: String,
-      default: '',
-    },
-    postSlug: {
-      require: true,
-      type: String,
-      default: '',
-    },
-    imgFormat: {
-      require: true,
-      type: String,
-      default: 'jpeg',
-    },
-    title: {
-      require: true,
-      type: String,
-      default: '',
-    },
-    description: {
-      require: true,
-      type: String,
-      default: '',
-    },
-    datePublished: {
-      require: true,
-      type: Date,
-      default: null,
-    },
-    dateUpdated: {
-      require: false,
-      type: Date,
+      type: Object,
       default: null,
     },
   },
   data() {
     return {
       format,
-      imgSrcPath: require(`~/assets/images/eyecatch/${this.postId}/${this.postSlug}.${this.imgFormat}`),
     }
   },
   computed: {
@@ -100,7 +76,8 @@ export default {
     },
   },
   methods: {
-    dateFormatted(date) {
+    dateFormatted(dateStr) {
+      const date = new Date(dateStr)
       return this.format(date, 'yyyy-MM-dd')
     },
   },
