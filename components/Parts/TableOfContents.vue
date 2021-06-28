@@ -33,8 +33,8 @@ export default {
 .toc {
   width: 80%;
   min-width: 88%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 1em 2em 1em;
   background: rgba(250, 250, 250, 0.2);
   border: 1px solid #eee;

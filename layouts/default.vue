@@ -3,7 +3,9 @@
     <Header />
     <div class="wrapper columns">
       <main class="main column is-9">
-        <Nuxt />
+        <div class="contents-wrapper">
+          <Nuxt />
+        </div>
       </main>
       <aside class="sub column">
         <SideBar />
@@ -36,6 +38,9 @@ $bg-secondary-color: #fafafa;
 }
 .main {
   width: calc(100% - 300px);
+  .contents-wrapper {
+    padding: 8px 32px;
+  }
 }
 .sub {
   min-width: 300px;
