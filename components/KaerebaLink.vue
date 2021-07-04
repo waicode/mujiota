@@ -5,8 +5,11 @@
         <img :src="assetsImagePath()" />
       </div>
       <div class="kaerebalink-info">
-        <div class="kaerebalink-name">
+        <div class="kaerebalink-title">
           <a :href="titleLink()" target="_blank">{{ itemTitle }}</a>
+        </div>
+        <div v-if="shopName" class="kaerebalink-title">
+          {{ shopName }}
         </div>
         <div class="kaerebalink-seach-links">
           <div class="shoplink-rakuten">
@@ -35,6 +38,11 @@ export default {
       default: null,
     },
     imgFileName: {
+      require: true,
+      type: String,
+      default: null,
+    },
+    shopName: {
       require: true,
       type: String,
       default: null,
