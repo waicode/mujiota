@@ -20,17 +20,13 @@
             <div class="date">
               <p
                 class="date-published"
-                itemprop="datePublished"
-                :content="datePublished"
+                itemprop="publishedAt"
+                :content="publishedAt"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
                 <span>{{ dateFormatted(article.publishedAt) }}</span>
               </p>
-              <p
-                class="date-updated"
-                itemprop="dateUpdated"
-                :content="dateUpdated"
-              >
+              <p class="date-updated" itemprop="updatedAt" :content="updatedAt">
                 <fa :icon="faRedoAlt" class="fa-redo-alt" />
                 <span>{{ dateFormatted(article.updatedAt) }}</span>
               </p>

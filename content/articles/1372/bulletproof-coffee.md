@@ -95,7 +95,7 @@ MCT オイルは体内に入ることでケトン体と呼ばれる物質を生�
 
 例えば、本書でも推奨しているグランフェルマージュのバイオ・グラスフェッドバターは 250g で 2,700 円という、100g 換算でも 1000 円以上のお値段がします。
 
-<kaereba-link item-title="" img-file-name="" shop-name="ユーリアル" amazon-item-id="" rakuten-item-id="" search-keyword="グラスフェットバター">
+<kaereba-link item-title="グランフェルマージュ バイオ・グラスフェッドバター 無塩 250g" img-file-name="grand_fermage_500x500.png" shop-name="ユーリアル" amazon-item-id="B00L8IZ1E8" rakuten-item-id="732cd619f14bd8be0a6438041ec013e8" search-keyword="グラスフェットバター"></kaereba-link>
 
 人の身体は食べたものから造られる！という持論の元、シリコンバレー式は食材の質は妥協するなと書かれています。
 

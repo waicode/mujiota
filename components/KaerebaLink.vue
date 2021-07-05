@@ -2,26 +2,26 @@
   <div class="kaerebalink">
     <div class="link-box">
       <div class="link-image">
-        <img :src="assetsImagePath()" />
+        <AssetsImage :path="assetsImagePath" />
       </div>
       <div class="kaerebalink-info">
         <div class="kaerebalink-title">
-          <a :href="titleLink()" target="_blank">{{ itemTitle }}</a>
+          <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
         <div v-if="shopName" class="kaerebalink-title">
           {{ shopName }}
         </div>
         <div class="kaerebalink-seach-links">
           <div class="shoplink-rakuten">
-            <a :href="rakutenItemUrl()" target="_blank">楽天で探す</a>
+            <a :href="rakutenItemUrl" target="_blank">楽天で探す</a>
           </div>
           <div class="shoplink-amazon">
-            <a :href="amazonSearchUrl()" target="_blank">Amazonで探す</a>
+            <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
           </div>
           <div class="shoplink-yahoo">
-            <a :href="yahooSearchUrl()" target="_blank">
+            <a :href="yahooSearchUrl" target="_blank">
               Yahooで探す
-              <img :src="yahooAspImgUrl()" height="1" width="1" border="0" />
+              <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
             </a>
           </div>
         </div>

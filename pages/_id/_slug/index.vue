@@ -76,8 +76,8 @@ export default {
   }
   h3 {
     position: relative;
-    margin-bottom: 24px;
-    margin-top: 80px;
+    margin-top: 64px;
+    margin-bottom: 28px;
     padding-left: 24px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -95,6 +95,46 @@ export default {
         rgba(0, 0, 0, 0) 4px
       );
     }
+    a {
+      .icon {
+        display: none;
+      }
+    }
+  }
+  h4 {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-image: repeating-linear-gradient(
+        #999,
+        #999 1px,
+        rgba(0, 0, 0, 0) 0,
+        rgba(0, 0, 0, 0) 4px
+      );
+    }
+    a {
+      .icon {
+        display: none;
+      }
+    }
+  }
+  h5 {
+    font-size: 1.2rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 1px;
     a {
       .icon {
         display: none;
