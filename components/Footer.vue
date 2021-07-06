@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   color: #fff;
-  background-color: #424242;
+  background-color: #424242 !important;
   .social-icons {
     display: flex;
     justify-content: center;

@@ -1,6 +1,27 @@
 <template>
   <article v-if="article" class="post">
     <h1 class="page-title">{{ article.title }}</h1>
+    <div class="meta-wrap">
+      <div class="date">
+        <span
+          class="date-published"
+          itemprop="publishedAt"
+          :content="publishedAt"
+        >
+          <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+          <span>{{ dateFormatted(article.publishedAt) }}</span>
+        </span>
+        <span class="date-updated" itemprop="updatedAt" :content="updatedAt">
+          <fa :icon="faRedoAlt" class="fa-redo-alt" />
+          <span>{{ dateFormatted(article.updatedAt) }}</span>
+        </span>
+      </div>
+      <div v-if="article.tags" class="tags">
+        <span v-for="tag in article.tags" :key="tag" class="tag is-light">
+          {{ tag }}
+        </span>
+      </div>
+    </div>
     <div class="eyecatch">
       <AssetsImage
         :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
@@ -12,6 +33,10 @@
 </template>
 
 <script>
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
+import { format } from 'date-fns'
+
 import AssetsImage from '@/components/AssetsImage.vue'
 import TableOfContents from '@/components/Parts/TableOfContents.vue'
 import ExternalLink from '@/components/ExternalLink.vue'
@@ -38,10 +63,59 @@ export default {
     }
     return { article }
   },
+  data() {
+    return {
+      format,
+    }
+  },
+  computed: {
+    faCalendarAlt() {
+      return faCalendarAlt
+    },
+    faRedoAlt() {
+      return faRedoAlt
+    },
+  },
+  methods: {
+    dateFormatted(dateStr) {
+      const date = new Date(dateStr)
+      return this.format(date, 'yyyy-MM-dd')
+    },
+  },
 }
 </script>
 <style lang="scss">
 .post {
+  h1.page-title {
+    font-weight: bold;
+    font-size: 1.28rem;
+    margin-bottom: 0.4rem;
+    margin-top: -16px;
+  }
+  .meta-wrap {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    color: $text;
+    .date {
+      display: flex;
+      font-size: 0.8rem;
+      padding-top: 2px;
+      .date-published {
+        margin-right: 12px;
+      }
+    }
+    .tags {
+      display: flex;
+      font-size: 0.8rem;
+    }
+  }
+  .eyecatch {
+    img {
+      width: 100%;
+    }
+  }
   p {
     margin-bottom: 32px;
     line-height: 2;
@@ -51,7 +125,7 @@ export default {
     margin-top: 96px;
     margin-bottom: 40px;
     padding-bottom: 16px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     &::after {
       content: '';
@@ -79,7 +153,7 @@ export default {
     margin-top: 64px;
     margin-bottom: 28px;
     padding-left: 24px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     &::after {
       content: '';
@@ -106,7 +180,7 @@ export default {
     margin-top: 40px;
     margin-bottom: 24px;
     padding-left: 24px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     &::after {
       content: '';
@@ -129,7 +203,7 @@ export default {
     }
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 32px;
     margin-bottom: 12px;
     font-weight: bold;

@@ -20,6 +20,7 @@ export default {
         'id',
         'slug',
         'title',
+        'tags',
         'description',
         'imageFormat',
         'publishedAt',

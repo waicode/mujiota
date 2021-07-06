@@ -18,23 +18,27 @@
           </div>
           <div class="meta-wrap">
             <div class="date">
-              <p
+              <span
                 class="date-published"
                 itemprop="publishedAt"
                 :content="publishedAt"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
                 <span>{{ dateFormatted(article.publishedAt) }}</span>
-              </p>
-              <p class="date-updated" itemprop="updatedAt" :content="updatedAt">
+              </span>
+              <span
+                class="date-updated"
+                itemprop="updatedAt"
+                :content="updatedAt"
+              >
                 <fa :icon="faRedoAlt" class="fa-redo-alt" />
                 <span>{{ dateFormatted(article.updatedAt) }}</span>
-              </p>
+              </span>
             </div>
-            <div v-if="article.tags">
-              <div v-for="tag in article.tags" :key="tag" class="tags">
-                <span class="tag is-light">{{ tag }}</span>
-              </div>
+            <div v-if="article.tags" class="tags">
+              <span v-for="tag in article.tags" :key="tag" class="tag is-light">
+                {{ tag }}
+              </span>
             </div>
           </div>
         </div>
@@ -80,7 +84,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$text-color: #333;
 .archive {
   .wrap {
     display: flex;
@@ -98,12 +101,12 @@ $text-color: #333;
       .post-title {
         font-size: 1.24rem;
         font-weight: bold;
-        color: $text-color;
+        color: $text;
         margin-bottom: 8px;
       }
       .description {
         font-size: 0.86rem;
-        color: $text-color;
+        color: $text;
         margin-bottom: 12px;
       }
       .meta-wrap {
@@ -111,19 +114,19 @@ $text-color: #333;
         height: 40px;
         justify-content: space-between;
         align-items: center;
-        color: $text-color;
-      }
-      .date {
-        display: flex;
-        font-size: 0.8rem;
-        padding-top: 2px;
-        .date-published {
-          margin-right: 12px;
+        color: $text;
+        .date {
+          display: flex;
+          font-size: 0.8rem;
+          padding-top: 2px;
+          .date-published {
+            margin-right: 12px;
+          }
         }
-      }
-      .tags {
-        display: flex;
-        font-size: 0.8rem;
+        .tags {
+          display: flex;
+          font-size: 0.8rem;
+        }
       }
     }
   }

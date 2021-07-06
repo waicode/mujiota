@@ -2,27 +2,29 @@
   <div class="kaerebalink">
     <div class="link-box">
       <div class="link-image">
-        <AssetsImage :path="assetsImagePath" />
+        <a :href="titleLink" target="_blank">
+          <AssetsImage :path="assetsImagePath" />
+        </a>
       </div>
-      <div class="kaerebalink-info">
-        <div class="kaerebalink-title">
+      <div class="link-info">
+        <div class="link-title">
           <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
-        <div v-if="shopName" class="kaerebalink-title">
+        <div v-if="shopName" class="link-shop-name">
           {{ shopName }}
         </div>
-        <div class="kaerebalink-seach-links">
-          <div class="shoplink-rakuten">
-            <a :href="rakutenItemUrl" target="_blank">楽天で探す</a>
+        <div class="link-seach-links">
+          <div class="shoplink-rakuten seach-link">
+            <a :href="rakutenItemUrl" target="_blank">Rakutenで探す</a>
           </div>
-          <div class="shoplink-amazon">
+          <div class="shoplink-amazon seach-link">
             <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
           </div>
-          <div class="shoplink-yahoo">
-            <a :href="yahooSearchUrl" target="_blank">
-              Yahooで探す
+          <div class="shoplink-yahoo seach-link">
+            <a :href="yahooSearchUrl" target="_blank"> Yahooで探す </a>
+            <span>
               <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -106,6 +108,78 @@ export default {
 </script>
 <style lang="scss" scoped>
 .kaerebalink {
-  display: flex;
+  .link-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 0 2rem;
+    padding: 0.64rem;
+    background: #fff;
+    border: 1px solid;
+    border-color: #eaeaea #ddd #d0d0d0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    .link-title {
+      font-size: 1.0625rem;
+      font-weight: bold;
+      margin: 0;
+      a {
+        color: $text;
+      }
+    }
+    .link-image {
+      width: 18%;
+      padding: 16px;
+    }
+    .link-info {
+      width: 76%;
+      .link-title {
+        margin: 0.2rem 0 0.8rem;
+      }
+      .link-shop-name {
+        margin: 0 0 2rem;
+      }
+      .link-seach-links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .seach-link {
+          width: 32%;
+          min-width: 148px;
+          a {
+            display: block;
+            width: 100%;
+            padding: 1em;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 4px;
+            margin: 0 auto 0.6rem;
+            color: #fff;
+            svg {
+              width: 1.2rem;
+              height: 1.2rem;
+              fill: #fff;
+              vertical-align: middle;
+            }
+          }
+        }
+        .shoplink-rakuten a {
+          background-color: #ef5350;
+        }
+        .shoplink-amazon a {
+          background-color: #ff9800;
+        }
+        .shoplink-yahoo {
+          a {
+            background-color: #2196f3;
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
