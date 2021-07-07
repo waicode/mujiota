@@ -59,3 +59,31 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.external-link a {
+  color: #333;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 0 #efefef;
+  text-decoration: none;
+  display: block;
+  padding: 0.9em;
+  .inbox-title {
+    &::before {
+      content: '外部リンク';
+      font-size: 0.7em;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      width: 6em;
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      text-align: center;
+      margin-right: 0.5em;
+      background: rgb(17, 17, 17);
+      padding: 0.2em;
+      border-radius: 2px;
+    }
+  }
+}
+</style>
