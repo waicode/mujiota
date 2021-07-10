@@ -1,12 +1,12 @@
 <template>
   <div class="external-link">
     <a :href="link" target="_blank" rel="nofollow">
-      <figure>
+      <figure class="inbox-image">
         <AssetsImage :path="assetsImagePath" />
       </figure>
-      <div class="inbox">
-        <p class="inbox-title">{{ title }}</p>
-        <p class="inbox-note">{{ note }}</p>
+      <div class="inbox-contents">
+        <div class="inbox-title">{{ title }}</div>
+        <div class="inbox-note">{{ note }}</div>
         <img
           v-if="aspMeasurementImgLink"
           border="0"
@@ -60,29 +60,45 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.external-link a {
-  color: #333;
-  background: #fff;
-  border: 1px solid #eee;
-  box-shadow: 1px 1px 0 #efefef;
-  text-decoration: none;
-  display: block;
-  padding: 0.9em;
-  .inbox-title {
-    &::before {
-      content: '外部リンク';
-      font-size: 0.7em;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-      width: 6em;
-      display: inline-block;
-      position: relative;
-      top: -2px;
-      text-align: center;
-      margin-right: 0.5em;
-      background: rgb(17, 17, 17);
-      padding: 0.2em;
-      border-radius: 2px;
+.external-link {
+  margin: 1.8em 0;
+  a {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 0 #efefef;
+    text-decoration: none;
+    padding: 0.9em;
+    border-radius: 2px;
+    .inbox-image {
+      width: 20%;
+    }
+    .inbox-contents {
+      width: 78%;
+      .inbox-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+        &::before {
+          content: '外部リンク';
+          font-size: 0.7em;
+          font-weight: bold;
+          color: rgb(255, 255, 255);
+          width: 6em;
+          display: inline-block;
+          position: relative;
+          top: -2px;
+          text-align: center;
+          margin-right: 0.5em;
+          background: rgb(17, 17, 17);
+          padding: 0.2em;
+          border-radius: 2px;
+        }
+      }
+      .inbox-note {
+        font-size: 0.84rem;
+      }
     }
   }
 }
