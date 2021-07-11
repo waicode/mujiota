@@ -1,9 +1,7 @@
 <template>
   <div class="external-link">
     <a :href="link" target="_blank" rel="nofollow">
-      <figure class="inbox-image">
-        <AssetsImage :path="assetsImagePath" />
-      </figure>
+      <AssetsImage class="inbox-image" :path="assetsImagePath" />
       <div class="inbox-contents">
         <div class="inbox-title">{{ title }}</div>
         <div class="inbox-note">{{ note }}</div>
@@ -70,13 +68,18 @@ export default {
     border: 1px solid #eee;
     box-shadow: 1px 1px 0 #efefef;
     text-decoration: none;
-    padding: 0.9em;
+    padding: 1rem;
     border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: #666;
+      background: #e8eaf6;
+    }
     .inbox-image {
       width: 20%;
     }
     .inbox-contents {
-      width: 78%;
+      width: 76%;
       .inbox-title {
         font-weight: bold;
         margin-bottom: 8px;
