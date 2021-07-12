@@ -38,7 +38,7 @@ export default {
   padding: 1em 2em 1em;
   background: rgba(250, 250, 250, 0.2);
   border: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(67, 133, 187, 0.07);
+  box-shadow: 0 0 2px #efefef;
   .menu-label {
     font-weight: bold;
   }

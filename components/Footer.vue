@@ -29,6 +29,7 @@ export default {
 .footer {
   color: #fff;
   background-color: #424242 !important;
+  margin-top: 48px;
   .social-icons {
     display: flex;
     justify-content: center;

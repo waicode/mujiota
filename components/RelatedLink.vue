@@ -71,17 +71,19 @@ export default {
     color: #333;
     background: #fff;
     border: 1px solid #eee;
-    box-shadow: 1px 1px 0 #efefef;
+    box-shadow: 0 0 1px #efefef;
     text-decoration: none;
     padding: 1rem;
     border-radius: 2px;
     transition: 0.3s ease-in-out;
     &:hover {
       color: #666;
-      background: #e8eaf6;
+      background: rgba(167, 255, 235, 0.24);
     }
     .inbox-image {
       width: 20%;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 0 1px #eee;
     }
     .inbox-contents {
       width: 76%;
