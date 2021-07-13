@@ -3,15 +3,11 @@
     <h1 class="page-title">{{ article.title }}</h1>
     <div class="meta-wrap">
       <div class="date">
-        <span
-          class="date-published"
-          itemprop="publishedAt"
-          :content="publishedAt"
-        >
+        <span class="date-published">
           <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
           <span>{{ dateFormatted(article.publishedAt) }}</span>
         </span>
-        <span class="date-updated" itemprop="updatedAt" :content="updatedAt">
+        <span class="date-updated">
           <fa :icon="faRedoAlt" class="fa-redo-alt" />
           <span>{{ dateFormatted(article.updatedAt) }}</span>
         </span>
@@ -39,6 +35,7 @@ import { format } from 'date-fns'
 
 import AssetsImage from '@/components/AssetsImage.vue'
 import TableOfContents from '@/components/Parts/TableOfContents.vue'
+import Supplement from '@/components/Supplement.vue'
 import ExternalLink from '@/components/ExternalLink.vue'
 import RelatedLink from '@/components/RelatedLink.vue'
 import KaerebaLink from '@/components/KaerebaLink.vue'
@@ -53,6 +50,8 @@ export default {
     // eslint-disable-next-line vue/no-unused-components
     KaerebaLink,
     TableOfContents,
+    // eslint-disable-next-line vue/no-unused-components
+    Supplement,
   },
   async asyncData({ $content, params }) {
     let article = ''
