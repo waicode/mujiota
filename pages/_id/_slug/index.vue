@@ -214,5 +214,39 @@ export default {
       }
     }
   }
+  ol {
+    counter-reset: number;
+  }
+  ol,
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 32px;
+  }
+  ol li {
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: 0.4rem;
+    &::before {
+      background: #333;
+      counter-increment: number;
+      content: counter(number);
+      color: #fff;
+      width: 1.4rem;
+      height: 1.4rem;
+      font-size: 0.7em;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      display: block;
+      text-align: center;
+      line-height: 1.4rem;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+    }
+  }
 }
 </style>
