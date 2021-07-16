@@ -21,7 +21,7 @@
               <span
                 class="date-published"
                 itemprop="publishedAt"
-                :content="publishedAt"
+                :content="article.publishedAt"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
                 <span>{{ dateFormatted(article.publishedAt) }}</span>
@@ -29,7 +29,7 @@
               <span
                 class="date-updated"
                 itemprop="updatedAt"
-                :content="updatedAt"
+                :content="article.updatedAt"
               >
                 <fa :icon="faRedoAlt" class="fa-redo-alt" />
                 <span>{{ dateFormatted(article.updatedAt) }}</span>
