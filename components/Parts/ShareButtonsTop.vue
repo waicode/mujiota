@@ -79,19 +79,19 @@ export default {
   },
   computed: {
     pageUrl() {
-      return `https://mujiota.com/${this.article.id}/${this.article.slug}`
+      return `${process.env.BASE_URL}${this.article.id}/${this.article.slug}`
     },
     shareUrlHatena() {
-      return ``
+      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.article.title}`
     },
     shareUrlTwitter() {
-      return `https://twitter.com/intent/tweet?url=${this.article.url}&text=${this.article.title}`
+      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.article.title}`
     },
     shareUrlFacebook() {
-      return ``
+      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.article.title}`
     },
     shareUrlPocket() {
-      return ``
+      return `http://getpocket.com/edit?url=${this.pageUrl}`
     },
   },
 }

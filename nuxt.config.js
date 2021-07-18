@@ -1,4 +1,10 @@
+const environment = process.env.NODE_ENV
+const envSettings = require(`./env.${environment}.js`)
+
 export default {
+  // cross-env
+  env: envSettings,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
