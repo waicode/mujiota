@@ -23,8 +23,13 @@
         :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
       />
     </div>
+    <div class="description">
+      <p>{{ article.description }}</p>
+    </div>
     <TableOfContents :article="article" />
+    <ShareButtonsTop :article="article" />
     <NuxtContent class="article" :document="article" />
+    <ShareButtonsBottom :article="article" />
   </article>
 </template>
 
@@ -35,11 +40,15 @@ import { format } from 'date-fns'
 
 import AssetsImage from '@/components/AssetsImage.vue'
 import TableOfContents from '@/components/Parts/TableOfContents.vue'
+import ShareButtonsTop from '@/components/Parts/ShareButtonsTop.vue'
+import ShareButtonsBottom from '@/components/Parts/ShareButtonsBottom.vue'
 
 export default {
   components: {
     AssetsImage,
     TableOfContents,
+    ShareButtonsTop,
+    ShareButtonsBottom,
   },
   async asyncData({ $content, params }) {
     let article = ''
@@ -103,6 +112,13 @@ export default {
       width: 100%;
     }
   }
+  .description {
+    margin-top: 28px;
+    p {
+      margin-bottom: 18px !important;
+    }
+  }
+  .description,
   .article {
     p {
       margin-bottom: 32px;

@@ -21,7 +21,7 @@
             <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
           </div>
           <div class="shoplink-yahoo seach-link">
-            <a :href="yahooSearchUrl" target="_blank"> Yahooで探す </a>
+            <a :href="yahooSearchUrl" target="_blank">Yahooで探す</a>
             <span>
               <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
             </span>
@@ -82,7 +82,7 @@ export default {
     titleLink() {
       let url = null
       if (!this.amazonItemUrl) {
-        url = this.amazonItemUrl
+        url = this.rakutenItemUrl
       } else if (!this.rakutenItemUrl) {
         url = this.amazonItemUrl
       }
