@@ -42,9 +42,17 @@ export default {
   .menu-label {
     font-weight: bold;
   }
-  .menu-list {
+  ul.menu-list {
     font-size: 0.96rem;
     li {
+      &::before {
+        content: ' ';
+        width: 0;
+        height: 0;
+        display: block;
+        left: 0;
+        top: 0;
+      }
       a {
         padding-top: 0.56rem;
         padding-bottom: 0.56rem;

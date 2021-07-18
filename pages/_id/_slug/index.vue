@@ -24,7 +24,7 @@
       />
     </div>
     <TableOfContents :article="article" />
-    <NuxtContent :document="article" />
+    <NuxtContent class="article" :document="article" />
   </article>
 </template>
 
@@ -35,23 +35,11 @@ import { format } from 'date-fns'
 
 import AssetsImage from '@/components/AssetsImage.vue'
 import TableOfContents from '@/components/Parts/TableOfContents.vue'
-import Supplement from '@/components/Supplement.vue'
-import ExternalLink from '@/components/ExternalLink.vue'
-import RelatedLink from '@/components/RelatedLink.vue'
-import KaerebaLink from '@/components/KaerebaLink.vue'
 
 export default {
   components: {
     AssetsImage,
-    // eslint-disable-next-line vue/no-unused-components
-    ExternalLink,
-    // eslint-disable-next-line vue/no-unused-components
-    RelatedLink,
-    // eslint-disable-next-line vue/no-unused-components
-    KaerebaLink,
     TableOfContents,
-    // eslint-disable-next-line vue/no-unused-components
-    Supplement,
   },
   async asyncData({ $content, params }) {
     let article = ''
@@ -115,137 +103,164 @@ export default {
       width: 100%;
     }
   }
-  p {
-    margin-bottom: 32px;
-    line-height: 2;
-  }
-  h2 {
-    position: relative;
-    margin-top: 96px;
-    margin-bottom: 40px;
-    padding-bottom: 16px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-image: repeating-linear-gradient(
-        90deg,
-        #999,
-        #999 1px,
-        rgba(0, 0, 0, 0) 0,
-        rgba(0, 0, 0, 0) 4px
-      );
+  .article {
+    p {
+      margin-bottom: 32px;
+      line-height: 2;
     }
-    a {
-      .icon {
-        display: none;
-      }
-    }
-  }
-  h3 {
-    position: relative;
-    margin-top: 64px;
-    margin-bottom: 28px;
-    padding-left: 24px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background-image: repeating-linear-gradient(
-        #999,
-        #999 1px,
-        rgba(0, 0, 0, 0) 0,
-        rgba(0, 0, 0, 0) 4px
-      );
-    }
-    a {
-      .icon {
-        display: none;
-      }
-    }
-  }
-  h4 {
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 24px;
-    padding-left: 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background-image: repeating-linear-gradient(
-        #999,
-        #999 1px,
-        rgba(0, 0, 0, 0) 0,
-        rgba(0, 0, 0, 0) 4px
-      );
-    }
-    a {
-      .icon {
-        display: none;
-      }
-    }
-  }
-  h5 {
-    font-size: 1.1rem;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    font-weight: bold;
-    line-height: 2em;
-    letter-spacing: 1px;
-    a {
-      .icon {
-        display: none;
-      }
-    }
-  }
-  ol {
-    counter-reset: number;
-  }
-  ol,
-  ul {
-    padding: 0;
-    list-style-type: none;
-    margin-bottom: 32px;
-  }
-  ol li {
-    list-style: none;
-    position: relative;
-    padding-left: 2rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    margin-left: 0.4rem;
-    &::before {
-      background: #333;
-      counter-increment: number;
-      content: counter(number);
-      color: #fff;
-      width: 1.4rem;
-      height: 1.4rem;
-      font-size: 0.7em;
+    h2 {
+      position: relative;
+      margin-top: 96px;
+      margin-bottom: 40px;
+      padding-bottom: 16px;
+      font-size: 1.4rem;
       font-weight: bold;
-      font-family: 'Lato', sans-serif;
-      display: block;
-      text-align: center;
-      line-height: 1.4rem;
-      border-radius: 50%;
-      position: absolute;
-      left: 0;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #e0e0e0 0,
+          #e0e0e0 1px,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0) 50%
+        );
+        background-size: 8px 8px;
+      }
+      a {
+        .icon {
+          display: none;
+        }
+      }
+    }
+    h3 {
+      position: relative;
+      margin-top: 64px;
+      margin-bottom: 28px;
+      padding-left: 24px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-color: #e0e0e0;
+      }
+      a {
+        .icon {
+          display: none;
+        }
+      }
+    }
+    h4 {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      padding-left: 24px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-image: repeating-linear-gradient(
+          #999,
+          #999 1px,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0) 4px
+        );
+      }
+      a {
+        .icon {
+          display: none;
+        }
+      }
+    }
+    h5 {
+      font-size: 1.1rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-weight: bold;
+      line-height: 2em;
+      letter-spacing: 1px;
+      a {
+        .icon {
+          display: none;
+        }
+      }
+    }
+    ol {
+      counter-reset: number;
+    }
+    ol,
+    ul {
+      padding: 0;
+      list-style-type: none;
+      margin-bottom: 32px;
+    }
+    ul li {
+      list-style: none;
+      position: relative;
+      padding-left: 2rem;
+      margin-left: 0.2rem;
+      margin-bottom: 0.4rem;
+      &::before {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        background: #3e3e3e;
+        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
+        display: block;
+        position: absolute;
+        border-radius: 20%;
+        left: 0.32rem;
+        top: 0.4rem;
+      }
+    }
+    ol li {
+      list-style: none;
+      position: relative;
+      padding-left: 2rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      margin-left: 0.4rem;
+      margin-bottom: 0.2rem;
+      &::before {
+        background: #333;
+        counter-increment: number;
+        content: counter(number);
+        color: #fff;
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 0.7em;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        display: block;
+        text-align: center;
+        line-height: 1.4rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0.28rem;
+      }
+    }
+    strong {
+      font-weight: bold;
+    }
+    span.line {
+      display: inline;
+      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
+      padding-bottom: 0;
     }
   }
 }
