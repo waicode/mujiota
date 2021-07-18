@@ -19,7 +19,6 @@
   </div>
 </template>
 <script>
-import { format } from 'date-fns'
 export default {
   props: {
     articles: {
@@ -27,11 +26,6 @@ export default {
       type: Array,
       default: null,
     },
-  },
-  data() {
-    return {
-      format,
-    }
   },
 }
 </script>

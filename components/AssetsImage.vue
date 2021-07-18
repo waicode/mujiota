@@ -1,5 +1,5 @@
 <template>
-  <img class="lazy-load-image" v-lazy-load :src="dynamicImageSrcPath" />
+  <img v-lazy-load class="lazy-load-image" :src="dynamicImageSrcPath" />
 </template>
 
 <script>
@@ -19,6 +19,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .lazy-load-image {
-  background-color: #d7ccc8;
+  background-image: linear-gradient(
+    160deg,
+    rgba(250, 250, 250, 0.85),
+    rgba(239, 235, 233, 0.85)
+  );
 }
 </style>

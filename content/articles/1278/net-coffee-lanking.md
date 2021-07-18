@@ -6,6 +6,7 @@ description: コーヒー好きの管理人が個人的にも利用している�
 publishedAt: 2016-07-30T02:21:37Z
 updatedAt: 2017-05-06T15:12:07Z
 imageFormat: png
+category: コーヒー
 tags:
   - コーヒー
 ---

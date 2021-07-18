@@ -6,6 +6,7 @@ description: 朝は大の苦手だったのに、完全無欠コーヒーを飲�
 publishedAt: 2017-05-06T18:36:20Z
 updatedAt: 2019-10-13T06:16:35Z
 imageFormat: jpeg
+category: コーヒー
 tags:
   - 健康
   - コーヒー

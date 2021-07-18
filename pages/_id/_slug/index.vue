@@ -30,6 +30,7 @@
     <ShareButtonsTop :article="article" />
     <NuxtContent class="article" :document="article" />
     <ShareButtonsBottom :article="article" />
+    <RelatedPosts :articles="relatedArticles" />
   </article>
 </template>
 
@@ -41,6 +42,7 @@ import AssetsImage from '@/components/AssetsImage.vue'
 import TableOfContents from '@/components/Parts/TableOfContents.vue'
 import ShareButtonsTop from '@/components/Parts/ShareButtonsTop.vue'
 import ShareButtonsBottom from '@/components/Parts/ShareButtonsBottom.vue'
+import RelatedPosts from '@/components/Parts/RelatedPosts.vue'
 
 export default {
   components: {
@@ -48,15 +50,25 @@ export default {
     TableOfContents,
     ShareButtonsTop,
     ShareButtonsBottom,
+    RelatedPosts,
   },
   async asyncData({ $content, params }) {
     let article = ''
+    let relatedArticles = []
     try {
       article = await $content('articles', params.id, params.slug).fetch()
     } catch {
       // TODO:無い場合はリダイレクト
     }
-    return { article }
+    try {
+      relatedArticles = await $content('articles', { deep: true })
+        .where({
+          category: article.category,
+          id: { $ne: article.id },
+        })
+        .fetch()
+    } catch {}
+    return { article, relatedArticles }
   },
   computed: {
     faCalendarAlt() {

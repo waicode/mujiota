@@ -6,6 +6,7 @@ description: ふるさと納税デビューのために、CMでもお馴染み�
 publishedAt: 2017-01-01T18:04:29Z
 updatedAt: 2019-10-13T06:16:35Z
 imageFormat: jpeg
+category: 生活
 tags:
   - 生活
 ---
