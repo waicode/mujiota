@@ -9,13 +9,12 @@
         <div class="inbox-title">
           {{ article.title }}
         </div>
-        <div class="inbox-date">{{ dateFormatted(article.publishedAt) }}</div>
+        <div class="inbox-date">{{ article.publishedAt | dateFormatted }}</div>
       </div>
     </nuxt-link>
   </div>
 </template>
 <script>
-import { format } from 'date-fns'
 import AssetsImage from '@/components/AssetsImage.vue'
 export default {
   components: {
@@ -28,12 +27,6 @@ export default {
       default: null,
     },
   },
-  data() {
-    return {
-      article: null,
-      format,
-    }
-  },
   computed: {
     link() {
       return `/${this.article.id}/${this.article.slug}`
@@ -43,14 +36,6 @@ export default {
     this.getContnt()
   },
   methods: {
-    dateFormatted(dateStr) {
-      if (dateStr) {
-        const date = new Date(dateStr)
-        return this.format(date, 'yyyy-MM-dd')
-      } else {
-        return ''
-      }
-    },
     async getContnt() {
       await this.$content('articles', this.id)
         .fetch()

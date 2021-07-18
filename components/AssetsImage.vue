@@ -1,5 +1,5 @@
 <template>
-  <img :src="dynamicImageSrcPath" />
+  <img class="lazy-load-image" v-lazy-load :src="dynamicImageSrcPath" />
 </template>
 
 <script>
@@ -17,3 +17,8 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.lazy-load-image {
+  background-color: #d7ccc8;
+}
+</style>

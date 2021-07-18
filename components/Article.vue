@@ -24,7 +24,7 @@
                 :content="article.publishedAt"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
-                <span>{{ dateFormatted(article.publishedAt) }}</span>
+                <span>{{ article.publishedAt | dateFormatted }}</span>
               </span>
               <span
                 class="date-updated"
@@ -32,7 +32,7 @@
                 :content="article.updatedAt"
               >
                 <fa :icon="faRedoAlt" class="fa-redo-alt" />
-                <span>{{ dateFormatted(article.updatedAt) }}</span>
+                <span>{{ article.updatedAt | dateFormatted }}</span>
               </span>
             </div>
             <div v-if="article.tags" class="tags">
@@ -49,7 +49,6 @@
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
-import { format } from 'date-fns'
 import AssetsImage from '@/components/AssetsImage.vue'
 export default {
   components: {
@@ -62,23 +61,12 @@ export default {
       default: null,
     },
   },
-  data() {
-    return {
-      format,
-    }
-  },
   computed: {
     faCalendarAlt() {
       return faCalendarAlt
     },
     faRedoAlt() {
       return faRedoAlt
-    },
-  },
-  methods: {
-    dateFormatted(dateStr) {
-      const date = new Date(dateStr)
-      return this.format(date, 'yyyy-MM-dd')
     },
   },
 }

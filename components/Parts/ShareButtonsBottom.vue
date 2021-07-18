@@ -1,6 +1,6 @@
 <template>
   <div class="share-bottom">
-    <div class="share-title">SNSへシェア</div>
+    <div class="share-title">Share on SNS</div>
     <div class="share-buttons">
       <div class="share-item hb">
         <a :href="ShareUrlHatena" target="_blank" rel="nofollow noopener">
