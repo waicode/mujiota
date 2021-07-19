@@ -19,8 +19,8 @@ tags:
 
 （ただ、この値段は当時の相場から見てもかなり破格だと思います。おそらく担当者の方はタイムセールとか、特価セールで調達したのかもしれません。）
 
-https://mujiota.com/wp-content/uploads/2016/09/63ceff0af024aef06adbb89251ea3336-400x295.png
-SONY BRAVIA 40型
+<CaptureImage article-id="1300" img-file-name="mercari-stv.png" caption="SONY BRAVIA 40型"></CaptureImage>
+
 
 数年に渡って活躍してくれていたこのテレビ、まだまだ現役だったのですが、諸事情があって買い替えることになりメルカリに出品してみたところ47,800円の値で売ることができました。
 

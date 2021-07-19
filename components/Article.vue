@@ -83,6 +83,9 @@ export default {
       padding: 24px;
       width: 40%;
       height: auto;
+      img {
+        vertical-align: top;
+      }
     }
     .contents {
       width: 56%;
