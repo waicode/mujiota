@@ -31,7 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .capture-image {
-  margin-top: 12px;
+  margin-top: 40px;
   margin-bottom: 8px;
 }
 .capture-wrapper {
@@ -55,8 +55,8 @@ export default {
   height: calc(100% + 20px);
   border-image-source: repeating-linear-gradient(
     45deg,
-    #eee,
-    #eee 3px,
+    #e0e0e0,
+    #e0e0e0 3px,
     transparent 0,
     transparent 6px
   );
@@ -67,7 +67,9 @@ export default {
 }
 .caption {
   text-align: center;
+  font-weight: bold;
+  font-size: 0.88rem;
   padding-top: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 }
 </style>
