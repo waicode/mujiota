@@ -29,3 +29,29 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.related-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.68rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 28px;
+  &::before,
+  &::after {
+    content: '';
+    width: 2px;
+    height: 1.68rem;
+    background-color: $text;
+  }
+  &::before {
+    margin-right: 32px;
+    transform: rotate(-90deg);
+  }
+  &::after {
+    margin-left: 32px;
+    transform: rotate(90deg);
+  }
+}
+</style>
