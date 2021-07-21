@@ -15,45 +15,31 @@
           <div v-if="shopName" class="link-shop-name">
             {{ shopName }}
           </div>
-          <div class="link-seach-links">
-            <div class="shoplink-rakuten seach-link">
+          <div class="link-items">
+            <div class="shoplink-amazon item-link">
               <a :href="amazonUrl" target="_blank">Amazon</a>
             </div>
-            <div class="shoplink-amazon seach-link">
-              <a :href="KindleUrl" target="_blank">Kindle</a>
+            <div class="shoplink-kindle item-link">
+              <a :href="kindleUrl" target="_blank">Kindle</a>
             </div>
-            <div class="shoplink-yahoo seach-link">
-              <a :href="RakutenUrl" target="_blank">楽天ブックス</a>
+            <div class="shoplink-rakuten item-link">
+              <a :href="rakutenUrl" target="_blank">楽天ブックス</a>
             </div>
-            <div class="shoplink-yahoo seach-link">
-              <a :href="KoboUrl" target="_blank">楽天kobo</a>
+            <div class="shoplink-kobo item-link">
+              <a :href="koboUrl" target="_blank">楽天kobo</a>
             </div>
           </div>
           <div class="booklink-link2">
-            <div class="shoplinkamazon">
-              <a
-                href="https://www.amazon.co.jp/exec/obidos/asin/4478039674/amayutazon-22/"
-                target="_blank"
-                >Amazon</a
-              >
-            </div>
-            <div class="shoplinkkindle">
-              <a
-                href="https://www.amazon.co.jp/gp/search?keywords=&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=amayutazon-22"
-                target="_blank"
-                >Kindle</a
-              >
-            </div>
             <div class="shoplinkrakuten">
               <a
-                href="https://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/yomereba_main_202107211332187927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13354097%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
+                href="https://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/mujiota?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13354097%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
                 target="_blank"
                 >楽天ブックス</a
               >
             </div>
             <div class="shoplinkrakukobo">
               <a
-                href="http://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/yomereba_main_202107211332187927?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F60f7b9a3c1723b328b923f2e27736eb8%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
+                href="http://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/mujiota?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F60f7b9a3c1723b328b923f2e27736eb8%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
                 target="_blank"
                 >楽天kobo</a
               >
@@ -117,12 +103,17 @@ export default {
       type: String,
       default: null,
     },
+    kindleItemId: {
+      require: true,
+      type: String,
+      default: null,
+    },
     rakutenItemId: {
       require: true,
       type: String,
       default: null,
     },
-    searchKeyword: {
+    koboItemId: {
       require: true,
       type: String,
       default: null,
@@ -140,7 +131,7 @@ export default {
   },
   computed: {
     assetsImagePath() {
-      return `images/kaereba/items/${this.imgFileName}`
+      return `images/yomereba/items/${this.imgFileName}`
     },
     titleLink() {
       let url = null
@@ -151,20 +142,17 @@ export default {
       }
       return url
     },
-    amazonItemUrl() {
-      return `https://www.amazon.co.jp/dp/${this.amazonItemId}?tag=${this.amazonAssociateUserId}&language=ja_JP`
+    amazonUrl() {
+      return `https://www.amazon.co.jp/exec/obidos/asin/${this.amazonItemId}/${this.amazonAssociateUserId}/`
     },
-    rakutenItemUrl() {
-      return `https://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=https://product.rakuten.co.jp/product/-/${this.rakutenItemId}/&m=http://m.product.rakuten.co.jp/product/${this.rakutenItemId}/`
+    kindleUrl() {
+      return `https://www.amazon.co.jp/exec/obidos/ASIN/${this.kindleItemId}/${this.amazonAssociateUserId}/`
     },
-    amazonSearchUrl() {
-      return `https://www.amazon.co.jp/s?k=${this.searchKeyword}&__mk_ja_JP=カタカナ&tag=amayutazon-22`
+    rakutenUrl() {
+      return `https://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=http://books.rakuten.co.jp/rb/${this.rakutenItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
     },
-    yahooSearchUrl() {
-      return `//ck.jp.ap.valuecommerce.com/servlet/referral?sid=${this.yahooValueCommerce.sid}&pid=${this.yahooValueCommerce.pid}&vc_url=http://search.shopping.yahoo.co.jp/search?p=${this.searchKeyword}&vcptn=mujiota`
-    },
-    yahooAspImgUrl() {
-      return `//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=${this.yahooValueCommerce.sid}&pid=${this.yahooValueCommerce.pid}`
+    koboUrl() {
+      return `http://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=https://books.rakuten.co.jp/rk/${this.koboItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
     },
   },
 }
