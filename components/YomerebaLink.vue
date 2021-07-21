@@ -1,6 +1,68 @@
 <template>
   <!-- todo: yomerebaに直す -->
-  <div class="kaerebalink">
+  <div class="Yomerebalink">
+    <div class="cstmreba">
+      <div class="booklink-box">
+        <div class="booklink-image">
+          <a :href="titleLink" target="_blank">
+            <AssetsImage :path="assetsImagePath" />
+          </a>
+        </div>
+        <div class="booklink-info">
+          <div class="link-title">
+            <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
+          </div>
+          <div v-if="shopName" class="link-shop-name">
+            {{ shopName }}
+          </div>
+          <div class="link-seach-links">
+            <div class="shoplink-rakuten seach-link">
+              <a :href="amazonUrl" target="_blank">Amazon</a>
+            </div>
+            <div class="shoplink-amazon seach-link">
+              <a :href="KindleUrl" target="_blank">Kindle</a>
+            </div>
+            <div class="shoplink-yahoo seach-link">
+              <a :href="RakutenUrl" target="_blank">楽天ブックス</a>
+            </div>
+            <div class="shoplink-yahoo seach-link">
+              <a :href="KoboUrl" target="_blank">楽天kobo</a>
+            </div>
+          </div>
+          <div class="booklink-link2">
+            <div class="shoplinkamazon">
+              <a
+                href="https://www.amazon.co.jp/exec/obidos/asin/4478039674/amayutazon-22/"
+                target="_blank"
+                >Amazon</a
+              >
+            </div>
+            <div class="shoplinkkindle">
+              <a
+                href="https://www.amazon.co.jp/gp/search?keywords=&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=amayutazon-22"
+                target="_blank"
+                >Kindle</a
+              >
+            </div>
+            <div class="shoplinkrakuten">
+              <a
+                href="https://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/yomereba_main_202107211332187927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13354097%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
+                target="_blank"
+                >楽天ブックス</a
+              >
+            </div>
+            <div class="shoplinkrakukobo">
+              <a
+                href="http://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/yomereba_main_202107211332187927?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F60f7b9a3c1723b328b923f2e27736eb8%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
+                target="_blank"
+                >楽天kobo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="booklink-footer"></div>
+      </div>
+    </div>
     <div class="link-box">
       <div class="link-image">
         <a :href="titleLink" target="_blank">
