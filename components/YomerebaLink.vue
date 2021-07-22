@@ -29,53 +29,8 @@
               <a :href="koboUrl" target="_blank">楽天kobo</a>
             </div>
           </div>
-          <div class="booklink-link2">
-            <div class="shoplinkrakuten">
-              <a
-                href="https://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/mujiota?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13354097%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
-                target="_blank"
-                >楽天ブックス</a
-              >
-            </div>
-            <div class="shoplinkrakukobo">
-              <a
-                href="http://hb.afl.rakuten.co.jp/hgc/07687bed.c16bc13c.0d960c31.3eeb42bc/mujiota?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F60f7b9a3c1723b328b923f2e27736eb8%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
-                target="_blank"
-                >楽天kobo</a
-              >
-            </div>
-          </div>
         </div>
         <div class="booklink-footer"></div>
-      </div>
-    </div>
-    <div class="link-box">
-      <div class="link-image">
-        <a :href="titleLink" target="_blank">
-          <AssetsImage :path="assetsImagePath" />
-        </a>
-      </div>
-      <div class="link-info">
-        <div class="link-title">
-          <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
-        </div>
-        <div v-if="shopName" class="link-shop-name">
-          {{ shopName }}
-        </div>
-        <div class="link-seach-links">
-          <div class="shoplink-rakuten seach-link">
-            <a :href="rakutenItemUrl" target="_blank">Rakutenで探す</a>
-          </div>
-          <div class="shoplink-amazon seach-link">
-            <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
-          </div>
-          <div class="shoplink-yahoo seach-link">
-            <a :href="yahooSearchUrl" target="_blank">Yahooで探す</a>
-            <span>
-              <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
-            </span>
-          </div>
-        </div>
       </div>
     </div>
   </div>
