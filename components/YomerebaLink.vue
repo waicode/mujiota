@@ -1,37 +1,34 @@
 <template>
-  <!-- todo: yomerebaに直す -->
-  <div class="Yomerebalink">
-    <div class="cstmreba">
-      <div class="booklink-box">
-        <div class="booklink-image">
-          <a :href="titleLink" target="_blank">
-            <AssetsImage :path="assetsImagePath" />
-          </a>
-        </div>
-        <div class="booklink-info">
-          <div class="link-title">
-            <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
-          </div>
-          <div v-if="shopName" class="link-shop-name">
-            {{ shopName }}
-          </div>
-          <div class="link-items">
-            <div class="shoplink-amazon item-link">
-              <a :href="amazonUrl" target="_blank">Amazon</a>
-            </div>
-            <div class="shoplink-kindle item-link">
-              <a :href="kindleUrl" target="_blank">Kindle</a>
-            </div>
-            <div class="shoplink-rakuten item-link">
-              <a :href="rakutenUrl" target="_blank">楽天ブックス</a>
-            </div>
-            <div class="shoplink-kobo item-link">
-              <a :href="koboUrl" target="_blank">楽天kobo</a>
-            </div>
-          </div>
-        </div>
-        <div class="booklink-footer"></div>
+  <div class="yomerebalink">
+    <div class="link-box">
+      <div class="link-image">
+        <a :href="titleLink" target="_blank">
+          <AssetsImage :path="assetsImagePath" />
+        </a>
       </div>
+      <div class="link-info">
+        <div class="link-title">
+          <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
+        </div>
+        <div v-if="authorName" class="link-shop-name">
+          {{ authorName }}
+        </div>
+        <div class="link-items">
+          <div class="shoplink-amazon item-link">
+            <a :href="amazonUrl" target="_blank">Amazon</a>
+          </div>
+          <div class="shoplink-kindle item-link">
+            <a :href="kindleUrl" target="_blank">Kindle</a>
+          </div>
+          <div class="shoplink-rakuten item-link">
+            <a :href="rakutenUrl" target="_blank">楽天ブックス</a>
+          </div>
+          <div class="shoplink-kobo item-link">
+            <a :href="koboUrl" target="_blank">楽天kobo</a>
+          </div>
+        </div>
+      </div>
+      <div class="booklink-footer"></div>
     </div>
   </div>
 </template>
@@ -48,7 +45,7 @@ export default {
       type: String,
       default: null,
     },
-    shopName: {
+    authorName: {
       require: true,
       type: String,
       default: null,
@@ -86,7 +83,7 @@ export default {
   },
   computed: {
     assetsImagePath() {
-      return `images/yomereba/items/${this.imgFileName}`
+      return `images/link/yomereba/items/${this.imgFileName}`
     },
     titleLink() {
       let url = null
@@ -113,7 +110,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.kaerebalink {
+.yomerebalink {
   .link-box {
     display: flex;
     justify-content: space-around;
@@ -125,14 +122,6 @@ export default {
     border-color: #eaeaea #ddd #d0d0d0;
     border-radius: 3px;
     box-sizing: border-box;
-    .link-title {
-      font-size: 1.0625rem;
-      font-weight: bold;
-      margin: 0;
-      a {
-        color: $text;
-      }
-    }
     .link-image {
       width: 18%;
       padding: 16px;
@@ -140,7 +129,12 @@ export default {
     .link-info {
       width: 76%;
       .link-title {
+        font-size: 1.0625rem;
+        font-weight: bold;
         margin: 0.2rem 0 0.8rem;
+        a {
+          color: $text;
+        }
       }
       .link-shop-name {
         margin: 0 0 2rem;

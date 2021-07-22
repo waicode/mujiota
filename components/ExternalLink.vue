@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     assetsImagePath() {
-      return `images/external/${this.imgFileName}`
+      return `images/link/external/${this.imgFileName}`
     },
   },
 }

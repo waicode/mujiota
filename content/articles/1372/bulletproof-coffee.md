@@ -32,7 +32,7 @@ tags:
 
 完全無欠コーヒーはもともとシリコンバレーで流行ったダイエット＆パフォーマンスアップ方法です。このバターコーヒーが日本でも認知されて流行り始めたのは「シリコンバレー式 最高の食事」という書籍で紹介されたからです。
 
-<!-- <kaereba-link item-title="シリコンバレー式 自分を変える最強の食事" img-file-name="bfp_diet_500x500.png" shop-name="Amazon" amazon-item-id="4478039674" rakuten-item-id="732cd619f14bd8be0a6438041ec013e8" search-keyword="グラスフェットバター"></kaereba-link> -->
+<yomereba-link item-title="シリコンバレー式 自分を変える最強の食事" img-file-name="bfp_diet_500x500.png" author-name="デイヴ・アスプリー" amazon-item-id="4478039674" kindle-item-id="B015S5545W" rakuten-item-id="732cd619f14bd8be0a6438041ec013e8" kobo-item-id="60f7b9a3c1723b328b923f2e27736eb8"></yomereba-link>
 
 完全無欠コーヒーの全てが書かれていると言っても過言は無いこの1冊。当時、完全無欠コーヒーを飲むことで手に入れられる世界にワクワクしつつも、バターコーヒーを飲むとなぜ集中力がアップできるのかは皆目見当がつかなかったので、ちゃんと本を買って、その秘密を勉強することにしました。
 

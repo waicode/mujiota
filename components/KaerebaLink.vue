@@ -77,7 +77,7 @@ export default {
   },
   computed: {
     assetsImagePath() {
-      return `images/kaereba/items/${this.imgFileName}`
+      return `images/link/kaereba/items/${this.imgFileName}`
     },
     titleLink() {
       let url = null
@@ -119,14 +119,6 @@ export default {
     border-color: #eaeaea #ddd #d0d0d0;
     border-radius: 3px;
     box-sizing: border-box;
-    .link-title {
-      font-size: 1.0625rem;
-      font-weight: bold;
-      margin: 0;
-      a {
-        color: $text;
-      }
-    }
     .link-image {
       width: 18%;
       padding: 16px;
@@ -134,7 +126,12 @@ export default {
     .link-info {
       width: 76%;
       .link-title {
+        font-size: 1.0625rem;
+        font-weight: bold;
         margin: 0.2rem 0 0.8rem;
+        a {
+          color: $text;
+        }
       }
       .link-shop-name {
         margin: 0 0 2rem;
