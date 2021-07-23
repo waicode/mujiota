@@ -21,10 +21,10 @@
             <a :href="kindleUrl" target="_blank">Kindle</a>
           </div>
           <div class="shoplink-rakuten item-link">
-            <a :href="rakutenUrl" target="_blank">楽天ブックス</a>
+            <a :href="rakutenUrl" target="_blank">Rakuten</a>
           </div>
           <div class="shoplink-kobo item-link">
-            <a :href="koboUrl" target="_blank">楽天kobo</a>
+            <a :href="koboUrl" target="_blank">kobo</a>
           </div>
         </div>
       </div>
@@ -139,13 +139,13 @@ export default {
       .link-shop-name {
         margin: 0 0 2rem;
       }
-      .link-seach-links {
+      .link-items {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        .seach-link {
-          width: 32%;
-          min-width: 148px;
+        .item-link {
+          width: 24%;
+          min-width: 96px;
           a {
             display: block;
             width: 100%;
@@ -164,19 +164,21 @@ export default {
             }
           }
         }
-        .shoplink-rakuten a {
-          background-color: #ef5350;
-        }
         .shoplink-amazon a {
+          border: 2px solid #ff9800;
           background-color: #ff9800;
         }
-        .shoplink-yahoo {
-          a {
-            background-color: #2196f3;
-          }
-          img {
-            display: none;
-          }
+        .shoplink-kindle a {
+          border: 2px solid #ff9800;
+          background-color: #ff9800;
+        }
+        .shoplink-rakuten a {
+          border: 2px solid #ef5350;
+          background-color: #ef5350;
+        }
+        .shoplink-kobo a {
+          border: 2px solid #ef5350;
+          background-color: #ef5350;
         }
       }
     }
