@@ -27,6 +27,11 @@ export default {
       default: null,
     },
   },
+  data() {
+    return {
+      article: null,
+    }
+  },
   computed: {
     link() {
       return `/${this.article.id}/${this.article.slug}`

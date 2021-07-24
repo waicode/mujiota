@@ -2,16 +2,14 @@
   <div>
     <div class="header-bg"></div>
     <header id="header" class="header">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand logo-mujiota">
-          <MujiotaLogoSvg />
-        </div>
-      </nav>
       <nav
         class="navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
+        <div class="navbar-brand logo-mujiota">
+          <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
+        </div>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
