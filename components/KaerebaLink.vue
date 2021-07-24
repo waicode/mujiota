@@ -80,13 +80,7 @@ export default {
       return `images/link/kaereba/items/${this.imgFileName}`
     },
     titleLink() {
-      let url = null
-      if (!this.amazonItemUrl) {
-        url = this.rakutenItemUrl
-      } else if (!this.rakutenItemUrl) {
-        url = this.amazonItemUrl
-      }
-      return url
+      return this.amazonItemUrl ? this.amazonItemUrl : this.rakutenItemUrl
     },
     amazonItemUrl() {
       return `https://www.amazon.co.jp/dp/${this.amazonItemId}?tag=${this.amazonAssociateUserId}&language=ja_JP`
