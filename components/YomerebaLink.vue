@@ -123,8 +123,13 @@ export default {
     border-radius: 3px;
     box-sizing: border-box;
     .link-image {
+      display: flex;
+      align-items: center;
       width: 18%;
       padding: 16px;
+      img {
+        vertical-align: top;
+      }
     }
     .link-info {
       width: 76%;

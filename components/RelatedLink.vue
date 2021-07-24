@@ -66,9 +66,14 @@ export default {
       background: rgba(167, 255, 235, 0.24);
     }
     .inbox-image {
+      display: flex;
+      align-items: center;
       width: 20%;
       border: 1px solid #e0e0e0;
       box-shadow: 0 0 1px #eee;
+      img {
+        vertical-align: top;
+      }
     }
     .inbox-contents {
       width: 76%;
