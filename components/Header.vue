@@ -2,14 +2,14 @@
   <div>
     <div class="header-bg"></div>
     <header id="header" class="header">
+      <div class="logo-mujiota">
+        <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
+      </div>
       <nav
         class="navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand logo-mujiota">
-          <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
-        </div>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -49,10 +49,12 @@ export default {
 $logo-color: #67041b;
 $circle-color: #6f4952;
 .logo-mujiota {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 28px;
+  position: relative;
+  display: block;
+  width: 12%;
+  top: 60px;
+  left: 40px;
+  z-index: 35;
 }
 .topnav-icon {
   display: flex;

@@ -1,7 +1,7 @@
 <template>
   <div class="kaerebalink">
     <div class="link-box">
-      <div class="link-image">
+      <div v-if="imgFileName" class="link-image">
         <a :href="titleLink" target="_blank">
           <AssetsImage :path="assetsImagePath" />
         </a>
@@ -15,7 +15,11 @@
         </div>
         <div class="link-seach-links">
           <div class="shoplink-rakuten seach-link">
-            <a :href="rakutenItemUrl" target="_blank">Rakutenで探す</a>
+            <a
+              :href="rakutenItemId ? rakutenProductUrl : rakutenSearchUrl"
+              target="_blank"
+              >Rakutenで探す</a
+            >
           </div>
           <div class="shoplink-amazon seach-link">
             <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
@@ -85,8 +89,11 @@ export default {
     amazonItemUrl() {
       return `https://www.amazon.co.jp/dp/${this.amazonItemId}?tag=${this.amazonAssociateUserId}&language=ja_JP`
     },
-    rakutenItemUrl() {
+    rakutenProductUrl() {
       return `https://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=https://product.rakuten.co.jp/product/-/${this.rakutenItemId}/&m=http://m.product.rakuten.co.jp/product/${this.rakutenItemId}/`
+    },
+    rakutenSearchUrl() {
+      return `https://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=https://search.rakuten.co.jp/search/mall/${this.searchKeyword}/?v=2&scid=af_pc_ich_link_urltxt&sc2id=af_101_0_0&m=http://m.rakuten.co.jp/`
     },
     amazonSearchUrl() {
       return `https://www.amazon.co.jp/s?k=${this.searchKeyword}&__mk_ja_JP=カタカナ&tag=amayutazon-22`
