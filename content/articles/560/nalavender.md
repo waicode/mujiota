@@ -30,7 +30,6 @@ tags:
 
 以下よりアプリのダウンロードが可能です。
 
-<!-- todo: ナラベンダーのLPつくる -->
 <external-link title="ナラベンダー" note="ありそうでなかったiOSリマインダーベースのTODO管理アプリ" link="https://nalaven.desr.blue/" img-file-name="nalavender.png"></external-link>
 
 ## アプリ開発の内幕話
