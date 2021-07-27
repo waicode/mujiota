@@ -39,7 +39,7 @@ export default {
   justify-content: center;
 }
 .capture {
-  width: 60%;
+  max-width: 60%;
   position: relative;
   img {
     vertical-align: top;

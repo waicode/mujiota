@@ -278,6 +278,41 @@ export default {
       background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
       padding-bottom: 0;
     }
+
+    blockquote {
+      position: relative;
+      padding: 10px 15px 10px 60px;
+      box-sizing: border-box;
+      font-style: italic;
+      background: #efefef;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    blockquote::before {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      content: '';
+      color: #cfcfcf;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    blockquote p {
+      padding: 0;
+      margin: 10px 0;
+      line-height: 1.7;
+    }
+
+    blockquote cite {
+      display: block;
+      text-align: right;
+      color: #888;
+      font-size: 0.9em;
+    }
   }
 }
 </style>
