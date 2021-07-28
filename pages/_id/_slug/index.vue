@@ -286,7 +286,6 @@ export default {
       font-style: italic;
       background: #efefef;
       color: #555;
-      margin-bottom: 32px;
     }
 
     blockquote::before {
@@ -294,7 +293,8 @@ export default {
       position: absolute;
       top: 18px;
       left: 15px;
-      content: '';
+      content: '\f10d';
+      font-family: 'Font Awesome 5 Free';
       color: #cfcfcf;
       font-size: 30px;
       line-height: 1;
