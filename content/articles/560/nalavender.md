@@ -3,7 +3,7 @@ id: 560
 slug: nalavender
 title: iPhoneアプリ「ナラベンダー」をリリースしました
 description: 個人で開発したiPhoneアプリ「ナラベンダー」をご紹介します。iOSリマインダーを使ってTODO管理ができるアプリです。
-publishedAt: 2016-04-04T16:02:46+09:00
+createdAt: 2016-04-04T16:02:46+09:00
 updatedAt: 2017-05-05T16:18:07+09:00
 imageFormat: png
 category: 個人開発

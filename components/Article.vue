@@ -20,13 +20,14 @@
             <div class="date">
               <span
                 class="date-published"
-                itemprop="publishedAt"
-                :content="article.publishedAt"
+                itemprop="createdAt"
+                :content="article.createdAt"
               >
                 <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
-                <span>{{ article.publishedAt | dateFormatted }}</span>
+                <span>{{ article.createdAt | dateFormatted }}</span>
               </span>
               <span
+                v-if="article.updatedAt != article.createdAt"
                 class="date-updated"
                 itemprop="updatedAt"
                 :content="article.updatedAt"

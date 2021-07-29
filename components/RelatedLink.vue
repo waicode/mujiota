@@ -9,7 +9,7 @@
         <div class="inbox-title">
           {{ article.title }}
         </div>
-        <div class="inbox-date">{{ article.publishedAt | dateFormatted }}</div>
+        <div class="inbox-date">{{ article.updatedAt | dateFormatted }}</div>
       </div>
     </nuxt-link>
   </div>

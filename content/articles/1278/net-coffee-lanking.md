@@ -3,7 +3,7 @@ id: 1278
 slug: net-coffee-lanking
 title: ネットで買える安くておいしいコーヒー豆ランキング
 description: コーヒー好きの管理人が個人的にも利用しているネットで買える安くておいしいコーヒー豆をご紹介します。注文して失敗したネットショップもあったので、買ってはいけないコーヒー豆も合わせて書いていきます。
-publishedAt: 2016-07-30T02:21:37Z
+createdAt: 2016-07-30T02:21:37Z
 updatedAt: 2017-05-06T15:12:07Z
 imageFormat: png
 category: コーヒー

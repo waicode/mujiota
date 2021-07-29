@@ -5,9 +5,12 @@
       <div class="date">
         <span class="date-published">
           <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
-          <span>{{ article.publishedAt | dateFormatted }}</span>
+          <span>{{ article.createdAt | dateFormatted }}</span>
         </span>
-        <span class="date-updated">
+        <span
+          v-if="article.updatedAt != article.createdAt"
+          class="date-updated"
+        >
           <fa :icon="faRedoAlt" class="fa-redo-alt" />
           <span>{{ article.updatedAt | dateFormatted }}</span>
         </span>
@@ -286,6 +289,7 @@ export default {
       font-style: italic;
       background: #efefef;
       color: #555;
+      margin-bottom: 30px;
     }
 
     blockquote::before {

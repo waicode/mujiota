@@ -23,7 +23,7 @@ export default {
         'tags',
         'description',
         'imageFormat',
-        'publishedAt',
+        'createdAt',
         'updatedAt',
       ])
       .fetch()
