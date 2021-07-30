@@ -1,7 +1,11 @@
 <template>
   <div class="external-link">
     <a :href="link" target="_blank" rel="nofollow">
-      <AssetsImage class="inbox-image" :path="assetsImagePath" />
+      <AssetsImage
+        v-if="imgFileName"
+        class="inbox-image"
+        :path="assetsImagePath"
+      />
       <div class="inbox-contents">
         <div class="inbox-title">{{ title }}</div>
         <div class="inbox-note">{{ note }}</div>

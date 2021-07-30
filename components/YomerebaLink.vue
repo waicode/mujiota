@@ -14,16 +14,16 @@
           {{ authorName }}
         </div>
         <div class="link-items">
-          <div class="shoplink-amazon item-link">
+          <div v-if="amazonItemId" class="shoplink-amazon item-link">
             <a :href="amazonUrl" target="_blank">Amazon</a>
           </div>
-          <div class="shoplink-kindle item-link">
+          <div v-if="kindleItemId" class="shoplink-kindle item-link">
             <a :href="kindleUrl" target="_blank">Kindle</a>
           </div>
-          <div class="shoplink-rakuten item-link">
+          <div v-if="rakutenItemId" class="shoplink-rakuten item-link">
             <a :href="rakutenUrl" target="_blank">Rakuten</a>
           </div>
-          <div class="shoplink-kobo item-link">
+          <div v-if="koboItemId" class="shoplink-kobo item-link">
             <a :href="koboUrl" target="_blank">kobo</a>
           </div>
         </div>

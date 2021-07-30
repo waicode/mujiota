@@ -15,7 +15,7 @@ tags:
 
 こんな風に「文字のロゴ」が作れるiPhoneアプリです。
 
-<CaptureImage article-id="472" img-file-name="mojilogo_icon_big1.png" caption="MOJILOGOでつくった文字のロゴ"></CaptureImage>
+<capture-image article-id="472" img-file-name="mojilogo_icon_big1.png" caption="MOJILOGOでつくった文字のロゴ"></capture-image>
 
 Appbankさんにも紹介して頂きました。ありがとうございます。
 

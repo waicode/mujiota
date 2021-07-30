@@ -19,7 +19,7 @@ tags:
 
 （ただ、この値段は当時の相場から見てもかなり破格だと思います。おそらく担当者の方はタイムセールとか、特価セールで調達したのかもしれません。）
 
-<CaptureImage article-id="1300" img-file-name="mercari-stv.png" caption="SONY BRAVIA 40型"></CaptureImage>
+<capture-image article-id="1300" img-file-name="mercari-stv.png" caption="SONY BRAVIA 40型"></capture-image>
 
 
 数年に渡って活躍してくれていたこのテレビ、まだまだ現役だったのですが、諸事情があって買い替えることになりメルカリに出品してみたところ47,800円の値で売ることができました。
@@ -30,25 +30,25 @@ tags:
 
 ### Panasonic ブルーレイレコーダー
 
-<CaptureImage article-id="1300" img-file-name="mercari-br.png" caption="Panasonic ブルーレイレコーダー"></CaptureImage>
+<capture-image article-id="1300" img-file-name="mercari-br.png" caption="Panasonic ブルーレイレコーダー"></capture-image>
 
 一緒のタイミングで出品したブルーレイレコーダーも、およそ2万円で売れました。こちらは、購入時の金額はもっと高いです。3〜4万円程度はした記憶があります。かれこれ5年以上は使っていたので、この金額でもだいぶ満足でした。
 
 ### Google Chromecast
 
-<CaptureImage article-id="1300" img-file-name="mercari-cc.png" caption="Google Chromecast"></CaptureImage>
+<capture-image article-id="1300" img-file-name="mercari-cc.png" caption="Google Chromecast"></capture-image>
 
 ITガジェット好きの血が騒ぎ、Chromecastは発売日に買いました。でも、結局Apple TVしか使っていなくてテレビの横にずっと挿しっぱなしになっていたので出品。3,300円で買ってもらえました。新品での実売価格が3,980円でした。送料込みな点を差し引いても、十分な金額です。
 
 ### ツカモトエイム マッサージクッション
 
-<CaptureImage article-id="1300" img-file-name="mercari-msg.png" caption="ツカモトエイム マッサージクッション"></CaptureImage>
+<capture-image article-id="1300" img-file-name="mercari-msg.png" caption="ツカモトエイム マッサージクッション"></capture-image>
 
 実家に帰るといつもマッサージチェアに座っている妻を見て、誕生日プレゼント用に購入したものです。ですが、どうも満足の行く使い心地では無かったらしく、半年以上クローゼットに眠っていたので出品したら4,980円で売れました。Amazonで購入して、たしか6,980円くらいだったと思います。
 
 ### Nespresso エアロチーノ
 
-<CaptureImage article-id="1300" img-file-name="mercari-acn.png" caption="Nespresso エアロチーノ"></CaptureImage>
+<capture-image article-id="1300" img-file-name="mercari-acn.png" caption="Nespresso エアロチーノ"></capture-image>
 
 数年前までエスプレッソを好んで飲んでましたが、最近はもっぱらコーヒーです。そんな流れで、カフェラテ・カフェモカ用にふわっとしたミルクを自動で作るエアロチーノも、最近はめっきり使わなくなりました。売値は4,500円。新しいエアロチーノはバージョンアップしてより高性能になっていたりするので、まぁこんなところでしょうか。思い立ったらスマホで写真を撮って、サクッと出品できるのはほんと楽です。
 

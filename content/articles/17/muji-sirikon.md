@@ -1,43 +1,20 @@
 ---
-title: 無印良品：シリコーン調理ケース
-author: aiza_wai
-type: post
-date: 2011-03-21T10:45:03+09:00
-url: /17/muji-sirikon/
-featured_image: /wp-content/uploads/2011/03/59ed01455c1c971035dc059342adbbc5.png
-pvc_views:
-  - 8954
-views:
-  - 7
-wordbooker_options:
-  - 'a:10:{s:18:"wordbook_noncename";s:10:"57a77b6c82";s:18:"wordbook_page_post";s:15:"148216695246471";s:18:"wordbook_orandpage";s:1:"2";s:23:"wordbook_default_author";s:1:"1";s:23:"wordbook_extract_length";s:3:"256";s:19:"wordbook_actionlink";s:3:"300";s:26:"wordbooker_publish_default";s:2:"on";s:18:"wordbook_attribute";s:12:"無印発信";s:29:"wordbooker_status_update_text";s:35:": New blog post :  %title% - %link%";s:20:"wordbook_comment_get";s:2:"on";}'
-topsy_short_url:
-  - http://bit.ly/oGbbE8
-page_layout:
-  - col1
-scc_share_count_twitter:
-  - -1
-scc_share_count_facebook:
-  - -1
-scc_share_count_crawldate:
-  - 2020/02/11 06:54:51
-categories:
-  - Muji
-
+id: 17
+slug: muji-sirikon
+title: 無印良品「シリコーン調理ケース」
+description: 無印良品からシリコーン調理ケースが新発売。レシピ本まで丁寧に用意してありました。
+createdAt: 2011-03-21T10:45:03+09:00
+updatedAt: 2011-03-21T10:45:03+09:00
+imageFormat: png
+category: 雑記
+tags:
+  - 雑記
+  - 無印良品
 ---
-**無印良品**で**シリコーン調理ケース**が新発売！しかもレシピ本まで丁寧に用意してありました。ちょっと惹かれたけど…今日はがまん。
-
-<!--more-->
 
 気になっているシリコン調理ケースはこちらです。
 
-<div style="width: 410px" class="wp-caption aligncenter">
-  <a href="http://img.muji.net/img/item/4548718967759_400.jpg"><img title="無印良品シリコーン調理ケース" src="http://img.muji.net/img/item/4548718967759_400.jpg" alt="無印良品シリコーン調理ケース" width="400" height="400" /></a>
-  
-  <p class="wp-caption-text">
-    無印良品シリコーン調理ケース
-  </p>
-</div>
+<capture-image article-id="17" img-file-name="4548718967759_400.jpg" caption="無印良品「シリコーン調理ケース」"></capture-image>
 
 サイズもいろいろ、大・中・小。
 
@@ -45,17 +22,11 @@ categories:
   * [シリコーン　調理ケース　クリア　中][2]
   * [シリコーン　調理ケース　クリア　大][3]
 
-クリアタイプの他に、黒いタイプもありましたよ。一人暮らしで買うなら、中型のサイズが丁度良さそう。
+クリアタイプの他に、黒いタイプもありました。一人暮らしで使うなら、中型のサイズが丁度良さそう。
 
-<div style="width: 410px" class="wp-caption aligncenter">
-  <a href="http://img.muji.net/img/item/4548718993178_400.jpg"><img title="シリコーン調理ケース　レシピブック" src="http://img.muji.net/img/item/4548718993178_400.jpg" alt="シリコーン調理ケース　レシピブック" width="400" height="400" /></a>
-  
-  <p class="wp-caption-text">
-    シリコーン調理ケース　レシピブック
-  </p>
-</div>
+<yomereba-link item-title="シリコーン調理ケース　レシピブック" img-file-name="silicon_rbook_500x500.png" author-name="小川 聖子" amazon-item-id="4198631417" rakuten-item-id="6997177"></yomereba-link>
 
-レシピ本はちょっと立ち読みしてきました。どれも手軽にできそうだったので、一人暮らしには重宝しそうな内容でした。特にダイエットしているわけでもないのですが、その他のレシピ本では健康そうな[タニタ][4]<img style="border: none !important; margin: 0px !important;" src="http://www.assoc-amazon.jp/e/ir?t=amayutazon-22&l=as2&o=9&a=4479920250" alt="" width="1" height="1" border="0" />の本も気になっている今日この頃です。
+レシピ本を少しだけ立ち読みしてきました。どれも手軽にできそうだったので、一人暮らしには重宝しそうな内容。特にダイエットしているわけでもないのですが、健康になれそうな[タニタのレシピ本][4]も気になっている今日この頃です。
 
  [1]: http://www.muji.net/store/cmdty/detail/4548718967759
  [2]: http://www.muji.net/store/cmdty/detail/4548718967339

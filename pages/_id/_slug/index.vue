@@ -29,7 +29,7 @@
     <div class="description">
       <p>{{ article.description }}</p>
     </div>
-    <TableOfContents :article="article" />
+    <TableOfContents v-if="article.toc.length > 0" :article="article" />
     <ShareButtonsTop :article="article" />
     <NuxtContent class="article" :document="article" />
     <ShareButtonsBottom :article="article" />

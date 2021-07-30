@@ -200,13 +200,13 @@ MQ500には混ぜる用のカップも付属しています。付属カップを
 
 ブレンダーの撹拌用カップにバターとMCTオイルを入れます。毎日飲むので、量は結構適当です。コーヒー多めの１杯（250ml程度）に対して、だいたいバターが5〜10g程度、MCTオイルが5〜10ml程度です。
 
-<PhotoImage article-id="1372" img-file-name="1_butter_mct.jpg" caption="バターとMCTオイルをカップに入れる"></PhotoImage>
+<photo-image article-id="1372" img-file-name="1_butter_mct.jpg" caption="バターとMCTオイルをカップに入れる"></photo-image>
 
 ### コーヒーをいれる
 
 バターとオイルの入ったブレンダーの撹拌用カップに、コーヒーをいれます。コーヒー多めの１杯（250ml程度）が適量です。
 
-<PhotoImage article-id="1372" img-file-name="2_cup_coffee.jpg" caption="カップにコーヒーを淹れる"></PhotoImage>
+<photo-image article-id="1372" img-file-name="2_cup_coffee.jpg" caption="カップにコーヒーを淹れる"></photo-image>
 
 以前はハンドドリップで作ってましたが、最近はデロンギの全自動コーヒーメーカーを使ってラクしてます。決して安い買い物ではないですが、挽きたてのコーヒーがボタンを押すだけであっという間に出来上がるので、毎日コーヒーを飲む人は買って損は無いと思います。
 
@@ -216,13 +216,13 @@ MQ500には混ぜる用のカップも付属しています。付属カップを
 
 コーヒーを淹れた後は、すぐにブレンダーで撹拌させます。先程紹介したブラウンのブレンダーで10〜20秒程度かき混ぜ、材料が完全に液体化すれば完成です。ブレンダーのカップからコーヒー用のマグカップに移します。
 
-<PhotoImage article-id="1372" img-file-name="3_kakuhan.jpg" caption="ブレンダーで撹拌させる"></PhotoImage>
+<photo-image article-id="1372" img-file-name="3_kakuhan.jpg" caption="ブレンダーで撹拌させる"></photo-image>
 
 ### 好みで再加熱して完成
 
 以上でおいしくてパワフルな完全無欠コーヒーの完成です。撹拌するとコーヒーの温度が少し下がります。熱々で飲みたい場合は、最後に電子レンジで20秒ほどチンしてください。本来、コーヒーの再加熱は酸化を促すので邪道と言われているので、これは好みで行ってください。
 
-<PhotoImage article-id="1372" img-file-name="4_complete.jpg" caption="完全無欠コーヒーが完成！"></PhotoImage>
+<photo-image article-id="1372" img-file-name="4_complete.jpg" caption="完全無欠コーヒーが完成！"></photo-image>
 
 ちなみに、完全無欠コーヒーの作り方の公式動画がYoutube（英語）で公開されています。そちらも合わせてリンクを貼っておきます。
 
@@ -232,7 +232,7 @@ MQ500には混ぜる用のカップも付属しています。付属カップを
 
 毎日バターコーヒーを飲んでいると、たまには違う味も楽しみたくなってきます。そんな時におすすめなのが<strong>チョコレートを入れてカフェモカ風にするアレンジレシピ</strong>です。
 
-<PhotoImage article-id="1372" img-file-name="5_cacao.jpg" caption="チョコレートのちょい足しでカフェモカ風に"></PhotoImage>
+<photo-image article-id="1372" img-file-name="5_cacao.jpg" caption="チョコレートのちょい足しでカフェモカ風に"></photo-image>
 
 ポリフェノールがたっぷり入ったカカオ含有量が多いチョコレートだと良いでしょう。手軽に手に入る高カカオのチョコレートなら、明治のチョコレート効果シリーズがおすすめです。
 

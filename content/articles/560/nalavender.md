@@ -19,11 +19,11 @@ tags:
 
 ナラベンダーをざっくり解説すると、<strong>iPhone（iOS）のリマインダーをベースとしたTODO管理アプリ</strong>です。<span class="line">直感的なジェスチャー操作でリマインダーを更新</span>できるようになっています。
 
-<CaptureImage article-id="560" img-file-name="sc04_4_7_jp.png" caption="直感的なジェスチャー操作"></CaptureImage>
+<capture-image article-id="560" img-file-name="sc04_4_7_jp.png" caption="直感的なジェスチャー操作"></capture-image>
 
 また、<strong>今やるべき優先順位に沿ってTODOを並び替えることをコンセプト</strong>にしています。最大３つの指標を設定するとアプリが優先順位（１位、２位、…）を自動計算して、並べ直してくれます。カンタンな指標で点数化して考えて、いまやるべきことは何かを導いてくれます。
 
-<CaptureImage article-id="560" img-file-name="sc02_4_7_jp.png" caption="点数化して優先順位を計算"></CaptureImage>
+<capture-image article-id="560" img-file-name="sc02_4_7_jp.png" caption="点数化して優先順位を計算"></capture-image>
 
 
 リマインダーベースのお手軽なTODO管理アプリを求めていた方は、ぜひ使ってみてください。ゴールデンチケットを購入していただくと全ての機能が解放されますが、大部分は無料で使えます。

@@ -39,7 +39,7 @@ export default {
   justify-content: center;
 }
 .photo {
-  width: 60%;
+  max-width: 60%;
   position: relative;
   img {
     box-shadow: 0 2px 4px rgba(67, 133, 187, 0.07);

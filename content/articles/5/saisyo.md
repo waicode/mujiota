@@ -1,38 +1,24 @@
 ---
+id: 5
+slug: saisyo
 title: 無印発進
-author: aiza_wai
-type: post
-date: 2010-09-21T03:09:17+09:00
-url: /5/saisyo/
-featured_image: /wp-content/uploads/2011/03/04fea3bc1cacebe72e05db1766c8fa79.png
-views:
-  - 4
-pvc_views:
-  - 3520
-wordbooker_thumb:
-  - http://64.der.tools/wp-content/uploads/2010/09/mujiota_start.png
-scc_share_count_twitter:
-  - -1
-scc_share_count_facebook:
-  - -1
-scc_share_count_crawldate:
-  - 2020/02/11 06:54:52
-categories:
-  - 徒然
-
+description: ブログ「無印発信」を開設しました。
+createdAt: 2010-09-21T03:09:17+09:00
+updatedAt: 2021-07-29T21:33:00+09:00
+imageFormat: png
+category: ブログカスタマイズ
+tags:
+  - ブログカスタマイズ
 ---
-ブログ「無印発信」を開設しました。
 
-<!--more-->
+<del datetime="2011-04-03T06:30:00+00:00">以前から興味があったMTで、ブログ作成してみました！</del>
 
-<del datetime="2011-04-03T06:30:00+00:00">以前から興味があったMTで、ブログ作成してみました！</del>さっそく、WordPressに移行しました。ネットを使って生活が豊かになる情報と、お気に入り云々を興味本位で発信したいと思います。
+↓↓↓
 
-今後ともよろしくお願いいたします。
+<del datetime="2021-07-29T21:33:00+09:00">WordPressに移行しました。（2011年4月）</del>
 
-* * *
+↓↓↓
 
-追記です。
+Vue/Nuxtに移行しました。（2021年7月）
 
-[コンセプトページ][1]を解説しました。
-
- [1]: https://mujiota.com/mujiota_start/
+ネットを使って生活が豊かになる情報と、お気に入り云々を興味本位で発信したいと思います。今後ともよろしくお願いいたします。
