@@ -1,44 +1,21 @@
 ---
+id: 82
+slug: rairairai-chanpon
 title: 来来来のチャンポン
-author: aiza_wai
-type: post
-date: 2011-04-09T04:16:05+09:00
-url: /82/rairairai-chanpon/
-featured_image: /wp-content/uploads/2011/04/a58a1761ff55b72ee189af985ad4a5b6.png
-pvc_views:
-  - 3295
-topsy_short_url:
-  - http://bit.ly/ZYzvJP
-page_layout:
-  - col1
-scc_share_count_twitter:
-  - -1
-scc_share_count_facebook:
-  - -1
-scc_share_count_crawldate:
-  - 2020/02/11 06:38:55
-categories:
-  - 食
-
+description: 三軒茶屋にはチャンポン屋がいっぱい。「来来来」でオーソドックスなチャンポンを食べたきました。
+createdAt: 2011-04-09T04:16:05+09:00
+updatedAt: 2011-04-09T04:16:05+09:00
+imageFormat: png
+category: 雑記
+tags:
+  - 雑記
+  - 飲食店
 ---
-三軒茶屋にはチャンポン屋がいっぱい。チャンポン屋で「来来来」でオーソドックスなチャンポンを食べたきました。
 
-<div class="photo al-c m10-t m10-b">
-  <div style="width: 410px" class="wp-caption aligncenter">
-    <img class="attachment-medium" title="image_8" src="https://mujiota.com/wp-content/uploads/2011/04/image_8-400x300.jpg" alt="来来来のチャンポン" width="400" height="300" />
-    
-    <p class="wp-caption-text">
-      来来来のチャンポン
-    </p>
-  </div>
-  
-  <div style="width: 410px" class="wp-caption aligncenter">
-    <img class="attachment-medium" title="image_9" src="https://mujiota.com/wp-content/uploads/2011/04/image_9-400x300.jpg" alt="路地裏にひっそりと佇む店舗" width="400" height="300" />
-    
-    <p class="wp-caption-text">
-      路地裏にひっそりと佇む店舗
-    </p>
-  </div>
-</div>
+<photo-image article-id="82" img-file-name="image_8.jpeg" caption="来来来のチャンポン"></photo-image>
 
-ここは帰り道だけど、路地裏なもんで、今まで気が付かなかった。チャンポン屋「長崎」の方が、個人的には、余計な味がなくて好きでした。食べログでは、<a href="http://tabelog.com/tokyo/A1317/A131706/13001390/" target="_blank">来来来</a>の方が評価高いですね。
+<photo-image article-id="82" img-file-name="image_9.jpeg" caption="路地裏にひっそりと佇む店舗"></photo-image>
+
+お店の場所は帰り道の途中でしたが、路地裏なのでこれまでお店の存在に気付かなかったです。チャンポン屋「長崎」の方が個人的には余計な味がなくて好きでした。食べログでは来来来の方が評価高いですね。
+
+<external-link title="食べログ" note="來來來 (三軒茶屋/ちゃんぽん)" link="https://tabelog.com/tokyo/A1317/A131706/13001390/" img-file-name="tabelog.png"></external-link>
