@@ -1,17 +1,18 @@
-<template>
-  <div>id</div>
-</template>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    let article = ''
+  async asyncData({ $content, params, redirect }) {
+    let articles = []
     try {
-      article = await $content('articles', params.id).fetch()
-      // TODO:slugページへリダイレクト
+      articles = await $content('articles', params.id, { deep: true }).fetch()
+      if (articles.length === 1) {
+        const article = articles[0]
+        redirect(301, `/${article.id}/${article.slug}`)
+      } else {
+        redirect(301, `/`)
+      }
     } catch {
-      // TODO:無い場合はリダイレクト
+      redirect(301, `/`)
     }
-    return { article }
   },
 }
 </script>
