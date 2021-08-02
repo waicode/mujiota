@@ -102,7 +102,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin-top: 40px;
   margin-bottom: 40px;
   > *:not(:last-child) {
     margin-right: 40px;
