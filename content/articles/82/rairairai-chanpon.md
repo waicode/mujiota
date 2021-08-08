@@ -18,4 +18,4 @@ tags:
 
 お店の場所は帰り道の途中でしたが、路地裏なのでこれまでお店の存在に気付かなかったです。チャンポン屋「長崎」の方が個人的には余計な味がなくて好きでした。食べログでは来来来の方が評価高いですね。
 
-<external-link title="食べログ" note="來來來 (三軒茶屋/ちゃんぽん)" link="https://tabelog.com/tokyo/A1317/A131706/13001390/" img-file-name="tabelog.png"></external-link>
+<external-link title="食べログ" note="來來來(三軒茶屋/ちゃんぽん)" link="https://tabelog.com/tokyo/A1317/A131706/13001390/" img-file-name="tabelog.png"></external-link>

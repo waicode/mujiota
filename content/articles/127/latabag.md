@@ -13,7 +13,7 @@ tags:
 
 思わず、噛んでしまいそうな名前です。
 
-<external-link title="食べログ" note="ベーカーバウンス (西太子堂/ハンバーガー)" link="http://r.tabelog.com/tokyo/A1317/A131706/13004780/" img-file-name="tabelog.png"></external-link>
+<external-link title="食べログ" note="ベーカーバウンス(西太子堂/ハンバーガー)" link="http://r.tabelog.com/tokyo/A1317/A131706/13004780/" img-file-name="tabelog.png"></external-link>
 
 しっかりラタトゥイユの味してました…！ラタトゥイユって何？って方のために。
 
