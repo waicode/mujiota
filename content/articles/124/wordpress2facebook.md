@@ -1,7 +1,7 @@
 ---
 id: 124
 slug: wordpress2facebook
-title: WordPressとFacebookの連携はWordBookerで（追記：現在は使用不可）
+title: WordPressとFacebookの連携はWordBookerで（追記：現在は利用不可）
 description: WordBookerというプラグインを使ってWordPressとFacebookの連携に成功しました。（注意：現在は使えなくなったため、別の連携方法を記載しています。）
 createdAt: 2011-04-26T14:00:36+09:00
 updatedAt: 2016-05-08T12:12:16+09:00
