@@ -27,7 +27,7 @@ tags:
 
 ３つとも標準アプリです。いきなり、普通ですいません。電話とメールはやはり高頻度で使うので、Dockに配置しています。Safariは実のところ使用頻度はそこまで高く無いのですが、iPhoneにした当初からこの場所に配置していました。ブラウザの位置はココ！って脳にインプットされているため、同じ場所に居座っています。
 
-Dockの右端は王道Todoアプリの<strong>「Appigo Todo」</strong>です。（追記：サービス終了のためリンクを外しました）
+Dockの右端は王道Todoアプリの<strong>「Appigo Todo」</strong>です。（追記：アプリ公開終了のためリンクを外しました）
 
 iPhoneデビューした2010年9月頃からの付き合いで、これまで、ずっと愛用しています。AppigoのTodoはUIがシンプルかつ直感的で、個人的にはかなり使いやすいです。「いつでもどこでも更新できる」ようにしたい、タスクの同期ができる事が大前提。AppigoのTodoは<strong>Toodledoとの連携機能</strong>を持っています。
 
@@ -61,7 +61,7 @@ Todoは基本的には「やらなければならない事」で埋まります�
 
 黒い方はちょっとしたメモ用に、青い方はtwitterへの最速つぶやき用に使っています。正直に話すと、左上に2個陣取るほどの頻度では使っていないのですが、アイコンのデザインが好みなので、完全に自己満足で贅沢にも２個並びです。
 
-twitterクライアントは<strong>「Osfoora」</strong>です。（追記：サービス終了のためリンクを外しました）
+twitterクライアントは<strong>「Osfoora」</strong>です。（追記：アプリ公開終了のためリンクを外しました）
 
 デザインと起動速度の２点がお気に入り。SMS/MMSのアイコンと一緒にならべると、まるで標準アプリとして存在しているかのような佇まい。
 
@@ -99,7 +99,7 @@ Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をし�
 
 チェックインしたくなった時に、押しやすい場所にという事で、最近ホーム画面に格上げされました。**foursquare**は、誰かフレンドがチェックインした時にプッシュ通知されるのが地味に好きです。
 
-さらにその右、右端は<strong>「MetaClock」</strong>です。（追記：サービス終了のためリンクを外しました）
+さらにその右、右端は<strong>「MetaClock」</strong>です。（追記：アプリ公開終了のためリンクを外しました）
 
 その日の予定をアナログ時計とともに、スタイリッシュに表示。見ていると、何かが研ぎ澄まされるような気になるような美しさ。
 
@@ -109,86 +109,52 @@ Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をし�
 
 ## １ページ目、３段目
 
-<!-- todo: ここから -->
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_3.png" caption="１ページ目の３段目"></capture-image>
 
-<div id="attachment_287" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-287" class="wp-image-287 size-full" title="１ページ目の３段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_3.png" alt="１ページ目の３段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_3.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_3-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-287" class="wp-caption-text">
-    １ページ目の３段目
-  </p>
-</div>
+３つは標準アプリです。
 
-３つは標準アプリ。
-
-  * 設定
-  * App Store
-  * カレンダー
+* 設定
+* App Store
+* カレンダー
 
 設定変更はちょいちょい行っています。AppStoreもちょいちょい見てインストール。カレンダーは、無料の有料のといろいろ使ってみましたが、現状は標準カレンダーに落ち着きました。実はカレンダーはGoogleカレンダーをWebブラウザで見る事が多い。iPhoneではあまり見る習慣が無かったりします。
 
-そんな私にとって、この標準カレンダーの素晴らしい点は、なんといっても<span class="b">アイコンに日付と曜日が表示される</span>こと。この標準アプリならではのちょっとずるい機能は、ホーム画面に置くのに十分すぎる理由です。
+この標準カレンダーの素晴らしい点は、なんといっても<strong>アイコンに日付と曜日が表示される</strong>こと。標準アプリだからできるアイコン仕様は、ホーム画面に置くのに十分すぎる理由です。
 
-右から２番目は、**連絡先＋**です。
+右から２番目は、**連絡先＋**です。（追記：アプリ公開終了のためリンクを外しました）
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id415468221?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a4.mzstatic.com/us/r1000/093/Purple/32/36/84/mzi.syimlncl.png" width="75" align="left" hspace="6" /><b>連絡先＋</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ユーティリティ<br /> 価格: ￥115
-</p>
+今のところ、連絡先管理はこのアプリが最も秀逸だと思います。<strong>ドラッグ＆ドロップで分類分け</strong>できたり、<strong>グループのアイコンを自分で作って色分け</strong>までできたり、シンプルに表示しながらもカスタマイズ性が高くて言う事なし。
 
-今のところ、連絡先管理はこのアプリが最も秀逸だと思います。<span class="underline">ドラッグ＆ドロップで分類分け</span>できたり、<span class="underline">グループのアイコンを自分で作って色分け</span>までできたり、シンプルに表示しながらもカスタマイズ性が高くて言う事なし。
+## １ページ目、４段目
 
-### <span id="i-4">１ページ目、４段目！</span> {.m60-t.m40-b}
-
-<div id="attachment_288" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-288" class="wp-image-288 size-full" title="１ページ目の４段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_4.png" alt="１ページ目の４段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_4.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_1_4-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-288" class="wp-caption-text">
-    １ページ目の４段目
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_4.png" caption="１ページ目の４段目"></capture-image>
 
 ４段目はDockに近くて押しやすいこともあり、高頻度のアプリを配置しています。
 
 真ん中の２個は標準アプリ。
 
-  * 写真
-  * マップ
+* 写真
+* マップ
 
-写真閲覧もいろいろなアプリを試しましたが、閲覧に限っては標準アプリがなんだかんだで一番使いやすかったです。2ページ目に置いている**PictShare**をここに置いてもいいかなとも思ったりしてます。マップは言わずもがなですね。すごーくよく使います。
+写真閲覧もいろいろなアプリを試しましたが、閲覧に限っては標準アプリがなんだかんだで一番使いやすかったです。マップは言わずもがなで、よく使います。
 
-そして、ホーム画面の最下段の一番左はカメラアプリの場所。ここは結構な頻度で変わってきましたが、現状のホームカメラアプリは**静音シャッターカメラ 〜超高速動作バージョン〜**です。
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id440995940?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a4.mzstatic.com/us/r1000/090/Purple/3d/ef/86/mzi.mbswqrkt.png" width="75" align="left" hspace="6" /><b>静音シャッターカメラ 〜超高速動作バージョン〜</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 写真<br /> 価格: ￥115
-</p>
+そして、ホーム画面の最下段の一番左はカメラアプリの場所。ここは結構な頻度で変わってきましたが、現状のホームカメラアプリは**静音シャッターカメラ 〜超高速動作バージョン〜**です。（追記：アプリ公開終了のためリンクを外しました）
 
 アップデートして起動やその他もろもろの動きが遅くなった静音シャッターカメラの高速版。ズーム等はできませんが、機能排除した分、<span class="b">起動も撮影も保存もとにかく早い！</span>気に入っています。アイコンのデザイン以外は。
 
-そして最下段の右端はもう一つのタスク管理アプリ、**GeeTasks**。
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/geetasks-the-google-tasks-app/id327744271?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/025/Purple/2b/64/b8/mzi.yvrthmvi.png" width="75" align="left" hspace="6" /><b>GeeTasks, the Google Tasks app</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 仕事効率化<br /> 価格: ￥350
-</p>
+そして最下段の右端はもう一つのタスク管理アプリ、**GeeTasks**。（追記：アプリ公開終了のためリンクを外しました）
 
 700円（Pro）、350円、無料版の３つがあります。無料版だとオフラインで操作ができないので、しっかり使うなら350円版がオススメです。
 
-Pro版はGoogle Appsのアカウントも使えます。個人利用なら、350円で十分。
+Pro版はGoogle Appsのアカウントも使えます。個人利用なら、350円で十分。DockのTodoアプリと縦に並べて、タスク管理系アプリは右下に集中させています。
 
-DockのTodoアプリと縦に並べて、タスク管理系アプリは右下に集中させています。
+GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してくれる、タスク管理アプリで、Appigo Todoと比べると細かい設定はできないものの、その分、<strong>非常に少ないステップでTodo登録を実現</strong>できます。このGeeTasksは特に「期限設定のUI」が秀逸で、タイトル入力と同時にわずか１タップで登録が完了します。
 
-GeeTasksは<span class="b">GoogleカレンダーのTodoと完全同期</span>してくれる、タスク管理アプリで、Appigo Todoと比べると細かい設定はできないものの、その分、<span class="b">非常に少ないステップでTodo登録を実現</span>できます。このGeeTasksは特に<span class="b">期限設定のUI</span>が秀逸で、タイトル入力と同時にわずか１タップで登録が完了します。
+<capture-image article-id="273" img-file-name="20110626_geetasks.png" caption="GeeTasksの新規登録時"></capture-image>
 
-<div id="attachment_283" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-283" class="wp-image-283 size-full" title="GeeTasksの新規登録時" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_geetasks.png" alt="GeeTasksの新規登録時" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_geetasks.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_geetasks-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-283" class="wp-caption-text">
-    GeeTasksの新規登録時
-  </p>
-</div>
+非常に登録が楽なので、住み分けとしては、期限が１０日以内で緊急性が高く、確実に実施しなければならないようなタスクはこっちに登録しています。
 
-非常〜に登録が楽なので、住み分けとしては、期限が１０日以内で緊急性が高く、確実に実施しなければならないようなタスクはこっちに登録しています。
-
-### <span id="i-5">２ページ目突入。１段目！</span> {.m60-t.m40-b}
+## ２ページ目、１段目
 
 <div id="attachment_289" style="width: 330px" class="wp-caption aligncenter">
   <img aria-describedby="caption-attachment-289" class="wp-image-289 size-full" title="２ページ目の１段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1.png" alt="２ページ目の１段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
