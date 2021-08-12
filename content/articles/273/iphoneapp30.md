@@ -156,41 +156,21 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 ## ２ページ目、１段目
 
-<div id="attachment_289" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-289" class="wp-image-289 size-full" title="２ページ目の１段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1.png" alt="２ページ目の１段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_1-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-289" class="wp-caption-text">
-    ２ページ目の１段目
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_1.png" caption="２ページ目の１段目"></capture-image>
 
-ここも是非とも紹介したい、使用頻度というか確認頻度が高いアプリ。左の３つは<span class="b">アイコンバッチ利用系アプリ</span>です。
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/countcon-countdowns-on-your/id438041955?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a4.mzstatic.com/us/r1000/031/Purple/38/0d/85/mzi.dwpxhojb.png" width="75" align="left" hspace="6" /><b>CountCon &#8212; Countdowns on your Homescreen Icon!</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 仕事効率化<br /> 価格: ￥115
-</p>
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id441048839?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/061/Purple/74/12/23/mzi.dedpzkon.png" width="75" align="left" hspace="6" /><b>降水確率</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 天気<br /> 価格: ￥115
-</p>
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/celsius-weather-temperature/id426940482?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/020/Purple/b5/e1/4e/mzi.ruojxsez.png" width="75" align="left" hspace="6" /><b>Celsius &#8211; Weather & Temperature on your Home Screen</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 天気<br /> 価格: ￥115
-</p>
+ここも是非とも紹介したい、使用頻度というか確認頻度が高いアプリ。左の３つは<strong>アイコンバッチ利用系アプリ</strong>です。
 
 **降水確率**、アイコンもさることながら、<span class="underline">朝にその日の降水確率がプッシュされるのが地味に便利</span>すぎます。梅雨の季節は重宝しました。12時と18時のはプッシュされない設定にできれば尚良い。
 
 **Celsius**は気温を表示。こっちも地味に便利ですよ〜
 
-ただ、上記のアプリは定期的にバッチアイコンを更新にいくため、<span class="underline">iPhoneの電池の減りが通常よりも早くなる傾向</span>があります。その点はご了承ください。
+ただ、上記のアプリは定期的にバッチアイコンを更新にいくため、<strong>iPhoneの電池の減りが通常よりも早くなる傾向</strong>があります。その点はご了承ください。
 
-一番左側の**CountCon**はタイマーを設定したら、アイコンバッチを使ってカウントダウンできるアプリです。秒、分、時、日で設定可能。まぁ、ぶっちゃけほとんど使っていないのですが、アイコンバッチ利用系アプリで並べてかったのでここに置いてます。笑　アイコンも素敵。
+一番左側の**CountCon**はタイマーを設定したら、アイコンバッチを使ってカウントダウンできるアプリです。秒、分、時、日で設定可能。ほとんど使っていないのですが、アイコンバッチ利用系アプリで並べてかったのでここに置いてます。アイコンも素敵。
 
-最上段右端はご存知の**乗換案内**！
+最上段右端は有名な**乗換案内**。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id299490481?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a3.mzstatic.com/us/r1000/107/Purple/ea/02/47/mzi.wpxxkgko.png" width="75" align="left" hspace="6" /><b>乗換案内</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ナビゲーション<br /> 価格: 無料
-</p>
+<external-link title="乗換案内 for iOS" note="毎月2億回以上使われている経路検索！" link="https://www.jorudan.co.jp/iphone/norikae/" img-file-name="norikaeannai.png"></external-link>
 
 まぁ、このアプリは使いますよね。
 
