@@ -4,7 +4,6 @@ slug: iphoneapp30
 title: 機能美とデザインで選ぶ、オススメiPhoneアプリ30選
 description: 数えてみたら、標準アプリ抜きで2ページでぴったり30個ありました。ホーム画面をさらしながら、ヘビーユースなiPhoneアプリを紹介します。
 createdAt: 2011-06-26T23:00:50+09:00
-updatedAt: 2011-06-26T23:00:50+09:00
 imageFormat: png
 category: 生活術
 tags:
@@ -45,7 +44,7 @@ Googleカレンダーへの表示はできなくなったものの<span class="l
 
 Todoは基本的には「やらなければならない事」で埋まります。MUSTばかり登録していると、タスク管理自体が嫌いになってしまう可能性があります。増えたら嬉しい事もTodoアプリで管理して、タスク管理自体のMotivationをアップさせる作戦です。いまのところ、この作戦はいい感じで回っています。
 
-### 最初のページの１段目
+## 最初のページの１段目
 
 <capture-image article-id="273" img-file-name="20110626_iPhone_home_1_1.png" caption="１ページ目の１段目"></capture-image>
 
@@ -71,7 +70,7 @@ twitterクライアントは<strong>「Osfoora」</strong>です。（追記：�
 
 「SMS/MMS＝１ページ目の右上」で定着してます。
 
-### １ページ目、２段目
+## １ページ目、２段目
 
 <capture-image article-id="273" img-file-name="20110626_iPhone_home_1_2.png" caption="１ページ目の２段目"></capture-image>
 
@@ -83,7 +82,7 @@ iPhone版に加え、iPad版もMac版も使っています。iPad2はReederを�
 
 <external-link title="REEDER5" note="YOUR NEWS READER." link="https://reederapp.com/" img-file-name="reeder5.png"></external-link>
 
-RSSについては、当ブログの[RSS登録ページ][1]にちょっとした仕組みの解説を載せているのでよければどうぞ。RSSを使ってからと言うもの、情報のインプット量が飛躍的に向上しました。
+RSSを使ってからと言うもの、情報のインプット量が飛躍的に向上しました。
 
 そのとなりは、あとで読むアプリの<strong>「Instapaper」</strong>です。気になる記事をReederから飛ばしてキャッシュすれば、オフラインでも記事が読めるようになります。
 
@@ -160,13 +159,13 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 ここも是非とも紹介したい、使用頻度というか確認頻度が高いアプリ。左の３つは<strong>アイコンバッチ利用系アプリ</strong>です。
 
-**降水確率**、アイコンもさることながら、<span class="underline">朝にその日の降水確率がプッシュされるのが地味に便利</span>すぎます。梅雨の季節は重宝しました。12時と18時のはプッシュされない設定にできれば尚良い。
+**降水確率**、アイコンもさることながら、<strong>朝にその日の降水確率がプッシュされるのが便利</strong>です。梅雨の季節は重宝しました。12時と18時のはプッシュされない設定にできれば尚良い。（追記：アプリ公開終了のためリンクを外しました）
 
-**Celsius**は気温を表示。こっちも地味に便利ですよ〜
+**Celsius**は気温を表示。地味に便利です。（追記：アプリ公開終了のためリンクを外しました）
 
-ただ、上記のアプリは定期的にバッチアイコンを更新にいくため、<strong>iPhoneの電池の減りが通常よりも早くなる傾向</strong>があります。その点はご了承ください。
+ただ、上記のアプリは定期的にバッチアイコンを更新にいくため、<strong>iPhoneの電池の減りが通常よりも早くなる傾向</strong>があります。電池残量を気にされる方は、ご注意ください。
 
-一番左側の**CountCon**はタイマーを設定したら、アイコンバッチを使ってカウントダウンできるアプリです。秒、分、時、日で設定可能。ほとんど使っていないのですが、アイコンバッチ利用系アプリで並べてかったのでここに置いてます。アイコンも素敵。
+一番左側の**CountCon**はタイマーを設定したら、アイコンバッチを使ってカウントダウンできるアプリです。秒、分、時、日で設定可能。ほとんど使っていないのですが、アイコンバッチ利用系アプリで並べてかったのでここに置いてます。アイコンも素敵。（追記：アプリ公開終了のためリンクを外しました）
 
 最上段右端は有名な**乗換案内**。
 
@@ -174,164 +173,73 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 まぁ、このアプリは使いますよね。
 
-### <span id="i-6">２ページ目、２段目！</span> {.m60-t.m40-b}
+## ２ページ目、２段目
 
-<div id="attachment_290" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-290" class="wp-image-290 size-full" title="２ページ目の２段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_2.png" alt="２ページ目の２段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_2.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_2-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-290" class="wp-caption-text">
-    ２ページ目の２段目
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_2.png" caption="２ページ目の２段目"></capture-image>
 
 左の２個はアプリ探す系。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/discovr-apps-discover-new/id440101665?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/076/Purple/91/75/67/mzi.edxnzpqd.png" width="75" align="left" hspace="6" /><b>Discovr Apps &#8211; discover new apps</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: エンターテインメント<br /> 価格: ￥115
-</p>
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/apfan/id403700248?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a4.mzstatic.com/us/r1000/020/Purple/55/a9/86/mzi.hpnbpiek.png" width="75" align="left" hspace="6" /><b>ApFan!</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 仕事効率化<br /> 価格: 無料
-</p>
-
 **Discover App** はアイコンから探し方まで、とにかくカッコイイので満足していますが、アプリ探しで本当にお世話になっているのは**AppFan**アプリ。これで無料とは驚きです。かなり付加価値の高いアプリだと思います。
 
-そして右から２番目、おしゃれな自分まとめ日記を作れる**Momento**！これも、かなーりオススメなアプリです。
+そして右から２番目、おしゃれな自分まとめ日記を作れる**Momento**です。MomentoはSNSサービスやFeedを利用して自分のダイアリーを作成することができるアプリです。私は、このブログを含めて以下のサービスを連携しています。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/momento-diary-journal/id347019672?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a4.mzstatic.com/us/r1000/040/Purple/cb/1e/a0/mzi.vrnxwowu.png" width="75" align="left" hspace="6" /><b>Momento (Diary/Journal)</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ライフスタイル<br /> 価格: ￥350
-</p>
+<capture-image article-id="273" img-file-name="20110626_moments2.png" caption="Momento"></capture-image>
 
-MomentoはSNSサービスやFeedを利用して、自分のダイアリーを作成することができるアプリです。私は、無印発信を含めて以下のサービスを連携しています。
-
-<div id="attachment_280" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-280" class="wp-image-280 size-full" title="Momento" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_moments2.png" alt="Momento" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_moments2.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_moments2-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-280" class="wp-caption-text">
-    Momento
-  </p>
-</div>
-
-<div id="attachment_281" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-281" class="wp-image-281 size-full" title="Momento Sample" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_moments.png" alt="Momento Sample" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_moments.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_moments-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-281" class="wp-caption-text">
-    Momento Sample
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_moments.png" caption="Momento Sample"></capture-image>
 
 基本的には今と未来に重きを起きて人生を突き進んでいますが、たまには、過去を見て一喜一憂したりします。見返す際、自分のログはまとまっていると振り返りやすいですよね。
 
-そして右端は**Instagram**！
+右端は**Instagram**です。気が向いたら加工してアップしてます。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/instagram/id389801252?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a3.mzstatic.com/us/r1000/014/Purple/36/40/5a/mzi.ofxwcjsx.png" width="75" align="left" hspace="6" /><b>Instagram</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 写真<br /> 価格: 無料
-</p>
+<external-link title="Instagram" note="クリエイティブな写真や動画を簡単に撮影・編集して、友達や家族とシェアしよう。" link="https://www.instagram.com/?hl=ja" img-file-name="instagram.png"></external-link>
 
-気が向いたら加工してアップしてます。
+## ２ページ目、３段目
 
-### <span id="i-7">２ページ目、３段目！</span> {.m60-t.m40-b}
-
-<div id="attachment_291" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-291" class="wp-image-291 size-full" title="２ページ目の３段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_3.png" alt="２ページ目の３段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_3.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_3-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-291" class="wp-caption-text">
-    ２ページ目の３段目
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_3.png" caption="２ページ目の３段目"></capture-image>
 
 ここはiPhoneからのブログ更新用アプリのための場所。まだiPhoneからのブログ更新を習慣化できていないのですが、いずれは環境を整備して実現したいということで。
 
-**するぷろ**はiPhoneからブログ更新するためのアプリ。
+**するぷろ**はiPhoneからブログ更新するためのアプリ。（追記：アプリ公開終了のためリンクを外しました）
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id436676299?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/084/Purple/68/e0/4e/mzi.eoreywbi.png" width="75" align="left" hspace="6" /><b>するぷろ for iPhone</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ソーシャルネットワーキング<br /> 価格: ￥350
-</p>
-
-これから使いこなす！予定。
-
-そして、神アプリとして名高い画像連携用アプリの**PictShare**。
+そして、神アプリとして名高い画像連携用アプリの**PictShare**。（追記：アプリ公開終了のためリンクを外しました）
 
 今はブログ更新用としてここに置いていますが、このアプリはいずれホーム画面に行き濃厚。本記事に載せてある、ホーム画面画像もiPhoneのスクリーンショットで撮影したものを、このPictShareでPicasaへアップロードして、本ブログへ載せています。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/pictshare-multiple-photos/id390945637?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/112/Purple/83/eb/2a/mzi.bdpfiiky.png" width="75" align="left" hspace="6" /><b>PictShare &#8211; multiple photos/movies uploader</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ソーシャルネットワーキング<br /> 価格: ￥230
-</p>
-
 **モノ撮りカメラ**も大変重宝しています。iPhoneで撮影した写真をブログに載せるときはコレで加工。
 
-最近アップデートされてさらに使いやすくなりました。<span class="b">少ないステップ</span>で、ぼかしの効いた綺麗な加工写真が作れます。
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id379916471?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/106/Purple/15/c2/84/mzi.yzydrrtx.png" width="75" align="left" hspace="6" /><b>モノ撮りカメラ &#8211; MonotoriCamera &#8211;</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 写真<br /> 価格: ￥115
-</p>
+最近アップデートされてさらに使いやすくなりました。<strong>少ないステップ</strong>で、ぼかしの効いた綺麗な加工写真が作れます。（追記：アプリ公開終了のためリンクを外しました）
 
 かんたん設定をON／OFFで切り替える事ができ、OFFにすると、より詳細な設定ができますが、私はかんたん設定ONで「写真選択⇒写真タッチ（焦点以外をぼかし）」の作業のみで加工します。簡単かつ少ないステップで、それなり以上のクオリティを出せるのが素晴らしいです。
 
-右端のフォルダは、入力補助系アプリをまとめています。
+右端のフォルダは、入力補助系アプリをまとめています。（追記：アプリ公開終了のためリンクを外しました）
 
-<div id="attachment_282" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-282" class="wp-image-282 size-full" title="入力補助フォルダ" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_textinput.png" alt="入力補助フォルダ" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_textinput.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_textinput-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-282" class="wp-caption-text">
-    入力補助フォルダ
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_textinput.png" caption="入力補助フォルダ"></capture-image>
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id306973286?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a5.mzstatic.com/us/r1000/041/Purple/26/26/a4/mzi.cbwtzgrb.png" width="75" align="left" hspace="6" /><b>MY辞書登録</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ユーティリティ<br /> 価格: ￥115
-</p>
-
-<a href="http://itunes.apple.com/jp/app/textexpander/id326180690?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/004/Purple/28/4c/0e/mzi.xocrewuv.png" width="75" align="left" hspace="6" /><b>TextExpander</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 仕事効率化  
-価格: ￥600
-
-<a href="http://itunes.apple.com/jp/app/id344614116?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/012/Purple/d8/58/75/mzi.potyepvd.png" width="75" align="left" hspace="6" /><b>Pastebot — コピー＆ペースト強化ソフト</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: 仕事効率化  
-価格: ￥450
-
-<a href="http://itunes.apple.com/jp/app/id332035344?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a5.mzstatic.com/us/r1000/049/Purple/cd/2a/2d/mzi.wdifeltp.png" width="75" align="left" hspace="6" /><b>定型文入力-TextClip Anywhere</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ユーティリティ  
-価格: ￥115
-
-まだまだ使いこなしたと言える日は遠い今日この頃ですが、使いこなしたいのが「**T<span class="b">extExpander</span>**」です。
+まだまだ使いこなしたと言える日は遠い今日この頃ですが、使いこなしたいのが<strong>TextExpander</strong>です。
 
 辞書登録と異なり、登録したKeyを打鍵した瞬間にバルーンが弾けるような音とともに、テキストが置換される機能を持ったこのアプリ。改行等を含めた文字列に置換できるので、よく使うhtmlタグを準備しておけば、iPhoneでもそれなりに快適にブログが書けるようになるはず。
 
 いろいろと模索中です。
 
-### <span id="i-8">最後に、２ページ目の最下段！</span> {.m60-t.m40-b}
+## 最後に、２ページ目の最下段
 
-<div id="attachment_292" style="width: 330px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-292" class="wp-image-292 size-full" title="２ページ目の４段目" src="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_4.png" alt="２ページ目の４段目" width="320" height="480" srcset="https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_4.png 320w, https://mujiota.com/wp-content/uploads/2011/06/20110626_iPhone_home_2_4-266x400.png 266w" sizes="(max-width: 320px) 100vw, 320px" />
-  
-  <p id="caption-attachment-292" class="wp-caption-text">
-    ２ページ目の４段目
-  </p>
-</div>
+<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_4.png" caption="２ページ目の４段目"></capture-image>
 
 いよいよ最後です。ここまで長かった。左側３つは、ログ系WebサービスのiPhoneアプリ版です。
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id359066582?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a2.mzstatic.com/us/r1000/114/Purple/65/1a/56/mzi.rrqpxflz.png" width="75" align="left" hspace="6" /><b>ブクログ</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ライフスタイル<br /> 価格: 無料
-</p>
+<external-link title="ブクログ" note="本の感想や評価をチェックしたり、感想やレビューを書いたり、読書の管理・記録をすることができます。" link="https://booklog.jp/" img-file-name="booklog.png"></external-link>
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id288210303?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/053/Purple/b8/69/4c/mzi.bmtbwleg.png" width="75" align="left" hspace="6" /><b>食べログ</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ライフスタイル<br /> 価格: 無料
-</p>
+<external-link title="食べログ" note="独自のランキングやユーザーの口コミ・写真をもとに、人気のレストランや目的や予算にぴったりのお店が見つけられます。" link="https://tabelog.com/" img-file-name="tabelog.png"></external-link>
 
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id340368403?mt=8&uo=4" target="_blank" rel="nofollow"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/041/Purple/15/3c/d2/mzi.frikggzy.png" width="75" align="left" hspace="6" /><b>クックパッド</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ライフスタイル<br /> 価格: 無料
-</p>
+<external-link title="クックパッド" note="日本最大の料理レシピサービス。356万品を超えるレシピ、作り方を検索できる。" link="https://cookpad.com/" img-file-name="cookpad.png"></external-link>
 
-**ブクログ**は非常にお世話になっていますが、レビュー書く時はPCって事もあり、このアプリでの確認は稀。
+**ブクログ**はレビュー書く時はPCなので、スマホアプリで確認することはまれです。
 
-**食べログ**は非常〜によく使っていますね。プレミアム会員制度を取り入れて、無料会員だと点数順が表示されなくなってバッシングウケまくりだった食べログですが、それを差し引いても、やっぱり便利。外で食べる時は、食べログ3.5以上を一つの指標に店を選ぶと固い。経験則として、3.5を超えていれば「外れ」は無いと思っています。
+**食べログ**は非常によく使っています。プレミアム会員制度を取り入れてからは、無料会員では点数順が表示されなくなってバッシングを受けまくりだった食べログで。それを差し引いても、やっぱり便利。外で食べる時は、食べログ3.5以上を一つの指標に店を選ぶと固い。経験則として、3.5を超えていれば「ハズレ」は無いと思っています。
 
-**クックパッド**もWEB上でブックマークしたレシピをここで確認できれば、料理中に閲覧できて非常〜に便利なのですが、それはプレミアム会員だけの特権…無料会員の私は利用頻度は若干低め。
+**クックパッド**もWEB上でブックマークしたレシピをここで確認できれば、料理中に閲覧できて便利なのですが、それはプレミアム会員だけの特権です。無料会員なので、利用頻度は低めです。
 
-最後の紹介アプリは、最近インストールした**コーヒー生活**。
-
-<p class="m10-t m20-b">
-  <a href="http://itunes.apple.com/jp/app/id413845718?mt=8&uo=4" target="_blank" rel="nofollow" class="broken_link"><img style="margin-right: 6px;" src="http://a1.mzstatic.com/us/r1000/017/Purple/c8/5f/3b/mzi.gpakgczk.png" width="75" align="left" hspace="6" /><b>コーヒー生活</b> <img style="vertical-align: text-bottom;" src="http://ax.phobos.apple.com.edgesuite.net/ja_jp/images/web/linkmaker/badge_appstore-sm.gif" alt="App" /><br /> </a>カテゴリ: ナビゲーション<br /> 価格: ￥115
-</p>
+最後の紹介アプリは、最近インストールした**コーヒー生活**というアプリ。（追記：アプリ公開終了のためリンクを外しました）
 
 コーヒー好きなら、このアプリは落としておいて損は無いと思います。
 
@@ -339,8 +247,16 @@ MomentoはSNSサービスやFeedを利用して、自分のダイアリーを作
 
 以上、がっつりアプリ紹介させて頂きました。
 
-振り返ってみると、利用頻度よりも<span class="b">機能美</span>とか<span class="b">デザイン</span>とか、あとはアプリ同士の関連性とか、そういったものを重視してアプリを配置している自分に改めて気が付きました。少しでも、参考になるものがあったのであれば幸いです。
+振り返ってみると、利用頻度よりも<strong>機能美</strong>や<strong>デザイン</strong>、アプリの関連性を重視して配置していることに改めて気が付きました。少しでも、参考になるものがあったのであれば幸いです。
 
-当然ながらアプリの配置は流動的なものなので、ホーム画面が様変わりして、気が向いたら、また晒したいと思います。
+アプリの配置は流動的です。ホーム画面が様変わりして、気が向いたら、また晒したいと思います。
 
- [1]: https://mujiota.com/rss-regist/
+* * *
+
+追記です。（2021年8月）
+
+Vue/Nuxtへの移行に伴いおよそ10年ぶりに記事を見直してみたら、およそ9割のアプリは公開終了していました。
+
+スマホアプリは世に出て間もなかったので技術の変化も激しく、年々新しいOSに対応するのが大変なのがよく分かります。iOSアプリを公開し続けるために「Apple Developer Program」の登録料を年額99ドル支払う必要があるので、マネタイズできていないと公開し続けるのも大変です。
+
+特に個人開発の場合、ローンチ後の維持コストはなるべく減らしたいところ。過去にいくつかスマホアプリをつくってみて、その技術を知れたことは糧となりましたが、長い目で見ると「Web開発」に注力した方が良かったなと、今になって少し後悔しています。
