@@ -44,7 +44,7 @@ Googleカレンダーへの表示はできなくなったものの<span class="l
 
 Todoは基本的には「やらなければならない事」で埋まります。MUSTばかり登録していると、タスク管理自体が嫌いになってしまう可能性があります。増えたら嬉しい事もTodoアプリで管理して、タスク管理自体のMotivationをアップさせる作戦です。いまのところ、この作戦はいい感じで回っています。
 
-## 最初のページの１段目
+## １ページ目、１段目
 
 <capture-image article-id="273" img-file-name="20110626_iPhone_home_1_1.png" caption="１ページ目の１段目"></capture-image>
 
