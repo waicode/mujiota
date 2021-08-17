@@ -30,13 +30,13 @@ tags:
 
 Apple製品の中ではどちらかと言うと知名度が低いApple TV。ですが、定価8800円という低価格の割に、私たちのライフスタイルに非常に大きなインパクトを与えてくれます。
 
-<photo-image article-id="319" img-file-name="220110831_appleTV_bose_2.jpg" caption="Apple TV"></photo-image>
+<photo-image article-id="319" img-file-name="20110831_appleTV_bose_2.jpg" caption="Apple TV"></photo-image>
 
 Apple TVを使って「できる事」の概要を以下に抜粋します。
 
 1. 高画質（HD画質）の映画等をテレビから直接レンタルできる（有料）
 2. YouTube、Flickr…等のサービスをテレビから利用できる
-3. <strong>PCのiTunesに保存している写真、音楽、ビデオをテレビで再生できる</ｓ>
+3. <strong>PCのiTunesに保存している写真、音楽、ビデオをテレビで再生できる</strong>
 4. iPhone/iPad/iPod touch のコンテンツを、テレビ上に映す事ができる
 
 Apple TVの機能で特にオススメなのが、上記の3番目に挙げた、<strong>iTunes上のコンテンツをテレビで再生できる機能</strong>です。
@@ -49,7 +49,7 @@ PCに保存されている音楽やビデオをインターネットの無線環
 
 お金をそこまでかけたくない場合はこれだけでもOKなのですが、このままの状態ですと、再生される音楽はテレビの備え付けスピーカーから音が出ます。音楽コンポと名乗るには「音質」がすこし心許ないです。
 
-そこで、別途スピーカーをテレビに接続する事で音質を強化します。私は<a href="http://www.amazon.co.jp/gp/product/B002QNEHC6/ref=as_li_tf_il?ie=UTF8&tag=amayutazon-22&linkCode=as2&camp=247&creative=1211&creativeASIN=B002QNEHC6" target="_blank">BOSEスピーカーM2</a>を愛用していますが、ここは予算との相談で、満足できるものであれば何でもOKです。
+そこで、別途スピーカーをテレビに接続する事で音質を強化します。私はBOSEスピーカーM2を愛用していますが、ここは予算との相談で、満足できるものであれば何でもOKです。
 
 <photo-image article-id="319" img-file-name="20110831_appleTV_bose.jpg" caption="Bose M2"></photo-image>
 
