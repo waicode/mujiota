@@ -1,29 +1,15 @@
 ---
+id: 481
+slug: kokoro
 title: 心
-author: aiza_wai
-type: post
-date: 2013-03-30T06:41:47+09:00
-url: /481/kokoro/
-featured_image: /wp-content/uploads/2013/03/1b2e5a6d5f711206dc01e7fa9550e494.png
-page_layout:
-  - col1
-pvc_views:
-  - 7186
-scc_share_count_twitter:
-  - -1
-scc_share_count_facebook:
-  - -1
-scc_share_count_crawldate:
-  - 2020/02/11 07:23:24
-categories:
-  - 徒然
-
+description: 京都は嵐山、大悲閣・千光寺で出会った言葉です。心に、響くものがあり、肝に銘じていきます。
+createdAt: 2013-03-30T06:41:47+09:00
+updatedAt: 2013-03-30T06:41:47+09:00
+imageFormat: png
+category: 雑記
+tags:
+  - 雑記
 ---
-<p class="aligncenter">
-  京都は嵐山、大悲閣・千光寺で出会った言葉です。<span style="line-height: 1.5;">心に、響くものがあり、肝に銘じています。</span>
-</p>
-
-<!--more-->
 
 > 心に、物なき時は、心ひろく体やすらかなり。  
 > 心に、慢れなき時は、愛敬うしなはず。  
