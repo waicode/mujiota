@@ -3,36 +3,61 @@
     <h2 class="related-title">あわせて読みたい</h2>
     <div class="related-posts">
       <ul class="related-list">
-        <li v-for="article in articles" :key="article.id">
-          <NuxtLink :to="`/${article.id}/${article.slug}`">
-            <div class="wrap">
-              <div class="eyecatch">
-                <AssetsImage
-                  :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
-                />
-              </div>
-              <div class="contents">
-                <h3 class="post-title">{{ article.title }}</h3>
-                <div class="meta-wrap">
-                  <div class="date">
-                    {{ article.updatedAt | dateFormatted }}
+        <template v-for="(article, index) in articles">
+          <li :key="`li-${article.id}`">
+            <NuxtLink :to="`/${article.id}/${article.slug}`">
+              <div class="wrap">
+                <div class="eyecatch">
+                  <AssetsImage
+                    :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
+                  />
+                </div>
+                <div class="post-contents">
+                  <h3 class="post-title">{{ article.title }}</h3>
+                  <div class="post-description">
+                    {{ article.description }}
+                  </div>
+
+                  <div class="meta-wrap">
+                    <div class="post-date">
+                      <span
+                        class="date-updated"
+                        itemprop="updatedAt"
+                        :content="article.updatedAt"
+                      >
+                        <fa :icon="faCalendarAlt" class="fa-redo-alt" />
+                        <span>{{ article.updatedAt | dateFormatted }}</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </NuxtLink>
-        </li>
+            </NuxtLink>
+          </li>
+          <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
+        </template>
       </ul>
     </div>
   </div>
 </template>
 <script>
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
+
 export default {
   props: {
     articles: {
       require: true,
       type: Array,
       default: null,
+    },
+  },
+  computed: {
+    faCalendarAlt() {
+      return faCalendarAlt
+    },
+    faRedoAlt() {
+      return faRedoAlt
     },
   },
 }
@@ -63,50 +88,50 @@ export default {
   }
 }
 .related-list {
+  hr {
+    margin: 0.24rem 0;
+  }
   .wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     .eyecatch {
       display: block;
-      padding: 24px;
-      width: 40%;
+      padding: 0.8rem 0;
+      width: 28%;
       height: auto;
       img {
         vertical-align: top;
       }
     }
-    .contents {
-      width: 56%;
+    .post-contents {
+      display: flex;
+      padding: 0.8rem 0;
+      width: 68%;
+      height: auto;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
       .post-title {
-        font-size: 1.24rem;
+        font-size: 1.04rem;
         font-weight: bold;
-        color: $text;
         margin-bottom: 8px;
-      }
-      .description {
-        font-size: 0.86rem;
         color: $text;
-        margin-bottom: 12px;
+      }
+      .post-description {
+        font-size: 0.92rem;
+        color: $text;
       }
       .meta-wrap {
         display: flex;
-        height: 40px;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-start;
         color: $text;
-        .date {
+        .post-date {
           display: flex;
           font-size: 0.8rem;
           padding-top: 2px;
           .date-published {
             margin-right: 12px;
           }
-        }
-        .tags {
-          display: flex;
-          font-size: 0.8rem;
         }
       }
     }
