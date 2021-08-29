@@ -111,6 +111,7 @@ export default {
       height: auto;
       flex-flow: column nowrap;
       justify-content: flex-start;
+      min-height: 132px;
       .post-title {
         font-size: 1.04rem;
         font-weight: bold;

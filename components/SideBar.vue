@@ -5,40 +5,28 @@
     <div class="side-content">
       <ol class="popular-list">
         <li>
-          <a href="#">
+          <NuxtLink :to="`/1372/bulletproof-coffee`">
             <h3>
               完全無欠コーヒーを3年半飲み続けて確信した効果とおすすめの作り方
             </h3>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="#">
+          <NuxtLink :to="`/235/coffee_mag`">
             <h3>おいしくコーヒーを飲むならサーモスマグが一番良い理由</h3>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="#">
+          <NuxtLink :to="`/1278/net-coffee-lanking`">
             <h3>ネットで買える安くて美味しいコーヒー豆ランキング</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <h3>無印良品そっくりのタグが作れるMUJIジェネレーター</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <h3>
-              おすすめしたい２つのケーブル＆コード整理グッズ（ケーブルタートルとケーブルボックス）
-            </h3>
-          </a>
+          </NuxtLink>
         </li>
       </ol>
     </div>
     <h2>コンセプト</h2>
     <div class="side-content">
       <p class="text-content">
-        MUJIを偏愛していた中の人が徒然と書き記す生活ネタ中心の雑記ブログ。コーヒー・健康・ライフハックのネタが多めです。
+        MUJIをかつて偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。
       </p>
       <p class="text-link-more"><a href="#">> より詳しく見てみる</a></p>
     </div>

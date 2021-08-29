@@ -89,7 +89,11 @@ export default {
       }
     }
     .contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 56%;
+      min-height: 172px;
       .post-title {
         font-size: 1.24rem;
         font-weight: bold;
