@@ -1,6 +1,6 @@
 <script>
 export default {
-  async asyncData({ $content, params, redirect }) {
+  async asyncData({ $content, params, redirect, error }) {
     let articles = []
     try {
       articles = await $content('articles', params.id, { deep: true }).fetch()
@@ -8,10 +8,14 @@ export default {
         const article = articles[0]
         redirect(301, `/${article.id}/${article.slug}`)
       } else {
-        redirect(301, `/`)
+        error({
+          statusCode: 404,
+        })
       }
     } catch {
-      redirect(301, `/`)
+      error({
+        statusCode: 404,
+      })
     }
   },
 }
