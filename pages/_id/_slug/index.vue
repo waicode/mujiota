@@ -55,14 +55,14 @@ export default {
     ShareButtonsBottom,
     RelatedPosts,
   },
-  async asyncData({ $content, params, redirect }) {
+  async asyncData({ $content, params, error }) {
     let article = {}
     let relatedArticles = []
     try {
       article = await $content('articles', params.id, params.slug).fetch()
     } catch {
       // 見つからない場合はNOTFOUND
-      $content.error({
+      error({
         statusCode: 404,
       })
     }
