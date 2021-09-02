@@ -17,4 +17,24 @@ $text: #333;
 // 行の高さを日本語用に少し高く
 $body-line-height: 1.61;
 
+// ドロップダウン
+$dropbox-text-color: #757575;
+.dropdown {
+  width: 100%;
+  .dropdown-text {
+    font-size: 0.8175rem;
+    font-weight: bold;
+    color: $dropbox-text-color;
+  }
+  svg.fa-angle-down {
+    color: #bdbdbd;
+  }
+  .dropdown-trigger,
+  .dropdown-menu,
+  button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 @import '~bulma';

@@ -33,13 +33,35 @@
     <h2>カテゴリー</h2>
     <div class="side-content">
       <div class="dropbox-wrapper">
-        <Dropdown text="カテゴリーを選択" />
+        <b-dropdown aria-role="list">
+          <template #trigger="{ active }">
+            <b-button
+              label="タグを選択"
+              :icon-right="active ? 'menu-up' : 'menu-down'"
+            />
+          </template>
+
+          <b-dropdown-item aria-role="listitem">Action</b-dropdown-item>
+          <b-dropdown-item aria-role="listitem">Another action</b-dropdown-item>
+          <b-dropdown-item aria-role="listitem">Something else</b-dropdown-item>
+        </b-dropdown>
       </div>
     </div>
     <h2>アーカイブ</h2>
     <div class="side-content">
       <div class="dropbox-wrapper">
-        <Dropdown text="月を選択" />
+        <b-dropdown aria-role="list">
+          <template #trigger="{ active }">
+            <b-button
+              label="月を選択"
+              :icon-right="active ? 'menu-up' : 'menu-down'"
+            />
+          </template>
+
+          <b-dropdown-item aria-role="listitem">Action</b-dropdown-item>
+          <b-dropdown-item aria-role="listitem">Another action</b-dropdown-item>
+          <b-dropdown-item aria-role="listitem">Something else</b-dropdown-item>
+        </b-dropdown>
       </div>
     </div>
     <div class="ad-side-bottom">AD 250x500</div>
@@ -53,12 +75,7 @@
   </div>
 </template>
 <script>
-import Dropdown from '@/components/Parts/Dropdown'
-export default {
-  components: {
-    Dropdown,
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>

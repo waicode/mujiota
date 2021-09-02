@@ -48,6 +48,7 @@ export default {
     '@nuxtjs/date-fns',
     '@nuxtjs/style-resources',
     '@nuxt/content',
+    'nuxt-buefy',
     'nuxt-svg-loader',
     'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
