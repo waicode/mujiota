@@ -32,7 +32,7 @@
     </div>
     <h2>カテゴリー</h2>
     <div class="side-content">
-      <div class="dropbox-wrapper">
+      <div v-if="$store.state.tags" class="dropbox-wrapper">
         <b-dropdown aria-role="list">
           <template #trigger="{ active }">
             <b-button
@@ -40,10 +40,9 @@
               :icon-right="active ? 'menu-up' : 'menu-down'"
             />
           </template>
-
-          <b-dropdown-item aria-role="listitem">Action</b-dropdown-item>
-          <b-dropdown-item aria-role="listitem">Another action</b-dropdown-item>
-          <b-dropdown-item aria-role="listitem">Something else</b-dropdown-item>
+          <li v-for="tag in $store.state.tags" :key="tag.slug">
+            {{ tag.slug }}({{ tag.count }})
+          </li>
         </b-dropdown>
       </div>
     </div>
@@ -74,9 +73,6 @@
     </div>
   </div>
 </template>
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 $ad-bg-color: #c5e1a5;
