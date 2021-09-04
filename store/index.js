@@ -27,8 +27,8 @@ export const actions = {
         .forEach((data) => {
           tagsObj[data] = tagsObj[data] ? tagsObj[data] + 1 : 1
         })
-      const tags = Object.entries(tagsObj).map(([slug, count]) => ({
-        slug,
+      const tags = Object.entries(tagsObj).map(([name, count]) => ({
+        name,
         count,
       }))
 

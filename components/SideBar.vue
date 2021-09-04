@@ -30,7 +30,7 @@
       </p>
       <p class="text-link-more"><a href="#">> より詳しく見てみる</a></p>
     </div>
-    <h2>カテゴリー</h2>
+    <h2>タグ</h2>
     <div class="side-content">
       <div v-if="$store.state.tags" class="dropbox-wrapper">
         <b-dropdown aria-role="list">
@@ -42,10 +42,10 @@
           </template>
           <b-dropdown-item
             v-for="tag in $store.state.tags"
-            :key="tag.slug"
-            aria-role="listitem"
+            :key="tag.name"
+            aria-role="menuitem"
           >
-            {{ tag.slug }}({{ tag.count }})
+            <nuxt-link :to="tagLink(tag)">{{ tagText(tag) }}</nuxt-link>
           </b-dropdown-item>
         </b-dropdown>
       </div>
@@ -64,9 +64,11 @@
           <b-dropdown-item
             v-for="archive in $store.state.archives"
             :key="archive.month"
-            aria-role="listitem"
+            aria-role="menuitem"
           >
-            {{ archive.month }}({{ archive.count }})
+            <nuxt-link :to="dateLink(archive)">{{
+              dateText(archive)
+            }}</nuxt-link>
           </b-dropdown-item>
         </b-dropdown>
       </div>
@@ -81,7 +83,26 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  methods: {
+    tagLink(tag) {
+      return `/tag/${this.$getTagSlug(tag.name)}`
+    },
+    tagText(tag) {
+      return `${tag.name}(${tag.count})`
+    },
+    dateLink(archive) {
+      return `/date/${archive.month.slice(0, 4)}/${archive.month.slice(5, 7)}`
+    },
+    dateText(archive) {
+      return `${archive.month.slice(0, 4)}年${archive.month.slice(5, 7)}月(${
+        archive.count
+      })`
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 $ad-bg-color: #c5e1a5;
 $side-bar-link-color: rgb(114, 108, 108);
