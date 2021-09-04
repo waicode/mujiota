@@ -40,15 +40,19 @@
               :icon-right="active ? 'menu-up' : 'menu-down'"
             />
           </template>
-          <li v-for="tag in $store.state.tags" :key="tag.slug">
+          <b-dropdown-item
+            v-for="tag in $store.state.tags"
+            :key="tag.slug"
+            aria-role="listitem"
+          >
             {{ tag.slug }}({{ tag.count }})
-          </li>
+          </b-dropdown-item>
         </b-dropdown>
       </div>
     </div>
     <h2>アーカイブ</h2>
     <div class="side-content">
-      <div class="dropbox-wrapper">
+      <div v-if="$store.state.archives" class="dropbox-wrapper">
         <b-dropdown aria-role="list">
           <template #trigger="{ active }">
             <b-button
@@ -57,9 +61,13 @@
             />
           </template>
 
-          <b-dropdown-item aria-role="listitem">Action</b-dropdown-item>
-          <b-dropdown-item aria-role="listitem">Another action</b-dropdown-item>
-          <b-dropdown-item aria-role="listitem">Something else</b-dropdown-item>
+          <b-dropdown-item
+            v-for="archive in $store.state.archives"
+            :key="archive.month"
+            aria-role="listitem"
+          >
+            {{ archive.month }}({{ archive.count }})
+          </b-dropdown-item>
         </b-dropdown>
       </div>
     </div>
