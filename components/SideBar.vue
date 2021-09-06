@@ -41,6 +41,7 @@
             />
           </template>
           <b-dropdown-item
+            has-link
             v-for="tag in $store.state.tags"
             :key="tag.name"
             aria-role="menuitem"
@@ -62,6 +63,7 @@
           </template>
 
           <b-dropdown-item
+            has-link
             v-for="archive in $store.state.archives"
             :key="archive.month"
             aria-role="menuitem"
