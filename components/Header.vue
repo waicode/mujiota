@@ -13,9 +13,25 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a href="#" class="topnav-icon icon-serch">
-                <SearchIconSvg />
-              </a>
+              <span class="topnav-icon icon-sitemap">
+                <SearchIconSvg @click="isComponentModalActive = true" />
+              </span>
+              <b-modal
+                v-model="isComponentModalActive"
+                has-modal-card
+                trap-focus
+                :destroy-on-hide="false"
+                aria-role="dialog"
+                aria-label="Example Modal"
+                aria-modal
+              >
+                <template #default="props">
+                  <modal-form
+                    v-bind="formProps"
+                    @close="props.close"
+                  ></modal-form>
+                </template>
+              </b-modal>
               <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
                 <SitemapIconSvg />
               </nuxt-link>
@@ -30,11 +46,67 @@
 import MujiotaLogoSvg from '@/assets/images/shared/logo/mujiota-logo.svg'
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
+const ModalForm = {
+  props: ['email', 'password', 'canCancel'],
+  template: `
+            <form action="">
+                <div class="modal-card" style="width: auto">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Login</p>
+                        <button
+                            type="button"
+                            class="delete"
+                            @click="$emit('close')"/>
+                    </header>
+                    <section class="modal-card-body">
+                        <b-field label="Email">
+                            <b-input
+                                type="email"
+                                :value="email"
+                                placeholder="Your email"
+                                required>
+                            </b-input>
+                        </b-field>
+
+                        <b-field label="Password">
+                            <b-input
+                                type="password"
+                                :value="password"
+                                password-reveal
+                                placeholder="Your password"
+                                required>
+                            </b-input>
+                        </b-field>
+
+                        <b-checkbox>Remember me</b-checkbox>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <b-button
+                            label="Close"
+                            @click="$emit('close')" />
+                        <b-button
+                            label="Login"
+                            type="is-primary" />
+                    </footer>
+                </div>
+            </form>
+        `,
+}
 export default {
   components: {
     MujiotaLogoSvg,
     SearchIconSvg,
     SitemapIconSvg,
+    ModalForm,
+  },
+  data() {
+    return {
+      isComponentModalActive: false,
+      formProps: {
+        email: 'evan@you.com',
+        password: 'testing',
+      },
+    }
   },
 }
 </script>

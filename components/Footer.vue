@@ -2,9 +2,19 @@
   <footer class="footer">
     <div class="social-icons">
       <ul>
-        <li class="icon-twitter"><TwitterIconSvg /></li>
-        <li class="icon-github"><GithubIconSvg /></li>
-        <li class="icon-email"><EmailIconSvg /></li>
+        <li class="icon-twitter">
+          <a href="https://twitter.com/aiza_wai" target="_blank">
+            <TwitterIconSvg />
+          </a>
+        </li>
+        <li class="icon-github">
+          <a href="https://github.com/waicode" target="_blank">
+            <GithubIconSvg />
+          </a>
+        </li>
+        <!-- <li class="icon-email">
+          <EmailIconSvg />
+        </li> -->
       </ul>
     </div>
     <div class="content has-text-centered copyright">
@@ -15,13 +25,13 @@
 <script>
 import TwitterIconSvg from '@/assets/images/shared/icon/iconmonstr-twitter-1.svg'
 import GithubIconSvg from '@/assets/images/shared/icon/iconmonstr-github-1.svg'
-import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
+// import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
 
 export default {
   components: {
     TwitterIconSvg,
     GithubIconSvg,
-    EmailIconSvg,
+    // EmailIconSvg,
   },
 }
 </script>
