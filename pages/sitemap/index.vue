@@ -60,3 +60,23 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+h2 {
+  margin-bottom: 12px;
+  font-size: 1.3125rem;
+  font-weight: bold;
+}
+ul {
+  margin-bottom: 28px;
+  li {
+    font-size: 1rem;
+    a {
+      display: inline-block;
+      padding: 0.32rem;
+      margin-left: 0.2rem;
+      color: #726c6c;
+      text-decoration: none;
+    }
+  }
+}
+</style>

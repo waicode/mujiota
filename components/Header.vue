@@ -16,9 +16,9 @@
               <a href="#" class="topnav-icon icon-serch">
                 <SearchIconSvg />
               </a>
-              <a href="#" class="topnav-icon icon-sitemap">
+              <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
                 <SitemapIconSvg />
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
