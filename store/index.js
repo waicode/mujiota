@@ -1,9 +1,13 @@
 export const state = () => ({
+  articles: [],
   tags: [],
   archives: [],
 })
 
 export const mutations = {
+  setArticles(state, { articles }) {
+    state.articles = articles
+  },
   setTags(state, { tags }) {
     state.tags = tags
   },
@@ -16,7 +20,6 @@ export const actions = {
   async nuxtServerInit({ commit }, { $content, req }) {
     try {
       const articles = await $content('articles', { deep: true })
-        .only(['tags', 'createdAt'])
         .sortBy('createdAt', 'desc')
         .fetch()
 
@@ -44,6 +47,7 @@ export const actions = {
         count,
       }))
 
+      commit('setArticles', { articles })
       commit('setTags', { tags })
       commit('setArchives', { archives })
     } catch (e) {

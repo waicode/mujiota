@@ -55,6 +55,9 @@ export default {
     ShareButtonsBottom,
     RelatedPosts,
   },
+  validate({ params }) {
+    return /^\d+$/.test(params.id)
+  },
   async asyncData({ $content, params, error }) {
     let article = {}
     let relatedArticles = []

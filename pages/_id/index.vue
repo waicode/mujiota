@@ -1,5 +1,8 @@
 <script>
 export default {
+  validate({ params }) {
+    return /^\d+$/.test(params.id)
+  },
   async asyncData({ $content, params, redirect, error }) {
     let articles = []
     try {

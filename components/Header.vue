@@ -2,9 +2,6 @@
   <div>
     <div class="header-bg"></div>
     <header id="header" class="header">
-      <div class="logo-mujiota">
-        <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
-      </div>
       <nav
         class="navbar is-fixed-top"
         role="navigation"
@@ -13,24 +10,19 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <span class="topnav-icon icon-sitemap">
-                <SearchIconSvg @click="isComponentModalActive = true" />
-              </span>
+              <a
+                class="topnav-icon icon-sitemap"
+                @click="isComponentModalActive = true"
+              >
+                <SearchIconSvg />
+              </a>
               <b-modal
                 v-model="isComponentModalActive"
                 has-modal-card
-                trap-focus
-                :destroy-on-hide="false"
-                aria-role="dialog"
-                aria-label="Example Modal"
-                aria-modal
+                full-screen
+                :can-cancel="false"
               >
-                <template #default="props">
-                  <modal-form
-                    v-bind="formProps"
-                    @close="props.close"
-                  ></modal-form>
-                </template>
+                <SearchModal></SearchModal>
               </b-modal>
               <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
                 <SitemapIconSvg />
@@ -39,6 +31,9 @@
           </div>
         </div>
       </nav>
+      <div class="logo-mujiota">
+        <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
+      </div>
     </header>
   </div>
 </template>
@@ -46,66 +41,19 @@
 import MujiotaLogoSvg from '@/assets/images/shared/logo/mujiota-logo.svg'
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
-const ModalForm = {
-  props: ['email', 'password', 'canCancel'],
-  template: `
-            <form action="">
-                <div class="modal-card" style="width: auto">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Login</p>
-                        <button
-                            type="button"
-                            class="delete"
-                            @click="$emit('close')"/>
-                    </header>
-                    <section class="modal-card-body">
-                        <b-field label="Email">
-                            <b-input
-                                type="email"
-                                :value="email"
-                                placeholder="Your email"
-                                required>
-                            </b-input>
-                        </b-field>
 
-                        <b-field label="Password">
-                            <b-input
-                                type="password"
-                                :value="password"
-                                password-reveal
-                                placeholder="Your password"
-                                required>
-                            </b-input>
-                        </b-field>
+import SearchModal from '@/components/SearchModal.vue'
 
-                        <b-checkbox>Remember me</b-checkbox>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <b-button
-                            label="Close"
-                            @click="$emit('close')" />
-                        <b-button
-                            label="Login"
-                            type="is-primary" />
-                    </footer>
-                </div>
-            </form>
-        `,
-}
 export default {
   components: {
     MujiotaLogoSvg,
     SearchIconSvg,
     SitemapIconSvg,
-    ModalForm,
+    SearchModal,
   },
   data() {
     return {
       isComponentModalActive: false,
-      formProps: {
-        email: 'evan@you.com',
-        password: 'testing',
-      },
     }
   },
 }
@@ -114,6 +62,7 @@ export default {
 .header {
   .navbar {
     padding: 28px 0 0 32px;
+    margin-left: 232px;
     height: 104px;
     background-color: transparent;
   }
@@ -126,7 +75,6 @@ $circle-color: #6f4952;
   width: 12%;
   top: 60px;
   left: 40px;
-  z-index: 35;
 }
 .topnav-icon {
   display: flex;
