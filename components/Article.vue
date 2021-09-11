@@ -86,6 +86,8 @@ export default {
       height: auto;
       img {
         vertical-align: top;
+        height: auto;
+        max-height: 168px;
       }
     }
     .contents {

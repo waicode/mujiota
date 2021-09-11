@@ -19,8 +19,12 @@
               <b-modal
                 v-model="isComponentModalActive"
                 has-modal-card
-                full-screen
-                :can-cancel="false"
+                aria-role="dialog"
+                aria-label="search modal"
+                aria-modal
+                scroll="keep"
+                animation="fade"
+                :can-cancel="['escape', 'outside']"
               >
                 <SearchModal></SearchModal>
               </b-modal>

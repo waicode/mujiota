@@ -37,4 +37,9 @@ $dropbox-text-color: #757575;
   }
 }
 
+// モーダル背景
+.modal-background {
+  background-color: rgba(30, 30, 30, 0.6) !important;
+}
+
 @import '~bulma';
