@@ -1,40 +1,47 @@
 <template>
-  <div class="header">
-    <b-navbar fixed-top transparent :mobile-burger="false">
-      <template #brand>
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <MujiotaLogoSvg />
-        </b-navbar-item>
-      </template>
-      <template #start> </template>
-      <template #end>
-        <b-navbar-item tag="div">
-          <div class="buttons">
-            <a
-              class="topnav-icon icon-sitemap"
-              @click="isComponentModalActive = true"
-            >
-              <SearchIconSvg />
-            </a>
-            <b-modal
-              v-model="isComponentModalActive"
-              has-modal-card
-              aria-role="dialog"
-              aria-label="search modal"
-              aria-modal
-              scroll="keep"
-              animation="fade"
-              :can-cancel="['escape', 'outside']"
-            >
-              <SearchModal></SearchModal>
-            </b-modal>
-            <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
-              <SitemapIconSvg />
-            </nuxt-link>
-          </div>
-        </b-navbar-item>
-      </template>
-    </b-navbar>
+  <div>
+    <div class="header-bg"></div>
+    <div class="header">
+      <b-navbar fixed-top transparent :mobile-burger="false">
+        <template #brand>
+          <transition name="fade">
+            <div v-show="logoActive">
+              <b-navbar-item tag="router-link" :to="{ path: '/' }">
+                <MujiotaLogoSvg />
+              </b-navbar-item>
+            </div>
+          </transition>
+        </template>
+        <template #start> </template>
+        <template #end>
+          <b-navbar-item tag="div">
+            <div class="buttons">
+              <a
+                class="topnav-icon icon-sitemap"
+                @click="isComponentModalActive = true"
+              >
+                <SearchIconSvg />
+              </a>
+              <b-modal
+                v-model="isComponentModalActive"
+                has-modal-card
+                aria-role="dialog"
+                aria-label="search modal"
+                aria-modal
+                scroll="keep"
+                animation="fade"
+                :can-cancel="['escape', 'outside']"
+              >
+                <SearchModal></SearchModal>
+              </b-modal>
+              <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
+                <SitemapIconSvg />
+              </nuxt-link>
+            </div>
+          </b-navbar-item>
+        </template>
+      </b-navbar>
+    </div>
   </div>
 </template>
 <script>
@@ -54,11 +61,31 @@ export default {
   data() {
     return {
       isComponentModalActive: false,
+      logoActive: true,
+      scroll: 0,
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.scrollWindow)
+  },
+  methods: {
+    scrollWindow() {
+      const top = 40 // ロゴを消したい位置
+      this.scroll = window.scrollY
+      this.logoActive = top > this.scroll
+    },
   },
 }
 </script>
 <style lang="scss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 .header {
   .navbar {
     padding: 28px 0 0 24px;
