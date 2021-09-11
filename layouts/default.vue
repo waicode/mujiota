@@ -10,6 +10,7 @@
       <aside class="sub column">
         <SideBar />
       </aside>
+      <ReturnTopButton></ReturnTopButton>
     </div>
     <Footer />
   </div>
@@ -18,11 +19,13 @@
 import Header from '@/components/Header'
 import SideBar from '@/components/SideBar'
 import Footer from '@/components/Footer'
+import ReturnTopButton from '@/components/ReturnTopButton'
 export default {
   components: {
     Header,
     SideBar,
     Footer,
+    ReturnTopButton,
   },
 }
 </script>

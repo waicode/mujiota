@@ -1,44 +1,40 @@
 <template>
-  <div>
-    <div class="header-bg"></div>
-    <header id="header" class="header">
-      <nav
-        class="navbar is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a
-                class="topnav-icon icon-sitemap"
-                @click="isComponentModalActive = true"
-              >
-                <SearchIconSvg />
-              </a>
-              <b-modal
-                v-model="isComponentModalActive"
-                has-modal-card
-                aria-role="dialog"
-                aria-label="search modal"
-                aria-modal
-                scroll="keep"
-                animation="fade"
-                :can-cancel="['escape', 'outside']"
-              >
-                <SearchModal></SearchModal>
-              </b-modal>
-              <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
-                <SitemapIconSvg />
-              </nuxt-link>
-            </div>
+  <div class="header">
+    <b-navbar fixed-top transparent :mobile-burger="false">
+      <template #brand>
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <MujiotaLogoSvg />
+        </b-navbar-item>
+      </template>
+      <template #start> </template>
+      <template #end>
+        <b-navbar-item tag="div">
+          <div class="buttons">
+            <a
+              class="topnav-icon icon-sitemap"
+              @click="isComponentModalActive = true"
+            >
+              <SearchIconSvg />
+            </a>
+            <b-modal
+              v-model="isComponentModalActive"
+              has-modal-card
+              aria-role="dialog"
+              aria-label="search modal"
+              aria-modal
+              scroll="keep"
+              animation="fade"
+              :can-cancel="['escape', 'outside']"
+            >
+              <SearchModal></SearchModal>
+            </b-modal>
+            <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
+              <SitemapIconSvg />
+            </nuxt-link>
           </div>
-        </div>
-      </nav>
-      <div class="logo-mujiota">
-        <NuxtLink to="/"><MujiotaLogoSvg /></NuxtLink>
-      </div>
-    </header>
+        </b-navbar-item>
+      </template>
+    </b-navbar>
   </div>
 </template>
 <script>
@@ -65,21 +61,19 @@ export default {
 <style lang="scss" scoped>
 .header {
   .navbar {
-    padding: 28px 0 0 32px;
-    margin-left: 232px;
+    padding: 28px 0 0 24px;
     height: 104px;
-    background-color: transparent;
+  }
+  .logo-mujiota {
+    position: relative;
+    display: block;
+    width: 12%;
+    top: 60px;
+    left: 40px;
   }
 }
 $logo-color: #67041b;
 $circle-color: #6f4952;
-.logo-mujiota {
-  position: relative;
-  display: block;
-  width: 12%;
-  top: 60px;
-  left: 40px;
-}
 .topnav-icon {
   display: flex;
   justify-content: center;

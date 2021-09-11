@@ -54,7 +54,6 @@ export default {
         })
         categorisedAirticles.push({ category, articles })
       })
-      console.log(categorisedAirticles)
       return categorisedAirticles
     },
   },
