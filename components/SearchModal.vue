@@ -5,12 +5,15 @@
         <b-input
           placeholder="検索したい文字列を入力…"
           type="search"
+          size="is-medium"
+          maxlength="128"
           icon-pack="fas"
           icon="search"
+          class="search-input"
         >
         </b-input>
       </b-field>
-      <b-button label="閉じる" @click="$parent.close()" />
+      <b-button label="閉じる" class="close-button" @click="$parent.close()" />
     </header>
     <section class="modal-card-body">
       <div class="post-list">
@@ -38,8 +41,10 @@ export default {
 }
 </script>
 <style scoped>
-.modal-background,
-.animation-content {
-  z-index: 40;
+input {
+  width: 100%;
+}
+.close-button {
+  margin-left: auto;
 }
 </style>
