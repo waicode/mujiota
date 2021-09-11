@@ -10,6 +10,7 @@
                   v-model="searchText"
                   placeholder="検索キーワードを入力..."
                   type="search"
+                  autocomplete="off"
                   size="is-large"
                   icon="magnify"
                   class="search-input"
@@ -66,11 +67,26 @@ export default {
   },
   methods: {
     async search() {
-      const articles = await this.$content('articles', { deep: true })
+      // 一部取得できていない記事があるためfilterと組み合わせて検索
+      const articles1 = await this.$content('articles', { deep: true })
+        .limit(999)
         .search(this.searchText)
         .sortBy('createdAt', 'desc')
         .fetch()
-      this.searchedArticles = articles
+      const articles2 = this.$store.state.articles.filter(
+        (data) =>
+          data.title.includes(this.searchText) ||
+          data.description.includes(this.searchText)
+      )
+      // 重複を外す
+      this.searchedArticles = articles1
+        .concat(articles2)
+        .filter(
+          (element, index, self) =>
+            self.findIndex(
+              (e) => e.id === element.id && e.slug === element.slug
+            ) === index
+        )
     },
   },
 }
