@@ -1,6 +1,9 @@
 <template>
   <article class="archive">
-    <NuxtLink :to="`/${article.id}/${article.slug}`">
+    <NuxtLink
+      :to="`/${article.id}/${article.slug}`"
+      @click.native="$emit('link-click')"
+    >
       <div class="wrap">
         <div class="eyecatch">
           <AssetsImage

@@ -1,6 +1,6 @@
 <template>
   <div class="search-modal">
-    <div class="modal-card" style="width: auto">
+    <div class="modal-card">
       <section class="modal-card-body">
         <div class="search-box">
           <div class="columns">
@@ -27,13 +27,20 @@
             </div>
           </div>
         </div>
-        <div class="post-list">
+        <div v-if="searchedArticles.length > 0" class="post-list">
           <div v-for="(article, index) in searchedArticles" :key="article.id">
-            <Article :article="article" />
+            <Article :article="article" @link-click="$parent.close()" />
             <hr
               v-if="index < searchedArticles.length - 1"
               :key="`hr-${article.id}`"
             />
+          </div>
+        </div>
+        <div v-else>
+          <div>
+            <article class="archive notfound">
+              <h2 class="post-title">見つかりませんでした。</h2>
+            </article>
           </div>
         </div>
       </section>
@@ -63,9 +70,34 @@ export default {
         .search(this.searchText)
         .sortBy('createdAt', 'desc')
         .fetch()
-      console.log('articles', articles)
       this.searchedArticles = articles
     },
   },
 }
 </script>
+<style lang="scss" scoped>
+.search-modal {
+  .modal-card {
+    width: auto;
+    max-width: 960px;
+    min-width: 880px;
+    height: calc(100vh - 40px);
+    .modal-card-body {
+      overflow: scroll;
+      .close-button {
+        color: #757575;
+      }
+    }
+  }
+  .notfound {
+    min-height: 120px;
+    width: 905px;
+    .post-title {
+      font-size: 1.24rem;
+      color: $text;
+      margin-top: 8px;
+      padding: 12px;
+    }
+  }
+}
+</style>
