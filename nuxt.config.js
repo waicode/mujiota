@@ -69,7 +69,7 @@ export default {
     markdown: {
       apiPrefix: '_content',
       dir: 'content',
-      fullTextSearchFields: ['title', 'description', 'slug', 'text'],
+      fullTextSearchFields: ['title', 'description', 'text'],
       nestedProperties: [],
       markdown: {
         remarkPlugins: [

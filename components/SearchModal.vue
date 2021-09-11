@@ -7,6 +7,7 @@
             <div class="column is-10">
               <b-field>
                 <b-input
+                  v-model="searchText"
                   placeholder="検索キーワードを入力..."
                   type="search"
                   size="is-large"
@@ -27,13 +28,10 @@
           </div>
         </div>
         <div class="post-list">
-          <div
-            v-for="(article, index) in $store.state.articles"
-            :key="article.id"
-          >
+          <div v-for="(article, index) in searchedArticles" :key="article.id">
             <Article :article="article" />
             <hr
-              v-if="index < $store.state.articles.length - 1"
+              v-if="index < searchedArticles.length - 1"
               :key="`hr-${article.id}`"
             />
           </div>
@@ -47,6 +45,27 @@ import Article from '@/components/Article'
 export default {
   components: {
     Article,
+  },
+  data() {
+    return {
+      searchedArticles: this.$store.state.articles,
+      searchText: null,
+    }
+  },
+  watch: {
+    searchText(newText) {
+      this.search()
+    },
+  },
+  methods: {
+    async search() {
+      const articles = await this.$content('articles', { deep: true })
+        .search(this.searchText)
+        .sortBy('createdAt', 'desc')
+        .fetch()
+      console.log('articles', articles)
+      this.searchedArticles = articles
+    },
   },
 }
 </script>

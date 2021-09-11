@@ -41,9 +41,9 @@
             />
           </template>
           <b-dropdown-item
-            has-link
             v-for="tag in $store.state.tags"
             :key="tag.name"
+            has-link
             aria-role="menuitem"
           >
             <nuxt-link :to="tagLink(tag)">{{ tagText(tag) }}</nuxt-link>
@@ -63,9 +63,9 @@
           </template>
 
           <b-dropdown-item
-            has-link
             v-for="archive in $store.state.archives"
             :key="archive.month"
+            has-link
             aria-role="menuitem"
           >
             <nuxt-link :to="dateLink(archive)">{{
