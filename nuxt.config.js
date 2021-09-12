@@ -19,8 +19,14 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
+      // fontawesome
       {
         src: 'https://kit.fontawesome.com/29e08b7892.js',
+        crossorigin: 'anonymous',
+      },
+      // Google Adsense (Auto)
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6722804994112729',
         crossorigin: 'anonymous',
       },
     ],

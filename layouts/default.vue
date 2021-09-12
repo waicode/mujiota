@@ -2,12 +2,12 @@
   <div>
     <Header />
     <div class="wrapper columns">
-      <main class="main column is-9">
+      <main class="main column is-9-desktop is-9-tablet is-12-mobile">
         <div class="contents-wrapper">
           <Nuxt />
         </div>
       </main>
-      <aside class="sub column">
+      <aside class="sub column is-3-desktop is-3-tablet is-12-mobile">
         <SideBar />
       </aside>
       <ReturnTopButton></ReturnTopButton>
@@ -40,12 +40,10 @@ $bg-secondary-color: #fafafa;
   border-radius: 10px;
 }
 .main {
-  width: calc(100% - 300px);
   .contents-wrapper {
     padding: 8px 32px;
   }
 }
 .sub {
-  min-width: 300px;
 }
 </style>

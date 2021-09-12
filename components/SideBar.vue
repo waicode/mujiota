@@ -1,6 +1,5 @@
 <template>
   <div class="side-bar">
-    <div class="ad-side-top">AD 250x250</div>
     <h2>人気記事</h2>
     <div class="side-content">
       <ol class="popular-list">
@@ -75,7 +74,6 @@
         </b-dropdown>
       </div>
     </div>
-    <div class="ad-side-bottom">AD 250x500</div>
     <h2>リコメンド</h2>
     <div class="side-content">
       <h3 class="text-content">お試し価格のお得なコーヒー豆</h3>
