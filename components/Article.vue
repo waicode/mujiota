@@ -4,13 +4,13 @@
       :to="`/${article.id}/${article.slug}`"
       @click.native="$emit('link-click')"
     >
-      <div class="wrap">
-        <div class="eyecatch">
+      <div class="columns wrap">
+        <div class="eyecatch column is-5-desktop is-5-tablet is-12-mobile">
           <AssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>
-        <div class="contents">
+        <div class="contents column is-7-desktop is-7-tablet is-12-mobile">
           <h2 class="post-title">
             {{ article.title }}
           </h2>
@@ -83,21 +83,18 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     .eyecatch {
-      display: block;
       padding: 24px;
-      width: 40%;
       height: auto;
       img {
         vertical-align: top;
         height: auto;
-        max-height: 168px;
       }
     }
     .contents {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 56%;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      // width: 56%;
       min-height: 172px;
       .post-title {
         font-size: 1.24rem;

@@ -40,9 +40,6 @@ $bg-secondary-color: #fafafa;
   border-radius: 10px;
 }
 .main {
-  .contents-wrapper {
-    padding: 8px 32px;
-  }
 }
 .sub {
 }
