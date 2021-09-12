@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 $bg-secondary-color: #fafafa;
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 112px auto 96px;
   padding: 32px 24px 32px 0;
   background-color: $bg-secondary-color;
