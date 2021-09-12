@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="post-list">
-      <div v-for="(article, index) in articles" :key="article.id">
+      <div v-for="(article, index) in displayPosts" :key="article.id">
         <Article :article="article" />
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
@@ -13,7 +13,7 @@
         :range-before="1"
         :range-after="1"
         size="is-large"
-        :per-page="10"
+        :per-page="pageSize"
         icon-prev="chevron-left"
         icon-next="chevron-right"
       >
@@ -49,7 +49,17 @@ export default {
   data() {
     return {
       currentPage: 1,
+      pageSize: 10,
     }
+  },
+
+  computed: {
+    displayPosts() {
+      return this.articles.slice(
+        this.pageSize * (this.currentPage - 1),
+        this.pageSize * this.currentPage
+      )
+    },
   },
 }
 </script>
