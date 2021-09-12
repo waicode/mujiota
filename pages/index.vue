@@ -49,12 +49,13 @@ export default {
   data() {
     return {
       currentPage: 1,
-      pageSize: 10,
+      pageSize: 5,
     }
   },
 
   computed: {
     displayPosts() {
+      // TODO: 記事の高さを固定にしてチラツキをなくす
       return this.articles.slice(
         this.pageSize * (this.currentPage - 1),
         this.pageSize * this.currentPage
