@@ -6,6 +6,19 @@
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
     </div>
+    <div class="post-pagination">
+      <b-pagination
+        v-model="currentPage"
+        :total="articles.length"
+        :range-before="1"
+        :range-after="1"
+        size="is-large"
+        :per-page="10"
+        icon-prev="chevron-left"
+        icon-next="chevron-right"
+      >
+      </b-pagination>
+    </div>
   </div>
 </template>
 
@@ -33,5 +46,26 @@ export default {
       articles,
     }
   },
+  data() {
+    return {
+      currentPage: 1,
+    }
+  },
 }
 </script>
+<style lang="scss" scoped>
+.container {
+  .post-list {
+    margin-bottom: 64px;
+    @media (max-width: $tablet) {
+      margin-bottom: 12px;
+    }
+  }
+  .post-pagination {
+    margin-bottom: 4px;
+    @media (max-width: $tablet) {
+      margin-bottom: 48px;
+    }
+  }
+}
+</style>

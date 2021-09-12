@@ -83,7 +83,10 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     .eyecatch {
-      padding: 24px;
+      padding: 32px;
+      @media (max-width: $desktop) {
+        padding: 12px;
+      }
       height: auto;
       img {
         vertical-align: top;
@@ -91,10 +94,6 @@ export default {
       }
     }
     .contents {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
-      // width: 56%;
       min-height: 172px;
       .post-title {
         font-size: 1.24rem;

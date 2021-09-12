@@ -1,21 +1,29 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+// widescreen/fullhd breakpoint を無効に
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
 // 背景色を灰色に
 $body-background-color: #eee;
 
-// ヘッダーナビの背景を透明に
-$navbar-background-color: transparent;
+// テキストカラーを変更
+$text: #333;
 
 // フォントを変更
 $family-primary: 'Montserrat', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
   meiryo, sans-serif;
 
-// テキストカラーを変更
-$text: #333;
+// ヘッダーナビの背景を透明に
+$navbar-background-color: transparent;
 
 // 行の高さを日本語用に少し高く
 $body-line-height: 1.61;
+
+// ページネーション
+$pagination-current-background-color: #424242;
+$pagination-color: #757575;
 
 // ドロップダウン
 $dropbox-text-color: #757575;
