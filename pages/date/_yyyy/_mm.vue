@@ -6,7 +6,7 @@
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
     </div>
-    <div class="post-pagination">
+    <div v-show="articles.length > pageSize" class="post-pagination">
       <b-pagination
         v-model="currentPage"
         :total="articles.length"
