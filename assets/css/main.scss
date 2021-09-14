@@ -21,6 +21,31 @@ $navbar-background-color: transparent;
 // 行の高さを日本語用に少し高く
 $body-line-height: 1.61;
 
+// ナビバー
+$navbar-breakpoint: 0;
+$navbar-burger-color: transparent;
+.navbar {
+  padding-top: 20px;
+}
+.navbar-brand {
+  padding: 24px 28px 20px;
+  @media (max-width: $desktop) {
+    padding: 28px 28px 20px;
+  }
+  @media (max-width: $tablet) {
+    padding: 32px 24px 20px;
+  }
+}
+.navbar-end {
+  .navbar-item {
+    padding: 24px;
+  }
+}
+.navbar-menu {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 // ページネーション
 $pagination-current-background-color: #424242;
 $pagination-color: #757575;

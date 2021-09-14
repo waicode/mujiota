@@ -37,13 +37,13 @@ export default {
 $bg-secondary-color: #fafafa;
 .wrapper {
   max-width: 1280px;
-  margin: 112px auto 96px;
   padding: 32px 12px;
   background-color: $bg-secondary-color;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin: 112px auto 96px;
   @media (max-width: $tablet) {
-    margin: 48px auto 64px;
+    margin: 96px auto 64px;
   }
   .main {
     .contents-wrapper {

@@ -86,19 +86,6 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-.header {
-  .navbar {
-    padding: 28px 0 0 24px;
-    height: 104px;
-  }
-  .logo-mujiota {
-    position: relative;
-    display: block;
-    width: 12%;
-    top: 60px;
-    left: 40px;
-  }
-}
 $logo-color: #67041b;
 $circle-color: #6f4952;
 .topnav-icon {
@@ -130,7 +117,7 @@ $circle-color: #6f4952;
     margin-right: 16px;
   }
   &:last-child {
-    margin-right: 20px;
+    margin-right: 0;
   }
 }
 .header-bg {
