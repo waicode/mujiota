@@ -53,20 +53,50 @@ export default {
         &:not(:last-child) {
           margin-right: 32px;
         }
-        &.icon-twitter svg {
-          width: 48px;
-          height: 48px;
+        svg {
           fill: #fff;
         }
-        &.icon-github svg {
-          width: 48px;
-          height: 48px;
-          fill: #fff;
+        &.icon-twitter {
+          a {
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+            &:focus,
+            &:hover {
+              svg {
+                fill: #81d4fa;
+              }
+            }
+          }
         }
-        &.icon-email svg {
-          width: 48px;
-          height: 48px;
-          fill: #fff;
+        &.icon-github {
+          a {
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+            &:focus,
+            &:hover {
+              svg {
+                fill: #9fa8da;
+              }
+            }
+          }
+        }
+        &.icon-email {
+          a {
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+            &:focus,
+            &:hover {
+              svg {
+                fill: #eeeeee;
+              }
+            }
+          }
         }
       }
     }

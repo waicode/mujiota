@@ -98,14 +98,6 @@ a.topnav-icon {
   background-color: transparent;
   border: 2px solid $circle-color;
   border-radius: 50%;
-  &:focus,
-  &:hover {
-    background-color: $circle-color;
-    border: 2px solid transparent;
-    svg {
-      fill: #fff !important;
-    }
-  }
   svg {
     fill: $logo-color;
   }
@@ -134,6 +126,14 @@ a.topnav-icon {
   }
   &:last-child {
     margin-right: 0;
+  }
+  &:focus,
+  &:hover {
+    background-color: $circle-color;
+    border: 2px solid transparent;
+    svg {
+      fill: #fff;
+    }
   }
 }
 .header-bg {
