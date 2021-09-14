@@ -17,7 +17,7 @@
           <b-navbar-item tag="div">
             <div class="buttons">
               <a
-                class="topnav-icon icon-sitemap"
+                class="topnav-icon icon-serch"
                 @click="isComponentModalActive = true"
               >
                 <SearchIconSvg />
@@ -88,30 +88,46 @@ export default {
 }
 $logo-color: #67041b;
 $circle-color: #6f4952;
-.topnav-icon {
+a.topnav-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 50px;
   height: 50px;
+  background-color: transparent;
   border: 2px solid $circle-color;
   border-radius: 50%;
-  &.icon-serch svg {
-    width: 24px;
-    height: 24px;
+  &:focus,
+  &:hover {
+    background-color: $circle-color;
+    border: 2px solid transparent;
+    svg {
+      fill: #fff !important;
+    }
+  }
+  svg {
     fill: $logo-color;
   }
-  &.icon-sitemap svg {
-    width: 24px;
-    position: relative;
-    top: -1px;
-    fill: $logo-color;
+  &.icon-serch {
+    svg {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
   }
-  &.icon-email svg {
-    width: 24px;
-    height: 24px;
-    fill: $logo-color;
+  &.icon-sitemap {
+    svg {
+      position: relative;
+      width: 24px;
+      top: -1px;
+    }
+  }
+  &.icon-email {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
   &:not(:last-child) {
     margin-right: 16px;
