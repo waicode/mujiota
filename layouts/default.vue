@@ -19,20 +19,6 @@
     <Footer />
   </div>
 </template>
-<script>
-import Header from '@/components/Header'
-import SideBar from '@/components/SideBar'
-import Footer from '@/components/Footer'
-import ReturnTopButton from '@/components/ReturnTopButton'
-export default {
-  components: {
-    Header,
-    SideBar,
-    Footer,
-    ReturnTopButton,
-  },
-}
-</script>
 <style lang="scss" scoped>
 $bg-secondary-color: #fafafa;
 .wrapper {

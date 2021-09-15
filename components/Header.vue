@@ -49,14 +49,11 @@ import MujiotaLogoSvg from '@/assets/images/shared/logo/mujiota-logo.svg'
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 
-import SearchModal from '@/components/SearchModal.vue'
-
 export default {
   components: {
     MujiotaLogoSvg,
     SearchIconSvg,
     SitemapIconSvg,
-    SearchModal,
   },
   data() {
     return {

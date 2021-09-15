@@ -53,11 +53,7 @@
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
-import AssetsImage from '@/components/AssetsImage.vue'
 export default {
-  components: {
-    AssetsImage,
-  },
   props: {
     article: {
       require: true,

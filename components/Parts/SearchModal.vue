@@ -49,11 +49,7 @@
   </div>
 </template>
 <script>
-import Article from '@/components/Article'
 export default {
-  components: {
-    Article,
-  },
   data() {
     return {
       searchedArticles: this.$store.state.articles,

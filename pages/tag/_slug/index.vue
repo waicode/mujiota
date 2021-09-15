@@ -23,11 +23,7 @@
 </template>
 
 <script>
-import Article from '@/components/Article'
 export default {
-  components: {
-    Article,
-  },
   async asyncData({ $content, params, app, error }) {
     const tagName = app.$getTagName(params.slug)
     let articles = []

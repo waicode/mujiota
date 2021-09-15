@@ -41,20 +41,7 @@
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
-import AssetsImage from '@/components/AssetsImage.vue'
-import TableOfContents from '@/components/Parts/TableOfContents.vue'
-import ShareButtonsTop from '@/components/Parts/ShareButtonsTop.vue'
-import ShareButtonsBottom from '@/components/Parts/ShareButtonsBottom.vue'
-import RelatedPosts from '@/components/Parts/RelatedPosts.vue'
-
 export default {
-  components: {
-    AssetsImage,
-    TableOfContents,
-    ShareButtonsTop,
-    ShareButtonsBottom,
-    RelatedPosts,
-  },
   async asyncData({ $content, params, error }) {
     let article = {}
     let relatedArticles = []

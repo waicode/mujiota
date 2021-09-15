@@ -23,11 +23,7 @@
 </template>
 
 <script>
-import Article from '@/components/Article'
 export default {
-  components: {
-    Article,
-  },
   async asyncData({ $content }) {
     const articles = await $content('articles', { deep: true })
       .only([

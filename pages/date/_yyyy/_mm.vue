@@ -23,11 +23,7 @@
 </template>
 
 <script>
-import Article from '@/components/Article'
 export default {
-  components: {
-    Article,
-  },
   async asyncData({ $content, params, error }) {
     const year = params.yyyy
     const month = params.mm

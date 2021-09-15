@@ -43,7 +43,12 @@ export default {
   plugins: ['~/plugins/filter.js', '~/plugins/video.js', '~/plugins/tag.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    {
+      path: '@/components/',
+      pathPrefix: false,
+    },
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
