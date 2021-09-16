@@ -3,7 +3,7 @@
     <div class="share-title">Share on SNS</div>
     <div class="share-buttons">
       <div class="share-item hb">
-        <a :href="ShareUrlHatena" target="_blank" rel="nofollow noopener">
+        <a :href="shareUrlHatena" target="_blank" rel="nofollow noopener">
           <ShareIconHatena />
         </a>
         <div v-if="ShareCountHatena > 0" class="share-count">
@@ -12,7 +12,7 @@
       </div>
       <div class="share-item tw">
         <a
-          :href="ShareUrlTwitter"
+          :href="shareUrlTwitter"
           target="blank"
           rel="nofollow noopener"
           onclick="window.open(this.href, 'window', 'width=600, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"
@@ -25,7 +25,7 @@
       </div>
       <div class="share-item fb">
         <a
-          :href="ShareUrlFacebook"
+          :href="shareUrlFacebook"
           target="blank"
           rel="nofollow noopener"
           onclick="window.open(this.href, 'window', 'width=600, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"
@@ -38,7 +38,7 @@
       </div>
       <div class="share-item pk">
         <a
-          :href="ShareUrlPocket"
+          :href="shareUrlPocket"
           target="blank"
           rel="nofollow noopener"
           onclick="window.open(this.href, 'window', 'width=600, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"
@@ -81,17 +81,20 @@ export default {
     }
   },
   computed: {
-    ShareUrlHatena() {
-      return ``
+    pageUrl() {
+      return `${process.env.BASE_URL}${this.article.id}/${this.article.slug}`
     },
-    ShareUrlTwitter() {
-      return ``
+    shareUrlHatena() {
+      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.article.title}`
     },
-    ShareUrlFacebook() {
-      return ``
+    shareUrlTwitter() {
+      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.article.title}`
     },
-    ShareUrlPocket() {
-      return ``
+    shareUrlFacebook() {
+      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.article.title}`
+    },
+    shareUrlPocket() {
+      return `http://getpocket.com/edit?url=${this.pageUrl}`
     },
   },
 }

@@ -50,6 +50,8 @@
   </div>
 </template>
 <script>
+import axios from 'axios'
+
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
 import ShareIconFacebook from '@/assets/images/shared/icon/share_icon_facebook_17.5x17.5.svg'
@@ -92,6 +94,21 @@ export default {
     },
     shareUrlPocket() {
       return `http://getpocket.com/edit?url=${this.pageUrl}`
+    },
+  },
+  mounted() {
+    this.countHatena()
+  },
+  methods: {
+    countHatena() {
+      console.log('countHatena start')
+      console.log('this.pageUrl', this.pageUrl)
+      const hatenaCountUrl = `https://bookmark.hatenaapis.com/count/entry?url=${this.pageUrl}/`
+      // TODO: network errorの解消
+      axios.get(hatenaCountUrl).then((response) => {
+        this.shareCountHatena = response.data
+        console.log('shareCountHatena', this.shareCountHatena)
+      })
     },
   },
 }
