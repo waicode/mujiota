@@ -30,7 +30,13 @@
       <p>{{ article.description }}</p>
     </div>
     <TableOfContents v-if="article.toc.length > 0" :article="article" />
-    <ShareButtonsTop :article="article" />
+    <ShareButtonsTop
+      :page-url="pageUrl"
+      :share-count-hatena="shareCountHatena"
+      :share-count-twitter="shareCountTwitter"
+      :share-count-facebook="shareCountFacebook"
+      :share-count-pocket="shareCountPocket"
+    />
     <NuxtContent class="article" :document="article" />
     <ShareButtonsBottom :article="article" />
     <RelatedPosts :articles="relatedArticles" />
@@ -45,11 +51,13 @@ export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, $axios, params, error }) {
     let article = {}
     let relatedArticles = []
+    let pageUrl = ''
     try {
       article = await $content('articles', params.id, params.slug).fetch()
+      pageUrl = `${process.env.BASE_URL}${article.id}/${article.slug}`
     } catch {
       // 見つからない場合はNOTFOUND
       error({
@@ -64,7 +72,20 @@ export default {
         })
         .fetch()
     } catch {}
-    return { article, relatedArticles }
+
+    return {
+      article,
+      pageUrl,
+      relatedArticles,
+    }
+  },
+  data() {
+    return {
+      shareCountHatena: 0,
+      shareCountTwitter: 0,
+      shareCountFacebook: 0,
+      shareCountPocket: 0,
+    }
   },
   computed: {
     faCalendarAlt() {
@@ -73,6 +94,21 @@ export default {
     faRedoAlt() {
       return faRedoAlt
     },
+  },
+  mounted() {
+    // TODO: Network Error修正
+
+    // SNS Count
+    // const hatenaCountUrl = `https://bookmark.hatenaapis.com/count/entry?url=${this.pageUrl}/`
+    const hatenaCountUrl = `https://mujiota.com/`
+    console.log('hatenaCountUrl', hatenaCountUrl)
+    this.$axios
+      .$get(hatenaCountUrl)
+      .then((res) => {
+        console.log('res', res)
+        this.shareCountHatena = res.data
+      })
+      .catch((e) => console.log(e))
   },
 }
 </script>

@@ -56,6 +56,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
+    '@nuxtjs/ngrok',
     '@nuxtjs/pwa',
     '@nuxtjs/date-fns',
     '@nuxtjs/style-resources',
@@ -67,8 +69,17 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
+  axios: {
+    proxy: true,
+  },
+  proxy: {
+    '/api': {
+      target: 'http://localhost',
+      pathRewrite: {
+        '^/api': '/',
+      },
+    },
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {

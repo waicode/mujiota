@@ -50,8 +50,6 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
-
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
 import ShareIconFacebook from '@/assets/images/shared/icon/share_icon_facebook_17.5x17.5.svg'
@@ -65,50 +63,45 @@ export default {
     ShareIconPocket,
   },
   props: {
-    article: {
+    pageUrl: {
       require: true,
-      type: Object,
+      type: String,
       default: null,
     },
-  },
-  data() {
-    return {
-      shareCountHatena: 0,
-      shareCountTwitter: 0,
-      shareCountFacebook: 0,
-      shareCountPocket: 0,
-    }
+    title: {
+      require: true,
+      type: String,
+      default: null,
+    },
+    shareCountHatena: {
+      type: Number,
+      default: 0,
+    },
+    shareCountTwitter: {
+      type: Number,
+      default: 0,
+    },
+    shareCountFacebook: {
+      type: Number,
+      default: 0,
+    },
+    shareCountPocket: {
+      type: Number,
+      default: 0,
+    },
   },
   computed: {
-    pageUrl() {
-      return `${process.env.BASE_URL}${this.article.id}/${this.article.slug}`
-    },
     shareUrlHatena() {
-      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.article.title}`
+      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.title}`
     },
     shareUrlTwitter() {
-      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.article.title}`
+      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.title}`
     },
     shareUrlFacebook() {
-      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.article.title}`
+      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.title}`
     },
     shareUrlPocket() {
       return `http://getpocket.com/edit?url=${this.pageUrl}`
-    },
-  },
-  mounted() {
-    this.countHatena()
-  },
-  methods: {
-    countHatena() {
-      console.log('countHatena start')
-      console.log('this.pageUrl', this.pageUrl)
-      const hatenaCountUrl = `https://bookmark.hatenaapis.com/count/entry?url=${this.pageUrl}/`
-      // TODO: network errorの解消
-      axios.get(hatenaCountUrl).then((response) => {
-        this.shareCountHatena = response.data
-        console.log('shareCountHatena', this.shareCountHatena)
-      })
     },
   },
 }
