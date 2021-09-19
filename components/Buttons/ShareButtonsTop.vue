@@ -113,13 +113,20 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   > *:not(:last-child) {
     margin-right: 40px;
+    @media (max-width: $tablet) {
+      margin-right: 28px;
+    }
   }
   .share-item {
     width: 64px;
     height: 64px;
+    @media (max-width: $tablet) {
+      width: 48px;
+      height: 48px;
+    }
     a {
       display: flex;
       justify-content: center;
@@ -130,6 +137,9 @@ export default {
       color: #f2f2f2;
       font-weight: 700;
       border-radius: 34px;
+      @media (max-width: $tablet) {
+        border-radius: 24px;
+      }
     }
     &.hb {
       a {
@@ -154,6 +164,11 @@ export default {
         background-color: #ee4056;
         border: 3px solid #ee4056;
       }
+    }
+    .share-count {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      text-align: center;
     }
   }
 }

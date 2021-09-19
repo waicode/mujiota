@@ -22,7 +22,7 @@
 <style lang="scss" scoped>
 $bg-secondary-color: #fafafa;
 .wrapper {
-  max-width: 1280px;
+  max-width: 1200px;
   padding: 32px 12px;
   background-color: $bg-secondary-color;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

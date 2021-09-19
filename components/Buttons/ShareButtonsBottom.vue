@@ -6,8 +6,8 @@
         <a :href="shareUrlHatena" target="_blank" rel="nofollow noopener">
           <ShareIconHatena />
         </a>
-        <div v-if="ShareCountHatena > 0" class="share-count">
-          {{ ShareCountHatena }}
+        <div v-if="shareCountHatena > 0" class="share-count">
+          {{ shareCountHatena }}
         </div>
       </div>
       <div class="share-item tw">
@@ -19,8 +19,8 @@
         >
           <ShareIconTwitter />
         </a>
-        <div v-if="ShareCountTwitter > 0" class="share-count">
-          {{ ShareCountTwitter }}
+        <div v-if="shareCountTwitter > 0" class="share-count">
+          {{ shareCountTwitter }}
         </div>
       </div>
       <div class="share-item fb">
@@ -32,8 +32,8 @@
         >
           <ShareIconFacebook />
         </a>
-        <div v-if="ShareCountFacebook > 0" class="share-count">
-          {{ ShareCountFacebook }}
+        <div v-if="shareCountFacebook > 0" class="share-count">
+          {{ shareCountFacebook }}
         </div>
       </div>
       <div class="share-item pk">
@@ -45,8 +45,8 @@
         >
           <ShareIconPocket />
         </a>
-        <div v-if="ShareCountPocket > 0" class="share-count">
-          {{ ShareCountPocket }}
+        <div v-if="shareCountPocket > 0" class="share-count">
+          {{ shareCountPocket }}
         </div>
       </div>
     </div>
@@ -66,10 +66,31 @@ export default {
     ShareIconPocket,
   },
   props: {
-    article: {
+    pageUrl: {
       require: true,
-      type: Object,
+      type: String,
       default: null,
+    },
+    title: {
+      require: true,
+      type: String,
+      default: null,
+    },
+    shareCountHatena: {
+      type: Number,
+      default: 0,
+    },
+    shareCountTwitter: {
+      type: Number,
+      default: 0,
+    },
+    shareCountFacebook: {
+      type: Number,
+      default: 0,
+    },
+    shareCountPocket: {
+      type: Number,
+      default: 0,
     },
   },
   data() {
@@ -81,17 +102,14 @@ export default {
     }
   },
   computed: {
-    pageUrl() {
-      return `${process.env.BASE_URL}${this.article.id}/${this.article.slug}`
-    },
     shareUrlHatena() {
-      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.article.title}`
+      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.title}`
     },
     shareUrlTwitter() {
-      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.article.title}`
+      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.title}`
     },
     shareUrlFacebook() {
-      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.article.title}`
+      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.title}`
     },
     shareUrlPocket() {
       return `http://getpocket.com/edit?url=${this.pageUrl}`
@@ -168,6 +186,11 @@ export default {
           border: 3px solid #ee4056;
         }
       }
+    }
+    .share-count {
+      margin-top: 16px;
+      font-size: 1.1rem;
+      text-align: center;
     }
   }
 }

@@ -29,16 +29,26 @@
     <div class="description">
       <p>{{ article.description }}</p>
     </div>
-    <TableOfContents v-if="article.toc.length > 0" :article="article" />
+    <div class="toc-wrap">
+      <TableOfContents v-if="article.toc.length > 0" :article="article" />
+    </div>
     <ShareButtonsTop
       :page-url="pageUrl"
+      :title="article.title"
       :share-count-hatena="shareCountHatena"
       :share-count-twitter="shareCountTwitter"
       :share-count-facebook="shareCountFacebook"
       :share-count-pocket="shareCountPocket"
     />
     <NuxtContent class="article" :document="article" />
-    <ShareButtonsBottom :article="article" />
+    <ShareButtonsBottom
+      :page-url="pageUrl"
+      :title="article.title"
+      :share-count-hatena="shareCountHatena"
+      :share-count-twitter="shareCountTwitter"
+      :share-count-facebook="shareCountFacebook"
+      :share-count-pocket="shareCountPocket"
+    />
     <RelatedPosts :articles="relatedArticles" />
   </article>
 </template>
@@ -81,10 +91,11 @@ export default {
   },
   data() {
     return {
-      shareCountHatena: 0,
-      shareCountTwitter: 0,
-      shareCountFacebook: 0,
-      shareCountPocket: 0,
+      // FIXME: ダミー値
+      shareCountHatena: 1,
+      shareCountTwitter: 2,
+      shareCountFacebook: 3,
+      shareCountPocket: 4,
     }
   },
   computed: {
@@ -97,18 +108,17 @@ export default {
   },
   mounted() {
     // TODO: Network Error修正
-
     // SNS Count
     // const hatenaCountUrl = `https://bookmark.hatenaapis.com/count/entry?url=${this.pageUrl}/`
-    const hatenaCountUrl = `https://mujiota.com/`
-    console.log('hatenaCountUrl', hatenaCountUrl)
-    this.$axios
-      .$get(hatenaCountUrl)
-      .then((res) => {
-        console.log('res', res)
-        this.shareCountHatena = res.data
-      })
-      .catch((e) => console.log(e))
+    // const hatenaCountUrl = `https://mujiota.com/`
+    // console.log('hatenaCountUrl', hatenaCountUrl)
+    // this.$axios
+    //   .$get(hatenaCountUrl)
+    //   .then((res) => {
+    //     console.log('res', res)
+    //     this.shareCountHatena = res.data
+    //   })
+    //   .catch((e) => console.log(e))
   },
 }
 </script>
@@ -137,6 +147,12 @@ export default {
     .tags {
       display: flex;
       font-size: 0.8rem;
+    }
+  }
+  .toc-wrap {
+    @media (max-width: $tablet) {
+      // モバイルは目次を非表示
+      display: none;
     }
   }
   .eyecatch {

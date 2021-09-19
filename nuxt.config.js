@@ -70,16 +70,17 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    proxy: true,
+    // FIXME: プロキシ設定
+    // proxy: true,
   },
-  proxy: {
-    '/api': {
-      target: 'http://localhost',
-      pathRewrite: {
-        '^/api': '/',
-      },
-    },
-  },
+  // proxy: {
+  //   '/api': {
+  //     target: 'http://localhost',
+  //     pathRewrite: {
+  //       '^/api': '/',
+  //     },
+  //   },
+  // },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
