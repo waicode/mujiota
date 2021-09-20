@@ -1,12 +1,15 @@
 <template>
   <div class="kaerebalink">
-    <div class="link-box">
-      <div v-if="imgFileName" class="link-image">
+    <div class="columns wrap">
+      <div
+        v-if="imgFileName"
+        class="link-image column is-4-desktop is-4-tablet is-12-mobile"
+      >
         <a :href="titleLink" target="_blank">
           <AssetsImage :path="assetsImagePath" />
         </a>
       </div>
-      <div class="link-info">
+      <div class="link-info column is-8-desktop is-8-tablet is-12-mobile">
         <div class="link-title">
           <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
@@ -109,10 +112,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .kaerebalink {
-  .link-box {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  .wrap {
     margin: 0 0 2rem;
     padding: 0.64rem;
     background: #fff;
@@ -121,16 +121,13 @@ export default {
     border-radius: 3px;
     box-sizing: border-box;
     .link-image {
-      display: flex;
       align-items: center;
-      width: 18%;
       padding: 16px;
       img {
         vertical-align: top;
       }
     }
     .link-info {
-      width: 76%;
       .link-title {
         font-size: 1.0625rem;
         font-weight: bold;
@@ -149,6 +146,10 @@ export default {
         .seach-link {
           width: 32%;
           min-width: 148px;
+          @media (max-width: $desktop) {
+            width: 100%;
+            min-width: 100%;
+          }
           a {
             display: block;
             width: 100%;

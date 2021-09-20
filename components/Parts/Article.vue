@@ -74,10 +74,6 @@ export default {
 <style lang="scss" scoped>
 .archive {
   .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     .eyecatch {
       padding: 32px;
       @media (max-width: $desktop) {
