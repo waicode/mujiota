@@ -1,7 +1,9 @@
 <template>
   <div id="page-top">
     <transition name="fade">
-      <button v-show="buttonActive" @click="returnTop"></button>
+      <div v-show="buttonActive" class="wrap">
+        <button @click="returnTop"></button>
+      </div>
     </transition>
   </div>
 </template>
@@ -42,52 +44,54 @@ export default {
 }
 
 #page-top {
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  right: 24px;
-  bottom: 4px;
-  opacity: 0.6;
-  background-color: transparent;
-  :focus,
-  :hover {
-    cursor: pointer;
-  }
-  button {
-    position: relative;
-    display: block;
-    width: 90px;
-    height: 90px;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    &::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      content: '\f102';
-      font-size: 25px;
-      color: #424242;
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      top: -40px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-      text-align: center;
+  .wrap {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 16px;
+    opacity: 0.6;
+    background-color: #424242;
+    :focus,
+    :hover {
+      cursor: pointer;
     }
-    &::after {
-      content: 'PAGE TOP';
-      font-size: 13px;
-      position: absolute;
-      top: 45px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-      text-align: center;
-      color: #424242;
+    button {
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 80px;
+      text-decoration: none;
+      border: none;
+      background-color: transparent;
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f102';
+        font-size: 24px;
+        color: #fff;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -28px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+      &::after {
+        content: 'PAGE TOP';
+        font-size: 10px;
+        position: absolute;
+        top: 45px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+      }
     }
   }
 }

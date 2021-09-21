@@ -15,7 +15,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'robots', name: 'robots', content: 'noindex' }, // FIXME: 公開時は消すこと
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
@@ -51,14 +51,16 @@ export default {
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+    '@nuxt/image',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/proxy',
-    '@nuxtjs/ngrok',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     '@nuxtjs/date-fns',
     '@nuxtjs/style-resources',
     '@nuxt/content',
@@ -81,12 +83,13 @@ export default {
   //     },
   //   },
   // },
+
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'ja',
-    },
-  },
+  // pwa: {
+  //   manifest: {
+  //     lang: 'ja',
+  //   },
+  // },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {

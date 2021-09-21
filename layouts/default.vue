@@ -13,7 +13,7 @@
             <SideBar />
           </div>
         </aside>
-        <ReturnTopButton></ReturnTopButton>
+        <ReturnTopButton class="page-top-button"></ReturnTopButton>
       </div>
     </div>
     <Footer />
@@ -46,6 +46,11 @@ $bg-secondary-color: #fafafa;
     }
     @media (max-width: $tablet) {
       padding: 8px 12px;
+    }
+  }
+  .page-top-button {
+    @media (max-width: $tablet) {
+      display: none;
     }
   }
 }

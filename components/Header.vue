@@ -7,7 +7,11 @@
           <transition name="fade">
             <div v-show="logoActive">
               <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <MujiotaLogoSvg />
+                <nuxt-img
+                  src="/logo/mujiota-logo.png"
+                  srcset="/logo/mujiota-logo.png 1x, /logo/mujiota-logo@2x.png 2x"
+                  alt="mujiota.com"
+                />
               </b-navbar-item>
             </div>
           </transition>
@@ -15,34 +19,38 @@
         <template #start> </template>
         <template #end>
           <b-navbar-item tag="div">
-            <div class="buttons">
-              <a
-                class="topnav-icon icon-serch"
-                :class="{ ontop: logoActive }"
-                @click="isComponentModalActive = true"
-              >
-                <SearchIconSvg />
-              </a>
-              <b-modal
-                v-model="isComponentModalActive"
-                has-modal-card
-                aria-role="dialog"
-                aria-label="search modal"
-                aria-modal
-                scroll="keep"
-                animation="fade"
-                :can-cancel="['escape', 'outside']"
-              >
-                <SearchModal></SearchModal>
-              </b-modal>
-              <nuxt-link
-                to="/sitemap"
-                class="topnav-icon icon-sitemap"
-                :class="{ ontop: logoActive }"
-              >
-                <SitemapIconSvg />
-              </nuxt-link>
-            </div>
+            <transition name="fade">
+              <div v-show="navBtnActive">
+                <div class="buttons">
+                  <a
+                    class="topnav-icon icon-serch"
+                    :class="{ ontop: navBtnOnTop }"
+                    @click="isComponentModalActive = true"
+                  >
+                    <SearchIconSvg />
+                  </a>
+                  <b-modal
+                    v-model="isComponentModalActive"
+                    has-modal-card
+                    aria-role="dialog"
+                    aria-label="search modal"
+                    aria-modal
+                    scroll="keep"
+                    animation="fade"
+                    :can-cancel="['escape', 'outside']"
+                  >
+                    <SearchModal></SearchModal>
+                  </b-modal>
+                  <nuxt-link
+                    to="/sitemap"
+                    class="topnav-icon icon-sitemap"
+                    :class="{ ontop: navBtnOnTop }"
+                  >
+                    <SitemapIconSvg />
+                  </nuxt-link>
+                </div>
+              </div>
+            </transition>
           </b-navbar-item>
         </template>
       </b-navbar>
@@ -50,13 +58,11 @@
   </div>
 </template>
 <script>
-import MujiotaLogoSvg from '@/assets/images/shared/logo/mujiota-logo.svg'
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 
 export default {
   components: {
-    MujiotaLogoSvg,
     SearchIconSvg,
     SitemapIconSvg,
   },
@@ -64,6 +70,8 @@ export default {
     return {
       isComponentModalActive: false,
       logoActive: true,
+      navBtnActive: true,
+      navBtnOnTop: true,
       scroll: 0,
     }
   },
@@ -72,9 +80,18 @@ export default {
   },
   methods: {
     scrollWindow() {
-      const top = 80 // ロゴを消したい位置
+      const logoTop = 80 // ロゴを消したい位置
+      const navBtnTop = 83 // ボタンを消したい位置
+      const mobileMediaQuery = window.matchMedia('(max-width: 768px)') // < $tablet
       this.scroll = window.scrollY
-      this.logoActive = top > this.scroll
+      this.logoActive = logoTop > this.scroll
+      this.navBtnOnTop = navBtnTop > this.scroll
+      if (mobileMediaQuery.matches) {
+        this.navBtnActive = this.navBtnOnTop
+      } else {
+        // モバイル以外は常に表示
+        this.navBtnActive = true
+      }
     },
   },
 }
