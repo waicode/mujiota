@@ -132,20 +132,25 @@ export default {
   }
   .meta-wrap {
     display: flex;
-    height: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
     justify-content: space-between;
     align-items: center;
     color: $text;
     .date {
       display: flex;
+      flex-wrap: nowrap;
       font-size: 0.8rem;
-      padding-top: 2px;
+      padding: 4px;
+      padding-right: 0;
       .date-published {
         margin-right: 12px;
       }
     }
     .tags {
       display: flex;
+      padding: 4px;
+      padding-left: 0;
       font-size: 0.8rem;
     }
   }

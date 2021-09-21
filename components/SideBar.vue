@@ -1,6 +1,6 @@
 <template>
   <div class="side-bar">
-    <h2>人気記事</h2>
+    <h2>読まれている記事</h2>
     <div class="side-content">
       <ol class="popular-list">
         <li>
