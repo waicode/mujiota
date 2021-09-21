@@ -1,20 +1,27 @@
 <template>
   <div v-if="article" class="related-link">
     <nuxt-link :to="link">
-      <AssetsImage
-        class="inbox-image"
-        :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
-      />
-      <div class="inbox-contents">
-        <div class="inbox-title">
-          {{ article.title }}
+      <div class="columns wrap">
+        <div class="link-image column is-3-desktop is-5-tablet is-12-mobile">
+          <AssetsImage
+            :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
+          />
         </div>
-        <div class="inbox-date">{{ article.updatedAt | dateFormatted }}</div>
+        <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
+          <div class="link-title">
+            {{ article.title }}
+          </div>
+          <div class="link-date">
+            <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+            <span>{{ article.updatedAt | dateFormatted }}</span>
+          </div>
+        </div>
       </div>
     </nuxt-link>
   </div>
 </template>
 <script>
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 export default {
   props: {
     id: {
@@ -29,6 +36,9 @@ export default {
     }
   },
   computed: {
+    faCalendarAlt() {
+      return faCalendarAlt
+    },
     link() {
       return `/${this.article.id}/${this.article.slug}`
     },
@@ -52,53 +62,49 @@ export default {
 .related-link {
   margin: 1.8em 0;
   a {
-    display: flex;
-    justify-content: space-between;
-    color: #333;
-    background: #fff;
-    border: 1px solid #eee;
-    box-shadow: 0 0 1px #efefef;
-    text-decoration: none;
-    padding: 1rem;
-    border-radius: 2px;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      color: #666;
-      background: rgba(167, 255, 235, 0.24);
-    }
-    .inbox-image {
-      display: flex;
-      align-items: center;
-      width: 20%;
-      border: 1px solid #e0e0e0;
-      box-shadow: 0 0 1px #eee;
-      img {
-        vertical-align: top;
+    .wrap {
+      color: #333;
+      background: #fff;
+      border: 1px solid #eee;
+      box-shadow: 0 0 1px #efefef;
+      text-decoration: none;
+      padding: 0.25rem;
+      border-radius: 2px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: #666;
+        background: rgba(167, 255, 235, 0.24);
       }
-    }
-    .inbox-contents {
-      width: 76%;
-      .inbox-title {
-        font-weight: bold;
-        margin-bottom: 8px;
-        &::before {
-          content: '関連リンク';
-          font-size: 0.7em;
-          font-weight: bold;
-          color: rgb(255, 255, 255);
-          width: 6em;
-          display: inline-block;
-          position: relative;
-          top: -2px;
-          text-align: center;
-          margin-right: 0.5em;
-          background: rgb(17, 17, 17);
-          padding: 0.2em;
-          border-radius: 2px;
+      .link-image {
+        img {
+          border: 1px solid #e0e0e0;
+          box-shadow: 0 0 1px #eee;
+          vertical-align: top;
         }
       }
-      .inbox-date {
-        font-size: 0.84rem;
+      .link-info {
+        .link-title {
+          font-weight: bold;
+          margin-bottom: 8px;
+          &::before {
+            content: '関連リンク';
+            font-size: 0.7em;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            width: 6em;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+            text-align: center;
+            margin-right: 0.5em;
+            background: rgb(17, 17, 17);
+            padding: 0.2em;
+            border-radius: 2px;
+          }
+        }
+        .link-date {
+          font-size: 0.84rem;
+        }
       }
     }
   }
