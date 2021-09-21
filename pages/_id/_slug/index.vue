@@ -65,9 +65,12 @@ export default {
     let article = {}
     let relatedArticles = []
     let pageUrl = ''
+    let imageUrl = ''
     try {
       article = await $content('articles', params.id, params.slug).fetch()
-      pageUrl = `${process.env.BASE_URL}${article.id}/${article.slug}`
+      pageUrl = `${process.env.BASE_URL}/${article.id}/${article.slug}`
+      const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
+      imageUrl = `${process.env.BASE_URL}${imagePath}`
     } catch {
       // 見つからない場合はNOTFOUND
       error({
@@ -86,6 +89,7 @@ export default {
     return {
       article,
       pageUrl,
+      imageUrl,
       relatedArticles,
     }
   },
@@ -96,6 +100,50 @@ export default {
       shareCountTwitter: 2,
       shareCountFacebook: 3,
       shareCountPocket: 4,
+    }
+  },
+  head() {
+    return {
+      title: this.article.title,
+      meta: [
+        { name: 'description', content: this.article.description },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `${this.article.title}`,
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: `mujiota.com`,
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'article',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.pageUrl,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.imageUrl,
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@aiza_wai' },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@aiza_wai',
+        },
+      ],
     }
   },
   computed: {

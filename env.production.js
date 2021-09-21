@@ -1,3 +1,3 @@
 module.exports = {
-  BASE_URL: 'https://mujiota.com/',
+  BASE_URL: 'https://mujiota.com',
 }
