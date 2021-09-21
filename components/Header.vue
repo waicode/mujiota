@@ -2,7 +2,7 @@
   <div>
     <div class="header-bg"></div>
     <div class="header">
-      <b-navbar fixed-top transparent :mobile-burger="false">
+      <b-navbar fixed-top transparent>
         <template #brand>
           <transition name="fade">
             <div v-show="logoActive">
