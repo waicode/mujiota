@@ -156,7 +156,10 @@ export default {
             display: block;
             width: 100%;
             padding: 1em;
-            font-size: 0.9rem;
+            font-size: 0.84rem;
+            @media (max-width: $desktop) {
+              font-size: 0.9rem;
+            }
             font-weight: bold;
             text-align: center;
             border-radius: 4px;
@@ -171,13 +174,16 @@ export default {
           }
         }
         .shoplink-rakuten a {
+          border: 2px solid #ef5350;
           background-color: #ef5350;
         }
         .shoplink-amazon a {
+          border: 2px solid #ff9800;
           background-color: #ff9800;
         }
         .shoplink-yahoo {
           a {
+            border: 2px solid #2196f3;
             background-color: #2196f3;
           }
           img {

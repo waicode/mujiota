@@ -1,12 +1,15 @@
 <template>
   <div class="yomerebalink">
-    <div class="link-box">
-      <div class="link-image">
+    <div class="columns wrap">
+      <div
+        v-if="imgFileName"
+        class="link-image column is-3-desktop is-5-tablet is-12-mobile"
+      >
         <a :href="titleLink" target="_blank">
           <AssetsImage :path="assetsImagePath" />
         </a>
       </div>
-      <div class="link-info">
+      <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
         <div class="link-title">
           <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
@@ -15,16 +18,16 @@
         </div>
         <div class="link-items">
           <div v-if="amazonItemId" class="shoplink-amazon item-link">
-            <a :href="amazonUrl" target="_blank">Amazon</a>
+            <a :href="amazonUrl" target="_blank">Amazonで探す</a>
           </div>
           <div v-if="kindleItemId" class="shoplink-kindle item-link">
-            <a :href="kindleUrl" target="_blank">Kindle</a>
+            <a :href="kindleUrl" target="_blank">Kindleで探す</a>
           </div>
           <div v-if="rakutenItemId" class="shoplink-rakuten item-link">
-            <a :href="rakutenUrl" target="_blank">Rakuten</a>
+            <a :href="rakutenUrl" target="_blank">Rakutenで探す</a>
           </div>
           <div v-if="koboItemId" class="shoplink-kobo item-link">
-            <a :href="koboUrl" target="_blank">kobo</a>
+            <a :href="koboUrl" target="_blank">koboで探す</a>
           </div>
         </div>
       </div>
@@ -86,13 +89,7 @@ export default {
       return `images/link/yomereba/items/${this.imgFileName}`
     },
     titleLink() {
-      let url = null
-      if (!this.amazonItemUrl) {
-        url = this.rakutenItemUrl
-      } else if (!this.rakutenItemUrl) {
-        url = this.amazonItemUrl
-      }
-      return url
+      return this.amazonItemUrl ? this.amazonItemUrl : this.rakutenItemUrl
     },
     amazonUrl() {
       return `https://www.amazon.co.jp/exec/obidos/asin/${this.amazonItemId}/${this.amazonAssociateUserId}/`
@@ -111,10 +108,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .yomerebalink {
-  .link-box {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  .wrap {
     margin: 0 0 2rem;
     padding: 0.64rem;
     background: #fff;
@@ -123,16 +117,13 @@ export default {
     border-radius: 3px;
     box-sizing: border-box;
     .link-image {
-      display: flex;
       align-items: center;
-      width: 18%;
       padding: 16px;
       img {
         vertical-align: top;
       }
     }
     .link-info {
-      width: 76%;
       .link-title {
         font-size: 1.0625rem;
         font-weight: bold;
@@ -149,13 +140,22 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         .item-link {
-          width: 24%;
+          flex: 1;
+          padding: 4px;
           min-width: 96px;
+          @media (max-width: $desktop) {
+            width: 100%;
+            padding: 0;
+            min-width: 100%;
+          }
           a {
             display: block;
             width: 100%;
             padding: 1em;
-            font-size: 0.9rem;
+            font-size: 0.84rem;
+            @media (max-width: $desktop) {
+              font-size: 0.9rem;
+            }
             font-weight: bold;
             text-align: center;
             border-radius: 4px;
