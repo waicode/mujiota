@@ -3,13 +3,13 @@
     <div class="columns wrap">
       <div
         v-if="imgFileName"
-        class="link-image column is-4-desktop is-4-tablet is-12-mobile"
+        class="link-image column is-3-desktop is-5-tablet is-12-mobile"
       >
         <a :href="titleLink" target="_blank">
           <AssetsImage :path="assetsImagePath" />
         </a>
       </div>
-      <div class="link-info column is-8-desktop is-8-tablet is-12-mobile">
+      <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
         <div class="link-title">
           <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
@@ -144,10 +144,12 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         .seach-link {
-          width: 32%;
+          flex: 1;
+          padding: 4px;
           min-width: 148px;
           @media (max-width: $desktop) {
             width: 100%;
+            padding: 0;
             min-width: 100%;
           }
           a {
