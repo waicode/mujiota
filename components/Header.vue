@@ -18,6 +18,7 @@
             <div class="buttons">
               <a
                 class="topnav-icon icon-serch"
+                :class="{ ontop: logoActive }"
                 @click="isComponentModalActive = true"
               >
                 <SearchIconSvg />
@@ -34,7 +35,11 @@
               >
                 <SearchModal></SearchModal>
               </b-modal>
-              <nuxt-link to="/sitemap" class="topnav-icon icon-sitemap">
+              <nuxt-link
+                to="/sitemap"
+                class="topnav-icon icon-sitemap"
+                :class="{ ontop: logoActive }"
+              >
                 <SitemapIconSvg />
               </nuxt-link>
             </div>
@@ -67,7 +72,7 @@ export default {
   },
   methods: {
     scrollWindow() {
-      const top = 40 // ロゴを消したい位置
+      const top = 80 // ロゴを消したい位置
       this.scroll = window.scrollY
       this.logoActive = top > this.scroll
     },
@@ -84,7 +89,10 @@ export default {
   opacity: 0;
 }
 $logo-color: #67041b;
+$logo-alpha-color: rgba(103, 4, 27, 0.24);
 $circle-color: #6f4952;
+$circle-alpha-color: rgba(111, 73, 82, 0.28);
+
 a.topnav-icon {
   display: flex;
   justify-content: center;
@@ -93,10 +101,16 @@ a.topnav-icon {
   width: 50px;
   height: 50px;
   background-color: transparent;
-  border: 2px solid $circle-color;
+  border: 2px solid $circle-alpha-color;
   border-radius: 50%;
   svg {
-    fill: $logo-color;
+    fill: $logo-alpha-color;
+  }
+  &.ontop {
+    border: 2px solid $circle-color;
+    svg {
+      fill: $logo-color;
+    }
   }
   &.icon-serch {
     svg {
