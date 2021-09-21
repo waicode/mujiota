@@ -27,6 +27,7 @@
     "@nuxtjs/style-resources": "^1.2.0",
     "core-js": "^3.9.1",
     "cross-env": "^7.0.3",
+    "esm": "^3.2.25",
     "install": "^0.13.0",
     "node-sass": "^5.0.0",
     "npm": "^7.18.1",
