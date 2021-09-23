@@ -1,8 +1,10 @@
 <template>
   <div id="page-top">
     <transition name="fade">
-      <div v-show="buttonActive" class="wrap">
-        <button @click="returnTop"></button>
+      <div v-show="buttonActive">
+        <div class="wrap">
+          <button @click="returnTop"></button>
+        </div>
       </div>
     </transition>
   </div>
