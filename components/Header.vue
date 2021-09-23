@@ -7,9 +7,12 @@
           <transition name="fade">
             <div v-show="logoActive">
               <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <nuxt-img
+                <img
                   src="/logo/mujiota-logo.png"
-                  srcset="/logo/mujiota-logo.png 1x, /logo/mujiota-logo@2x.png 2x"
+                  srcset="
+                    /logo/mujiota-logo.png    1x,
+                    /logo/mujiota-logo@2x.png 2x
+                  "
                   alt="mujiota.com"
                 />
               </b-navbar-item>
