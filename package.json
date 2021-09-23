@@ -36,6 +36,7 @@
     "remark-directive": "^1.0.1",
     "remark-emoji": "^2.2.0",
     "sass-loader": "10.1.1",
+    "sharp": "^0.29.1",
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
