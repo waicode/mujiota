@@ -1,6 +1,9 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+// モバイルのブレイクポイントを追加
+$mobile: 370px;
+
 // widescreen/fullhd breakpoint を無効に
 $widescreen-enabled: false;
 $fullhd-enabled: false;

@@ -113,6 +113,15 @@ $logo-alpha-color: rgba(103, 4, 27, 0.24);
 $circle-color: #6f4952;
 $circle-alpha-color: rgba(111, 73, 82, 0.28);
 
+@media (max-width: $mobile) {
+  .navbar-brand {
+    img {
+      // 画面幅が狭いとヘッダーナビがはみ出るためロゴ幅を小さく補正
+      width: 84px !important;
+    }
+  }
+}
+
 a.topnav-icon {
   display: flex;
   justify-content: center;
