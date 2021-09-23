@@ -80,6 +80,7 @@
       <p class="text-content">
         北海道産・焙煎したての香り高いコーヒー豆を驚きの値段で買うことができます。お一人様1回限りです。
       </p>
+      <SideBarRecommendAd />
     </div>
   </div>
 </template>

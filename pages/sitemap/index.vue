@@ -3,6 +3,7 @@
     <div class="post-list">
       <template v-for="categorisedAirticle in categorisedAirticles">
         <h2 :key="categorisedAirticle.category">
+          {{ categorisedAirticle.icon }}
           {{ categorisedAirticle.category }}
         </h2>
         <ul :key="categorisedAirticle.category">
@@ -47,14 +48,24 @@ export default {
       )
       categories.forEach((category) => {
         const articles = []
+        let hitArticle = {}
         this.articles.forEach((article) => {
           if (category === article.category) {
             articles.push(article)
+            hitArticle = article
           }
         })
-        categorisedAirticles.push({ category, articles })
+        const tagSlug = this.$getTagSlug(hitArticle.category)
+        const icon = this.$getTagIcon(tagSlug)
+        categorisedAirticles.push({ category, articles, icon })
       })
       return categorisedAirticles
+    },
+  },
+  methods: {
+    categoryIcon(tagName) {
+      const tagSlug = this.$getTagSlug(tagName)
+      return this.$getTagIcon(tagSlug)
     },
   },
 }
@@ -71,8 +82,11 @@ ul {
     font-size: 1rem;
     a {
       display: inline-block;
-      padding: 0.32rem;
+      padding: 0.16rem;
+      line-height: 1.6rem;
       margin-left: 0.2rem;
+      font-size: 0.8175rem;
+      font-weight: bold;
       color: #726c6c;
       text-decoration: none;
     }

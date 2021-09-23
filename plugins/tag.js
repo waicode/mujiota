@@ -1,29 +1,41 @@
 const tags = {
-  health: '健康',
-  muji: '無印良品',
-  lifehack: '生活術',
-  customization: 'ブログカスタマイズ',
-  trdr: '雑記',
-  coffee: 'コーヒー',
-  develop: '個人開発',
-  plant: '観葉植物',
-  restaurant: '飲食店',
-  notyet: '未分類',
-}
-
-const getTagName = (tagSlug) => {
-  const tagName = tags[tagSlug]
-  return tagName || '未分類'
+  health: { name: '健康', icon: '😷' },
+  muji: { name: '無印良品', icon: '🈚️' },
+  lifehack: { name: '生活術', icon: '🤳🏼' },
+  customization: { name: 'ブログカスタマイズ', icon: '🔨' },
+  trdr: { name: '雑記', icon: '📔' },
+  coffee: { name: 'コーヒー', icon: '☕️' },
+  develop: { name: '個人開発', icon: '👨🏻‍💻' },
+  plant: { name: '観葉植物', icon: '🪴' },
+  restaurant: { name: '飲食店', icon: '🍜' },
+  notyet: { name: '未分類', icon: '❔' },
 }
 
 const getTagSlug = (tagName) => {
   const tagSlug = Object.keys(tags).filter((key) => {
-    return tags[key] === tagName
+    return tags[key].name === tagName
   })
   return tagSlug || 'notyet'
 }
 
+const getTagName = (tagSlug) => {
+  const tag = tags[tagSlug]
+  if (tag) {
+    return tag.name
+  }
+  return tags.notyet.name
+}
+
+const getTagIcon = (tagSlug) => {
+  const tag = tags[tagSlug]
+  if (tag) {
+    return tag.icon
+  }
+  return tags.notyet.icon
+}
+
 export default (_, inject) => {
-  inject('getTagName', getTagName)
   inject('getTagSlug', getTagSlug)
+  inject('getTagName', getTagName)
+  inject('getTagIcon', getTagIcon)
 }
