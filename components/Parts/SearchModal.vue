@@ -4,24 +4,24 @@
       <section class="modal-card-body">
         <div class="search-box">
           <div class="columns">
-            <div class="column is-10">
+            <div class="column is-10-desktop is-10-tablet is-12-mobile">
               <b-field>
                 <b-input
                   v-model="searchText"
                   placeholder="検索キーワードを入力..."
                   type="search"
                   autocomplete="off"
-                  size="is-large"
+                  size="is-medium"
                   icon="magnify"
                   class="search-input"
                 >
                 </b-input>
               </b-field>
             </div>
-            <div class="column is-1">
+            <div class="column is-2-desktop is-2-tablet is-12-mobile">
               <b-button
                 label="閉じる"
-                size="is-large"
+                size="is-medium"
                 class="close-button"
                 @click="$parent.close()"
               />
@@ -92,12 +92,19 @@ export default {
   .modal-card {
     width: auto;
     max-width: 960px;
-    min-width: 880px;
     height: calc(100vh - 40px);
     .modal-card-body {
       overflow: scroll;
       .close-button {
         color: #757575;
+        display: block;
+        margin: 0 0 0 auto;
+      }
+      @media (max-width: $tablet) {
+        .close-button {
+          width: 100%;
+          margin-bottom: 12px;
+        }
       }
     }
   }

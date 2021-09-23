@@ -104,6 +104,9 @@ export default {
   .copyright {
     font-size: 1.8rem;
     font-weight: 200;
+    @media (max-width: $tablet) {
+      font-size: 1.2rem;
+    }
   }
 }
 </style>

@@ -33,7 +33,12 @@ $bg-secondary-color: #fafafa;
   }
   .main {
     .contents-wrapper {
+      // 左の余白をsub右余白と合わせる
       padding: 8px 24px 8px 32px;
+      @media (max-width: $tablet) {
+        // モバイルは縦並び
+        padding: 8px 12px 8px 12px;
+      }
     }
     @media (max-width: $tablet) {
       padding: 8px 12px;
@@ -43,6 +48,10 @@ $bg-secondary-color: #fafafa;
     .contents-wrapper {
       // 右の余白をmain左余白と合わせる
       padding: 4px 32px 4px 8px;
+      @media (max-width: $tablet) {
+        // モバイルは縦並び
+        padding: 8px 12px 8px 12px;
+      }
     }
     @media (max-width: $tablet) {
       padding: 8px 12px;

@@ -129,7 +129,7 @@ export default {
         .post-date {
           display: flex;
           font-size: 0.8rem;
-          padding-top: 2px;
+          padding-top: 8px;
           .date-published {
             margin-right: 12px;
           }
