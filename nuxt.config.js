@@ -6,7 +6,7 @@ export default {
   env: envSettings,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -70,21 +70,6 @@ export default {
     // FIXME: プロキシ設定
     // proxy: true,
   },
-  // proxy: {
-  //   '/api': {
-  //     target: 'http://localhost',
-  //     pathRewrite: {
-  //       '^/api': '/',
-  //     },
-  //   },
-  // },
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  // pwa: {
-  //   manifest: {
-  //     lang: 'ja',
-  //   },
-  // },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
