@@ -60,7 +60,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    // '@nuxtjs/pwa',
     '@nuxtjs/date-fns',
     '@nuxtjs/style-resources',
     '@nuxt/content',
