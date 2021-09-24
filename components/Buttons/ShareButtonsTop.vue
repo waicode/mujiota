@@ -123,6 +123,7 @@ export default {
   .share-item {
     width: 64px;
     height: 64px;
+    transition: 0.3s;
     @media (max-width: $tablet) {
       width: 48px;
       height: 48px;
@@ -146,24 +147,36 @@ export default {
       }
     }
     &.hb {
+      &:hover {
+        transform: rotate(12deg);
+      }
       a {
         background-color: #00a4de;
         border: 3px solid #00a4de;
       }
     }
     &.tw {
+      &:hover {
+        transform: rotate(-12deg);
+      }
       a {
         background-color: #1da1f2;
         border: 3px solid #1da1f2;
       }
     }
     &.fb {
+      &:hover {
+        transform: rotate(12deg);
+      }
       a {
         background-color: #1877f2;
         border: 3px solid #1877f2;
       }
     }
     &.pk {
+      &:hover {
+        transform: rotate(-12deg);
+      }
       a {
         background-color: #ee4056;
         border: 3px solid #ee4056;

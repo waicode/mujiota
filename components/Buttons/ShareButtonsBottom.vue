@@ -164,6 +164,10 @@ export default {
         color: #f2f2f2;
         font-weight: 700;
         border-radius: 8px;
+        transition: 0.3s;
+      }
+      a:hover {
+        transform: translateY(-8px);
       }
       &.hb {
         a {
