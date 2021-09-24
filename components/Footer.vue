@@ -3,7 +3,7 @@
     <div class="social-icons">
       <ul>
         <li class="icon-twitter">
-          <a href="https://twitter.com/aiza_wai" target="_blank">
+          <a href="https://twitter.com/waicode37" target="_blank">
             <TwitterIconSvg />
           </a>
         </li>

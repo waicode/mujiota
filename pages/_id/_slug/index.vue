@@ -140,11 +140,11 @@ export default {
           name: 'twitter:card',
           content: 'summary_large_image',
         },
-        { hid: 'twitter:site', name: 'twitter:site', content: '@aiza_wai' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@waicode37' },
         {
           hid: 'twitter:creator',
           name: 'twitter:creator',
-          content: '@aiza_wai',
+          content: '@waicode37',
         },
       ],
     }
