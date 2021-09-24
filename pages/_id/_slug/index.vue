@@ -110,11 +110,11 @@ export default {
   },
   data() {
     return {
-      // FIXME: ダミー値
-      shareCountHatena: 1,
-      shareCountTwitter: 2,
-      shareCountFacebook: 3,
-      shareCountPocket: 4,
+      // TODO: バックエンドから取得したカウント数を設定する
+      shareCountHatena: 0,
+      shareCountTwitter: 0,
+      shareCountFacebook: 0,
+      shareCountPocket: 0,
     }
   },
   computed: {
