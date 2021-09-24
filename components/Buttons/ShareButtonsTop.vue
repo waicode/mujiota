@@ -104,6 +104,11 @@ export default {
       return `http://getpocket.com/edit?url=${this.pageUrl}`
     },
   },
+  methods: {
+    count() {
+      return {}
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
