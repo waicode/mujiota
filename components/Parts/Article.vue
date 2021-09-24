@@ -40,7 +40,11 @@
               </span>
             </div>
             <div v-if="article.tags" class="tags">
-              <span v-for="tag in article.tags" :key="tag" class="tag is-light">
+              <span
+                v-for="tag in article.tags"
+                :key="`${article.id}-${tag}`"
+                class="tag is-light"
+              >
                 {{ tag }}
               </span>
             </div>

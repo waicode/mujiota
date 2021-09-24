@@ -21,11 +21,13 @@
     </div>
   </div>
 </template>
-
 <script>
+import Meta from '~/mixins/meta'
 export default {
+  mixins: [Meta],
   async asyncData({ $content, store, params, app, error }) {
     const tagName = app.$getTagName(params.slug)
+    const pageUrl = `${process.env.BASE_URL}/tag/${params.slug}/`
     let articles = []
     try {
       articles = await $content('articles', { deep: true })
@@ -39,16 +41,28 @@ export default {
           statusCode: 404,
         })
       }
-      return {
-        articles,
-      }
     } catch {
       error({
         statusCode: 404,
       })
     }
+
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
+
+    // メタ情報
+    const meta = app.$getMeta()
+    meta.title = `${tagName}の記事一覧`
+    meta.description = `「${tagName}」タグが付いた記事の一覧です。`
+    meta.pageUrl = pageUrl
+    meta.ogType = 'blog'
+
+    return {
+      articles,
+      tagName,
+      pageUrl,
+      meta,
+    }
   },
   data() {
     return {

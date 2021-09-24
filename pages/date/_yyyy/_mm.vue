@@ -23,10 +23,14 @@
 </template>
 
 <script>
+import Meta from '~/mixins/meta'
+
 export default {
-  async asyncData({ $content, store, params, error }) {
+  mixins: [Meta],
+  async asyncData({ $content, store, params, app, error }) {
     const year = params.yyyy
     const month = params.mm
+    const pageUrl = `${process.env.BASE_URL}/date/${year}/${month}`
 
     let articles = []
 
@@ -46,11 +50,22 @@ export default {
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
 
+    // メタ情報
+    const meta = app.$getMeta()
+    const monthStr = String(Number(month)) // ゼロサプレス
+    meta.title = `${year}年${monthStr}月の記事一覧`
+    meta.description = `${year}年${monthStr}月に投稿された記事の一覧です。`
+    meta.pageUrl = pageUrl
+    meta.ogType = 'blog'
+
     return {
+      year,
+      month,
+      pageUrl,
       articles,
+      meta,
     }
   },
-
   data() {
     return {
       currentPage: 1,

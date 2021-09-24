@@ -57,11 +57,14 @@
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
+import Meta from '~/mixins/meta'
+
 export default {
+  mixins: [Meta],
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ $content, store, params, error }) {
+  async asyncData({ $content, store, params, app, error }) {
     let article = {}
     let relatedArticles = []
     let pageUrl = ''
@@ -89,11 +92,20 @@ export default {
     // 現在のページ情報をストアへ格納
     store.commit('page/setArticle', { article })
 
+    // メタ情報
+    const meta = app.$getMeta()
+    meta.title = article.title
+    meta.description = article.description
+    meta.pageUrl = pageUrl
+    meta.ogImageUrl = imageUrl
+    meta.ogType = 'article'
+
     return {
       article,
       pageUrl,
       imageUrl,
       relatedArticles,
+      meta,
     }
   },
   data() {
@@ -103,50 +115,6 @@ export default {
       shareCountTwitter: 2,
       shareCountFacebook: 3,
       shareCountPocket: 4,
-    }
-  },
-  head() {
-    return {
-      title: this.article.title,
-      meta: [
-        { name: 'description', content: this.article.description },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: `${this.article.title}`,
-        },
-        {
-          hid: 'og:site_name',
-          property: 'og:site_name',
-          content: `mujiota.com`,
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'article',
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: this.pageUrl,
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.imageUrl,
-        },
-        {
-          hid: 'twitter:card',
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        { hid: 'twitter:site', name: 'twitter:site', content: '@waicode37' },
-        {
-          hid: 'twitter:creator',
-          name: 'twitter:creator',
-          content: '@waicode37',
-        },
-      ],
     }
   },
   computed: {

@@ -23,7 +23,9 @@
 </template>
 
 <script>
+import Meta from '~/mixins/meta'
 export default {
+  mixins: [Meta],
   async asyncData({ $content, store }) {
     const articles = await $content('articles', { deep: true })
       .only([
@@ -41,6 +43,8 @@ export default {
 
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
+
+    // トップページのメタ情報はデフォルトでOK
 
     return {
       articles,

@@ -11,64 +11,19 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: { lang: 'ja' },
-    title: 'mujiota',
+    title: 'mujiota.com',
     meta: [
       { hid: 'robots', name: 'robots', content: 'noindex' }, // FIXME: 公開時は消すこと
-
+      // その他のメタタグはページ毎に「mixins/meta.js」の設定を上書き
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content:
-          'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。',
-      },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: `mujiota.com`,
-      },
-      {
-        hid: 'og:site_name',
-        property: 'og:site_name',
-        content: `mujiota.com`,
-      },
-      {
-        hid: 'og:type',
-        property: 'og:type',
-        content: 'blog',
-      },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://mujiota.com',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://mujiota.com/logo/mujiota-logo@2x.png',
-      },
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@waicode37' },
-      {
-        hid: 'twitter:creator',
-        name: 'twitter:creator',
-        content: '@waicode37',
-      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      // fontawesome
       {
+        // fontawesome
+        // TODO: Nuxtで読み込んで使えるようにしたあとは削除
         src: 'https://kit.fontawesome.com/29e08b7892.js',
-        crossorigin: 'anonymous',
-      },
-      // Google Adsense (Auto)
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6722804994112729',
         crossorigin: 'anonymous',
       },
     ],
@@ -82,7 +37,12 @@ export default {
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/filter.js', '~/plugins/video.js', '~/plugins/tag.js'],
+  plugins: [
+    '~/plugins/filter.js',
+    '~/plugins/video.js',
+    '~/plugins/tag.js',
+    '~/plugins/meta.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [

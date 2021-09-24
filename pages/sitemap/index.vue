@@ -19,8 +19,12 @@
 </template>
 
 <script>
+import Meta from '~/mixins/meta'
+
 export default {
-  async asyncData({ $content, store }) {
+  mixins: [Meta],
+  async asyncData({ $content, store, app }) {
+    const pageUrl = `${process.env.BASE_URL}/sitemap`
     const articles = await $content('articles', { deep: true })
       .only([
         'id',
@@ -39,8 +43,17 @@ export default {
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
 
+    // メタ情報
+    const meta = app.$getMeta()
+    meta.title = 'サイトマップ'
+    meta.description = '全記事の一覧です。'
+    meta.pageUrl = pageUrl
+    meta.ogType = 'blog'
+
     return {
       articles,
+      pageUrl,
+      meta,
     }
   },
   computed: {
