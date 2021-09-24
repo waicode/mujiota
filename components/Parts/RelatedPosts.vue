@@ -68,6 +68,9 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 1.68rem;
+  @media (max-width: $tablet) {
+    font-size: 1.32rem;
+  }
   font-weight: bold;
   text-align: center;
   padding-bottom: 28px;

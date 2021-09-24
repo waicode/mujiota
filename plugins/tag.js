@@ -18,12 +18,24 @@ const getTagSlug = (tagName) => {
   return tagSlug || 'notyet'
 }
 
+const getTagSlugList = () => {
+  return Object.keys(tags).map((key) => {
+    return key
+  })
+}
+
 const getTagName = (tagSlug) => {
   const tag = tags[tagSlug]
   if (tag) {
     return tag.name
   }
   return tags.notyet.name
+}
+
+const getTagNameList = () => {
+  return Object.keys(tags).map((key) => {
+    return tags[key].name
+  })
 }
 
 const getTagIcon = (tagSlug) => {
@@ -36,6 +48,8 @@ const getTagIcon = (tagSlug) => {
 
 export default (_, inject) => {
   inject('getTagSlug', getTagSlug)
+  inject('getTagSlugList', getTagSlugList)
   inject('getTagName', getTagName)
+  inject('getTagNameList', getTagNameList)
   inject('getTagIcon', getTagIcon)
 }

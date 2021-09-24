@@ -127,6 +127,10 @@ export default {
       width: 48px;
       height: 48px;
     }
+    @media (max-width: $mobile) {
+      width: 40px;
+      height: 40px;
+    }
     a {
       display: flex;
       justify-content: center;

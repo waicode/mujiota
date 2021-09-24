@@ -65,7 +65,7 @@ export default {
     async search() {
       // 一部取得できていない記事があるためfilterと組み合わせて検索
       const articles1 = await this.$content('articles', { deep: true })
-        .limit(999)
+        .limit(this.$store.state.articles.length)
         .search(this.searchText)
         .sortBy('createdAt', 'desc')
         .fetch()

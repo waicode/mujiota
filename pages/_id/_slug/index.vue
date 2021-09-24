@@ -61,7 +61,7 @@ export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ $content, $axios, params, error }) {
+  async asyncData({ $content, store, params, error }) {
     let article = {}
     let relatedArticles = []
     let pageUrl = ''
@@ -85,6 +85,9 @@ export default {
         })
         .fetch()
     } catch {}
+
+    // 現在のページ情報をストアへ格納
+    store.commit('page/setArticle', { article })
 
     return {
       article,
