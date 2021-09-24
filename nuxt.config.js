@@ -57,6 +57,9 @@ export default {
     },
   ],
 
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {},
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/eslint-module',
@@ -69,6 +72,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/date-fns',
     '@nuxtjs/style-resources',
+    '@nuxtjs/google-gtag',
     '@nuxt/content',
     'nuxt-buefy',
     'nuxt-svg-loader',
@@ -112,8 +116,10 @@ export default {
     },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  'google-gtag': {
+    id: 'UA-47357882-1',
+    debug: false,
+  },
 
   fontawesome: {
     component: 'fa',
