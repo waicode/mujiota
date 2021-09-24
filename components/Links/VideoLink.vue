@@ -1,7 +1,7 @@
 <template>
   <div class="video-link">
     <div class="video">
-      <youtube :video-id="id" class="youtube"></youtube>
+      <youtube :video-id="id" class="youtube" :width="videoWidth()"></youtube>
     </div>
   </div>
 </template>
@@ -14,6 +14,15 @@ export default {
       default: null,
     },
   },
+  methods: {
+    videoWidth() {
+      let mobileMediaQuery = null
+      if (process.client) {
+        mobileMediaQuery = window.matchMedia('(max-width: 768px)') // < $tablet
+      }
+      return mobileMediaQuery && mobileMediaQuery.matches ? '320px' : '640px'
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -22,6 +31,9 @@ export default {
   justify-content: center;
   margin: 0 auto;
   max-width: 640px;
+  @media (max-width: $tablet) {
+    max-width: 100%;
+  }
   padding: 2rem 0;
 }
 .video {

@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content, store, params, error }) {
     const year = params.yyyy
     const month = params.mm
 
@@ -42,10 +42,15 @@ export default {
         statusCode: 404,
       })
     }
+
+    // 現在の記事情報をリセット
+    store.commit('page/setArticle', { article: {} })
+
     return {
       articles,
     }
   },
+
   data() {
     return {
       currentPage: 1,

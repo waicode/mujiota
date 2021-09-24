@@ -74,14 +74,7 @@
         </b-dropdown>
       </div>
     </div>
-    <h2>リコメンド</h2>
-    <div class="side-content">
-      <h3 class="text-content">お試し価格のお得なコーヒー豆</h3>
-      <p class="text-content">
-        北海道産・焙煎したての香り高いコーヒー豆を驚きの値段で買うことができます。お一人様1回限りです。
-      </p>
-      <SideBarRecommendAd />
-    </div>
+    <SideBarRecommendAd />
   </div>
 </template>
 <script>
@@ -104,7 +97,7 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 $ad-bg-color: #c5e1a5;
 $side-bar-link-color: rgb(114, 108, 108);
 .side-bar {

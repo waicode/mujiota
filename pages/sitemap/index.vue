@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ $content, store }) {
     const articles = await $content('articles', { deep: true })
       .only([
         'id',
@@ -35,6 +35,10 @@ export default {
       ])
       .sortBy('createdAt', 'desc')
       .fetch()
+
+    // 現在の記事情報をリセット
+    store.commit('page/setArticle', { article: {} })
+
     return {
       articles,
     }
@@ -78,6 +82,7 @@ h2 {
 }
 ul {
   margin-bottom: 28px;
+
   li {
     font-size: 1rem;
     a {

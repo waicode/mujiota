@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, app, error }) {
+  async asyncData({ $content, store, params, app, error }) {
     const tagName = app.$getTagName(params.slug)
     let articles = []
     try {
@@ -47,6 +47,8 @@ export default {
         statusCode: 404,
       })
     }
+    // 現在の記事情報をリセット
+    store.commit('page/setArticle', { article: {} })
   },
   data() {
     return {
