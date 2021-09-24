@@ -25,7 +25,7 @@
     <h2>コンセプト</h2>
     <div class="side-content">
       <p class="text-content">
-        MUJIをかつて偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。
+        MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。
       </p>
       <p class="text-link-more"><a href="#">> より詳しく見てみる</a></p>
     </div>

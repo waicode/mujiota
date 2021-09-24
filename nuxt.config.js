@@ -13,9 +13,51 @@ export default {
     htmlAttrs: { lang: 'ja' },
     title: 'mujiota',
     meta: [
+      { hid: 'robots', name: 'robots', content: 'noindex' }, // FIXME: 公開時は消すこと
+
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'robots', name: 'robots', content: 'noindex' }, // FIXME: 公開時は消すこと
+      {
+        name: 'description',
+        content:
+          'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: `mujiota.com`,
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: `mujiota.com`,
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'blog',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://mujiota.com',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://mujiota.com/logo/mujiota-logo@2x.png',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@aiza_wai' },
+      {
+        hid: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@aiza_wai',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
