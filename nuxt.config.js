@@ -21,6 +21,11 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
+        // Google Adsense 自動広告
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6722804994112729',
+        crossorigin: 'anonymous',
+      },
+      {
         // fontawesome
         // TODO: Nuxtで読み込んで使えるようにしたあとは削除
         src: 'https://kit.fontawesome.com/29e08b7892.js',
