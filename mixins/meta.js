@@ -16,19 +16,44 @@ export default {
       titleTemplate: '',
       title,
       meta: [
-        { name: 'description', content: this.meta.description },
-        { property: 'og:site_name', content: this.meta.siteName },
-        { property: 'og:type', content: this.meta.ogType },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: this.meta.description },
-        { property: 'og:url', content: this.meta.pageUrl },
         {
+          hid: 'description',
+          name: 'description',
+          content: this.meta.description,
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: this.meta.siteName,
+        },
+        { hid: 'og:type', property: 'og:type', content: this.meta.ogType },
+        { hid: 'og:title', property: 'og:title', content: title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.meta.description,
+        },
+        { hid: 'og:url', property: 'og:url', content: this.meta.pageUrl },
+        {
+          hid: 'og:image',
           property: 'og:image',
           content: this.meta.ogImageUrl,
         },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:site', content: this.meta.twitterUserName },
-        { name: 'twitter:creator', content: this.meta.twitterUserName },
+        {
+          hid: 'og:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'og:site',
+          name: 'twitter:site',
+          content: this.meta.twitterUserName,
+        },
+        {
+          hid: 'og:creator',
+          name: 'twitter:creator',
+          content: this.meta.twitterUserName,
+        },
       ],
     }
   },
