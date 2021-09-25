@@ -26,7 +26,7 @@
 import Meta from '~/mixins/meta'
 export default {
   mixins: [Meta],
-  async asyncData({ $content, store }) {
+  async asyncData({ $content, store, app }) {
     const articles = await $content('articles', { deep: true })
       .only([
         'id',
@@ -44,10 +44,17 @@ export default {
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
 
-    // トップページのメタ情報はデフォルトでOK
+    // メタ情報
+    const meta = app.$getMeta()
+    meta.title = 'mujiota.com'
+    meta.description =
+      'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。'
+    meta.pageUrl = 'https://mujiota.com'
+    meta.ogType = 'blog'
 
     return {
       articles,
+      meta,
     }
   },
   data() {
