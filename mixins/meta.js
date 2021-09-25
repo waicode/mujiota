@@ -9,9 +9,10 @@ export default {
       // metaが空の場合は読み込む
       this.meta = this.$getMeta()
     }
-    const title = this.meta.title
-      ? `${this.meta.title} - ${this.meta.siteName}`
-      : this.meta.siteName
+    const title =
+      !this.meta.title || this.meta.title === this.meta.siteName
+        ? this.meta.siteName
+        : `${this.meta.title} - ${this.meta.siteName}`
     return {
       titleTemplate: '',
       title,
