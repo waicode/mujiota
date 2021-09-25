@@ -44,8 +44,13 @@ export default {
     // 現在の記事情報をリセット
     store.commit('page/setArticle', { article: {} })
 
-    // メタ情報（トップページはデフォルトでOK）
+    // メタ情報
     const meta = app.$getMeta()
+    meta.title = 'mujiota.com'
+    meta.description =
+      'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。'
+    meta.pageUrl = 'https://mujiota.com'
+    meta.ogType = 'blog'
 
     return {
       articles,
