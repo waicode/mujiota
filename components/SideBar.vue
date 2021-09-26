@@ -124,12 +124,17 @@ $side-bar-link-color: rgb(114, 108, 108);
         border-bottom: 1px solid #e0e0e0;
       }
       a {
+        text-decoration: none;
         display: block;
         padding: 1em;
         color: $side-bar-link-color;
-        font-size: 0.8175rem;
-        text-decoration: none;
-        font-weight: bold;
+        h3 {
+          font-size: 0.8175rem;
+          font-weight: bold;
+          @media (max-width: $tablet) {
+            font-size: 0.96rem;
+          }
+        }
       }
     }
   }
@@ -137,6 +142,9 @@ $side-bar-link-color: rgb(114, 108, 108);
     margin-bottom: 16px;
     p {
       font-size: 0.8175rem;
+      @media (max-width: $tablet) {
+        font-size: 0.96rem;
+      }
     }
     .text-content {
       padding: 4px;
