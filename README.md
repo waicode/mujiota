@@ -1,20 +1,10 @@
-# mujiota
+![mujiota.com](https://i.gyazo.com/0d940c8c02ac38e0c1410dcb35eae6f2.png "mujiota.com")
 
-## Build Setup
+https://mujiota.com
 
-```bash
-# install dependencies
-$ yarn install
+- 2010年から運営している生活ネタ中心の個人ブログです
+- Movable Type（2010年9月） → WordPress（2011年4月） → Vue/Nuxt（2021年9月）
+- 投稿記事は `nuxt/content` を使ってMarkdownで管理しています
+- Githubリポジトリのmainブランチが更新されると連動して「Vercel」へデプロイします
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<br />
