@@ -93,8 +93,24 @@ export default {
     width: auto;
     max-width: 960px;
     height: calc(100vh - 40px);
+    margin: 0 auto;
+    border-radius: 2px;
+    @media (max-width: $tablet) {
+      max-width: 92%;
+      height: calc(100vh - 80px);
+    }
     .modal-card-body {
       overflow: scroll;
+      padding: 36px;
+      @media (max-width: $tablet) {
+        padding: 24px;
+      }
+      .search-box {
+        margin-bottom: 24px;
+        @media (max-width: $tablet) {
+          margin-bottom: 12px;
+        }
+      }
       .close-button {
         color: #757575;
         display: block;
