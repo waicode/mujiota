@@ -1,8 +1,8 @@
 <script>
 export default {
-  // validate({ params }) {
-  //   return /^\d{4}$/.test(params.yyyy) && /^\d{2}$/.test(params.mm)
-  // },
+  validate({ params }) {
+    return /^[0-9]{4}$/.test(params.yyyy) && /^(0[1-9]|1[0-2])$/.test(params.mm)
+  },
   async asyncData({ $content, params, redirect, error }) {
     let articles = []
     try {
