@@ -1,7 +1,10 @@
+import firebase from '~/plugins/firebase'
+
 export const state = () => ({
   articles: [],
   tags: [],
   archives: [],
+  popularArticles: [],
 })
 
 export const mutations = {
@@ -13,6 +16,9 @@ export const mutations = {
   },
   setArchives(state, { archives }) {
     state.archives = archives
+  },
+  setPopularArticles(state, { popularArticles }) {
+    state.popularArticles = popularArticles
   },
 }
 
@@ -47,9 +53,23 @@ export const actions = {
         count,
       }))
 
+      const COLLECTION_NAME = 'popular_posts_rank'
+      const db = firebase.firestore()
+
+      const docsSnap = await db
+        .collection(COLLECTION_NAME)
+        .doc('90days')
+        .collection('rank')
+        .get()
+
+      const popularArticles = docsSnap.docs.map((doc) => {
+        return { rank: doc.id, data: doc.data() }
+      })
+
       commit('setArticles', { articles })
       commit('setTags', { tags })
       commit('setArchives', { archives })
+      commit('setPopularArticles', { popularArticles })
     } catch (e) {
       // eslint-disable-next-line no-console
       console.log(e)

@@ -44,6 +44,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filter.js',
+    '~/plugins/firebase.js',
     '~/plugins/video.js',
     '~/plugins/tag.js',
     '~/plugins/meta.js',
