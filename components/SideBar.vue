@@ -3,21 +3,14 @@
     <h2>読まれている記事</h2>
     <div class="side-content">
       <ol class="popular-list">
-        <li>
-          <NuxtLink :to="`/1372/bulletproof-coffee`">
+        <li
+          v-for="article in $store.state.popularArticles.slice(0, 5)"
+          :key="article.rank"
+        >
+          <NuxtLink :to="`/${article.data.post_id}/${article.data.post_slug}`">
             <h3>
-              完全無欠コーヒーを5年以上飲み続けて確信した効果とおすすめの作り方
+              {{ getTitle(article.data.post_id) }}
             </h3>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink :to="`/235/coffee_mag`">
-            <h3>おいしくコーヒーを飲むならサーモスマグが一番良い理由</h3>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink :to="`/1278/net-coffee-lanking`">
-            <h3>ネットで買える安くて美味しいコーヒー豆ランキング</h3>
           </NuxtLink>
         </li>
       </ol>
@@ -94,6 +87,12 @@ export default {
       return `${archive.month.slice(0, 4)}年${archive.month.slice(5, 7)}月(${
         archive.count
       })`
+    },
+    getTitle(postId) {
+      const hit = this.$store.state.articles.find(
+        (data) => data.id === Number(postId)
+      )
+      return hit ? hit.title : ''
     },
   },
 }
