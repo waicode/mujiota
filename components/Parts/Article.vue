@@ -88,6 +88,7 @@ export default {
         vertical-align: top;
         height: auto;
         max-height: 100%;
+        border-radius: 2px;
       }
     }
     .contents {

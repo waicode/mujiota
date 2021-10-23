@@ -182,6 +182,7 @@ export default {
   .eyecatch {
     img {
       width: 100%;
+      border-radius: 4px;
     }
   }
   .description {
