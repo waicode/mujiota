@@ -4,12 +4,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [
-          "package.json",
-          "env.production.js",
-          ".nuxt/content/**",
-          "content/**"
-        ]
+        "serverFiles": ["env.production.js", ".nuxt/content/**", "content/**"]
       }
     }
   ],
