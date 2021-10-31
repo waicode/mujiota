@@ -29,6 +29,7 @@ export const actions = {
       const articles = await $content('articles', { deep: true })
         .sortBy('createdAt', 'desc')
         .fetch()
+      commit('setArticles', { articles })
 
       const tagsObj = {}
       articles
@@ -41,6 +42,7 @@ export const actions = {
         name,
         count,
       }))
+      commit('setTags', { tags })
 
       const archivesObj = {}
       articles
@@ -53,10 +55,10 @@ export const actions = {
         month,
         count,
       }))
+      commit('setArchives', { archives })
 
       const COLLECTION_NAME = 'popular_posts_rank'
       const SUB_COLLECTION_NAME = 'rank'
-
       const querySnapshot = await getDocs(
         collection(db, COLLECTION_NAME, '90days', SUB_COLLECTION_NAME)
       )
@@ -65,9 +67,8 @@ export const actions = {
         return { rank: doc.id, data: doc.data() }
       })
 
-      commit('setArticles', { articles })
-      commit('setTags', { tags })
-      commit('setArchives', { archives })
+      console.log('popularArticles', popularArticles)
+
       commit('setPopularArticles', { popularArticles })
     } catch (e) {
       // eslint-disable-next-line no-console
