@@ -66,9 +66,6 @@ export const actions = {
       const popularArticles = querySnapshot.docs.map((doc) => {
         return { rank: doc.id, data: doc.data() }
       })
-
-      console.log('popularArticles', popularArticles)
-
       commit('setPopularArticles', { popularArticles })
     } catch (e) {
       // eslint-disable-next-line no-console

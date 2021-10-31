@@ -18,18 +18,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        // Google Adsense 自動広告
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6722804994112729',
-        crossorigin: 'anonymous',
-      },
-      {
-        // fontawesome
-        src: 'https://kit.fontawesome.com/29e08b7892.js',
-        crossorigin: 'anonymous',
-      },
-    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -77,6 +65,15 @@ export default {
     'nuxt-svg-loader',
     'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: process.env.GA_ADSENSE_ID,
+        pageLevelAds: true,
+        analyticsUacct: process.env.GA_TRACKING_ID,
+        analyticsDomainName: process.env.BASE_URL,
+      },
+    ],
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -110,7 +107,7 @@ export default {
   },
 
   'google-gtag': {
-    id: 'UA-47357882-1',
+    id: process.env.GA_TRACKING_ID,
     debug: false,
   },
 
