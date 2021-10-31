@@ -64,16 +64,16 @@ export default {
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },
-  async asyncData({ $content, store, params, app, error }) {
+  async asyncData({ $config, $content, store, params, app, error }) {
     let article = {}
     let relatedArticles = []
     let pageUrl = ''
     let imageUrl = ''
     try {
       article = await $content('articles', params.id, params.slug).fetch()
-      pageUrl = `${process.env.BASE_URL}/${article.id}/${article.slug}`
+      pageUrl = `${$config.baseURL}/${article.id}/${article.slug}`
       const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
-      imageUrl = `${process.env.BASE_URL}${imagePath}`
+      imageUrl = `${$config.baseURL}${imagePath}`
     } catch {
       // 見つからない場合はNOTFOUND
       error({

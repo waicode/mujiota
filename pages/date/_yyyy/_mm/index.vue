@@ -27,10 +27,10 @@ import Meta from '~/mixins/meta'
 
 export default {
   mixins: [Meta],
-  async asyncData({ $content, store, params, app, error }) {
+  async asyncData({ $config, $content, store, params, app, error }) {
     const year = params.yyyy
     const month = params.mm
-    const pageUrl = `${process.env.BASE_URL}/date/${year}/${month}`
+    const pageUrl = `${$config.baseURL}/date/${year}/${month}`
 
     let articles = []
 

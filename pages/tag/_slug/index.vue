@@ -25,9 +25,9 @@
 import Meta from '~/mixins/meta'
 export default {
   mixins: [Meta],
-  async asyncData({ $content, store, params, app, error }) {
+  async asyncData({ $config, $content, store, params, app, error }) {
     const tagName = app.$getTagName(params.slug)
-    const pageUrl = `${process.env.BASE_URL}/tag/${params.slug}/`
+    const pageUrl = `${$config.baseURL}/tag/${params.slug}/`
     let articles = []
     try {
       articles = await $content('articles', { deep: true })

@@ -23,8 +23,8 @@ import Meta from '~/mixins/meta'
 
 export default {
   mixins: [Meta],
-  async asyncData({ $content, store, app }) {
-    const pageUrl = `${process.env.BASE_URL}/sitemap`
+  async asyncData({ $config, $content, store, app }) {
+    const pageUrl = `${$config.baseURL}/sitemap`
     const articles = await $content('articles', { deep: true })
       .only([
         'id',
