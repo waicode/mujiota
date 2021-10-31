@@ -27,7 +27,6 @@ export default {
       },
       {
         // fontawesome
-        // TODO: Nuxtで読み込んで使えるようにしたあとは削除
         src: 'https://kit.fontawesome.com/29e08b7892.js',
         crossorigin: 'anonymous',
       },
@@ -77,7 +76,6 @@ export default {
     '@nuxt/content',
     'nuxt-buefy',
     'nuxt-svg-loader',
-    'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
   ],
 
