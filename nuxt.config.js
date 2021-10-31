@@ -76,14 +76,9 @@ export default {
     '@nuxt/content',
     'nuxt-buefy',
     'nuxt-svg-loader',
+    'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // FIXME: プロキシ設定
-    // proxy: true,
-  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
