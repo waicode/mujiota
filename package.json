@@ -17,7 +17,6 @@
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/date-fns": "^1.5.0",
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/fontawesome": "^1.1.2",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@nuxtjs/google-gtag": "^1.0.4",
@@ -26,8 +25,6 @@
     "cross-env": "^7.0.3",
     "esm": "^3.2.25",
     "firebase": "^9.2.0",
-    "googleapis": "^87.0.0",
-    "install": "^0.13.0",
     "nuxt": "^2.15.3",
     "nuxt-buefy": "^0.4.10",
     "remark-directive": "^1.0.1",
@@ -35,7 +32,6 @@
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
-    "nuxt-fontawesome": "^0.4.0",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.5",
