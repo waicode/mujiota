@@ -1,4 +1,5 @@
-import firebase from '~/plugins/firebase'
+import { collection, getDocs } from 'firebase/firestore/lite'
+import { db } from '~/plugins/firebase.js'
 
 export const state = () => ({
   articles: [],
@@ -54,15 +55,13 @@ export const actions = {
       }))
 
       const COLLECTION_NAME = 'popular_posts_rank'
-      const db = firebase.firestore()
+      const SUB_COLLECTION_NAME = 'rank'
 
-      const docsSnap = await db
-        .collection(COLLECTION_NAME)
-        .doc('90days')
-        .collection('rank')
-        .get()
+      const querySnapshot = await getDocs(
+        collection(db, COLLECTION_NAME, '90days', SUB_COLLECTION_NAME)
+      )
 
-      const popularArticles = docsSnap.docs.map((doc) => {
+      const popularArticles = querySnapshot.docs.map((doc) => {
         return { rank: doc.id, data: doc.data() }
       })
 
