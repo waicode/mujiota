@@ -2,10 +2,11 @@ export default {
   publicRuntimeConfig: {
     baseUrl: process.env.BASE_URL,
   },
+
   privateRuntimeConfig: {},
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -48,11 +49,7 @@ export default {
   build: {},
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/pwa',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -75,6 +72,25 @@ export default {
       },
     ],
   ],
+
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+
+      return files.map((file) => {
+        if (file.path === '/index') {
+          return '/'
+        } else if (file.path.startsWith('/articles')) {
+          return file.path.replace('/articles', '')
+        } else if (file.path.startsWith('/pages')) {
+          return file.path.replace('/pages', '')
+        } else {
+          return file.path
+        }
+      })
+    },
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
