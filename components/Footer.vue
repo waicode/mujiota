@@ -50,7 +50,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 48px 32px;
+    padding: 32px 48px;
     ul {
       display: flex;
       justify-content: center;
@@ -99,7 +99,7 @@ export default {
             &:focus,
             &:hover {
               svg {
-                fill: #eeeeee;
+                fill: #eee;
               }
             }
           }

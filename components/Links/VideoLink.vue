@@ -34,6 +34,7 @@ export default {
   @media (max-width: $tablet) {
     max-width: 100%;
   }
+
   padding: 2rem 0;
 }
 .video {

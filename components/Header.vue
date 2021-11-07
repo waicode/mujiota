@@ -107,12 +107,13 @@ export default {
 }
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
+  opacity: 0%;
 }
+
 $logo-color: #67041b;
-$logo-alpha-color: rgba(103, 4, 27, 0.24);
+$logo-alpha-color: rgb(103 4 27 / 24%);
 $circle-color: #6f4952;
-$circle-alpha-color: rgba(111, 73, 82, 0.28);
+$circle-alpha-color: rgb(111 73 82 / 28%);
 
 @media (max-width: $mobile) {
   .navbar-brand {
@@ -201,8 +202,8 @@ a.topnav-icon {
     height: 100%;
     background-image: linear-gradient(
       160deg,
-      rgba(224, 224, 224, 0.85),
-      rgba(97, 97, 97, 0.85)
+      rgb(224 224 224 / 85%),
+      rgb(97 97 97 / 85%)
     );
   }
 }

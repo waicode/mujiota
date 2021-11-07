@@ -84,6 +84,7 @@ export default {
       @media (max-width: $desktop) {
         padding: 12px;
       }
+
       height: auto;
       img {
         vertical-align: top;

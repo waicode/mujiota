@@ -29,7 +29,7 @@ $bg-secondary-color: #fafafa;
 .wrapper {
   padding: 32px 12px;
   background-color: $bg-secondary-color;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
   border-radius: 10px;
   max-width: 1200px;
   margin: 112px auto 96px;
@@ -46,7 +46,7 @@ $bg-secondary-color: #fafafa;
       padding: 8px 24px 8px 32px;
       @media (max-width: $tablet) {
         // モバイルは縦並び
-        padding: 8px 12px 8px 12px;
+        padding: 8px 12px;
       }
     }
     @media (max-width: $tablet) {
@@ -59,7 +59,7 @@ $bg-secondary-color: #fafafa;
       padding: 4px 32px 4px 8px;
       @media (max-width: $tablet) {
         // モバイルは縦並び
-        padding: 8px 12px 8px 12px;
+        padding: 8px 12px;
       }
     }
     @media (max-width: $tablet) {

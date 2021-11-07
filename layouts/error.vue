@@ -37,8 +37,8 @@ h2 {
       45deg,
       #e0e0e0 0,
       #e0e0e0 1px,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 50%
+      rgb(0 0 0 / 0%) 0%,
+      rgb(0 0 0 / 0%) 50%
     );
     background-size: 8px 8px;
   }

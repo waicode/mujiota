@@ -216,8 +216,8 @@ export default {
           45deg,
           #e0e0e0 0,
           #e0e0e0 1px,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0) 50%
+          rgb(0 0 0 / 0%) 0%,
+          rgb(0 0 0 / 0%) 50%
         );
         background-size: 8px 8px;
       }
@@ -266,8 +266,8 @@ export default {
         background-image: repeating-linear-gradient(
           #999,
           #999 1px,
-          rgba(0, 0, 0, 0) 0,
-          rgba(0, 0, 0, 0) 4px
+          rgb(0 0 0 / 0%) 0,
+          rgb(0 0 0 / 0%) 4px
         );
       }
       a {
@@ -309,7 +309,7 @@ export default {
         width: 10px;
         height: 10px;
         background: #3e3e3e;
-        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
+        box-shadow: -1px -1px 1px rgb(97 97 97 / 15%) inset;
         display: block;
         position: absolute;
         border-radius: 20%;
@@ -349,7 +349,7 @@ export default {
     }
     span.line {
       display: inline;
-      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
+      background: linear-gradient(rgb(255 255 141 / 0%) 50%, #fff59d 70%);
       padding-bottom: 0;
     }
 

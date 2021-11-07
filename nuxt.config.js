@@ -6,8 +6,8 @@ export default {
   privateRuntimeConfig: {},
 
   // Target: https://go.nuxtjs.dev/config-target
-  ssr: false,
-  target: 'static',
+  ssr: true,
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -49,7 +49,7 @@ export default {
   build: {},
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/eslint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -129,9 +129,5 @@ export default {
 
   fontawesome: {
     component: 'fa',
-  },
-
-  pwa: {
-    icon: false,
   },
 }

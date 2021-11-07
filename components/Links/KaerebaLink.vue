@@ -160,6 +160,7 @@ export default {
             @media (max-width: $desktop) {
               font-size: 0.9rem;
             }
+
             font-weight: bold;
             text-align: center;
             border-radius: 4px;

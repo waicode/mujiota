@@ -42,7 +42,7 @@ export default {
 }
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
+  opacity: 0%;
 }
 
 #page-top {
@@ -53,7 +53,7 @@ export default {
     position: fixed;
     right: 20px;
     bottom: 16px;
-    opacity: 0.6;
+    opacity: 60%;
     background-color: #424242;
     :focus,
     :hover {

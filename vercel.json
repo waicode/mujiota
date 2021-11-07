@@ -4,18 +4,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [".nuxt/content/**", "content/**"],
-        "generateStaticRoutes": true
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/sw.js",
-      "continue": true,
-      "headers": {
-        "Cache-Control": "public, max-age=0, must-revalidate",
-        "Service-Worker-Allowed": "/"
+        "serverFiles": [".nuxt/content/**", "content/**"]
       }
     }
   ]
