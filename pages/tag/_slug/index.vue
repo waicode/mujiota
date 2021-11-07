@@ -24,6 +24,7 @@
 <script>
 import Meta from '~/mixins/meta'
 export default {
+  name: 'MujiotaTagPage',
   mixins: [Meta],
   async asyncData({ $config, $content, store, params, app, error }) {
     const tagName = app.$getTagName(params.slug)

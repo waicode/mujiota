@@ -2,18 +2,22 @@
   <div class="side-bar">
     <h2>読まれている記事</h2>
     <div class="side-content">
-      <ol class="popular-list">
-        <li
-          v-for="article in $store.state.popularArticles.slice(0, 5)"
-          :key="article.rank"
-        >
-          <NuxtLink :to="`/${article.data.post_id}/${article.data.post_slug}`">
-            <h3>
-              {{ getTitle(article.data.post_id) }}
-            </h3>
-          </NuxtLink>
-        </li>
-      </ol>
+      <template v-if="$store.state.popularArticles">
+        <ol class="popular-list">
+          <li
+            v-for="article in $store.state.popularArticles.slice(0, 5)"
+            :key="article.rank"
+          >
+            <NuxtLink
+              :to="`/${article.data.post_id}/${article.data.post_slug}`"
+            >
+              <h3>
+                {{ getTitle(article.data.post_id) }}
+              </h3>
+            </NuxtLink>
+          </li>
+        </ol>
+      </template>
     </div>
     <h2>コンセプト</h2>
     <div class="side-content">
@@ -25,54 +29,59 @@
     </div>
     <h2>タグ</h2>
     <div class="side-content">
-      <div v-if="$store.state.tags" class="dropbox-wrapper">
-        <b-dropdown aria-role="list">
-          <template #trigger="{ active }">
-            <b-button
-              label="タグを選択"
-              :icon-right="active ? 'menu-up' : 'menu-down'"
-            />
-          </template>
-          <b-dropdown-item
-            v-for="tag in $store.state.tags"
-            :key="tag.name"
-            has-link
-            aria-role="menuitem"
-          >
-            <nuxt-link :to="tagLink(tag)">{{ tagText(tag) }}</nuxt-link>
-          </b-dropdown-item>
-        </b-dropdown>
-      </div>
+      <template v-if="$store.state.tags">
+        <div class="dropbox-wrapper">
+          <b-dropdown aria-role="list">
+            <template #trigger="{ active }">
+              <b-button
+                label="タグを選択"
+                :icon-right="active ? 'menu-up' : 'menu-down'"
+              />
+            </template>
+            <b-dropdown-item
+              v-for="tag in $store.state.tags"
+              :key="tag.name"
+              has-link
+              aria-role="menuitem"
+            >
+              <nuxt-link :to="tagLink(tag)">{{ tagText(tag) }}</nuxt-link>
+            </b-dropdown-item>
+          </b-dropdown>
+        </div>
+      </template>
     </div>
     <h2>アーカイブ</h2>
     <div class="side-content">
-      <div v-if="$store.state.archives" class="dropbox-wrapper">
-        <b-dropdown aria-role="list">
-          <template #trigger="{ active }">
-            <b-button
-              label="月を選択"
-              :icon-right="active ? 'menu-up' : 'menu-down'"
-            />
-          </template>
+      <template v-if="$store.state.archives">
+        <div class="dropbox-wrapper">
+          <b-dropdown aria-role="list">
+            <template #trigger="{ active }">
+              <b-button
+                label="月を選択"
+                :icon-right="active ? 'menu-up' : 'menu-down'"
+              />
+            </template>
 
-          <b-dropdown-item
-            v-for="archive in $store.state.archives"
-            :key="archive.month"
-            has-link
-            aria-role="menuitem"
-          >
-            <nuxt-link :to="dateLink(archive)">{{
-              dateText(archive)
-            }}</nuxt-link>
-          </b-dropdown-item>
-        </b-dropdown>
-      </div>
+            <b-dropdown-item
+              v-for="archive in $store.state.archives"
+              :key="archive.month"
+              has-link
+              aria-role="menuitem"
+            >
+              <nuxt-link :to="dateLink(archive)">{{
+                dateText(archive)
+              }}</nuxt-link>
+            </b-dropdown-item>
+          </b-dropdown>
+        </div>
+      </template>
     </div>
     <SideBarRecommendAd />
   </div>
 </template>
 <script>
 export default {
+  name: 'MujiotaSideBar',
   methods: {
     tagLink(tag) {
       return `/tag/${this.$getTagSlug(tag.name)}`

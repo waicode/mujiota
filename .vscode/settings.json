@@ -7,14 +7,19 @@
     "fontawesome",
     "fortawesome",
     "gtag",
+    "lifehack",
+    "muji",
     "mujiota",
     "noindex",
+    "notyet",
     "nuxt",
     "nuxtjs",
     "prismjs",
     "rehype",
     "stylelint",
+    "trdr",
     "Uacct",
-    "vercel"
+    "vercel",
+    "twitter"
   ]
 }

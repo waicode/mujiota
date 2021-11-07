@@ -26,6 +26,7 @@
 import Meta from '~/mixins/meta'
 
 export default {
+  name: 'MujiotaArchivePage',
   mixins: [Meta],
   async asyncData({ $config, $content, store, params, app, error }) {
     const year = params.yyyy

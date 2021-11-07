@@ -25,6 +25,7 @@
 <script>
 import Meta from '~/mixins/meta'
 export default {
+  name: 'MujiotaIndexPage',
   mixins: [Meta],
   async asyncData({ $content, store, app }) {
     const articles = await $content('articles', { deep: true })

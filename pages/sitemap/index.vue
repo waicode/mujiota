@@ -22,6 +22,7 @@
 import Meta from '~/mixins/meta'
 
 export default {
+  name: 'MujiotaSitemapPage',
   mixins: [Meta],
   async asyncData({ $config, $content, store, app }) {
     const pageUrl = `${$config.baseURL}/sitemap`
