@@ -1,4 +1,4 @@
-import { collection, getDocs } from 'firebase'
+import { collection, getDocs } from 'firebase/firestore/lite'
 import { db } from '~/plugins/firebase.js'
 
 export const state = () => ({
