@@ -29,7 +29,7 @@ $bg-secondary-color: #fafafa;
 .wrapper {
   padding: 32px 12px;
   background-color: $bg-secondary-color;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: 1200px;
   margin: 112px auto 96px;
