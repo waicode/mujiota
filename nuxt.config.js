@@ -129,4 +129,8 @@ export default {
   fontawesome: {
     component: 'fa',
   },
+
+  pwa: {
+    icon: false,
+  },
 }
