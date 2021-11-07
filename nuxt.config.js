@@ -30,7 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/init.client.ts', mode: 'client' },
+    { src: '~/plugins/init.client.js', mode: 'client' },
     '~/plugins/filter.js',
     '~/plugins/firebase.js',
     '~/plugins/video.js',
