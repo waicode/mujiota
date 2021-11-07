@@ -8,6 +8,7 @@
 </template>
 <script>
 export default {
+  name: 'MujiotaLayoutError',
   props: {
     error: {
       require: true,

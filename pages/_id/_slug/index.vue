@@ -60,6 +60,7 @@ import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import Meta from '~/mixins/meta'
 
 export default {
+  name: 'MujiotaSlugPage',
   mixins: [Meta],
   validate({ params }) {
     return /^\d+$/.test(params.id)

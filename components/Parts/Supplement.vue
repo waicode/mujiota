@@ -16,6 +16,7 @@
 import ChatIconSvg from '@/assets/images/shared/icon/ic_chat_24px.svg'
 import WarningIconSvg from '@/assets/images/shared/icon/ic_warning_24px.svg'
 export default {
+  name: 'MujiotaSupplement',
   components: {
     ChatIconSvg,
     WarningIconSvg,

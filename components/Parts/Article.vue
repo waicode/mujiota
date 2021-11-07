@@ -58,6 +58,7 @@
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 export default {
+  name: 'MujiotaAirticle',
   props: {
     article: {
       require: true,

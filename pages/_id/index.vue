@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'MujiotaSlugRedirectPage',
   validate({ params }) {
     return /^\d+$/.test(params.id)
   },

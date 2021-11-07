@@ -18,7 +18,7 @@
       </ul>
     </div>
     <div class="content has-text-centered copyright">
-      <p>© 2021 mujiota.com</p>
+      <p>© {{ thisYear }} mujiota.com</p>
     </div>
   </footer>
 </template>
@@ -28,10 +28,16 @@ import GithubIconSvg from '@/assets/images/shared/icon/iconmonstr-github-1.svg'
 // import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
 
 export default {
+  name: 'MujiotaFooter',
   components: {
     TwitterIconSvg,
     GithubIconSvg,
     // EmailIconSvg,
+  },
+  data() {
+    return {
+      thisYear: new Date().getFullYear(),
+    }
   },
 }
 </script>

@@ -19,6 +19,11 @@
     <Footer />
   </div>
 </template>
+<script>
+export default {
+  name: 'MujiotaLayoutDefault',
+}
+</script>
 <style lang="scss" scoped>
 $bg-secondary-color: #fafafa;
 .wrapper {
