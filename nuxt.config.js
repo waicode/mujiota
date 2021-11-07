@@ -6,7 +6,7 @@ export default {
   privateRuntimeConfig: {},
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -48,7 +48,7 @@ export default {
   build: {},
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
+  buildModules: ['@nuxtjs/eslint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

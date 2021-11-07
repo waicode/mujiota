@@ -1,8 +1,8 @@
 <template>
   <div class="side-bar">
-    <h2>読まれている記事</h2>
-    <div class="side-content">
-      <template v-if="$store.state.popularArticles">
+    <template v-if="$store.state.popularArticles.length > 0">
+      <h2>読まれている記事</h2>
+      <div class="side-content">
         <ol class="popular-list">
           <li
             v-for="article in $store.state.popularArticles.slice(0, 5)"
@@ -17,8 +17,8 @@
             </NuxtLink>
           </li>
         </ol>
-      </template>
-    </div>
+      </div>
+    </template>
     <h2>コンセプト</h2>
     <div class="side-content">
       <p class="text-content">
@@ -29,7 +29,7 @@
     </div>
     <h2>タグ</h2>
     <div class="side-content">
-      <template v-if="$store.state.tags">
+      <template v-if="$store.state.tags.length > 0">
         <div class="dropbox-wrapper">
           <b-dropdown aria-role="list">
             <template #trigger="{ active }">
@@ -52,7 +52,7 @@
     </div>
     <h2>アーカイブ</h2>
     <div class="side-content">
-      <template v-if="$store.state.archives">
+      <template v-if="$store.state.archives.length > 0">
         <div class="dropbox-wrapper">
           <b-dropdown aria-role="list">
             <template #trigger="{ active }">
