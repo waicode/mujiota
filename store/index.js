@@ -28,8 +28,11 @@ export const mutations = {
 }
 
 export const actions = {
-  async nuxtServerInit({ commit }, { $content, req }) {
+  async nuxtServerInit({ commit, state }, { $content, req }) {
     try {
+      if (state.initialized) {
+        return
+      }
       // 全記事一覧
       const articles = await $content('articles', { deep: true })
         .sortBy('createdAt', 'desc')
