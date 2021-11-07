@@ -111,9 +111,9 @@ export default {
 }
 
 $logo-color: #67041b;
-$logo-alpha-color: rgb(103 4 27 / 24%);
+$logo-alpha-color: rgba(103, 4, 27, 24%);
 $circle-color: #6f4952;
-$circle-alpha-color: rgb(111 73 82 / 28%);
+$circle-alpha-color: rgba(111, 73, 82, 28%);
 
 @media (max-width: $mobile) {
   .navbar-brand {
@@ -202,8 +202,8 @@ a.topnav-icon {
     height: 100%;
     background-image: linear-gradient(
       160deg,
-      rgb(224 224 224 / 85%),
-      rgb(97 97 97 / 85%)
+      rgba(224, 224, 224, 85%),
+      rgba(97, 97, 97, 85%)
     );
   }
 }

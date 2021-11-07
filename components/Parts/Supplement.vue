@@ -40,14 +40,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .supplement {
-  background: rgb(255 249 196 / 60%);
+  background: rgba(255, 249, 196, 60%);
   font-size: 0.92rem;
   padding: 1rem;
   margin: 1.5rem 0 2rem;
   border-radius: 4px;
-  border: 1px solid rgb(237 237 237 / 100%);
+  border: 1px solid #ededed;
   &.warning {
-    background: rgb(255 205 210 / 60%);
+    background: rgba(255, 205, 210, 60%);
   }
   .title {
     font-size: 0.92rem;

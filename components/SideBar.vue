@@ -108,7 +108,7 @@ export default {
 </script>
 <style lang="scss">
 $ad-bg-color: #c5e1a5;
-$side-bar-link-color: rgb(114 108 108);
+$side-bar-link-color: #726c6c;
 .side-bar {
   .ad-side-top {
     width: 250px;

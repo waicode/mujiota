@@ -73,7 +73,7 @@ export default {
       transition: 0.3s ease-in-out;
       &:hover {
         color: #666;
-        background: rgb(167 255 235 / 24%);
+        background: rgba(167, 255, 235, 24%);
       }
       .link-image {
         img {
@@ -90,14 +90,14 @@ export default {
             content: '関連リンク';
             font-size: 0.7em;
             font-weight: bold;
-            color: rgb(255 255 255);
+            color: #ffffff;
             width: 6em;
             display: inline-block;
             position: relative;
             top: -2px;
             text-align: center;
             margin-right: 0.5em;
-            background: rgb(17 17 17);
+            background: #111;
             padding: 0.2em;
             border-radius: 2px;
           }
