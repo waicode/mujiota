@@ -4,28 +4,9 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [".nuxt/content/**", "content/**"]
+        "serverFiles": [".nuxt/content/**", "content/**"],
+        "generateStaticRoutes": true
       }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/_nuxt/.+",
-      "headers": { "Cache-Control": "public, max-age=31536000" }
-    },
-    {
-      "src": "/sw.js",
-      "dest": "/_nuxt/static/sw.js",
-      "headers": {
-        "cache-control": "public, max-age=43200, immutable",
-        "Service-Worker-Allowed": "/"
-      }
-    },
-
-    {
-      "src": "/(.*)",
-      "headers": { "cache-control": "s-maxage=1, stale-while-revalidate " },
-      "dest": "/"
     }
   ]
 }
