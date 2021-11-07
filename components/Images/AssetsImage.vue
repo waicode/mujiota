@@ -21,8 +21,8 @@ export default {
 .lazy-load-image {
   background-image: linear-gradient(
     160deg,
-    rgba(250, 250, 250, 85%),
-    rgba(239, 235, 233, 85%)
+    rgba(250, 250, 250, 0.85),
+    rgba(239, 235, 233, 0.85)
   );
 }
 </style>

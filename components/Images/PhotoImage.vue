@@ -42,13 +42,13 @@ export default {
   max-width: 60%;
   position: relative;
   img {
-    box-shadow: 0 2px 4px rgba(67, 133, 187, 7%);
+    box-shadow: 0 2px 4px rgba(67, 133, 187, 0.07);
     vertical-align: top;
     border-radius: 8px;
     filter: sepia(0.25) contrast(1.1) brightness(1.1);
 
     &::before {
-      background: rgba(230, 193, 61, 10%);
+      background: rgba(230, 193, 61, 0.1);
       content: '';
       mix-blend-mode: lighten;
     }

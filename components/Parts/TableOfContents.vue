@@ -36,7 +36,7 @@ export default {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1em 2em;
-  background: rgba(250, 250, 250, 20%);
+  background: rgba(250, 250, 250, 0.2);
   border: 1px solid #eee;
   box-shadow: 0 0 2px #efefef;
   .menu-label {

@@ -72,7 +72,7 @@ export default {
       transition: 0.3s ease-in-out;
       &:hover {
         color: #666;
-        background: rgba(167, 255, 235, 24%);
+        background: rgba(167, 255, 235, 0.24);
       }
       .link-image {
         img {
