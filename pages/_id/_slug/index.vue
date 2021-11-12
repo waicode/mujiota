@@ -56,91 +56,129 @@
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
+import {
+  defineComponent,
+  ref,
+  useContext,
+  useFetch,
+  useMeta,
+} from '@nuxtjs/composition-api'
 
-import Meta from '~/mixins/meta'
+export default defineComponent({
+  name: 'MujiotaIdSlugPage',
+  setup() {
+    const { $config, $content, store, params, app, error } = useContext()
 
-export default {
-  name: 'MujiotaSlugPage',
-  mixins: [Meta],
-  validate({ params }) {
-    return /^\d+$/.test(params.id)
-  },
-  async asyncData({ $config, $content, store, params, app, error }) {
-    let article = {}
-    let relatedArticles = []
-    let pageUrl = ''
-    let imageUrl = ''
-    try {
-      article = await $content('articles', params.id, params.slug).fetch()
-      pageUrl = `${$config.baseURL}/${article.id}/${article.slug}`
-      const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
-      imageUrl = `${$config.baseURL}${imagePath}`
-    } catch {
-      // 見つからない場合はNOTFOUND
-      error({
-        statusCode: 404,
-      })
-    }
-    try {
-      relatedArticles = await $content('articles', { deep: true })
-        .where({
-          category: article.category,
-          id: { $ne: article.id },
-        })
-        .fetch()
-    } catch {}
+    const article = ref({})
+    const pageUrl = ref('')
+    const imageUrl = ref('')
+    const relatedArticles = ref([])
+    const { title, meta } = useMeta()
 
-    // 現在のページ情報をストアへ格納
-    store.commit('page/setArticle', { article })
+    useFetch(async () => {
+      let articleData = {}
+      try {
+        // APIからコンテンツを取得する処理
+        articleData = await $content(
+          'articles',
+          params.value.id,
+          params.value.slug
+        ).fetch()
 
-    // メタ情報
-    const meta = app.$getMeta()
-    meta.title = article.title
-    meta.description = article.description
-    meta.pageUrl = pageUrl
-    meta.ogImageUrl = imageUrl
-    meta.ogType = 'article'
+        if (!articleData) {
+          // 見つからない場合はNOTFOUND
+          error({
+            statusCode: 404,
+          })
+        }
+
+        article.value = articleData
+        pageUrl.value = `${$config.baseURL}/${articleData.id}/${articleData.slug}`
+        const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
+        imageUrl.value = `${$config.baseURL}${imagePath}`
+      } catch (e) {}
+      try {
+        // 関連記事
+        const relatedArticlesData = await $content('articles', { deep: true })
+          .where({
+            category: articleData.category,
+            id: { $ne: articleData.id },
+          })
+          .fetch()
+        relatedArticles.value = relatedArticlesData
+      } catch (e) {
+        console.log(e)
+      }
+
+      // メタ情報
+      const metaDefault = app.$getMeta()
+      title.value = articleData.title
+      meta.value = [
+        {
+          hid: 'description',
+          name: 'description',
+          content: articleData.description,
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: metaDefault.siteName,
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:title', property: 'og:title', content: articleData.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: articleData.description,
+        },
+        { hid: 'og:url', property: 'og:url', content: pageUrl },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: imageUrl,
+        },
+        {
+          hid: 'og:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'og:site',
+          name: 'twitter:site',
+          content: metaDefault.twitterUserName,
+        },
+        {
+          hid: 'og:creator',
+          name: 'twitter:creator',
+          content: metaDefault.twitterUserName,
+        },
+      ]
+      // 現在のページ情報をストアへ格納
+      store.commit('page/setArticle', { articleData })
+    })
+
+    // TODO: バックエンドから取得したカウント数をどこかで設定
+    const shareCountHatena = ref(0)
+    const shareCountTwitter = ref(0)
+    const shareCountFacebook = ref(0)
+    const shareCountPocket = ref(0)
 
     return {
       article,
       pageUrl,
       imageUrl,
-      relatedArticles,
       meta,
+      faCalendarAlt,
+      faRedoAlt,
+      shareCountHatena,
+      shareCountTwitter,
+      shareCountFacebook,
+      shareCountPocket,
+      relatedArticles,
     }
   },
-  data() {
-    return {
-      // TODO: バックエンドから取得したカウント数を設定する
-      shareCountHatena: 0,
-      shareCountTwitter: 0,
-      shareCountFacebook: 0,
-      shareCountPocket: 0,
-    }
-  },
-  computed: {
-    faCalendarAlt() {
-      return faCalendarAlt
-    },
-    faRedoAlt() {
-      return faRedoAlt
-    },
-  },
-  mounted() {
-    // TODO: Network Error修正
-    // SNS Count
-    // const hatenaCountUrl = `https://bookmark.hatenaapis.com/count/entry?url=${this.pageUrl}/`
-    // const hatenaCountUrl = `https://mujiota.com/`
-    // console.log('hatenaCountUrl', hatenaCountUrl)
-    // this.$axios
-    //   .$get(hatenaCountUrl)
-    //   .then((res) => {
-    //     console.log('res', res)
-    //     this.shareCountHatena = res.data
-    //   })
-    //   .catch((e) => console.log(e))
-  },
-}
+  head: {},
+})
 </script>
 <style lang="scss">
 .post {
