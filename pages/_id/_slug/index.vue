@@ -58,6 +58,7 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import {
   defineComponent,
+  reactive,
   ref,
   useContext,
   useFetch,
@@ -69,10 +70,10 @@ export default defineComponent({
   setup() {
     const { $config, $content, store, params, app, error } = useContext()
 
-    const article = ref({})
+    let article
+    let relatedArticles
     const pageUrl = ref('')
     const imageUrl = ref('')
-    const relatedArticles = ref([])
     const { title, meta } = useMeta()
 
     useFetch(async () => {
@@ -92,7 +93,7 @@ export default defineComponent({
           })
         }
 
-        article.value = articleData
+        article = reactive(articleData)
         pageUrl.value = `${$config.baseURL}/${articleData.id}/${articleData.slug}`
         const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
         imageUrl.value = `${$config.baseURL}${imagePath}`
@@ -105,7 +106,7 @@ export default defineComponent({
             id: { $ne: articleData.id },
           })
           .fetch()
-        relatedArticles.value = relatedArticlesData
+        relatedArticles = reactive(relatedArticlesData)
       } catch (e) {
         console.log(e)
       }
