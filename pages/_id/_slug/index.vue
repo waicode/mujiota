@@ -58,7 +58,6 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import {
   defineComponent,
-  reactive,
   ref,
   useContext,
   useFetch,
@@ -70,13 +69,14 @@ export default defineComponent({
   setup() {
     const { $config, $content, store, params, app, error } = useContext()
 
-    let article
-    let relatedArticles
+    const article = ref()
+    const relatedArticles = ref()
     const pageUrl = ref('')
-    const imageUrl = ref('')
+    let imageUrl = ''
+
     const { title, meta } = useMeta()
 
-    useFetch(async () => {
+    const { fetch } = useFetch(async () => {
       let articleData = {}
       try {
         // APIからコンテンツを取得する処理
@@ -93,10 +93,10 @@ export default defineComponent({
           })
         }
 
-        article = reactive(articleData)
+        article.value = articleData
         pageUrl.value = `${$config.baseURL}/${articleData.id}/${articleData.slug}`
         const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
-        imageUrl.value = `${$config.baseURL}${imagePath}`
+        imageUrl = `${$config.baseURL}${imagePath}`
       } catch (e) {}
       try {
         // 関連記事
@@ -106,8 +106,9 @@ export default defineComponent({
             id: { $ne: articleData.id },
           })
           .fetch()
-        relatedArticles = reactive(relatedArticlesData)
+        relatedArticles.value = relatedArticlesData
       } catch (e) {
+        // eslint-disable-next-line no-console
         console.log(e)
       }
 
@@ -158,11 +159,16 @@ export default defineComponent({
       store.commit('page/setArticle', { articleData })
     })
 
+    fetch()
+
     // TODO: バックエンドから取得したカウント数をどこかで設定
     const shareCountHatena = ref(0)
     const shareCountTwitter = ref(0)
     const shareCountFacebook = ref(0)
     const shareCountPocket = ref(0)
+
+    // eslint-disable-next-line no-console
+    console.log(article)
 
     return {
       article,

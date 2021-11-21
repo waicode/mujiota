@@ -3,6 +3,7 @@
     "ADSENSE",
     "ateliersulphurpool",
     "buefy",
+    "composables",
     "firestore",
     "fontawesome",
     "fortawesome",
@@ -18,8 +19,8 @@
     "rehype",
     "stylelint",
     "trdr",
+    "twitter",
     "Uacct",
-    "vercel",
-    "twitter"
+    "vercel"
   ]
 }
