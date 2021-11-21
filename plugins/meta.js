@@ -1,5 +1,7 @@
+// デフォルトのメタデータ
+// 各ページでデフォルト以外の値は上書き必須
 const meta = {
-  title: null,
+  title: 'mujiota.com',
   siteName: 'mujiota.com',
   description:
     'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。',
