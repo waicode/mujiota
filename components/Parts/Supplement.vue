@@ -23,17 +23,15 @@ export default {
   },
   props: {
     type: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
       validator(val) {
         return ['normal', 'warning'].includes(val)
       },
     },
     title: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
   },
 }

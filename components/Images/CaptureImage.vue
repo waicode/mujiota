@@ -12,19 +12,16 @@
 export default {
   props: {
     articleId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     imgFileName: {
-      require: true,
+      required: true,
       type: String,
-      default: '',
     },
     caption: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
   },
 }

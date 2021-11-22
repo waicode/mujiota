@@ -18,9 +18,8 @@
 export default {
   props: {
     article: {
-      require: true,
+      required: true,
       type: Object,
-      default: null,
     },
   },
 }

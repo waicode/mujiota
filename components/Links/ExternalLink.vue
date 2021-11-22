@@ -25,27 +25,22 @@
 export default {
   props: {
     title: {
-      require: true,
+      required: true,
       type: String,
-      default: '',
     },
     note: {
-      require: true,
+      required: true,
       type: String,
-      default: '',
     },
     link: {
-      require: true,
+      required: true,
       type: String,
-      default: '#',
     },
     imgFileName: {
-      require: true,
+      required: true,
       type: String,
-      default: '',
     },
     aspMeasurementImgLink: {
-      require: false,
       type: String,
       default: null,
     },

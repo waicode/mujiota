@@ -25,9 +25,8 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 export default {
   props: {
     id: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
   },
   data() {

@@ -61,9 +61,8 @@ export default {
   name: 'MujiotaAirticle',
   props: {
     article: {
-      require: true,
+      required: true,
       type: Object,
-      default: null,
     },
   },
   computed: {

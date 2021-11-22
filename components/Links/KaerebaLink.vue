@@ -42,34 +42,28 @@
 export default {
   props: {
     itemTitle: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     imgFileName: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     shopName: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     amazonItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     rakutenItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     searchKeyword: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
   },
   data() {

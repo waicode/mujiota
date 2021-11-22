@@ -67,14 +67,12 @@ export default {
   },
   props: {
     pageUrl: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     title: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     shareCountHatena: {
       type: Number,

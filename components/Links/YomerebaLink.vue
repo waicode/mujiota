@@ -39,39 +39,32 @@
 export default {
   props: {
     itemTitle: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     imgFileName: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     authorName: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     amazonItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     kindleItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     rakutenItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
     koboItemId: {
-      require: true,
+      required: true,
       type: String,
-      default: null,
     },
   },
   data() {

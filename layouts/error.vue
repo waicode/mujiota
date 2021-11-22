@@ -11,9 +11,8 @@ export default {
   name: 'MujiotaLayoutError',
   props: {
     error: {
-      require: true,
+      required: true,
       type: Object,
-      default: null,
     },
   },
 }

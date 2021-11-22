@@ -47,9 +47,8 @@ import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 export default {
   props: {
     articles: {
-      require: true,
+      required: true,
       type: Array,
-      default: null,
     },
   },
   computed: {
