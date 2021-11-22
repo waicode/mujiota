@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="post-list">
+    <div v-if="displayPosts" class="post-list">
       <div v-for="(article, index) in displayPosts" :key="article.id">
         <Article :article="article" />
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
@@ -23,64 +23,84 @@
 </template>
 
 <script>
-import Meta from '~/mixins/meta'
+import {
+  defineComponent,
+  ref,
+  computed,
+  useContext,
+  useFetch,
+  useMeta,
+} from '@nuxtjs/composition-api'
+import useHeaderMeta from '@/composables/useHeaderMeta'
 
-export default {
+export default defineComponent({
   name: 'MujiotaArchivePage',
-  mixins: [Meta],
-  async asyncData({ $config, $content, store, params, app, error }) {
-    const year = params.yyyy
-    const month = params.mm
+  setup() {
+    const { $content, $config, store, params, app, error } = useContext()
+
+    const currentPage = ref(1)
+    const pageSize = ref(5)
+
+    const year = params.value.yyyy
+    const month = params.value.mm
+    const monthStr = String(Number(month)) // ゼロサプレス
+
+    const archivesTitle = `${year}年${monthStr}月の記事一覧`
+    const description = `${year}年${monthStr}月に投稿された記事の一覧です。`
     const pageUrl = `${$config.baseURL}/date/${year}/${month}`
 
-    let articles = []
+    const { title, meta } = useMeta()
 
-    articles = await $content('articles', { deep: true })
-      .sortBy('createdAt', 'desc')
-      .fetch()
-    // eslint-disable-next-line no-useless-escape
-    const pattern = new RegExp('^' + year + '\-' + month)
-    articles = articles.filter((data) => data.createdAt.match(pattern))
+    const articles = ref([])
 
-    if (articles.length < 1) {
-      error({
-        statusCode: 404,
-      })
-    }
-
-    // 現在の記事情報をリセット
-    store.commit('page/setArticle', { article: {} })
-
-    // メタ情報
-    const meta = app.$getMeta()
-    const monthStr = String(Number(month)) // ゼロサプレス
-    meta.title = `${year}年${monthStr}月の記事一覧`
-    meta.description = `${year}年${monthStr}月に投稿された記事の一覧です。`
-    meta.pageUrl = pageUrl
-    meta.ogType = 'blog'
-
-    return {
-      year,
-      month,
-      pageUrl,
-      articles,
-      meta,
-    }
-  },
-  data() {
-    return {
-      currentPage: 1,
-      pageSize: 5,
-    }
-  },
-  computed: {
-    displayPosts() {
+    // TODO: composableへ
+    const displayPosts = computed(() => {
       // TODO: 記事の高さを固定にしてチラツキをなくす
-      return this.articles.slice(
-        this.pageSize * (this.currentPage - 1),
-        this.pageSize * this.currentPage
+      if (articles.value) {
+        return articles.value.slice(
+          pageSize.value * (currentPage.value - 1),
+          pageSize.value * currentPage.value
+        )
+      } else {
+        return []
+      }
+    })
+
+    // TODO: composableへ
+    const { fetch } = useFetch(async () => {
+      const articlesData = await $content('articles', { deep: true })
+        .sortBy('createdAt', 'desc')
+        .fetch()
+      // eslint-disable-next-line no-useless-escape
+      const pattern = new RegExp('^' + year + '\-' + month)
+      articles.value = articlesData.filter((data) =>
+        data.createdAt.match(pattern)
       )
-    },
+
+      if (articles.value.length < 1) {
+        error({
+          statusCode: 404,
+        })
+      }
+
+      // メタ情報
+      const metaData = app.$getMeta(archivesTitle, description, pageUrl, null)
+      title.value = archivesTitle
+      meta.value = useHeaderMeta(metaData).meta
+
+      // 現在の記事情報をリセット
+      store.commit('page/setArticle', { article: {} })
+    })
+
+    fetch()
+
+    return {
+      currentPage,
+      pageSize,
+      displayPosts,
+      articles,
+    }
   },
-}
+  head: {},
+})
 </script>

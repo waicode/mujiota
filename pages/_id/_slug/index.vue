@@ -63,21 +63,23 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
+import useHeaderMeta from '@/composables/useHeaderMeta'
 
 export default defineComponent({
   name: 'MujiotaIdSlugPage',
   setup() {
-    const { $config, $content, store, params, app, error } = useContext()
+    const { $content, $config, store, params, app, error } = useContext()
 
     const article = ref()
     const relatedArticles = ref()
     const pageUrl = ref('')
-    let imageUrl = ''
 
     const { title, meta } = useMeta()
 
     const { fetch } = useFetch(async () => {
       let articleData = {}
+      let imageUrl = ''
+      // TODO: composableへ
       try {
         // APIからコンテンツを取得する処理
         articleData = await $content(
@@ -94,10 +96,17 @@ export default defineComponent({
         }
 
         article.value = articleData
-        pageUrl.value = `${$config.baseURL}/${articleData.id}/${articleData.slug}`
-        const imagePath = require(`~/assets/images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`)
-        imageUrl = `${$config.baseURL}${imagePath}`
-      } catch (e) {}
+        pageUrl.value = `${$config.baseUrl}/${articleData.id}/${articleData.slug}`
+
+        imageUrl =
+          $config.baseUrl +
+          require(`~/assets/images/eyecatch/${articleData.id}/${articleData.slug}.${articleData.imageFormat}`)
+      } catch (e) {
+        // eslint-disable-next-line no-console
+        console.log(e)
+      }
+
+      // TODO: composableへ
       try {
         // 関連記事
         const relatedArticlesData = await $content('articles', { deep: true })
@@ -113,48 +122,15 @@ export default defineComponent({
       }
 
       // メタ情報
-      const metaDefault = app.$getMeta()
+      const metaData = app.$getMeta(
+        articleData.title,
+        articleData.description,
+        pageUrl.value,
+        imageUrl
+      )
       title.value = articleData.title
-      meta.value = [
-        {
-          hid: 'description',
-          name: 'description',
-          content: articleData.description,
-        },
-        {
-          hid: 'og:site_name',
-          property: 'og:site_name',
-          content: metaDefault.siteName,
-        },
-        { hid: 'og:type', property: 'og:type', content: 'article' },
-        { hid: 'og:title', property: 'og:title', content: articleData.title },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: articleData.description,
-        },
-        { hid: 'og:url', property: 'og:url', content: pageUrl },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: imageUrl,
-        },
-        {
-          hid: 'og:card',
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          hid: 'og:site',
-          name: 'twitter:site',
-          content: metaDefault.twitterUserName,
-        },
-        {
-          hid: 'og:creator',
-          name: 'twitter:creator',
-          content: metaDefault.twitterUserName,
-        },
-      ]
+      meta.value = useHeaderMeta(metaData).meta
+
       // 現在のページ情報をストアへ格納
       store.commit('page/setArticle', { articleData })
     })
@@ -173,8 +149,6 @@ export default defineComponent({
     return {
       article,
       pageUrl,
-      imageUrl,
-      meta,
       faCalendarAlt,
       faRedoAlt,
       shareCountHatena,

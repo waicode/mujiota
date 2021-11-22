@@ -1,6 +1,6 @@
 export default {
   publicRuntimeConfig: {
-    baseUrl: process.env.BASE_URL,
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   },
 
   privateRuntimeConfig: {},
@@ -74,6 +74,7 @@ export default {
   ],
 
   generate: {
+    interval: 2000,
     async routes() {
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
