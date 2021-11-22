@@ -48,7 +48,6 @@ export default defineComponent({
     const posts = ref([])
 
     const displayPage = (targetPosts) => {
-      console.log('targetPosts', targetPosts)
       posts.value = targetPosts
     }
 
