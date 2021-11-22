@@ -32,17 +32,16 @@ export default defineComponent({
   name: 'MujiotaArchivePage',
   setup() {
     const { $config, store, params, app, error } = useContext()
+    const { title, meta } = useMeta()
 
-    const pageSize = 5
+    const pageSize = $config.pageSize
 
     const year = params.value.yyyy
     const month = params.value.mm
     const monthStr = String(Number(month)) // ゼロサプレス
     const archivesTitle = `${year}年${monthStr}月の記事一覧`
     const description = `${year}年${monthStr}月に投稿された記事の一覧です。`
-    const pageUrl = `${$config.baseURL}/date/${year}/${month}`
-
-    const { title, meta } = useMeta()
+    const pageUrl = `${$config.baseUrl}/date/${year}/${month}`
 
     const articles = ref([])
     const posts = ref([])

@@ -1,6 +1,7 @@
 export default {
   publicRuntimeConfig: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    pageSize: 5,
   },
 
   privateRuntimeConfig: {},

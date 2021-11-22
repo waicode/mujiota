@@ -1,84 +1,78 @@
 <template>
   <div class="container">
-    <div class="post-list">
-      <div v-for="(article, index) in displayPosts" :key="article.id">
+    <div v-if="posts" class="post-list">
+      <div v-for="(article, index) in posts" :key="article.id">
         <Article :article="article" />
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
     </div>
     <div v-show="articles.length > pageSize" class="post-pagination">
-      <b-pagination
-        v-model="currentPage"
-        :total="articles.length"
-        :range-before="1"
-        :range-after="1"
-        size="is-large"
-        :per-page="pageSize"
-        icon-prev="chevron-left"
-        icon-next="chevron-right"
-      >
-      </b-pagination>
+      <AppPagenation
+        :articles="articles"
+        :page-size="pageSize"
+        @change-page="displayPage"
+      />
     </div>
   </div>
 </template>
 <script>
-import Meta from '~/mixins/meta'
-export default {
+import {
+  defineComponent,
+  ref,
+  useContext,
+  useFetch,
+  useMeta,
+} from '@nuxtjs/composition-api'
+import useHeaderMeta from '@/composables/useHeaderMeta'
+import usePagenate from '~/composables/usePagenate'
+import useFetchTagPages from '~/composables/useFetchTagPages'
+
+export default defineComponent({
   name: 'MujiotaTagPage',
-  mixins: [Meta],
-  async asyncData({ $config, $content, store, params, app, error }) {
-    const tagName = app.$getTagName(params.slug)
-    const pageUrl = `${$config.baseURL}/tag/${params.slug}/`
-    let articles = []
-    try {
-      articles = await $content('articles', { deep: true })
-        .where({
-          tags: { $containsAny: [tagName] },
-        })
-        .sortBy('createdAt', 'desc')
-        .fetch()
-      if (articles.length < 1) {
-        error({
-          statusCode: 404,
-        })
-      }
-    } catch {
-      error({
-        statusCode: 404,
-      })
+  setup() {
+    const { $config, store, params, app, error } = useContext()
+    const { title, meta } = useMeta()
+
+    const pageSize = $config.pageSize
+
+    const tagName = app.$getTagName(params.value.slug)
+    const pageUrl = `${$config.baseUrl}/tag/${params.value.slug}/`
+    const tagPageTitle = `${tagName}の記事一覧`
+    const description = `「${tagName}」タグが付いた記事の一覧です。`
+
+    const articles = ref([])
+    const posts = ref([])
+
+    const displayPage = (targetPosts) => {
+      posts.value = targetPosts
     }
 
-    // 現在の記事情報をリセット
-    store.commit('page/setArticle', { article: {} })
+    const { fetch } = useFetch(async () => {
+      // 対象タグの記事一覧を取得
+      articles.value = await useFetchTagPages(tagName)
+      if (articles.length < 1) error({ statusCode: 404 })
 
-    // メタ情報
-    const meta = app.$getMeta()
-    meta.title = `${tagName}の記事一覧`
-    meta.description = `「${tagName}」タグが付いた記事の一覧です。`
-    meta.pageUrl = pageUrl
-    meta.ogType = 'blog'
+      // ページネーションの初期表示
+      posts.value = usePagenate(articles.value, pageSize)
+
+      // メタ情報
+      const metaData = app.$getMeta(tagPageTitle, description, pageUrl, null)
+      title.value = tagPageTitle
+      meta.value = useHeaderMeta(metaData).meta
+
+      // 現在の記事情報をリセット
+      store.commit('page/setArticle', { article: {} })
+    })
+
+    fetch()
 
     return {
       articles,
-      tagName,
-      pageUrl,
-      meta,
+      posts,
+      pageSize,
+      displayPage,
     }
   },
-  data() {
-    return {
-      currentPage: 1,
-      pageSize: 5,
-    }
-  },
-  computed: {
-    displayPosts() {
-      // TODO: 記事の高さを固定にしてチラツキをなくす
-      return this.articles.slice(
-        this.pageSize * (this.currentPage - 1),
-        this.pageSize * this.currentPage
-      )
-    },
-  },
-}
+  head: {},
+})
 </script>
