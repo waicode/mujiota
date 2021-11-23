@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <AppHeader />
     <div class="wrapper">
       <div class="columns">
         <main class="main column is-9-desktop is-9-tablet is-12-mobile">
@@ -10,13 +10,13 @@
         </main>
         <aside class="sub column is-3-desktop is-3-tablet is-12-mobile">
           <div class="contents-wrapper">
-            <SideBar />
+            <AppSideBar />
           </div>
         </aside>
         <AppReturnTopButton class="page-top-button"></AppReturnTopButton>
       </div>
     </div>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 <script>

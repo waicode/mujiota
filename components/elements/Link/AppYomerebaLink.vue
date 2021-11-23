@@ -51,20 +51,20 @@ export default {
       type: String,
     },
     amazonItemId: {
-      required: true,
       type: String,
-    },
-    kindleItemId: {
-      required: true,
-      type: String,
+      default: null,
     },
     rakutenItemId: {
-      required: true,
       type: String,
+      default: null,
+    },
+    kindleItemId: {
+      type: String,
+      default: null,
     },
     koboItemId: {
-      required: true,
       type: String,
+      default: null,
     },
   },
   data() {

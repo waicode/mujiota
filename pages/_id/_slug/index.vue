@@ -143,9 +143,6 @@ export default defineComponent({
     const shareCountFacebook = ref(0)
     const shareCountPocket = ref(0)
 
-    // eslint-disable-next-line no-console
-    console.log(article)
-
     return {
       article,
       pageUrl,
