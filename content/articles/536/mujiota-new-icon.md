@@ -25,6 +25,6 @@ tags:
 
 pixelmator入門というサイトが、細かいところまで解説していて良い感じです。
 
- * <a href="http://blockworks.jp/pixelmator/" target="_blank">pixelmator入門</a>
+* <a href="http://blockworks.jp/pixelmator/" target="_blank">pixelmator入門</a>
 
 Macを使っていて、画像編集ソフトをそれとなく探していた人は、一見の価値ありなツールです。

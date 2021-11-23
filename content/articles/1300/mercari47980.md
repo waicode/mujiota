@@ -23,7 +23,6 @@ tags:
 
 <app-capture-image article-id="1300" img-file-name="mercari-stv.png" caption="SONY BRAVIA 40型"></app-capture-image>
 
-
 数年に渡って活躍してくれていたこのテレビ、まだまだ現役だったのですが、諸事情があって買い替えることになりメルカリに出品してみたところ47,800円の値で売ることができました。
 
 ## こんなに高く売れるのは稀だが、高くは売れる

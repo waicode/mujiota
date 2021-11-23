@@ -19,7 +19,6 @@ tags:
 
 <app-photo-image article-id="315" img-file-name="20110814_gyunabe_1.jpg" caption="よく頼む牛鍋丼の注文メニュー"></app-photo-image>
 
-
 とん汁を注文すると値段が上がりますが、牛鍋丼（並）の280円の安さがそれをカバーして500円台に抑える事に成功しています。
 
 <app-photo-image article-id="315" img-file-name="20110814_gyunabe_2.jpg" caption="全部合わせて540円"></app-photo-image>

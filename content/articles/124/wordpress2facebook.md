@@ -32,7 +32,7 @@ WordBookerでプラグイン検索すればHITします。設定についても�
 
 以下のページを参考にしました。詳細な設定方法は載っていませんが、連携自体の設定はとても簡単なので問題は無いはず。（ただし、設定画面は英語です）
 
-  * <a href="http://age-d.com/alog/2011/03/145wordpressxfacebook2/" target="_blank">WordPressをFacebookと連携させてみた</a>
+* <a href="http://age-d.com/alog/2011/03/145wordpressxfacebook2/" target="_blank">WordPressをFacebookと連携させてみた</a>
 
 上記ページではWPBookerと表現していますが、現在の正式名称は**「WordBooker」**なのでご注意ください。これを使えば、Facebookとコメントまで連携可能です。簡単設定にも関わらず、かゆいところまで手が届いている素晴らしいプラグインだと思います。
 
