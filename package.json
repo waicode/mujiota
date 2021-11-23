@@ -13,6 +13,10 @@
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest"
   },
+  "resolutions": {
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.2"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -54,8 +58,6 @@
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.3.1",
     "node-sass": "^6.0.1",
-    "postcss": "^8.3.11",
-    "postcss-scss": "^4.0.2",
     "prettier": "^2.4.1",
     "sass-loader": "10.2.0",
     "stylelint": "^13.13.1",
