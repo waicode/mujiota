@@ -89,7 +89,7 @@ export default {
             content: '関連リンク';
             font-size: 0.7em;
             font-weight: bold;
-            color: #ffffff;
+            color: #fff;
             width: 6em;
             display: inline-block;
             position: relative;

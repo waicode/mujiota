@@ -282,7 +282,7 @@ export default defineComponent({
         background-image: repeating-linear-gradient(
           #999,
           #999 1px,
-          rgba(0, 0, 0, 0) 0px,
+          rgba(0, 0, 0, 0) 0,
           rgba(0, 0, 0, 0) 4px
         );
       }

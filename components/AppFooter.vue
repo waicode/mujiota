@@ -62,7 +62,7 @@ export default {
         svg {
           fill: #fff;
         }
-        &.icon-twitter {
+        &.icon-email {
           a {
             svg {
               width: 48px;
@@ -71,7 +71,7 @@ export default {
             &:focus,
             &:hover {
               svg {
-                fill: #81d4fa;
+                fill: #eee;
               }
             }
           }
@@ -90,7 +90,7 @@ export default {
             }
           }
         }
-        &.icon-email {
+        &.icon-twitter {
           a {
             svg {
               width: 48px;
@@ -99,7 +99,7 @@ export default {
             &:focus,
             &:hover {
               svg {
-                fill: #eee;
+                fill: #81d4fa;
               }
             }
           }
