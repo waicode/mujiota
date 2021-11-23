@@ -11,7 +11,7 @@ tags:
   - 雑記
 ---
 
-<photo-image article-id="106" img-file-name="momiji.jpg" caption="もみじの花が咲いていた"></photo-image>
+<app-photo-image article-id="106" img-file-name="momiji.jpg" caption="もみじの花が咲いていた"></app-photo-image>
 
 iPhoneで撮影してみたものの、あまりよく見えない…
 

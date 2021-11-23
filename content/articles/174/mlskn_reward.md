@@ -11,4 +11,4 @@ tags:
   - 雑記
 ---
 
-<photo-image article-id="174" img-file-name="molskn_reward.jpg" caption="モレスキンの最初のページ"></photo-image>
+<app-photo-image article-id="174" img-file-name="molskn_reward.jpg" caption="モレスキンの最初のページ"></app-photo-image>

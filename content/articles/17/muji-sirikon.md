@@ -14,7 +14,7 @@ tags:
 
 気になっているシリコン調理ケースはこちらです。
 
-<capture-image article-id="17" img-file-name="4548718967759_400.jpg" caption="無印良品「シリコーン調理ケース」"></capture-image>
+<app-capture-image article-id="17" img-file-name="4548718967759_400.jpg" caption="無印良品「シリコーン調理ケース」"></app-capture-image>
 
 サイズもいろいろ、大・中・小。
 
@@ -24,7 +24,7 @@ tags:
 
 クリアタイプの他に、黒いタイプもありました。一人暮らしで使うなら、中型のサイズが丁度良さそう。
 
-<yomereba-link item-title="シリコーン調理ケース　レシピブック" img-file-name="silicon_rbook_500x500.png" author-name="小川 聖子" amazon-item-id="4198631417" rakuten-item-id="6997177"></yomereba-link>
+<app-yomereba-link item-title="シリコーン調理ケース　レシピブック" img-file-name="silicon_rbook_500x500.png" author-name="小川 聖子" amazon-item-id="4198631417" rakuten-item-id="6997177"></app-yomereba-link>
 
 レシピ本を少しだけ立ち読みしてきました。どれも手軽にできそうだったので、一人暮らしには重宝しそうな内容。特にダイエットしているわけでもないのですが、健康になれそうな[タニタのレシピ本][4]も気になっている今日この頃です。
 

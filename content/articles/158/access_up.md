@@ -19,7 +19,7 @@ Google Analyticsで、詳細を調べてみました。
 
 そこからのアクセスが増えています。
 
-<related-link id="124"></related-link>
+<app-related-link id="124"></app-related-link>
 
 上記表示を狙って書いた記事ではありませんが、ありがたい限りです。
 

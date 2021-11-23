@@ -31,13 +31,13 @@ tags:
 
 ここで言うコーヒーはホットとアイスの両方を想定しています。タンブラーの場合はアツアツを入れてもキンキンに冷えたものを入れても、ちょっと時間が経つとあっという間に「ぬるく」なってしまいます。スタバからは保温性の高いステンレス製タンブラーも出ています。ですが、蓋の部分がプラスチック性という事もあり、やはりマグに比べると保温性はやや劣ります。
 
-<kaereba-link item-title="タイガー マグボトル 200ml" img-file-name="tiger_bottle_200ml_500x500.png" shop-name="タイガー魔法瓶" amazon-item-id="B005FOFMFO" rakuten-item-id="facc77fb87096fd58e93b94274d347e6" search-keyword="タイガー マグボトル 200ml"></kaereba-link>
+<app-kaereba-link item-title="タイガー マグボトル 200ml" img-file-name="tiger_bottle_200ml_500x500.png" shop-name="タイガー魔法瓶" amazon-item-id="B005FOFMFO" rakuten-item-id="facc77fb87096fd58e93b94274d347e6" search-keyword="タイガー マグボトル 200ml"></app-kaereba-link>
 
 ## 美味しくコーヒーを飲むならサーモスマグ
 
 さて、本題のコーヒーを飲むのにオススメなマグについてです。これまでタイガーのマグ200ml、300mlと、サーモスマグの350mlを使ったことがあるので、その経験をもとに書いてみます。
 
-<photo-image article-id="235" img-file-name="mag2_2.jpg" caption="左：タイガーマグ（200ml）、右：サーモスマグ（350ml）"></photo-image>
+<app-photo-image article-id="235" img-file-name="mag2_2.jpg" caption="左：タイガーマグ（200ml）、右：サーモスマグ（350ml）"></app-photo-image>
 
 経験上、**おいしくコーヒーを飲むなら「サーモスのマグ」がオススメ**です。
 
@@ -56,7 +56,7 @@ tags:
 
 また、タイガーのマグは蓋をはずせばダイレクトに飲めるドリンクボトルで「開封用蓋＋本体」のみの構造なので、洗いやすさという点でも利点があります。
 
-<photo-image article-id="235" img-file-name="mag2_3.jpg" caption="マグを分解"></photo-image>
+<app-photo-image article-id="235" img-file-name="mag2_3.jpg" caption="マグを分解"></app-photo-image>
 
 以前は、この保温性と洗いやすさに魅力を感じて、タイガーのマグを使っていました。しかしながら「コーヒーを美味しく飲む」という点について言及すると、このタイガーのマグには１つだけ無視できない欠点がありました。それは、**蓋止め用ゴムパッキンにコーヒーのにおいが残ってしまう**ことです。
 
@@ -85,7 +85,7 @@ tags:
 
 実は、サーモス社製のマグは**無印良品**で買うことができます。無印良品では多種多用な商品を扱っていますが、すべて無印で製造している訳ではなく、OEM供給で他社が製造しているケースも多いです。
 
-<supplement type="normal" title="無印良品のOEM供給って何？" >OEMとは「Original Equipment Manufacturer」の略称です。他社が商品を製造し、それを無印良品のブランドとして発売しています。</supplement>
+<app-supplement type="normal" title="無印良品のOEM供給って何？" >OEMとは「Original Equipment Manufacturer」の略称です。他社が商品を製造し、それを無印良品のブランドとして発売しています。</app-supplement>
 
 電子レンジや掃除機など無印良品で発売している家電製品も、OEMで東芝やサンヨーが造っていたりします。無印良品のマグは2011年6月現在2タイプ出ています。（注：現在、商品タイプが変わりました。詳細は追記参照。）
 
@@ -96,13 +96,13 @@ tags:
 
 最後に、関連記事のご紹介です。ネットで買える安くて美味しいコーヒー豆の情報は以下にランキング形式でまとめています。最近ではスーパーや量販店で買うよりも、ネット注文した方が圧倒的に安くて美味しいコーヒー豆が手に入ります。自宅で豆を挽いてコーヒーを飲んでいる方は、是非チェックしてみてください。
 
-<related-link id="1278"></related-link>
+<app-related-link id="1278"></app-related-link>
 
 その他、コーヒー関連の記事は以下でも書いています。よろしければ御覧ください。
 
-<related-link id="202"></related-link>
+<app-related-link id="202"></app-related-link>
 
-<related-link id="189"></related-link>
+<app-related-link id="189"></app-related-link>
 
 ## 追記：最近はサーモス以外にもいろいろなマグを使っています
 
@@ -119,13 +119,13 @@ tags:
 
 他にも最近のコーヒーマグ事情を改めて調査してみたところ、サーモスから**コーヒーメーカー専用マグ**なんてものが発売されていました。
 
-<kaereba-link item-title="サーモス 真空断熱ポット コーヒーメーカー 630ml ステンレスブラック" img-file-name="thermoscoffeemaker_630ml_500x500.png" shop-name="サーモス" amazon-item-id="B002R0FNGW" rakuten-item-id="fd6d9d7ba24942b3c168c40a711921d7" search-keyword="サーモス コーヒーメーカー"></kaereba-link>
+<app-kaereba-link item-title="サーモス 真空断熱ポット コーヒーメーカー 630ml ステンレスブラック" img-file-name="thermoscoffeemaker_630ml_500x500.png" shop-name="サーモス" amazon-item-id="B002R0FNGW" rakuten-item-id="fd6d9d7ba24942b3c168c40a711921d7" search-keyword="サーモス コーヒーメーカー"></app-kaereba-link>
 
 コーヒーメーカー、ケータイマグ、ペーパーフィルターが全てついて、価格も5000円程度。相場を考えると、なかなかお得ですね。コーヒーマシンを持っていない人でマグを探していた人は、検討してみても良いかもしれません。
 
 また、私が最近よく使っているのが、**フタなしの長いコップタイプのステンレスマグ**です。
 
-<kaereba-link item-title="サーモス 真空断熱タンブラー 420ml ステンレス" img-file-name="thermostbr_420ml_500x500.png" shop-name="サーモス" amazon-item-id="B01AVO9N02" rakuten-item-id="0c86b4d28dd566f9c62fa1d4f013513e" search-keyword="サーモス 真空断熱タンブラー 420ml"></kaereba-link>
+<app-kaereba-link item-title="サーモス 真空断熱タンブラー 420ml ステンレス" img-file-name="thermostbr_420ml_500x500.png" shop-name="サーモス" amazon-item-id="B01AVO9N02" rakuten-item-id="0c86b4d28dd566f9c62fa1d4f013513e" search-keyword="サーモス 真空断熱タンブラー 420ml"></app-kaereba-link>
 
 自宅や会社に据え置きして、それぞれの場所で使っています。フタ付きのものと比較すると、どうしても保温性は落ちてしまいますが、それでも、通常のマグカップと比べるとコーヒーが冷めにくいです。ゴムパッキンの部分も無いためにおいの心配も皆無なので、よくコーヒーを飲まれる方には、非常にオススメです。
 
@@ -135,11 +135,11 @@ tags:
 
 最近よく使っているコーヒーマグは<strong>「ウォールマグ デミタ」</strong>です。
 
-<kaereba-link item-title="ウォールマグ デミタ オリーブ" img-file-name="demitamag_khaki_500x500.png" shop-name="リバーズ" amazon-item-id="B00BIEOVKW" rakuten-item-id="e29d8690efd427cd62ecbe9cd63851e0" search-keyword="ウォールマグ デミタ"></kaereba-link>
+<app-kaereba-link item-title="ウォールマグ デミタ オリーブ" img-file-name="demitamag_khaki_500x500.png" shop-name="リバーズ" amazon-item-id="B00BIEOVKW" rakuten-item-id="e29d8690efd427cd62ecbe9cd63851e0" search-keyword="ウォールマグ デミタ"></app-kaereba-link>
 
 主に職場で使っています。保温性はそれほど高くありませんが、軽くて持ち運びがしやくとても気に入っています。デミタはデザイン性の高さから最近注目されているブランドです。おそらくウォールマグが一番有名ですが、コーヒープレスも販売していて、こちらも自宅＆職場で愛用しています。
 
-<kaereba-link item-title="コーヒープレス コア ライトブルー" img-file-name="demitapress_blue_500x500.png" shop-name="リバーズ" amazon-item-id="B007DBGK3A" rakuten-item-id="cd6d93f25519dc5e8dc97786f2c0f23e" search-keyword="コーヒープレス コア"></kaereba-link>
+<app-kaereba-link item-title="コーヒープレス コア ライトブルー" img-file-name="demitapress_blue_500x500.png" shop-name="リバーズ" amazon-item-id="B007DBGK3A" rakuten-item-id="cd6d93f25519dc5e8dc97786f2c0f23e" search-keyword="コーヒープレス コア"></app-kaereba-link>
 
 コーヒープレスは茶葉で紅茶を出すようにコーヒーの粉からコーヒーを淹れる機械です。
 
@@ -153,4 +153,4 @@ tags:
 
 完全無欠コーヒーの話は、以下の記事で詳しく書いているので興味がある方は是非読んでみてください。
 
-<related-link id="1372"></related-link>
+<app-related-link id="1372"></app-related-link>

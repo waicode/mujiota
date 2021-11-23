@@ -21,11 +21,11 @@ tags:
 
 反発して元に戻ろうとする小さく折りたたんだ紙袋を、輪ゴムでとめて折りたたんだままにしておけば、コンパクトな状態のまま収納できます。
 
-<photo-image article-id="301" img-file-name="20110718_kami_1.jpg" caption="紙袋を輪ゴムでとめる"></photo-image>
+<app-photo-image article-id="301" img-file-name="20110718_kami_1.jpg" caption="紙袋を輪ゴムでとめる"></app-photo-image>
 
 ちなみに一人暮らしの我が家では収納スペースがそれほど多くないので、折りたたんだ紙袋を「靴箱の空きスペース」に入れて収納しています。収納場所は、ご自宅に合った場所で良いかと思います。
 
-<photo-image article-id="301" img-file-name="20110718_kami_2.jpg" caption="紙袋は靴箱で保存"></photo-image>
+<app-photo-image article-id="301" img-file-name="20110718_kami_2.jpg" caption="紙袋は靴箱で保存"></app-photo-image>
 
 ## ビニール袋をスマートに保存する方法
 
@@ -35,7 +35,7 @@ tags:
 
 ビニール袋を小さく畳んで、ストッキング袋に放り込むだけ。近くのスーパーで売っていた「生活良好」のストッキングタイプ水切り袋を使っています。
 
-<photo-image article-id="301" img-file-name="20110718_bini_1.jpg" caption="ストッキングタイプの水切り袋でまとめる"></photo-image>
+<app-photo-image article-id="301" img-file-name="20110718_bini_1.jpg" caption="ストッキングタイプの水切り袋でまとめる"></app-photo-image>
 
 中に放り込むビニール袋をきれいに畳むのがベターですが、ストッキング袋に入れるとある程度小さくまとまるので、ビニール袋は多少雑に畳んで問題ありません。ストッキングタイプの排水口用水切り袋は、ビニール袋の収納だけでなく排水溝のゴミ受けとしても重宝しており、無くなると困るので常に複数ストックしています。
 

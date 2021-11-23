@@ -6,7 +6,7 @@
     >
       <div class="columns wrap">
         <div class="eyecatch column is-5-desktop is-5-tablet is-12-mobile">
-          <AssetsImage
+          <AppAssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>

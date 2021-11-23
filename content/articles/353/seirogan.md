@@ -20,7 +20,7 @@ tags:
 
 しかし実は「正露丸」は大幸薬品以外にも実に色々な製薬会社が世に出しています。
 
-<capture-image article-id="353" img-file-name="20110927_seirogan_iroiro.jpg" caption="いろいろなマークの正露丸"></capture-image>
+<app-capture-image article-id="353" img-file-name="20110927_seirogan_iroiro.jpg" caption="いろいろなマークの正露丸"></app-capture-image>
 
 過去に大幸薬品は「正露丸」の名称の独占的使用権を主張し商標登録を行いました。
 
@@ -30,7 +30,7 @@ tags:
 
 正露丸の危険だという風潮が世に蔓延ったのは、1999年にベストセラーとなった「買ってはいけない」という本に、取り上げられた事がきっかけです。
 
-<yomereba-link item-title="買ってはいけない (『週刊金曜日』ブックレット)" img-file-name="kattehaikenai_500x500.png" author-name="船瀬俊介" amazon-item-id="4906605036"  rakuten-item-id="1786017"></yomereba-link>
+<app-yomereba-link item-title="買ってはいけない (『週刊金曜日』ブックレット)" img-file-name="kattehaikenai_500x500.png" author-name="船瀬俊介" amazon-item-id="4906605036"  rakuten-item-id="1786017"></app-yomereba-link>
 
 本書では、正露丸の主成分として記載されている「<strong>クレオソート</strong>」が持つ毒性について指摘した上で、「木材の防腐剤に使われる成分を医薬品に用いるのか！」と、大幸薬品を名指しで、正露丸について批判しています。
 
@@ -91,12 +91,12 @@ tags:
 
 それならば、善玉菌であるビオフェルミンを含む<strong>「新ビオフェルミンS錠」</strong>を服用した方が身体に優しいかと思います。
 
-<kaereba-link item-title="新ビオフェルミンS錠" img-file-name="newbios_500x500.png" shop-name="大正製薬" amazon-item-id="B0765N9SRN" rakuten-item-id="a817513e27729d7e98b03b05aa886982" search-keyword="新ビオフェルミン S"></kaereba-link>
+<app-kaereba-link item-title="新ビオフェルミンS錠" img-file-name="newbios_500x500.png" shop-name="大正製薬" amazon-item-id="B0765N9SRN" rakuten-item-id="a817513e27729d7e98b03b05aa886982" search-keyword="新ビオフェルミン S"></app-kaereba-link>
 
 長くなりましたが、本記事の結論としては<strong>「まずは善玉菌で腸内改善を考え、正露丸はリーサルウェポン的な立ち位置で緊急事態にだけ服用する」</strong>です。
 
 この記事が、読んだ方の腸内環境改善に少しでも役立てれば幸いです。
 
-<kaereba-link item-title="正露丸" img-file-name="seirogan_500x500.png" shop-name="大幸薬品" amazon-item-id="B00B3DY8Y2" rakuten-item-id="1a23a55784a811d6f75ccad96c4bcd40" search-keyword="正露丸"></kaereba-link>
+<app-kaereba-link item-title="正露丸" img-file-name="seirogan_500x500.png" shop-name="大幸薬品" amazon-item-id="B00B3DY8Y2" rakuten-item-id="1a23a55784a811d6f75ccad96c4bcd40" search-keyword="正露丸"></app-kaereba-link>
 
-<kaereba-link item-title="セイロガン糖衣A" img-file-name="seirogan_500x500.png" shop-name="大幸薬品" amazon-item-id="B00B3DYJMS" rakuten-item-id="af0f3ae43c311ec6da91d5cb25096aee" search-keyword="セイロガン糖衣A"></kaereba-link>
+<app-kaereba-link item-title="セイロガン糖衣A" img-file-name="seirogan_500x500.png" shop-name="大幸薬品" amazon-item-id="B00B3DYJMS" rakuten-item-id="af0f3ae43c311ec6da91d5cb25096aee" search-keyword="セイロガン糖衣A"></app-kaereba-link>

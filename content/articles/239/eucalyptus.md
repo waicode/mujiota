@@ -14,6 +14,6 @@ tags:
 
 ベランダのいちばん陽の当たる場所に設置。
 
-<photo-image article-id="239" img-file-name="20110604_yukari.jpg" caption="観葉植物「ユーカリ」"></photo-image>
+<app-photo-image article-id="239" img-file-name="20110604_yukari.jpg" caption="観葉植物「ユーカリ」"></app-photo-image>
 
 ユーカリは花粉症にも効果があるそうです。

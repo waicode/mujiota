@@ -11,6 +11,6 @@ tags:
   - 雑記
 ---
 
-<photo-image article-id="18" img-file-name="garigari_otona_gai.jpeg" caption="ガリガリ君を大人買い"></photo-image>
+<app-photo-image article-id="18" img-file-name="garigari_otona_gai.jpeg" caption="ガリガリ君を大人買い"></app-photo-image>
 
 となりのパン粉は、無視してください。（冷凍すると長持ちするんです）

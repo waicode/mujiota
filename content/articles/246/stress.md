@@ -57,7 +57,7 @@ tags:
 
 ほぼ同じ内容ですが、ブクログレビューも書いてます。
 
-<external-link title="有田秀穂「脳からストレスを消す技術」のブクログレビュー" note="脳の構造・分泌成分を含め丁寧に解説しながら読みやすく書いてあり、説得力があり分かりやすかったです。" link="https://booklog.jp/users/mujiota/archives/1/4763198602" img-file-name="booklog.png"></external-link>
+<app-external-link title="有田秀穂「脳からストレスを消す技術」のブクログレビュー" note="脳の構造・分泌成分を含め丁寧に解説しながら読みやすく書いてあり、説得力があり分かりやすかったです。" link="https://booklog.jp/users/mujiota/archives/1/4763198602" img-file-name="booklog.png"></app-external-link>
 
 ## リズム運動のために下半身運動マシンを取り入れる
 

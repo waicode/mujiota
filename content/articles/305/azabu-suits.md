@@ -13,7 +13,7 @@ tags:
 
 キャンペーン中でお得だったので、ついでにオーダーシャツまで注文してしまいました。
 
-<external-link title="麻布テーラー" note="オーダースーツ・オーダーシャツの麻布テーラー" link="https://azabutailor.com/" img-file-name="azabutailor.png"></external-link>
+<app-external-link title="麻布テーラー" note="オーダースーツ・オーダーシャツの麻布テーラー" link="https://azabutailor.com/" img-file-name="azabutailor.png"></app-external-link>
 
 オーダーメイドと聞くとお金がかかりそうな印象がありました。
 

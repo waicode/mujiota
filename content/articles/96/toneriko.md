@@ -14,6 +14,6 @@ tags:
 
 Macbookと一緒に撮影。
 
-<photo-image article-id="96" img-file-name="palants_toneriko.jpg" caption="観葉植物「トネリコ」"></photo-image>
+<app-photo-image article-id="96" img-file-name="palants_toneriko.jpg" caption="観葉植物「トネリコ」"></app-photo-image>
 
 鉢は、以前に無印良品で購入したものを使っています。

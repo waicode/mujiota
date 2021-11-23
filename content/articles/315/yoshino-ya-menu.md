@@ -17,12 +17,12 @@ tags:
 * 半熟卵　60円
 * とん汁　150円
 
-<photo-image article-id="315" img-file-name="20110814_gyunabe_1.jpg" caption="よく頼む牛鍋丼の注文メニュー"></photo-image>
+<app-photo-image article-id="315" img-file-name="20110814_gyunabe_1.jpg" caption="よく頼む牛鍋丼の注文メニュー"></app-photo-image>
 
 
 とん汁を注文すると値段が上がりますが、牛鍋丼（並）の280円の安さがそれをカバーして500円台に抑える事に成功しています。
 
-<photo-image article-id="315" img-file-name="20110814_gyunabe_2.jpg" caption="全部合わせて540円"></photo-image>
+<app-photo-image article-id="315" img-file-name="20110814_gyunabe_2.jpg" caption="全部合わせて540円"></app-photo-image>
 
 低コストです。低炭水化物を意識し、大盛りを我慢して「並」で注文します。そして、白米の美味しさをしっかり堪能するため「つゆぬき」で注文します。
 

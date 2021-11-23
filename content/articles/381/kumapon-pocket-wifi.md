@@ -11,7 +11,7 @@ tags:
   - 雑記
 ---
 
-<capture-image article-id="381" img-file-name="large_large_kumapon_em_main_20111120.jpg" caption="くまポンでイー・モバイルが2年間半額"></capture-image>
+<app-capture-image article-id="381" img-file-name="large_large_kumapon_em_main_20111120.jpg" caption="くまポンでイー・モバイルが2年間半額"></app-capture-image>
 
 GMOとくとくBBが提供している、「イー･モバイル42M PocketWiFi接続サービス」プランの<strong>月額料金が4,240円⇒2,120円</strong>になり、かつ、端末代金や初期導入費等もかかりません。  
 （ちなみに、初月は日割計算では無く「無料」となるので月初めに契約した方がお得ではあります。）
@@ -26,7 +26,7 @@ GMOとくとくBBが提供している、「イー･モバイル42M PocketWiFi�
 
 記載がざっくりしていて、実際のところはどうなのか気になるところですね。最初に購入する割引クーポンの値段が2000円程度だとしても、実質、安い方のプランなら月2000円強でPocketWiFiが利用する事ができます。これはかなりお得ではないでしょうか。というか、私はさっそく申し込んでしまいました。笑
 
-<capture-image article-id="381" img-file-name="kumapon_20111120.png" caption="くまポンの購入済クーポン"></capture-image>
+<app-capture-image article-id="381" img-file-name="kumapon_20111120.png" caption="くまポンの購入済クーポン"></app-capture-image>
 
 購入時、GMO会員入会特典の500円クーポンがすぐ使えたので実際は1400円程度での購入となりました。まずは、安い方から使ってみて、通信制限によって利用に支障が出そうな場合にはプラン変更を検討をしてみようと思っています。
 
@@ -36,7 +36,7 @@ GMOとくとくBBが提供している、「イー･モバイル42M PocketWiFi�
 
 クーポン自体は「売切⇒再販」のサイクルを繰り返しているようなので、売切の場合でも、数日後に再販される可能性はあります。諦めずにチェックしてみてください。実は過去にUQWiMAXの「URoad-9000」を契約⇒すぐ解約して端末だけ保持しており、現状でも旅行等に備え「600円/1日」で日単位で契約してWiMAXサービスを利用できる状態にはしてありました。
 
-<capture-image article-id="381" img-file-name="URoad-9000_20111120.jpg" caption="URoad-9000"></capture-image>
+<app-capture-image article-id="381" img-file-name="URoad-9000_20111120.jpg" caption="URoad-9000"></app-capture-image>
 
 ただ、利用の際にはWEB上で契約申込をする必要があり、手続きが億劫でほとんど使っていない状態でした。PocketWiFiの仲間入りで、iPhoneとiPadとMacの使い方の幅が大分広がりそう。（特にiPad）
 

@@ -21,6 +21,6 @@ tags:
 ちなみに、当ブログもWordpressプラグインの**WordBooker**を使って、facebookとコメントを同期させていたりしま~す~した。  
 WordBookerには本当にお世話になっています。設定方法の詳細は以下からどうぞ。（追記：現在、WordBookerは Facebook API の仕様変更に伴い使えなくなりましたので、別の方法を記載しています。）
 
-<related-link id="124"></related-link>
+<app-related-link id="124"></app-related-link>
 
 無印良品ブランドを展開する良品計画は、数ある国内の企業の中でも、ソーシャル対応を含めてITで一歩先に出ていると思います。株主の端くれとしては、嬉しい限りです。これからも頑張れ、無印。

@@ -29,7 +29,7 @@ wmv形式の簿記教材動画をiPadで見れるようにすべく、大量のw
 
 ## すーぱー連続動画変換
 
-<capture-image article-id="395" img-file-name="20120129_superdoga.png" caption="すーぱー連続動画変換"></capture-image>
+<app-capture-image article-id="395" img-file-name="20120129_superdoga.png" caption="すーぱー連続動画変換"></app-capture-image>
 
 まず、最初に試したのは、<a href="http://www.vector.co.jp/soft/winnt/art/se476647.html" target="_blank">すーぱー動画連続変換</a>です。
 
@@ -39,7 +39,7 @@ wmv形式の簿記教材動画をiPadで見れるようにすべく、大量のw
 
 ## XMedia Recode
 
-<capture-image article-id="395" img-file-name="20120129_xmediarecode.jpg" caption="Xmedia Recode"></capture-image>
+<app-capture-image article-id="395" img-file-name="20120129_xmediarecode.jpg" caption="Xmedia Recode"></app-capture-image>
 
 続いて試したのが、<a href="http://www.xmedia-recode.de/download.html" target="_blank">XMedia Recode</a>です。こちらは「.wmv」→「.mp4」に限らず、非常に多くのフォーマットに対応した動画＆音声ファイル変換ソフトです。
 
@@ -47,7 +47,7 @@ wmv形式の簿記教材動画をiPadで見れるようにすべく、大量のw
 
 ## Any Video Converter Free
 
-<capture-image article-id="395" img-file-name="20120129_avc-freeversion-left.jpg" caption="Any Video Converter Free"></capture-image>
+<app-capture-image article-id="395" img-file-name="20120129_avc-freeversion-left.jpg" caption="Any Video Converter Free"></app-capture-image>
 
 紆余曲折を経て、ようやく巡り会ったのが<a href="http://jp.any-video-converter.com/any-video-converter-free.php" target="_blank">Any Video Converter の無料版</a>でした。
 

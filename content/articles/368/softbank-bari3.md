@@ -25,13 +25,13 @@ iPhone4S発売から早一週間。予約すれども、ソフトバンクショ
 
 それが、ソフトバンクの<strong>「ホームアンテナFT」（フェムトセル）</strong>です。
 
-<capture-image article-id="368" img-file-name="85c9a1380e3299c07e975eccefc0cbff.jpg" caption="ホームアンテナFT（フェムトセル）"></capture-image>
+<app-capture-image article-id="368" img-file-name="85c9a1380e3299c07e975eccefc0cbff.jpg" caption="ホームアンテナFT（フェムトセル）"></app-capture-image>
 
 現在、ソフトバンクは電波改善にてとも力を入れており、自宅にインターネット接続環境があれば、<strong>無料でホームアンテナを設置する事が可能</strong>となります。（ちなみに、インターネット環境が無い場合はADSL回線まで無料で提供してくれる太っ腹振りです。）
 
 ざっくりな仕組みはこんな感じ。
 
-<capture-image article-id="368" img-file-name="879b3ff627616c44f31568ba723daeb51.jpg" caption="ホームアンテナFTの仕組み"></capture-image>
+<app-capture-image article-id="368" img-file-name="879b3ff627616c44f31568ba723daeb51.jpg" caption="ホームアンテナFTの仕組み"></app-capture-image>
 
 フェムトセルとは、半径数十メートル程度の狭い範囲をカバーする通信エリアのことだそうです。名前がカッコイイですね。
 

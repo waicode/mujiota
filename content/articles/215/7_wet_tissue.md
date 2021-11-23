@@ -13,15 +13,15 @@ tags:
 
 リニューアル後のウェットティシューの写真はこちら。
 
-<photo-image article-id="215" img-file-name="7_wet_tissu_004.jpg" caption="除菌ウェットティシュー"></photo-image>
+<app-photo-image article-id="215" img-file-name="7_wet_tissu_004.jpg" caption="除菌ウェットティシュー"></app-photo-image>
 
-<photo-image article-id="215" img-file-name="7_wet_tissu_005.jpg" caption="除菌ウェットティシュー（詰換え用）"></photo-image>
+<app-photo-image article-id="215" img-file-name="7_wet_tissu_005.jpg" caption="除菌ウェットティシュー（詰換え用）"></app-photo-image>
 
 詰換え用を買いに立ち寄ったのですが、ケース本体の色が新調されてたので思わず本体ごと購入しました。以前は蓋の部分が緑色だったのですが、全身真っ白になりました。
 
-<photo-image article-id="215" img-file-name="7_wet_tissu_001.jpg" caption="Before"></photo-image>
+<app-photo-image article-id="215" img-file-name="7_wet_tissu_001.jpg" caption="Before"></app-photo-image>
 
-<photo-image article-id="215" img-file-name="7_wet_tissu_002.jpg" caption="After"></photo-image>
+<app-photo-image article-id="215" img-file-name="7_wet_tissu_002.jpg" caption="After"></app-photo-image>
 
 説明が書かれたビニールカバーを外すとシンプルで気に入っています。以前の緑と白のケースも、観葉植物とカラーが合っていて気に入ってましたが、さらにシンプルになった真っ白な姿も素敵です。
 

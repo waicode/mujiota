@@ -39,7 +39,7 @@ tags:
 
 お得な金額で買えるのは初回お試しセットのみで、継続利用する場合はやや割高になってしまうのが少し残念ですが、お試ししたからといってしつこくDM等が送られてくることはありません。コーヒーを自宅でハンドドリップで飲んでいる方であれば、一度は注文しておいて損は無いコーヒー豆だと思います。
 
-<external-link title="珈琲きゃろっと" note="数々のグランプリを獲得した焙煎人が送る世界が認めた一杯" link="https://px.a8.net/svt/ejp?a8mat=2NP03M+DJM7EA+2CG0+5YJRM" img-file-name="coffee_carrot.png" asp-measurement-img-link="https://www13.a8.net/0.gif?a8mat=2NP03M+DJM7EA+2CG0+5YJRM"></external-link>
+<app-external-link title="珈琲きゃろっと" note="数々のグランプリを獲得した焙煎人が送る世界が認めた一杯" link="https://px.a8.net/svt/ejp?a8mat=2NP03M+DJM7EA+2CG0+5YJRM" img-file-name="coffee_carrot.png" asp-measurement-img-link="https://www13.a8.net/0.gif?a8mat=2NP03M+DJM7EA+2CG0+5YJRM"></app-external-link>
 
 ### 第２位　藤田珈琲
 
@@ -51,7 +51,7 @@ tags:
 
 以前は楽天だけでしたが、最近ではAmazonやYahooショッピングでも買うことができます。
 
-<kaereba-link item-title="藤田珈琲 プレミアムラオスブレンド" img-file-name="fujitacoffee_premium_laos_500x500.png" shop-name="藤田珈琲" amazon-item-id="B0087V36RS" search-keyword="藤田珈琲 プレミアムラオスブレンド"></kaereba-link>
+<app-kaereba-link item-title="藤田珈琲 プレミアムラオスブレンド" img-file-name="fujitacoffee_premium_laos_500x500.png" shop-name="藤田珈琲" amazon-item-id="B0087V36RS" search-keyword="藤田珈琲 プレミアムラオスブレンド"></app-kaereba-link>
 
 ### 第３位 心斎橋焙煎所
 
@@ -63,17 +63,17 @@ tags:
 
 特別セットの豆はどちらも酸味が少なく、コクが強い中深煎り〜深煎りの豆をブレンドしています。第２位で紹介したプレミアムラオスブレンドはあっさりとした味なので、深い味のコーヒーを求めるならこちらの方が良いでしょう。
 
-<kaereba-link item-title="心斎橋焙煎所 自家焙煎コーヒー豆" img-file-name="shinsaibashi_coffee_500x500.png" shop-name="心斎橋焙煎所" amazon-item-id="B018XIGE28" search-keyword="心斎橋焙煎所"></kaereba-link>
+<app-kaereba-link item-title="心斎橋焙煎所 自家焙煎コーヒー豆" img-file-name="shinsaibashi_coffee_500x500.png" shop-name="心斎橋焙煎所" amazon-item-id="B018XIGE28" search-keyword="心斎橋焙煎所"></app-kaereba-link>
 
 ## （個人的に思う）買ってはいけないコーヒー豆
 
 最後に、ここでは買わない方がいいかも…という情報をお伝えします。私が注文して失敗したなぁと思ったのは「土居珈琲」です。セールスレターを読むと分かりますが、豆の品質に絶対的な自信を持ち、ネットで買えるコーヒー豆としては割高な方かもしれません。お試しセットは比較的リーズナブルだったので、試しに購入してみました。
 
-<external-link title="土居珈琲" note="品質のよい生豆をつかった、焙煎したてのコーヒーをお届け" link="https://px.a8.net/svt/ejp?a8mat=2NP03O+6921MA+2H8I+5YJRM" img-file-name="doicoffee.png" asp-measurement-img-link="https://www17.a8.net/0.gif?a8mat=2NP03O+6921MA+2H8I+5YJRM"></external-link>
+<app-external-link title="土居珈琲" note="品質のよい生豆をつかった、焙煎したてのコーヒーをお届け" link="https://px.a8.net/svt/ejp?a8mat=2NP03O+6921MA+2H8I+5YJRM" img-file-name="doicoffee.png" asp-measurement-img-link="https://www17.a8.net/0.gif?a8mat=2NP03O+6921MA+2H8I+5YJRM"></app-external-link>
 
 たしかに、コーヒーの味は美味しかったです。ハンドドリップでお湯を注いだ時のコーヒー豆の膨らみ具合で、豆の品質がとても良いことも分かりました。しかしながら、辛かったのがその後で「買いませんか？定期購入しませんか？」のDMがひたすら送られてきます。時には、DVDが入っている封筒が送られてきたり。販促に力を入れているなぁと思いつつ、さすがにここまで送られてくるとなぁと、ちょっと嫌悪感が出てくるレベルです。
 
-<supplement type="normal" title="おすすめできないのはコーヒーの味でなく販促の手法" >連絡すればDMの送付を止めることもできるとは思いますが、調べて手続きするのも面倒なのでそのままにしています。DMに抵抗感がある方は、注文を控えた方が良いかと思います。土居珈琲は豆のクオリティは高いことは事実なので、念のため改めて付け足しておきます。</supplement>
+<app-supplement type="normal" title="おすすめできないのはコーヒーの味でなく販促の手法" >連絡すればDMの送付を止めることもできるとは思いますが、調べて手続きするのも面倒なのでそのままにしています。DMに抵抗感がある方は、注文を控えた方が良いかと思います。土居珈琲は豆のクオリティは高いことは事実なので、念のため改めて付け足しておきます。</app-supplement>
 
 ## 結論：コーヒー豆はネットで買うと安くておいしい
 

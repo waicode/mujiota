@@ -12,6 +12,6 @@ tags:
   - 無印良品
 ---
 
-<photo-image article-id="226" img-file-name="ryouhin_hitokin.jpg" caption="良品計画 第32期 配当金"></photo-image>
+<app-photo-image article-id="226" img-file-name="ryouhin_hitokin.jpg" caption="良品計画 第32期 配当金"></app-photo-image>
 
 これからも引き続き、応援していきます。

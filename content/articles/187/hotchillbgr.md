@@ -13,7 +13,7 @@ tags:
 
 ベーカーバウンスで**ホットチリソースバーガー**を食べました。
 
-<photo-image article-id="187" img-file-name="DSCN0094.jpg" caption="ホットチリソースバーガー"></photo-image>
+<app-photo-image article-id="187" img-file-name="DSCN0094.jpg" caption="ホットチリソースバーガー"></app-photo-image>
 
 アツアツのチリソースとチェダーチーズのチリバーガーです。店員さんのオススメで、ケチャップなしマスタードのみで食。とてもおいしかったです。ただ、辛さがほとんど無かったのでもうちょっと辛くても良かったかも。
 
@@ -32,4 +32,4 @@ tags:
 
 ラタトゥイユスイスチーズバーガーを食べた感想は以下の記事で書いてます。
 
-<related-link id="127"></related-link>
+<app-related-link id="127"></app-related-link>

@@ -34,7 +34,7 @@ tags:
 
 完全無欠コーヒーはもともとシリコンバレーで流行ったダイエット＆パフォーマンスアップ方法です。このバターコーヒーが日本でも認知されて流行り始めたのは<strong>「シリコンバレー式 自分を変える最強の食事」</strong>という書籍で紹介されたからです。
 
-<yomereba-link item-title="シリコンバレー式 自分を変える最強の食事" img-file-name="bfp_diet_500x500.png" author-name="デイヴ・アスプリー" amazon-item-id="4478039674" kindle-item-id="B015S5545W" rakuten-item-id="13354097" kobo-item-id="60f7b9a3c1723b328b923f2e27736eb8"></yomereba-link>
+<app-yomereba-link item-title="シリコンバレー式 自分を変える最強の食事" img-file-name="bfp_diet_500x500.png" author-name="デイヴ・アスプリー" amazon-item-id="4478039674" kindle-item-id="B015S5545W" rakuten-item-id="13354097" kobo-item-id="60f7b9a3c1723b328b923f2e27736eb8"></app-yomereba-link>
 
 完全無欠コーヒーの全てが書かれていると言っても過言は無いこの１冊。当時、完全無欠コーヒーを飲むことで手に入れられる世界にワクワクしつつも、バターコーヒーを飲むとなぜ集中力がアップできるのかは皆目見当がつかなかったので、ちゃんと本を買って、その秘密を勉強することにしました。
 
@@ -80,7 +80,7 @@ MCTオイルは体内に入ることで<strong>ケトン体</strong>と呼ばれ
 
 この中で特にお金がかかるのが<strong>「グラスフェッドバター」</strong>です。例えば、本書でも推奨しているフランスのメーカー・グランフェルマージュのバイオ・グラスフェッドバターは250gで2,700円。100g換算でも1000円以上のお値段がします。
 
-<kaereba-link item-title="グランフェルマージュ バイオ・グラスフェッドバター 無塩 250g" img-file-name="grand_fermage_500x500.png" shop-name="ユーリアル" amazon-item-id="B00L8IZ1E8" rakuten-item-id="732cd619f14bd8be0a6438041ec013e8" search-keyword="グラスフェッドバター"></kaereba-link>
+<app-kaereba-link item-title="グランフェルマージュ バイオ・グラスフェッドバター 無塩 250g" img-file-name="grand_fermage_500x500.png" shop-name="ユーリアル" amazon-item-id="B00L8IZ1E8" rakuten-item-id="732cd619f14bd8be0a6438041ec013e8" search-keyword="グラスフェッドバター"></app-kaereba-link>
 
 「人のカラダは食べたものから造られる」という持論の元、シリコンバレー式は食材の質は絶対に妥協するなと書かれています。こだわりが詰まったフランス産バターはたしかにおいしいですが、毎日飲むとなると100gで1000円以上するバターは家計に大きく響いてきます。
 
@@ -106,7 +106,7 @@ MCTオイルは体内に入ることで<strong>ケトン体</strong>と呼ばれ
 
 完全無欠コーヒーを毎日飲んでいると、バターはちょくちょく買い足す必要があります。いつの間にか、バターが無くなりそうになったら近所のスーパーでこのよつ葉バターを買って帰るのが習慣になりました。
 
-<kaereba-link item-title="よつ葉乳業　北海道よつ葉バター 食塩不使用 450g" img-file-name="yothuba_butter_450g_500x500.png" shop-name="よつ葉乳業" amazon-item-id="B00BHBVXVQ" rakuten-item-id="bcb1fab4100668f5408a89cd1cbf7d3c" search-keyword="よつ葉バター 食塩不使用"></kaereba-link>
+<app-kaereba-link item-title="よつ葉乳業　北海道よつ葉バター 食塩不使用 450g" img-file-name="yothuba_butter_450g_500x500.png" shop-name="よつ葉乳業" amazon-item-id="B00BHBVXVQ" rakuten-item-id="bcb1fab4100668f5408a89cd1cbf7d3c" search-keyword="よつ葉バター 食塩不使用"></app-kaereba-link>
 
 #### おすすめのグラスフェッドバター
 
@@ -120,7 +120,7 @@ MCTオイルは体内に入ることで<strong>ケトン体</strong>と呼ばれ
 
 何度か購入していますが、フレッシュでおいしいバターでパンに塗ってもとてもおいしいです。冷凍された状態で届くので日持ちもよく、少しずつカットして解凍しながら使います。冷凍庫のスペースと相談しながら、まとめ買いするのがおすすめです。
 
-<kaereba-link item-title="フォンテラ　NZ産 食塩不使用グラスフェッドバター" img-file-name="fontera_butter_500x500.png" shop-name="フォンテラ" amazon-item-id="B07QB39W64" rakuten-item-id="d6e19002b40644d035586d7438b809b4" search-keyword="フォンテラ グラスフェッドバター"></kaereba-link>
+<app-kaereba-link item-title="フォンテラ　NZ産 食塩不使用グラスフェッドバター" img-file-name="fontera_butter_500x500.png" shop-name="フォンテラ" amazon-item-id="B07QB39W64" rakuten-item-id="d6e19002b40644d035586d7438b809b4" search-keyword="フォンテラ グラスフェッドバター"></app-kaereba-link>
 
 ##### ウエストゴールド社グラスフェッドバター
 
@@ -128,7 +128,7 @@ MCTオイルは体内に入ることで<strong>ケトン体</strong>と呼ばれ
 
 バターの味としても申し分なく、1kgであれば冷凍庫にも気にならずに収まるサイズです。1kgで2,700円なので、100g換算で270円。よつ葉バターの相場が100gあたり250〜300円程度なので、同じ位の金額でグラスフェッドバターを買えると考えればお得ではないでしょうか。
 
-<kaereba-link item-title="ウエストゴールド ニュージランド産 グラスフェットバター無塩1kg 冷凍" img-file-name="westgold_butter_500x500.png" shop-name="ウエストゴールド" amazon-item-id="B01DTZDEEQ" rakuten-item-id="0fe8a911f78c357d1c13e5eb7fdcd125" search-keyword="ウエストゴールド グラスフェッドバター"></kaereba-link>
+<app-kaereba-link item-title="ウエストゴールド ニュージランド産 グラスフェットバター無塩1kg 冷凍" img-file-name="westgold_butter_500x500.png" shop-name="ウエストゴールド" amazon-item-id="B01DTZDEEQ" rakuten-item-id="0fe8a911f78c357d1c13e5eb7fdcd125" search-keyword="ウエストゴールド グラスフェッドバター"></app-kaereba-link>
 
 #### おすすめのコーヒー豆
 
@@ -140,11 +140,11 @@ MCTオイルは体内に入ることで<strong>ケトン体</strong>と呼ばれ
 
 まだ試したことが無ければ、珈琲きゃろっとのお試しセットはぜひ一度試してみてください。鮮度と素材にこだわった焙煎仕立てのコーヒー豆が北海道から届きます。初回お試しセットが限定価格で400g/1,980円です。スペシャリティコーヒーとしては、非常にお得な価格設定だと思います。
 
-<external-link title="珈琲きゃろっと" note="数々のグランプリを獲得した焙煎人が送る世界が認めた一杯" link="https://px.a8.net/svt/ejp?a8mat=2NP03M+DJM7EA+2CG0+5YJRM" img-file-name="coffee_carrot.png" asp-measurement-img-link="https://www13.a8.net/0.gif?a8mat=2NP03M+DJM7EA+2CG0+5YJRM"></external-link>
+<app-external-link title="珈琲きゃろっと" note="数々のグランプリを獲得した焙煎人が送る世界が認めた一杯" link="https://px.a8.net/svt/ejp?a8mat=2NP03M+DJM7EA+2CG0+5YJRM" img-file-name="coffee_carrot.png" asp-measurement-img-link="https://www13.a8.net/0.gif?a8mat=2NP03M+DJM7EA+2CG0+5YJRM"></app-external-link>
 
 何度もリピートするなら、楽天ショップのランキング上位に名を連ねるコーヒー豆はおすすめです。どれもコスパが良く、毎日飲むコーヒー豆としてうってつけです。以下の記事でネットで買える安くて美味しいコーヒー豆を紹介しています。あわせて参考にしてみてください。
 
-<related-link id="1278"></related-link>
+<app-related-link id="1278"></app-related-link>
 
 #### おすすめのMCTオイル
 
@@ -154,7 +154,7 @@ MCTオイルの代わりに、ココナッツオイルを使う方法もあり�
 
 <strong>仙台勝山館のMCTオイル（360g）</strong>をAmazonで定期的に購入しています。
 
-<kaereba-link item-title="仙台勝山館MCTオイル 360g" img-file-name="sendaikatsuyama_mct_360g_500x500.png" shop-name="仙台勝山館" amazon-item-id="B013MW3B4Y" rakuten-item-id="01697bb57003aed5266b9d977a1c44e9" search-keyword="仙台勝山館 MCTオイル"></kaereba-link>
+<app-kaereba-link item-title="仙台勝山館MCTオイル 360g" img-file-name="sendaikatsuyama_mct_360g_500x500.png" shop-name="仙台勝山館" amazon-item-id="B013MW3B4Y" rakuten-item-id="01697bb57003aed5266b9d977a1c44e9" search-keyword="仙台勝山館 MCTオイル"></app-kaereba-link>
 
 ### おすすめのアイテム編
 
@@ -168,11 +168,11 @@ MCTオイルの代わりに、ココナッツオイルを使う方法もあり�
 
 MQ500には混ぜる用のカップも付属しています。付属カップを含めて５年以上使っていまだに壊れていないので、耐久性も抜群です。
 
-<kaereba-link item-title="ブラウン ハンドブレンダー MQ500" img-file-name="mq500_500x500.png" shop-name="ブラウン" amazon-item-id="B00DU6BDRU" rakuten-item-id="47498df1b137ff037d1239e441db84af" search-keyword="ブラウン MQ500"></kaereba-link>
+<app-kaereba-link item-title="ブラウン ハンドブレンダー MQ500" img-file-name="mq500_500x500.png" shop-name="ブラウン" amazon-item-id="B00DU6BDRU" rakuten-item-id="47498df1b137ff037d1239e441db84af" search-keyword="ブラウン MQ500"></app-kaereba-link>
 
 もっと安いブレンダーが良い人であれば、もう一つグレードが下がった「MQ100」でも良いかもしれません。ただし、MQ100には撹拌用カップは付いていません。
 
-<kaereba-link item-title="ブラウン ハンドブレンダー MQ100" img-file-name="mq100_500x500.png" shop-name="ブラウン" amazon-item-id="B00DU6BDRU" rakuten-item-id="b0197634b4a1b8054961d0567920dcc0" search-keyword="ブラウン MQ100"></kaereba-link>
+<app-kaereba-link item-title="ブラウン ハンドブレンダー MQ100" img-file-name="mq100_500x500.png" shop-name="ブラウン" amazon-item-id="B00DU6BDRU" rakuten-item-id="b0197634b4a1b8054961d0567920dcc0" search-keyword="ブラウン MQ100"></app-kaereba-link>
 
 #### おすすめのバターケース
 
@@ -186,11 +186,11 @@ MQ500には混ぜる用のカップも付属しています。付属カップを
 
 最初に購入したのは通常の「カットできちゃうバターケース」です。当初は問題なく使えていましたが、冷蔵庫から出したバターが完全に解凍し終わる前にカットしたら、ワイヤー部分が壊れてしましました。気をつけて使えば問題ないですが、耐久性にはやや難ありです。
 
-<kaereba-link item-title="カットできちゃうバターケース" img-file-name="cutbuttercase_500x500.png" shop-name="曙産業" amazon-item-id="" rakuten-item-id="" search-keyword="カットできちゃうバターケース"></kaereba-link>
+<app-kaereba-link item-title="カットできちゃうバターケース" img-file-name="cutbuttercase_500x500.png" shop-name="曙産業" amazon-item-id="" rakuten-item-id="" search-keyword="カットできちゃうバターケース"></app-kaereba-link>
 
 その後は、<strong>ワイヤープレートの強度がアップしたプレミアム版</strong>を買い直して使っています。冷蔵庫から出したバターをそのままカットしても、今のところ壊れたことはありません。プレミアム版の方がフタの密閉度がアップしてピタッと閉まるので、使い勝手も良いです。
 
-<kaereba-link item-title="プレミアム カットできちゃうバターケース" img-file-name="cutbuttercase_pre_500x500.png" shop-name="曙産業" amazon-item-id="B01N3ABX8W" rakuten-item-id="e30530163a92ea8f9395adf9293315d5" search-keyword="プレミアム カットできちゃうバターケース"></kaereba-link>
+<app-kaereba-link item-title="プレミアム カットできちゃうバターケース" img-file-name="cutbuttercase_pre_500x500.png" shop-name="曙産業" amazon-item-id="B01N3ABX8W" rakuten-item-id="e30530163a92ea8f9395adf9293315d5" search-keyword="プレミアム カットできちゃうバターケース"></app-kaereba-link>
 
 ## 完全無欠コーヒー（バターコーヒー）の作り方
 
@@ -202,43 +202,43 @@ MQ500には混ぜる用のカップも付属しています。付属カップを
 
 ブレンダーの撹拌用カップにバターとMCTオイルを入れます。毎日飲むので、量は結構適当です。コーヒー多めの１杯（250ml程度）に対して、だいたいバターが5〜10g程度、MCTオイルが5〜10ml程度です。
 
-<photo-image article-id="1372" img-file-name="1_butter_mct.jpg" caption="バターとMCTオイルをカップに入れる"></photo-image>
+<app-photo-image article-id="1372" img-file-name="1_butter_mct.jpg" caption="バターとMCTオイルをカップに入れる"></app-photo-image>
 
 ### コーヒーをいれる
 
 バターとオイルの入ったブレンダーの撹拌用カップに、コーヒーをいれます。コーヒー多めの１杯（250ml程度）が適量です。
 
-<photo-image article-id="1372" img-file-name="2_cup_coffee.jpg" caption="カップにコーヒーを淹れる"></photo-image>
+<app-photo-image article-id="1372" img-file-name="2_cup_coffee.jpg" caption="カップにコーヒーを淹れる"></app-photo-image>
 
 以前はハンドドリップで作ってましたが、最近はデロンギの全自動コーヒーメーカーを使ってラクしてます。決して安い買い物ではないですが、挽きたてのコーヒーがボタンを押すだけであっという間に出来上がるので、毎日コーヒーを飲む人は買って損は無いと思います。
 
-<kaereba-link item-title="デロンギ コンパクト全自動コーヒーメーカー ホワイト マグニフィカS" img-file-name="delonghi_mags_500x500.png" shop-name="DeLonghi（デロンギ）" amazon-item-id="B01LY849K0" rakuten-item-id="1d29b69c7620868fd7dbace2c16e3654" search-keyword="デロンギ マグニフィカS"></kaereba-link>
+<app-kaereba-link item-title="デロンギ コンパクト全自動コーヒーメーカー ホワイト マグニフィカS" img-file-name="delonghi_mags_500x500.png" shop-name="DeLonghi（デロンギ）" amazon-item-id="B01LY849K0" rakuten-item-id="1d29b69c7620868fd7dbace2c16e3654" search-keyword="デロンギ マグニフィカS"></app-kaereba-link>
 
 ### ブレンダーでまぜる
 
 コーヒーを淹れた後は、すぐにブレンダーで撹拌させます。先程紹介したブラウンのブレンダーで10〜20秒程度かき混ぜ、材料が完全に液体化すれば完成です。ブレンダーのカップからコーヒー用のマグカップに移します。
 
-<photo-image article-id="1372" img-file-name="3_kakuhan.jpg" caption="ブレンダーで撹拌させる"></photo-image>
+<app-photo-image article-id="1372" img-file-name="3_kakuhan.jpg" caption="ブレンダーで撹拌させる"></app-photo-image>
 
 ### 好みで再加熱して完成
 
 以上でおいしくてパワフルな完全無欠コーヒーの完成です。撹拌するとコーヒーの温度が少し下がります。熱々で飲みたい場合は、最後に電子レンジで20秒ほどチンしてください。本来、コーヒーの再加熱は酸化を促すので邪道と言われているので、これは好みで行ってください。
 
-<photo-image article-id="1372" img-file-name="4_complete.jpg" caption="完全無欠コーヒーが完成！"></photo-image>
+<app-photo-image article-id="1372" img-file-name="4_complete.jpg" caption="完全無欠コーヒーが完成！"></app-photo-image>
 
 ちなみに、完全無欠コーヒーの作り方の公式動画がYoutube（英語）で公開されています。そちらも合わせてリンクを貼っておきます。
 
-<video-link id="4YjLMdx3YZY"></video-link>
+<app-video-link id="4YjLMdx3YZY"></app-video-link>
 
 ## バターコーヒーおすすめのアレンジレシピ
 
 毎日バターコーヒーを飲んでいると、たまには違う味も楽しみたくなってきます。そんな時におすすめなのが<strong>チョコレートを入れてカフェモカ風にするアレンジレシピ</strong>です。
 
-<photo-image article-id="1372" img-file-name="5_cacao.jpg" caption="チョコレートのちょい足しでカフェモカ風に"></photo-image>
+<app-photo-image article-id="1372" img-file-name="5_cacao.jpg" caption="チョコレートのちょい足しでカフェモカ風に"></app-photo-image>
 
 ポリフェノールがたっぷり入ったカカオ含有量が多いチョコレートだと良いでしょう。手軽に手に入る高カカオのチョコレートなら、明治のチョコレート効果シリーズがおすすめです。
 
-<kaereba-link item-title="明治 チョコレート効果 カカオ86% 大袋" img-file-name="cacao_86_500x500.png" shop-name="明治" amazon-item-id="B07HKCM2QT" rakuten-item-id="d9c139de647ad1a2885e23f4abaf09c7" search-keyword="チョコレート効果 カカオ86% 大袋"></kaereba-link>
+<app-kaereba-link item-title="明治 チョコレート効果 カカオ86% 大袋" img-file-name="cacao_86_500x500.png" shop-name="明治" amazon-item-id="B07HKCM2QT" rakuten-item-id="d9c139de647ad1a2885e23f4abaf09c7" search-keyword="チョコレート効果 カカオ86% 大袋"></app-kaereba-link>
 
 先程紹介したレシピの一番最初にバターやMCTオイルと一緒にチョコレート効果をひとかけら混ぜるだけで、カフェモカ風の味に仕上ります。カカオ含有率は、ポリフェノール量を考えると86%以上を選ぶのがおすすめです。
 

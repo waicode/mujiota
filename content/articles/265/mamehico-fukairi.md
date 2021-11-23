@@ -14,7 +14,7 @@ tags:
 
 深煎りはマメヒコの定番です。
 
-<photo-image article-id="265" img-file-name="20110620_fukairi_2.jpg" caption="マメヒコの深煎り豆"></photo-image>
+<app-photo-image article-id="265" img-file-name="20110620_fukairi_2.jpg" caption="マメヒコの深煎り豆"></app-photo-image>
 
 お店で飲むと650円位かかるので、お得な気分。マメヒコの場合、スタバのように「あの空間で飲むためのお金」が大半を占めているとも思いますが。
 
@@ -25,7 +25,7 @@ tags:
 
 マメヒコは深煎りよりも深い**冬煎り珈琲**と、あっさり味の**春煎り珈琲**も以前に飲みました。
 
-<related-link id="149"></related-link>
+<app-related-link id="149"></app-related-link>
 
 昨日行った時はもう春煎りは売ってませんでした。ちょっと前に飲んだ気がするのに、時間が経つのは早いなといつも感じます。最近は梅雨でじめじめしていますが、6月がもう少しで終わるということは、今年が半年過ぎてしまうわけで。油断しながら生活していると、あっという間に夏が来てしまいそう。
 

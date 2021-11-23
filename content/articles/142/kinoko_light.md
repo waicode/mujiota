@@ -23,7 +23,7 @@ tags:
 
 に影響されて、家の中に間接照明を置く事にしました。
 
-<external-link title="本田直之「ゆるい生き方」のブクログレビュー" note="特にプライベートに関する考え方に、非常に共感が持てました。" link="https://booklog.jp/users/mujiota/archives/1/4479792899" img-file-name="booklog.png"></external-link>
+<app-external-link title="本田直之「ゆるい生き方」のブクログレビュー" note="特にプライベートに関する考え方に、非常に共感が持てました。" link="https://booklog.jp/users/mujiota/archives/1/4479792899" img-file-name="booklog.png"></app-external-link>
 
 これまでも、家の中は電球色の方が落ち着くので統一していました。ベッドで本を読むときに、スタンドライトがあったらいいなと思っていた事も、購入の後押しに。
 
@@ -31,15 +31,15 @@ tags:
 
 今回は、特にネットで下調べすることもなく、無印良品の有楽町店にふらふらっと足を運んでみたのですが…そこで現品処分品を発見。
 
-<photo-image article-id="142" img-file-name="muji_light_1.jpg" caption="白磁スタンドライト（現品処分）"></photo-image>
+<app-photo-image article-id="142" img-file-name="muji_light_1.jpg" caption="白磁スタンドライト（現品処分）"></app-photo-image>
 
 30%オフです。（でも定価は高い）
 
-<photo-image article-id="142" img-file-name="muji_light_2.jpg" caption="白磁スタンドライト（現品処分、拡大）"></photo-image>
+<app-photo-image article-id="142" img-file-name="muji_light_2.jpg" caption="白磁スタンドライト（現品処分、拡大）"></app-photo-image>
 
 無印良品の**白磁スタンドライト**です。
 
-<capture-image article-id="142" img-file-name="muji_light_400_1.jpg" caption="白磁スタンドライト"></capture-image>
+<app-capture-image article-id="142" img-file-name="muji_light_400_1.jpg" caption="白磁スタンドライト"></app-capture-image>
 
 無印良品では他にもいくつかスタンドライトの取り扱いがあります。その中でも、この白磁製は最も値段が高いスタンドライトでした。「透光性の高い」白磁を使用しているので、そこにコストがかかっているのかもしれません。
 
@@ -49,18 +49,18 @@ tags:
 
 置き場所は、ベッドのサイドテーブルです。
 
-<photo-image article-id="142" img-file-name="muji_light_hiru.jpg" caption="白磁スタンドライト置いてみた。（明）"></photo-image>
+<app-photo-image article-id="142" img-file-name="muji_light_hiru.jpg" caption="白磁スタンドライト置いてみた。（明）"></app-photo-image>
 
-<photo-image article-id="142" img-file-name="muji_light_dark.jpg" caption="白磁スタンドライト置いてみた。（暗）"></photo-image>
+<app-photo-image article-id="142" img-file-name="muji_light_dark.jpg" caption="白磁スタンドライト置いてみた。（暗）"></app-photo-image>
 
 うん、なかなかいい感じ。調光器はまだ届いていませんが、本の中でオススメされていたルートロンのクレデンザを注文済です。
 
-<kaereba-link item-title="LUTRON クレデンザ ホワイト TT-150NLH-JA-WH" img-file-name="lutron_500x500.png" shop-name="LUTRON" amazon-item-id="B008KENNQG" rakuten-item-id="9aa86883b74de953056fd952be4def15" search-keyword="LUTRON クレデンザ"></kaereba-link>
+<app-kaereba-link item-title="LUTRON クレデンザ ホワイト TT-150NLH-JA-WH" img-file-name="lutron_500x500.png" shop-name="LUTRON" amazon-item-id="B008KENNQG" rakuten-item-id="9aa86883b74de953056fd952be4def15" search-keyword="LUTRON クレデンザ"></app-kaereba-link>
 
 初めて見た時から、きのこの山みたいだなと思っていましたが、家で設置してみて、明かり付けてみたら、きのこの山度は増す一方でした。無印良品のインテリア商品は、そこそこ有名なデザイナーさんがデザインをしているらしいですが、デザイナーの方はきのこの山を意識して作ったとしか思えない位、きのこの山です。
 
 ちなみにどうでもいいですが、私はたけのこ派です。最近チョコが２層になって、より美味しくなりました。
 
-<kaereba-link item-title="明治 たけのこの里 70g×10個" img-file-name="take70_500x500.png" shop-name="明治" amazon-item-id="B014NEL7JQ" rakuten-item-id="8f991847d6309f41278a08db7198e761" search-keyword="明治 たけのこの里"></kaereba-link>
+<app-kaereba-link item-title="明治 たけのこの里 70g×10個" img-file-name="take70_500x500.png" shop-name="明治" amazon-item-id="B014NEL7JQ" rakuten-item-id="8f991847d6309f41278a08db7198e761" search-keyword="明治 たけのこの里"></app-kaereba-link>
 
 以上、きのこの山にしか見えない無印の白磁スタンドライトの話でした。

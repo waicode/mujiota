@@ -13,6 +13,6 @@ tags:
 ---
 サービスバルコニーの上に、ちょこんと置いてます。ちゃんと食べられます。
 
-<photo-image article-id="241" img-file-name="20110604_bazille.jpg" caption="観葉植物「スイートバジル」"></photo-image>
+<app-photo-image article-id="241" img-file-name="20110604_bazille.jpg" caption="観葉植物「スイートバジル」"></app-photo-image>
 
 この透き通ったようなライトグリーンが、お気に入り。窓を開けると、かすかなバジルの香りが鼻先を通ります。

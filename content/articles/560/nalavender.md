@@ -15,21 +15,21 @@ tags:
 
 ありがたいことに、ライフハッカーさんで紹介して頂きました。感謝。
 
-<external-link title="Lifehacker" note="リマインダーを優先度順に並び替えられるToDo管理アプリ「ナラベンダー」" link="http://www.lifehacker.jp/2016/04/160404naravender.html" img-file-name="lifehacker.png"></external-link>
+<app-external-link title="Lifehacker" note="リマインダーを優先度順に並び替えられるToDo管理アプリ「ナラベンダー」" link="http://www.lifehacker.jp/2016/04/160404naravender.html" img-file-name="lifehacker.png"></app-external-link>
 
 ナラベンダーをざっくり解説すると、<strong>iPhone（iOS）のリマインダーをベースとしたTODO管理アプリ</strong>です。<span class="line">直感的なジェスチャー操作でリマインダーを更新</span>できるようになっています。
 
-<capture-image article-id="560" img-file-name="sc04_4_7_jp.png" caption="直感的なジェスチャー操作"></capture-image>
+<app-capture-image article-id="560" img-file-name="sc04_4_7_jp.png" caption="直感的なジェスチャー操作"></app-capture-image>
 
 また、<strong>今やるべき優先順位に沿ってTODOを並び替えることをコンセプト</strong>にしています。最大３つの指標を設定するとアプリが優先順位（１位、２位、…）を自動計算して、並べ直してくれます。カンタンな指標で点数化して考えて、いまやるべきことは何かを導いてくれます。
 
-<capture-image article-id="560" img-file-name="sc02_4_7_jp.png" caption="点数化して優先順位を計算"></capture-image>
+<app-capture-image article-id="560" img-file-name="sc02_4_7_jp.png" caption="点数化して優先順位を計算"></app-capture-image>
 
 リマインダーベースのお手軽なTODO管理アプリを求めていた方は、ぜひ使ってみてください。ゴールデンチケットを購入していただくと全ての機能が解放されますが、大部分は無料で使えます。
 
 以下よりアプリのダウンロードが可能です。
 
-<external-link title="ナラベンダー" note="ありそうでなかったiOSリマインダーベースのTODO管理アプリ" link="https://nalaven.desr.blue/" img-file-name="nalavender.png"></external-link>
+<app-external-link title="ナラベンダー" note="ありそうでなかったiOSリマインダーベースのTODO管理アプリ" link="https://nalaven.desr.blue/" img-file-name="nalavender.png"></app-external-link>
 
 ## アプリ開発の内幕話
 
@@ -39,7 +39,7 @@ tags:
 
 基本は週末開発なので、企画やデザインなどぜんぶ含めて、いわゆるシステム開発工数で換算すると２人月程度でしょうか。個人ではじめて製作したロゴジェネレーターアプリ「MOJILOGO」は、ざっくり２日程度で仕上げたことを考えると、だいぶ時間はかかってしまいました。
 
-<related-link id="472"></related-link>
+<app-related-link id="472"></app-related-link>
 
 紆余曲折した甲斐あって、今回のアプリ開発を経て得られた事は多かったように感じています。なるべく非同期で処理して使い勝手を上げられるところは、もう少し勉強して改善したいところですが、細かいところを置いておけばゴリゴリ開発できちゃう感覚は持てたのと、GUIベースでデザインを磨きつつライブラリを駆使して、インタラクションと合わせて開発する自分なりのアプリ開発スタイルも確立できました。
 

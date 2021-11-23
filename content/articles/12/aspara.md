@@ -14,6 +14,6 @@ tags:
 
 食用とはだいぶ見た目が違います。
 
-<photo-image article-id="12" img-file-name="plants_asparagus.jpg" caption="観葉植物「アスパラガス」"></photo-image>
+<app-photo-image article-id="12" img-file-name="plants_asparagus.jpg" caption="観葉植物「アスパラガス」"></app-photo-image>
 
 こう見えて、アスパラガスです。

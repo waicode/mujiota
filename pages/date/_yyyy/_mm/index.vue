@@ -2,7 +2,7 @@
   <div class="container">
     <div v-if="posts" class="post-list">
       <div v-for="(article, index) in posts" :key="article.id">
-        <Article :article="article" />
+        <AppArticle :article="article" />
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
     </div>

@@ -12,13 +12,13 @@ tags:
 
 2011年6月時点における、私のiPhoneホーム画面の1ページ目＆2ページ目のアプリ達です。標準アプリも高頻度で使ってます。
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1.png" caption="iPhoneホーム画面（１ページ目）"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1.png" caption="iPhoneホーム画面（１ページ目）"></app-capture-image>
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_2.png" caption="iPhoneホーム画面（２ページ目）"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_2.png" caption="iPhoneホーム画面（２ページ目）"></app-capture-image>
 
 ## まずはDockから
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_dock.png" caption="Dock Apps"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1_dock.png" caption="Dock Apps"></app-capture-image>
 
 * 電話
 * Safari
@@ -36,7 +36,7 @@ Googleカレンダーへの表示はできなくなったものの<span class="l
 
 ちなみに、タスクのカテゴリ分けはこんな感じです。
 
-<capture-image article-id="273" img-file-name="20110626_appigo_todo.png" caption="Todoのカテゴリ"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_appigo_todo.png" caption="Todoのカテゴリ"></app-capture-image>
 
 厳密なTodoとしてだけでなく「ブログネタ」など、カテゴリによっては「ネタ帳」みたいな使い方をしています。
 
@@ -46,17 +46,17 @@ Todoは基本的には「やらなければならない事」で埋まります�
 
 ## １ページ目、１段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_1.png" caption="１ページ目の１段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1_1.png" caption="１ページ目の１段目"></app-capture-image>
 
 まず左上の稲妻マーク２つは「ファストメモ」です。
 
-<related-link id="16"></related-link>
+<app-related-link id="16"></app-related-link>
 
 この２つ、実は全く同じ機能をもったアプリです。
 
 なぜ２つあるの？という疑問について、２つある利点はアプリの設定とメモの中身を独立させて持たせる事ができるからです。このアプリの特徴は、<strong>とにかく起動が早い</strong>こと。そして、<span class="line">非常に少ないステップ数でメモをメールやtwitterに連携できる事</span>です。
 
-<capture-image article-id="273" img-file-name="20110626_fastmemo.png" caption="FastMemoの使い方"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_fastmemo.png" caption="FastMemoの使い方"></app-capture-image>
 
 黒い方はちょっとしたメモ用に、青い方はtwitterへの最速つぶやき用に使っています。正直に話すと、左上に2個陣取るほどの頻度では使っていないのですが、アイコンのデザインが好みなので、完全に自己満足で贅沢にも２個並びです。
 
@@ -72,7 +72,7 @@ twitterクライアントは<strong>「Osfoora」</strong>です。（追記：�
 
 ## １ページ目、２段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_2.png" caption="１ページ目の２段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1_2.png" caption="１ページ目の２段目"></app-capture-image>
 
 RSSリーダーは<strong>「Reeder」</strong>を愛用しています。
 
@@ -80,13 +80,13 @@ RSSリーダーは<strong>「Reeder」</strong>を愛用しています。
 
 iPhone版に加え、iPad版もMac版も使っています。iPad2はReederを大きい画面で見たいから買った！と言っても過言ではないくらい、こればっか使っています。一番使ってるならDockに置けば？って話ですが、この位置が一番押しやすいのです。
 
-<external-link title="REEDER5" note="YOUR NEWS READER." link="https://reederapp.com/" img-file-name="reeder5.png"></external-link>
+<app-external-link title="REEDER5" note="YOUR NEWS READER." link="https://reederapp.com/" img-file-name="reeder5.png"></app-external-link>
 
 RSSを使ってからと言うもの、情報のインプット量が飛躍的に向上しました。
 
 そのとなりは、あとで読むアプリの<strong>「Instapaper」</strong>です。気になる記事をReederから飛ばしてキャッシュすれば、オフラインでも記事が読めるようになります。
 
-<external-link title="Instapaper" note="Save Anything. Read Anywhere." link="https://www.instapaper.com/" img-file-name="instapaper.png"></external-link>
+<app-external-link title="Instapaper" note="Save Anything. Read Anywhere." link="https://www.instapaper.com/" img-file-name="instapaper.png"></app-external-link>
 
 Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をしています。
 
@@ -94,7 +94,7 @@ Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をし�
 
 その右は<strong>「foursquare」</strong>です。
 
-<external-link title="Foursquare City Guide" note="Save Anything. Read Anywhere." link="https://ja.foursquare.com/city-guide" img-file-name="foursquare.png"></external-link>
+<app-external-link title="Foursquare City Guide" note="Save Anything. Read Anywhere." link="https://ja.foursquare.com/city-guide" img-file-name="foursquare.png"></app-external-link>
 
 チェックインしたくなった時に、押しやすい場所にという事で、最近ホーム画面に格上げされました。**foursquare**は、誰かフレンドがチェックインした時にプッシュ通知されるのが地味に好きです。
 
@@ -102,13 +102,13 @@ Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をし�
 
 その日の予定をアナログ時計とともに、スタイリッシュに表示。見ていると、何かが研ぎ澄まされるような気になるような美しさ。
 
-<capture-image article-id="273" img-file-name="20110626_metaclock1.png" caption="MetaClock"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_metaclock1.png" caption="MetaClock"></app-capture-image>
 
 予定表として使っているというか、デザインを見たくなったら見る！といった感じ。
 
 ## １ページ目、３段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_3.png" caption="１ページ目の３段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1_3.png" caption="１ページ目の３段目"></app-capture-image>
 
 ３つは標準アプリです。
 
@@ -126,7 +126,7 @@ Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をし�
 
 ## １ページ目、４段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_1_4.png" caption="１ページ目の４段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_1_4.png" caption="１ページ目の４段目"></app-capture-image>
 
 ４段目はDockに近くて押しやすいこともあり、高頻度のアプリを配置しています。
 
@@ -149,13 +149,13 @@ Pro版はGoogle Appsのアカウントも使えます。個人利用なら、350
 
 GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してくれる、タスク管理アプリで、Appigo Todoと比べると細かい設定はできないものの、その分、<strong>非常に少ないステップでTodo登録を実現</strong>できます。このGeeTasksは特に「期限設定のUI」が秀逸で、タイトル入力と同時にわずか１タップで登録が完了します。
 
-<capture-image article-id="273" img-file-name="20110626_geetasks.png" caption="GeeTasksの新規登録時"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_geetasks.png" caption="GeeTasksの新規登録時"></app-capture-image>
 
 非常に登録が楽なので、住み分けとしては、期限が１０日以内で緊急性が高く、確実に実施しなければならないようなタスクはこっちに登録しています。
 
 ## ２ページ目、１段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_1.png" caption="２ページ目の１段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_2_1.png" caption="２ページ目の１段目"></app-capture-image>
 
 ここも是非とも紹介したい、使用頻度というか確認頻度が高いアプリ。左の３つは<strong>アイコンバッチ利用系アプリ</strong>です。
 
@@ -169,13 +169,13 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 最上段右端は有名な**乗換案内**。
 
-<external-link title="乗換案内 for iOS" note="毎月2億回以上使われている経路検索！" link="https://www.jorudan.co.jp/iphone/norikae/" img-file-name="norikaeannai.png"></external-link>
+<app-external-link title="乗換案内 for iOS" note="毎月2億回以上使われている経路検索！" link="https://www.jorudan.co.jp/iphone/norikae/" img-file-name="norikaeannai.png"></app-external-link>
 
 まぁ、このアプリは使いますよね。
 
 ## ２ページ目、２段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_2.png" caption="２ページ目の２段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_2_2.png" caption="２ページ目の２段目"></app-capture-image>
 
 左の２個はアプリ探す系。
 
@@ -183,19 +183,19 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 そして右から２番目、おしゃれな自分まとめ日記を作れる**Momento**です。MomentoはSNSサービスやFeedを利用して自分のダイアリーを作成することができるアプリです。私は、このブログを含めて以下のサービスを連携しています。
 
-<capture-image article-id="273" img-file-name="20110626_moments2.png" caption="Momento"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_moments2.png" caption="Momento"></app-capture-image>
 
-<capture-image article-id="273" img-file-name="20110626_moments.png" caption="Momento Sample"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_moments.png" caption="Momento Sample"></app-capture-image>
 
 基本的には今と未来に重きを起きて人生を突き進んでいますが、たまには、過去を見て一喜一憂したりします。見返す際、自分のログはまとまっていると振り返りやすいですよね。
 
 右端は**Instagram**です。気が向いたら加工してアップしてます。
 
-<external-link title="Instagram" note="クリエイティブな写真や動画を簡単に撮影・編集して、友達や家族とシェアしよう。" link="https://www.instagram.com/?hl=ja" img-file-name="instagram.png"></external-link>
+<app-external-link title="Instagram" note="クリエイティブな写真や動画を簡単に撮影・編集して、友達や家族とシェアしよう。" link="https://www.instagram.com/?hl=ja" img-file-name="instagram.png"></app-external-link>
 
 ## ２ページ目、３段目
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_3.png" caption="２ページ目の３段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_2_3.png" caption="２ページ目の３段目"></app-capture-image>
 
 ここはiPhoneからのブログ更新用アプリのための場所。まだiPhoneからのブログ更新を習慣化できていないのですが、いずれは環境を整備して実現したいということで。
 
@@ -213,7 +213,7 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 右端のフォルダは、入力補助系アプリをまとめています。（追記：アプリ公開終了のためリンクを外しました）
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_textinput.png" caption="入力補助フォルダ"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_textinput.png" caption="入力補助フォルダ"></app-capture-image>
 
 まだまだ使いこなしたと言える日は遠い今日この頃ですが、使いこなしたいのが<strong>TextExpander</strong>です。
 
@@ -223,15 +223,15 @@ GeeTasksは<strong>GoogleカレンダーのTodoと完全同期</strong>してく
 
 ## 最後に、２ページ目の最下段
 
-<capture-image article-id="273" img-file-name="20110626_iPhone_home_2_4.png" caption="２ページ目の４段目"></capture-image>
+<app-capture-image article-id="273" img-file-name="20110626_iPhone_home_2_4.png" caption="２ページ目の４段目"></app-capture-image>
 
 いよいよ最後です。ここまで長かった。左側３つは、ログ系WebサービスのiPhoneアプリ版です。
 
-<external-link title="ブクログ" note="本の感想や評価をチェックしたり、感想やレビューを書いたり、読書の管理・記録をすることができます。" link="https://booklog.jp/" img-file-name="booklog.png"></external-link>
+<app-external-link title="ブクログ" note="本の感想や評価をチェックしたり、感想やレビューを書いたり、読書の管理・記録をすることができます。" link="https://booklog.jp/" img-file-name="booklog.png"></app-external-link>
 
-<external-link title="食べログ" note="独自のランキングやユーザーの口コミ・写真をもとに、人気のレストランや目的や予算にぴったりのお店が見つけられます。" link="https://tabelog.com/" img-file-name="tabelog.png"></external-link>
+<app-external-link title="食べログ" note="独自のランキングやユーザーの口コミ・写真をもとに、人気のレストランや目的や予算にぴったりのお店が見つけられます。" link="https://tabelog.com/" img-file-name="tabelog.png"></app-external-link>
 
-<external-link title="クックパッド" note="日本最大の料理レシピサービス。356万品を超えるレシピ、作り方を検索できる。" link="https://cookpad.com/" img-file-name="cookpad.png"></external-link>
+<app-external-link title="クックパッド" note="日本最大の料理レシピサービス。356万品を超えるレシピ、作り方を検索できる。" link="https://cookpad.com/" img-file-name="cookpad.png"></app-external-link>
 
 **ブクログ**はレビュー書く時はPCなので、スマホアプリで確認することはまれです。
 

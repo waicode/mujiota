@@ -13,9 +13,9 @@ tags:
 
 ダブルパテ、ダブルベーコン、ダブルチーズ。卵も2個使ってます。
 
-<photo-image article-id="328" img-file-name="22036c68a15486539e7acea2fc8d2c77.jpg" caption="ダブルビッグJバーガー"></photo-image>
+<app-photo-image article-id="328" img-file-name="22036c68a15486539e7acea2fc8d2c77.jpg" caption="ダブルビッグJバーガー"></app-photo-image>
 
-<photo-image article-id="328" img-file-name="ea626169815d99dabff67e564599e4ac.jpg" caption="全てがダブル"></photo-image>
+<app-photo-image article-id="328" img-file-name="ea626169815d99dabff67e564599e4ac.jpg" caption="全てがダブル"></app-photo-image>
 
 美味しいけど、見た目以上にボリューム満点すぎて、最後の方は闘いでした。意地になって続けている<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank">食べログのレビュー</a>はこちら。
 

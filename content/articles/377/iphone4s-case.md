@@ -20,7 +20,7 @@ iPhone3GSはケースが割れて以来、その「手触り」の良さにハ�
 
 ただ、ケース無しでiPhoneを持つ事に慣れてしまった事もあり、ケースは付けつつも、iPhoneの「そのまま感」はできれば残したい。できる限り、外観を損なわないようなiPhone4S用のケースを探していたところ、これは！という商品を発見しました。（追記：生産終了のため購入ページへのリンクは外しています。）
 
-<capture-image article-id="377" img-file-name="61QzqxLnqXL._AC_SX679_.jpg" caption="POWERSUPPORT　エアージャケットセット for iPhone4S/4 （クリア）"></capture-image>
+<app-capture-image article-id="377" img-file-name="61QzqxLnqXL._AC_SX679_.jpg" caption="POWERSUPPORT　エアージャケットセット for iPhone4S/4 （クリア）"></app-capture-image>
 
 一般的な樹脂製ジャケットよりも、だいぶ薄い。液晶保護フィルムも付いています。「フラッシュガードパーツ」が付属していて、  
 これを付けるとカメラの周りが黒くなりますが、取り外しもできるようです。

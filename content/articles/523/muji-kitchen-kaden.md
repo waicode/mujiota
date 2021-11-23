@@ -19,7 +19,7 @@ tags:
 
 家電を食器や家具のような道具として捉え、壁面と身体の間に存在する自然なかたちを目指しているそうです。
 
-<capture-image article-id="523" img-file-name="001l.jpg" caption="生活になじむ無印良品のキッチン家電"></capture-image>
+<app-capture-image article-id="523" img-file-name="001l.jpg" caption="生活になじむ無印良品のキッチン家電"></app-capture-image>
 
 これまでも、無印良品のキッチン家電は何度かリニューアルしています。これまでのリニューアルでは、どれもデザインはシンプルを追求して、どちらかと言えば無機質な印象でした。
 

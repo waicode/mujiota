@@ -13,13 +13,13 @@ tags:
 
 もはや意地になって続けている、三茶人気ハンバーガーショップ・ベーカーバウンズのハンバーガー食べましたシリーズ。
 
-<photo-image article-id="243" img-file-name="20110607_diner_buger.jpg" caption="ダイナーバーガーをテイクアウトで"></photo-image>
+<app-photo-image article-id="243" img-file-name="20110607_diner_buger.jpg" caption="ダイナーバーガーをテイクアウトで"></app-photo-image>
 
 ラタトゥイユスイスチーズバーガー・ホットチリソースバーガーに続いて、注文しました。
 
-<related-link id="127"></related-link>
+<app-related-link id="127"></app-related-link>
 
-<related-link id="187"></related-link>
+<app-related-link id="187"></app-related-link>
 
 メニューの一番上に書いてある一番オーソドックスなバーガーです。ポテトサラダのようなソースが美味。レタス、トマト、オニオン、ピクルス、野菜いっぱい。くどすぎない、あっさり味のバーガーでした。
 

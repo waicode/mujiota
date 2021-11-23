@@ -15,7 +15,7 @@ tags:
 
 MTプラグイン：MailPackの設定が完了！**メール送信でブログが投稿**できるようになりました。メールアドレスを変える必要はありますが、投稿カテゴリを指定できる点は便利です。画像もメールに添付すれば自動で投稿してくれます。
 
-<external-link title="MailPack" note="Movable Typeで簡単携帯投稿！メール投稿プラグイン" link="http://www.skyarc.co.jp/engineerblog/entry/4022.html"></external-link>
+<app-external-link title="MailPack" note="Movable Typeで簡単携帯投稿！メール投稿プラグイン" link="http://www.skyarc.co.jp/engineerblog/entry/4022.html"></app-external-link>
 
 ただし、タグまでは投稿できないので、その際はまとめて更新が必要です。
 
@@ -25,7 +25,7 @@ MTプラグイン：MailPackの設定が完了！**メール送信でブログ�
 
 追記です。WordPressに引っ越して、WPプラグイン：KtaiEntryを入れた事により、更に快適・柔軟な設定になりました。
 
-<external-link title="KtaiEntry" note="メール投稿プラグイン" link="http://wppluginsj.sourceforge.jp/ktai_entry/"></external-link>
+<app-external-link title="KtaiEntry" note="メール投稿プラグイン" link="http://wppluginsj.sourceforge.jp/ktai_entry/"></app-external-link>
 
 MailPackではできなかったけど、**KtaiEntry**でできるようになった事を挙げてみると…
 

@@ -13,7 +13,7 @@
             <SideBar />
           </div>
         </aside>
-        <ReturnTopButton class="page-top-button"></ReturnTopButton>
+        <AppReturnTopButton class="page-top-button"></AppReturnTopButton>
       </div>
     </div>
     <Footer />

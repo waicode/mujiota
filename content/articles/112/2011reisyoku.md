@@ -17,7 +17,7 @@ tags:
 
 ### 第１位 ニッスイ わが家の麺自慢 ちゃんぽん
 
-<capture-image article-id="112" img-file-name="chanpon.jpg" caption="ニッスイ わが家の麺自慢 ちゃんぽん"></capture-image>
+<app-capture-image article-id="112" img-file-name="chanpon.jpg" caption="ニッスイ わが家の麺自慢 ちゃんぽん"></app-capture-image>
 
 第１位はニッスイからのエントリー。頻度で言うと、このちゃんぽんをダントツで食べてます。そういう意味では、1位と2位には大きな開きがあります。麺は、もちもち。スープは鶏と豚のガラスープをベースに野菜の甘みを加え、コクと旨みのある味わいに仕上げているとのことで、コクがあります。
 
@@ -25,11 +25,11 @@ tags:
 
 豚肉・えび・いか、そして野菜もそこそこ入っていますが、もっと野菜たっぷり！がいいときは、キャベツをざくっと切って一緒に入れています。栄養が偏りがちな一人暮らしの男性にもオススメです。
 
-<kaereba-link item-title="ニッスイ わが家の麺自慢 ちゃんぽん 402g×12袋 (レンジ調理可)" img-file-name="chanpon_500x500.png" shop-name="ニッスイ" amazon-item-id="B003AVJDLI" rakuten-item-id="e99138f4ac7d224e4804a92a310216db" search-keyword="ニッスイ ちゃんぽん"></kaereba-link>
+<app-kaereba-link item-title="ニッスイ わが家の麺自慢 ちゃんぽん 402g×12袋 (レンジ調理可)" img-file-name="chanpon_500x500.png" shop-name="ニッスイ" amazon-item-id="B003AVJDLI" rakuten-item-id="e99138f4ac7d224e4804a92a310216db" search-keyword="ニッスイ ちゃんぽん"></app-kaereba-link>
 
 ### 第２位 ニチレイ チーズクリームワッフル
 
-<capture-image article-id="112" img-file-name="cheese_waffle.jpg" caption="ニチレイ チーズクリームワッフル"></capture-image>
+<app-capture-image article-id="112" img-file-name="cheese_waffle.jpg" caption="ニチレイ チーズクリームワッフル"></app-capture-image>
 
 続いてはニチレイ。甘味系はこのチーズクリームワッフルにはまってます。いわゆる原宿ドックのチーズ味で、甘みのある味わいです。米粉が入って、少しだけもちもちしてます。
 
@@ -39,11 +39,11 @@ tags:
 
 ### 第３位 ニッスイ 大学いも
 
-<capture-image article-id="112" img-file-name="daigakuimo.jpg" caption="ニッスイ 大学いも"></capture-image>
+<app-capture-image article-id="112" img-file-name="daigakuimo.jpg" caption="ニッスイ 大学いも"></app-capture-image>
 
 最後はまたニッスイから。もうひとつのよく食べる甘味系「大学いも」がランクイン。冷食半額の時に買えば、惣菜売り場の大学いもより安く買えるし、保存も効きます。小分けになっておらず１パック分を一気に解凍しなければいけないのは少し残念なポイントですが、残った分は冷蔵庫で保存して食べたりしてます。
 
-<kaereba-link item-title="ニッスイ 冷凍食品 大学いも 140g" img-file-name="daigakuimo_500x500.png" shop-name="ニッスイ" amazon-item-id="B0197SQ1ZS" search-keyword="ニッスイ 大学いも"></kaereba-link>
+<app-kaereba-link item-title="ニッスイ 冷凍食品 大学いも 140g" img-file-name="daigakuimo_500x500.png" shop-name="ニッスイ" amazon-item-id="B0197SQ1ZS" search-keyword="ニッスイ 大学いも"></app-kaereba-link>
 
 ちなみに、カトキチのたこ焼きもよく食べるので、最後までどちらにしようか悩みました。
 

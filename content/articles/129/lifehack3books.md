@@ -28,7 +28,7 @@ GTDのタスク管理モデルは非常によく出来ているなと思う一�
 
 GTDの考え方をベースにして取り組む事は間違いなく有意義だと思っているので、完璧主義にならずに、ざっくりとできる部分を実践していくのがうまい付き合い方かなと思います。
 
-<yomereba-link item-title="ストレスフリーの整理術　はじめてのGTD" img-file-name="first_gtd_500x500.png" author-name="デビッド・アレン" amazon-item-id="4576082116" rakuten-item-id="5942235"></yomereba-link>
+<app-yomereba-link item-title="ストレスフリーの整理術　はじめてのGTD" img-file-name="first_gtd_500x500.png" author-name="デビッド・アレン" amazon-item-id="4576082116" rakuten-item-id="5942235"></app-yomereba-link>
 
 ## READING HACKS! - 超アウトプット生産のための「読む」技術と習慣
 
@@ -36,7 +36,7 @@ GTDの考え方をベースにして取り組む事は間違いなく有意義�
 
 文体も非常に読みやすく、あっという間に読めました。「読書のための読書」では今のところ一番オススメな本です。
 
-<yomereba-link item-title="READING HACKS! - 超アウトプット生産のための「読む」技術と習慣" img-file-name="readinghack_500x500.png" author-name="原尻 淳一" amazon-item-id="4492043195" kindle-item-id="B00979ORRM" rakuten-item-id="5874635" kobo-item-id="b9cc6261f1f64c7b8bf081182e2eb622"></yomereba-link>
+<app-yomereba-link item-title="READING HACKS! - 超アウトプット生産のための「読む」技術と習慣" img-file-name="readinghack_500x500.png" author-name="原尻 淳一" amazon-item-id="4492043195" kindle-item-id="B00979ORRM" rakuten-item-id="5874635" kobo-item-id="b9cc6261f1f64c7b8bf081182e2eb622"></app-yomereba-link>
 
 ## 整理HACKS! - 1分でスッキリする整理のコツと習慣
 
@@ -44,7 +44,7 @@ ITにも言及しながら、身の回りを整理して作業効率を上げる
 
 著者である小山龍介さんは数多くの本を出していますが、今でも最初に出会ったこの「整理ハック」が一番好きです。
 
-<yomereba-link item-title="整理HACKS! - 1分でスッキリする整理のコツと習慣" img-file-name="seirihack_500x500.png" author-name="小山 龍介" amazon-item-id="4492043373" kindle-item-id="B00979OTKW" rakuten-item-id="6075393" kobo-item-id="e30eba3389d0463586483c8a6c418143"></yomereba-link>
+<app-yomereba-link item-title="整理HACKS! - 1分でスッキリする整理のコツと習慣" img-file-name="seirihack_500x500.png" author-name="小山 龍介" amazon-item-id="4492043373" kindle-item-id="B00979OTKW" rakuten-item-id="6075393" kobo-item-id="e30eba3389d0463586483c8a6c418143"></app-yomereba-link>
 
 ## 読書熱が再燃
 
@@ -59,6 +59,6 @@ ITにも言及しながら、身の回りを整理して作業効率を上げる
 
 ちなみに、読んだ本はピックアップしてブクログでレビューを書いています。  
 
-<external-link title="aiza_waiの本棚" note="ここ最近は技術書ばかり。伸ばす読書が中心です。" link="http://booklog.jp/users/mujiota" img-file-name="booklog.png"></external-link>
+<app-external-link title="aiza_waiの本棚" note="ここ最近は技術書ばかり。伸ばす読書が中心です。" link="http://booklog.jp/users/mujiota" img-file-name="booklog.png"></app-external-link>
 
 読んだ本のログを取る行為は、あとから効いてくるのかなと思っています。過去に読んでいた本の必要性を再認識して、読み返すきっかけにもなったり。簡単な言葉で良いので、本を読んだら何か残しておく習慣をつくっていこうと思います。

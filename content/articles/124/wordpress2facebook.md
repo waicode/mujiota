@@ -15,7 +15,7 @@ tags:
 
 WordPressとTwitterの連携は、Tweetableで実現。こっちはプラグイン使って比較的簡単に設定できました。
 
-<related-link id="69"></related-link>
+<app-related-link id="69"></app-related-link>
 
 facebookも色々プラグインが用意されていて、簡単にできるかと思いきや、何かと設定が複雑なものも多いです。以下のプラグインを試してみましたが、設定に不備があったようで、私の環境では連携する事ができませんでした。
 
@@ -38,7 +38,7 @@ WordBookerでプラグイン検索すればHITします。設定についても�
 
 現在は以下の設定で連携しています。
 
-<capture-image article-id="124" img-file-name="wordbooker_help.png" caption="WordBookerの設定画面"></capture-image>
+<app-capture-image article-id="124" img-file-name="wordbooker_help.png" caption="WordBookerの設定画面"></app-capture-image>
 
 とりあえず、以下の2つにチェック入れとけば、facebookへの投稿とコメントの連携ができるかと思います。
 
@@ -55,11 +55,11 @@ WordBookerで設定しているにも関わらず、どうもFaceBookへ投稿�
 
 今までこの投稿時設定の存在を意識していませんでしたが、ここで設定すればFanページへの同時投稿設定も可能です。
 
-<capture-image article-id="124" img-file-name="facebooker_memo.png" caption="投稿画面下のWordBooker設定"></capture-image>
+<app-capture-image article-id="124" img-file-name="facebooker_memo.png" caption="投稿画面下のWordBooker設定"></app-capture-image>
 
 毎回チェックを入れるのが面倒な場合は、プラグイン設定画面からデフォルトでチェックを入れる設定にすることもできます。
 
-<capture-image article-id="124" img-file-name="facebooker_memo_02.png" caption="Wodbookerのプラグイン設定画面"></capture-image>
+<app-capture-image article-id="124" img-file-name="facebooker_memo_02.png" caption="Wodbookerのプラグイン設定画面"></app-capture-image>
 
 ただし、この設定にすると記事を「更新」するたびに毎回Facebookに投稿されるようになるので、記事をちょっと直して更新、みたいな事を繰り返す時は要注意。チェックを外しておかないと、同じような記事がどんどんFacebookに投稿されてしまいます。
 
@@ -73,7 +73,7 @@ Fanページへの同時投稿設定もデフォルトでできたら嬉しい�
 
 「Blog Level Customisation」設定部分の下にある「User Level Customisation」で設定できます。
 
-<capture-image article-id="124" img-file-name="20110922_wordbooker.png" caption="Fanページ投稿のデフォルト設定も可能"></capture-image>
+<app-capture-image article-id="124" img-file-name="20110922_wordbooker.png" caption="Fanページ投稿のデフォルト設定も可能"></app-capture-image>
 
 上記のように設定すれば、投稿を新規追加時に、WordBooker設定パネルが初期状態でFanページへ同時投稿される設定となります。
 

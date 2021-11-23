@@ -15,11 +15,11 @@ tags:
 
 こんな風に「文字のロゴ」が作れるiPhoneアプリです。
 
-<capture-image article-id="472" img-file-name="mojilogo_icon_big1.png" caption="MOJILOGOでつくった文字のロゴ"></capture-image>
+<app-capture-image article-id="472" img-file-name="mojilogo_icon_big1.png" caption="MOJILOGOでつくった文字のロゴ"></app-capture-image>
 
 Appbankさんにも紹介して頂きました。ありがとうございます。
 
-<external-link title="Appbank" note="MOJILOGO: 1文字ロゴをかんたんに作れるアプリ。無料。" link="http://www.appbank.net/2013/02/06/iphone-application/539593.php" img-file-name="appbank.png"></external-link>
+<app-external-link title="Appbank" note="MOJILOGO: 1文字ロゴをかんたんに作れるアプリ。無料。" link="http://www.appbank.net/2013/02/06/iphone-application/539593.php" img-file-name="appbank.png"></app-external-link>
 
 以下、<a href="https://itunes.apple.com/app/id590388039" target="_blank">iTunesPreview</a>のDescriptionから引用です。
 
@@ -45,7 +45,7 @@ Appbankさんにも紹介して頂きました。ありがとうございます�
 
 サポートサイトは、以下になります。
 
-<external-link title="MOJILOGO" note="好きな文字のロゴが簡単に作成できるアプリ" link="https://mojilogo.desr.blue/" img-file-name="mojilogo.png"></external-link>
+<app-external-link title="MOJILOGO" note="好きな文字のロゴが簡単に作成できるアプリ" link="https://mojilogo.desr.blue/" img-file-name="mojilogo.png"></app-external-link>
 
 まだまだできる事はとても少ないですが、少しずつバージョンアップできればと思います。
 

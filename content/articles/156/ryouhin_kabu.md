@@ -12,6 +12,6 @@ tags:
   - 無印良品
 ---
 
-<photo-image article-id="156" img-file-name="ryouhin_kabu.jpg" caption="良品計画の株主総会招集ご通知"></photo-image>
+<app-photo-image article-id="156" img-file-name="ryouhin_kabu.jpg" caption="良品計画の株主総会招集ご通知"></app-photo-image>
 
 さすがに足を運んで総会へは参加しませんが、こういう郵送物が届くと株主になった気分を堪能できますね。

@@ -12,7 +12,7 @@ tags:
 
 HTMLコード生成ウィザードから作成可能です。
 
-<capture-image article-id="231" img-file-name="20110603_google_1.png" caption="Google +1 HTML生成ウィザード"></capture-image>
+<app-capture-image article-id="231" img-file-name="20110603_google_1.png" caption="Google +1 HTML生成ウィザード"></app-capture-image>
 
 サイズと言語を指定して、出力されたコードをサイトに貼り付ければ設置完了です。他のボタンサイズにあわせて、大きいサイズを選択しました。
 

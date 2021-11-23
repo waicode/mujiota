@@ -12,7 +12,7 @@ tags:
 
 こちらもプラグイン入れて、ちょっとした設定するだけで設置完了。プラグイン新規追加時に「WP Twitter Button」で検索すればHITします。設置場所やボタン表示タイプとTwitter-IDを選択・入力すれば設定完了です。
 
-<capture-image article-id="75" img-file-name="twitterPluginSet.png" caption="WP Twitter Button Plugin設定画面"></capture-image>
+<app-capture-image article-id="75" img-file-name="twitterPluginSet.png" caption="WP Twitter Button Plugin設定画面"></app-capture-image>
 
 Twitter公式サイトでも上記と同様の事を実現するコードを取得できますが、Wordpressならプラグインの方が圧倒的に楽チンですね。ただし強制的に英語表示になってしまうようですので、気になる方は要注意です。
 

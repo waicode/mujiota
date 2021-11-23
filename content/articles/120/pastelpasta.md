@@ -13,6 +13,6 @@ tags:
 
 プリンの印象が強いパステルなので、イタリアンレストランもやっていたとは知らなかったです。プリンも質にこだわってるだけあって、パスタもおいしい。
 
-<photo-image article-id="120" img-file-name="image_12.jpeg" caption="パステルのパスタ（ずわい蟹のトマトクリーム）"></photo-image>
+<app-photo-image article-id="120" img-file-name="image_12.jpeg" caption="パステルのパスタ（ずわい蟹のトマトクリーム）"></app-photo-image>
 
 お値段ちょっと高めですが、期待以上に美味でした。

@@ -13,7 +13,7 @@ tags:
 
 凍ったままでも食べられます。本物の果実版「アイスの実」って感じで、暑い日であれば結構イケます。まさに夏にぴったり。
 
-<photo-image article-id="247" img-file-name="ice_blueberry.jpg" caption="冷凍ブルーベリー"></photo-image>
+<app-photo-image article-id="247" img-file-name="ice_blueberry.jpg" caption="冷凍ブルーベリー"></app-photo-image>
 
 凍ったままだと、感じられる「甘み」は少なくなり、すっきりとした味わいです。ガリガリくんやシャーベットが好きな人なら、好きな味かも。
 
@@ -31,4 +31,4 @@ tags:
 
 余談ですが、冷凍食品は定価で買うと高いので、必ず特売日に買うのが良いです。「冷凍食品4割引」なんて日がどこのスーパーにもあるはず。ちなみに、SEIYU（セイユー）は「いつも価格安く」がモットーなので、冷凍食品も毎日安いです。最後に、以前に書いた冷凍食品ランキングを関連記事としてどうぞ。
 
-<related-link id="112"></related-link>
+<app-related-link id="112"></app-related-link>

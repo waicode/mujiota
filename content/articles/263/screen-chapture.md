@@ -50,7 +50,7 @@ Mac使っている著名なブロガーほぼ全ての人が、このキャプ�
 
 例えばこんな感じ。
 
-<capture-image article-id="263" img-file-name="20110620_skitch_sample.png" caption="Skitchなら3ステップ"></capture-image>
+<app-capture-image article-id="263" img-file-name="20110620_skitch_sample.png" caption="Skitchなら3ステップ"></app-capture-image>
 
 おしりがシュっとした矢印マークに、センスを感じます。
 

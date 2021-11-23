@@ -13,6 +13,6 @@ tags:
 
 2011年5月29日現在、グーグルで37位、Yahoo!で58位です。
 
-<capture-image article-id="224" img-file-name="20110529_mujiota_rank.png" caption="2011年5月29日の検索ランキング"></capture-image>
+<app-capture-image article-id="224" img-file-name="20110529_mujiota_rank.png" caption="2011年5月29日の検索ランキング"></app-capture-image>
 
 記事を定期的に更新し始めてから約2ヶ月半。一過性のものかもしれませんが、これは嬉しい誤算です。

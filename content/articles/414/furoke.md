@@ -15,7 +15,7 @@ tags:
 
 お風呂の床の水捌けが悪いアパートに住んでいる方におすすめです。
 
-<photo-image article-id="414" img-file-name="muji-furo.jpg" caption="風呂桶をタオル掛けポールにのせて保管"></photo-image>
+<app-photo-image article-id="414" img-file-name="muji-furo.jpg" caption="風呂桶をタオル掛けポールにのせて保管"></app-photo-image>
 
 ## 無印良品の湯桶シリーズ
 
@@ -23,10 +23,10 @@ tags:
 
 * <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4549738980032" target="_blank">ポリプロピレン湯桶</a>
 
-<capture-image article-id="414" img-file-name="muji-furo1.jpg" caption="ポリプロピレン湯桶"></capture-image>
+<app-capture-image article-id="414" img-file-name="muji-furo1.jpg" caption="ポリプロピレン湯桶"></app-capture-image>
 
 ### ポリプロピレン片手桶
 
 * <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4550002508234" target="_blank">ポリプロピレン片手桶</a>
 
-<capture-image article-id="414" img-file-name="muji-furo2.jpg" caption="ポリプロピレン片手桶"></capture-image>
+<app-capture-image article-id="414" img-file-name="muji-furo2.jpg" caption="ポリプロピレン片手桶"></app-capture-image>

@@ -2,7 +2,7 @@
   <div class="photo-image">
     <div class="photo-wrapper">
       <div class="photo">
-        <AssetsImage :path="`images/photo/${articleId}/${imgFileName}`" />
+        <AppAssetsImage :path="`images/photo/${articleId}/${imgFileName}`" />
       </div>
     </div>
     <div v-if="caption" class="caption">{{ caption }}</div>

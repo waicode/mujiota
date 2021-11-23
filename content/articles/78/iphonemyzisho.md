@@ -13,6 +13,6 @@ tags:
 
 いつの間にか消えてしまったマイ辞書登録データ。
 
-<capture-image article-id="78" img-file-name="myzisyogamen.png" caption="MY辞書登録が消えた…（これは設定画面）"></capture-image>
+<app-capture-image article-id="78" img-file-name="myzisyogamen.png" caption="MY辞書登録が消えた…（これは設定画面）"></app-capture-image>
 
 設定で文字コードのとこいじったからかも…まだそんなに登録してなかったから良かったですが、iPhoneの電話帳トラブルは多いので要注意。

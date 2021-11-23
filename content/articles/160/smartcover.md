@@ -13,9 +13,9 @@ tags:
 
 最初見た時は「なんだこのお風呂のフタは」と思っていました。自分で買うことは無いだろうと。
 
-<photo-image article-id="160" img-file-name="smartcover_1.jpg" caption="スマートカバー（表）"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_1.jpg" caption="スマートカバー（表）"></app-photo-image>
 
-<photo-image article-id="160" img-file-name="smartcover_2.jpg" caption="スマートカバー（裏）"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_2.jpg" caption="スマートカバー（裏）"></app-photo-image>
 
 カラーは部屋のインテリアと最も調和するクリーム色を選びました。素材が革なので、お値段ちょっと高めです。
 
@@ -32,13 +32,13 @@ iPadとiPad2のメリット・デメリットのまとめは以下の記事に�
 
 これが購入を思い立った一番のきっかけで、あとはお店で見て最終決定しよう！と思っていました。ビックカメラで実際に触ってみて、その想像以上のフィット感に大変気に入ってしまいました。磁力でくっつく事は知っていましたが、iPad2とまるで一体となっているかのごとく、くっつきます。
 
-<photo-image article-id="160" img-file-name="smartcover_3.jpg" caption="お風呂のフタをiPad2に装着"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_3.jpg" caption="お風呂のフタをiPad2に装着"></app-photo-image>
 
 側面の装着部分はなかなか強い磁石を使っていて、普通に開ける分には、お風呂のフタを開けた時に勢いで一緒に取れちゃう事はありません。開け閉めで自動でiPad2がON/OFFになる機能についても「まぁ別に無くてもいいだろ」と思っていましたが、使ってみたら「最先端」を感じてテンションが上がりました。笑
 
-<photo-image article-id="160" img-file-name="smartcover_4.jpg" caption="スマートカバー（半開き）"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_4.jpg" caption="スマートカバー（半開き）"></app-photo-image>
 
-<photo-image article-id="160" img-file-name="smartcover_5.jpg" caption="スマートカバーはスタンドにもなる"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_5.jpg" caption="スマートカバーはスタンドにもなる"></app-photo-image>
 
 あと、ビックカメラのポイントが貯まっていたため、ポイントだけで買えた事も購入の後押しとなりました。
 
@@ -46,10 +46,10 @@ iPadとiPad2のメリット・デメリットのまとめは以下の記事に�
 
 振るとアヒルが増えます。蓋を開けた時の音が妙にリアルです。
 
-<photo-image article-id="160" img-file-name="smartcover_6.jpg" caption="SmartTub"></photo-image>
+<app-photo-image article-id="160" img-file-name="smartcover_6.jpg" caption="SmartTub"></app-photo-image>
 
 ちなみに、今のアパートに引っ越してからは我が家には（本物の）お風呂のフタがありません。
 
-<photo-image article-id="160" img-file-name="bathroom.jpg" caption="SmartTub"></photo-image>
+<app-photo-image article-id="160" img-file-name="bathroom.jpg" caption="SmartTub"></app-photo-image>
 
 ちょっと前までは寒かったので、湯船を張ることもしばしばありました。そんなとき（本物の）お風呂のフタも欲しいなぁと思っていました。だんだん暖かくなってきた今日この頃。本物の方は当分購入予定ナシですかね。

@@ -14,7 +14,7 @@ tags:
 
 タイトルとちょっとした紹介文を入力して、あとはTwitterやFacebookなど、利用しているSNSサービスを連携させてやれば、あっという間にプロフィールサイトが完成します。
 
-<capture-image article-id="228" img-file-name="flaversme.png" caption="flavers.me"></capture-image>
+<app-capture-image article-id="228" img-file-name="flaversme.png" caption="flavers.me"></app-capture-image>
 
 * ~flavors.me~（サイト閉鎖に伴い、リンクを外しました）
 

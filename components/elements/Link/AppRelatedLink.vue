@@ -3,7 +3,7 @@
     <nuxt-link :to="link">
       <div class="columns wrap">
         <div class="link-image column is-3-desktop is-5-tablet is-12-mobile">
-          <AssetsImage
+          <AppAssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>

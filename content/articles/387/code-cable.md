@@ -15,9 +15,9 @@ tags:
 
 まず1つ目は<strong>「ケーブルタートル」</strong>です。
 
-<kaereba-link item-title="ケーブルタートル ホワイト" img-file-name="cablet_shiro_500x500.png" shop-name="Cleverline" amazon-item-id="B00EK7OTYW" search-keyword="ケーブルタートル ホワイト"></kaereba-link>
+<app-kaereba-link item-title="ケーブルタートル ホワイト" img-file-name="cablet_shiro_500x500.png" shop-name="Cleverline" amazon-item-id="B00EK7OTYW" search-keyword="ケーブルタートル ホワイト"></app-kaereba-link>
 
-<kaereba-link item-title="ケーブルタートル ブラック" img-file-name="cablet_kuro_500x500.png" shop-name="Cleverline" amazon-item-id="B004T31MJM" search-keyword="ケーブルタートル ブラック"></kaereba-link>
+<app-kaereba-link item-title="ケーブルタートル ブラック" img-file-name="cablet_kuro_500x500.png" shop-name="Cleverline" amazon-item-id="B004T31MJM" search-keyword="ケーブルタートル ブラック"></app-kaereba-link>
 
 白と黒を使ってます。これはホントおすすめ。白いケーブルには白、黒いケーブルには黒と<strong>コードの色に合わせて使い分ける</strong>と良い感じです。
 
@@ -27,15 +27,15 @@ tags:
 
 2つ目は<strong>「ケーブルボックス」</strong>です。
 
-<kaereba-link item-title="" img-file-name="cablebox_bl_500x500.png" shop-name="Blue Lounge" amazon-item-id="B00V9FKFRS" search-keyword="ケーブルボックス Blue Lounge"></kaereba-link>
+<app-kaereba-link item-title="" img-file-name="cablebox_bl_500x500.png" shop-name="Blue Lounge" amazon-item-id="B00V9FKFRS" search-keyword="ケーブルボックス Blue Lounge"></app-kaereba-link>
 
 「ケーブルボックス」と名乗ると箔が付きますが、要するにただのプラスチックの箱。
 
 なのですが、コードを入れてみると想像以上にスッキリ。
 
-<capture-image article-id="387" img-file-name="20111219_cb2.jpg" caption="Before"></capture-image>
+<app-capture-image article-id="387" img-file-name="20111219_cb2.jpg" caption="Before"></app-capture-image>
 
-<capture-image article-id="387" img-file-name="20111219_cb3.jpg" caption="After"></capture-image>
+<app-capture-image article-id="387" img-file-name="20111219_cb3.jpg" caption="After"></app-capture-image>
 
 このケーブルボックスは類似品が数多く出回っていますが「Bluelounge」のケーブルボックスが元祖です。最近では100円ショップでも見かけますが、電源コード類を入れておくこともあり、ある程度ちゃんとしたモノを買っておいた方が良いでしょう。少し値段は高めですが、スタイリッシュで個人的にはデザインが一番カッコいいと思っています。
 

@@ -30,7 +30,7 @@
         </div>
         <div v-if="searchedArticles.length > 0" class="post-list">
           <div v-for="(article, index) in searchedArticles" :key="article.id">
-            <Article :article="article" @link-click="$parent.close()" />
+            <AppArticle :article="article" @link-click="$parent.close()" />
             <hr
               v-if="index < searchedArticles.length - 1"
               :key="`hr-${article.id}`"

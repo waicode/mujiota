@@ -13,9 +13,9 @@ tags:
 
 5色あるのに、味は全部レモンスカッシュです。敵キャラの缶もあります。
 
-<photo-image article-id="183" img-file-name="daido_5renja_1.jpg" caption="秘密炭酸ゴレンジャーを5本揃えたみた"></photo-image>
+<app-photo-image article-id="183" img-file-name="daido_5renja_1.jpg" caption="秘密炭酸ゴレンジャーを5本揃えたみた"></app-photo-image>
 
-<photo-image article-id="183" img-file-name="daido_5renja_2.jpg" caption="敵キャラもいました"></photo-image>
+<app-photo-image article-id="183" img-file-name="daido_5renja_2.jpg" caption="敵キャラもいました"></app-photo-image>
 
 ちなみに最後にこの記事を書くことで手に入れたちょっとした豆知識を披露してみると「DyDo Drink」はダイドードリン<span class="b">「コ」</span>が正式な読み方です。
 

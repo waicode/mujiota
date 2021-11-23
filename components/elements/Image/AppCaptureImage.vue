@@ -2,7 +2,7 @@
   <div class="capture-image">
     <div class="capture-wrapper">
       <div class="capture">
-        <AssetsImage :path="`images/capture/${articleId}/${imgFileName}`" />
+        <AppAssetsImage :path="`images/capture/${articleId}/${imgFileName}`" />
       </div>
     </div>
     <div v-if="caption" class="caption">{{ caption }}</div>

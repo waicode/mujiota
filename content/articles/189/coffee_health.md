@@ -20,7 +20,7 @@ tags:
 
 自分自身も、学生の頃は缶コーヒーやインスタントコーヒーばかり飲んでいて、コーヒーの魅力に気付くことができなかった一人です。ですが、**恵比寿のヴェルデ**で挽きたてのコーヒーを飲んで「こんなにコーヒーって美味しいものなんだ！」と、それまでの価値感が大きく変わりました。
 
-<external-link title="食べログ" note="ヴェルテ(恵比寿/喫茶店)" link="http://tabelog.com/tokyo/A1303/A130302/13050095/" img-file-name="tabelog.png"></external-link>
+<app-external-link title="食べログ" note="ヴェルテ(恵比寿/喫茶店)" link="http://tabelog.com/tokyo/A1303/A130302/13050095/" img-file-name="tabelog.png"></app-external-link>
 
 新鮮な豆を使った煎りたて・挽きたてのコーヒーは、缶コーヒーやインスタントコーヒーとはもはや別の飲み物です。
 
@@ -28,17 +28,17 @@ tags:
 
 今では、自宅に**コーヒーミル**と**コーヒーメーカー**を購入して、挽きたて珈琲を毎日楽しむ位なコーヒー党になりました。コーヒーミルとコーヒーメーカーは、どちらも**デロンギ**の製品を使っています。
 
-<related-link id="100"></related-link>
+<app-related-link id="100"></app-related-link>
 
 デロンギのコーヒーグラインダーは、**豆を挽く「粗さ」を細かく調整**できます。深煎りだったら細かく挽くなど、購入した豆によって挽く粗さを変えて、味の変化を楽しむ事ができます。洗練されたデザインは、部屋に置けばインテリアのアクセントにもなります。
 
-<photo-image article-id="189" img-file-name="delongi_mill.jpg" caption="デロンギ コーン式コーヒーグラインダー"></photo-image>
+<app-photo-image article-id="189" img-file-name="delongi_mill.jpg" caption="デロンギ コーン式コーヒーグラインダー"></app-photo-image>
 
 ただし注意点として、受け皿がプラスチックでできているために、豆を挽いたあとに静電気で豆の粉がくっついてしまうという欠点があります。実際に使ってみても、確かにどうしても粉が受け皿に残ってしまいます。それほど気になりませんが、一応参考まで。それ以外は、文句無しの素晴らしいミルだと思います。
 
 コーヒーメーカーは、ドリップ機能のみの一番安価なモデルの物を使っています。洗って何度でも使える**ペーパーレスフィルター**が便利です。ゴミも出ないので、個人的には毎日使うなら紙フィルターよりペーパーレスフィルターの方が使いやすいと感じます。さっと洗って再セットすれば、次の日もまた使えるので、手入れが楽です。こちらもデザイナーの方が作れているだけあって、スタイリッシュで部屋に置いておきたくなるデザインです。
 
-<photo-image article-id="189" img-file-name="delongi_coffeemaker.jpg" caption="デロンギ ドリップコーヒーメーカー"></photo-image>
+<app-photo-image article-id="189" img-file-name="delongi_coffeemaker.jpg" caption="デロンギ ドリップコーヒーメーカー"></app-photo-image>
 
 前置きの説明が長くなってしまいました。そんな感じで自宅で挽きたてコーヒーを楽しんでいるわけです。
 
@@ -81,7 +81,7 @@ tags:
 
 手軽に取り入れられる口臭対策と言えば「マウスウォッシュ」です。コーヒーを飲むようになってから、サンスターのガム・デンタルリンスを使うようになりました。いちいち歯を磨くのは億劫ですが「口うがい」だけなら手軽に口臭予防ができます。はじめての人は、ナイトケアタイプが刺激が少なくておすすめです。ほんのり、ハーブの香りがします。
 
-<kaereba-link item-title="GUM ガム・デンタルリンスナイトケア ナイトハーブタイプ" img-file-name="gum_night_500x500.png" shop-name="GUM" amazon-item-id="B07G5NNX9D" rakuten-item-id="43dfb01b2bdc227c5fb2ce056adca83d" search-keyword="ガム デンタルリンス ナイトケア"></kaereba-link>
+<app-kaereba-link item-title="GUM ガム・デンタルリンスナイトケア ナイトハーブタイプ" img-file-name="gum_night_500x500.png" shop-name="GUM" amazon-item-id="B07G5NNX9D" rakuten-item-id="43dfb01b2bdc227c5fb2ce056adca83d" search-keyword="ガム デンタルリンス ナイトケア"></app-kaereba-link>
 
 ## コーヒーは飲み方を工夫しておいしく健康に
 
@@ -91,7 +91,7 @@ tags:
 
 ちなみに「HEALTH HACKS!」にはコーヒーの話以外にも、健康面で意識すべき有益かつ具体的な情報がいろいろ書かれているので、興味のある方は是非とも読んでみてください。
 
-<yomereba-link item-title="HEALTH HACKS! - ビジネスパーソンのためのサバイバル健康投資術" img-file-name="healthhack_500x500.png" author-name="川田 浩志" amazon-item-id="488759691X" rakuten-item-id="5975730"></yomereba-link>
+<app-yomereba-link item-title="HEALTH HACKS! - ビジネスパーソンのためのサバイバル健康投資術" img-file-name="healthhack_500x500.png" author-name="川田 浩志" amazon-item-id="488759691X" rakuten-item-id="5975730"></app-yomereba-link>
 
 たとえば、こんなことが書いてあります。
 
@@ -103,8 +103,8 @@ tags:
 
 ブクログでかんたんなレビューも書いているので、気になる方は参考にして頂ければ幸いです。
 
-<external-link title="川田浩志「HEALTH HACKS!」のブクログレビュー" note="ビジネス書のような作りの健康本。具体的ですぐ実践できる内容が盛り沢山でした。" link="https://booklog.jp/users/mujiota/archives/1/488759691X" img-file-name="booklog.png"></external-link>
+<app-external-link title="川田浩志「HEALTH HACKS!」のブクログレビュー" note="ビジネス書のような作りの健康本。具体的ですぐ実践できる内容が盛り沢山でした。" link="https://booklog.jp/users/mujiota/archives/1/488759691X" img-file-name="booklog.png"></app-external-link>
 
 最後に関連記事のご紹介です。ネットで買える安くて美味しいコーヒー豆について、ランキング形式でまとめています。コーヒーを毎日飲むと、コーヒーのために日々積み重なる支出もバカにならないと思います。コーヒー豆はネットで注文する方が圧倒的にコストパフォーマンスが良いです。よかったら参考にしてみてください。
 
-<related-link id="1278"></related-link>
+<app-related-link id="1278"></app-related-link>

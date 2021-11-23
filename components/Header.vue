@@ -42,7 +42,7 @@
                     animation="fade"
                     :can-cancel="['escape', 'outside']"
                   >
-                    <SearchModal></SearchModal>
+                    <AppSearchModal />
                   </b-modal>
                   <nuxt-link
                     to="/sitemap"

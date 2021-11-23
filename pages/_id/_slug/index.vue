@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="eyecatch">
-      <AssetsImage
+      <AppAssetsImage
         :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
       />
     </div>
@@ -30,9 +30,9 @@
       <p>{{ article.description }}</p>
     </div>
     <div class="toc-wrap">
-      <TableOfContents v-if="article.toc.length > 0" :article="article" />
+      <AppTableOfContents v-if="article.toc.length > 0" :article="article" />
     </div>
-    <ShareButtonsTop
+    <AppShareButtonsTop
       :page-url="pageUrl"
       :title="article.title"
       :share-count-hatena="shareCountHatena"
@@ -41,7 +41,7 @@
       :share-count-pocket="shareCountPocket"
     />
     <NuxtContent class="article" :document="article" />
-    <ShareButtonsBottom
+    <AppShareButtonsBottom
       :page-url="pageUrl"
       :title="article.title"
       :share-count-hatena="shareCountHatena"
@@ -49,7 +49,7 @@
       :share-count-facebook="shareCountFacebook"
       :share-count-pocket="shareCountPocket"
     />
-    <RelatedPosts :articles="relatedArticles" />
+    <AppRelatedPosts :articles="relatedArticles" />
   </article>
 </template>
 

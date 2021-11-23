@@ -15,7 +15,7 @@ tags:
 
 iTunesの「環境設定」から「再生」を選択し<strong>「曲をクロスフェード」</strong>の項目にチェックを入れるだけです。この項目にチェックを入れると、設定した秒数だけ曲をフェードアウトし、同時に次の曲をフェードインして、曲と曲を繋いで再生してくれます。
 
-<capture-image article-id="419" img-file-name="0995a00655aae8cb821b2705fadc0b3b.png" caption="曲をクロスフェードにチェック"></capture-image>
+<app-capture-image article-id="419" img-file-name="0995a00655aae8cb821b2705fadc0b3b.png" caption="曲をクロスフェードにチェック"></app-capture-image>
 
 あまり長い秒数を設定すると、曲本来の最後の部分が聞けなくなってしまうので、ご注意を。
 

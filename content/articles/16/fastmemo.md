@@ -17,9 +17,9 @@ tags:
 
 うまく使えば、一日のタイムラインをブログへ簡単に投稿できますね。
 
-<external-link title="Fast Memo" img-file-name="fastmemo.png" note="Evernote、twitterと高速連携" link="https://itunes.apple.com/jp/app/fast-memo-evernote-twitterto/id323208864?mt=8"></external-link>
+<app-external-link title="Fast Memo" img-file-name="fastmemo.png" note="Evernote、twitterと高速連携" link="https://itunes.apple.com/jp/app/fast-memo-evernote-twitterto/id323208864?mt=8"></app-external-link>
 
 ファストメモのアプリが気になる方はダウンロードしてみてください。
 
-<supplement type="normal" title="今は標準のメモアプリで十分" >現在はiPhoneのメモ機能が進化してだいぶ便利になったので、今は使っていません。（2016年5月）
-</supplement>
+<app-supplement type="normal" title="今は標準のメモアプリで十分" >現在はiPhoneのメモ機能が進化してだいぶ便利になったので、今は使っていません。（2016年5月）
+</app-supplement>

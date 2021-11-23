@@ -17,7 +17,7 @@ tags:
 
 ## エスプレッソと豆乳と酵母でつくる健康ラテドリンク
 
-<photo-image article-id="202" img-file-name="cobon_soy_latte_004.jpg" caption="アイスコーボンソイラテ"></photo-image>
+<app-photo-image article-id="202" img-file-name="cobon_soy_latte_004.jpg" caption="アイスコーボンソイラテ"></app-photo-image>
 
 作り方は簡単。のちほど詳しく書きますが、材料を混ぜるだけです。
 
@@ -30,7 +30,7 @@ tags:
 
 コーヒーでも代用可能ですが、エスプレッソの方がおいしいです。
 
-<photo-image article-id="202" img-file-name="DSCN0218.jpg" caption="アイスコーボンソイラテの材料"></photo-image>
+<app-photo-image article-id="202" img-file-name="DSCN0218.jpg" caption="アイスコーボンソイラテの材料"></app-photo-image>
 
 このレシピの肝は、何と言っても<strong>「コーボン（天然酵母）」</strong>です。
 
@@ -38,7 +38,7 @@ tags:
 
 コーボン商品には「ぶどう味」や「梅味」など味付きの商品もありますが、**コーボンマーベル**は特別な味付けがされておらず、まさに「天然酵母の味」です。甘く、和風ガムシロップのような味がします。このアイスコーボンソイラテには、味付けがされていないコーボンを使うのがオススメです。
 
-<kaereba-link item-title="コーボン マーベル 525ml" img-file-name="cobon_525ml_500x500.png" shop-name="第一酵母" amazon-item-id="B001LQ83C4" rakuten-item-id="08e00964d86dbe9f8b40176aef415096" search-keyword="コーボン マーベル"></kaereba-link>
+<app-kaereba-link item-title="コーボン マーベル 525ml" img-file-name="cobon_525ml_500x500.png" shop-name="第一酵母" amazon-item-id="B001LQ83C4" rakuten-item-id="08e00964d86dbe9f8b40176aef415096" search-keyword="コーボン マーベル"></app-kaereba-link>
 
 ## 酵母は酵素を生み出し、人々を健康にしてくれる
 
@@ -100,7 +100,7 @@ tags:
 
 まずは無調整豆乳とコーボンをアイスロック入りのグラスに入れて、混ぜます。（エスプレッソはまだ！）
 
-<photo-image article-id="202" img-file-name="cobon_soy_latte_002.jpg" caption="エスプレッソ以外を先にまぜる"></photo-image>
+<app-photo-image article-id="202" img-file-name="cobon_soy_latte_002.jpg" caption="エスプレッソ以外を先にまぜる"></app-photo-image>
 
 豆乳は、**無調整豆乳**がオススメです。以前は調整豆乳と混ぜて飲んでいたこともあったのですが、コーボンの独特の和風の甘さは無調整豆乳の方が相性が良いです。
 
@@ -110,19 +110,19 @@ tags:
 
 私は525mlタイプを定期的に購入していますが、お試ししたい場合は少量タイプもあります。
 
-<kaereba-link item-title="コーボン マーベル 140ml" img-file-name="cobon_140ml_500x500.png" shop-name="第一酵母" amazon-item-id="B003Q4ECWY" rakuten-item-id="a147da258b303a78c11b9f88d80c3ee4" search-keyword="コーボン マーベル"></kaereba-link>
+<app-kaereba-link item-title="コーボン マーベル 140ml" img-file-name="cobon_140ml_500x500.png" shop-name="第一酵母" amazon-item-id="B003Q4ECWY" rakuten-item-id="a147da258b303a78c11b9f88d80c3ee4" search-keyword="コーボン マーベル"></app-kaereba-link>
 
 このエスプレッソを入れる前の「コーボン豆乳」も、それなりにおいしいです。通勤前の朝の時間などエスプレッソを作る時間が無い時は、このコーボン豆乳のまま飲んでいます。
 
 無調整豆乳とコーボンをしっかり混ぜ終わったらエスプレッソをコーボン豆乳に投入します。
 
-<photo-image article-id="202" img-file-name="cobon_soy_latte_003.jpg" caption="エスプレッソを投入"></photo-image>
+<app-photo-image article-id="202" img-file-name="cobon_soy_latte_003.jpg" caption="エスプレッソを投入"></app-photo-image>
 
 エスプレッソはゆっくりと入れて、混ぜすぎないように。ゆっくり注ぐと、エスプレッソとコーボン投入が2層に分かれて綺麗なラテになります。
 
 これで完成です。
 
-<photo-image article-id="202" img-file-name="cobon_soy_latte_005.jpg" caption="アイスコーボンソイラテが完成"></photo-image>
+<app-photo-image article-id="202" img-file-name="cobon_soy_latte_005.jpg" caption="アイスコーボンソイラテが完成"></app-photo-image>
 
 コーボンのなんとも言えない「和風な甘み」と「すっきり」味の無調整豆乳となんとも相性が良くて、そこにエスプレッソの「苦味」が効いて、上品な味にまとまっています。「紫いもチップス」や「白かりんとう」など、和風なお菓子と相性抜群。和菓子との相性も良いと思います。
 
@@ -132,15 +132,15 @@ tags:
 
 当時はカフェポッドタイプのデロンギ製エスプレッソマシーンで抽出していました。
 
-<photo-image article-id="202" img-file-name="espresso_002.jpg" caption="イリーのエスプレッソ"></photo-image>
+<app-photo-image article-id="202" img-file-name="espresso_002.jpg" caption="イリーのエスプレッソ"></app-photo-image>
 
-<photo-image article-id="202" img-file-name="DSCN0211.jpg" caption="カフェポッド"></photo-image>
+<app-photo-image article-id="202" img-file-name="DSCN0211.jpg" caption="カフェポッド"></app-photo-image>
 
-<photo-image article-id="202" img-file-name="espresso_004.jpg" caption="エスプレッソを抽出"></photo-image>
+<app-photo-image article-id="202" img-file-name="espresso_004.jpg" caption="エスプレッソを抽出"></app-photo-image>
 
 現在は全自動のエスプレッソマシーンを使っています。豆をそのまま入れておけば、豆挽きと抽出まで一気にやってくれます。これを使うと、もうカフェポッドには戻れなくなります。
 
-<kaereba-link item-title="デロンギ コンパクト全自動コーヒーメーカー ホワイト マグニフィカS" img-file-name="delonghi_mags_500x500.png" shop-name="DeLonghi（デロンギ）" amazon-item-id="B01LY849K0" rakuten-item-id="1d29b69c7620868fd7dbace2c16e3654" search-keyword="デロンギ マグニフィカS"></kaereba-link>
+<app-kaereba-link item-title="デロンギ コンパクト全自動コーヒーメーカー ホワイト マグニフィカS" img-file-name="delonghi_mags_500x500.png" shop-name="DeLonghi（デロンギ）" amazon-item-id="B01LY849K0" rakuten-item-id="1d29b69c7620868fd7dbace2c16e3654" search-keyword="デロンギ マグニフィカS"></app-kaereba-link>
 
 豆挽いて詰めるとこから準備するとそこそこ時間がかかりますが、カフェポッドなら、あっという間にエスプレッソが抽出できるので非常に気に入っています。個包装なので、それなりに持ちも良いです。
 

@@ -17,7 +17,7 @@ tags:
 
 メールアドレスとブログURLを入力、ブログタイプを選択して、カラーモードを選択し、GetWidget!ボタンを押下するだけ。
 
-<capture-image article-id="176" img-file-name="linkwithin.png" caption="LinkWithinの登録ページ"></capture-image>
+<app-capture-image article-id="176" img-file-name="linkwithin.png" caption="LinkWithinの登録ページ"></app-capture-image>
 
 無印発信の場合は、ブログタイプにWordPressを選択し、白背景がいいので「My blog has light text on a dark background」にはチェックを入れずに登録。（チェックを入れると、黒背景）
 
@@ -38,7 +38,7 @@ WordPress版の場合は、ボタン押下後のページでプラグインア�
 
 表示箇所の設定ついては好みが分かれるところですが、TOPページに何個も並ぶのは見た目的にどうかなと思い、個別ページのみに表示するよう設定しました。プラグインの設定ページで、以下にチェックを入れればOK。
 
-<capture-image article-id="176" img-file-name="linkwithin_settei.png" caption="LinkWithinの設定画面"></capture-image>
+<app-capture-image article-id="176" img-file-name="linkwithin_settei.png" caption="LinkWithinの設定画面"></app-capture-image>
 
 手軽で画像付きで広告なし。なかなか優れた関連記事表示サービスだと思います。
 

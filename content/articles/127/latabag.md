@@ -13,7 +13,7 @@ tags:
 
 思わず、噛んでしまいそうな名前です。
 
-<external-link title="食べログ" note="ベーカーバウンス(西太子堂/ハンバーガー)" link="http://r.tabelog.com/tokyo/A1317/A131706/13004780/" img-file-name="tabelog.png"></external-link>
+<app-external-link title="食べログ" note="ベーカーバウンス(西太子堂/ハンバーガー)" link="http://r.tabelog.com/tokyo/A1317/A131706/13004780/" img-file-name="tabelog.png"></app-external-link>
 
 しっかりラタトゥイユの味してました…！ラタトゥイユって何？って方のために。
 
@@ -21,6 +21,6 @@ tags:
 
 だ、そうです。
 
-<photo-image article-id="127" img-file-name="lata_bgr.jpg" caption="ラタトゥイユスイスチーズバーガーをテイクアウト"></photo-image>
+<app-photo-image article-id="127" img-file-name="lata_bgr.jpg" caption="ラタトゥイユスイスチーズバーガーをテイクアウト"></app-photo-image>
 
 ベーカーバウンスのバーガーはいまのところ、どれもハズレ無し。せっかくなので<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank">食べログレビュー</a>も書いてみました。

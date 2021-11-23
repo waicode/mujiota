@@ -16,7 +16,7 @@ tags:
 
 ## dp Quattro（デジタルカメラ）
 
-<capture-image article-id="548" img-file-name="14G050396_01_880x660.jpg" caption="dp Quattro（デジタルカメラ）"></capture-image>
+<app-capture-image article-id="548" img-file-name="14G050396_01_880x660.jpg" caption="dp Quattro（デジタルカメラ）"></app-capture-image>
 
 大賞候補にも選ばれている作品です。展示会の第一会場の最後に投票ができますが、私はこのカメラに１票入れてきました。コンパクトとは逆斜め路線を突き進む、こんな横長なコンデジは初めて見ましたが、実はこの横長のフォルムと大きなレンズの組み合わせが非常に持ちやすく、これまでに無い美しく使いやすい新しいカメラに仕上っています。
 
@@ -30,7 +30,7 @@ tags:
 
 ## 鋳物ほうろう両手鍋（両手鍋）
 
-<capture-image article-id="548" img-file-name="14G030189_02_880x660.jpg" caption="鋳物ほうろう両手鍋（両手鍋）"></capture-image>
+<app-capture-image article-id="548" img-file-name="14G030189_02_880x660.jpg" caption="鋳物ほうろう両手鍋（両手鍋）"></app-capture-image>
 
 ハースデザインズという会社が手がける両手鍋です。家庭で本格的なダッチオーブン料理を作る他、プレートも付いていて、万能調理器として様々な料理に活用できます。
 
@@ -50,7 +50,7 @@ tags:
 
 ## 無印良品 しゃもじ置き付き炊飯器・３合（家電）
 
-<capture-image article-id="548" img-file-name="ja01-300x182.jpg" caption="無印良品 しゃもじ置き付き炊飯器・３合"></capture-image>
+<app-capture-image article-id="548" img-file-name="ja01-300x182.jpg" caption="無印良品 しゃもじ置き付き炊飯器・３合"></app-capture-image>
 
 「キッチン家電シリーズ」として受賞していますが、個人的にはこの炊飯器が最も鮮麗されて素晴らしいデザインだと思います。シンプルで丸みを帯びたデザインは、長く使い続ける事を前提にした愛着のモテる優しいデザインに仕上っています。しゃもじとの調和も完璧ですね。
 

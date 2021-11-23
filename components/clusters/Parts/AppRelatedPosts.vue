@@ -8,7 +8,7 @@
             <NuxtLink :to="`/${article.id}/${article.slug}`">
               <div class="wrap">
                 <div class="eyecatch">
-                  <AssetsImage
+                  <AppAssetsImage
                     :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
                   />
                 </div>

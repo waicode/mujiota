@@ -6,7 +6,7 @@
         class="link-image column is-3-desktop is-5-tablet is-12-mobile"
       >
         <a :href="titleLink" target="_blank">
-          <AssetsImage :path="assetsImagePath" />
+          <AppAssetsImage :path="assetsImagePath" />
         </a>
       </div>
       <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">

@@ -17,9 +17,9 @@ tags:
 
 トネリコは生命力がたくましいので、好きな高さに剪定してもまたすぐに新芽が生えてくるとのこと。思い切って、上の新芽部分を「ざくっ」とひとおもいに切りました。剪定前の写真をすっかり撮り忘れたので、過去に撮影した元気な時の写真との比較です。
 
-<photo-image article-id="192" img-file-name="toneriko_sen_001.jpg" caption="Before（元気があった時）"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_sen_001.jpg" caption="Before（元気があった時）"></app-photo-image>
 
-<photo-image article-id="192" img-file-name="toneriko_sen_002.jpg" caption="After（剪定後）"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_sen_002.jpg" caption="After（剪定後）"></app-photo-image>
 
 以前のトネリコと比較すると、大分こぶりになってしまいました。ちょっと不安だけど、今後も様子を見守っていこう！と思っていたところ…
 
@@ -27,13 +27,13 @@ tags:
 
 なんと、翌日に<strong>きのこ</strong>が生えてきました。笑
 
-<photo-image article-id="192" img-file-name="toneriko_kinoko_1.jpg" caption="きのこが生えてきた"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_kinoko_1.jpg" caption="きのこが生えてきた"></app-photo-image>
 
-<photo-image article-id="192" img-file-name="toneriko_kinoko_2.jpg" caption="トネリコのきのこ（拡大）"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_kinoko_2.jpg" caption="トネリコのきのこ（拡大）"></app-photo-image>
 
 きのこが生えてきた事なんて今まで無かったので、かなり驚きました。先日、きのこの山にしか見えない無印の白磁スタンドライトを購入したからでしょうか。
 
-<related-link id="142"></related-link>
+<app-related-link id="142"></app-related-link>
 
 それにしても、生えるスピードが異常に早い！１日でここまで伸びたわけです。毒きのこだったらどうしよう、などいろいろ考えながらも、薄気味悪かったので、急いで撤去しました。あとで調べてみたら、観葉植物にきのこが生えてくる事はまれにあるそうで、栄養が豊富で土が生きている証拠なんだとか。きのこは動物、植物には無害ですが、そのままだと部屋の中に胞子を飛ばすらしいです。速やかに撤去して正解でした。
 
@@ -41,8 +41,8 @@ tags:
 
 現在は**新芽**がトネリコの下の方から出てきて、いい感じに成長してます。
 
-<photo-image article-id="192" img-file-name="toneriko_sen_003.jpg" caption="トネリコの新芽"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_sen_003.jpg" caption="トネリコの新芽"></app-photo-image>
 
-<photo-image article-id="192" img-file-name="toneriko_sen_004.jpg" caption="トネリコの新芽（拡大）"></photo-image>
+<app-photo-image article-id="192" img-file-name="toneriko_sen_004.jpg" caption="トネリコの新芽（拡大）"></app-photo-image>
 
 菌も植物も、しっかり生きているんですね。

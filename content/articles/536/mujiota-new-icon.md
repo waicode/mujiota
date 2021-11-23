@@ -11,13 +11,13 @@ tags:
   - ブログカスタマイズ
 ---
 
-<capture-image article-id="536" img-file-name="mujiota_new_logo.png" caption="無印発信ロゴ"></capture-image>
+<app-capture-image article-id="536" img-file-name="mujiota_new_logo.png" caption="無印発信ロゴ"></app-capture-image>
 
 感覚にまかせてサクっと作った割には、シンプルさと発信する感じが表現できたかなと、満足しています。このようなロゴや画像を作成する時は、Macの「Pixelmator」というアプリを使っています。
 
 * <a href="https://itunes.apple.com/jp/app/pixelmator/id407963104?mt=12" target="_blank">pixelmator</a>
 
-<capture-image article-id="536" img-file-name="Icon.175x175-75.png" caption="Pixelmator"></capture-image>
+<app-capture-image article-id="536" img-file-name="Icon.175x175-75.png" caption="Pixelmator"></app-capture-image>
 
 2014年2月時点で3000円と有料のツールですが、レイヤーやマスクなど、Adobeの「Photoshop」や「Illustrator」の主要な機能を抑えています。
 

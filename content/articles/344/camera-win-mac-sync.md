@@ -58,7 +58,7 @@ PRO版は若干値が張りますが、ジオタグ（位置情報）を付与�
 
 <strong>「SugarSync」</strong>の登場です。
 
-<capture-image article-id="344" img-file-name="20110922_sugarsync.jpg" caption="SugarSync"></capture-image>
+<app-capture-image article-id="344" img-file-name="20110922_sugarsync.jpg" caption="SugarSync"></app-capture-image>
 
 * <a href="https://www1.sugarsync.com/jp/" target="_blank" rel="noopener">SugarSync</a>
 
@@ -68,11 +68,11 @@ SugarSyncはWEB上にファイル保存スペース（オンラインストレ�
 
 以下のキャプチャ画像の様に、同期対象フォルダを指定してやれば、PCが稼働している時に同期を行いいつの間にか同期が完了しています。
 
-<capture-image article-id="344" img-file-name="20110922_picSync.png" caption="SugarSyncの同期設定"></capture-image>
+<app-capture-image article-id="344" img-file-name="20110922_picSync.png" caption="SugarSyncの同期設定"></app-capture-image>
 
 同様のサービスで<strong>「DropBox」</strong>もあります。こちらも併用して使っています。
 
-<capture-image article-id="344" img-file-name="20110922_dropbox1.jpg" caption="DropBox"></capture-image>
+<app-capture-image article-id="344" img-file-name="20110922_dropbox1.jpg" caption="DropBox"></app-capture-image>
 
 * <a href="https://www.dropbox.com/" target="_blank" rel="noopener">DropBox</a>
 

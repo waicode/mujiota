@@ -15,6 +15,6 @@ tags:
 文字を入力するとスウェーデン語風に変換して、適当な家具を添えて<strong>IKEA風のポスター</strong>を作ってくれるWEBサービスです。
 よく見るとだいぶテキトーですが、仕上がりはいい感じなのでお気に入り。
 
-<capture-image article-id="9" img-file-name="ikeaPos_aiza_wai.jpg" caption="IKEA風ポスター（aiza_wai）"></capture-image>
+<app-capture-image article-id="9" img-file-name="ikeaPos_aiza_wai.jpg" caption="IKEA風ポスター（aiza_wai）"></app-capture-image>
 
 残念ながらサービス終了となりました。

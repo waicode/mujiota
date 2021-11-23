@@ -15,17 +15,17 @@ tags:
 
 使い方は簡単です。まずはネクタイの細い方の先を固定します。
 
-<photo-image article-id="362" img-file-name="DSCN3024.jpg" caption="ネクタイの先を固定"></photo-image>
+<app-photo-image article-id="362" img-file-name="DSCN3024.jpg" caption="ネクタイの先を固定"></app-photo-image>
 
 あとは横についているハンドルをくるくる回せば、ネクタイが巻き取られて、スッポリとケースに収まります。
 
-<photo-image article-id="362" img-file-name="DSCN3026.jpg" caption="くるくる回して収納"></photo-image>
+<app-photo-image article-id="362" img-file-name="DSCN3026.jpg" caption="くるくる回して収納"></app-photo-image>
 
 取り出す時もネクタイの端を引っ張り出せば、くるくると回ってスムーズに取り出せます。シワにもならず、出張・旅行等でネクタイをかばんに入れて持っていく時にも重宝しそうですね。
 
 ちょっと調べてみたところ、ダイソー以外からもいくつか同様の商品が発売されていて、<strong>外側にハンドルが無いタイプの収納ケース</strong>は日本とアメリカで特許を取得していました。
 
-<kaereba-link item-title="ネクタイ収納ケース Mr.クルクル" img-file-name="tie_kurukuru_500x500.png" shop-name="池本刷子工業" amazon-item-id="B005XICLUQ" search-keyword="ネクタイ収納ケース クルクル"></kaereba-link>
+<app-kaereba-link item-title="ネクタイ収納ケース Mr.クルクル" img-file-name="tie_kurukuru_500x500.png" shop-name="池本刷子工業" amazon-item-id="B005XICLUQ" search-keyword="ネクタイ収納ケース クルクル"></app-kaereba-link>
 
 外側のハンドルが無い分嵩張らず、プラスチックの質も良さそう。でも、ダイソーと比べるとやはり値段は高いです。そこまで質にこだわらなければ、お値段重視ならダイソーのケースで十分かと思います。
 

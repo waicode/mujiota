@@ -12,10 +12,10 @@ tags:
   - 飲食店
 ---
 
-<photo-image article-id="82" img-file-name="image_8.jpeg" caption="来来来のチャンポン"></photo-image>
+<app-photo-image article-id="82" img-file-name="image_8.jpeg" caption="来来来のチャンポン"></app-photo-image>
 
-<photo-image article-id="82" img-file-name="image_9.jpeg" caption="路地裏にひっそりと佇む店舗"></photo-image>
+<app-photo-image article-id="82" img-file-name="image_9.jpeg" caption="路地裏にひっそりと佇む店舗"></app-photo-image>
 
 お店の場所は帰り道の途中でしたが、路地裏なのでこれまでお店の存在に気付かなかったです。チャンポン屋「長崎」の方が個人的には余計な味がなくて好きでした。食べログでは来来来の方が評価高いですね。
 
-<external-link title="食べログ" note="來來來(三軒茶屋/ちゃんぽん)" link="https://tabelog.com/tokyo/A1317/A131706/13001390/" img-file-name="tabelog.png"></external-link>
+<app-external-link title="食べログ" note="來來來(三軒茶屋/ちゃんぽん)" link="https://tabelog.com/tokyo/A1317/A131706/13001390/" img-file-name="tabelog.png"></app-external-link>

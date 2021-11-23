@@ -15,12 +15,12 @@ tags:
 
 当時の記憶が少しでも蘇ればと、最初は、以前に使っていたものと全く同じTACの合格テキストを買って復習しようかと思っていたのですが、色々立ち読みしていたら良さそうな参考書を発見しました。
 
-<yomereba-link item-title="サクッとうかる日商2級商業簿記" img-file-name="boki2_500x500.png" author-name="桑原 知之" amazon-item-id="478101240X" kindle-item-id="B07V2FNV5K" rakuten-item-id="15707358"></yomereba-link>
+<app-yomereba-link item-title="サクッとうかる日商2級商業簿記" img-file-name="boki2_500x500.png" author-name="桑原 知之" amazon-item-id="478101240X" kindle-item-id="B07V2FNV5K" rakuten-item-id="15707358"></app-yomereba-link>
 
 TACのテキストは細かい部分まで詳細に記載があり、ボリュームも多くそれはそれでメリットだったりします。一方、この「サクッとうかる」シリーズはコンパクトにまとまっている割には要点がしっかりと抑えられています。なんというか<strong>「無駄が無い」</strong>と言った感じなんです。現在、1/4程度まで読み進めましたが、わかりやすいイラストも理解の助けを促し、なかなか良いペースで復習できています。
 
 他にも有名どころですと「スッキリわかる」シリーズがありますが、逆にこちらは内容がすっきりまとめられすぎていて、ちょっと物足りなさを感じました。（あくまで立ち読みレベルの感想です）
 
-<yomereba-link item-title="スッキリわかる 日商簿記2級 商業簿記" img-file-name="sboki2_500x500.png" author-name="滝澤 ななみ" amazon-item-id="4813296130" rakuten-item-id="16606082"></yomereba-link>
+<app-yomereba-link item-title="スッキリわかる 日商簿記2級 商業簿記" img-file-name="sboki2_500x500.png" author-name="滝澤 ななみ" amazon-item-id="4813296130" rakuten-item-id="16606082"></app-yomereba-link>
 
 商業簿記編を読破したら、工業簿記編も復習用に購入しようと考えています。もしもこれから簿記試験の受検を視野に入れている方は、選択肢の１つに入れてみてください。

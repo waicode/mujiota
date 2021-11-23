@@ -22,6 +22,6 @@ tags:
 
 器具はいろいろありますが、私はAmazonで買いました。お値段1000円強。値段の割には丈夫にしっかり作られていたので満足しています。
 
-<kaereba-link item-title="XYSTUS(ジスタス) スリムトレーナーTR 腹筋ローラー" img-file-name="xystus_tr_500x500.png" shop-name="トーエイライト" amazon-item-id="B077XDR8ZT" rakuten-item-id="" search-keyword="XYSTUS スリムトレーナー"></kaereba-link>
+<app-kaereba-link item-title="XYSTUS(ジスタス) スリムトレーナーTR 腹筋ローラー" img-file-name="xystus_tr_500x500.png" shop-name="トーエイライト" amazon-item-id="B077XDR8ZT" rakuten-item-id="" search-keyword="XYSTUS スリムトレーナー"></app-kaereba-link>
 
 腹筋ローラーは、正しい姿勢で行うと腹筋以外の部分もかなり疲れます。まさに「全身運動」です。だからこそ、誤った姿勢で使い続けると、高確率で体を痛めてしまいます。正しく使えば、お金と時間含めて非常に投資対効果の高い器具だと思います。正しい知識で使い続けて、目指せ割れた腹筋。

@@ -76,7 +76,7 @@
         </div>
       </template>
     </div>
-    <SideBarRecommendAd />
+    <AppSideBarRecommendAd />
   </div>
 </template>
 <script>

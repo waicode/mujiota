@@ -13,7 +13,7 @@ tags:
 
 ぐるぐにゃ、っとした完成品はこちら。
 
-<photo-image article-id="149" img-file-name="mamehiko_coffee_grgr.jpg" caption="マメヒコの春煎りコーヒー（ぐるぐにゃ）"></photo-image>
+<app-photo-image article-id="149" img-file-name="mamehiko_coffee_grgr.jpg" caption="マメヒコの春煎りコーヒー（ぐるぐにゃ）"></app-photo-image>
 
 iPhoneアプリ<strong>「Tiny Planets」</strong>がこの写真加工の肝。最後に「Monotori Camera」でズームされたように見えるぼやかし効果を入れてます。
 

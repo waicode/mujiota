@@ -15,17 +15,17 @@ SDカードやらオンラインストレージやらのおかげで、最近は
 
 Suicaも入れてるキーケースに入れる事を検討していたら、ピッタリのUSBメモリを発見。
 
-<related-link id="21"></related-link>
+<app-related-link id="21"></app-related-link>
 
 キーケースに入れると、まるで鍵。
 
-<photo-image article-id="337" img-file-name="20110907_keyusb_2.jpg" caption="キーケースに入れると、まるで鍵"></photo-image>
+<app-photo-image article-id="337" img-file-name="20110907_keyusb_2.jpg" caption="キーケースに入れると、まるで鍵"></app-photo-image>
 
 間違えて家のドアを開ける事がないのか？と言えば、手で触れると質感でなんとなく「USBメモリ」であると分かります。
 
 鍵の形は、いくつか選べます。
 
-<capture-image article-id="337" img-file-name="a1931ea2a6956370cc7c7ac78a3061af.jpg" caption="色々な鍵型USB"></capture-image>
+<app-capture-image article-id="337" img-file-name="a1931ea2a6956370cc7c7ac78a3061af.jpg" caption="色々な鍵型USB"></app-capture-image>
 
 LaCieからは他にも「コイン型USBメモリ」が発売されており、こちらもなかなか粋な仕様です。財布に入れて持ち歩くなら、間違いなくこちらをチョイスしていたと思います。
 

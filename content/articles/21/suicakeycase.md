@@ -19,7 +19,7 @@ tags:
 
 そんな中で、持ってるポーターのキーケースにSuicaを試しにいれてみたら、すっぽりと収まる事を発見。
 
-<PhotoImage article-id="21" img-file-name="suica_keycase.jpg" caption="Suicaをキーケースに入れてみた"></PhotoImage>
+<app-photo-image article-id="21" img-file-name="suica_keycase.jpg" caption="Suicaをキーケースに入れてみた"></app-photo-image>
 
 キーケースだけどカードも入るサイズに設計されていて、ぴったり。持ち運びやすく、それでいて改札でポケットから出してピッとするにも使いやすく、このままキーケースとカードケースの組み合わせでしっくり来そうな予感です。
 

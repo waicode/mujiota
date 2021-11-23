@@ -3,7 +3,7 @@
     <a :href="link" target="_blank" rel="nofollow">
       <div class="columns wrap">
         <div class="link-image column is-3-desktop is-5-tablet is-12-mobile">
-          <AssetsImage v-if="imgFileName" :path="assetsImagePath" />
+          <AppAssetsImage v-if="imgFileName" :path="assetsImagePath" />
         </div>
         <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
           <div class="link-title">{{ title }}</div>
