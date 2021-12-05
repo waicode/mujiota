@@ -33,14 +33,21 @@
   </div>
 </template>
 <script>
-export default {
-  computed: {
-    tags() {
-      const article = this.$store.state.page.article
+import { defineComponent, computed, useContext } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  name: 'AppSideBarRecommendAd',
+  setup() {
+    const { store } = useContext()
+    const tags = computed(() => {
+      const article = store.state.page.article
       return !article || !Object.keys(article).length ? [] : article.tags
-    },
+    })
+    return {
+      tags,
+    }
   },
-}
+})
 </script>
 <style lang="scss">
 .ad-banner {
