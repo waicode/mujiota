@@ -50,12 +50,14 @@
   </div>
 </template>
 <script>
+import { computed, defineComponent } from '@vue/composition-api'
+
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
 import ShareIconFacebook from '@/assets/images/shared/icon/share_icon_facebook_17.5x17.5.svg'
 import ShareIconPocket from '@/assets/images/shared/icon/share_icon_pocket_17.5x15.625.svg'
 
-export default {
+export default defineComponent({
   components: {
     ShareIconHatena,
     ShareIconTwitter,
@@ -88,27 +90,33 @@ export default {
       default: 0,
     },
   },
-  computed: {
-    shareUrlHatena() {
-      return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.pageUrl}&title=${this.title}`
-    },
-    shareUrlTwitter() {
-      return `https://twitter.com/intent/tweet?url=${this.pageUrl}&text=${this.title}`
-    },
-    shareUrlFacebook() {
-      return `https://www.facebook.com/sharer/sharer.php?u=${this.pageUrl}&t=${this.title}`
-    },
-    shareUrlPocket() {
-      return `http://getpocket.com/edit?url=${this.pageUrl}`
-    },
+  setup(props) {
+    const shareUrlHatena = computed(
+      () =>
+        `http://b.hatena.ne.jp/add?mode=confirm&url=${props.pageUrl}&title=${props.title}`
+    )
+    const shareUrlTwitter = computed(
+      () =>
+        `https://twitter.com/intent/tweet?url=${props.pageUrl}&text=${props.title}`
+    )
+    const shareUrlFacebook = computed(
+      () =>
+        `https://www.facebook.com/sharer/sharer.php?u=${props.pageUrl}&t=${props.title}`
+    )
+    const shareUrlPocket = computed(
+      () => `http://getpocket.com/edit?url=${props.pageUrl}`
+    )
+
+    return {
+      shareUrlHatena,
+      shareUrlTwitter,
+      shareUrlFacebook,
+      shareUrlPocket,
+    }
   },
-  methods: {
-    count() {
-      return {}
-    },
-  },
-}
+})
 </script>
+
 <style lang="scss" scoped>
 .share-top {
   display: flex;
