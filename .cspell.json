@@ -1,5 +1,16 @@
 {
-  "cSpell.words": [
+  "version": "0.2",
+  "language": "en",
+  "allowCompoundWords": true,
+  "enableFiletypes": ["vue"],
+  "languageSettings": [
+    {
+      "languageId": "vue",
+      "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
+    }
+  ],
+
+  "words": [
     "ADSENSE",
     "ateliersulphurpool",
     "blogos",
@@ -35,5 +46,16 @@
     "twitter",
     "Uacct",
     "vercel"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    ".devcontainer",
+    ".git",
+    "node_modules",
+    "package.json",
+    "yarn.lock",
+    ".history",
+    "dist",
+    ".cspell.json"
   ]
 }
