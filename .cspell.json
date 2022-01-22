@@ -1,0 +1,61 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "allowCompoundWords": true,
+  "enableFiletypes": ["vue"],
+  "languageSettings": [
+    {
+      "languageId": "vue",
+      "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
+    }
+  ],
+
+  "words": [
+    "ADSENSE",
+    "ateliersulphurpool",
+    "blogos",
+    "BRAVIA",
+    "buefy",
+    "bulma",
+    "Chromecast",
+    "composables",
+    "firestore",
+    "fontawesome",
+    "fortawesome",
+    "fullhd",
+    "gtag",
+    "Hatena",
+    "Kaku",
+    "lifehack",
+    "mercari",
+    "muji",
+    "mujiota",
+    "Nespresso",
+    "noindex",
+    "notyet",
+    "nuxt",
+    "nuxtjs",
+    "prismjs",
+    "Quattro",
+    "rakuten",
+    "rehype",
+    "satofull",
+    "stylelint",
+    "trdr",
+    "Tweetable",
+    "twitter",
+    "Uacct",
+    "vercel"
+  ],
+  "ignorePaths": [
+    ".vscode",
+    ".devcontainer",
+    ".git",
+    "node_modules",
+    "package.json",
+    "yarn.lock",
+    ".history",
+    "dist",
+    ".cspell.json"
+  ]
+}
