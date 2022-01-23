@@ -3,8 +3,7 @@ module.exports = {
     'stylelint-scss',
     'stylelint-declaration-block-no-ignored-properties', // 効果のないプロパティを検出
     'stylelint-declaration-strict-value', // リテラル値の直接指定を禁止
-    // TODO: stylelint-no-unsupported-browser-featuresのpostcssが8.4.5になってしまう不具合があり除外、追って確認
-    // 'stylelint-no-unsupported-browser-features', // ブラウザ非対応プロパティを検出
+    'stylelint-no-unsupported-browser-features', // ブラウザ非対応プロパティを検出
     'stylelint-order', // ソート指定
   ],
 
@@ -22,6 +21,7 @@ module.exports = {
     'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
     // 効果のないプロパティを検出
     'plugin/declaration-block-no-ignored-properties': true,
+    // TODO: stylelint-no-unsupported-browser-featuresのpostcssが8.4.5になってしまう不具合があり除外、追って確認
     // .browserlistrcに従い非対応を除いたブラウザ別のlint対応
     // 'plugin/no-unsupported-browser-features': [
     //   true,
