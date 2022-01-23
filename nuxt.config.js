@@ -32,6 +32,15 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
 
+  typescript: {
+    // ファイル保存時にコードの型チェックとlintの両方を実施
+    typeCheck: {
+      eslint: {
+        files: './**/*.{ts,vue}',
+      },
+    },
+  },
+
   styleResources: {
     scss: ['~assets/css/main.scss'],
   },
@@ -57,7 +66,12 @@ export default {
   build: {},
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/composition-api/module'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/composition-api/module',
+    '@nuxt/typescript-build',
+    '@nuxtjs/stylelint-module',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

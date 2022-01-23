@@ -125,24 +125,27 @@ $circle-alpha-color: rgba(111, 73, 82, 0.28);
 }
 
 a.topnav-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   background-color: transparent;
   border: 2px solid $circle-alpha-color;
   border-radius: 50%;
+
   svg {
     fill: $logo-alpha-color;
   }
+
   &.ontop {
     border: 2px solid $circle-color;
     svg {
       fill: $logo-color;
     }
   }
+
   &.icon-serch {
     svg {
       position: relative;
@@ -150,6 +153,7 @@ a.topnav-icon {
       height: 24px;
     }
   }
+
   &.icon-sitemap {
     svg {
       position: relative;
@@ -196,10 +200,10 @@ a.topnav-icon {
     background-image: none;
   }
   &::after {
-    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
+    content: '';
     background-image: linear-gradient(
       160deg,
       rgba(224, 224, 224, 0.85),

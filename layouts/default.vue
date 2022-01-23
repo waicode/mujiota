@@ -26,6 +26,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 $bg-secondary-color: #fafafa;
+
 .wrapper {
   padding: 32px 12px;
   background-color: $bg-secondary-color;
