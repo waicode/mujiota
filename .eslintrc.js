@@ -1,19 +1,20 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
     node: true,
-  },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false,
+    es2021: true,
   },
   extends: [
-    '@nuxtjs',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
+    "plugin:vue/vue3-recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:nuxt/recommended",
   ],
-  plugins: [],
-  // add your custom rules here
+  parserOptions: {
+    parser: "@typescript-eslint/parser",
+    sourceType: "module",
+    project: "./tsconfig.eslint.json",
+  },
+  plugins: ["vue", "@typescript-eslint", "import"],
   rules: {},
-}
+};

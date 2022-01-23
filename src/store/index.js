@@ -1,5 +1,5 @@
 import { collection, getDocs } from 'firebase/firestore/lite'
-import { db } from '~/plugins/firebase.js'
+import { db } from '~~/src/plugins/firebase.js'
 
 export const state = () => ({
   initialized: false,
