@@ -62,13 +62,13 @@ export default {
   margin: 1.8em 0;
   a {
     .wrap {
+      padding: 0.25rem;
       color: #333;
+      text-decoration: none;
       background: #fff;
       border: 1px solid #eee;
-      box-shadow: 0 0 1px #efefef;
-      text-decoration: none;
-      padding: 0.25rem;
       border-radius: 2px;
+      box-shadow: 0 0 1px #efefef;
       transition: 0.3s ease-in-out;
       &:hover {
         color: #666;
@@ -76,28 +76,28 @@ export default {
       }
       .link-image {
         img {
+          vertical-align: top;
           border: 1px solid #e0e0e0;
           box-shadow: 0 0 1px #eee;
-          vertical-align: top;
         }
       }
       .link-info {
         .link-title {
-          font-weight: bold;
           margin-bottom: 8px;
+          font-weight: bold;
           &::before {
-            content: '関連リンク';
+            position: relative;
+            top: -2px;
+            display: inline-block;
+            width: 6em;
+            padding: 0.2em;
+            margin-right: 0.5em;
             font-size: 0.7em;
             font-weight: bold;
             color: #fff;
-            width: 6em;
-            display: inline-block;
-            position: relative;
-            top: -2px;
             text-align: center;
-            margin-right: 0.5em;
+            content: '関連リンク';
             background: #111;
-            padding: 0.2em;
             border-radius: 2px;
           }
         }

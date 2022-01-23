@@ -28,12 +28,12 @@ export default {
 $bg-secondary-color: #fafafa;
 
 .wrapper {
-  padding: 32px 12px;
-  background-color: $bg-secondary-color;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   max-width: 1200px;
+  padding: 32px 12px;
   margin: 112px auto 96px;
+  background-color: $bg-secondary-color;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   @media (max-width: $desktop) {
     max-width: 96%;
   }

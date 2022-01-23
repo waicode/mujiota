@@ -51,9 +51,9 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .ad-banner {
+  padding: 4px;
   margin-top: 8px;
   margin-bottom: 12px;
-  padding: 4px;
   text-align: center;
   a {
     img {

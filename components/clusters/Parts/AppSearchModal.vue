@@ -88,6 +88,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+// モーダル背景
+.modal-background {
+  background-color: rgba(30, 30, 30, 0.6) !important;
+}
+
 .search-modal {
   .modal-card {
     width: auto;
@@ -100,8 +105,8 @@ export default {
       height: calc(100vh - 80px);
     }
     .modal-card-body {
-      overflow: scroll;
       padding: 36px;
+      overflow: scroll;
       @media (max-width: $tablet) {
         padding: 24px;
       }
@@ -112,9 +117,9 @@ export default {
         }
       }
       .close-button {
-        color: #757575;
         display: block;
         margin: 0 0 0 auto;
+        color: #757575;
       }
       @media (max-width: $tablet) {
         .close-button {
@@ -125,13 +130,13 @@ export default {
     }
   }
   .notfound {
-    min-height: 120px;
     width: 905px;
+    min-height: 120px;
     .post-title {
+      padding: 12px;
+      margin-top: 8px;
       font-size: 1.24rem;
       color: $text;
-      margin-top: 8px;
-      padding: 12px;
     }
   }
 }

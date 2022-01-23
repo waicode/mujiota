@@ -43,14 +43,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer {
+  margin-top: 48px;
   color: #fff;
   background-color: #424242 !important;
-  margin-top: 48px;
 
   .social-icons {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 32px 48px;
     ul {
       display: flex;

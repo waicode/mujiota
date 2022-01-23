@@ -107,13 +107,13 @@ export default {
 <style lang="scss" scoped>
 .kaerebalink {
   .wrap {
-    margin: 0 0 2rem;
+    box-sizing: border-box;
     padding: 0.64rem;
+    margin: 0 0 2rem;
     background: #fff;
     border: 1px solid;
     border-color: #eaeaea #ddd #d0d0d0;
     border-radius: 3px;
-    box-sizing: border-box;
     .link-image {
       align-items: center;
       padding: 16px;
@@ -123,9 +123,9 @@ export default {
     }
     .link-info {
       .link-title {
+        margin: 0.2rem 0 0.8rem;
         font-size: 1.0625rem;
         font-weight: bold;
-        margin: 0.2rem 0 0.8rem;
         a {
           color: $text;
         }
@@ -135,51 +135,50 @@ export default {
       }
       .link-seach-links {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
         .seach-link {
           flex: 1;
-          padding: 4px;
           min-width: 148px;
+          padding: 4px;
           @media (max-width: $desktop) {
             width: 100%;
-            padding: 0;
             min-width: 100%;
+            padding: 0;
           }
           a {
             display: block;
             width: 100%;
             padding: 1em;
+            margin: 0 auto 0.6rem;
             font-size: 0.84rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
             @media (max-width: $desktop) {
               font-size: 0.9rem;
             }
-
-            font-weight: bold;
-            text-align: center;
-            border-radius: 4px;
-            margin: 0 auto 0.6rem;
-            color: #fff;
             svg {
               width: 1.2rem;
               height: 1.2rem;
-              fill: #fff;
               vertical-align: middle;
+              fill: #fff;
             }
           }
         }
         .shoplink-rakuten a {
-          border: 2px solid #ef5350;
           background-color: #ef5350;
+          border: 2px solid #ef5350;
         }
         .shoplink-amazon a {
-          border: 2px solid #ff9800;
           background-color: #ff9800;
+          border: 2px solid #ff9800;
         }
         .shoplink-yahoo {
           a {
-            border: 2px solid #2196f3;
             background-color: #2196f3;
+            border: 2px solid #2196f3;
           }
           img {
             display: none;

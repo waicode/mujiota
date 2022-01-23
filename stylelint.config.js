@@ -45,14 +45,16 @@ module.exports = {
         'font-size',
         'font-weight',
         'border-radius',
-        '/^margin.*',
-        '/^padding.*',
+        '/^margin.*/',
+        '/margin/',
+        '/^padding.*/',
+        '/padding/',
       ],
       {
         // 以下のリテラル値のみ許可
         ignoreValues: {
           'font-size': 0,
-          '/color$/': ['inherit', 'currentColor'],
+          '/color$/': ['inherit', 'currentColor', 'transparent'],
         },
         disableFix: true, // 自動補正はしない
       },

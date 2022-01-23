@@ -79,45 +79,44 @@ export default {
 .archive {
   .wrap {
     .eyecatch {
+      height: auto;
       padding: 32px;
       @media (max-width: $desktop) {
         padding: 12px;
       }
-
-      height: auto;
       img {
-        vertical-align: top;
         height: auto;
         max-height: 100%;
+        vertical-align: top;
         border-radius: 2px;
       }
     }
     .contents {
       min-height: 172px;
       .post-title {
+        margin-bottom: 8px;
         font-size: 1.24rem;
         font-weight: bold;
         color: $text;
-        margin-bottom: 8px;
       }
       .description {
+        margin-bottom: 12px;
         font-size: 0.86rem;
         color: $text;
-        margin-bottom: 12px;
       }
       .meta-wrap {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 8px;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
         color: $text;
         .date {
           display: flex;
           flex-wrap: nowrap;
-          font-size: 0.8rem;
           padding: 4px;
           padding-right: 0;
+          font-size: 0.8rem;
           .date-published {
             margin-right: 12px;
           }

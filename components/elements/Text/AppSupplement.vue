@@ -38,18 +38,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .supplement {
-  background: rgba(255, 249, 196, 0.6);
-  font-size: 0.92rem;
   padding: 1rem;
   margin: 1.5rem 0 2rem;
-  border-radius: 4px;
+  font-size: 0.92rem;
+  background: rgba(255, 249, 196, 0.6);
   border: 1px solid #ededed;
+  border-radius: 4px;
   &.warning {
     background: rgba(255, 205, 210, 0.6);
   }
   .title {
-    font-size: 0.92rem;
     margin-bottom: 8px;
+    font-size: 0.92rem;
     svg {
       width: 0.92rem;
       height: 0.92rem;

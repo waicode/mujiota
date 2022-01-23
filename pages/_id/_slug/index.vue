@@ -161,24 +161,24 @@ export default defineComponent({
 <style lang="scss">
 .post {
   h1.page-title {
-    font-weight: bold;
-    font-size: 1.28rem;
-    margin-bottom: 0.4rem;
     margin-top: -16px;
+    margin-bottom: 0.4rem;
+    font-size: 1.28rem;
+    font-weight: bold;
   }
   .meta-wrap {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 8px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
     color: $text;
     .date {
       display: flex;
       flex-wrap: nowrap;
-      font-size: 0.8rem;
       padding: 4px;
       padding-right: 0;
+      font-size: 0.8rem;
       .date-published {
         margin-right: 12px;
       }
@@ -216,18 +216,18 @@ export default defineComponent({
     }
     h2 {
       position: relative;
+      padding-bottom: 16px;
       margin-top: 96px;
       margin-bottom: 40px;
-      padding-bottom: 16px;
       font-size: 1.4rem;
       font-weight: bold;
       &::after {
-        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 8px;
+        content: '';
         background-image: repeating-linear-gradient(
           45deg,
           #e0e0e0 0,
@@ -245,18 +245,18 @@ export default defineComponent({
     }
     h3 {
       position: relative;
+      padding-left: 24px;
       margin-top: 64px;
       margin-bottom: 28px;
-      padding-left: 24px;
       font-size: 1.3rem;
       font-weight: bold;
       &::after {
-        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 6px;
         height: 100%;
+        content: '';
         background-color: #e0e0e0;
       }
       a {
@@ -267,18 +267,18 @@ export default defineComponent({
     }
     h4 {
       position: relative;
+      padding-left: 24px;
       margin-top: 40px;
       margin-bottom: 24px;
-      padding-left: 24px;
       font-size: 1.2rem;
       font-weight: bold;
       &::after {
-        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 6px;
         height: 100%;
+        content: '';
         background-image: repeating-linear-gradient(
           #999,
           #999 1px,
@@ -293,9 +293,9 @@ export default defineComponent({
       }
     }
     h5 {
-      font-size: 1.1rem;
       margin-top: 32px;
       margin-bottom: 12px;
+      font-size: 1.1rem;
       font-weight: bold;
       line-height: 2em;
       letter-spacing: 1px;
@@ -311,53 +311,53 @@ export default defineComponent({
     ol,
     ul {
       padding: 0;
-      list-style-type: none;
       margin-bottom: 32px;
+      list-style-type: none;
     }
     ul li {
-      list-style: none;
       position: relative;
       padding-left: 2rem;
-      margin-left: 0.2rem;
       margin-bottom: 0.4rem;
+      margin-left: 0.2rem;
+      list-style: none;
       &::before {
-        content: ' ';
+        position: absolute;
+        top: 0.4rem;
+        left: 0.32rem;
+        display: block;
         width: 10px;
         height: 10px;
+        content: ' ';
         background: #3e3e3e;
-        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
-        display: block;
-        position: absolute;
         border-radius: 20%;
-        left: 0.32rem;
-        top: 0.4rem;
+        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
       }
     }
     ol li {
-      list-style: none;
       position: relative;
-      padding-left: 2rem;
       padding-top: 0.2rem;
       padding-bottom: 0.2rem;
-      margin-left: 0.4rem;
+      padding-left: 2rem;
       margin-bottom: 0.2rem;
+      margin-left: 0.4rem;
+      list-style: none;
       &::before {
-        background: #333;
-        counter-increment: number;
-        content: counter(number);
-        color: #fff;
+        position: absolute;
+        top: 0.28rem;
+        left: 0;
+        display: block;
         width: 1.3rem;
         height: 1.3rem;
+        font-family: 'Lato', sans-serif;
         font-size: 0.7em;
         font-weight: bold;
-        font-family: 'Lato', sans-serif;
-        display: block;
-        text-align: center;
         line-height: 1.4rem;
+        color: #fff;
+        text-align: center;
+        content: counter(number);
+        counter-increment: number;
+        background: #333;
         border-radius: 50%;
-        position: absolute;
-        left: 0;
-        top: 0.28rem;
       }
     }
     strong {
@@ -365,31 +365,31 @@ export default defineComponent({
     }
     span.line {
       display: inline;
-      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
       padding-bottom: 0;
+      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
     }
 
     blockquote {
       position: relative;
-      padding: 10px 15px 10px 60px;
       box-sizing: border-box;
-      font-style: italic;
-      background: #efefef;
-      color: #555;
+      padding: 10px 15px 10px 60px;
       margin-bottom: 30px;
+      font-style: italic;
+      color: #555;
+      background: #efefef;
     }
 
     blockquote::before {
-      display: inline-block;
       position: absolute;
       top: 18px;
       left: 15px;
-      content: '\f10d';
+      display: inline-block;
       font-family: 'Font Awesome 5 Free';
-      color: #cfcfcf;
       font-size: 30px;
-      line-height: 1;
       font-weight: 900;
+      line-height: 1;
+      color: #cfcfcf;
+      content: '\f10d';
     }
 
     blockquote p {
@@ -400,9 +400,9 @@ export default defineComponent({
 
     blockquote cite {
       display: block;
-      text-align: right;
-      color: #888;
       font-size: 0.9em;
+      color: #888;
+      text-align: right;
     }
   }
 }

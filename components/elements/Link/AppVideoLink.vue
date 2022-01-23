@@ -28,26 +28,25 @@ export default {
 .video-link {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
   max-width: 640px;
+  padding: 2rem 0;
+  margin: 0 auto;
   @media (max-width: $tablet) {
     max-width: 100%;
   }
-
-  padding: 2rem 0;
 }
 .video {
   position: relative;
 }
 .video::before,
 .video::after {
-  content: '';
   position: absolute;
-  transform: rotate(-35deg);
+  z-index: 1;
   width: 70px;
   height: 25px;
+  content: '';
   background-color: #fafafa;
-  z-index: 1;
+  transform: rotate(-35deg);
 }
 .video::before {
   top: -10px;
@@ -55,8 +54,8 @@ export default {
   border-bottom: 1px solid #cfd8dc;
 }
 .video::after {
-  bottom: -10px;
   right: -25px;
+  bottom: -10px;
   border-top: 1px solid #cfd8dc;
 }
 </style>

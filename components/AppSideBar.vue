@@ -113,8 +113,8 @@ $side-bar-link-color: #726c6c;
   .ad-side-top {
     width: 250px;
     height: 250px;
-    background-color: $ad-bg-color;
     margin: 0 auto 40px;
+    background-color: $ad-bg-color;
   }
   h2 {
     margin-bottom: 16px;
@@ -132,10 +132,10 @@ $side-bar-link-color: #726c6c;
         border-bottom: 1px solid #e0e0e0;
       }
       a {
-        text-decoration: none;
         display: block;
         padding: 1em;
         color: $side-bar-link-color;
+        text-decoration: none;
         h3 {
           font-size: 0.8175rem;
           font-weight: bold;
@@ -156,16 +156,16 @@ $side-bar-link-color: #726c6c;
     }
     .text-content {
       padding: 4px;
-      line-height: 1.6;
       margin-bottom: 4px;
+      line-height: 1.6;
     }
     h3.text-content {
       margin-bottom: 2px;
     }
     .text-link-more {
+      font-size: 0.76rem;
       text-align: right;
       text-decoration: underline;
-      font-size: 0.76rem;
       a {
         color: $side-bar-link-color;
       }
@@ -176,9 +176,9 @@ $side-bar-link-color: #726c6c;
   }
   .ad-side-bottom {
     display: block;
-    margin: 40px auto;
     width: 250px;
     height: 500px;
+    margin: 40px auto;
     background-color: $ad-bg-color;
   }
 }

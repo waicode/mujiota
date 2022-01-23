@@ -47,14 +47,14 @@ export default {
 
 #page-top {
   .wrap {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
     position: fixed;
     right: 20px;
     bottom: 16px;
-    opacity: 60%;
+    width: 80px;
+    height: 80px;
     background-color: #424242;
+    border-radius: 40px;
+    opacity: 60%;
     :focus,
     :hover {
       cursor: pointer;
@@ -65,34 +65,34 @@ export default {
       width: 80px;
       height: 80px;
       text-decoration: none;
-      border: none;
       background-color: transparent;
+      border: none;
       &::before {
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        content: '\f102';
-        font-size: 24px;
-        color: #fff;
         position: absolute;
+        top: -28px;
+        right: 0;
+        bottom: 0;
+        left: 0;
         width: 24px;
         height: 24px;
-        top: -28px;
-        bottom: 0;
-        right: 0;
-        left: 0;
         margin: auto;
+        font-family: 'Font Awesome 5 Free';
+        font-size: 24px;
+        font-weight: 900;
+        color: #fff;
+        content: '\f102';
       }
       &::after {
-        content: 'PAGE TOP';
-        font-size: 10px;
         position: absolute;
         top: 45px;
-        bottom: 0;
         right: 0;
+        bottom: 0;
         left: 0;
         margin: auto;
-        text-align: center;
+        font-size: 10px;
         color: #fff;
+        text-align: center;
+        content: 'PAGE TOP';
       }
     }
   }

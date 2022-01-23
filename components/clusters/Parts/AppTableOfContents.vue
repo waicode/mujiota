@@ -32,9 +32,9 @@ export default {
 .toc {
   width: 80%;
   min-width: 88%;
+  padding: 1em 2em;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 1em 2em;
   background: rgba(250, 250, 250, 0.2);
   border: 1px solid #eee;
   box-shadow: 0 0 2px #efefef;
@@ -45,12 +45,12 @@ export default {
     font-size: 0.96rem;
     li {
       &::before {
-        content: ' ';
+        top: 0;
+        left: 0;
+        display: block;
         width: 0;
         height: 0;
-        display: block;
-        left: 0;
-        top: 0;
+        content: ' ';
       }
       a {
         padding-top: 0.56rem;
@@ -67,8 +67,8 @@ export default {
       font-size: 0.96rem;
     }
     .toc3 {
-      font-size: 0.92rem;
       padding-left: 8px;
+      font-size: 0.92rem;
     }
   }
 }

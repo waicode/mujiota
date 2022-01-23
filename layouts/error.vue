@@ -20,18 +20,18 @@ export default {
 <style lang="scss" scoped>
 h2 {
   position: relative;
+  padding-bottom: 16px;
   margin-top: 0;
   margin-bottom: 40px;
-  padding-bottom: 16px;
   font-size: 1.4rem;
   font-weight: bold;
   &::after {
-    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 8px;
+    content: '';
     background-image: repeating-linear-gradient(
       45deg,
       #e0e0e0 0,

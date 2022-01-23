@@ -1,6 +1,32 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+/**
+ * 共通変数
+ */
+
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+$scale4: 4px;
+$scale8: 8px;
+$scale12: 12px;
+$scale16: 16px;
+$scale20: 20px;
+$scale24: 24px;
+$scale28: 28px;
+$scale32: 32px;
+$scale36: 36px;
+$scale40: 40px;
+
+$black-color: #333;
+$gray-color: #eee;
+
+/**
+ * bulmaのカスタマイズ
+ * https://bulma.io/documentation/customize/variables/
+ */
+
 // モバイルのブレイクポイントを追加
 $mobile: 370px;
 
@@ -9,10 +35,10 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // 背景色を灰色に
-$body-background-color: #eee;
+$body-background-color: $gray-color;
 
 // テキストカラーを変更
-$text: #333;
+$text: $black-color;
 
 // フォントを変更
 $family-primary: 'Montserrat', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
@@ -24,58 +50,12 @@ $navbar-background-color: transparent;
 // 行の高さを日本語用に少し高く
 $body-line-height: 1.61;
 
-// ナビバー
-$navbar-breakpoint: 0;
-$navbar-burger-color: transparent;
-.navbar {
-  padding-top: 20px;
-}
-.navbar-brand {
-  padding: 24px 28px 20px;
-  @media (max-width: $desktop) {
-    padding: 28px 28px 20px;
-  }
-  @media (max-width: $tablet) {
-    padding: 32px 24px 20px;
-  }
-}
-.navbar-end {
-  .navbar-item {
-    padding: 24px;
-  }
-}
-.navbar-menu {
-  background-color: transparent;
-  box-shadow: none;
-}
-
 // ページネーション
 $pagination-current-background-color: #424242;
 $pagination-color: #757575;
 
-// ドロップダウン
-$dropbox-text-color: #757575;
-.dropdown {
-  width: 100%;
-  .dropdown-text {
-    font-size: 0.8175rem;
-    font-weight: bold;
-    color: $dropbox-text-color;
-  }
-  svg.fa-angle-down {
-    color: #bdbdbd;
-  }
-  .dropdown-trigger,
-  .dropdown-menu,
-  button {
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
-// モーダル背景
-.modal-background {
-  background-color: rgba(30, 30, 30, 0.6) !important;
-}
+// ナビバー
+$navbar-breakpoint: 0;
+$navbar-burger-color: transparent;
 
 @import '~bulma';

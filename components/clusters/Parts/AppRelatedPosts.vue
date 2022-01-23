@@ -64,21 +64,20 @@ export default {
 <style lang="scss" scoped>
 .related-title {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 28px;
   font-size: 1.68rem;
+  font-weight: bold;
+  text-align: center;
   @media (max-width: $tablet) {
     font-size: 1.32rem;
   }
-
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 28px;
   &::before,
   &::after {
-    content: '';
     width: 2px;
     height: 1.68rem;
+    content: '';
     background-color: $text;
   }
   &::before {
@@ -96,29 +95,29 @@ export default {
   }
   .wrap {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     .eyecatch {
       display: block;
-      padding: 0.8rem 0;
       width: 28%;
       height: auto;
+      padding: 0.8rem 0;
       img {
         vertical-align: top;
       }
     }
     .post-contents {
       display: flex;
-      padding: 0.8rem 0;
-      width: 68%;
-      height: auto;
       flex-flow: column nowrap;
       justify-content: flex-start;
+      width: 68%;
+      height: auto;
       min-height: 132px;
+      padding: 0.8rem 0;
       .post-title {
+        margin-bottom: 8px;
         font-size: 1.04rem;
         font-weight: bold;
-        margin-bottom: 8px;
         color: $text;
       }
       .post-description {
@@ -131,8 +130,8 @@ export default {
         color: $text;
         .post-date {
           display: flex;
-          font-size: 0.8rem;
           padding-top: 8px;
+          font-size: 0.8rem;
           .date-published {
             margin-right: 12px;
           }

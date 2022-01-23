@@ -102,10 +102,10 @@ ul {
     a {
       display: inline-block;
       padding: 0.16rem;
-      line-height: 1.6rem;
       margin-left: 0.2rem;
       font-size: 0.8175rem;
       font-weight: bold;
+      line-height: 1.6rem;
       color: #726c6c;
       text-decoration: none;
     }

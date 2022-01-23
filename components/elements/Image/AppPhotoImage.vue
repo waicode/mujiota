@@ -36,30 +36,30 @@ export default {
   justify-content: center;
 }
 .photo {
-  max-width: 60%;
   position: relative;
+  max-width: 60%;
   img {
-    box-shadow: 0 2px 4px rgba(67, 133, 187, 0.07);
     vertical-align: top;
-    border-radius: 8px;
     filter: sepia(0.25) contrast(1.1) brightness(1.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(67, 133, 187, 0.07);
 
     &::before {
-      background: rgba(230, 193, 61, 0.1);
       content: '';
+      background: rgba(230, 193, 61, 0.1);
       mix-blend-mode: lighten;
     }
   }
 }
 .photo::before,
 .photo::after {
-  content: '';
   position: absolute;
-  transform: rotate(-35deg);
+  z-index: 1;
   width: 70px;
   height: 25px;
+  content: '';
   background-color: #fafafa;
-  z-index: 1;
+  transform: rotate(-35deg);
 }
 
 .photo::before {
@@ -69,15 +69,15 @@ export default {
 }
 
 .photo::after {
-  bottom: -10px;
   right: -25px;
+  bottom: -10px;
   border-top: 1px solid #cfd8dc;
 }
 .caption {
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.88rem;
   padding-top: 24px;
   padding-bottom: 16px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: center;
 }
 </style>

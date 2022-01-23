@@ -130,21 +130,20 @@ export default defineComponent({
   margin-bottom: 80px;
   .share-title {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
     font-size: 1.68rem;
+    font-weight: bold;
+    text-align: center;
     @media (max-width: $tablet) {
       font-size: 1.32rem;
     }
-
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 28px;
     &::before,
     &::after {
-      content: '';
       width: 2px;
       height: 1.68rem;
+      content: '';
       background-color: $text;
     }
     &::before {
@@ -158,19 +157,19 @@ export default defineComponent({
   }
   .share-buttons {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     .share-item {
       width: 23%;
       a {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 56px;
-        color: #f2f2f2;
         font-weight: 700;
+        color: #f2f2f2;
         border-radius: 8px;
         transition: 0.3s;
       }

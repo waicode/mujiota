@@ -36,20 +36,21 @@ export default {
   justify-content: center;
 }
 .capture {
-  max-width: 60%;
   position: relative;
+  max-width: 60%;
   img {
     vertical-align: top;
   }
 }
 .capture::after {
-  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: calc(100% + 20px);
   height: calc(100% + 20px);
+  content: '';
+  border-style: solid;
+  border-width: 12px;
   border-image-source: repeating-linear-gradient(
     45deg,
     #e0e0e0,
@@ -59,14 +60,13 @@ export default {
   );
   border-image-slice: 20;
   border-image-repeat: round;
-  border-style: solid;
-  border-width: 12px;
+  transform: translate(-50%, -50%);
 }
 .caption {
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.88rem;
   padding-top: 24px;
   padding-bottom: 16px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: center;
 }
 </style>

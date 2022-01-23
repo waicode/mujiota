@@ -101,6 +101,29 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+// ナビバー
+.navbar {
+  padding-top: $scale20;
+}
+.navbar-brand {
+  padding: $scale24 $scale28 $scale20;
+  @media (max-width: $desktop) {
+    padding: $scale28 $scale28 $scale20;
+  }
+  @media (max-width: $tablet) {
+    padding: $scale32 $scale24 $scale20;
+  }
+}
+.navbar-end {
+  .navbar-item {
+    padding: $scale24;
+  }
+}
+.navbar-menu {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -157,8 +180,8 @@ a.topnav-icon {
   &.icon-sitemap {
     svg {
       position: relative;
-      width: 24px;
       top: -1px;
+      width: 24px;
     }
   }
   &.icon-email {
@@ -185,19 +208,19 @@ a.topnav-icon {
 .header-bg {
   position: absolute;
   top: 0;
+  z-index: -1;
   width: 100%;
   height: 40vh;
   overflow: hidden;
-  z-index: -1;
   &::before {
-    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    content: '';
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: none;
+    background-size: cover;
   }
   &::after {
     position: absolute;

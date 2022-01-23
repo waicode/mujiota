@@ -120,9 +120,9 @@ export default defineComponent({
 <style lang="scss" scoped>
 .share-top {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 40px;
   margin-bottom: 80px;
   > *:not(:last-child) {
@@ -145,13 +145,13 @@ export default defineComponent({
     }
     a {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      color: #f2f2f2;
       font-weight: 700;
+      color: #f2f2f2;
       border-radius: 34px;
       @media (max-width: $tablet) {
         border-radius: 24px;
