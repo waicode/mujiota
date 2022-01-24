@@ -1,18 +1,18 @@
 <template>
-  <footer class="footer">
-    <div class="social-icons">
+  <footer class="AppFooter">
+    <div class="AppFooter__SocialIcons">
       <ul>
-        <li class="icon-twitter">
+        <li class="AppFooter__TwitterIcon">
           <a href="https://twitter.com/waicode37" target="_blank">
             <TwitterIconSvg />
           </a>
         </li>
-        <li class="icon-github">
+        <li class="AppFooter__GithubIcon">
           <a href="https://github.com/waicode" target="_blank">
             <GithubIconSvg />
           </a>
         </li>
-        <!-- <li class="icon-email">
+        <!-- <li class="AppFooter__EmailIcon">
           <EmailIconSvg />
         </li> -->
       </ul>
@@ -28,7 +28,7 @@ import GithubIconSvg from '@/assets/images/shared/icon/iconmonstr-github-1.svg'
 // import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
 
 export default {
-  name: 'MujiotaFooter',
+  name: 'AppFooter',
   components: {
     TwitterIconSvg,
     GithubIconSvg,
@@ -42,77 +42,86 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.footer {
-  margin-top: 48px;
-  color: #fff;
-  background-color: #424242 !important;
+$footer-bg-color: #424242;
+$twitter-icon-color: #81d4fa;
+$github-icon-color: #9fa8da;
+$email-icon-color: #eee;
 
-  .social-icons {
+.AppFooter {
+  margin-top: $scale48;
+  color: $white-color;
+  background-color: $footer-bg-color !important;
+
+  &__SocialIcons {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px 48px;
+    padding: $scale32 $scale48;
     ul {
       display: flex;
       justify-content: center;
       list-style: none;
       li {
         &:not(:last-child) {
-          margin-right: 32px;
+          margin-right: $scale32;
         }
         svg {
-          fill: #fff;
-        }
-        &.icon-email {
-          a {
-            svg {
-              width: 48px;
-              height: 48px;
-            }
-            &:focus,
-            &:hover {
-              svg {
-                fill: #eee;
-              }
-            }
-          }
-        }
-        &.icon-github {
-          a {
-            svg {
-              width: 48px;
-              height: 48px;
-            }
-            &:focus,
-            &:hover {
-              svg {
-                fill: #9fa8da;
-              }
-            }
-          }
-        }
-        &.icon-twitter {
-          a {
-            svg {
-              width: 48px;
-              height: 48px;
-            }
-            &:focus,
-            &:hover {
-              svg {
-                fill: #81d4fa;
-              }
-            }
-          }
+          fill: $white-color;
         }
       }
     }
   }
+
+  &__TwitterIcon {
+    a {
+      svg {
+        width: $scale48;
+        height: $scale48;
+      }
+      &:focus,
+      &:hover {
+        svg {
+          fill: $twitter-icon-color;
+        }
+      }
+    }
+  }
+
+  &__GithubIcon {
+    a {
+      svg {
+        width: $scale48;
+        height: $scale48;
+      }
+      &:focus,
+      &:hover {
+        svg {
+          fill: $github-icon-color;
+        }
+      }
+    }
+  }
+
+  &__EmailIcon {
+    a {
+      svg {
+        width: $scale48;
+        height: $scale48;
+      }
+      &:focus,
+      &:hover {
+        svg {
+          fill: $email-icon-color;
+        }
+      }
+    }
+  }
+
   .copyright {
-    font-size: 1.8rem;
-    font-weight: 200;
+    font-size: $font-size-180rem;
+    font-weight: $font-weight-200;
     @media (max-width: $tablet) {
-      font-size: 1.2rem;
+      font-size: $font-size-120rem;
     }
   }
 }
