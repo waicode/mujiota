@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     'at-rule-no-unknown': null, // 未知のルールの使用許可があれば設定
     'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
+    'no-descending-specificity': null, // 詳細度が高いセレクタを先に書くことを許容
     // 効果のないプロパティを検出
     'plugin/declaration-block-no-ignored-properties': true,
     // TODO: stylelint-no-unsupported-browser-featuresのpostcssが8.4.5になってしまう不具合があり除外、追って確認

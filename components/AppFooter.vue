@@ -17,7 +17,7 @@
         </li> -->
       </ul>
     </div>
-    <div class="content has-text-centered copyright">
+    <div class="AppFooter__Copyright content has-text-centered">
       <p>© {{ thisYear }} mujiota.com</p>
     </div>
   </footer>
@@ -72,42 +72,18 @@ $email-icon-color: #eee;
     }
   }
 
-  &__TwitterIcon {
-    a {
-      svg {
-        width: $scale48;
-        height: $scale48;
-      }
-      &:focus,
-      &:hover {
-        svg {
-          fill: $twitter-icon-color;
-        }
-      }
-    }
-  }
-
-  &__GithubIcon {
-    a {
-      svg {
-        width: $scale48;
-        height: $scale48;
-      }
-      &:focus,
-      &:hover {
-        svg {
-          fill: $github-icon-color;
-        }
-      }
-    }
-  }
-
+  &__TwitterIcon,
+  &__GithugIcon,
   &__EmailIcon {
     a {
       svg {
         width: $scale48;
         height: $scale48;
       }
+    }
+  }
+  &__EmailIcon {
+    a {
       &:focus,
       &:hover {
         svg {
@@ -117,7 +93,29 @@ $email-icon-color: #eee;
     }
   }
 
-  .copyright {
+  &__GithubIcon {
+    a {
+      &:focus,
+      &:hover {
+        svg {
+          fill: $github-icon-color;
+        }
+      }
+    }
+  }
+
+  &__TwitterIcon {
+    a {
+      &:focus,
+      &:hover {
+        svg {
+          fill: $twitter-icon-color;
+        }
+      }
+    }
+  }
+
+  &__Copyright {
     font-size: $font-size-180rem;
     font-weight: $font-weight-200;
     @media (max-width: $tablet) {
