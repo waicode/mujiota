@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="header-bg"></div>
-    <div class="header">
+  <div class="AppHeader">
+    <div class="AppHeader__HeaderBg"></div>
+    <div class="AppHeader__Header">
       <b-navbar fixed-top transparent>
         <template #brand>
           <transition name="fade">
@@ -60,30 +60,26 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
+import { bemx } from '@/composables/util'
 
-export default {
-  name: 'MujiotaHeader',
+import { defineComponent, onMounted } from '@nuxtjs/composition-api'
+
+// TODO: 型エラーの解決から
+export default defineComponent({
+  name: 'AppHeader',
   components: {
     SearchIconSvg,
     SitemapIconSvg,
   },
-  data() {
-    return {
-      isComponentModalActive: false,
-      logoActive: true,
-      navBtnActive: true,
-      navBtnOnTop: true,
-      scroll: 0,
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.scrollWindow)
-  },
-  methods: {
-    scrollWindow() {
+
+  setup() {
+    onMounted(() => {
+      window.addEventListener('scroll', this.scrollWindow)
+    })
+    const scrollWindow = () => {
       const logoTop = 80 // ロゴを消したい位置
       const navBtnTop = 83 // ボタンを消したい位置
       const mobileMediaQuery = window.matchMedia('(max-width: 768px)') // < $tablet
@@ -96,11 +92,20 @@ export default {
         // モバイル以外は常に表示
         this.navBtnActive = true
       }
-    },
+    }
+    return {
+      isComponentModalActive: false,
+      logoActive: true,
+      navBtnActive: true,
+      navBtnOnTop: true,
+      scroll: 0,
+    }
   },
-}
+})
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
+.AppHeader {
+}
 // ナビバー
 .navbar {
   padding-top: $scale20;
