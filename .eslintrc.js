@@ -26,24 +26,22 @@ module.exports = {
   rules: {},
   overrides: [
     {
-      file: ['**/*.js'],
+      files: ['**/*.js'],
       extends: ['eslint-config-prettier'],
       rules: { ...commonRules },
     },
     {
-      file: ['**/*.ts', '**/*.d.ts'],
+      files: ['**/*.ts', '**/*.d.ts'],
       parser: '@typescript-eslint/parser',
       extends: [
         '@nuxtjs/eslint-config-typescript',
         'airbnb-typescript/base',
-        'plugin:typescript-eslint/recommended',
-        'plugin:typescript-eslint/recommended-requiring-type-checking',
         'eslint-config-prettier',
       ],
       rules: { ...commonRules },
     },
     {
-      file: ['**/*.vue'],
+      files: ['**/*.vue'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         parser: {
@@ -64,8 +62,6 @@ module.exports = {
         '@nuxtjs/eslint-config-typescript',
         'airbnb-typescript/base',
         'plugin:nuxt/recommended',
-        'plugin:typescript-eslint/recommended',
-        'plugin:typescript-eslint/recommended-requiring-type-checking',
         'eslint-config-prettier',
       ],
       rules: { ...commonRules },
