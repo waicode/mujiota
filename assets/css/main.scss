@@ -26,6 +26,7 @@ $border-width1: 1px;
 $border-width2: 2px;
 
 $border-radius2: 2px;
+$border-radius10: 10px;
 
 $scale4: 4px;
 $scale8: 8px;
@@ -39,16 +40,19 @@ $scale36: 36px;
 $scale40: 40px;
 $scale44: 44px;
 $scale48: 48px;
+$scale96: 64px;
+$scale96: 96px;
+$scale112: 112px;
 
 $black-color: #333;
 $gray-color: #eee;
 $white-color: #fff;
 
 $side-bar-link-color: #726c6c;
-
 $side-bar-separator-border-color: #e0e0e0;
-
 $ad-bg-color: #c5e1a5;
+$bg-secondary-color: #fafafa;
+$container-shadow-color: rgba(0, 0, 0, 0.1);
 
 /**
  * bulmaのカスタマイズ

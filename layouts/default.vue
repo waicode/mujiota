@@ -1,19 +1,23 @@
 <template>
   <div>
     <AppHeader />
-    <div class="wrapper">
-      <div class="columns">
-        <main class="main column is-9-desktop is-9-tablet is-12-mobile">
-          <div class="contents-wrapper">
+    <div class="Mujiota__Wrapper">
+      <div class="Mujiota__Columns">
+        <main
+          class="Mujiota__MainColumn column is-9-desktop is-9-tablet is-12-mobile"
+        >
+          <div>
             <Nuxt />
           </div>
         </main>
-        <aside class="sub column is-3-desktop is-3-tablet is-12-mobile">
-          <div class="contents-wrapper">
+        <aside
+          class="Mujiota__SubColumn column is-3-desktop is-3-tablet is-12-mobile"
+        >
+          <div>
             <AppSideBar />
           </div>
         </aside>
-        <AppReturnTopButton class="page-top-button"></AppReturnTopButton>
+        <AppReturnTopButton class="Mujiota__PageTopButton"></AppReturnTopButton>
       </div>
     </div>
     <AppFooter />
@@ -24,50 +28,51 @@ export default {
   name: 'MujiotaLayoutDefault',
 }
 </script>
-<style lang="scss" scoped>
-$bg-secondary-color: #fafafa;
-
-.wrapper {
-  max-width: 1200px;
-  padding: 32px 12px;
-  margin: 112px auto 96px;
-  background-color: $bg-secondary-color;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  @media (max-width: $desktop) {
-    max-width: 96%;
+<style lang="scss">
+$container-max-width: 1200px;
+.Mujiota {
+  &__Wrapper {
+    max-width: $container-max-width;
+    padding: $scale32 $scale12;
+    margin: $scale112 auto $scale96;
+    background-color: $bg-secondary-color;
+    border-radius: $border-radius10;
+    box-shadow: 0 0 20px $container-shadow-color;
+    @media (max-width: $desktop) {
+      max-width: 96%;
+    }
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      margin: $scale96 auto $scale64;
+    }
   }
-  @media (max-width: $tablet) {
-    max-width: 100%;
-    margin: 96px auto 64px;
-  }
-  .main {
-    .contents-wrapper {
+  &__MainColumn {
+    > div {
       // 左の余白をsub右余白と合わせる
-      padding: 8px 24px 8px 32px;
+      padding: $scale8 $scale24 $scale8 $scale32;
       @media (max-width: $tablet) {
         // モバイルは縦並び
-        padding: 8px 12px;
+        padding: $scale8 $scale12;
       }
     }
     @media (max-width: $tablet) {
-      padding: 8px 12px;
+      padding: $scale8 $scale12;
     }
   }
-  .sub {
-    .contents-wrapper {
+  &__SubColumn {
+    > div {
       // 右の余白をmain左余白と合わせる
-      padding: 4px 32px 4px 8px;
+      padding: $scale4 $scale32 $scale4 $scale8;
       @media (max-width: $tablet) {
         // モバイルは縦並び
-        padding: 8px 12px;
+        padding: $scale8 $scale12;
       }
     }
     @media (max-width: $tablet) {
-      padding: 8px 12px;
+      padding: $scale8 $scale12;
     }
   }
-  .page-top-button {
+  &__PageTopButton {
     @media (max-width: $tablet) {
       display: none;
     }
