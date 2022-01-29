@@ -41,7 +41,7 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 $footer-bg-color: #424242;
 $twitter-icon-color: #81d4fa;
 $github-icon-color: #9fa8da;

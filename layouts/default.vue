@@ -24,9 +24,15 @@
   </div>
 </template>
 <script lang="ts">
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+import AppHeader from '@/components/AppHeader.vue'
+import AppSideBar from '@/components/AppSideBar.vue'
+import AppFooter from '@/components/AppFooter.vue'
+
+export default defineComponent({
   name: 'MujiotaLayoutDefault',
-}
+  components: { AppHeader, AppSideBar, AppFooter },
+})
 </script>
 <style lang="scss">
 $container-max-width: 1200px;
