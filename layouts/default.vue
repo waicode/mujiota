@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Mujiota">
     <AppHeader />
     <div class="Mujiota__Wrapper">
       <div class="Mujiota__Columns">
@@ -25,13 +25,9 @@
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import AppHeader from '@/components/AppHeader.vue'
-import AppSideBar from '@/components/AppSideBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
 
 export default defineComponent({
   name: 'MujiotaLayoutDefault',
-  components: { AppHeader, AppSideBar, AppFooter },
 })
 </script>
 <style lang="scss">
