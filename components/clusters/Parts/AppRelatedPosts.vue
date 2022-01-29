@@ -66,32 +66,32 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 28px;
-  font-size: 1.68rem;
-  font-weight: bold;
+  padding-bottom: $scale28;
+  font-size: $font-size-168rem;
+  font-weight: $font-weight-700;
   text-align: center;
   @media (max-width: $tablet) {
-    font-size: 1.32rem;
+    font-size: $font-size-132rem;
   }
   &::before,
   &::after {
-    width: 2px;
-    height: 1.68rem;
+    width: $border-width2;
+    height: $font-size-168rem;
     content: '';
     background-color: $text;
   }
   &::before {
-    margin-right: 32px;
+    margin-right: $scale32;
     transform: rotate(-90deg);
   }
   &::after {
-    margin-left: 32px;
+    margin-left: $scale32;
     transform: rotate(90deg);
   }
 }
 .related-list {
   hr {
-    margin: 0.24rem 0;
+    margin: $scale4 0;
   }
   .wrap {
     display: flex;
@@ -101,7 +101,7 @@ export default {
       display: block;
       width: 28%;
       height: auto;
-      padding: 0.8rem 0;
+      padding: $scale8 0;
       img {
         vertical-align: top;
       }
@@ -113,15 +113,15 @@ export default {
       width: 68%;
       height: auto;
       min-height: 132px;
-      padding: 0.8rem 0;
+      padding: $scale8 0;
       .post-title {
-        margin-bottom: 8px;
-        font-size: 1.04rem;
-        font-weight: bold;
+        margin-bottom: $scale8;
+        font-size: $font-size-104rem;
+        font-weight: $font-weight-700;
         color: $text;
       }
       .post-description {
-        font-size: 0.92rem;
+        font-size: $font-size-092rem;
         color: $text;
       }
       .meta-wrap {
@@ -130,10 +130,10 @@ export default {
         color: $text;
         .post-date {
           display: flex;
-          padding-top: 8px;
-          font-size: 0.8rem;
+          padding-top: $scale8;
+          font-size: $font-size-081rem;
           .date-published {
-            margin-right: 12px;
+            margin-right: $scale12;
           }
         }
       }

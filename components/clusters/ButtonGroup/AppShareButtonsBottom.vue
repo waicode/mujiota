@@ -53,7 +53,7 @@
   </div>
 </template>
 <script>
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
@@ -126,32 +126,32 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .share-bottom {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: $scale80;
+  margin-bottom: $scale80;
   .share-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 28px;
-    font-size: 1.68rem;
-    font-weight: bold;
+    padding-bottom: $scale28;
+    font-size: $font-size-168rem;
+    font-weight: $font-weight-700;
     text-align: center;
     @media (max-width: $tablet) {
-      font-size: 1.32rem;
+      font-size: $font-size-131rem;
     }
     &::before,
     &::after {
-      width: 2px;
-      height: 1.68rem;
+      width: $border-width2;
+      height: $font-size-168rem;
       content: '';
       background-color: $text;
     }
     &::before {
-      margin-right: 32px;
+      margin-right: $scale32;
       transform: rotate(-35deg);
     }
     &::after {
-      margin-left: 32px;
+      margin-left: $scale32;
       transform: rotate(35deg);
     }
   }
@@ -167,10 +167,9 @@ export default defineComponent({
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 56px;
-        font-weight: 700;
-        color: #f2f2f2;
-        border-radius: 8px;
+        height: $scale56;
+        font-weight: $font-weight-700;
+        border-radius: $scale8;
         transition: 0.3s;
       }
       a:hover {
@@ -178,32 +177,32 @@ export default defineComponent({
       }
       &.hb {
         a {
-          background-color: #00a4de;
-          border: 3px solid #00a4de;
+          background-color: $share-hb-button-color;
+          border: $border-width3 solid $share-hb-button-color;
         }
       }
       &.tw {
         a {
-          background-color: #1da1f2;
-          border: 3px solid #1da1f2;
+          background-color: $share-tw-button-color;
+          border: $border-width3 solid $share-tw-button-color;
         }
       }
       &.fb {
         a {
-          background-color: #1877f2;
-          border: 3px solid #1877f2;
+          background-color: $share-fb-button-color;
+          border: $border-width3 solid $share-fb-button-color;
         }
       }
       &.pk {
         a {
-          background-color: #ee4056;
-          border: 3px solid #ee4056;
+          background-color: $share-pk-button-color;
+          border: $border-width3 solid $share-pk-button-color;
         }
       }
     }
     .share-count {
-      margin-top: 16px;
-      font-size: 1.1rem;
+      margin-top: $scale16;
+      font-size: $font-size-110rem;
       text-align: center;
     }
   }

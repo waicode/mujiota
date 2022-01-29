@@ -100,6 +100,7 @@ export default {
   generate: {
     interval: 2000,
     async routes() {
+      // eslint-disable-next-line global-require
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
 

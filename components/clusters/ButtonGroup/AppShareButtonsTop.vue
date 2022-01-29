@@ -50,7 +50,7 @@
   </div>
 </template>
 <script>
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
@@ -117,18 +117,18 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .share-top {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: $scale40;
+  margin-bottom: $scale80;
   > *:not(:last-child) {
-    margin-right: 40px;
+    margin-right: $scale40;
     @media (max-width: $tablet) {
-      margin-right: 28px;
+      margin-right: $scale28;
     }
   }
   .share-item {
@@ -150,11 +150,10 @@ export default defineComponent({
       justify-content: center;
       width: 100%;
       height: 100%;
-      font-weight: 700;
-      color: #f2f2f2;
-      border-radius: 34px;
+      font-weight: $font-weight-700;
+      border-radius: $border-radius34;
       @media (max-width: $tablet) {
-        border-radius: 24px;
+        border-radius: $border-radius24;
       }
     }
     &.hb {
@@ -162,8 +161,8 @@ export default defineComponent({
         transform: rotate(12deg);
       }
       a {
-        background-color: #00a4de;
-        border: 3px solid #00a4de;
+        background-color: $share-hb-button-color;
+        border: $border-width3 solid $share-hb-button-color;
       }
     }
     &.tw {
@@ -171,8 +170,8 @@ export default defineComponent({
         transform: rotate(-12deg);
       }
       a {
-        background-color: #1da1f2;
-        border: 3px solid #1da1f2;
+        background-color: $share-tw-button-color;
+        border: $border-width3 solid $share-tw-button-color;
       }
     }
     &.fb {
@@ -180,8 +179,8 @@ export default defineComponent({
         transform: rotate(12deg);
       }
       a {
-        background-color: #1877f2;
-        border: 3px solid #1877f2;
+        background-color: $share-fb-button-color;
+        border: $border-width3 solid $share-fb-button-color;
       }
     }
     &.pk {
@@ -189,13 +188,13 @@ export default defineComponent({
         transform: rotate(-12deg);
       }
       a {
-        background-color: #ee4056;
-        border: 3px solid #ee4056;
+        background-color: $share-pk-button-color;
+        border: $border-width3 solid $share-pk-button-color;
       }
     }
     .share-count {
-      margin-top: 12px;
-      font-size: 1.1rem;
+      margin-top: $scale12;
+      font-size: $font-size-110rem;
       text-align: center;
     }
   }

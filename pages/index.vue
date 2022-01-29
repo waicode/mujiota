@@ -22,8 +22,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Meta from '~/mixins/meta'
+
 export default {
   name: 'MujiotaIndexPage',
   mixins: [Meta],
@@ -79,15 +80,15 @@ export default {
 <style lang="scss" scoped>
 .container {
   .post-list {
-    margin-bottom: 64px;
+    margin-bottom: $scale64;
     @media (max-width: $tablet) {
-      margin-bottom: 12px;
+      margin-bottom: $scale12;
     }
   }
   .post-pagination {
-    margin-bottom: 4px;
+    margin-bottom: $scale4;
     @media (max-width: $tablet) {
-      margin-bottom: 48px;
+      margin-bottom: $scale48;
     }
   }
 }

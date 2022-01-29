@@ -57,7 +57,7 @@ export default {
     }
   },
   watch: {
-    searchText(newText) {
+    searchText() {
       this.search()
     },
   },
@@ -99,32 +99,32 @@ export default {
     max-width: 960px;
     height: calc(100vh - 40px);
     margin: 0 auto;
-    border-radius: 2px;
+    border-radius: $border-width2;
     @media (max-width: $tablet) {
       max-width: 92%;
       height: calc(100vh - 80px);
     }
     .modal-card-body {
-      padding: 36px;
+      padding: $scale36;
       overflow: scroll;
       @media (max-width: $tablet) {
-        padding: 24px;
+        padding: $scale24;
       }
       .search-box {
-        margin-bottom: 24px;
+        margin-bottom: $scale24;
         @media (max-width: $tablet) {
-          margin-bottom: 12px;
+          margin-bottom: $scale12;
         }
       }
       .close-button {
         display: block;
         margin: 0 0 0 auto;
-        color: #757575;
+        color: $link-gray-color;
       }
       @media (max-width: $tablet) {
         .close-button {
           width: 100%;
-          margin-bottom: 12px;
+          margin-bottom: $scale12;
         }
       }
     }
@@ -133,9 +133,9 @@ export default {
     width: 905px;
     min-height: 120px;
     .post-title {
-      padding: 12px;
-      margin-top: 8px;
-      font-size: 1.24rem;
+      padding: $scale12;
+      margin-top: $scale8;
+      font-size: $font-size-124rem;
       color: $text;
     }
   }

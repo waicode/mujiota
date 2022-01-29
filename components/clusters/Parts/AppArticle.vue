@@ -57,6 +57,7 @@
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
+
 export default {
   name: 'MujiotaAirticle',
   props: {
@@ -80,28 +81,28 @@ export default {
   .wrap {
     .eyecatch {
       height: auto;
-      padding: 32px;
+      padding: $scale32;
       @media (max-width: $desktop) {
-        padding: 12px;
+        padding: $scale12;
       }
       img {
         height: auto;
         max-height: 100%;
         vertical-align: top;
-        border-radius: 2px;
+        border-radius: $border-width2;
       }
     }
     .contents {
       min-height: 172px;
       .post-title {
-        margin-bottom: 8px;
-        font-size: 1.24rem;
-        font-weight: bold;
+        margin-bottom: $scale8;
+        font-size: $font-size-124rem;
+        font-weight: $font-weight-700;
         color: $text;
       }
       .description {
-        margin-bottom: 12px;
-        font-size: 0.86rem;
+        margin-bottom: $scale12;
+        font-size: $font-size-086rem;
         color: $text;
       }
       .meta-wrap {
@@ -109,23 +110,23 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 8px;
+        margin-bottom: $scale8;
         color: $text;
         .date {
           display: flex;
           flex-wrap: nowrap;
-          padding: 4px;
+          padding: $scale4;
           padding-right: 0;
-          font-size: 0.8rem;
+          font-size: $font-size-081rem;
           .date-published {
-            margin-right: 12px;
+            margin-right: $scale12;
           }
         }
         .tags {
           display: flex;
-          padding: 4px;
+          padding: $scale4;
           padding-left: 0;
-          font-size: 0.8rem;
+          font-size: $font-size-081rem;
         }
       }
     }

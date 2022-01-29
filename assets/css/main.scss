@@ -7,9 +7,19 @@
 
 $font-size-076rem: 0.76rem;
 $font-size-081rem: 0.8175rem;
+$font-size-086rem: 0.86rem;
+$font-size-092rem: 0.92rem;
 $font-size-096rem: 0.96rem;
+$font-size-100rem: 1rem;
+$font-size-104rem: 1.04rem;
+$font-size-110rem: 1.1rem;
 $font-size-120rem: 1.2rem;
+$font-size-124rem: 1.24rem;
+$font-size-132rem: 1.32rem;
+$font-size-140rem: 1.4rem;
 $font-size-131rem: 1.3125rem;
+$font-size-160rem: 1.6rem;
+$font-size-168rem: 1.68rem;
 $font-size-180rem: 1.8rem;
 
 $font-weight-200: 200;
@@ -24,9 +34,12 @@ $border-radius-half: 50%;
 
 $border-width1: 1px;
 $border-width2: 2px;
+$border-width3: 3px;
 
 $border-radius2: 2px;
 $border-radius10: 10px;
+$border-radius24: 24px;
+$border-radius34: 34px;
 
 $scale4: 4px;
 $scale8: 8px;
@@ -40,19 +53,34 @@ $scale36: 36px;
 $scale40: 40px;
 $scale44: 44px;
 $scale48: 48px;
+$scale56: 56px;
 $scale64: 64px;
+$scale80: 80px;
 $scale96: 96px;
 $scale112: 112px;
 
 $black-color: #333;
+$dark-gray-color: #263238;
 $gray-color: #eee;
+$light-gray-color: #efefef;
 $white-color: #fff;
 
-$side-bar-link-color: #726c6c;
+$link-gray-color: #726c6c;
+
+$share-hb-button-color: #00a4de;
+$share-tw-button-color: #1da1f2;
+$share-fb-button-color: #1877f2;
+$share-pk-button-color: #ee4056;
+
+$side-bar-link-color: $link-gray-color;
 $side-bar-separator-border-color: #e0e0e0;
+
+$sitemap-link-color: $link-gray-color;
+
 $ad-bg-color: #c5e1a5;
 $bg-secondary-color: #fafafa;
 $container-shadow-color: rgba(0, 0, 0, 0.1);
+$toc-bg-color: rgba(250, 250, 250, 0.2);
 
 /**
  * bulmaのカスタマイズ

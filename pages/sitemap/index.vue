@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="post-list">
-      <template v-for="categorisedAirticle in categorisedAirticles">
-        <h2 :key="categorisedAirticle.category">
-          {{ categorisedAirticle.icon }}
-          {{ categorisedAirticle.category }}
+      <template v-for="categorisedArticle in categorisedArticles">
+        <h2 :key="categorisedArticle.category">
+          {{ categorisedArticle.icon }}
+          {{ categorisedArticle.category }}
         </h2>
-        <ul :key="categorisedAirticle.category">
-          <li v-for="article in categorisedAirticle.articles" :key="article.id">
+        <ul :key="categorisedArticle.category">
+          <li v-for="article in categorisedArticle.articles" :key="article.id">
             <nuxt-link :to="`/${article.id}/${article.slug}/`">{{
               article.title
             }}</nuxt-link>
@@ -58,9 +58,9 @@ export default {
     }
   },
   computed: {
-    categorisedAirticles() {
+    categorisedArticles() {
       // [{category: "aaa", articles:[{...article1}, {...article2}, ...]}]
-      const categorisedAirticles = []
+      const categorisedArticles = []
       const categories = Array.from(
         new Set(this.articles.map((article) => article.category))
       )
@@ -75,9 +75,9 @@ export default {
         })
         const tagSlug = this.$getTagSlug(hitArticle.category)
         const icon = this.$getTagIcon(tagSlug)
-        categorisedAirticles.push({ category, articles, icon })
+        categorisedArticles.push({ category, articles, icon })
       })
-      return categorisedAirticles
+      return categorisedArticles
     },
   },
   methods: {
@@ -88,25 +88,25 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 h2 {
-  margin-bottom: 12px;
-  font-size: 1.3125rem;
-  font-weight: bold;
+  margin-bottom: $scale12;
+  font-size: $font-size-131rem;
+  font-weight: $font-weight-700;
 }
 ul {
-  margin-bottom: 28px;
+  margin-bottom: $scale28;
 
   li {
-    font-size: 1rem;
+    font-size: $font-size-100rem;
     a {
       display: inline-block;
-      padding: 0.16rem;
-      margin-left: 0.2rem;
-      font-size: 0.8175rem;
-      font-weight: bold;
-      line-height: 1.6rem;
-      color: #726c6c;
+      padding: $scale4;
+      margin-left: $scale8;
+      font-size: $font-size-081rem;
+      font-weight: $font-weight-700;
+      line-height: $font-size-160rem;
+      color: $sitemap-link-color;
       text-decoration: none;
     }
   }

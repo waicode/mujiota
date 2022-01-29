@@ -23,6 +23,7 @@
     <AppFooter />
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 
@@ -30,6 +31,7 @@ export default defineComponent({
   name: 'MujiotaLayoutDefault',
 })
 </script>
+
 <style lang="scss">
 $container-max-width: 1200px;
 .Mujiota {
