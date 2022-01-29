@@ -47,18 +47,19 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/init.client.js', mode: 'client' },
-    '~/plugins/filter.js',
-    '~/plugins/firebase.js',
+    { src: '~/plugins/init.client.ts', mode: 'client' },
+    '~/plugins/filter.ts',
+    '~/plugins/firebase.ts',
+    '~/plugins/meta.ts',
+    '~/plugins/post.ts',
+    '~/plugins/taxonomy.ts',
     '~/plugins/video.js',
-    '~/plugins/taxonomy.js',
-    '~/plugins/meta.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     {
-      path: '@/components/',
+      path: '@/components',
       pathPrefix: false,
     },
   ],
@@ -71,6 +72,7 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxt/typescript-build',
     '@nuxtjs/stylelint-module',
+    'nuxt-typed-vuex',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -104,13 +106,14 @@ export default {
       return files.map((file) => {
         if (file.path === '/index') {
           return '/'
-        } else if (file.path.startsWith('/articles')) {
-          return file.path.replace('/articles', '')
-        } else if (file.path.startsWith('/pages')) {
-          return file.path.replace('/pages', '')
-        } else {
-          return file.path
         }
+        if (file.path.startsWith('/articles')) {
+          return file.path.replace('/articles', '')
+        }
+        if (file.path.startsWith('/pages')) {
+          return file.path.replace('/pages', '')
+        }
+        return file.path
       })
     },
   },

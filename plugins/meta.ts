@@ -11,7 +11,12 @@ const metaDefault = {
   twitterUserName: '@waicode37',
 }
 
-const getMeta = (title, description, pageUrl, ogImageUrl) => {
+const getMeta = (
+  title: string,
+  description: string,
+  pageUrl: string,
+  ogImageUrl: string
+) => {
   const meta = metaDefault
   // 各ページでデフォルト以外の値は上書き必須
   if (title) meta.title = title
@@ -20,6 +25,7 @@ const getMeta = (title, description, pageUrl, ogImageUrl) => {
   if (ogImageUrl) meta.ogImageUrl = ogImageUrl
   return meta
 }
-export default (_, inject) => {
+
+export default (_: unknown, inject: any) => {
   inject('getMeta', getMeta)
 }

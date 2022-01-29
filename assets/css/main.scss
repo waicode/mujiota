@@ -5,12 +5,27 @@
  * 共通変数
  */
 
+$font-size-076rem: 0.76rem;
+$font-size-081rem: 0.8175rem;
+$font-size-096rem: 0.96rem;
 $font-size-120rem: 1.2rem;
+$font-size-131rem: 1.3125rem;
 $font-size-180rem: 1.8rem;
 
 $font-weight-200: 200;
 $font-weight-400: 400;
 $font-weight-700: 700;
+
+$line-height-160: 1.6;
+
+$z-index-minus-1: -1;
+
+$border-radius-half: 50%;
+
+$border-width1: 1px;
+$border-width2: 2px;
+
+$border-radius2: 2px;
 
 $scale4: 4px;
 $scale8: 8px;
@@ -28,6 +43,12 @@ $scale48: 48px;
 $black-color: #333;
 $gray-color: #eee;
 $white-color: #fff;
+
+$side-bar-link-color: #726c6c;
+
+$side-bar-separator-border-color: #e0e0e0;
+
+$ad-bg-color: #c5e1a5;
 
 /**
  * bulmaのカスタマイズ

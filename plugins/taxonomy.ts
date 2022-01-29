@@ -1,4 +1,12 @@
-const tags = {
+type TagProperty = {
+  name: string
+  icon: string
+}
+type Tags = {
+  [key: string]: TagProperty
+}
+
+const tags: Tags = {
   health: { name: '健康', icon: '😷' },
   muji: { name: '無印良品', icon: '🈚️' },
   lifehack: { name: '生活術', icon: '🤳🏼' },
@@ -11,34 +19,22 @@ const tags = {
   notyet: { name: '未分類', icon: '❔' },
 }
 
-const getTagSlug = (tagName) => {
-  const tagSlug = Object.keys(tags).filter((key) => {
-    return tags[key].name === tagName
-  })
+const getTagSlug = (tagName: string) => {
+  const tagSlug = Object.keys(tags).filter((key) => tags[key].name === tagName)
   return tagSlug || 'notyet'
 }
 
-const getTagSlugList = () => {
-  return Object.keys(tags).map((key) => {
-    return key
-  })
-}
+const getTagSlugList = () => Object.keys(tags).map((key) => key)
 
-const getTagName = (tagSlug) => {
+const getTagName = (tagSlug: string) => {
   const tag = tags[tagSlug]
-  if (tag) {
-    return tag.name
-  }
+  if (tag) return tag.name
   return tags.notyet.name
 }
 
-const getTagNameList = () => {
-  return Object.keys(tags).map((key) => {
-    return tags[key].name
-  })
-}
+const getTagNameList = () => Object.keys(tags).map((key) => tags[key].name)
 
-const getTagIcon = (tagSlug) => {
+const getTagIcon = (tagSlug: string) => {
   const tag = tags[tagSlug]
   if (tag) {
     return tag.icon
@@ -46,7 +42,7 @@ const getTagIcon = (tagSlug) => {
   return tags.notyet.icon
 }
 
-export default (_, inject) => {
+export default (_: unknown, inject: any) => {
   inject('getTagSlug', getTagSlug)
   inject('getTagSlugList', getTagSlugList)
   inject('getTagName', getTagName)

@@ -1,6 +1,29 @@
 const commonRules = {
   'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  'import/no-default-export': ['off'],
+  'import/prefer-default-export': ['off'],
+
+  // Vuexは例外的にno-shadow, no-param-reassignを許可
+  'no-shadow': ['error', { allow: ['state'] }],
+  '@typescript-eslint/no-shadow': ['error', { allow: ['state'] }],
+  'no-param-reassign': [
+    'error',
+    {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state',
+        'acc',
+        'e',
+        'ctx',
+        'req',
+        'request',
+        'res',
+        'response',
+        '$scope',
+      ],
+    },
+  ],
 }
 
 // eslint-config-prettierは最後に記述する
@@ -23,7 +46,7 @@ module.exports = {
     'airbnb-base',
   ],
   plugins: ['@typescript-eslint', 'import'],
-  rules: {},
+  rules: { ...commonRules },
   overrides: [
     {
       files: ['**/*.js'],
@@ -32,7 +55,6 @@ module.exports = {
     },
     {
       files: ['**/*.ts', '**/*.d.ts'],
-      parser: '@typescript-eslint/parser',
       extends: [
         '@nuxtjs/eslint-config-typescript',
         'airbnb-typescript/base',
@@ -42,16 +64,6 @@ module.exports = {
     },
     {
       files: ['**/*.vue'],
-      parser: '@typescript-eslint/parser',
-      parserOptions: {
-        parser: {
-          ts: '@typescript-eslint/parser',
-          js: 'espree',
-          '<template>': 'espree',
-        },
-        sourceType: 'module',
-        project: ['./tsconfig.eslint.json'],
-      },
       globals: {
         withDefaults: true,
         defineProps: true,

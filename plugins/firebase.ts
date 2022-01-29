@@ -16,7 +16,8 @@ let firebaseApp = null
 if (!apps.length) {
   firebaseApp = initializeApp(firebaseConfig)
 } else {
+  // eslint-disable-next-line prefer-destructuring
   firebaseApp = apps[0]
 }
-const db = getFirestore(firebaseApp, {})
+const db = getFirestore(firebaseApp)
 export { db }

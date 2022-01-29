@@ -1,185 +1,113 @@
 <template>
-  <div class="side-bar">
-    <template v-if="$store.state.popularArticles.length > 0">
+  <div :class="className">
+    <template v-if="$accessor.popularArticles.length > 0">
       <h2>読まれている記事</h2>
-      <div class="side-content">
-        <ol class="popular-list">
-          <li
-            v-for="article in $store.state.popularArticles.slice(0, 5)"
-            :key="article.rank"
-          >
-            <NuxtLink
-              :to="`/${article.data.post_id}/${article.data.post_slug}`"
-            >
-              <h3>
-                {{ getTitle(article.data.post_id) }}
-              </h3>
-            </NuxtLink>
-          </li>
-        </ol>
+      <div class="AppSideBar__PopularList">
+        <!-- TODO: storeからとれなくなったので修正 -->
+        <AppPopularList :popular-articles="$store.state.popularArticles" />
       </div>
     </template>
     <h2>コンセプト</h2>
-    <div class="side-content">
-      <p class="text-content">
+    <div class="AppSideBar__Concept">
+      <p class="AppSideBar__ConceptText">
         MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。
       </p>
       <!-- TODO: コンセプトページ追加 -->
-      <!-- <p class="text-link-more"><a href="#">> より詳しく見てみる</a></p> -->
+      <!-- <p class="AppSideBar__ConceptTextLinkMore"><a href="#">> より詳しく見てみる</a></p> -->
     </div>
     <h2>タグ</h2>
-    <div class="side-content">
-      <template v-if="$store.state.tags.length > 0">
-        <div class="dropbox-wrapper">
-          <b-dropdown aria-role="list">
-            <template #trigger="{ active }">
-              <b-button
-                label="タグを選択"
-                :icon-right="active ? 'menu-up' : 'menu-down'"
-              />
-            </template>
-            <b-dropdown-item
-              v-for="tag in $store.state.tags"
-              :key="tag.name"
-              has-link
-              aria-role="menuitem"
-            >
-              <nuxt-link :to="tagLink(tag)">{{ tagText(tag) }}</nuxt-link>
-            </b-dropdown-item>
-          </b-dropdown>
-        </div>
+    <div class="AppSideBar__Tag">
+      <template v-if="$accessor.tags.length > 0">
+        <AppTagDropdown label="タグを選択" :archives="$accessor.tags" />
       </template>
     </div>
     <h2>アーカイブ</h2>
-    <div class="side-content">
-      <template v-if="$store.state.archives.length > 0">
-        <div class="dropbox-wrapper">
-          <b-dropdown aria-role="list">
-            <template #trigger="{ active }">
-              <b-button
-                label="月を選択"
-                :icon-right="active ? 'menu-up' : 'menu-down'"
-              />
-            </template>
-
-            <b-dropdown-item
-              v-for="archive in $store.state.archives"
-              :key="archive.month"
-              has-link
-              aria-role="menuitem"
-            >
-              <nuxt-link :to="dateLink(archive)">{{
-                dateText(archive)
-              }}</nuxt-link>
-            </b-dropdown-item>
-          </b-dropdown>
-        </div>
+    <div class="AppSideBar__Archive">
+      <template v-if="$accessor.archives.length > 0">
+        <AppArchiveDropdown label="月を選択" :archives="$accessor.archives" />
       </template>
     </div>
-    <AppSideBarRecommendAd />
+    <div class="AppSideBar__RecommendAd">
+      <AppSideBarRecommendAd />
+    </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'MujiotaSideBar',
-  methods: {
-    tagLink(tag) {
-      return `/tag/${this.$getTagSlug(tag.name)}`
-    },
-    tagText(tag) {
-      return `${tag.name}(${tag.count})`
-    },
-    dateLink(archive) {
-      return `/date/${archive.month.slice(0, 4)}/${archive.month.slice(5, 7)}`
-    },
-    dateText(archive) {
-      return `${archive.month.slice(0, 4)}年${archive.month.slice(5, 7)}月(${
-        archive.count
-      })`
-    },
-    getTitle(postId) {
-      const hit = this.$store.state.articles.find(
-        (data) => data.id === Number(postId)
-      )
-      return hit ? hit.title : ''
-    },
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+import { bemx } from '~/composables/util'
+
+export default defineComponent({
+  name: 'AppSideBar',
+  setup() {
+    const className = bemx('AppSideBar')
+    return {
+      className,
+    }
   },
-}
+})
 </script>
 <style lang="scss">
-$ad-bg-color: #c5e1a5;
-$side-bar-link-color: #726c6c;
-.side-bar {
-  .ad-side-top {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto 40px;
-    background-color: $ad-bg-color;
-  }
+$ad-side-top-width: 250px;
+$ad-side-top-height: $ad-side-top-width;
+$ad-side-bottom-width: $ad-side-top-width;
+$ad-side-bottom-height: 500px;
+
+.AppSideBar {
   h2 {
-    margin-bottom: 16px;
-    font-size: 1.3125rem;
-    font-weight: bold;
+    margin-bottom: $scale16;
+    font-size: $font-size-131rem;
+    font-weight: $font-weight-700;
   }
   h3 {
-    font-size: 0.8175rem;
-    font-weight: bold;
+    font-size: $font-size-081rem;
+    font-weight: $font-weight-700;
   }
-  ol.popular-list {
-    list-style: none;
-    li {
-      &:not(:last-child) {
-        border-bottom: 1px solid #e0e0e0;
-      }
-      a {
-        display: block;
-        padding: 1em;
-        color: $side-bar-link-color;
-        text-decoration: none;
-        h3 {
-          font-size: 0.8175rem;
-          font-weight: bold;
-          @media (max-width: $tablet) {
-            font-size: 0.96rem;
-          }
-        }
-      }
+
+  // &__AdSideTop {
+  //   width: $ad-side-top-width;
+  //   height: $ad-side-top-height;
+  //   margin: 0 auto $scale40;
+  //   background-color: $ad-bg-color;
+  // }
+
+  // &__PopularList {
+  // }
+
+  &__Concept {
+    margin-bottom: $scale16;
+  }
+  &__ConceptText {
+    padding: $scale4;
+    margin-bottom: $scale4;
+    font-size: $font-size-081rem;
+    line-height: $line-height-160;
+    @media (max-width: $tablet) {
+      font-size: $font-size-096rem;
     }
   }
-  .side-content {
-    margin-bottom: 16px;
-    p {
-      font-size: 0.8175rem;
-      @media (max-width: $tablet) {
-        font-size: 0.96rem;
-      }
-    }
-    .text-content {
-      padding: 4px;
-      margin-bottom: 4px;
-      line-height: 1.6;
-    }
-    h3.text-content {
-      margin-bottom: 2px;
-    }
-    .text-link-more {
-      font-size: 0.76rem;
-      text-align: right;
-      text-decoration: underline;
-      a {
-        color: $side-bar-link-color;
-      }
+  &__ConceptTextLinkMore {
+    font-size: $font-size-076rem;
+    text-align: right;
+    text-decoration: underline;
+    a {
+      color: $side-bar-link-color;
     }
   }
-  .dropbox-wrapper {
-    margin-bottom: 20px;
+
+  &__Tag,
+  &__Archive {
+    margin-bottom: $scale16;
   }
-  .ad-side-bottom {
-    display: block;
-    width: 250px;
-    height: 500px;
-    margin: 40px auto;
-    background-color: $ad-bg-color;
-  }
+
+  // &__AdSideBottom {
+  //   display: block;
+  //   width: $ad-side-bottom-width;
+  //   height: $ad-side-bottom-height;
+  //   margin: $scale40 auto;
+  //   background-color: $ad-bg-color;
+  // }
+
+  // &__RecommendAd {
+  // }
 }
 </style>

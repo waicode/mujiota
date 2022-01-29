@@ -5,10 +5,13 @@
     "*.ts",
     "*.d.ts",
     "*.js",
+    "*.vue",
     "*.config.ts",
     "*.config.js",
+    "./**/*.js",
     "./**/*.ts",
-    "./**/*.d.ts"
+    "./**/*.d.ts",
+    "./**/*.vue"
   ],
   "exclude": ["node_modules", "dist"]
 }

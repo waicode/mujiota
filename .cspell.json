@@ -56,7 +56,10 @@
     "Tweetable",
     "twitter",
     "Uacct",
-    "vercel"
+    "unref",
+    "vercel",
+    "vuex",
+    "waicode"
   ],
   "ignorePaths": [
     ".vscode",
