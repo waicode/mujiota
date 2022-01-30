@@ -2,7 +2,7 @@
   <div class="Mujiota">
     <AppHeader />
     <div class="Mujiota__Wrapper">
-      <div class="Mujiota__Columns">
+      <div class="columns">
         <main
           class="Mujiota__MainColumn column is-9-desktop is-9-tablet is-12-mobile"
         >
