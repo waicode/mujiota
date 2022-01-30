@@ -2,7 +2,7 @@
 import { getAccessorType, mutationTree, actionTree } from 'typed-vuex'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Context } from '@nuxt/types'
-import { collection, getDocs } from 'firebase/firestore/lite'
+import { collection, DocumentData, getDocs } from 'firebase/firestore/lite'
 import { db } from '~/plugins/firebase'
 
 import * as page from '~/store/page'
@@ -44,6 +44,12 @@ export type Archive = {
 // Archiveの型ガード関数
 export const isArchive = (archive: Archive): archive is Archive =>
   'month' in archive && 'count' in archive
+
+// PopularArticleの型定義
+export type PopularArticle = {
+  rank: number
+  data: DocumentData
+}
 
 export const state = () => ({
   initialized: false,

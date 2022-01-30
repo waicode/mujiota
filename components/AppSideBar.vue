@@ -3,8 +3,10 @@
     <template v-if="$accessor.popularArticles.length > 0">
       <h2>読まれている記事</h2>
       <div class="AppSideBar__PopularList">
-        <!-- TODO: storeからとれなくなったので修正 -->
-        <AppPopularList :popular-articles="$accessor.popularArticles" />
+        <AppPopularList
+          :popular-articles="$accessor.popularArticles"
+          :articles="$accessor.articles"
+        />
       </div>
     </template>
     <h2>コンセプト</h2>

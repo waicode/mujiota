@@ -18,19 +18,40 @@ import { defineComponent, ref, toRefs, PropType } from '@nuxtjs/composition-api'
 import usePagenate from '~/composables/usePagenate'
 import { Article } from '~/store'
 
+/**
+ * ## ページネーション
+ *
+ * `b-pagination`のラッパーコンポーネント。
+ * 記事一覧とページサイズを受け取る。
+ * ページが切り替わったタイミングで呼び出しもとの親へ表示対象記事を渡す。
+ */
 export default defineComponent({
   name: 'AppPagenation',
   props: {
+    /**
+     * 記事一覧。
+     * Contentの記事情報のリスト。
+     * このリストがページング処理で分割されて表示される。
+     */
     articles: {
       type: Array as PropType<Array<Article>>,
       required: true,
     },
+    /**
+     * ページサイズ。
+     * 1ページあたりの表示記事数。
+     */
     pageSize: {
       type: Number,
       required: true,
     },
   },
-  emits: ['change-page'],
+  emits: [
+    /**
+     * ページが切り替わったとき。
+     */
+    'change-page',
+  ],
   setup(props, context) {
     const currentPage = ref(1)
 
