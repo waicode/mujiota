@@ -24,7 +24,7 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
-import useHeaderMeta from '@/composables/useHeaderMeta'
+import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchArchives from '~/composables/useFetchArchives'
 
@@ -34,7 +34,7 @@ export default defineComponent({
     const { $config, store, params, app, error } = useContext()
     const { title, meta } = useMeta()
 
-    const pageSize = $config.pageSize
+    const { pageSize } = $config
 
     const year = params.value.yyyy
     const month = params.value.mm

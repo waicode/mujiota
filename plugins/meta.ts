@@ -1,5 +1,17 @@
 // デフォルトのメタデータ
-const metaDefault = {
+
+export type Meta = {
+  title: string
+  siteName: string
+  description: string
+  baseUrl: string
+  pageUrl: string
+  ogType: string
+  ogImageUrl: string
+  twitterUserName: string
+}
+
+const metaDefault: Meta = {
   title: 'mujiota.com',
   siteName: 'mujiota.com',
   description:

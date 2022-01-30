@@ -1,6 +1,7 @@
 <template>
   <b-pagination
     v-model="currentPage"
+    class="AppPagenation"
     :total="articles.length"
     :range-before="1"
     :range-after="1"
@@ -12,14 +13,16 @@
   >
   </b-pagination>
 </template>
-<script>
-import { defineComponent, ref, toRefs } from '@nuxtjs/composition-api'
+<script lang="ts">
+import { defineComponent, ref, toRefs, PropType } from '@nuxtjs/composition-api'
 import usePagenate from '~/composables/usePagenate'
+import { Article } from '~/store'
+
 export default defineComponent({
   name: 'AppPagenation',
   props: {
     articles: {
-      type: Array,
+      type: Array as PropType<Array<Article>>,
       required: true,
     },
     pageSize: {
@@ -27,17 +30,19 @@ export default defineComponent({
       required: true,
     },
   },
+  emits: ['change-page'],
   setup(props, context) {
     const currentPage = ref(1)
 
     const { pageSize } = toRefs(props)
 
+    const targetPosts = usePagenate(
+      props.articles,
+      pageSize.value,
+      currentPage.value
+    )
+
     const changePage = () => {
-      const targetPosts = usePagenate(
-        props.articles,
-        pageSize.value,
-        currentPage.value
-      )
       context.emit('change-page', targetPosts)
     }
 

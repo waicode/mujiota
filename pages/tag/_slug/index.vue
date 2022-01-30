@@ -23,7 +23,7 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
-import useHeaderMeta from '@/composables/useHeaderMeta'
+import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchTagPages from '~/composables/useFetchTagPages'
 
@@ -33,7 +33,7 @@ export default defineComponent({
     const { $config, store, params, app, error } = useContext()
     const { title, meta } = useMeta()
 
-    const pageSize = $config.pageSize
+    const { pageSize } = $config
 
     const tagName = app.$getTagName(params.value.slug)
     const pageUrl = `${$config.baseUrl}/tag/${params.value.slug}/`

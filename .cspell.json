@@ -63,7 +63,8 @@
     "unref",
     "vercel",
     "vuex",
-    "waicode"
+    "waicode",
+    "yomerebalink"
   ],
   "ignorePaths": [
     ".vscode",

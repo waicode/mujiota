@@ -63,7 +63,7 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
-import useHeaderMeta from '@/composables/useHeaderMeta'
+import useHeaderMeta from '~/composables/useHeaderMeta'
 
 export default defineComponent({
   name: 'MujiotaIdSlugPage',

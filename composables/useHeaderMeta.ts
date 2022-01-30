@@ -1,4 +1,6 @@
-export default (metaData) => {
+import { Meta } from '~/plugins/meta'
+
+export default (metaData: Meta) => {
   const title =
     !metaData.title || metaData.title === metaData.siteName
       ? metaData.siteName
