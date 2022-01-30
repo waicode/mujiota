@@ -100,6 +100,7 @@ export default defineComponent({
 
         imageUrl =
           $config.baseUrl +
+          // eslint-disable-next-line import/no-dynamic-require, global-require
           require(`~/assets/images/eyecatch/${articleData.id}/${articleData.slug}.${articleData.imageFormat}`)
       } catch (e) {
         // eslint-disable-next-line no-console
