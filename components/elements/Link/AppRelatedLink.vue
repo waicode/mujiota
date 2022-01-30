@@ -22,6 +22,7 @@
 </template>
 <script>
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+
 export default {
   props: {
     id: {
@@ -59,50 +60,50 @@ export default {
 </script>
 <style lang="scss" scoped>
 .related-link {
-  margin: 1.8em 0;
+  margin: $scale28 0;
   a {
     .wrap {
-      padding: 0.25rem;
-      color: #333;
+      padding: $scale4;
+      color: $black-color;
       text-decoration: none;
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 2px;
-      box-shadow: 0 0 1px #efefef;
+      background: $white-color;
+      border: $border-width1 solid $border-gray-color;
+      border-radius: $border-radius2;
+      box-shadow: 0 0 2px $link-box-shadow-color;
       transition: 0.3s ease-in-out;
       &:hover {
-        color: #666;
-        background: rgba(167, 255, 235, 0.24);
+        color: $link-hover-color;
+        background: $link-hover-bg-color;
       }
       .link-image {
         img {
           vertical-align: top;
-          border: 1px solid #e0e0e0;
-          box-shadow: 0 0 1px #eee;
+          border: $border-width1 solid $border-gray-color;
+          box-shadow: 0 0 1px $link-image-shadow-color;
         }
       }
       .link-info {
         .link-title {
-          margin-bottom: 8px;
-          font-weight: bold;
+          margin-bottom: $scale8;
+          font-weight: $font-weight-700;
           &::before {
             position: relative;
             top: -2px;
             display: inline-block;
             width: 6em;
-            padding: 0.2em;
-            margin-right: 0.5em;
-            font-size: 0.7em;
-            font-weight: bold;
-            color: #fff;
+            padding: $scale4;
+            margin-right: $scale8;
+            font-size: $font-size-070rem;
+            font-weight: $font-weight-700;
+            color: $white-color;
             text-align: center;
             content: '関連リンク';
-            background: #111;
-            border-radius: 2px;
+            background: $dark-black-color;
+            border-radius: $border-radius2;
           }
         }
         .link-date {
-          font-size: 0.84rem;
+          font-size: $font-size-096rem;
         }
       }
     }

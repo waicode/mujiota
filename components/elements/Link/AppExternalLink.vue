@@ -67,7 +67,7 @@ export default {
       transition: 0.3s ease-in-out;
       &:hover {
         color: $link-hover-color;
-        background: rgba(167, 255, 235, 0.24);
+        background: $link-hover-bg-color;
       }
       .link-image {
         img {
