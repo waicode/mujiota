@@ -4,7 +4,7 @@
       <h2>読まれている記事</h2>
       <div class="AppSideBar__PopularList">
         <!-- TODO: storeからとれなくなったので修正 -->
-        <AppPopularList :popular-articles="$store.state.popularArticles" />
+        <AppPopularList :popular-articles="$accessor.popularArticles" />
       </div>
     </template>
     <h2>コンセプト</h2>
@@ -18,7 +18,7 @@
     <h2>タグ</h2>
     <div class="AppSideBar__Tag">
       <template v-if="$accessor.tags.length > 0">
-        <AppTagDropdown label="タグを選択" :archives="$accessor.tags" />
+        <AppTagDropdown label="タグを選択" :tags="$accessor.tags" />
       </template>
     </div>
     <h2>アーカイブ</h2>

@@ -1,12 +1,15 @@
 <template>
-  <div class="container">
-    <div v-if="posts" class="post-list">
+  <div class="MujiotaArchivePage">
+    <div v-if="posts" class="MujiotaArchivePage__PostList">
       <div v-for="(article, index) in posts" :key="article.id">
         <AppArticle :article="article" />
         <hr v-if="index < articles.length - 1" :key="`hr-${article.id}`" />
       </div>
     </div>
-    <div v-show="articles.length > pageSize" class="post-pagination">
+    <div
+      v-show="articles.length > pageSize"
+      class="MujiotaArchivePage__PostPagination"
+    >
       <AppPagenation
         :articles="articles"
         :page-size="pageSize"
@@ -16,7 +19,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import {
   defineComponent,
   ref,
@@ -27,6 +30,7 @@ import {
 import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchArchives from '~/composables/useFetchArchives'
+import { Article } from '~/store'
 
 export default defineComponent({
   name: 'MujiotaArchivePage',
@@ -43,10 +47,11 @@ export default defineComponent({
     const description = `${year}年${monthStr}月に投稿された記事の一覧です。`
     const pageUrl = `${$config.baseUrl}/date/${year}/${month}`
 
-    const articles = ref([])
-    const posts = ref([])
+    const articles = ref([] as Article[])
+    const posts = ref([] as Article[])
 
-    const displayPage = (targetPosts) => {
+    const displayPage = (targetPosts: Article[]) => {
+      console.log('targetPosts', targetPosts)
       posts.value = targetPosts
     }
 
@@ -59,7 +64,7 @@ export default defineComponent({
       posts.value = usePagenate(articles.value, pageSize)
 
       // メタ情報
-      const metaData = app.$getMeta(archivesTitle, description, pageUrl, null)
+      const metaData = app.$getMeta(archivesTitle, description, pageUrl)
       title.value = archivesTitle
       meta.value = useHeaderMeta(metaData).meta
 
@@ -79,3 +84,19 @@ export default defineComponent({
   head: {},
 })
 </script>
+<style lang="scss">
+.MujiotaArchivePage {
+  &__PostList {
+    margin-bottom: $scale64;
+    @media (max-width: $tablet) {
+      margin-bottom: $scale12;
+    }
+  }
+  &__PostPagination {
+    margin-bottom: $scale4;
+    @media (max-width: $tablet) {
+      margin-bottom: $scale48;
+    }
+  }
+}
+</style>

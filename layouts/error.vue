@@ -1,5 +1,5 @@
 <template>
-  <div class="Mujiota">
+  <div class="MujiotaError">
     <template v-if="error.statusCode === 404">
       <h2>ページが見つかりませんでした</h2>
       <p>お探しのページをキーワードで検索してみてください。</p>
@@ -20,7 +20,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.Mujiota {
+.MujiotaError {
   h2 {
     position: relative;
     padding-bottom: $scale12;

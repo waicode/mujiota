@@ -9,7 +9,7 @@
       </template>
       <b-dropdown-item
         v-for="tag in tags"
-        :key="tag"
+        :key="tag.name"
         has-link
         aria-role="menuitem"
       >
@@ -24,7 +24,7 @@ import { bemx } from '~/composables/util'
 import { Tag } from '~/store'
 
 export default defineComponent({
-  name: 'AppLinkDropdown',
+  name: 'AppTagDropdown',
   props: {
     label: {
       type: String,

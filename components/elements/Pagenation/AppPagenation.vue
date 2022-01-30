@@ -36,13 +36,12 @@ export default defineComponent({
 
     const { pageSize } = toRefs(props)
 
-    const targetPosts = usePagenate(
-      props.articles,
-      pageSize.value,
-      currentPage.value
-    )
-
     const changePage = () => {
+      const targetPosts = usePagenate(
+        props.articles,
+        pageSize.value,
+        currentPage.value
+      )
       context.emit('change-page', targetPosts)
     }
 

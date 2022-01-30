@@ -24,10 +24,10 @@ const metaDefault: Meta = {
 }
 
 const getMeta = (
-  title: string,
-  description: string,
-  pageUrl: string,
-  ogImageUrl: string
+  title?: string,
+  description?: string,
+  pageUrl?: string,
+  ogImageUrl?: string
 ) => {
   const meta = metaDefault
   // 各ページでデフォルト以外の値は上書き必須
