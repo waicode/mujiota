@@ -16,6 +16,7 @@ $font-size-104rem: 1.04rem;
 $font-size-110rem: 1.1rem;
 $font-size-120rem: 1.2rem;
 $font-size-124rem: 1.24rem;
+$font-size-128rem: 1.28rem;
 $font-size-132rem: 1.32rem;
 $font-size-140rem: 1.4rem;
 $font-size-131rem: 1.3125rem;
@@ -28,7 +29,11 @@ $font-weight-400: 400;
 $font-weight-700: 700;
 $font-weight-900: 900;
 
+$line-height-100: 1;
 $line-height-160: 1.6;
+$line-height-200: 2;
+
+$letter-spacing-1: 1px;
 
 $z-index-minus-1: -1;
 $z-index-1: 1;
@@ -48,6 +53,9 @@ $border-radius24: 24px;
 $border-radius34: 34px;
 $border-radius40: 40px;
 
+$border-radius-rate20: 20%;
+$border-radius-rate50: 50%;
+
 $scale4: 4px;
 $scale8: 8px;
 $scale12: 12px;
@@ -65,6 +73,8 @@ $scale64: 64px;
 $scale80: 80px;
 $scale96: 96px;
 $scale112: 112px;
+
+$scale-minus16: -16px;
 
 $dark-black-color: #111;
 $black-color: #333;
@@ -115,6 +125,21 @@ $supplement-border-color: #ededed;
 $toc-bg-color: rgba(250, 250, 250, 0.2);
 
 $return-top-button-color: #424242;
+
+$repeating-linear-gradient-light-stripe-color: $border-gray-color;
+$repeating-linear-gradient-dark-stripe-color: #999;
+
+$list-disc-box-shadow-color: rgba(97, 97, 97, 0.15);
+$list-disc-bg-color: $dark-gray-color;
+$list-number-bg-color: $dark-gray-color;
+
+$linear-gradient-white-color: rgba(255, 255, 141, 0);
+$linear-gradient-yellow-color: #fff59d;
+
+$blockquote-text-color: #555;
+$blockquote-bg-color: $light-gray-color;
+$blockquote-icon-color: #cfcfcf;
+$blockquote-cite-text-color: #888;
 
 /**
  * bulmaのカスタマイズ

@@ -161,33 +161,33 @@ export default defineComponent({
 <style lang="scss">
 .post {
   h1.page-title {
-    margin-top: -16px;
-    margin-bottom: 0.4rem;
-    font-size: 1.28rem;
-    font-weight: bold;
+    margin-top: $scale-minus16;
+    margin-bottom: $scale8;
+    font-size: $font-size-128rem;
+    font-weight: $font-weight-700;
   }
   .meta-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: $scale8;
     color: $text;
     .date {
       display: flex;
       flex-wrap: nowrap;
-      padding: 4px;
+      padding: $scale4;
       padding-right: 0;
-      font-size: 0.8rem;
+      font-size: $font-size-081rem;
       .date-published {
-        margin-right: 12px;
+        margin-right: $scale12;
       }
     }
     .tags {
       display: flex;
-      padding: 4px;
+      padding: $scale4;
       padding-left: 0;
-      font-size: 0.8rem;
+      font-size: $font-size-081rem;
     }
   }
   .toc-wrap {
@@ -199,28 +199,28 @@ export default defineComponent({
   .eyecatch {
     img {
       width: 100%;
-      border-radius: 4px;
+      border-radius: $scale4;
     }
   }
   .description {
-    margin-top: 28px;
+    margin-top: $scale28;
     p {
-      margin-bottom: 18px !important;
+      margin-bottom: $scale16 !important;
     }
   }
   .description,
   .article {
     p {
-      margin-bottom: 32px;
-      line-height: 2;
+      margin-bottom: $scale32;
+      line-height: $line-height-200;
     }
     h2 {
       position: relative;
-      padding-bottom: 16px;
-      margin-top: 96px;
-      margin-bottom: 40px;
-      font-size: 1.4rem;
-      font-weight: bold;
+      padding-bottom: $scale16;
+      margin-top: $scale96;
+      margin-bottom: $scale40;
+      font-size: $font-size-140rem;
+      font-weight: $font-weight-700;
       &::after {
         position: absolute;
         bottom: 0;
@@ -230,10 +230,10 @@ export default defineComponent({
         content: '';
         background-image: repeating-linear-gradient(
           45deg,
-          #e0e0e0 0,
-          #e0e0e0 1px,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0) 50%
+          $repeating-linear-gradient-light-stripe-color 0,
+          $repeating-linear-gradient-light-stripe-color 1px,
+          transparent 0%,
+          transparent 50%
         );
         background-size: 8px 8px;
       }
@@ -245,11 +245,11 @@ export default defineComponent({
     }
     h3 {
       position: relative;
-      padding-left: 24px;
-      margin-top: 64px;
-      margin-bottom: 28px;
-      font-size: 1.3rem;
-      font-weight: bold;
+      padding-left: $scale24;
+      margin-top: $scale64;
+      margin-bottom: $scale28;
+      font-size: $font-size-132rem;
+      font-weight: $font-weight-700;
       &::after {
         position: absolute;
         top: 0;
@@ -257,7 +257,7 @@ export default defineComponent({
         width: 6px;
         height: 100%;
         content: '';
-        background-color: #e0e0e0;
+        background-color: $border-gray-color;
       }
       a {
         .icon {
@@ -267,11 +267,11 @@ export default defineComponent({
     }
     h4 {
       position: relative;
-      padding-left: 24px;
-      margin-top: 40px;
-      margin-bottom: 24px;
-      font-size: 1.2rem;
-      font-weight: bold;
+      padding-left: $scale24;
+      margin-top: $scale40;
+      margin-bottom: $scale24;
+      font-size: $font-size-120rem;
+      font-weight: $font-weight-700;
       &::after {
         position: absolute;
         top: 0;
@@ -280,10 +280,10 @@ export default defineComponent({
         height: 100%;
         content: '';
         background-image: repeating-linear-gradient(
-          #999,
-          #999 1px,
-          rgba(0, 0, 0, 0) 0,
-          rgba(0, 0, 0, 0) 4px
+          $repeating-linear-gradient-dark-stripe-color,
+          $repeating-linear-gradient-dark-stripe-color 1px,
+          transparent 0,
+          transparent 4px
         );
       }
       a {
@@ -293,12 +293,12 @@ export default defineComponent({
       }
     }
     h5 {
-      margin-top: 32px;
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      line-height: 2em;
-      letter-spacing: 1px;
+      margin-top: $scale32;
+      margin-bottom: $scale12;
+      font-size: $font-size-110rem;
+      font-weight: $font-weight-700;
+      line-height: $line-height-200;
+      letter-spacing: $letter-spacing-1;
       a {
         .icon {
           display: none;
@@ -311,72 +311,73 @@ export default defineComponent({
     ol,
     ul {
       padding: 0;
-      margin-bottom: 32px;
+      margin-bottom: $scale32;
       list-style-type: none;
     }
     ul li {
       position: relative;
-      padding-left: 2rem;
-      margin-bottom: 0.4rem;
-      margin-left: 0.2rem;
+      padding-left: $scale32;
+      margin-bottom: $scale8;
+      margin-left: $scale4;
       list-style: none;
       &::before {
         position: absolute;
-        top: 0.4rem;
-        left: 0.32rem;
+        top: 8px;
+        left: 4px;
         display: block;
         width: 10px;
         height: 10px;
         content: ' ';
-        background: #3e3e3e;
-        border-radius: 20%;
-        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
+        background: $list-disc-bg-color;
+        border-radius: $border-radius-rate20;
+        box-shadow: -1px -1px 1px $list-disc-box-shadow-color inset;
       }
     }
     ol li {
       position: relative;
-      padding-top: 0.2rem;
-      padding-bottom: 0.2rem;
-      padding-left: 2rem;
-      margin-bottom: 0.2rem;
-      margin-left: 0.4rem;
+      padding-left: $scale32;
+      margin-bottom: $scale8;
+      margin-left: $scale4;
       list-style: none;
       &::before {
         position: absolute;
-        top: 0.28rem;
-        left: 0;
+        top: 8px;
+        left: 4px;
         display: block;
-        width: 1.3rem;
-        height: 1.3rem;
+        width: 21px;
+        height: 21px;
         font-family: 'Lato', sans-serif;
-        font-size: 0.7em;
-        font-weight: bold;
-        line-height: 1.4rem;
-        color: #fff;
+        font-size: $font-size-070rem;
+        font-weight: $font-weight-700;
+        line-height: $font-size-140rem;
+        color: $white-color;
         text-align: center;
         content: counter(number);
         counter-increment: number;
-        background: #333;
-        border-radius: 50%;
+        background: $list-number-bg-color;
+        border-radius: $border-radius-rate50;
       }
     }
     strong {
-      font-weight: bold;
+      font-weight: $font-weight-700;
     }
     span.line {
       display: inline;
       padding-bottom: 0;
-      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
+      background: linear-gradient(
+        $linear-gradient-white-color 50%,
+        $linear-gradient-yellow-color 70%
+      );
     }
 
     blockquote {
       position: relative;
       box-sizing: border-box;
-      padding: 10px 15px 10px 60px;
-      margin-bottom: 30px;
+      padding: $scale12 $scale16 $scale12 $scale60;
+      margin-bottom: $scale30;
       font-style: italic;
-      color: #555;
-      background: #efefef;
+      color: $blockquote-text-color;
+      background: $blockquote-bg-color;
     }
 
     blockquote::before {
@@ -385,23 +386,23 @@ export default defineComponent({
       left: 15px;
       display: inline-block;
       font-family: 'Font Awesome 5 Free';
-      font-size: 30px;
-      font-weight: 900;
-      line-height: 1;
-      color: #cfcfcf;
+      font-size: $font-size-180rem;
+      font-weight: $font-weight-900;
+      line-height: $line-height-100;
+      color: $blockquote-icon-color;
       content: '\f10d';
     }
 
     blockquote p {
       padding: 0;
-      margin: 10px 0;
-      line-height: 1.7;
+      margin: $scale12 0;
+      line-height: $line-height-160;
     }
 
     blockquote cite {
       display: block;
-      font-size: 0.9em;
-      color: #888;
+      font-size: $font-size-092rem;
+      color: $blockquote-cite-text-color;
       text-align: right;
     }
   }
