@@ -6,7 +6,9 @@ import { collection, getDocs } from 'firebase/firestore/lite'
 import { db } from '~/plugins/firebase'
 
 import * as page from '~/store/page'
+import { Ref, unref } from '@nuxtjs/composition-api'
 
+// Articleの型定義
 export type Article = {
   id: number
   slug: string
@@ -18,16 +20,30 @@ export type Article = {
   category: string
   tags: Array<string>
 }
+// Articleの型ガード関数
+export const isArticle = (
+  article: Article | Ref<Article> | undefined
+): article is Article =>
+  article === undefined
+    ? false
+    : 'id' in unref(article) && 'slug' in unref(article)
 
+// Tagの型定義
 export type Tag = {
   name: string
   count: string
 }
+// Tagの型ガード関数
+export const isTag = (tag: Tag): tag is Tag => 'name' in tag && 'count' in tag
 
+// Archiveの型定義
 export type Archive = {
   month: string
   count: string
 }
+// Archiveの型ガード関数
+export const isArchive = (archive: Archive): archive is Archive =>
+  'month' in archive && 'count' in archive
 
 export const state = () => ({
   initialized: false,

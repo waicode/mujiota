@@ -1,28 +1,35 @@
 <template>
-  <img v-lazy-load class="lazy-load-image" :src="dynamicImageSrcPath" />
+  <img v-lazy-load class="AppAssetsImage" :src="dynamicImageSrcPath" />
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { computed, defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  name: 'AppAssetsImage',
   props: {
     path: {
       type: String,
       required: true,
     },
   },
-  computed: {
-    dynamicImageSrcPath() {
-      return require(`~/assets/${this.path}`)
-    },
+  setup(props) {
+    const dynamicImageSrcPath = computed(() =>
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      require(`~/assets/${props.path}`)
+    )
+    return {
+      dynamicImageSrcPath,
+    }
   },
-}
+})
 </script>
-<style lang="scss" scoped>
-.lazy-load-image {
+<style lang="scss">
+.AppAssetsImage {
   background-image: linear-gradient(
     160deg,
-    rgba(250, 250, 250, 0.85),
-    rgba(239, 235, 233, 0.85)
+    $lazy-load-gradient-white-color,
+    $lazy-load-gradient-light-gray-color
   );
 }
 </style>
