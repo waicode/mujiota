@@ -28,8 +28,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .capture-image {
-  margin-top: 40px;
-  margin-bottom: 8px;
+  margin-top: $scale40;
+  margin-bottom: $scale8;
 }
 .capture-wrapper {
   display: flex;
@@ -50,11 +50,11 @@ export default {
   height: calc(100% + 20px);
   content: '';
   border-style: solid;
-  border-width: 12px;
+  border-width: $border-width12;
   border-image-source: repeating-linear-gradient(
     45deg,
-    #e0e0e0,
-    #e0e0e0 3px,
+    $capture-image-border-color,
+    $capture-image-border-color $border-width3,
     transparent 0,
     transparent 6px
   );
@@ -63,10 +63,10 @@ export default {
   transform: translate(-50%, -50%);
 }
 .caption {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  font-size: 0.88rem;
-  font-weight: bold;
+  padding-top: $scale24;
+  padding-bottom: $scale16;
+  font-size: $font-size-086rem;
+  font-weight: $font-weight-700;
   text-align: center;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   max-width: 640px;
-  padding: 2rem 0;
+  padding: $scale32 0;
   margin: 0 auto;
   @media (max-width: $tablet) {
     max-width: 100%;
@@ -41,21 +41,21 @@ export default {
 .video::before,
 .video::after {
   position: absolute;
-  z-index: 1;
+  z-index: $z-index-1;
   width: 70px;
   height: 25px;
   content: '';
-  background-color: #fafafa;
+  background-color: $bg-secondary-color;
   transform: rotate(-35deg);
 }
 .video::before {
-  top: -10px;
-  left: -25px;
-  border-bottom: 1px solid #cfd8dc;
+  top: $photo-image-frame-tilt-top;
+  left: $photo-image-frame-tilt-left;
+  border-bottom: $border-width1 solid $photo-image-frame-border-color;
 }
 .video::after {
-  right: -25px;
-  bottom: -10px;
-  border-top: 1px solid #cfd8dc;
+  right: $photo-image-frame-tilt-right;
+  bottom: $photo-image-frame-tilt-bottom;
+  border-top: $border-width1 solid $photo-image-frame-border-color;
 }
 </style>

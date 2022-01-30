@@ -103,30 +103,30 @@ export default {
 .yomerebalink {
   .wrap {
     box-sizing: border-box;
-    padding: 0.64rem;
-    margin: 0 0 2rem;
+    padding: $scale12;
+    margin: 0 0 $scale32;
     background: #fff;
-    border: 1px solid;
-    border-color: #eaeaea #ddd #d0d0d0;
-    border-radius: 3px;
+    border: $border-width1 solid $border-gray-color;
+    border-radius: $border-radius2;
+    box-shadow: 0 0 1px $link-image-shadow-color;
     .link-image {
       align-items: center;
-      padding: 16px;
+      padding: $scale16;
       img {
         vertical-align: top;
       }
     }
     .link-info {
       .link-title {
-        margin: 0.2rem 0 0.8rem;
-        font-size: 1.0625rem;
-        font-weight: bold;
+        margin: $scale4 0 $scale12;
+        font-size: $font-size-104rem;
+        font-weight: $font-weight-700;
         a {
           color: $text;
         }
       }
       .link-shop-name {
-        margin: 0 0 2rem;
+        margin: 0 0 $scale32;
       }
       .link-items {
         display: flex;
@@ -135,7 +135,7 @@ export default {
         .item-link {
           flex: 1;
           min-width: 96px;
-          padding: 4px;
+          padding: $scale4;
           @media (max-width: $desktop) {
             width: 100%;
             min-width: 100%;
@@ -144,39 +144,39 @@ export default {
           a {
             display: block;
             width: 100%;
-            padding: 1em;
-            margin: 0 auto 0.6rem;
-            font-size: 0.84rem;
-            font-weight: bold;
-            color: #fff;
+            padding: $scale16;
+            margin: 0 auto $scale8;
+            font-size: $font-size-086rem;
+            font-weight: $font-weight-700;
+            color: $white-color;
             text-align: center;
-            border-radius: 4px;
+            border-radius: $border-radius4;
             @media (max-width: $desktop) {
-              font-size: 0.9rem;
+              font-size: $font-size-092rem;
             }
             svg {
-              width: 1.2rem;
-              height: 1.2rem;
+              width: 20px;
+              height: 20px;
               vertical-align: middle;
-              fill: #fff;
+              fill: $white-color;
             }
           }
         }
         .shoplink-amazon a {
-          background-color: #ff9800;
-          border: 2px solid #ff9800;
+          background-color: $kaereba-amazon-button-color;
+          border: $border-width2 solid $kaereba-amazon-button-color;
         }
         .shoplink-kindle a {
-          background-color: #ff9800;
-          border: 2px solid #ff9800;
+          background-color: $kaereba-amazon-button-color;
+          border: $border-width2 solid $kaereba-amazon-button-color;
         }
         .shoplink-rakuten a {
-          background-color: #ef5350;
-          border: 2px solid #ef5350;
+          background-color: $kaereba-rakuten-button-color;
+          border: $border-width2 solid $kaereba-rakuten-button-color;
         }
         .shoplink-kobo a {
-          background-color: #ef5350;
-          border: 2px solid #ef5350;
+          background-color: $kaereba-rakuten-button-color;
+          border: $border-width2 solid $kaereba-rakuten-button-color;
         }
       }
     }

@@ -1,60 +1,73 @@
 <template>
-  <div id="page-top">
+  <div class="AppReturnTopButton">
     <transition name="fade">
       <div v-show="buttonActive">
-        <div class="wrap">
-          <button @click="returnTop"></button>
+        <div class="AppReturnTopButton__PageTopButton">
+          <button @click="returnTop" />
         </div>
       </div>
     </transition>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      buttonActive: false,
-      scroll: 0,
+<script lang="ts">
+import { defineComponent, onMounted, ref } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  setup() {
+    const buttonActive = ref(false)
+    const scroll = ref(0)
+
+    const scrollDisplayControl = () => {
+      const top = 100 // ボタンを表示させたい位置
+      scroll.value = window.scrollY
+      buttonActive.value = top <= scroll.value
     }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.scrollWindow)
-  },
-  methods: {
-    returnTop() {
+
+    const returnTop = () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       })
-    },
-    scrollWindow() {
-      const top = 100 // ボタンを表示させたい位置
-      this.scroll = window.scrollY
-      this.buttonActive = top <= this.scroll
-    },
-  },
-}
-</script>
-<style lang="scss" scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0%;
-}
+    }
 
-#page-top {
-  .wrap {
+    onMounted(() => {
+      window.addEventListener('scroll', scrollDisplayControl)
+    })
+
+    return {
+      buttonActive,
+      scroll,
+      returnTop,
+    }
+  },
+})
+</script>
+
+<style lang="scss">
+.AppReturnTopButton {
+  $return-top-button-width: 80px;
+  $return-top-button-height: $return-top-button-width;
+  $return-top-icon-width: 24px;
+  $return-top-icon-height: $return-top-icon-width;
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0%;
+  }
+
+  &__PageTopButton {
     position: fixed;
     right: 20px;
     bottom: 16px;
-    width: 80px;
-    height: 80px;
-    background-color: #424242;
-    border-radius: 40px;
-    opacity: 60%;
+    width: $return-top-button-width;
+    height: $return-top-button-height;
+    background-color: $return-top-button-color;
+    border-radius: $border-radius40;
+    opacity: 0.6;
     :focus,
     :hover {
       cursor: pointer;
@@ -62,8 +75,8 @@ export default {
     button {
       position: relative;
       display: block;
-      width: 80px;
-      height: 80px;
+      width: $return-top-button-width;
+      height: $return-top-button-height;
       text-decoration: none;
       background-color: transparent;
       border: none;
@@ -73,13 +86,13 @@ export default {
         right: 0;
         bottom: 0;
         left: 0;
-        width: 24px;
-        height: 24px;
+        width: $return-top-icon-width;
+        height: $return-top-icon-height;
         margin: auto;
         font-family: 'Font Awesome 5 Free';
-        font-size: 24px;
-        font-weight: 900;
-        color: #fff;
+        font-size: $font-size-160rem;
+        font-weight: $font-weight-900;
+        color: $white-color;
         content: '\f102';
       }
       &::after {
@@ -89,8 +102,8 @@ export default {
         bottom: 0;
         left: 0;
         margin: auto;
-        font-size: 10px;
-        color: #fff;
+        font-size: $font-size-092rem;
+        color: $white-color;
         text-align: center;
         content: 'PAGE TOP';
       }

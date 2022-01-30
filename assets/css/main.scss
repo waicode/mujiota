@@ -5,6 +5,7 @@
  * 共通変数
  */
 
+$font-size-070rem: 0.7rem;
 $font-size-076rem: 0.76rem;
 $font-size-081rem: 0.8175rem;
 $font-size-086rem: 0.86rem;
@@ -25,21 +26,27 @@ $font-size-180rem: 1.8rem;
 $font-weight-200: 200;
 $font-weight-400: 400;
 $font-weight-700: 700;
+$font-weight-900: 900;
 
 $line-height-160: 1.6;
 
 $z-index-minus-1: -1;
+$z-index-1: 1;
 
 $border-radius-half: 50%;
 
 $border-width1: 1px;
 $border-width2: 2px;
 $border-width3: 3px;
+$border-width12: 12px;
 
 $border-radius2: 2px;
+$border-radius4: 4px;
+$border-radius8: 8px;
 $border-radius10: 10px;
 $border-radius24: 24px;
 $border-radius34: 34px;
+$border-radius40: 40px;
 
 $scale4: 4px;
 $scale8: 8px;
@@ -59,6 +66,7 @@ $scale80: 80px;
 $scale96: 96px;
 $scale112: 112px;
 
+$dark-black-color: #111;
 $black-color: #333;
 $dark-gray-color: #263238;
 $gray-color: #eee;
@@ -66,21 +74,42 @@ $light-gray-color: #efefef;
 $white-color: #fff;
 
 $link-gray-color: #726c6c;
+$border-gray-color: #e0e0e0;
 
 $share-hb-button-color: #00a4de;
 $share-tw-button-color: #1da1f2;
 $share-fb-button-color: #1877f2;
 $share-pk-button-color: #ee4056;
 
+$kaereba-rakuten-button-color: #ef5350;
+$kaereba-amazon-button-color: #ff9800;
+$kaereba-yahoo-button-color: #2196f3;
+
 $side-bar-link-color: $link-gray-color;
-$side-bar-separator-border-color: #e0e0e0;
+$side-bar-separator-border-color: $border-gray-color;
+$capture-image-border-color: $border-gray-color;
 
 $sitemap-link-color: $link-gray-color;
 
 $ad-bg-color: #c5e1a5;
 $bg-secondary-color: #fafafa;
 $container-shadow-color: rgba(0, 0, 0, 0.1);
+$photo-image-shadow-color: rgba(67, 133, 187, 0.07);
+$photo-image-blend-color: rgba(230, 193, 61, 0.1);
+$photo-image-frame-bg-color: #fafafa;
+$photo-image-frame-border-color: #cfd8dc;
+$photo-image-frame-tilt-top: -10px;
+$photo-image-frame-tilt-left: -25px;
+$photo-image-frame-tilt-right: $photo-image-frame-tilt-left;
+$photo-image-frame-tilt-bottom: $photo-image-frame-tilt-top;
+
+$link-box-shadow-color: $light-gray-color;
+$link-image-shadow-color: $gray-color;
+$link-hover-color: #666;
+
 $toc-bg-color: rgba(250, 250, 250, 0.2);
+
+$return-top-button-color: #424242;
 
 /**
  * bulmaのカスタマイズ

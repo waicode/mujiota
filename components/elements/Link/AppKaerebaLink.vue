@@ -1,5 +1,5 @@
 <template>
-  <div class="kaerebalink">
+  <div class="AppKaerebaLink">
     <div class="columns wrap">
       <div
         v-if="imgFileName"
@@ -16,18 +16,18 @@
         <div v-if="shopName" class="link-shop-name">
           {{ shopName }}
         </div>
-        <div class="link-seach-links">
-          <div class="shoplink-rakuten seach-link">
+        <div class="link-search-links">
+          <div class="shoplink-rakuten search-link">
             <a
               :href="rakutenItemId ? rakutenProductUrl : rakutenSearchUrl"
               target="_blank"
               >Rakutenで探す</a
             >
           </div>
-          <div class="shoplink-amazon seach-link">
+          <div class="shoplink-amazon search-link">
             <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
           </div>
-          <div class="shoplink-yahoo seach-link">
+          <div class="shoplink-yahoo search-link">
             <a :href="yahooSearchUrl" target="_blank">Yahooで探す</a>
             <span>
               <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
@@ -105,42 +105,42 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.kaerebalink {
+.AppKaerebaLink {
   .wrap {
     box-sizing: border-box;
-    padding: 0.64rem;
-    margin: 0 0 2rem;
+    padding: $scale12;
+    margin: 0 0 $scale32;
     background: #fff;
-    border: 1px solid;
-    border-color: #eaeaea #ddd #d0d0d0;
-    border-radius: 3px;
+    border: $border-width1 solid $border-gray-color;
+    border-radius: $border-radius2;
+    box-shadow: 0 0 1px $link-image-shadow-color;
     .link-image {
       align-items: center;
-      padding: 16px;
+      padding: $scale16;
       img {
         vertical-align: top;
       }
     }
     .link-info {
       .link-title {
-        margin: 0.2rem 0 0.8rem;
-        font-size: 1.0625rem;
-        font-weight: bold;
+        margin: $scale4 0 $scale12;
+        font-size: $font-size-104rem;
+        font-weight: $font-weight-700;
         a {
           color: $text;
         }
       }
       .link-shop-name {
-        margin: 0 0 2rem;
+        margin: 0 0 $scale32;
       }
-      .link-seach-links {
+      .link-search-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .seach-link {
+        .search-link {
           flex: 1;
           min-width: 148px;
-          padding: 4px;
+          padding: $scale4;
           @media (max-width: $desktop) {
             width: 100%;
             min-width: 100%;
@@ -149,36 +149,36 @@ export default {
           a {
             display: block;
             width: 100%;
-            padding: 1em;
-            margin: 0 auto 0.6rem;
-            font-size: 0.84rem;
-            font-weight: bold;
-            color: #fff;
+            padding: $scale16;
+            margin: 0 auto $scale8;
+            font-size: $font-size-086rem;
+            font-weight: $font-weight-700;
+            color: $white-color;
             text-align: center;
-            border-radius: 4px;
+            border-radius: $border-radius4;
             @media (max-width: $desktop) {
-              font-size: 0.9rem;
+              font-size: $font-size-092rem;
             }
             svg {
-              width: 1.2rem;
-              height: 1.2rem;
+              width: 20px;
+              height: 20px;
               vertical-align: middle;
-              fill: #fff;
+              fill: $white-color;
             }
           }
         }
         .shoplink-rakuten a {
-          background-color: #ef5350;
-          border: 2px solid #ef5350;
+          background-color: $kaereba-rakuten-button-color;
+          border: $border-width2 solid $kaereba-rakuten-button-color;
         }
         .shoplink-amazon a {
-          background-color: #ff9800;
-          border: 2px solid #ff9800;
+          background-color: $kaereba-amazon-button-color;
+          border: $border-width2 solid $kaereba-amazon-button-color;
         }
         .shoplink-yahoo {
           a {
-            background-color: #2196f3;
-            border: 2px solid #2196f3;
+            background-color: $kaereba-yahoo-button-color;
+            border: $border-width2 solid $kaereba-yahoo-button-color;
           }
           img {
             display: none;
