@@ -1,7 +1,7 @@
 <template>
   <div class="AppReturnTopButton">
     <transition name="fade">
-      <div v-show="buttonActive">
+      <div v-show="isButtonActive">
         <div class="AppReturnTopButton__PageTopButton">
           <button @click="returnTop" />
         </div>
@@ -12,16 +12,33 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from '@nuxtjs/composition-api'
 
+/**
+ * ## TOPへ戻るボタン
+ *
+ * ページの一番上に戻るボタンコンポーネント。
+ * ボタンを表示させる位置より下までスクロールされたタイミングで表示する。
+ */
 export default defineComponent({
-  setup() {
-    const buttonActive = ref(false)
-    const scroll = ref(0)
+  name: 'AppReturnTopButton',
+  props: {
+    /**
+     * ボタンを表示させたい位置
+     */
+    showTop: {
+      type: Number,
+      required: true,
+    },
+  },
+  setup(props) {
+    const isButtonActive = ref(false)
 
     const scrollDisplayControl = () => {
-      const top = 100 // ボタンを表示させたい位置
-      scroll.value = window.scrollY
-      buttonActive.value = top <= scroll.value
+      isButtonActive.value = props.showTop <= window.scrollY
     }
+
+    onMounted(() => {
+      window.addEventListener('scroll', scrollDisplayControl)
+    })
 
     const returnTop = () => {
       window.scrollTo({
@@ -30,13 +47,8 @@ export default defineComponent({
       })
     }
 
-    onMounted(() => {
-      window.addEventListener('scroll', scrollDisplayControl)
-    })
-
     return {
-      buttonActive,
-      scroll,
+      isButtonActive,
       returnTop,
     }
   },
@@ -102,7 +114,7 @@ export default defineComponent({
         bottom: 0;
         left: 0;
         margin: auto;
-        font-size: $font-size-092rem;
+        font-size: $font-size-070rem;
         color: $white-color;
         text-align: center;
         content: 'PAGE TOP';
