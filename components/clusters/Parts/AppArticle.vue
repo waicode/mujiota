@@ -87,7 +87,7 @@ export default defineComponent({
   },
   emits: [
     /**
-     * リンククリックで発火。
+     * リンクがクリックされたとき。
      * 検索モーダル画面を閉じるときに使われる。
      */
     'link-click',
