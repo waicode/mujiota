@@ -5,8 +5,17 @@
 <script lang="ts">
 import { computed, defineComponent } from '@nuxtjs/composition-api'
 
+/**
+ * ## 画像イメージ
+ *
+ * 画像表示用のコンポーネント。
+ * assetsから画像を動的に読み込み、遅延ロードで表示する。
+ */
 export default defineComponent({
   name: 'AppAssetsImage',
+  /**
+   * 画像パス（assetsフォルダ配下のパスを指定）
+   */
   props: {
     path: {
       type: String,
