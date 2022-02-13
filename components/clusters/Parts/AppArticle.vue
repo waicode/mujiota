@@ -67,14 +67,31 @@ import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
 import { Article } from '~/store'
 
+/**
+ * ## 記事
+ *
+ * 一覧表示用の記事コンポーネント。
+ * 記事（Article）を受け取り、情報を表示する。
+ * アイキャッチ画像・タイトル・リード文・日付・タグで構成される。
+ */
 export default defineComponent({
   name: 'AppArticle',
+  /**
+   * 記事（Article）。
+   */
   props: {
     article: {
       type: Object as PropType<Article>,
       required: true,
     },
   },
+  emits: [
+    /**
+     * リンククリックで発火。
+     * 検索モーダル画面を閉じるときに使われる。
+     */
+    'link-click',
+  ],
   setup() {
     return {
       faCalendarAlt,

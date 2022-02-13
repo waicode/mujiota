@@ -78,14 +78,14 @@ export default defineComponent({
   },
   props: {
     /**
-     * ロゴを消したい位置
+     * ロゴを消したい位置。
      */
     logoHideTop: {
       type: Number,
       required: true,
     },
     /**
-     * メニューボタンの色を目立たなくする位置
+     * メニューボタンの色を目立たなくする位置。
      */
     menuButtonHideTop: {
       type: Number,
