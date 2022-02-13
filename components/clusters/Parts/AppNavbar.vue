@@ -63,14 +63,36 @@ import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 
 import { bemx } from '@/composables/util'
 
+/**
+ * ## ナビバー
+ *
+ * ヘッダーから呼ばれるナビバーのコンポーネント。
+ * ロゴとメニューボタンで構成される。
+ * ロゴを消す・メニューボタンの色を目立たなくする位置を指定する。
+ */
 export default defineComponent({
   name: 'AppNavbar',
   components: {
     SearchIconSvg,
     SitemapIconSvg,
   },
-  setup() {
-    const scroll = ref(0)
+  props: {
+    /**
+     * ロゴを消したい位置
+     */
+    logoHideTop: {
+      type: Number,
+      required: true,
+    },
+    /**
+     * メニューボタンの色を目立たなくする位置
+     */
+    menuButtonHideTop: {
+      type: Number,
+      required: true,
+    },
+  },
+  setup(props) {
     const isComponentModalActive = ref(false)
     const isLogoActive = ref(true)
     const isNavBtnActive = ref(true)
@@ -78,12 +100,9 @@ export default defineComponent({
 
     // ロゴとボタンの表示制御
     const scrollDisplayControl = () => {
-      const logoTop = 80 // ロゴを消したい位置
-      const navBtnTop = 83 // ボタンを消したい位置
       const mobileMediaQuery = window.matchMedia('(max-width: 768px)') // < $tablet
-      scroll.value = window.scrollY
-      isLogoActive.value = logoTop > scroll.value
-      isNavBtnOnTop.value = navBtnTop > scroll.value
+      isLogoActive.value = props.logoHideTop > window.scrollY
+      isNavBtnOnTop.value = props.menuButtonHideTop > window.scrollY
       if (mobileMediaQuery.matches) {
         isNavBtnActive.value = isNavBtnOnTop.value
       } else {
@@ -91,6 +110,7 @@ export default defineComponent({
         isNavBtnActive.value = true
       }
     }
+
     onMounted(() => {
       window.addEventListener('scroll', scrollDisplayControl)
     })
@@ -107,7 +127,6 @@ export default defineComponent({
       isComponentModalActive,
       isLogoActive,
       isNavBtnActive,
-      scroll,
     }
   },
 })

@@ -10,7 +10,12 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, onMounted, ref } from '@nuxtjs/composition-api'
+import {
+  defineComponent,
+  onMounted,
+  onUnmounted,
+  ref,
+} from '@nuxtjs/composition-api'
 
 /**
  * ## TOPへ戻るボタン
@@ -38,6 +43,9 @@ export default defineComponent({
 
     onMounted(() => {
       window.addEventListener('scroll', scrollDisplayControl)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('scroll', scrollDisplayControl)
     })
 
     const returnTop = () => {
