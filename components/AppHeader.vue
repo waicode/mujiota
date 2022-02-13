@@ -2,7 +2,7 @@
   <div :class="className">
     <div class="AppHeader__HeaderBg"></div>
     <div class="AppHeader__Navbar">
-      <AppNavbar logo-hide-top="80" menu-button-hide-top="83" />
+      <AppNavbar :logo-hide-top="80" :menu-button-hide-top="83" />
     </div>
   </div>
 </template>

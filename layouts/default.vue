@@ -17,7 +17,7 @@
             <AppSideBar />
           </div>
         </aside>
-        <AppReturnTopButton show-top="100" class="Mujiota__PageTopButton" />
+        <AppReturnTopButton :show-top="100" class="Mujiota__PageTopButton" />
       </div>
     </div>
     <AppFooter />

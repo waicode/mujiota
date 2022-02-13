@@ -27,7 +27,7 @@ export default defineComponent({
   name: 'AppReturnTopButton',
   props: {
     /**
-     * ボタンを表示させたい位置
+     * ボタンを表示させたい位置。
      */
     showTop: {
       type: Number,

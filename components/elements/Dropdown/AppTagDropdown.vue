@@ -23,15 +23,28 @@ import { defineComponent, PropType, useContext } from '@nuxtjs/composition-api'
 import { bemx } from '~/composables/util'
 import { Tag } from '~/store'
 
+/**
+ * ## タグページ用ドロップダウン
+ *
+ * タグページを表示するドロップダウン。
+ * ドロップダウン未選択時に表示するラベルと中身のタグ情報リストを受け取る。
+ * リスト項目を選択すると該当のタグページへ遷移する。
+ */
 export default defineComponent({
   name: 'AppTagDropdown',
   props: {
+    /**
+     * 未選択時の表示ラベル。
+     */
     label: {
       type: String,
       required: true,
     },
+    /**
+     * タグ情報（Tag）のリスト。
+     */
     tags: {
-      type: Array as PropType<Array<string>>,
+      type: Array as PropType<Array<Tag>>,
       required: true,
     },
   },
