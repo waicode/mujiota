@@ -13,10 +13,10 @@ import { computed, defineComponent } from '@nuxtjs/composition-api'
  */
 export default defineComponent({
   name: 'AppAssetsImage',
-  /**
-   * 画像パス（assetsフォルダ配下のパスを指定）
-   */
   props: {
+    /**
+     * 画像パス（assetsフォルダ配下のパスを指定）
+     */
     path: {
       type: String,
       required: true,
