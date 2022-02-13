@@ -26,6 +26,7 @@
     "@nuxtjs/google-adsense": "^2.0.0",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/style-resources": "^1.2.0",
+    "change-case": "^4.1.2",
     "core-js": "^3.9.1",
     "cross-env": "^7.0.3",
     "esm": "^3.2.25",
@@ -41,6 +42,8 @@
     "nuxt-typed-vuex": "^0.2.0",
     "remark-directive": "^1.0.1",
     "remark-emoji": "^2.2.0",
+    "type-fest": "^2.11.2",
+    "upper-case": "^2.0.2",
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {

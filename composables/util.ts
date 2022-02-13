@@ -1,3 +1,47 @@
+import { ScreamingSnakeCase, UnionToIntersection } from 'type-fest'
+import { upperCase } from 'upper-case'
+import { snakeCase } from 'change-case'
+
+/**
+ * 指定オブジェクトのKeyの型
+ */
+export type KeyTypeOf<T> = keyof T
+
+/**
+ * 指定オブジェクトのValueの型
+ */
+export type ValueTypeOf<T> = T[keyof T]
+
+type UnionToObjectUnion<X extends string> = X extends string
+  ? { [key in ScreamingSnakeCase<X>]: X }
+  : never
+type UnionToEnumObject<X extends string> = UnionToIntersection<
+  UnionToObjectUnion<X>
+>
+/**
+ * 文字配列から定数オブジェクトを生成
+ *
+ * @param args stringの配列
+ * @returns 文字配列から生成した定数オブジェクト
+ *
+ * @example
+ * const ALERT_TYPE = arrayToEnumObject(['error', 'warning'])
+ *
+ * // このとき、以下のように出力される
+ * // ALERT_TYPE = {                                                                                                                                   23:50:18
+ * //   ERROR: 'error',
+ * //   WARNING: 'warning'
+ * // }
+ *
+ */
+export const arrayToEnumObject = <T extends string>(
+  args: Readonly<T[]>
+): UnionToEnumObject<T> =>
+  args.reduce(
+    (draft, value) => ({ ...draft, [upperCase(snakeCase(value))]: value }),
+    {}
+  ) as unknown as UnionToEnumObject<T>
+
 type StringKeyBemRecord = Record<
   string,
   string | number | boolean | undefined | null
