@@ -3,7 +3,7 @@
     <b-navbar fixed-top transparent>
       <template #brand>
         <transition name="fade">
-          <div v-show="logoActive">
+          <div v-show="isLogoActive">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
               <img
                 src="/logo/mujiota-logo.png"
@@ -18,7 +18,7 @@
       <template #end>
         <b-navbar-item tag="div">
           <transition name="fade">
-            <div v-show="navBtnActive">
+            <div v-show="isNavBtnActive">
               <div class="AppNavbar__TopnavIcons">
                 <a
                   class="AppNavbar__IconSearchLink"
@@ -50,17 +50,18 @@
   </div>
 </template>
 <script lang="ts">
-import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
-import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
-import { bemx } from '@/composables/util'
 import {
   computed,
   defineComponent,
   onMounted,
   onUnmounted,
   ref,
-  unref,
 } from '@nuxtjs/composition-api'
+
+import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
+import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
+
+import { bemx } from '@/composables/util'
 
 export default defineComponent({
   name: 'AppNavbar',
@@ -71,9 +72,9 @@ export default defineComponent({
   setup() {
     const scroll = ref(0)
     const isComponentModalActive = ref(false)
-    const logoActive = ref(true)
-    const navBtnActive = ref(true)
-    const navBtnOnTop = ref(true)
+    const isLogoActive = ref(true)
+    const isNavBtnActive = ref(true)
+    const isNavBtnOnTop = ref(true)
 
     // ロゴとボタンの表示制御
     const scrollDisplayControl = () => {
@@ -81,13 +82,13 @@ export default defineComponent({
       const navBtnTop = 83 // ボタンを消したい位置
       const mobileMediaQuery = window.matchMedia('(max-width: 768px)') // < $tablet
       scroll.value = window.scrollY
-      logoActive.value = logoTop > scroll.value
-      navBtnOnTop.value = navBtnTop > scroll.value
+      isLogoActive.value = logoTop > scroll.value
+      isNavBtnOnTop.value = navBtnTop > scroll.value
       if (mobileMediaQuery.matches) {
-        navBtnActive.value = navBtnOnTop.value
+        isNavBtnActive.value = isNavBtnOnTop.value
       } else {
         // モバイル以外は常に表示
-        navBtnActive.value = true
+        isNavBtnActive.value = true
       }
     }
     onMounted(() => {
@@ -97,16 +98,15 @@ export default defineComponent({
       window.removeEventListener('scroll', scrollDisplayControl)
     })
 
-    const className = computed(() => {
-      bemx('AppNavbar', { onTop: unref(navBtnOnTop) })
-    })
+    const className = computed(() =>
+      bemx('AppNavbar', { onTop: isNavBtnOnTop.value })
+    )
 
     return {
       className,
       isComponentModalActive,
-      logoActive,
-      navBtnActive,
-      navBtnOnTop,
+      isLogoActive,
+      isNavBtnActive,
       scroll,
     }
   },
@@ -165,6 +165,7 @@ export default defineComponent({
   $circle-alpha-color: rgba(111, 73, 82, 0.28);
 
   &__TopnavIcons {
+    display: flex;
     a {
       position: relative;
       display: flex;
@@ -195,7 +196,10 @@ export default defineComponent({
         }
       }
     }
-    &--onTop {
+  }
+
+  &--onTop {
+    .AppNavbar__TopnavIcons {
       a {
         border: $border-width2 solid $circle-color;
         svg {

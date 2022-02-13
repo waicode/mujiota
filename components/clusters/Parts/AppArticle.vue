@@ -1,28 +1,32 @@
 <template>
-  <article class="archive">
+  <article class="AppArticle">
     <NuxtLink
       :to="`/${article.id}/${article.slug}`"
       @click.native="$emit('link-click')"
     >
-      <div class="columns wrap">
-        <div class="eyecatch column is-5-desktop is-5-tablet is-12-mobile">
+      <div class="columns">
+        <div
+          class="AppArticle__Eyecatch column is-5-desktop is-5-tablet is-12-mobile"
+        >
           <AppAssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>
-        <div class="contents column is-7-desktop is-7-tablet is-12-mobile">
-          <h2 class="post-title">
+        <div
+          class="AppArticle__Contents column is-7-desktop is-7-tablet is-12-mobile"
+        >
+          <h2 class="AppArticle__PostTitle">
             {{ article.title }}
           </h2>
-          <div class="description">
+          <div class="AppArticle__Description">
             <p>
               {{ article.description }}
             </p>
           </div>
-          <div class="meta-wrap">
-            <div class="date">
+          <div class="AppArticle__Meta">
+            <div class="AppArticle__Date">
               <span
-                class="date-published"
+                class="AppArticle__DatePublished"
                 itemprop="createdAt"
                 :content="article.createdAt"
               >
@@ -31,7 +35,7 @@
               </span>
               <span
                 v-if="article.updatedAt != article.createdAt"
-                class="date-updated"
+                class="AppArticle__DatePublished"
                 itemprop="updatedAt"
                 :content="article.updatedAt"
               >
@@ -39,11 +43,11 @@
                 <span>{{ article.updatedAt | dateFormatted }}</span>
               </span>
             </div>
-            <div v-if="article.tags" class="tags">
+            <div v-if="article.tags" class="AppArticle__Tags">
               <span
                 v-for="tag in article.tags"
                 :key="`${article.id}-${tag}`"
-                class="tag is-light"
+                class="AppArticle__Tag tag is-light"
               >
                 {{ tag }}
               </span>
@@ -54,81 +58,88 @@
     </NuxtLink>
   </article>
 </template>
-<script>
+
+<script lang="ts">
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
+
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
-export default {
-  name: 'MujiotaAirticle',
+import { Article } from '~/store'
+
+export default defineComponent({
+  name: 'AppArticle',
   props: {
     article: {
+      type: Object as PropType<Article>,
       required: true,
-      type: Object,
     },
   },
-  computed: {
-    faCalendarAlt() {
-      return faCalendarAlt
-    },
-    faRedoAlt() {
-      return faRedoAlt
-    },
-  },
-}
-</script>
-<style lang="scss" scoped>
-.archive {
-  .wrap {
-    .eyecatch {
-      height: auto;
-      padding: $scale32;
-      @media (max-width: $desktop) {
-        padding: $scale12;
-      }
-      img {
-        height: auto;
-        max-height: 100%;
-        vertical-align: top;
-        border-radius: $border-width2;
-      }
+  setup() {
+    return {
+      faCalendarAlt,
+      faRedoAlt,
     }
-    .contents {
-      min-height: 172px;
-      .post-title {
-        margin-bottom: $scale8;
-        font-size: $font-size-124rem;
-        font-weight: $font-weight-700;
-        color: $text;
-      }
-      .description {
-        margin-bottom: $scale12;
-        font-size: $font-size-086rem;
-        color: $text;
-      }
-      .meta-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: $scale8;
-        color: $text;
-        .date {
-          display: flex;
-          flex-wrap: nowrap;
-          padding: $scale4;
-          padding-right: 0;
-          font-size: $font-size-081rem;
-          .date-published {
-            margin-right: $scale12;
-          }
-        }
-        .tags {
-          display: flex;
-          padding: $scale4;
-          padding-left: 0;
-          font-size: $font-size-081rem;
-        }
-      }
+  },
+})
+</script>
+
+<style lang="scss">
+.AppArticle {
+  &__Eyecatch {
+    height: auto;
+    padding: $scale32;
+    @media (max-width: $desktop) {
+      padding: $scale12;
+    }
+    img {
+      height: auto;
+      max-height: 100%;
+      vertical-align: top;
+      border-radius: $border-width2;
+    }
+  }
+  &__Contents {
+    min-height: 172px;
+  }
+  &__PostTitle {
+    margin-bottom: $scale8;
+    font-size: $font-size-124rem;
+    font-weight: $font-weight-700;
+    color: $text;
+  }
+  &__Description {
+    margin-bottom: $scale12;
+    font-size: $font-size-086rem;
+    color: $text;
+  }
+  &__Meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $scale8;
+    color: $text;
+  }
+  &__Date {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: $scale4;
+    padding-right: 0;
+    font-size: $font-size-081rem;
+  }
+  &__DatePublished {
+    margin-right: $scale12;
+  }
+  &__Tags {
+    display: flex;
+    padding: $scale4;
+    padding-left: 0;
+    font-size: $font-size-081rem;
+  }
+  &__Tag {
+    &:not(:last-child) {
+      margin-right: $scale8;
     }
   }
 }

@@ -48,6 +48,7 @@ $github-icon-color: #9fa8da;
 $email-icon-color: #eee;
 
 .AppFooter {
+  padding: $scale24 0;
   margin-top: $scale48;
   color: $white-color;
   background-color: $footer-bg-color !important;
@@ -73,7 +74,7 @@ $email-icon-color: #eee;
   }
 
   &__TwitterIcon,
-  &__GithugIcon,
+  &__GithubIcon,
   &__EmailIcon {
     a {
       svg {
