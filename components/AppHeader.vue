@@ -26,6 +26,10 @@ export default defineComponent({
   $header-bg-gradient-start-color: rgba(224, 224, 224, 0.85);
   $header-bg-gradient-end-color: rgba(97, 97, 97, 0.85);
 
+  // ヘッダーは位置を固定して上から覆われるためクリックイベントを無効化しておく
+  // ナビバーの要素で`pointer-events: auto;`を指定し個別に有効化すること
+  pointer-events: none;
+
   &__HeaderBg {
     position: absolute;
     top: 0;

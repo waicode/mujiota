@@ -137,6 +137,10 @@ export default defineComponent({
   .navbar {
     padding-top: $scale20;
   }
+  .navbar-item {
+    // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化
+    pointer-events: auto;
+  }
   .navbar-brand {
     padding: $scale24 $scale28 $scale20;
     @media (max-width: $desktop) {
