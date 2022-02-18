@@ -22,25 +22,29 @@
     </div>
   </footer>
 </template>
-<script>
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
 import TwitterIconSvg from '@/assets/images/shared/icon/iconmonstr-twitter-1.svg'
 import GithubIconSvg from '@/assets/images/shared/icon/iconmonstr-github-1.svg'
 // import EmailIconSvg from '@/assets/images/shared/icon/iconmonstr-paper-plane-4.svg'
 
-export default {
+/**
+ * ## フッター
+ *
+ * ブログ全体のフッターコンポーネント。
+ * ソーシャルアイコンリンクとCopyrightを表示する。
+ */
+export default defineComponent({
   name: 'AppFooter',
-  components: {
-    TwitterIconSvg,
-    GithubIconSvg,
-    // EmailIconSvg,
-  },
-  data() {
+  components: { TwitterIconSvg, GithubIconSvg },
+  setup() {
     return {
       thisYear: new Date().getFullYear(),
     }
   },
-}
+})
 </script>
+
 <style lang="scss">
 $footer-bg-color: #424242;
 $twitter-icon-color: #81d4fa;
@@ -57,10 +61,11 @@ $email-icon-color: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: $scale32 $scale48;
+    padding: $scale32 $scale24;
     ul {
       display: flex;
       justify-content: center;
+      margin-bottom: 0;
       list-style: none;
       li {
         &:not(:last-child) {

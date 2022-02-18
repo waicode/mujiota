@@ -38,6 +38,13 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import { bemx } from '~/composables/util'
 
+/**
+ * ## サイドバー
+ *
+ * ブログ全体のサイドバーコンポーネント。
+ * よく読まれている記事や、タグ・アーカイブページ選択ドロップダウンを呼び出す。
+ *
+ */
 export default defineComponent({
   name: 'AppSideBar',
   setup() {

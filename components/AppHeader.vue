@@ -8,9 +8,14 @@
 </template>
 <script lang="ts">
 import { bemx } from '@/composables/util'
-
 import { defineComponent } from '@nuxtjs/composition-api'
 
+/**
+ * ## フッター
+ *
+ * ブログ全体のヘッダーコンポーネント。
+ * グラデーション背景を設定し、ナビバーコンポーネントを呼び出す。
+ */
 export default defineComponent({
   name: 'AppHeader',
   setup() {

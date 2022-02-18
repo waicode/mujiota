@@ -1,7 +1,7 @@
 <template>
   <div class="AppExternalLink">
     <a :href="link" target="_blank" rel="nofollow">
-      <div class="columns AppExternalLink__Wrapper">
+      <div class="AppExternalLink__Wrapper columns">
         <div
           class="AppExternalLink__LinkImage column is-3-desktop is-5-tablet is-12-mobile"
         >
@@ -82,7 +82,7 @@ export default defineComponent({
 .AppExternalLink {
   margin: $scale28 0;
 
-  .AppExternalLink__Wrapper {
+  &__Wrapper {
     padding: $scale4;
     color: $black-color;
     text-decoration: none;
@@ -97,7 +97,7 @@ export default defineComponent({
     }
   }
 
-  .AppExternalLink__LinkImage {
+  &__LinkImage {
     img {
       vertical-align: top;
       border: $border-width1 solid $border-gray-color;
@@ -105,7 +105,7 @@ export default defineComponent({
     }
   }
 
-  .AppExternalLink__LinkTitle {
+  &__LinkTitle {
     margin-bottom: $scale8;
     font-weight: $font-weight-700;
     &::before {
@@ -124,7 +124,7 @@ export default defineComponent({
       border-radius: $border-radius2;
     }
   }
-  .AppExternalLink__LinkNote {
+  &__LinkNote {
     font-size: $font-size-096rem;
   }
 }
