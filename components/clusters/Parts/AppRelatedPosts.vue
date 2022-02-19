@@ -1,27 +1,29 @@
 <template>
-  <div class="related">
-    <h2 class="related-title">あわせて読みたい</h2>
-    <div class="related-posts">
-      <ul class="related-list">
+  <div class="AppRelatedPosts">
+    <h2 class="AppRelatedPosts__RelatedTitle">あわせて読みたい</h2>
+    <div class="AppRelatedPosts__RelatedPosts">
+      <ul class="AppRelatedPosts__RelatedList">
         <template v-for="(article, index) in articles">
           <li :key="`li-${article.id}`">
             <NuxtLink :to="`/${article.id}/${article.slug}`">
-              <div class="wrap">
-                <div class="eyecatch">
+              <div class="AppRelatedPosts__ArticleWrapper">
+                <div class="AppRelatedPosts__ArticleEyecatch">
                   <AppAssetsImage
                     :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
                   />
                 </div>
-                <div class="post-contents">
-                  <h3 class="post-title">{{ article.title }}</h3>
-                  <div class="post-description">
+                <div class="AppRelatedPosts__ArticleContents">
+                  <h3 class="AppRelatedPosts__ArticleTitle">
+                    {{ article.title }}
+                  </h3>
+                  <div class="AppRelatedPosts__ArticleDescription">
                     {{ article.description }}
                   </div>
 
-                  <div class="meta-wrap">
-                    <div class="post-date">
+                  <div class="AppRelatedPosts__ArticleMeta">
+                    <div class="AppRelatedPosts__ArticleDate">
                       <span
-                        class="date-updated"
+                        class="AppRelatedPosts__ArticleDateUpdated"
                         itemprop="updatedAt"
                         :content="article.updatedAt"
                       >
@@ -40,104 +42,117 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
-export default {
+/**
+ * ## 関連記事リスト
+ *
+ * 関連記事の一覧を表示するコンポーネント。
+ * Contentの記事情報を受け取る。
+ */
+export default defineComponent({
+  name: 'AppRelatedPosts',
   props: {
+    /**
+     * 記事一覧。
+     * Contentの記事情報のリスト。
+     * 表示する関連記事情報を受け取る。
+     */
     articles: {
       required: true,
       type: Array,
     },
   },
-  computed: {
-    faCalendarAlt() {
-      return faCalendarAlt
-    },
-    faRedoAlt() {
-      return faRedoAlt
-    },
+  setup() {
+    return {
+      faCalendarAlt,
+      faRedoAlt,
+    }
   },
-}
+})
 </script>
 <style lang="scss" scoped>
-.related-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: $scale28;
-  font-size: $font-size-168rem;
-  font-weight: $font-weight-700;
-  text-align: center;
-  @media (max-width: $tablet) {
-    font-size: $font-size-132rem;
+.AppRelatedPosts {
+  &__RelatedTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $scale28;
+    font-size: $font-size-168rem;
+    font-weight: $font-weight-700;
+    text-align: center;
+    @media (max-width: $tablet) {
+      font-size: $font-size-132rem;
+    }
+    &::before,
+    &::after {
+      width: $border-width2;
+      height: $font-size-168rem;
+      content: '';
+      background-color: $text;
+    }
+    &::before {
+      margin-right: $scale32;
+      transform: rotate(-90deg);
+    }
+    &::after {
+      margin-left: $scale32;
+      transform: rotate(90deg);
+    }
   }
-  &::before,
-  &::after {
-    width: $border-width2;
-    height: $font-size-168rem;
-    content: '';
-    background-color: $text;
+  &__RelatedList {
+    hr {
+      margin: $scale4 0;
+    }
   }
-  &::before {
-    margin-right: $scale32;
-    transform: rotate(-90deg);
-  }
-  &::after {
-    margin-left: $scale32;
-    transform: rotate(90deg);
-  }
-}
-.related-list {
-  hr {
-    margin: $scale4 0;
-  }
-  .wrap {
+  &__ArticleWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .eyecatch {
-      display: block;
-      width: 28%;
-      height: auto;
-      padding: $scale8 0;
-      img {
-        vertical-align: top;
-      }
+  }
+  &__ArticleEyecatch {
+    display: block;
+    width: 28%;
+    height: auto;
+    padding: $scale8 0;
+    img {
+      vertical-align: top;
     }
-    .post-contents {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      width: 68%;
-      height: auto;
-      min-height: 132px;
-      padding: $scale8 0;
-      .post-title {
-        margin-bottom: $scale8;
-        font-size: $font-size-104rem;
-        font-weight: $font-weight-700;
-        color: $text;
-      }
-      .post-description {
-        font-size: $font-size-092rem;
-        color: $text;
-      }
-      .meta-wrap {
-        display: flex;
-        justify-content: flex-start;
-        color: $text;
-        .post-date {
-          display: flex;
-          padding-top: $scale8;
-          font-size: $font-size-081rem;
-          .date-published {
-            margin-right: $scale12;
-          }
-        }
-      }
-    }
+  }
+  &__ArticleContents {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 68%;
+    height: auto;
+    min-height: 132px;
+    padding: $scale8 0;
+  }
+  &__ArticleTitle {
+    margin-bottom: $scale8;
+    font-size: $font-size-104rem;
+    font-weight: $font-weight-700;
+    color: $text;
+  }
+  &__ArticleDescription {
+    font-size: $font-size-092rem;
+    font-weight: $font-weight-400;
+    line-height: $line-height-160;
+    color: $text;
+  }
+  &__ArticleMeta {
+    display: flex;
+    justify-content: flex-start;
+    color: $text;
+  }
+  &__ArticleDate {
+    display: flex;
+    padding-top: $scale8;
+    font-size: $font-size-081rem;
   }
 }
 </style>

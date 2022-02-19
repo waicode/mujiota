@@ -13,6 +13,9 @@
           <div class="AppRelatedLink__LinkTitle">
             {{ article.title }}
           </div>
+          <div class="AppRelatedLink__LinkDescription">
+            {{ article.description }}
+          </div>
           <div class="AppRelatedLink__LinkDate">
             <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
             <span>{{ article.updatedAt | dateFormatted }}</span>
@@ -120,6 +123,13 @@ export default defineComponent({
       background: $dark-black-color;
       border-radius: $border-radius2;
     }
+  }
+  &__LinkDescription {
+    margin-bottom: $scale12;
+    font-size: $font-size-086rem;
+    font-weight: $font-weight-400;
+    line-height: $line-height-160;
+    color: $text;
   }
 
   &__LinkDate {

@@ -26,18 +26,10 @@
                 >
                   <SearchIconSvg />
                 </a>
-                <b-modal
-                  v-model="isComponentModalActive"
-                  has-modal-card
-                  aria-role="dialog"
-                  aria-label="search modal"
-                  aria-modal
-                  scroll="keep"
-                  animation="fade"
-                  :can-cancel="['escape', 'outside']"
-                >
-                  <AppSearchModal />
-                </b-modal>
+                <AppSearchModal
+                  :is-active="isComponentModalActive"
+                  @close="isComponentModalActive = false"
+                />
                 <nuxt-link to="/sitemap" class="AppNavbar__IconSitemapLink">
                   <SitemapIconSvg />
                 </nuxt-link>

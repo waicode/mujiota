@@ -63,7 +63,7 @@ $ad-side-bottom-height: 500px;
 
 .AppSideBar {
   h2 {
-    margin-bottom: $scale16;
+    margin-bottom: $scale12;
     font-size: $font-size-131rem;
     font-weight: $font-weight-700;
   }
@@ -79,11 +79,12 @@ $ad-side-bottom-height: 500px;
   //   background-color: $ad-bg-color;
   // }
 
-  // &__PopularList {
-  // }
+  &__PopularList {
+    margin-bottom: $scale20;
+  }
 
   &__Concept {
-    margin-bottom: $scale16;
+    margin-bottom: $scale20;
   }
   &__ConceptText {
     padding: $scale4;
@@ -105,7 +106,7 @@ $ad-side-bottom-height: 500px;
 
   &__Tag,
   &__Archive {
-    margin-bottom: $scale16;
+    margin-bottom: $scale20;
   }
 
   // &__AdSideBottom {

@@ -15,7 +15,7 @@
         <div
           class="AppArticle__Contents column is-7-desktop is-7-tablet is-12-mobile"
         >
-          <h2 class="AppArticle__PostTitle">
+          <h2 class="AppArticle__Title">
             {{ article.title }}
           </h2>
           <div class="AppArticle__Description">
@@ -58,7 +58,6 @@
     </NuxtLink>
   </article>
 </template>
-
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
@@ -100,7 +99,6 @@ export default defineComponent({
   },
 })
 </script>
-
 <style lang="scss">
 .AppArticle {
   &__Eyecatch {
@@ -119,7 +117,7 @@ export default defineComponent({
   &__Contents {
     min-height: 172px;
   }
-  &__PostTitle {
+  &__Title {
     margin-bottom: $scale8;
     font-size: $font-size-124rem;
     font-weight: $font-weight-700;
@@ -128,6 +126,8 @@ export default defineComponent({
   &__Description {
     margin-bottom: $scale12;
     font-size: $font-size-086rem;
+    font-weight: $font-weight-400;
+    line-height: $line-height-160;
     color: $text;
   }
   &__Meta {
