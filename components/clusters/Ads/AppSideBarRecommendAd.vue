@@ -1,6 +1,6 @@
 <template>
   <div class="AppSideBarRecommendAd">
-    <div v-if="tags.includes('コーヒー')">
+    <div v-if="tags.includes(TAG_KEYS.COFFEE)">
       <h2>リコメンド</h2>
       <div class="AppSideBarRecommendAd__Recommend">
         <h3>お試し価格のお得なコーヒー豆</h3>
@@ -32,9 +32,17 @@
     <div v-else></div>
   </div>
 </template>
-<script>
+<script lang="ts">
 import { defineComponent, computed, useContext } from '@nuxtjs/composition-api'
+import { TAG_KEYS } from '~/plugins/taxonomy'
 
+/**
+ * ## サイドバー関連広告
+ *
+ * サイドバーに配置する関連広告を表示するコンポーネント。
+ * 表示されている記事のカテゴリに合わせて、最適な広告を表示する。
+ * 記事情報はグローバルコンテキストのstoreから取得する。
+ */
 export default defineComponent({
   name: 'AppSideBarRecommendAd',
   setup() {
@@ -45,6 +53,7 @@ export default defineComponent({
     })
     return {
       tags,
+      TAG_KEYS,
     }
   },
 })

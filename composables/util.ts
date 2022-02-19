@@ -2,29 +2,79 @@ import { ScreamingSnakeCase, UnionToIntersection } from 'type-fest'
 import { upperCase } from 'upper-case'
 import { snakeCase } from 'change-case'
 
-/**
- * 指定オブジェクトのKeyの型
- */
-export type KeyTypeOf<T> = keyof T
-
-/**
- * 指定オブジェクトのValueの型
- */
-export type ValueTypeOf<T> = T[keyof T]
-
 type UnionToObjectUnion<X extends string> = X extends string
   ? { [key in ScreamingSnakeCase<X>]: X }
   : never
 type UnionToEnumObject<X extends string> = UnionToIntersection<
   UnionToObjectUnion<X>
 >
+
 /**
- * 文字配列から定数オブジェクトを生成
+ * 入力テキストを大文字スネークケースに変換。
+ *
+ * キャメルケース・パスカルケース・スネークケースに対応。
+ *
+ * @param value 変換したいテキスト
+ * @returns 大文字スネークケースに変換された文字列
+ *
+ * @example
+ * ```
+ * upperSnakeCase('myTestString' === 'MY_TEST_STRING') // true
+ * upperSnakeCase('MyTestString' === 'MY_TEST_STRING') // true
+ * upperSnakeCase('my_test_string' === 'MY_TEST_STRING') // true
+ *
+ * ```
+ */
+export const upperSnakeCase = <T extends string>(
+  value: T
+): ScreamingSnakeCase<T> => upperCase(snakeCase(value)) as ScreamingSnakeCase<T>
+
+/**
+ * 指定オブジェクトのKeyの型。
+ */
+export type KeyTypeOf<T> = keyof T
+
+/**
+ * 指定オブジェクトのValueの型。
+ */
+export type ValueTypeOf<T> = T[keyof T]
+
+/**
+ *
+ * stringキーを持つ定数オブジェクトからキー情報の定数オブジェクトを生成。
+ *
+ * @param arg stringのキーを持つ定数オブジェクト
+ * @returns オブジェクトのキーから生成された定数オブジェクト
+ * @example
+ * ```
+ * const ALERT_TYPE_MAP = {
+ *   error: { icon: mdiAlertCircle },
+ *   warning: { icon: mdiAlert },
+ * } as const
+ *
+ * const ALERT_TYPE = keyEnumObject(ALERT_TYPE_MAP)
+ *
+ * // このとき、以下のように出力される
+ * // ALERT_TYPE = {                                                                                                                                   23:50:18
+ * //   ERROR: 'error',
+ * //   WARNING: 'warning'
+ * // }
+ * ``` */
+export const keyEnumObject = <T extends Record<string, unknown>>(
+  arg: Readonly<T>
+): keyof T extends string ? UnionToEnumObject<keyof T> : never =>
+  Object.fromEntries(
+    Object.keys(arg).map((key) => [upperSnakeCase(key), key])
+  ) as unknown as keyof T extends string ? UnionToEnumObject<keyof T> : never
+
+/**
+ * 文字配列から定数オブジェクトを生成。
  *
  * @param args stringの配列
  * @returns 文字配列から生成した定数オブジェクト
  *
  * @example
+ * ```
  * const ALERT_TYPE = arrayToEnumObject(['error', 'warning'])
  *
  * // このとき、以下のように出力される
@@ -32,7 +82,7 @@ type UnionToEnumObject<X extends string> = UnionToIntersection<
  * //   ERROR: 'error',
  * //   WARNING: 'warning'
  * // }
- *
+ *```
  */
 export const arrayToEnumObject = <T extends string>(
   args: Readonly<T[]>
@@ -52,9 +102,10 @@ type BemModifierRecord =
   | (string | StringKeyBemRecord)[]
 
 /**
- * BEM Classの配列生成
+ * BEM Classの配列生成。
  *
  * clsxのような記述でclassの記述を行うユーティリティ。
+ *
  * https://www.npmjs.com/package/clsx
  *
  * @param groupAndElement - GroupName または GroupName__ElementName を文字列
@@ -62,6 +113,7 @@ type BemModifierRecord =
  * @returns BEM Classの配列
  *
  * @example
+ * ```
  * const hasMod4 = true;
  * const hasMod5 = false;
  * const mod6Value = 'value6'
@@ -90,7 +142,7 @@ type BemModifierRecord =
  * //  'GroupName__ElementName--mod6-value6',
  * //  'GroupName__ElementName--mod7-0',
  * // ]
- *
+ * ```
  */
 export const bemx = (
   groupAndElement: string,
