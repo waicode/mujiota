@@ -17,8 +17,8 @@ export type Article = {
   createdAt: string
   updatedAt: string
   imageFormat: string
-  category: string
-  tags: Array<string>
+  category?: string
+  tags?: Array<string>
 }
 // Articleの型ガード関数
 export const isArticle = (
@@ -26,7 +26,13 @@ export const isArticle = (
 ): article is Article =>
   article === undefined
     ? false
-    : 'id' in unref(article) && 'slug' in unref(article)
+    : 'id' in unref(article) &&
+      'slug' in unref(article) &&
+      'title' in unref(article) &&
+      'description' in unref(article) &&
+      'createdAt' in unref(article) &&
+      'updatedAt' in unref(article) &&
+      'imageFormat' in unref(article)
 
 // Tagの型定義
 export type Tag = {

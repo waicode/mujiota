@@ -29,10 +29,13 @@
 import {
   computed,
   defineComponent,
-  Ref,
   ref,
+  useContext,
   useFetch,
 } from '@nuxtjs/composition-api'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+
 import useFetchPost from '~/composables/useFetchPost'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { Article, isArticle } from '~/store'
@@ -56,10 +59,15 @@ export default defineComponent({
   },
 
   setup(props) {
-    const article = ref() as Ref<Article>
+    const article = ref<Article>()
+
+    const context = useContext()
 
     const { fetch } = useFetch(async () => {
-      article.value = await useFetchPost(props.id)
+      article.value = await useFetchPost(
+        props.id,
+        context as unknown as Context
+      )
     })
 
     fetch()

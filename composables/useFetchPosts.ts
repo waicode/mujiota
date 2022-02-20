@@ -1,8 +1,13 @@
-import { useContext } from '@nuxtjs/composition-api'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
 import { Article } from '~/store'
 
-export default async (): Promise<Article[]> => {
-  const { $content } = useContext()
+/**
+ * ## 全記事リストの取得
+ *
+ * @returns 全記事のリスト
+ */
+export default async ({ $content }: Context): Promise<Article[]> => {
   const articlesData = await $content('articles', { deep: true })
     .only([
       'id',

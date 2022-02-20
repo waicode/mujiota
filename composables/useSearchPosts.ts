@@ -6,9 +6,11 @@ import { Article } from '~/store'
 /**
  * ## 記事の検索
  *
- * `$content`の`search(query)`で一部取得できていない記事があるためfilterと組み合わせて検索している
+ * 検索文字列にヒットした記事の一覧を取得する。
+ * `$content`の`search(query)`で一部取得できていない記事があるためfilterと組み合わせて検索している。
  *
  * @param searchText 検索文字列のRef
+ * @param NuxtのContext
  * @returns 検索結果の記事データ配列のPromise
  */
 export default async (

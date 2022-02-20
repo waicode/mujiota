@@ -27,6 +27,9 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+
 import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchPosts from '~/composables/useFetchPosts'
@@ -35,7 +38,8 @@ import { Article } from '~/store'
 export default defineComponent({
   name: 'MujiotaIndexPage',
   setup() {
-    const { $config, store, app, error } = useContext()
+    const context = useContext()
+    const { $config, store, app, error } = context
     const { title, meta } = useMeta()
 
     const { pageSize } = $config
@@ -48,7 +52,7 @@ export default defineComponent({
     }
 
     const { fetch } = useFetch(async () => {
-      articles.value = await useFetchPosts()
+      articles.value = await useFetchPosts(context as unknown as Context)
       if (articles.value.length < 1) error({ statusCode: 404 })
 
       // ページネーションの初期表示

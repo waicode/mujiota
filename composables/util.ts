@@ -31,6 +31,9 @@ export const upperSnakeCase = <T extends string>(
 
 /**
  * 指定オブジェクトのKeyの型。
+ *
+ * オブジェクトの中のvalueに、さらにオブジェクトが内包されている場合は使えないので注意。
+ * 代わりに`keyEnumObject(object)`と`ValueTypeOf<T>`を組み合わせて型情報をつくること。
  */
 export type KeyTypeOf<T> = keyof T
 
@@ -40,7 +43,6 @@ export type KeyTypeOf<T> = keyof T
 export type ValueTypeOf<T> = T[keyof T]
 
 /**
- *
  * stringキーを持つ定数オブジェクトからキー情報の定数オブジェクトを生成。
  *
  * @param arg stringのキーを持つ定数オブジェクト
