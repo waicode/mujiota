@@ -3,7 +3,7 @@
     <b-navbar fixed-top transparent>
       <template #brand>
         <transition name="fade">
-          <div v-show="isLogoActive">
+          <div v-show="isLogoActive" class="AppNavbar__Logo">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
               <img
                 src="/logo/mujiota-logo.png"
@@ -172,6 +172,10 @@ export default defineComponent({
   $logo-alpha-color: rgba(103, 4, 27, 0.24);
   $circle-color: #6f4952;
   $circle-alpha-color: rgba(111, 73, 82, 0.28);
+  &__Logo {
+    // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化
+    pointer-events: auto;
+  }
   &__TopnavIcons {
     display: flex;
     // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化

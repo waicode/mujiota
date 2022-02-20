@@ -65,6 +65,12 @@ export default defineComponent({
         padding: $scale16;
         color: $side-bar-link-color;
         text-decoration: none;
+        @media (max-width: $desktop) {
+          padding: $scale12;
+        }
+        @media (max-width: $tablet) {
+          padding: $scale16;
+        }
         h3 {
           font-size: $font-size-081rem;
           font-weight: $font-weight-700;

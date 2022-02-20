@@ -20,7 +20,7 @@
           <span
             v-for="tag in article.tags"
             :key="tag"
-            class="MujiotaIdSlugPage__Tag is-light"
+            class="MujiotaIdSlugPage__Tag tag is-light"
           >
             {{ tag }}
           </span>
@@ -202,6 +202,11 @@ export default defineComponent({
     padding: $scale4;
     padding-left: 0;
     font-size: $font-size-081rem;
+  }
+  &__Tag {
+    &:not(:last-child) {
+      margin-right: $scale8;
+    }
   }
   &__TocWrapper {
     @media (max-width: $tablet) {

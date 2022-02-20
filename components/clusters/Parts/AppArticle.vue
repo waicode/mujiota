@@ -6,14 +6,14 @@
     >
       <div class="columns">
         <div
-          class="AppArticle__Eyecatch column is-5-desktop is-5-tablet is-12-mobile"
+          class="AppArticle__Eyecatch column is-5-desktop is-4-tablet is-12-mobile"
         >
           <AppAssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>
         <div
-          class="AppArticle__Contents column is-7-desktop is-7-tablet is-12-mobile"
+          class="AppArticle__Contents column is-7-desktop is-8-tablet is-12-mobile"
         >
           <h2 class="AppArticle__Title">
             {{ article.title }}
@@ -101,6 +101,13 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .AppArticle {
+  height: 216px;
+  @media (max-width: $desktop) {
+    height: auto;
+  }
+  @media (max-width: $tablet) {
+    height: auto;
+  }
   &__Eyecatch {
     height: auto;
     padding: $scale32;
@@ -122,6 +129,12 @@ export default defineComponent({
     font-size: $font-size-124rem;
     font-weight: $font-weight-700;
     color: $text;
+    @media (max-width: $desktop) {
+      font-size: $font-size-110rem;
+    }
+    @media (max-width: $tablet) {
+      font-size: $font-size-124rem;
+    }
   }
   &__Description {
     margin-bottom: $scale12;
@@ -129,6 +142,12 @@ export default defineComponent({
     font-weight: $font-weight-400;
     line-height: $line-height-160;
     color: $text;
+    @media (max-width: $desktop) {
+      font-size: $font-size-081rem;
+    }
+    @media (max-width: $tablet) {
+      font-size: $font-size-086rem;
+    }
   }
   &__Meta {
     display: flex;

@@ -66,6 +66,12 @@ $ad-side-bottom-height: 500px;
     margin-bottom: $scale12;
     font-size: $font-size-131rem;
     font-weight: $font-weight-700;
+    @media (max-width: $desktop) {
+      font-size: $font-size-124rem;
+    }
+    @media (max-width: $tablet) {
+      font-size: $font-size-131rem;
+    }
   }
   h3 {
     font-size: $font-size-081rem;
