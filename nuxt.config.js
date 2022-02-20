@@ -1,7 +1,7 @@
 export default {
   publicRuntimeConfig: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    pageSize: 5,
+    pageSize: process.env.PAGE_SIZE || 5,
   },
 
   privateRuntimeConfig: {},
@@ -49,7 +49,6 @@ export default {
   plugins: [
     { src: '~/plugins/init.client.ts', mode: 'client' },
     '~/plugins/filter.ts',
-    '~/plugins/firebase.ts',
     '~/plugins/meta.ts',
     '~/plugins/post.ts',
     '~/plugins/taxonomy.ts',

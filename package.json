@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nuxt",
+    "dev": "nuxt",
     "build": "nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -28,9 +28,7 @@
     "@nuxtjs/style-resources": "^1.2.0",
     "change-case": "^4.1.2",
     "core-js": "^3.9.1",
-    "cross-env": "^7.0.3",
     "esm": "^3.2.25",
-    "firebase": "^9.6.5",
     "googleapis": "^87.0.0",
     "install": "^0.13.0",
     "npm": "^7.18.1",
