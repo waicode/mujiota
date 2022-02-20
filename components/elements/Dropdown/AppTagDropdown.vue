@@ -52,7 +52,7 @@ export default defineComponent({
     const { app } = useContext()
     const tagLink = (tag: Tag) => `/tag/${app.$getTagSlug(tag.name)}`
     const tagText = (tag: Tag) => `${tag.name}(${tag.count})`
-    const className = bemx('AppLinkDropdown')
+    const className = bemx('AppTagDropdown')
     return {
       className,
       tagLink,
@@ -64,5 +64,22 @@ export default defineComponent({
 <style lang="scss">
 .AppTagDropdown {
   margin-bottom: $scale20;
+  .dropdown {
+    width: 100%;
+    .dropdown-text {
+      font-size: $font-size-081rem;
+      font-weight: $font-weight-700;
+      color: $text-gray-color;
+    }
+    svg.fa-angle-down {
+      color: $gray-color;
+    }
+    .dropdown-trigger,
+    .dropdown-menu,
+    button {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 }
 </style>

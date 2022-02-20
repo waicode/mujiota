@@ -69,5 +69,22 @@ export default defineComponent({
 <style lang="scss">
 .AppArchiveDropdown {
   margin-bottom: $scale20;
+  .dropdown {
+    width: 100%;
+    .dropdown-text {
+      font-size: $font-size-081rem;
+      font-weight: $font-weight-700;
+      color: $text-gray-color;
+    }
+    svg.fa-angle-down {
+      color: $gray-color;
+    }
+    .dropdown-trigger,
+    .dropdown-menu,
+    button {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 }
 </style>

@@ -81,6 +81,7 @@ $scale-minus16: -16px;
 $dark-black-color: #111;
 $black-color: #333;
 $dark-gray-color: #263238;
+$text-gray-color: #757575;
 $gray-color: #eee;
 $light-gray-color: #efefef;
 $white-color: #fff;
@@ -176,7 +177,7 @@ $body-line-height: 1.61;
 
 // ページネーション
 $pagination-current-background-color: #424242;
-$pagination-color: #757575;
+$pagination-color: $text-gray-color;
 
 // ナビバー
 $navbar-breakpoint: 0;
