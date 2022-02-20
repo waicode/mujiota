@@ -35,6 +35,9 @@ import usePagenate from '~/composables/usePagenate'
 import useFetchPosts from '~/composables/useFetchPosts'
 import { Article } from '~/store'
 
+/**
+ * ## トップページ
+ */
 export default defineComponent({
   name: 'MujiotaIndexPage',
   setup() {

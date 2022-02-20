@@ -34,6 +34,9 @@ import usePagenate from '~/composables/usePagenate'
 import useFetchTagPages from '~/composables/useFetchTagPages'
 import { Article } from '~/store'
 
+/**
+ * ## タグ用一覧ページ
+ */
 export default defineComponent({
   name: 'MujiotaTagPage',
   setup() {

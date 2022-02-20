@@ -78,6 +78,9 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 
 import { Article } from '~/store'
 
+/**
+ * ## 個別記事ページ
+ */
 export default defineComponent({
   name: 'MujiotaIdSlugPage',
   setup() {
@@ -115,8 +118,6 @@ export default defineComponent({
         // eslint-disable-next-line no-console
         console.log(e)
       }
-
-      console.log('article.value', article.value)
 
       if (article.value) {
         if (article.value.category) {

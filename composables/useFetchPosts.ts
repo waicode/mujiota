@@ -14,6 +14,7 @@ export default async ({ $content }: Context): Promise<Article[]> => {
       'slug',
       'title',
       'tags',
+      'category',
       'description',
       'imageFormat',
       'createdAt',

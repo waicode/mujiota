@@ -35,6 +35,9 @@ import usePagenate from '~/composables/usePagenate'
 import useFetchArchives from '~/composables/useFetchArchives'
 import { Article } from '~/store'
 
+/**
+ * ## アーカイブ用一覧ページ
+ */
 export default defineComponent({
   name: 'MujiotaArchivePage',
   setup() {
@@ -51,11 +54,10 @@ export default defineComponent({
     const description = `${year}年${monthStr}月に投稿された記事の一覧です。`
     const pageUrl = `${$config.baseUrl}/date/${year}/${month}`
 
-    const articles = ref([] as Article[])
-    const posts = ref([] as Article[])
+    const articles = ref<Article[]>([])
+    const posts = ref<Article[]>([])
 
     const displayPage = (targetPosts: Article[]) => {
-      console.log('targetPosts', targetPosts)
       posts.value = targetPosts
     }
 
