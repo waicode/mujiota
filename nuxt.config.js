@@ -15,7 +15,7 @@ export default {
     htmlAttrs: { lang: 'ja' },
     title: 'mujiota.com',
     meta: [
-      // その他のメタタグはページ毎に「mixins/meta.js」の設定を上書き
+      // その他のメタタグはページ毎に「composables/useHeaderMeta.ts」を使って設定
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
