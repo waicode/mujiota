@@ -2,8 +2,10 @@
 import { getAccessorType, mutationTree, actionTree } from 'typed-vuex'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Context } from '@nuxt/types'
-import { collection, DocumentData, getDocs } from 'firebase/firestore/lite'
-import { db } from '~/plugins/firebase'
+import { DocumentData } from 'firebase/firestore/lite'
+
+// import { collection, DocumentData, getDocs } from 'firebase/firestore/lite'
+// import { db } from '~/plugins/firebase'
 
 import * as page from '~/store/page'
 import { Ref, unref } from '@nuxtjs/composition-api'
@@ -62,7 +64,7 @@ export const state = () => ({
   articles: [] as Array<Article>,
   tags: [] as Array<Tag>,
   archives: [] as Array<Archive>,
-  popularArticles: [] as Array<Article>,
+  popularArticles: [] as Array<PopularArticle>,
 })
 
 export const mutations = mutationTree(state, {
@@ -135,17 +137,20 @@ export const actions = actionTree(
           count,
         }))
         commit('setArchives', { archives })
+
+        // TODO: 読まれている記事をfirestore取得から変更する
         // 読まれている記事
-        const COLLECTION_NAME = 'popular_posts_rank'
-        const SUB_COLLECTION_NAME = 'rank'
-        const querySnapshot = await getDocs(
-          collection(db, COLLECTION_NAME, '90days', SUB_COLLECTION_NAME)
-        )
-        const popularArticles = querySnapshot.docs.map((doc) => ({
-          rank: doc.id,
-          data: doc.data(),
-        }))
-        commit('setPopularArticles', { popularArticles })
+        // const COLLECTION_NAME = 'popular_posts_rank'
+        // const SUB_COLLECTION_NAME = 'rank'
+        // const querySnapshot = await getDocs(
+        //   collection(db, COLLECTION_NAME, '90days', SUB_COLLECTION_NAME)
+        // )
+        // const popularArticles = querySnapshot.docs.map((doc) => ({
+        //   rank: doc.id,
+        //   data: doc.data(),
+        // }))
+
+        commit('setPopularArticles', { popularArticles: [] })
         // 初期化完了
         commit('setInitialized')
       } catch (e) {
