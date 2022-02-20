@@ -63,7 +63,7 @@ export const state = () => ({
   articles: [] as Array<Article>,
   tags: [] as Array<Tag>,
   archives: [] as Array<Archive>,
-  popularArticles: [] as Array<PopularArticle>,
+  popularArticles: [] as Array<any>,
 })
 
 export const mutations = mutationTree(state, {

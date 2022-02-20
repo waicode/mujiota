@@ -14,7 +14,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
 import { bemx } from '~/composables/util'
-import { Article, PopularArticle } from '~/store'
+import { Article } from '~/store'
 
 /**
  * ## 人気記事リスト
@@ -31,7 +31,7 @@ export default defineComponent({
      * ランクと記事IDが含まれたfirestoreの`DocumentData`を含むオブジェクトの配列。
      */
     popularArticles: {
-      type: Array as PropType<Array<PopularArticle>>,
+      type: Array as PropType<Array<any>>,
       required: true,
     },
     /**
