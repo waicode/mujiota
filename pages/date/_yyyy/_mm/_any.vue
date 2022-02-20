@@ -10,7 +10,7 @@ export default {
         .sortBy('createdAt', 'desc')
         .fetch()
       // eslint-disable-next-line no-useless-escape
-      const pattern = new RegExp('^' + params.yyyy + '\-' + params.mm)
+      const pattern = new RegExp(`^${params.yyyy}\-${params.mm}`)
       articles = articles.filter((data) => data.createdAt.match(pattern))
 
       if (articles.length > 0) {

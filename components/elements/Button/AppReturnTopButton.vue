@@ -1,60 +1,93 @@
 <template>
-  <div id="page-top">
+  <div class="AppReturnTopButton">
     <transition name="fade">
-      <div v-show="buttonActive">
-        <div class="wrap">
-          <button @click="returnTop"></button>
+      <div v-show="isButtonActive">
+        <div class="AppReturnTopButton__PageTopButton">
+          <button @click="returnTop" />
         </div>
       </div>
     </transition>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      buttonActive: false,
-      scroll: 0,
+<script lang="ts">
+import {
+  defineComponent,
+  onMounted,
+  onUnmounted,
+  ref,
+} from '@nuxtjs/composition-api'
+
+/**
+ * ## TOPへ戻るボタン
+ *
+ * ページの一番上に戻るボタンコンポーネント。
+ * ボタンを表示させる位置より下までスクロールされたタイミングで表示する。
+ */
+export default defineComponent({
+  name: 'AppReturnTopButton',
+  props: {
+    /**
+     * ボタンを表示させたい位置。
+     */
+    showTop: {
+      type: Number,
+      required: true,
+    },
+  },
+  setup(props) {
+    const isButtonActive = ref(false)
+
+    const scrollDisplayControl = () => {
+      isButtonActive.value = props.showTop <= window.scrollY
     }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.scrollWindow)
-  },
-  methods: {
-    returnTop() {
+
+    onMounted(() => {
+      window.addEventListener('scroll', scrollDisplayControl)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('scroll', scrollDisplayControl)
+    })
+
+    const returnTop = () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       })
-    },
-    scrollWindow() {
-      const top = 100 // ボタンを表示させたい位置
-      this.scroll = window.scrollY
-      this.buttonActive = top <= this.scroll
-    },
-  },
-}
-</script>
-<style lang="scss" scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0%;
-}
+    }
 
-#page-top {
-  .wrap {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
+    return {
+      isButtonActive,
+      returnTop,
+    }
+  },
+})
+</script>
+
+<style lang="scss">
+.AppReturnTopButton {
+  $return-top-button-width: 80px;
+  $return-top-button-height: $return-top-button-width;
+  $return-top-icon-width: 24px;
+  $return-top-icon-height: $return-top-icon-width;
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0%;
+  }
+
+  &__PageTopButton {
     position: fixed;
     right: 20px;
     bottom: 16px;
-    opacity: 60%;
-    background-color: #424242;
+    width: $return-top-button-width;
+    height: $return-top-button-height;
+    background-color: $return-top-button-color;
+    border-radius: $border-radius40;
+    opacity: 0.6;
     :focus,
     :hover {
       cursor: pointer;
@@ -62,37 +95,37 @@ export default {
     button {
       position: relative;
       display: block;
-      width: 80px;
-      height: 80px;
+      width: $return-top-button-width;
+      height: $return-top-button-height;
       text-decoration: none;
-      border: none;
       background-color: transparent;
+      border: none;
       &::before {
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        content: '\f102';
-        font-size: 24px;
-        color: #fff;
         position: absolute;
-        width: 24px;
-        height: 24px;
         top: -28px;
-        bottom: 0;
         right: 0;
+        bottom: 0;
         left: 0;
+        width: $return-top-icon-width;
+        height: $return-top-icon-height;
         margin: auto;
+        font-family: 'Font Awesome 5 Free';
+        font-size: $font-size-160rem;
+        font-weight: $font-weight-900;
+        color: $white-color;
+        content: '\f102';
       }
       &::after {
-        content: 'PAGE TOP';
-        font-size: 10px;
         position: absolute;
         top: 45px;
-        bottom: 0;
         right: 0;
+        bottom: 0;
         left: 0;
         margin: auto;
+        font-size: $font-size-070rem;
+        color: $white-color;
         text-align: center;
-        color: #fff;
+        content: 'PAGE TOP';
       }
     }
   }

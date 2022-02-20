@@ -1,13 +1,18 @@
 <template>
-  <div class="external-link">
+  <div class="AppExternalLink">
     <a :href="link" target="_blank" rel="nofollow">
-      <div class="columns wrap">
-        <div class="link-image column is-3-desktop is-5-tablet is-12-mobile">
-          <AppAssetsImage v-if="imgFileName" :path="assetsImagePath" />
+      <div class="AppExternalLink__Wrapper columns">
+        <div
+          class="AppExternalLink__LinkImage column is-3-desktop is-5-tablet is-12-mobile"
+        >
+          <AppAssetsImage
+            v-if="imgFileName"
+            :path="`images/link/external/${imgFileName}`"
+          />
         </div>
-        <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
-          <div class="link-title">{{ title }}</div>
-          <div class="link-note">{{ note }}</div>
+        <div class="column is-9-desktop is-7-tablet is-12-mobile">
+          <div class="AppExternalLink__LinkTitle">{{ title }}</div>
+          <div class="AppExternalLink__LinkNote">{{ note }}</div>
           <img
             v-if="aspMeasurementImgLink"
             border="0"
@@ -21,86 +26,106 @@
     </a>
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+
+/**
+ * ## 外部リンク用リンクボックス
+ *
+ * 外部リンク表示用のコンポーネント。
+ * タイトル、説明、外部サイト遷移先のURL、画像ファイル名を受け取りリンクボックスを表示する。
+ * assets配下を`images/capture/external/${imgFileName}`で画像パス指定する。
+ * 任意でASP測定用の画像リンクも設定できる。
+ */
+export default defineComponent({
+  name: 'AppExternalLink',
   props: {
+    /**
+     * タイトル。
+     */
     title: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * 説明。
+     */
     note: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * 外部サイト遷移先のURL。
+     */
     link: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * 画像ファイル名。
+     */
     imgFileName: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * ASP測定用の画像リンク。
+     */
     aspMeasurementImgLink: {
       type: String,
-      default: null,
+      default: undefined,
     },
   },
-  computed: {
-    assetsImagePath() {
-      return `images/link/external/${this.imgFileName}`
-    },
-  },
-}
+})
 </script>
-<style lang="scss" scoped>
-.external-link {
-  margin: 1.8em 0;
-  a {
-    .wrap {
-      color: #333;
-      background: #fff;
-      border: 1px solid #eee;
-      box-shadow: 0 0 2px #efefef;
-      text-decoration: none;
-      padding: 0.25rem;
-      border-radius: 2px;
-      transition: 0.3s ease-in-out;
-      &:hover {
-        color: #666;
-        background: rgba(167, 255, 235, 0.24);
-      }
-      .link-image {
-        img {
-          border: 1px solid #e0e0e0;
-          box-shadow: 0 0 1px #eee;
-          vertical-align: top;
-        }
-      }
-      .link-info {
-        .link-title {
-          font-weight: bold;
-          margin-bottom: 8px;
-          &::before {
-            content: '外部リンク';
-            font-size: 0.7em;
-            font-weight: bold;
-            color: #fff;
-            width: 6em;
-            display: inline-block;
-            position: relative;
-            top: -2px;
-            text-align: center;
-            margin-right: 0.5em;
-            background: #111;
-            padding: 0.2em;
-            border-radius: 2px;
-          }
-        }
-        .link-note {
-          font-size: 0.96rem;
-        }
-      }
+<style lang="scss">
+.AppExternalLink {
+  margin: $scale28 0;
+
+  &__Wrapper {
+    padding: $scale4;
+    color: $black-color;
+    text-decoration: none;
+    background: $white-color;
+    border: $border-width1 solid $border-gray-color;
+    border-radius: $border-radius2;
+    box-shadow: 0 0 2px $link-box-shadow-color;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $link-hover-color;
+      background: $link-hover-bg-color;
     }
+  }
+
+  &__LinkImage {
+    img {
+      vertical-align: top;
+      border: $border-width1 solid $border-gray-color;
+      box-shadow: 0 0 1px $link-image-shadow-color;
+    }
+  }
+
+  &__LinkTitle {
+    margin-bottom: $scale8;
+    font-weight: $font-weight-700;
+    &::before {
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      width: 6em;
+      padding: $scale4;
+      margin-right: $scale8;
+      font-size: $font-size-070rem;
+      font-weight: $font-weight-700;
+      color: $white-color;
+      text-align: center;
+      content: '外部リンク';
+      background: $dark-black-color;
+      border-radius: $border-radius2;
+    }
+  }
+  &__LinkNote {
+    font-size: $font-size-096rem;
   }
 }
 </style>

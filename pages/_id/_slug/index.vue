@@ -1,59 +1,65 @@
 <template>
-  <article v-if="article" class="post">
-    <h1 class="page-title">{{ article.title }}</h1>
-    <div class="meta-wrap">
-      <div class="date">
-        <span class="date-published">
-          <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
-          <span>{{ article.createdAt | dateFormatted }}</span>
-        </span>
-        <span
-          v-if="article.updatedAt != article.createdAt"
-          class="date-updated"
-        >
-          <fa :icon="faRedoAlt" class="fa-redo-alt" />
-          <span>{{ article.updatedAt | dateFormatted }}</span>
-        </span>
+  <div class="MujiotaIdSlugPage">
+    <article v-if="article">
+      <h1 class="MujiotaIdSlugPage__PageTitle">{{ article.title }}</h1>
+      <div class="MujiotaIdSlugPage__MetaWrapper">
+        <div class="MujiotaIdSlugPage__Date">
+          <span class="MujiotaIdSlugPage__DatePublished">
+            <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+            <span>{{ article.createdAt | dateFormatted }}</span>
+          </span>
+          <span
+            v-if="article.updatedAt != article.createdAt"
+            class="MujiotaIdSlugPage__DateUpdated"
+          >
+            <fa :icon="faRedoAlt" class="fa-redo-alt" />
+            <span>{{ article.updatedAt | dateFormatted }}</span>
+          </span>
+        </div>
+        <div v-if="article.tags" class="MujiotaIdSlugPage__Tags">
+          <span
+            v-for="tag in article.tags"
+            :key="tag"
+            class="MujiotaIdSlugPage__Tag tag is-light"
+          >
+            {{ tag }}
+          </span>
+        </div>
       </div>
-      <div v-if="article.tags" class="tags">
-        <span v-for="tag in article.tags" :key="tag" class="tag is-light">
-          {{ tag }}
-        </span>
+      <div class="MujiotaIdSlugPage__Eyecatch">
+        <AppAssetsImage
+          :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
+        />
       </div>
-    </div>
-    <div class="eyecatch">
-      <AppAssetsImage
-        :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
+      <div class="MujiotaIdSlugPage__Description">
+        <p>{{ article.description }}</p>
+      </div>
+      <div class="MujiotaIdSlugPage__TocWrapper">
+        <AppTableOfContents v-if="article.toc.length > 0" :article="article" />
+      </div>
+      <AppShareButtonsTop
+        :page-url="pageUrl"
+        :title="article.title"
+        :share-count-hatena="shareCountHatena"
+        :share-count-twitter="shareCountTwitter"
+        :share-count-facebook="shareCountFacebook"
+        :share-count-pocket="shareCountPocket"
       />
-    </div>
-    <div class="description">
-      <p>{{ article.description }}</p>
-    </div>
-    <div class="toc-wrap">
-      <AppTableOfContents v-if="article.toc.length > 0" :article="article" />
-    </div>
-    <AppShareButtonsTop
-      :page-url="pageUrl"
-      :title="article.title"
-      :share-count-hatena="shareCountHatena"
-      :share-count-twitter="shareCountTwitter"
-      :share-count-facebook="shareCountFacebook"
-      :share-count-pocket="shareCountPocket"
-    />
-    <NuxtContent class="article" :document="article" />
-    <AppShareButtonsBottom
-      :page-url="pageUrl"
-      :title="article.title"
-      :share-count-hatena="shareCountHatena"
-      :share-count-twitter="shareCountTwitter"
-      :share-count-facebook="shareCountFacebook"
-      :share-count-pocket="shareCountPocket"
-    />
-    <AppRelatedPosts :articles="relatedArticles" />
-  </article>
+      <NuxtContent class="MujiotaIdSlugPage__Article" :document="article" />
+      <AppShareButtonsBottom
+        :page-url="pageUrl"
+        :title="article.title"
+        :share-count-hatena="shareCountHatena"
+        :share-count-twitter="shareCountTwitter"
+        :share-count-facebook="shareCountFacebook"
+        :share-count-pocket="shareCountPocket"
+      />
+      <AppRelatedPosts v-if="relatedArticles" :articles="relatedArticles" />
+    </article>
+  </div>
 </template>
 
-<script>
+<script lang="ts">
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -63,76 +69,84 @@ import {
   useFetch,
   useMeta,
 } from '@nuxtjs/composition-api'
-import useHeaderMeta from '@/composables/useHeaderMeta'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
 
+import useFetchPost from '~/composables/useFetchPost'
+import useFetchRelatedPosts from '~/composables/useFetchRelatedPosts'
+import useHeaderMeta from '~/composables/useHeaderMeta'
+
+import { Article } from '~/store'
+
+/**
+ * ## 個別記事ページ
+ */
 export default defineComponent({
   name: 'MujiotaIdSlugPage',
   setup() {
-    const { $content, $config, store, params, app, error } = useContext()
+    const context = useContext()
+    const { $config, store, params, app, error } = context
 
-    const article = ref()
-    const relatedArticles = ref()
+    const article = ref<Article>()
+    const relatedArticles = ref<Article[]>()
     const pageUrl = ref('')
+    const imageUrl = ref('')
 
     const { title, meta } = useMeta()
 
     const { fetch } = useFetch(async () => {
-      let articleData = {}
-      let imageUrl = ''
-      // TODO: composableへ
       try {
-        // APIからコンテンツを取得する処理
-        articleData = await $content(
-          'articles',
+        // 記事ページ情報を取得
+        article.value = await useFetchPost(
           params.value.id,
-          params.value.slug
-        ).fetch()
+          context as unknown as Context
+        )
 
-        if (!articleData) {
+        if (!article.value) {
           // 見つからない場合はNOTFOUND
           error({
             statusCode: 404,
           })
         }
 
-        article.value = articleData
-        pageUrl.value = `${$config.baseUrl}/${articleData.id}/${articleData.slug}`
-
-        imageUrl =
+        pageUrl.value = `${$config.baseUrl}/${article.value.id}/${article.value.slug}`
+        imageUrl.value =
           $config.baseUrl +
-          require(`~/assets/images/eyecatch/${articleData.id}/${articleData.slug}.${articleData.imageFormat}`)
+          // eslint-disable-next-line import/no-dynamic-require, global-require
+          require(`~/assets/images/eyecatch/${article.value.id}/${article.value.slug}.${article.value.imageFormat}`)
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e)
       }
 
-      // TODO: composableへ
-      try {
-        // 関連記事
-        const relatedArticlesData = await $content('articles', { deep: true })
-          .where({
-            category: articleData.category,
-            id: { $ne: articleData.id },
-          })
-          .fetch()
-        relatedArticles.value = relatedArticlesData
-      } catch (e) {
-        // eslint-disable-next-line no-console
-        console.log(e)
+      if (article.value) {
+        if (article.value.category) {
+          try {
+            // 関連記事の取得
+            relatedArticles.value = await useFetchRelatedPosts(
+              article.value.category,
+              article.value.id,
+              context as unknown as Context
+            )
+          } catch (e) {
+            // eslint-disable-next-line no-console
+            console.log(e)
+          }
+        }
+
+        // メタ情報
+        const metaData = app.$getMeta(
+          article.value.title,
+          article.value.description,
+          pageUrl.value,
+          imageUrl.value
+        )
+        title.value = article.value.title
+        meta.value = useHeaderMeta(metaData).meta
+
+        // 現在のページ情報をストアへ格納
+        store.commit('page/setArticle', { article: article.value })
       }
-
-      // メタ情報
-      const metaData = app.$getMeta(
-        articleData.title,
-        articleData.description,
-        pageUrl.value,
-        imageUrl
-      )
-      title.value = articleData.title
-      meta.value = useHeaderMeta(metaData).meta
-
-      // 現在のページ情報をストアへ格納
-      store.commit('page/setArticle', { articleData })
     })
 
     fetch()
@@ -159,81 +173,86 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.post {
-  h1.page-title {
-    font-weight: bold;
-    font-size: 1.28rem;
-    margin-bottom: 0.4rem;
-    margin-top: -16px;
+.MujiotaIdSlugPage {
+  &__PageTitle {
+    margin-top: $scale-minus16;
+    margin-bottom: $scale8;
+    font-size: $font-size-128rem;
+    font-weight: $font-weight-700;
   }
-  .meta-wrap {
+  &__MetaWrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 8px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: $scale8;
     color: $text;
-    .date {
-      display: flex;
-      flex-wrap: nowrap;
-      font-size: 0.8rem;
-      padding: 4px;
-      padding-right: 0;
-      .date-published {
-        margin-right: 12px;
-      }
-    }
-    .tags {
-      display: flex;
-      padding: 4px;
-      padding-left: 0;
-      font-size: 0.8rem;
+  }
+  &__Date {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: $scale4;
+    padding-right: 0;
+    font-size: $font-size-081rem;
+  }
+  &__DatePublished {
+    margin-right: $scale12;
+  }
+  &__Tags {
+    display: flex;
+    padding: $scale4;
+    padding-left: 0;
+    font-size: $font-size-081rem;
+  }
+  &__Tag {
+    &:not(:last-child) {
+      margin-right: $scale8;
     }
   }
-  .toc-wrap {
+  &__TocWrapper {
     @media (max-width: $tablet) {
       // モバイルは目次を非表示
       display: none;
     }
   }
-  .eyecatch {
+  &__Eyecatch {
     img {
       width: 100%;
-      border-radius: 4px;
+      border-radius: $scale4;
     }
   }
-  .description {
-    margin-top: 28px;
+  &__Description {
+    margin-top: $scale28;
     p {
-      margin-bottom: 18px !important;
+      margin-bottom: $scale16 !important;
     }
   }
-  .description,
-  .article {
+  &__Description,
+  &__Article {
     p {
-      margin-bottom: 32px;
-      line-height: 2;
+      margin-bottom: $scale32;
+      line-height: $line-height-200;
     }
     h2 {
       position: relative;
-      margin-top: 96px;
-      margin-bottom: 40px;
-      padding-bottom: 16px;
-      font-size: 1.4rem;
-      font-weight: bold;
+      padding-bottom: $scale16;
+      margin-top: $scale96;
+      margin-bottom: $scale40;
+      font-size: $font-size-140rem;
+      font-weight: $font-weight-700;
       &::after {
-        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 8px;
+        content: '';
         background-image: repeating-linear-gradient(
           45deg,
-          #e0e0e0 0,
-          #e0e0e0 1px,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0) 50%
+          $repeating-linear-gradient-light-stripe-color 0,
+          $repeating-linear-gradient-light-stripe-color 1px,
+          transparent 0%,
+          transparent 50%
         );
         background-size: 8px 8px;
       }
@@ -245,19 +264,19 @@ export default defineComponent({
     }
     h3 {
       position: relative;
-      margin-top: 64px;
-      margin-bottom: 28px;
-      padding-left: 24px;
-      font-size: 1.3rem;
-      font-weight: bold;
+      padding-left: $scale24;
+      margin-top: $scale64;
+      margin-bottom: $scale28;
+      font-size: $font-size-132rem;
+      font-weight: $font-weight-700;
       &::after {
-        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 6px;
         height: 100%;
-        background-color: #e0e0e0;
+        content: '';
+        background-color: $border-gray-color;
       }
       a {
         .icon {
@@ -267,23 +286,23 @@ export default defineComponent({
     }
     h4 {
       position: relative;
-      margin-top: 40px;
-      margin-bottom: 24px;
-      padding-left: 24px;
-      font-size: 1.2rem;
-      font-weight: bold;
+      padding-left: $scale24;
+      margin-top: $scale40;
+      margin-bottom: $scale24;
+      font-size: $font-size-120rem;
+      font-weight: $font-weight-700;
       &::after {
-        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 6px;
         height: 100%;
+        content: '';
         background-image: repeating-linear-gradient(
-          #999,
-          #999 1px,
-          rgba(0, 0, 0, 0) 0,
-          rgba(0, 0, 0, 0) 4px
+          $repeating-linear-gradient-dark-stripe-color,
+          $repeating-linear-gradient-dark-stripe-color 1px,
+          transparent 0,
+          transparent 4px
         );
       }
       a {
@@ -293,12 +312,12 @@ export default defineComponent({
       }
     }
     h5 {
-      font-size: 1.1rem;
-      margin-top: 32px;
-      margin-bottom: 12px;
-      font-weight: bold;
-      line-height: 2em;
-      letter-spacing: 1px;
+      margin-top: $scale32;
+      margin-bottom: $scale12;
+      font-size: $font-size-110rem;
+      font-weight: $font-weight-700;
+      line-height: $line-height-200;
+      letter-spacing: $letter-spacing-1;
       a {
         .icon {
           display: none;
@@ -311,98 +330,99 @@ export default defineComponent({
     ol,
     ul {
       padding: 0;
+      margin-bottom: $scale32;
       list-style-type: none;
-      margin-bottom: 32px;
     }
     ul li {
-      list-style: none;
       position: relative;
-      padding-left: 2rem;
-      margin-left: 0.2rem;
-      margin-bottom: 0.4rem;
+      padding-left: $scale32;
+      margin-bottom: $scale8;
+      margin-left: $scale4;
+      list-style: none;
       &::before {
-        content: ' ';
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        display: block;
         width: 10px;
         height: 10px;
-        background: #3e3e3e;
-        box-shadow: -1px -1px 1px rgba(97, 97, 97, 0.15) inset;
-        display: block;
-        position: absolute;
-        border-radius: 20%;
-        left: 0.32rem;
-        top: 0.4rem;
+        content: ' ';
+        background: $list-disc-bg-color;
+        border-radius: $border-radius-rate20;
+        box-shadow: -1px -1px 1px $list-disc-box-shadow-color inset;
       }
     }
     ol li {
-      list-style: none;
       position: relative;
-      padding-left: 2rem;
-      padding-top: 0.2rem;
-      padding-bottom: 0.2rem;
-      margin-left: 0.4rem;
-      margin-bottom: 0.2rem;
+      padding-left: $scale32;
+      margin-bottom: $scale8;
+      margin-left: $scale4;
+      list-style: none;
       &::before {
-        background: #333;
-        counter-increment: number;
-        content: counter(number);
-        color: #fff;
-        width: 1.3rem;
-        height: 1.3rem;
-        font-size: 0.7em;
-        font-weight: bold;
-        font-family: 'Lato', sans-serif;
-        display: block;
-        text-align: center;
-        line-height: 1.4rem;
-        border-radius: 50%;
         position: absolute;
-        left: 0;
-        top: 0.28rem;
+        top: 8px;
+        left: 4px;
+        display: block;
+        width: 21px;
+        height: 21px;
+        font-family: 'Lato', sans-serif;
+        font-size: $font-size-070rem;
+        font-weight: $font-weight-700;
+        line-height: $font-size-140rem;
+        color: $white-color;
+        text-align: center;
+        content: counter(number);
+        counter-increment: number;
+        background: $list-number-bg-color;
+        border-radius: $border-radius-rate50;
       }
     }
     strong {
-      font-weight: bold;
+      font-weight: $font-weight-700;
     }
     span.line {
       display: inline;
-      background: linear-gradient(rgba(255, 255, 141, 0) 50%, #fff59d 70%);
       padding-bottom: 0;
+      background: linear-gradient(
+        $linear-gradient-white-color 50%,
+        $linear-gradient-yellow-color 70%
+      );
     }
 
     blockquote {
       position: relative;
-      padding: 10px 15px 10px 60px;
       box-sizing: border-box;
+      padding: $scale12 $scale16 $scale12 $scale60;
+      margin-bottom: $scale32;
       font-style: italic;
-      background: #efefef;
-      color: #555;
-      margin-bottom: 30px;
+      color: $blockquote-text-color;
+      background: $blockquote-bg-color;
     }
 
     blockquote::before {
-      display: inline-block;
       position: absolute;
       top: 18px;
       left: 15px;
-      content: '\f10d';
+      display: inline-block;
       font-family: 'Font Awesome 5 Free';
-      color: #cfcfcf;
-      font-size: 30px;
-      line-height: 1;
-      font-weight: 900;
+      font-size: $font-size-180rem;
+      font-weight: $font-weight-900;
+      line-height: $line-height-100;
+      color: $blockquote-icon-color;
+      content: '\f10d';
     }
 
     blockquote p {
       padding: 0;
-      margin: 10px 0;
-      line-height: 1.7;
+      margin: $scale12 0;
+      line-height: $line-height-160;
     }
 
     blockquote cite {
       display: block;
+      font-size: $font-size-092rem;
+      color: $blockquote-cite-text-color;
       text-align: right;
-      color: #888;
-      font-size: 0.9em;
     }
   }
 }

@@ -1,17 +1,22 @@
 <template>
-  <div v-if="article" class="related-link">
+  <div v-if="article" class="AppRelatedLink">
     <nuxt-link :to="link">
-      <div class="columns wrap">
-        <div class="link-image column is-3-desktop is-5-tablet is-12-mobile">
+      <div class="AppRelatedLink__Wrapper columns">
+        <div
+          class="AppRelatedLink__LinkImage column is-3-desktop is-5-tablet is-12-mobile"
+        >
           <AppAssetsImage
             :path="`images/eyecatch/${article.id}/${article.slug}.${article.imageFormat}`"
           />
         </div>
-        <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
-          <div class="link-title">
+        <div class="column is-9-desktop is-7-tablet is-12-mobile">
+          <div class="AppRelatedLink__LinkTitle">
             {{ article.title }}
           </div>
-          <div class="link-date">
+          <div class="AppRelatedLink__LinkDescription">
+            {{ article.description }}
+          </div>
+          <div class="AppRelatedLink__LinkDate">
             <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
             <span>{{ article.updatedAt | dateFormatted }}</span>
           </div>
@@ -20,92 +25,123 @@
     </nuxt-link>
   </div>
 </template>
-<script>
+<script lang="ts">
+import {
+  computed,
+  defineComponent,
+  ref,
+  useContext,
+  useFetch,
+} from '@nuxtjs/composition-api'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+
+import useFetchPost from '~/composables/useFetchPost'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
-export default {
+import { Article, isArticle } from '~/store'
+
+/**
+ * ## 関連記事用リンクボックス
+ *
+ * 関連記事表示用のコンポーネント。
+ * 記事IDを受け取り、関連記事のリンクボックスを表示する。
+ */
+export default defineComponent({
+  name: 'AppRelatedLink',
   props: {
+    /**
+     * 記事ID。
+     */
     id: {
-      required: true,
       type: String,
+      required: true,
     },
   },
-  data() {
+
+  setup(props) {
+    const article = ref<Article>()
+
+    const context = useContext()
+
+    const { fetch } = useFetch(async () => {
+      article.value = await useFetchPost(
+        props.id,
+        context as unknown as Context
+      )
+    })
+
+    fetch()
+
+    const link = computed(() =>
+      isArticle(article.value)
+        ? `/${article.value.id}/${article.value.slug}`
+        : ''
+    )
+
     return {
-      article: null,
+      article,
+      faCalendarAlt,
+      link,
     }
   },
-  computed: {
-    faCalendarAlt() {
-      return faCalendarAlt
-    },
-    link() {
-      return `/${this.article.id}/${this.article.slug}`
-    },
-  },
-  mounted() {
-    this.getContnt()
-  },
-  methods: {
-    async getContnt() {
-      await this.$content('articles', this.id)
-        .fetch()
-        .then((res) => {
-          this.article = res[0]
-        })
-        .catch()
-    },
-  },
-}
+})
 </script>
-<style lang="scss" scoped>
-.related-link {
-  margin: 1.8em 0;
-  a {
-    .wrap {
-      color: #333;
-      background: #fff;
-      border: 1px solid #eee;
-      box-shadow: 0 0 1px #efefef;
-      text-decoration: none;
-      padding: 0.25rem;
-      border-radius: 2px;
-      transition: 0.3s ease-in-out;
-      &:hover {
-        color: #666;
-        background: rgba(167, 255, 235, 0.24);
-      }
-      .link-image {
-        img {
-          border: 1px solid #e0e0e0;
-          box-shadow: 0 0 1px #eee;
-          vertical-align: top;
-        }
-      }
-      .link-info {
-        .link-title {
-          font-weight: bold;
-          margin-bottom: 8px;
-          &::before {
-            content: '関連リンク';
-            font-size: 0.7em;
-            font-weight: bold;
-            color: #fff;
-            width: 6em;
-            display: inline-block;
-            position: relative;
-            top: -2px;
-            text-align: center;
-            margin-right: 0.5em;
-            background: #111;
-            padding: 0.2em;
-            border-radius: 2px;
-          }
-        }
-        .link-date {
-          font-size: 0.84rem;
-        }
-      }
+<style lang="scss">
+.AppRelatedLink {
+  margin: $scale28 0;
+
+  &__Wrapper {
+    padding: $scale4;
+    color: $black-color;
+    text-decoration: none;
+    background: $white-color;
+    border: $border-width1 solid $border-gray-color;
+    border-radius: $border-radius2;
+    box-shadow: 0 0 2px $link-box-shadow-color;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $link-hover-color;
+      background: $link-hover-bg-color;
     }
+  }
+
+  &__LinkImage {
+    img {
+      vertical-align: top;
+      border: $border-width1 solid $border-gray-color;
+      box-shadow: 0 0 1px $link-image-shadow-color;
+    }
+  }
+
+  &__LinkTitle {
+    margin-bottom: $scale8;
+    font-weight: $font-weight-700;
+    &::before {
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      width: 6em;
+      padding: $scale4;
+      margin-right: $scale8;
+      font-size: $font-size-070rem;
+      font-weight: $font-weight-700;
+      color: $white-color;
+      text-align: center;
+      content: '関連リンク';
+      background: $dark-black-color;
+      border-radius: $border-radius2;
+    }
+  }
+  &__LinkDescription {
+    margin-bottom: $scale12;
+    font-size: $font-size-086rem;
+    font-weight: $font-weight-400;
+    line-height: $line-height-160;
+    color: $text;
+  }
+
+  &__LinkDate {
+    font-size: $font-size-096rem;
   }
 }
 </style>

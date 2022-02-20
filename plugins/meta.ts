@@ -1,5 +1,17 @@
 // デフォルトのメタデータ
-const metaDefault = {
+
+export type Meta = {
+  title: string
+  siteName: string
+  description: string
+  baseUrl: string
+  pageUrl: string
+  ogType: string
+  ogImageUrl: string
+  twitterUserName: string
+}
+
+const metaDefault: Meta = {
   title: 'mujiota.com',
   siteName: 'mujiota.com',
   description:
@@ -11,7 +23,12 @@ const metaDefault = {
   twitterUserName: '@waicode37',
 }
 
-const getMeta = (title, description, pageUrl, ogImageUrl) => {
+const getMeta = (
+  title?: string,
+  description?: string,
+  pageUrl?: string,
+  ogImageUrl?: string
+) => {
   const meta = metaDefault
   // 各ページでデフォルト以外の値は上書き必須
   if (title) meta.title = title
@@ -20,6 +37,7 @@ const getMeta = (title, description, pageUrl, ogImageUrl) => {
   if (ogImageUrl) meta.ogImageUrl = ogImageUrl
   return meta
 }
-export default (_, inject) => {
+
+export default (_: unknown, inject: any) => {
   inject('getMeta', getMeta)
 }

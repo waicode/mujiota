@@ -32,43 +32,43 @@ export default {
 .toc {
   width: 80%;
   min-width: 88%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 1em 2em;
-  background: rgba(250, 250, 250, 0.2);
-  border: 1px solid #eee;
-  box-shadow: 0 0 2px #efefef;
+  padding: $scale16 $scale32;
+  margin-top: $scale32;
+  margin-bottom: $scale32;
+  background-color: $toc-bg-color;
+  border: 1px solid $gray-color;
+  box-shadow: 0 0 2px $light-gray-color;
   .menu-label {
-    font-weight: bold;
+    font-weight: $font-weight-700;
   }
   ul.menu-list {
-    font-size: 0.96rem;
+    font-size: $font-size-096rem;
     li {
       &::before {
-        content: ' ';
+        top: 0;
+        left: 0;
+        display: block;
         width: 0;
         height: 0;
-        display: block;
-        left: 0;
-        top: 0;
+        content: ' ';
       }
       a {
-        padding-top: 0.56rem;
-        padding-bottom: 0.56rem;
-        color: #263238;
+        padding-top: $scale8;
+        padding-bottom: $scale8;
+        color: $dark-gray-color;
       }
       &:not(:first-child) {
         a {
-          border-top: 1px dashed #e0e0e0;
+          border-top: $border-width1 dashed #e0e0e0;
         }
       }
     }
     .toc2 {
-      font-size: 0.96rem;
+      font-size: $font-size-096rem;
     }
     .toc3 {
-      font-size: 0.92rem;
-      padding-left: 8px;
+      padding-left: $scale8;
+      font-size: $font-size-092rem;
     }
   }
 }

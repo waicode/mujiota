@@ -1,32 +1,32 @@
 <template>
-  <div class="yomerebalink">
-    <div class="columns wrap">
+  <div class="AppYomerebaLink">
+    <div class="AppYomerebaLink__Wrapper columns">
       <div
         v-if="imgFileName"
-        class="link-image column is-3-desktop is-5-tablet is-12-mobile"
+        class="AppYomerebaLink__ImageLink column is-3-desktop is-5-tablet is-12-mobile"
       >
         <a :href="titleLink" target="_blank">
           <AppAssetsImage :path="assetsImagePath" />
         </a>
       </div>
-      <div class="link-info column is-9-desktop is-7-tablet is-12-mobile">
-        <div class="link-title">
+      <div class="column is-9-desktop is-7-tablet is-12-mobile">
+        <div class="AppYomerebaLink__TitleLink">
           <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
         </div>
-        <div v-if="authorName" class="link-shop-name">
+        <div v-if="authorName" class="AppYomerebaLink__AuthorName">
           {{ authorName }}
         </div>
-        <div class="link-items">
-          <div v-if="amazonItemId" class="shoplink-amazon item-link">
+        <div class="AppYomerebaLink__SearchLinks">
+          <div v-if="amazonItemId" class="AppYomerebaLink__ShopLinkAmazon">
             <a :href="amazonUrl" target="_blank">Amazonで探す</a>
           </div>
-          <div v-if="kindleItemId" class="shoplink-kindle item-link">
+          <div v-if="kindleItemId" class="AppYomerebaLink__ShopLinkKindle">
             <a :href="kindleUrl" target="_blank">Kindleで探す</a>
           </div>
-          <div v-if="rakutenItemId" class="shoplink-rakuten item-link">
+          <div v-if="rakutenItemId" class="AppYomerebaLink__ShopLinkRakuten">
             <a :href="rakutenUrl" target="_blank">Rakutenで探す</a>
           </div>
-          <div v-if="koboItemId" class="shoplink-kobo item-link">
+          <div v-if="koboItemId" class="AppYomerebaLink__ShopLinkKobo">
             <a :href="koboUrl" target="_blank">koboで探す</a>
           </div>
         </div>
@@ -35,151 +35,239 @@
     </div>
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import {
+  computed,
+  defineComponent,
+  PropType,
+  unref,
+} from '@nuxtjs/composition-api'
+import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
+
+const BOOK_ASP_TYPE = arrayToEnumObject(['amazon', 'kindle', 'rakuten', 'kobo'])
+type BookAspType = ValueTypeOf<typeof BOOK_ASP_TYPE>
+
+/**
+ * ## 書籍アフィリエイト用リンクボックス
+ *
+ * 書籍アフィリエイト用のコンポーネント。
+ * Amazon、Kindle、楽天、Koboのアフィリエイトリンク付きのリンクボックスを表示する。
+ * 書籍名、書籍画像ファイル名、著者名、Amazon商品ID、Kindle商品ID、楽天商品ID、Kobo商品ID、検索キーワードを受け取る。
+ * 商品タイトルリンクと商品画像リンクにどのASPを使うか指定できる。デフォルトはAmazon。
+ *
+ */
+export default defineComponent({
+  name: 'AppYomerebaLink',
   props: {
+    /**
+     * 書籍名。
+     */
     itemTitle: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * 書籍画像ファイル名。
+     */
     imgFileName: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * 著者名。
+     */
     authorName: {
-      required: true,
       type: String,
+      required: true,
     },
+    /**
+     * Amazon商品ID。
+     */
     amazonItemId: {
       type: String,
-      default: null,
+      default: undefined,
     },
-    rakutenItemId: {
-      type: String,
-      default: null,
-    },
+    /**
+     * Kindle商品ID。
+     */
     kindleItemId: {
       type: String,
-      default: null,
+      default: undefined,
     },
+    /**
+     * 楽天商品ID。
+     */
+    rakutenItemId: {
+      type: String,
+      default: undefined,
+    },
+    /**
+     * Kobo商品ID。
+     */
     koboItemId: {
       type: String,
-      default: null,
+      default: undefined,
+    },
+    /**
+     * 商品タイトル・商品画像リンクのASP。
+     * Amazon（amazon）、Kindle（kindle）、楽天（rakuten）、Kobo（kobo）のいずれかを指定する。
+     * デフォルトはAmazon。
+     */
+    mainAspType: {
+      type: String as PropType<BookAspType>,
+      default: BOOK_ASP_TYPE.AMAZON,
     },
   },
-  data() {
+  setup(props) {
+    const assetsImagePath = computed(
+      () => `images/link/yomereba/items/${props.imgFileName}`
+    )
+    const amazonUrl = computed(
+      () =>
+        `https://www.amazon.co.jp/exec/obidos/asin/${props.amazonItemId}/${process.env.AMAZON_ASSOCIATE_USER_ID}/`
+    )
+
+    const kindleUrl = computed(
+      () =>
+        `https://www.amazon.co.jp/exec/obidos/ASIN/${props.kindleItemId}/${process.env.AMAZON_ASSOCIATE_USER_ID}/`
+    )
+
+    const rakutenUrl = computed(
+      () =>
+        `https://hb.afl.rakuten.co.jp/hgc/${process.env.RAKUTEN_AFFILIATE_ID}/mujiota?pc=http://books.rakuten.co.jp/rb/${props.rakutenItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
+    )
+    const koboUrl = computed(
+      () =>
+        `http://hb.afl.rakuten.co.jp/hgc/${process.env.RAKUTEN_AFFILIATE_ID}/mujiota?pc=https://books.rakuten.co.jp/rk/${props.koboItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
+    )
+
+    const titleLink = computed(() => {
+      switch (props.mainAspType) {
+        case BOOK_ASP_TYPE.AMAZON: {
+          return unref(amazonUrl)
+        }
+        case BOOK_ASP_TYPE.KINDLE: {
+          return unref(kindleUrl)
+        }
+        case BOOK_ASP_TYPE.RAKUTEN: {
+          return unref(rakutenUrl)
+        }
+        case BOOK_ASP_TYPE.KOBO: {
+          return unref(koboUrl)
+        }
+        default:
+          return (
+            unref(amazonUrl) ||
+            unref(kindleUrl) ||
+            unref(rakutenUrl) ||
+            unref(koboUrl)
+          )
+      }
+    })
+
     return {
-      amazonAssociateUserId: 'amayutazon-22',
-      rakutenAffiliateId: 'g0000012.1zx7x6a7.g0000013.rphkh6ef',
-      yahooValueCommerce: {
-        sid: '3125738',
-        pid: '887190364',
-      },
+      assetsImagePath,
+      amazonUrl,
+      kindleUrl,
+      rakutenUrl,
+      koboUrl,
+      titleLink,
     }
   },
-  computed: {
-    assetsImagePath() {
-      return `images/link/yomereba/items/${this.imgFileName}`
-    },
-    titleLink() {
-      return this.amazonItemUrl ? this.amazonItemUrl : this.rakutenItemUrl
-    },
-    amazonUrl() {
-      return `https://www.amazon.co.jp/exec/obidos/asin/${this.amazonItemId}/${this.amazonAssociateUserId}/`
-    },
-    kindleUrl() {
-      return `https://www.amazon.co.jp/exec/obidos/ASIN/${this.kindleItemId}/${this.amazonAssociateUserId}/`
-    },
-    rakutenUrl() {
-      return `https://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=http://books.rakuten.co.jp/rb/${this.rakutenItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
-    },
-    koboUrl() {
-      return `http://hb.afl.rakuten.co.jp/hgc/${this.rakutenAffiliateId}/mujiota?pc=https://books.rakuten.co.jp/rk/${this.koboItemId}/?scid=af_ich_link_urltxt&m=http://m.rakuten.co.jp/ev/book/`
-    },
-  },
-}
+})
 </script>
 <style lang="scss" scoped>
-.yomerebalink {
-  .wrap {
-    margin: 0 0 2rem;
-    padding: 0.64rem;
-    background: #fff;
-    border: 1px solid;
-    border-color: #eaeaea #ddd #d0d0d0;
-    border-radius: 3px;
+.AppYomerebaLink {
+  margin-bottom: $scale40;
+
+  &__Wrapper {
     box-sizing: border-box;
-    .link-image {
-      align-items: center;
-      padding: 16px;
-      img {
-        vertical-align: top;
+    padding: $scale12;
+    margin: 0;
+    background: #fff;
+    border: $border-width1 solid $border-gray-color;
+    border-radius: $border-radius2;
+    box-shadow: 0 0 1px $link-image-shadow-color;
+  }
+  &__ImageLink {
+    align-items: center;
+    padding: $scale16;
+    img {
+      vertical-align: top;
+    }
+  }
+  &__TitleLink {
+    padding: $scale4 0 $scale12;
+    a {
+      display: block;
+      font-size: $font-size-104rem;
+      font-weight: $font-weight-700;
+      color: $text;
+    }
+  }
+  &__AuthorName {
+    margin: 0 0 $scale32;
+  }
+  &__SearchLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__ShopLinkAmazon,
+  &__ShopLinkKindle,
+  &__ShopLinkRakuten,
+  &__ShopLinkKobo {
+    flex: 1;
+    min-width: 96px;
+    padding: $scale8;
+    @media (max-width: $desktop) {
+      width: 100%;
+      min-width: 100%;
+      padding: 0;
+    }
+    a {
+      display: block;
+      width: 100%;
+      padding: $scale16;
+      margin: 0 auto $scale12;
+      font-size: $font-size-073rem;
+      font-weight: $font-weight-700;
+      color: $white-color;
+      text-align: center;
+      border-radius: $border-radius4;
+      @media (max-width: $desktop) {
+        font-size: $font-size-092rem;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        fill: $white-color;
       }
     }
-    .link-info {
-      .link-title {
-        font-size: 1.0625rem;
-        font-weight: bold;
-        margin: 0.2rem 0 0.8rem;
-        a {
-          color: $text;
-        }
-      }
-      .link-shop-name {
-        margin: 0 0 2rem;
-      }
-      .link-items {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .item-link {
-          flex: 1;
-          padding: 4px;
-          min-width: 96px;
-          @media (max-width: $desktop) {
-            width: 100%;
-            padding: 0;
-            min-width: 100%;
-          }
-          a {
-            display: block;
-            width: 100%;
-            padding: 1em;
-            font-size: 0.84rem;
-            @media (max-width: $desktop) {
-              font-size: 0.9rem;
-            }
-
-            font-weight: bold;
-            text-align: center;
-            border-radius: 4px;
-            margin: 0 auto 0.6rem;
-            color: #fff;
-            svg {
-              width: 1.2rem;
-              height: 1.2rem;
-              fill: #fff;
-              vertical-align: middle;
-            }
-          }
-        }
-        .shoplink-amazon a {
-          border: 2px solid #ff9800;
-          background-color: #ff9800;
-        }
-        .shoplink-kindle a {
-          border: 2px solid #ff9800;
-          background-color: #ff9800;
-        }
-        .shoplink-rakuten a {
-          border: 2px solid #ef5350;
-          background-color: #ef5350;
-        }
-        .shoplink-kobo a {
-          border: 2px solid #ef5350;
-          background-color: #ef5350;
-        }
-      }
+  }
+  &__ShopLinkAmazon {
+    a {
+      background-color: $kaereba-amazon-button-color;
+      border: $border-width2 solid $kaereba-amazon-button-color;
+    }
+  }
+  &__ShopLinkKindle {
+    a {
+      background-color: $kaereba-amazon-button-color;
+      border: $border-width2 solid $kaereba-amazon-button-color;
+    }
+  }
+  &__ShopLinkRakuten {
+    a {
+      background-color: $kaereba-rakuten-button-color;
+      border: $border-width2 solid $kaereba-rakuten-button-color;
+    }
+  }
+  &__ShopLinkKobo {
+    a {
+      background-color: $kaereba-rakuten-button-color;
+      border: $border-width2 solid $kaereba-rakuten-button-color;
     }
   }
 }

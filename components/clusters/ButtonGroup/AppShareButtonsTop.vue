@@ -1,14 +1,17 @@
 <template>
-  <div class="share-top">
-    <div class="share-item hb">
+  <div class="AppShareButtonsTop">
+    <div class="AppShareButtonsTop__ShareItemHatena">
       <a :href="shareUrlHatena" target="_blank" rel="nofollow noopener">
         <ShareIconHatena />
       </a>
-      <div v-if="shareCountHatena > 0" class="share-count">
+      <div
+        v-if="shareCountHatena > 0"
+        class="AppShareButtonsTop__ShareCountHatena"
+      >
         {{ shareCountHatena }}
       </div>
     </div>
-    <div class="share-item tw">
+    <div class="AppShareButtonsTop__ShareItemTwitter">
       <a
         :href="shareUrlTwitter"
         target="blank"
@@ -17,11 +20,14 @@
       >
         <ShareIconTwitter />
       </a>
-      <div v-if="shareCountTwitter > 0" class="share-count">
+      <div
+        v-if="shareCountTwitter > 0"
+        class="AppShareButtonsTop__ShareCountTwitter"
+      >
         {{ shareCountTwitter }}
       </div>
     </div>
-    <div class="share-item fb">
+    <div class="AppShareButtonsTop__ShareItemFacebook">
       <a
         :href="shareUrlFacebook"
         target="blank"
@@ -30,11 +36,14 @@
       >
         <ShareIconFacebook />
       </a>
-      <div v-if="shareCountFacebook > 0" class="share-count">
+      <div
+        v-if="shareCountFacebook > 0"
+        class="AppShareButtonsTop__ShareCountFacebook"
+      >
         {{ shareCountFacebook }}
       </div>
     </div>
-    <div class="share-item pk">
+    <div class="AppShareButtonsTop__ShareItemPocket">
       <a
         :href="shareUrlPocket"
         target="blank"
@@ -43,20 +52,30 @@
       >
         <ShareIconPocket />
       </a>
-      <div v-if="shareCountPocket > 0" class="share-count">
+      <div
+        v-if="shareCountPocket > 0"
+        class="AppShareButtonsTop__ShareCountPocket"
+      >
         {{ shareCountPocket }}
       </div>
     </div>
   </div>
 </template>
-<script>
-import { computed, defineComponent } from '@vue/composition-api'
+<script lang="ts">
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 
 import ShareIconHatena from '@/assets/images/shared/icon/share_icon_hatena_bookmark_17x14.svg'
 import ShareIconTwitter from '@/assets/images/shared/icon/share_icon_twitter_20x16.25.svg'
 import ShareIconFacebook from '@/assets/images/shared/icon/share_icon_facebook_17.5x17.5.svg'
 import ShareIconPocket from '@/assets/images/shared/icon/share_icon_pocket_17.5x15.625.svg'
 
+/**
+ * ## 記事上シェアボタン
+ *
+ * 記事上に表示するシェアボタン群を表示するコンポーネント。
+ * ページタイトルとURL、各SNSのシェアカウントを受け取る。
+ * ポップアップが表示されるシェアリンクとシェアカウントを表示する。
+ */
 export default defineComponent({
   components: {
     ShareIconHatena,
@@ -65,26 +84,44 @@ export default defineComponent({
     ShareIconPocket,
   },
   props: {
+    /**
+     * ページURL。
+     */
     pageUrl: {
       required: true,
       type: String,
     },
+    /**
+     * ページタイトル。
+     */
     title: {
       required: true,
       type: String,
     },
+    /**
+     * Hatenaのシェアカウント。
+     */
     shareCountHatena: {
       type: Number,
       default: 0,
     },
+    /**
+     * Twitterのシェアカウント。
+     */
     shareCountTwitter: {
       type: Number,
       default: 0,
     },
+    /**
+     * Facebookのシェアカウント。
+     */
     shareCountFacebook: {
       type: Number,
       default: 0,
     },
+    /**
+     * Pocketのシェアカウント。
+     */
     shareCountPocket: {
       type: Number,
       default: 0,
@@ -116,22 +153,24 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="scss" scoped>
-.share-top {
+<style lang="scss">
+.AppShareButtonsTop {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  margin-top: $scale40;
+  margin-bottom: $scale80;
   > *:not(:last-child) {
-    margin-right: 40px;
+    margin-right: $scale40;
     @media (max-width: $tablet) {
-      margin-right: 28px;
+      margin-right: $scale28;
     }
   }
-  .share-item {
+  &__ShareItemHatena,
+  &__ShareItemTwitter,
+  &__ShareItemFacebook,
+  &__ShareItemPocket {
     width: 64px;
     height: 64px;
     transition: 0.3s;
@@ -145,59 +184,61 @@ export default defineComponent({
     }
     a {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      color: #f2f2f2;
-      font-weight: 700;
-      border-radius: 34px;
+      font-weight: $font-weight-700;
+      border-radius: $border-radius34;
       @media (max-width: $tablet) {
-        border-radius: 24px;
+        border-radius: $border-radius24;
       }
     }
-    &.hb {
-      &:hover {
-        transform: rotate(12deg);
-      }
-      a {
-        background-color: #00a4de;
-        border: 3px solid #00a4de;
-      }
+  }
+  &__ShareItemHatena {
+    &:hover {
+      transform: rotate(12deg);
     }
-    &.tw {
-      &:hover {
-        transform: rotate(-12deg);
-      }
-      a {
-        background-color: #1da1f2;
-        border: 3px solid #1da1f2;
-      }
+    a {
+      background-color: $share-hb-button-color;
+      border: $border-width3 solid $share-hb-button-color;
     }
-    &.fb {
-      &:hover {
-        transform: rotate(12deg);
-      }
-      a {
-        background-color: #1877f2;
-        border: 3px solid #1877f2;
-      }
+  }
+  &__ShareItemTwitter {
+    &:hover {
+      transform: rotate(-12deg);
     }
-    &.pk {
-      &:hover {
-        transform: rotate(-12deg);
-      }
-      a {
-        background-color: #ee4056;
-        border: 3px solid #ee4056;
-      }
+    a {
+      background-color: $share-tw-button-color;
+      border: $border-width3 solid $share-tw-button-color;
     }
-    .share-count {
-      margin-top: 12px;
-      font-size: 1.1rem;
-      text-align: center;
+  }
+  &__ShareItemFacebook {
+    &:hover {
+      transform: rotate(12deg);
     }
+    a {
+      background-color: $share-fb-button-color;
+      border: $border-width3 solid $share-fb-button-color;
+    }
+  }
+  &__ShareItemPocket {
+    &:hover {
+      transform: rotate(-12deg);
+    }
+    a {
+      background-color: $share-pk-button-color;
+      border: $border-width3 solid $share-pk-button-color;
+    }
+  }
+  &__ShareCountHatena,
+  &__ShareCountTwitter,
+  &__ShareCountFacebook,
+  &__ShareCountPocket {
+    margin-top: $scale12;
+    font-size: $font-size-110rem;
+    text-align: center;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 export default {
   publicRuntimeConfig: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    pageSize: 5,
+    pageSize: process.env.PAGE_SIZE || 5,
   },
 
   privateRuntimeConfig: {},
@@ -15,7 +15,7 @@ export default {
     htmlAttrs: { lang: 'ja' },
     title: 'mujiota.com',
     meta: [
-      // その他のメタタグはページ毎に「mixins/meta.js」の設定を上書き
+      // その他のメタタグはページ毎に「composables/useHeaderMeta.ts」を使って設定
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
@@ -32,24 +32,33 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: '~assets/css/main.scss', lang: 'scss' }],
 
+  typescript: {
+    // ファイル保存時にコードの型チェックとlintの両方を実施
+    typeCheck: {
+      eslint: {
+        files: './**/*.{ts,vue}',
+      },
+    },
+  },
+
   styleResources: {
     scss: ['~assets/css/main.scss'],
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/init.client.js', mode: 'client' },
-    '~/plugins/filter.js',
-    '~/plugins/firebase.js',
+    { src: '~/plugins/init.client.ts', mode: 'client' },
+    '~/plugins/filter.ts',
+    '~/plugins/meta.ts',
+    '~/plugins/post.ts',
+    '~/plugins/taxonomy.ts',
     '~/plugins/video.js',
-    '~/plugins/taxonomy.js',
-    '~/plugins/meta.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     {
-      path: '@/components/',
+      path: '@/components',
       pathPrefix: false,
     },
   ],
@@ -57,7 +66,13 @@ export default {
   build: {},
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/composition-api/module'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/composition-api/module',
+    '@nuxt/typescript-build',
+    '@nuxtjs/stylelint-module',
+    'nuxt-typed-vuex',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -84,19 +99,21 @@ export default {
   generate: {
     interval: 2000,
     async routes() {
+      // eslint-disable-next-line global-require
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
 
       return files.map((file) => {
         if (file.path === '/index') {
           return '/'
-        } else if (file.path.startsWith('/articles')) {
-          return file.path.replace('/articles', '')
-        } else if (file.path.startsWith('/pages')) {
-          return file.path.replace('/pages', '')
-        } else {
-          return file.path
         }
+        if (file.path.startsWith('/articles')) {
+          return file.path.replace('/articles', '')
+        }
+        if (file.path.startsWith('/pages')) {
+          return file.path.replace('/pages', '')
+        }
+        return file.path
       })
     },
   },

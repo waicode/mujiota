@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
-    <div class="post-list">
-      <template v-for="categorisedAirticle in categorisedAirticles">
-        <h2 :key="categorisedAirticle.category">
-          {{ categorisedAirticle.icon }}
-          {{ categorisedAirticle.category }}
+  <div class="MujiotaSitemapPage">
+    <div class="MujiotaSitemapPage__PostList">
+      <template v-for="categorisedArticle in categorisedArticles">
+        <h2 :key="`h2-${categorisedArticle.category}`">
+          {{ categorisedArticle.icon }}
+          {{ categorisedArticle.category }}
         </h2>
-        <ul :key="categorisedAirticle.category">
-          <li v-for="article in categorisedAirticle.articles" :key="article.id">
+        <ul :key="`ul-${categorisedArticle.category}`">
+          <li v-for="article in categorisedArticle.articles" :key="article.id">
             <nuxt-link :to="`/${article.id}/${article.slug}/`">{{
               article.title
             }}</nuxt-link>
@@ -18,96 +18,109 @@
   </div>
 </template>
 
-<script>
-import Meta from '~/mixins/meta'
+<script lang="ts">
+import {
+  defineComponent,
+  ref,
+  useContext,
+  useFetch,
+  useMeta,
+} from '@nuxtjs/composition-api'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
 
-export default {
+import useHeaderMeta from '~/composables/useHeaderMeta'
+import useFetchPosts from '~/composables/useFetchPosts'
+import { Article } from '~/store'
+
+/**
+ * ## サイトマップ
+ */
+export default defineComponent({
   name: 'MujiotaSitemapPage',
-  mixins: [Meta],
-  async asyncData({ $config, $content, store, app }) {
-    const pageUrl = `${$config.baseURL}/sitemap`
-    const articles = await $content('articles', { deep: true })
-      .only([
-        'id',
-        'slug',
-        'title',
-        'category',
-        'tags',
-        'description',
-        'imageFormat',
-        'createdAt',
-        'updatedAt',
-      ])
-      .sortBy('createdAt', 'desc')
-      .fetch()
+  setup() {
+    const context = useContext()
+    const { $config, store, app } = context
+    const { title, meta } = useMeta()
 
-    // 現在の記事情報をリセット
-    store.commit('page/setArticle', { article: {} })
+    const articles = ref<Article[]>([])
 
-    // メタ情報
-    const meta = app.$getMeta()
-    meta.title = 'サイトマップ'
-    meta.description = '全記事の一覧です。'
-    meta.pageUrl = pageUrl
-    meta.ogType = 'blog'
-
-    return {
-      articles,
-      pageUrl,
-      meta,
+    // [{category: "aaa", articles:[{...article1}, {...article2}, ...], icon: "😃"}]
+    type CategorisedArticle = {
+      category: string
+      articles: Article[]
+      icon: string
     }
-  },
-  computed: {
-    categorisedAirticles() {
-      // [{category: "aaa", articles:[{...article1}, {...article2}, ...]}]
-      const categorisedAirticles = []
+    const categorisedArticles = ref<CategorisedArticle[]>([])
+
+    const pageUrl = `${$config.baseURL}/sitemap`
+
+    const { fetch } = useFetch(async () => {
+      articles.value = await useFetchPosts(context as unknown as Context)
+
+      // メタ情報
+      const SITEMAP_TITLE = 'サイトマップ'
+      const SITEMAP_DESCRIPTION = '全記事の一覧です。'
+
+      const metaData = app.$getMeta(SITEMAP_TITLE, SITEMAP_DESCRIPTION, pageUrl)
+      title.value = SITEMAP_TITLE
+      meta.value = useHeaderMeta(metaData).meta
+
+      // カテゴリー別に集計した記事リスト
       const categories = Array.from(
-        new Set(this.articles.map((article) => article.category))
+        new Set(articles.value.map((article) => article.category))
       )
+      const results: CategorisedArticle[] = []
       categories.forEach((category) => {
-        const articles = []
-        let hitArticle = {}
-        this.articles.forEach((article) => {
+        const list: Article[] = []
+        articles.value.forEach((article) => {
           if (category === article.category) {
-            articles.push(article)
-            hitArticle = article
+            list.push(article)
           }
         })
-        const tagSlug = this.$getTagSlug(hitArticle.category)
-        const icon = this.$getTagIcon(tagSlug)
-        categorisedAirticles.push({ category, articles, icon })
+        results.push({
+          category,
+          articles: list,
+          icon: app.$getTagIcon(app.$getTagSlug(category)),
+        })
       })
-      return categorisedAirticles
-    },
-  },
-  methods: {
-    categoryIcon(tagName) {
-      const tagSlug = this.$getTagSlug(tagName)
-      return this.$getTagIcon(tagSlug)
-    },
-  },
-}
-</script>
-<style lang="scss" scoped>
-h2 {
-  margin-bottom: 12px;
-  font-size: 1.3125rem;
-  font-weight: bold;
-}
-ul {
-  margin-bottom: 28px;
+      categorisedArticles.value = results
 
-  li {
-    font-size: 1rem;
-    a {
-      display: inline-block;
-      padding: 0.16rem;
-      line-height: 1.6rem;
-      margin-left: 0.2rem;
-      font-size: 0.8175rem;
-      font-weight: bold;
-      color: #726c6c;
-      text-decoration: none;
+      // 現在の記事情報をリセット
+      store.commit('page/setArticle', { article: {} })
+    })
+
+    fetch()
+
+    return {
+      categorisedArticles,
+    }
+  },
+  head: {},
+})
+</script>
+<style lang="scss">
+.MujiotaSitemapPage {
+  h2 {
+    margin-bottom: $scale12;
+    font-size: $font-size-131rem;
+    font-weight: $font-weight-700;
+  }
+  ul {
+    margin-bottom: $scale28;
+
+    li {
+      font-size: $font-size-100rem;
+      a {
+        display: inline-block;
+        padding: $scale4;
+        margin-left: $scale8;
+        font-size: $font-size-081rem;
+        font-weight: $font-weight-700;
+        line-height: $font-size-160rem;
+        color: $sitemap-link-color;
+        text-decoration: none;
+      }
     }
   }
 }

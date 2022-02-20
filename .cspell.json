@@ -2,29 +2,43 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "enableFiletypes": ["vue"],
+  "enableFiletypes": [
+    "vue"
+  ],
   "languageSettings": [
     {
       "languageId": "vue",
-      "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
+      "dictionaries": [
+        "html",
+        "fonts",
+        "typescript",
+        "javascript",
+        "css"
+      ]
     }
   ],
-
   "words": [
     "ADSENSE",
+    "amayutazon",
     "ateliersulphurpool",
+    "bemx",
     "blogos",
     "BRAVIA",
+    "browserlistrc",
     "buefy",
     "bulma",
+    "categorised",
     "Chromecast",
+    "clsx",
     "composables",
+    "espree",
     "firestore",
     "fontawesome",
     "fortawesome",
     "fullhd",
     "gtag",
     "Hatena",
+    "Kaereba",
     "Kaku",
     "lifehack",
     "mercari",
@@ -39,13 +53,19 @@
     "Quattro",
     "rakuten",
     "rehype",
+    "rphkh",
     "satofull",
     "stylelint",
     "trdr",
     "Tweetable",
     "twitter",
     "Uacct",
-    "vercel"
+    "unref",
+    "vercel",
+    "vuex",
+    "waicode",
+    "yomereba",
+    "yomerebalink"
   ],
   "ignorePaths": [
     ".vscode",

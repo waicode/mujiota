@@ -1,4 +1,14 @@
-export default (metaData) => {
+import { Meta } from '~/plugins/meta'
+
+/**
+ * ## ヘッダーのメタタグ生成
+ *
+ * メタ情報をもとにヘッダーのメタタグに必要な設定情報を生成。
+ *
+ * @param metaData ヘッダーのメタ情報
+ * @returns ヘッダーのメタタグに必要な設定情報
+ */
+export default (metaData: Meta) => {
   const title =
     !metaData.title || metaData.title === metaData.siteName
       ? metaData.siteName
