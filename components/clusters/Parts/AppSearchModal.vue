@@ -38,7 +38,10 @@
               </div>
             </div>
           </div>
-          <div v-if="searchedArticles.length > 0">
+          <div
+            v-if="searchedArticles.length > 0"
+            class="AppSearchModal__PostList"
+          >
             <div v-for="(article, index) in searchedArticles" :key="article.id">
               <AppArticle :article="article" @link-click="closeModal()" />
               <hr
@@ -70,7 +73,13 @@ import {
   useContext,
   watch,
 } from '@nuxtjs/composition-api'
+
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+
 import { Article } from '~/store'
+
+import useSearchPosts from '@/composables/useSearchPosts'
 
 /**
  * 検索モーダル
@@ -111,6 +120,8 @@ export default defineComponent({
     const searchText = ref('')
     const searchedArticles = ref<Article[]>([])
 
+    const context = useContext()
+
     const closeModal = () => {
       emit('close')
     }
@@ -120,35 +131,17 @@ export default defineComponent({
       set: (val: boolean) => (!val ? closeModal() : undefined),
     })
 
-    const search = async () => {
-      // 一部取得できていない記事があるためfilterと組み合わせて検索している
-      // TODO: 本来はcontentだけで検索できるようにしたい
-      const { app, $content } = useContext()
-      const articlesFromContent = await $content('articles', { deep: true })
-        .limit(app.$accessor.articles.length)
-        .search(searchText.value)
-        .sortBy('createdAt', 'desc')
-        .fetch()
-      const articlesFromState = app.$accessor.articles.filter(
-        (data) =>
-          data.title.includes(searchText.value) ||
-          data.description.includes(searchText.value)
-      )
-      // 重複を外す
-      searchedArticles.value = articlesFromContent
-        .concat(articlesFromState)
-        .filter(
-          (element: Article, index: number, self: Article[]) =>
-            self.findIndex(
-              (e) => e.id === element.id && e.slug === element.slug
-            ) === index
-        )
-    }
-
     onMounted(() => {
-      const { app } = useContext()
-      searchedArticles.value = app.$accessor.articles
+      // 初期表示は全記事一覧
+      searchedArticles.value = context.app.$accessor.articles
     })
+
+    const search = async () => {
+      searchedArticles.value = await useSearchPosts(
+        searchText,
+        context as unknown as Context
+      )
+    }
 
     watch(searchText, () => {
       // 検索キーワードが変わったら再検索
@@ -166,34 +159,32 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .AppSearchModal {
-  .modal-background {
-    background-color: rgba(30, 30, 30, 0.6) !important;
-  }
-  .modal-card {
-    width: auto;
-    max-width: 960px;
-    height: calc(100vh - 40px);
-    margin: 0 auto;
-    border-radius: $border-width2;
-    @media (max-width: $tablet) {
-      max-width: 92%;
-      height: calc(100vh - 80px);
+  .modal {
+    .modal-background {
+      background-color: rgba(30, 30, 30, 0.6) !important;
     }
-    .modal-card-body {
-      padding: $scale36;
-      overflow: scroll;
+    .modal-card {
+      width: auto;
+      min-width: 900px;
+      max-width: 960px;
+      height: calc(100vh - 40px);
+      margin: 0 auto;
+      border-radius: $border-radius2;
       @media (max-width: $tablet) {
-        padding: $scale24;
+        min-width: 90%;
+        max-width: 92%;
+        height: calc(100vh - 80px);
+        border-radius: $border-radius4;
       }
-      @media (max-width: $tablet) {
-        .close-button {
-          width: 100%;
-          margin-bottom: $scale12;
+      .modal-card-body {
+        padding: $scale36;
+        overflow: scroll;
+        @media (max-width: $tablet) {
+          padding: $scale24;
         }
       }
     }
   }
-
   &__SearchBox {
     margin-bottom: $scale24;
     @media (max-width: $tablet) {
@@ -202,11 +193,18 @@ export default defineComponent({
   }
   &__CloseButton {
     display: block;
+    width: 100%;
     margin: 0 0 0 auto;
     color: $link-gray-color;
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-bottom: $scale12;
+    }
   }
+  // &__PostList {
+  // }
   &__NotFound {
-    width: 905px;
+    min-width: 900px;
     min-height: 120px;
   }
   &__NotFoundTitle {

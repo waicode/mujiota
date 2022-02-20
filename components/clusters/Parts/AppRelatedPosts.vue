@@ -75,7 +75,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .AppRelatedPosts {
   &__RelatedTitle {
     display: flex;

@@ -50,7 +50,7 @@
         :share-count-facebook="shareCountFacebook"
         :share-count-pocket="shareCountPocket"
       />
-      <AppRelatedPosts :articles="relatedArticles" />
+      <AppRelatedPosts v-if="relatedArticles" :articles="relatedArticles" />
     </article>
   </div>
 </template>

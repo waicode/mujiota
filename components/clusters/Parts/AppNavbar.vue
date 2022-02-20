@@ -26,10 +26,6 @@
                 >
                   <SearchIconSvg />
                 </a>
-                <AppSearchModal
-                  :is-active="isComponentModalActive"
-                  @close="isComponentModalActive = false"
-                />
                 <nuxt-link to="/sitemap" class="AppNavbar__IconSitemapLink">
                   <SitemapIconSvg />
                 </nuxt-link>
@@ -39,6 +35,12 @@
         </b-navbar-item>
       </template>
     </b-navbar>
+    <div class="AppNavbar__SearchModal">
+      <AppSearchModal
+        :is-active="isComponentModalActive"
+        @close="isComponentModalActive = false"
+      />
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -129,10 +131,6 @@ export default defineComponent({
   .navbar {
     padding-top: $scale20;
   }
-  .navbar-item {
-    // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化
-    pointer-events: auto;
-  }
   .navbar-brand {
     padding: $scale24 $scale28 $scale20;
     @media (max-width: $desktop) {
@@ -151,7 +149,6 @@ export default defineComponent({
     background-color: transparent;
     box-shadow: none;
   }
-
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.5s;
@@ -160,7 +157,6 @@ export default defineComponent({
   .fade-leave-to {
     opacity: 0;
   }
-
   $navbar-brand-short-width: 84px;
   @media (max-width: $mobile) {
     .navbar-brand {
@@ -170,17 +166,16 @@ export default defineComponent({
       }
     }
   }
-
   $topnav-icon-width: 50px;
   $topnav-icon-height: 50px;
-
   $logo-color: #67041b;
   $logo-alpha-color: rgba(103, 4, 27, 0.24);
   $circle-color: #6f4952;
   $circle-alpha-color: rgba(111, 73, 82, 0.28);
-
   &__TopnavIcons {
     display: flex;
+    // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化
+    pointer-events: auto;
     a {
       position: relative;
       display: flex;
@@ -191,18 +186,15 @@ export default defineComponent({
       background-color: transparent;
       border: $border-width2 solid $circle-alpha-color;
       border-radius: $border-radius-half;
-
       svg {
         fill: $logo-alpha-color;
       }
-
       &:not(:last-child) {
         margin-right: $scale16;
       }
       &:last-child {
         margin-right: 0;
       }
-      &:focus,
       &:hover {
         background-color: $circle-color;
         border: $border-width2 solid transparent;
@@ -212,7 +204,6 @@ export default defineComponent({
       }
     }
   }
-
   &--onTop {
     .AppNavbar__TopnavIcons {
       a {
@@ -223,10 +214,8 @@ export default defineComponent({
       }
     }
   }
-
   $topnav-icon-svg-width: 24px;
   $topnav-icon-svg-height: $topnav-icon-svg-width;
-
   &__IconSearchLink {
     svg {
       position: relative;
@@ -234,7 +223,6 @@ export default defineComponent({
       height: $topnav-icon-svg-height;
     }
   }
-
   &__IconSitemapLink {
     svg {
       position: relative;
@@ -242,12 +230,15 @@ export default defineComponent({
       width: $topnav-icon-svg-width;
     }
   }
-
   &__IconEmailLink {
     svg {
       width: $topnav-icon-svg-width;
       height: $topnav-icon-svg-height;
     }
+  }
+  &__SearchModal {
+    // 固定して上に覆われたヘッダー全体でクリックを無効化しているため個別に有効化
+    pointer-events: auto;
   }
 }
 </style>

@@ -35,7 +35,7 @@
               </span>
               <span
                 v-if="article.updatedAt != article.createdAt"
-                class="AppArticle__DatePublished"
+                class="AppArticle__DateUpdated"
                 itemprop="updatedAt"
                 :content="article.updatedAt"
               >

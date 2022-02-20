@@ -2,11 +2,11 @@
   <div class="container">
     <div class="post-list">
       <template v-for="categorisedArticle in categorisedArticles">
-        <h2 :key="categorisedArticle.category">
+        <h2 :key="`h2-${categorisedArticle.category}`">
           {{ categorisedArticle.icon }}
           {{ categorisedArticle.category }}
         </h2>
-        <ul :key="categorisedArticle.category">
+        <ul :key="`ul-${categorisedArticle.category}`">
           <li v-for="article in categorisedArticle.articles" :key="article.id">
             <nuxt-link :to="`/${article.id}/${article.slug}/`">{{
               article.title
