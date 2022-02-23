@@ -147,16 +147,17 @@ export default {
     },
   },
 
-  // storybook: {
-  //   addons: [
-  //     '@storybook/addon-a11y',
-  //     '@storybook/addon-links',
-  //     '@storybook/addon-essentials',
-  //     '@storybook/addon-knobs',
-  //     '@storybook/addon-essentials',
-  //     '@storybook/preset-scss',
-  //   ],
-  // },
+  storybook: {
+    stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
+    // addons: [
+    //   '@storybook/addon-a11y',
+    //   '@storybook/addon-links',
+    //   '@storybook/addon-essentials',
+    //   '@storybook/addon-knobs',
+    //   '@storybook/addon-essentials',
+    //   '@storybook/preset-scss',
+    // ],
+  },
 
   'google-gtag': {
     id: process.env.GA_TRACKING_ID,

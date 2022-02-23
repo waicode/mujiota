@@ -2,11 +2,19 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "enableFiletypes": ["vue"],
+  "enableFiletypes": [
+    "vue"
+  ],
   "languageSettings": [
     {
       "languageId": "vue",
-      "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
+      "dictionaries": [
+        "html",
+        "fonts",
+        "typescript",
+        "javascript",
+        "css"
+      ]
     }
   ],
   "words": [
@@ -26,17 +34,22 @@
     "espree",
     "firestore",
     "fullhd",
+    "GLUY",
     "gtag",
     "Hatena",
     "Kaereba",
     "Kaku",
+    "kmix",
     "lifehack",
+    "Longhi",
     "mercari",
+    "MOJILOGO",
     "muji",
     "mujiota",
     "Nespresso",
     "noindex",
     "notyet",
+    "nuxify",
     "nuxt",
     "nuxtjs",
     "prismjs",
@@ -44,6 +57,7 @@
     "rakuten",
     "rehype",
     "rphkh",
+    "saisyo",
     "satofull",
     "stylelint",
     "trdr",
