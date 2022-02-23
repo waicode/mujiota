@@ -23,12 +23,5 @@
       "@types/jest"
     ]
   },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist",
-    "coverage",
-    "**/*.stories.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["node_modules", ".nuxt", "dist", "coverage"]
 }

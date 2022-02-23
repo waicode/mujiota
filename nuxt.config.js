@@ -10,6 +10,10 @@ export default {
   ssr: true,
   target: 'server',
 
+  /**
+   * 注意：除外ファイルは`.nuxtignore`を参照すること。
+   */
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: { lang: 'ja' },
@@ -149,14 +153,11 @@ export default {
 
   storybook: {
     stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
-    // addons: [
-    //   '@storybook/addon-a11y',
-    //   '@storybook/addon-links',
-    //   '@storybook/addon-essentials',
-    //   '@storybook/addon-knobs',
-    //   '@storybook/addon-essentials',
-    //   '@storybook/preset-scss',
-    // ],
+    addons: [
+      '@storybook/addon-essentials',
+      '@storybook/addon-links',
+      '@storybook/addon-knobs',
+    ],
   },
 
   'google-gtag': {

@@ -1,11 +1,27 @@
+import type { Story } from '@storybook/vue'
+import { defineComponent } from '@nuxtjs/composition-api'
+import { defineMeta } from '@/stories/helpers'
 import AppArchiveDropdown from './AppArchiveDropdown.vue'
 
-export default {
+const meta = defineMeta({
   title: 'components/elements/Dropdown/AppArchiveDropdown',
   component: AppArchiveDropdown,
-  argTypes: {},
-}
+  argTypes: {
+    label: { control: 'text' },
+  },
+} as const)
+export default meta
 
-export const Primary = () => ({
-  template: `<AppArchiveDropdown :show-top="0" :archives="[]" />`,
-})
+const Template: Story = (args) =>
+  defineComponent({
+    components: { AppArchiveDropdown },
+    setup() {
+      return args
+    },
+    template: `<AppArchiveDropdown :label="label" :archives="[]" />`,
+  })
+
+export const Primary = Template.bind({})
+Primary.args = {
+  label: 'テスト',
+}

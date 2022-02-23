@@ -1,10 +1,11 @@
+import { defineMeta } from '@/stories/helpers'
 import AppKaerebaLink from './AppKaerebaLink.vue'
 
-export default {
+export default defineMeta({
   title: 'components/elements/Link/AppKaerebaLink',
   component: AppKaerebaLink,
   argTypes: {},
-}
+})
 
 export const Primary = () => ({
   template: `
