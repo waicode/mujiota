@@ -17,7 +17,7 @@
             {{ article.description }}
           </div>
           <div class="AppRelatedLink__LinkDate">
-            <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+            <b-icon pack="far" icon="calendar-alt" />
             <span>{{ article.updatedAt | dateFormatted }}</span>
           </div>
         </div>
@@ -37,7 +37,6 @@ import {
 import { Context } from '@nuxt/types'
 
 import useFetchPost from '~/composables/useFetchPost'
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 import { Article, isArticle } from '~/store'
 
 /**
@@ -80,7 +79,6 @@ export default defineComponent({
 
     return {
       article,
-      faCalendarAlt,
       link,
     }
   },

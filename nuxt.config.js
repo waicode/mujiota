@@ -83,7 +83,6 @@ export default {
     '@nuxt/content',
     'nuxt-buefy',
     'nuxt-svg-loader',
-    'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
     [
       '@nuxtjs/google-adsense',
@@ -148,12 +147,19 @@ export default {
     },
   },
 
+  // storybook: {
+  //   addons: [
+  //     '@storybook/addon-a11y',
+  //     '@storybook/addon-links',
+  //     '@storybook/addon-essentials',
+  //     '@storybook/addon-knobs',
+  //     '@storybook/addon-essentials',
+  //     '@storybook/preset-scss',
+  //   ],
+  // },
+
   'google-gtag': {
     id: process.env.GA_TRACKING_ID,
     debug: false,
-  },
-
-  fontawesome: {
-    component: 'fa',
   },
 }

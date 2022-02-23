@@ -27,7 +27,7 @@
                         itemprop="updatedAt"
                         :content="article.updatedAt"
                       >
-                        <fa :icon="faCalendarAlt" class="fa-redo-alt" />
+                        <b-icon pack="far" icon="calendar-alt" />
                         <span>{{ article.updatedAt | dateFormatted }}</span>
                       </span>
                     </div>
@@ -44,9 +44,6 @@
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
-import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
 /**
  * ## 関連記事リスト
@@ -66,12 +63,6 @@ export default defineComponent({
       required: true,
       type: Array,
     },
-  },
-  setup() {
-    return {
-      faCalendarAlt,
-      faRedoAlt,
-    }
   },
 })
 </script>
