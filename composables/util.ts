@@ -176,3 +176,20 @@ export const bemx = (
     })
     .map((m) => `${groupAndElement}--${m}`),
 ]
+
+/**
+ * ファイルパスからファイル名を取得。
+ *
+ * `/`で区切られた最後の要素の`.`より前のテキストを取得する。
+ *
+ * @param path ファイルパス
+ * @returns ファイル名
+ *
+ * @example
+ * ```
+ * const path = 'abc/def/xyz/file1.jpg'
+ * const fileName = getFileName(path) // file1
+ * ```
+ */
+export const getFileName = (path: string) =>
+  path.split('/').reverse()[0].split('.')[0]

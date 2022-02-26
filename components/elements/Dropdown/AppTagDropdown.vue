@@ -26,9 +26,14 @@ import { Tag } from '~/store'
 /**
  * ## タグページ用ドロップダウン
  *
- * タグページを表示するドロップダウン。
+ * タグページを表示するドロップダウン。Buefyの`b-dropdown`をラップしている。
  * ドロップダウン未選択時に表示するラベルと中身のタグ情報リストを受け取る。
  * リスト項目を選択すると該当のタグページへ遷移する。
+ *
+ * Buefyの`b-dropdown`については以下を参照。
+ *
+ * - 仕様書：https://buefy.org/documentation/dropdown/
+ * - コード：https://github.com/buefy/buefy/tree/dev/src/components/dropdown
  */
 export default defineComponent({
   name: 'AppTagDropdown',

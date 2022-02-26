@@ -2,7 +2,10 @@
   <div class="AppCaptureImage">
     <div class="AppCaptureImage__Wrapper">
       <div class="AppCaptureImage__Capture">
-        <AppAssetsImage :path="`images/capture/${articleId}/${imgFileName}`" />
+        <AppAssetsImage
+          :alt="alt"
+          :path="`images/capture/${articleId}/${imgFileName}`"
+        />
       </div>
     </div>
     <div v-if="caption" class="AppCaptureImage__Caption">{{ caption }}</div>
@@ -34,6 +37,13 @@ export default defineComponent({
     imgFileName: {
       type: String,
       required: true,
+    },
+    /**
+     * 画像のaltテキスト。
+     */
+    alt: {
+      type: String,
+      default: undefined,
     },
     /**
      * キャプション。

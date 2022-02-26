@@ -27,9 +27,15 @@ import { Archive } from '~/store'
 /**
  * ## アーカイブ用ドロップダウン
  *
- * 年月単位の過去記事（アーカイブ）を表示するドロップダウン。
+ * 年月単位の過去記事（アーカイブ）を表示するドロップダウン。Buefyの`b-dropdown`をラップしている。
  * ドロップダウン未選択時に表示するラベルと中身のアーカイブ情報リストを受け取る。
  * リスト項目を選択すると該当年月のアーカイブページへ遷移する。
+ *
+ * Buefyの`b-dropdown`については以下を参照。
+ *
+ * - 仕様書：https://buefy.org/documentation/dropdown/
+ * - コード：https://github.com/buefy/buefy/tree/dev/src/components/dropdown
+ *
  */
 export default defineComponent({
   name: 'AppArchiveDropdown',

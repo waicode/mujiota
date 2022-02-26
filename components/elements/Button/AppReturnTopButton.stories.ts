@@ -1,26 +1,25 @@
+import type { Story } from '@storybook/vue'
 import { defineMeta } from '@/stories/helpers'
 import { defineComponent } from '@nuxtjs/composition-api'
 import AppReturnTopButton from './AppReturnTopButton.vue'
 
 const meta = defineMeta({
-  title: 'components/elements/Button/AppReturnTopButton',
+  title: '@elements/Button/AppReturnTopButton',
   component: AppReturnTopButton,
-  argTypes: {
-    showTop: { control: 'number' },
-  },
 })
 export default meta
 
-const Template = (args: any) =>
+const Template: Story = (args) =>
   defineComponent({
     components: { AppReturnTopButton },
     setup() {
       return args
     },
-    template: `<AppReturnTopButton :show-top="${args.showTop}"/>`,
+    template: `<AppReturnTopButton :show-top="showTop" forced-display="forcedDisplay" />`,
   })
 
 export const Primary = Template.bind({})
-// Primary.args = {
-//   showTop: 100,
-// }
+Primary.args = {
+  showTop: 0,
+  forcedDisplay: true,
+}
