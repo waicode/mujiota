@@ -13,8 +13,3 @@ import type { Meta } from '@storybook/vue'
  * @returns
  */
 export const defineMeta = <T extends Meta>(meta: T): T => meta
-
-// TODO: StoryFromMetaの追加
-// type VueSfc<T extends Meta> = Story<T['component'] & >
-// type FixedVueSfc<T extends Meta> = VueSfc<T>
-// export type StoryFromMeta<T extends Meta> = FixedVueSfc<T>;

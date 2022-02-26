@@ -10,9 +10,10 @@ const meta = defineMeta({
 })
 export default meta
 
-const Template: Story = (args) =>
+const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppArchiveDropdown },
+    props: Object.keys(argTypes),
     setup() {
       return args
     },
