@@ -20,8 +20,8 @@ import WarningIconSvg from '@/assets/images/shared/icon/ic_warning_24px.svg'
 
 import { arrayToEnumObject, bemx, ValueTypeOf } from '~/composables/util'
 
-const SUPPLEMENT_TYPE = arrayToEnumObject(['normal', 'warning'])
-type SupplementType = ValueTypeOf<typeof SUPPLEMENT_TYPE>
+export const SUPPLEMENT_TYPE = arrayToEnumObject(['normal', 'warning'])
+export type SupplementType = ValueTypeOf<typeof SUPPLEMENT_TYPE>
 
 /**
  * ## 補足説明

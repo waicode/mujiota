@@ -1,11 +1,23 @@
 import type { Story } from '@storybook/vue'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { defineMeta } from '@/stories/helpers'
-import AppKaerebaLink from './AppKaerebaLink.vue'
+import AppKaerebaLink, { EC_MALL_ASP_TYPE } from './AppKaerebaLink.vue'
 
 const meta = defineMeta({
   title: '@elements/Link/AppKaerebaLink',
   component: AppKaerebaLink,
+  argTypes: {
+    itemTitle: { control: { type: 'text' } },
+    imgFileName: { control: { type: 'text' } },
+    shopName: { control: { type: 'text' } },
+    amazonItemId: { control: { type: 'text' } },
+    rakutenItemId: { control: { type: 'text' } },
+    searchKeyword: { control: { type: 'text' } },
+    mainAspType: {
+      control: { type: 'inline-radio' },
+      options: Object.values(EC_MALL_ASP_TYPE),
+    },
+  },
 })
 export default meta
 
@@ -13,9 +25,7 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppKaerebaLink },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `
       <app-kaereba-link
         :item-title="itemTitle"

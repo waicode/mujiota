@@ -6,16 +6,19 @@ import AppReturnTopButton from './AppReturnTopButton.vue'
 const meta = defineMeta({
   title: '@elements/Button/AppReturnTopButton',
   component: AppReturnTopButton,
+  argTypes: {
+    showTop: { control: { type: 'number' } },
+    forcedDisplay: { control: { type: 'boolean' } },
+  },
 })
 export default meta
 
-const Template: Story = (args) =>
+const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppReturnTopButton },
-    setup() {
-      return args
-    },
-    template: `<AppReturnTopButton :show-top="showTop" forced-display="forcedDisplay" />`,
+    props: Object.keys(argTypes),
+    setup() {},
+    template: `<AppReturnTopButton :show-top="showTop" :forced-display="forcedDisplay" />`,
   })
 
 export const Primary = Template.bind({})

@@ -6,6 +6,9 @@ import AppRelatedLink from './AppRelatedLink.vue'
 const meta = defineMeta({
   title: '@elements/Link/AppRelatedLink',
   component: AppRelatedLink,
+  argTypes: {
+    id: { control: { type: 'text' } },
+  },
 })
 export default meta
 
@@ -13,9 +16,7 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppRelatedLink },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `
       <app-related-link :id="id"></app-related-link>
     `,

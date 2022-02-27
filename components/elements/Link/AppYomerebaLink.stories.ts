@@ -1,11 +1,24 @@
 import type { Story } from '@storybook/vue'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { defineMeta } from '@/stories/helpers'
-import AppYomerebaLink from './AppYomerebaLink.vue'
+import AppYomerebaLink, { BOOK_ASP_TYPE } from './AppYomerebaLink.vue'
 
 const meta = defineMeta({
   title: '@elements/Link/AppYomerebaLink',
   component: AppYomerebaLink,
+  argTypes: {
+    itemTitle: { control: { type: 'text' } },
+    imgFileName: { control: { type: 'text' } },
+    authorName: { control: { type: 'text' } },
+    amazonItemId: { control: { type: 'text' } },
+    kindleItemId: { control: { type: 'text' } },
+    rakutenItemId: { control: { type: 'text' } },
+    koboItemId: { control: { type: 'text' } },
+    mainAspType: {
+      control: { type: 'inline-radio' },
+      options: Object.values(BOOK_ASP_TYPE),
+    },
+  },
 })
 export default meta
 
@@ -13,9 +26,7 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppYomerebaLink },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `
       <app-yomereba-link
         :item-title="itemTitle"

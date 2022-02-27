@@ -6,16 +6,19 @@ import AppAssetsImage from './AppAssetsImage.vue'
 const meta = defineMeta({
   title: '@elements/Image/AppAssetsImage',
   component: AppAssetsImage,
+  argTypes: {
+    path: { control: { type: 'text' } },
+    alt: { control: { type: 'text' } },
+  },
 })
 export default meta
 
-const Template: Story = (args) =>
+const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppAssetsImage },
-    setup() {
-      return args
-    },
-    template: `<app-assets-image :path="path" />`,
+    props: Object.keys(argTypes),
+    setup() {},
+    template: `<app-assets-image :path="path"></app-assets-image>`,
   })
 
 export const Primary = Template.bind({})

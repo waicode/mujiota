@@ -6,6 +6,13 @@ import AppExternalLink from './AppExternalLink.vue'
 const meta = defineMeta({
   title: '@elements/Link/AppExternalLink',
   component: AppExternalLink,
+  argTypes: {
+    title: { control: { type: 'text' } },
+    note: { control: { type: 'text' } },
+    link: { control: { type: 'text' } },
+    imgFileName: { control: { type: 'text' } },
+    aspMeasurementImgLink: { control: { type: 'text' } },
+  },
 })
 export default meta
 
@@ -13,16 +20,14 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppExternalLink },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `
       <app-external-link
         :title="title"
         :note="note"
         :link="link"
         :img-file-name="imgFileName"
-      />`,
+      ></app-external-link>`,
   })
 
 export const Primary = Template.bind({})

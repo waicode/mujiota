@@ -7,6 +7,10 @@ import AppTagDropdown from './AppTagDropdown.vue'
 const meta = defineMeta({
   title: '@elements/Dropdown/AppTagDropdown',
   component: AppTagDropdown,
+  argTypes: {
+    label: { control: { type: 'text' } },
+    tags: { control: { type: 'object' } },
+  },
 })
 export default meta
 
@@ -14,9 +18,7 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppTagDropdown },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `<app-tag-dropdown :label="label" :tags="tags" />`,
   })
 

@@ -7,6 +7,10 @@ import AppArchiveDropdown from './AppArchiveDropdown.vue'
 const meta = defineMeta({
   title: '@elements/Dropdown/AppArchiveDropdown',
   component: AppArchiveDropdown,
+  argTypes: {
+    label: { control: { type: 'text' } },
+    archives: { control: { type: 'object' } },
+  },
 })
 export default meta
 
@@ -14,9 +18,7 @@ const Template: Story = (args, { argTypes }) =>
   defineComponent({
     components: { AppArchiveDropdown },
     props: Object.keys(argTypes),
-    setup() {
-      return args
-    },
+    setup() {},
     template: `<app-archive-dropdown :label="label" :archives="archives" />`,
   })
 
