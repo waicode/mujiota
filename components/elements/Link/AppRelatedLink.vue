@@ -100,6 +100,11 @@ export default defineComponent({
     &:hover {
       color: $link-hover-color;
       background: $link-hover-bg-color;
+      .AppRelatedLink__LinkTitle {
+        &::before {
+          background: $link-hover-label-color;
+        }
+      }
     }
   }
 
@@ -128,6 +133,7 @@ export default defineComponent({
       content: '関連リンク';
       background: $dark-black-color;
       border-radius: $border-radius2;
+      transition: 0.3s ease-in-out;
     }
   }
   &__LinkDescription {

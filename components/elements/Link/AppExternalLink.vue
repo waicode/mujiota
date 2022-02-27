@@ -94,6 +94,11 @@ export default defineComponent({
     &:hover {
       color: $link-hover-color;
       background: $link-hover-bg-color;
+      .AppExternalLink__LinkTitle {
+        &::before {
+          background: $link-hover-label-color;
+        }
+      }
     }
   }
 
@@ -122,6 +127,7 @@ export default defineComponent({
       content: '外部リンク';
       background: $dark-black-color;
       border-radius: $border-radius2;
+      transition: 0.3s ease-in-out;
     }
   }
   &__LinkNote {
