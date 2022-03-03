@@ -39,7 +39,7 @@
                 itemprop="updatedAt"
                 :content="article.updatedAt"
               >
-                <b-icon pack="fas" icon="calendar" />
+                <b-icon pack="fas" icon="redo" />
                 <span>{{ article.updatedAt | dateFormatted }}</span>
               </span>
             </div>
