@@ -43,7 +43,6 @@ export default (cssFunc: () => string) => {
   const style = computed(cssFunc)
   const styleElement = document.createElement('style')
   document.head.append(styleElement)
-  console.log('styleElement', styleElement)
   watch(
     [style],
     ([text]) => {
