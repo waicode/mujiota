@@ -26,16 +26,10 @@ jobs:
           touch ~/.bash_profile
           curl https://get.volta.sh | bash
           source ~/.bash_profile
-      - name: set .npmrc
-        run: |
-          echo "//npm.pkg.github.com/:always-auth=true" > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
       - name: install dependencies
         if: steps.cache-volta.outputs.cache-hit != 'true'
         run: |
           yarn install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN_FOR_GITHUBPKG }}
   build:
     runs-on: ubuntu-20.04
     needs:
@@ -60,5 +54,4 @@ jobs:
       - name: 'Deploy Pages'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
