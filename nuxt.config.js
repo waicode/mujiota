@@ -67,7 +67,15 @@ export default {
     },
   ],
 
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          autoprefixer: { grid: true }, // GridをIE11に対応
+        },
+      },
+    },
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -153,12 +161,12 @@ export default {
 
   storybook: {
     stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
-    addons: [
-      '@storybook/addon-essentials',
-      '@storybook/addon-links',
-      '@storybook/addon-knobs',
-      '@storybook/addon-a11y',
-    ],
+    // addons: [
+    //   '@storybook/addon-essentials',
+    //   '@storybook/addon-links',
+    //   '@storybook/addon-knobs',
+    //   '@storybook/addon-a11y',
+    // ],
   },
 
   'google-gtag': {
