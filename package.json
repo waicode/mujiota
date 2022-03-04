@@ -13,7 +13,8 @@
     "lint:style": "stylelint \"**/*.{css,scss,vue,html}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "fix:style": "stylelint --fix \"**/*.{css,scss,vue,html}\" --ignore-path .gitignore",
-    "test": "jest"
+    "test": "jest",
+    "vercel-build": "yarn global add sharp"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
