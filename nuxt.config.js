@@ -10,6 +10,10 @@ export default {
   ssr: true,
   target: 'server',
 
+  /**
+   * 注意：除外ファイルは`.nuxtignore`を参照すること。
+   */
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: { lang: 'ja' },
@@ -63,7 +67,15 @@ export default {
     },
   ],
 
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          autoprefixer: { grid: true }, // GridをIE11に対応
+        },
+      },
+    },
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -83,7 +95,6 @@ export default {
     '@nuxt/content',
     'nuxt-buefy',
     'nuxt-svg-loader',
-    'nuxt-fontawesome',
     ['nuxt-lazy-load', { directiveOnly: true }],
     [
       '@nuxtjs/google-adsense',
@@ -148,12 +159,18 @@ export default {
     },
   },
 
+  storybook: {
+    stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
+    // addons: [
+    //   '@storybook/addon-essentials',
+    //   '@storybook/addon-links',
+    //   '@storybook/addon-knobs',
+    //   '@storybook/addon-a11y',
+    // ],
+  },
+
   'google-gtag': {
     id: process.env.GA_TRACKING_ID,
     debug: false,
-  },
-
-  fontawesome: {
-    component: 'fa',
   },
 }

@@ -30,7 +30,7 @@
                 itemprop="createdAt"
                 :content="article.createdAt"
               >
-                <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+                <b-icon pack="far" icon="calendar-alt" />
                 <span>{{ article.createdAt | dateFormatted }}</span>
               </span>
               <span
@@ -39,7 +39,7 @@
                 itemprop="updatedAt"
                 :content="article.updatedAt"
               >
-                <fa :icon="faRedoAlt" class="fa-redo-alt" />
+                <b-icon pack="fas" icon="redo" />
                 <span>{{ article.updatedAt | dateFormatted }}</span>
               </span>
             </div>
@@ -60,9 +60,6 @@
 </template>
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
-
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
-import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 
 import { Article } from '~/store'
 
@@ -91,12 +88,6 @@ export default defineComponent({
      */
     'link-click',
   ],
-  setup() {
-    return {
-      faCalendarAlt,
-      faRedoAlt,
-    }
-  },
 })
 </script>
 <style lang="scss">

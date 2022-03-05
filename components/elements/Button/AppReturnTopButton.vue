@@ -1,9 +1,9 @@
 <template>
   <div class="AppReturnTopButton">
     <transition name="fade">
-      <div v-show="isButtonActive">
+      <div v-show="forcedDisplay || isButtonActive">
         <div class="AppReturnTopButton__PageTopButton">
-          <button @click="returnTop" />
+          <button aria-label="TOPへ戻る" @click="returnTop" />
         </div>
       </div>
     </transition>
@@ -11,10 +11,12 @@
 </template>
 <script lang="ts">
 import {
+  computed,
   defineComponent,
   onMounted,
   onUnmounted,
   ref,
+  unref,
 } from '@nuxtjs/composition-api'
 
 /**
@@ -33,12 +35,21 @@ export default defineComponent({
       type: Number,
       required: true,
     },
+    /**
+     * ボタンの強制表示。
+     */
+    forcedDisplay: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props) {
     const isButtonActive = ref(false)
 
     const scrollDisplayControl = () => {
-      isButtonActive.value = props.showTop <= window.scrollY
+      isButtonActive.value = unref(
+        computed(() => props.showTop <= window.scrollY)
+      )
     }
 
     onMounted(() => {

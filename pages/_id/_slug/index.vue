@@ -5,14 +5,14 @@
       <div class="MujiotaIdSlugPage__MetaWrapper">
         <div class="MujiotaIdSlugPage__Date">
           <span class="MujiotaIdSlugPage__DatePublished">
-            <fa :icon="faCalendarAlt" class="fa-calendar-alt" />
+            <b-icon pack="far" icon="calendar-alt" />
             <span>{{ article.createdAt | dateFormatted }}</span>
           </span>
           <span
             v-if="article.updatedAt != article.createdAt"
             class="MujiotaIdSlugPage__DateUpdated"
           >
-            <fa :icon="faRedoAlt" class="fa-redo-alt" />
+            <b-icon pack="fas" icon="redo" />
             <span>{{ article.updatedAt | dateFormatted }}</span>
           </span>
         </div>
@@ -60,8 +60,6 @@
 </template>
 
 <script lang="ts">
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
-import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import {
   defineComponent,
   ref,
@@ -160,8 +158,6 @@ export default defineComponent({
     return {
       article,
       pageUrl,
-      faCalendarAlt,
-      faRedoAlt,
       shareCountHatena,
       shareCountTwitter,
       shareCountFacebook,

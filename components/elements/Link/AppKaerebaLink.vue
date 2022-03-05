@@ -47,8 +47,12 @@ import {
 } from '@nuxtjs/composition-api'
 import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
 
-const EC_MALL_ASP_TYPE = arrayToEnumObject(['amazon', 'rakuten', 'yahoo'])
-type EcMallAspType = ValueTypeOf<typeof EC_MALL_ASP_TYPE>
+export const EC_MALL_ASP_TYPE = arrayToEnumObject([
+  'amazon',
+  'rakuten',
+  'yahoo',
+])
+export type EcMallAspType = ValueTypeOf<typeof EC_MALL_ASP_TYPE>
 
 /**
  * ## 物販アフィリエイト用リンクボックス

@@ -176,3 +176,54 @@ export const bemx = (
     })
     .map((m) => `${groupAndElement}--${m}`),
 ]
+
+const charCodeFromTo = (from: string, to: string): number[] => {
+  const codeFrom = from.charCodeAt(0)
+  const codeTo = to.charCodeAt(0)
+  const length = Math.abs(codeTo - codeFrom) + 1
+  const delta = codeTo > codeFrom ? 1 : -1
+  return Array.from({ length }).map((_, index) => codeFrom + index * delta)
+}
+
+/**
+ * 開始文字と終了文字を指定し、指定文字コード範囲の文字配列を返却。
+ * @param from 開始文字
+ * @param to 終了文字
+ * @returns 指定文字コード範囲の文字配列
+ */
+export const charFromTo = (from: string, to: string): string[] =>
+  charCodeFromTo(from, to).map((ch) => String.fromCharCode(ch))
+
+const azAZ09 = [
+  ...charFromTo('a', 'z'),
+  ...charFromTo('A', 'Z'),
+  ...charFromTo('0', '9'),
+]
+
+/**
+ * a-z,A-Z,0-9で構成されるランダム文字列を生成。
+ *
+ * @param length 文字列長
+ * @returns ランダム文字列
+ */
+export const randomString = (length = 10): string =>
+  Array.from({ length })
+    .map(() => azAZ09[Math.floor(Math.random() * azAZ09.length)])
+    .join('')
+
+/**
+ * ファイルパスからファイル名を取得。
+ *
+ * `/`で区切られた最後の要素の`.`より前のテキストを取得する。
+ *
+ * @param path ファイルパス
+ * @returns ファイル名
+ *
+ * @example
+ * ```
+ * const path = 'abc/def/xyz/file1.jpg'
+ * const fileName = getFileName(path) // file1
+ * ```
+ */
+export const getFileName = (path: string) =>
+  path.split('/').reverse()[0].split('.')[0]

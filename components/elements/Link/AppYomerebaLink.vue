@@ -44,8 +44,13 @@ import {
 } from '@nuxtjs/composition-api'
 import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
 
-const BOOK_ASP_TYPE = arrayToEnumObject(['amazon', 'kindle', 'rakuten', 'kobo'])
-type BookAspType = ValueTypeOf<typeof BOOK_ASP_TYPE>
+export const BOOK_ASP_TYPE = arrayToEnumObject([
+  'amazon',
+  'kindle',
+  'rakuten',
+  'kobo',
+])
+export type BookAspType = ValueTypeOf<typeof BOOK_ASP_TYPE>
 
 /**
  * ## 書籍アフィリエイト用リンクボックス
