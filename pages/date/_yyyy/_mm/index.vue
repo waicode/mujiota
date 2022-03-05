@@ -42,7 +42,7 @@ export default defineComponent({
   name: 'MujiotaArchivePage',
   setup() {
     const context = useContext()
-    const { $config, store, params, app, error } = context
+    const { $config, params, app, error } = context
     const { title, meta } = useMeta()
 
     const { pageSize } = $config
@@ -79,7 +79,7 @@ export default defineComponent({
       meta.value = useHeaderMeta(metaData).meta
 
       // 現在の記事情報をリセット
-      store.commit('page/setArticle', { article: {} })
+      app.$accessor.setArticle({ article: {} })
     })
 
     fetch()

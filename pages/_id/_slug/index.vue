@@ -83,7 +83,7 @@ export default defineComponent({
   name: 'MujiotaIdSlugPage',
   setup() {
     const context = useContext()
-    const { $config, store, params, app, error } = context
+    const { $config, params, app, error } = context
 
     const article = ref<Article>()
     const relatedArticles = ref<Article[]>()
@@ -143,7 +143,7 @@ export default defineComponent({
         meta.value = useHeaderMeta(metaData).meta
 
         // 現在のページ情報をストアへ格納
-        store.commit('page/setArticle', { article: article.value })
+        app.$accessor.setArticle({ article: article.value })
       }
     })
 

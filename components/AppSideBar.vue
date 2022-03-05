@@ -110,9 +110,12 @@ $ad-side-bottom-height: 500px;
     }
   }
 
-  &__Tag,
+  &__Tag {
+    margin-bottom: $scale24;
+  }
+
   &__Archive {
-    margin-bottom: $scale20;
+    margin-bottom: $scale32;
   }
 
   // &__AdSideBottom {

@@ -2,11 +2,19 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "enableFiletypes": ["vue"],
+  "enableFiletypes": [
+    "vue"
+  ],
   "languageSettings": [
     {
       "languageId": "vue",
-      "dictionaries": ["html", "fonts", "typescript", "javascript", "css"]
+      "dictionaries": [
+        "html",
+        "fonts",
+        "typescript",
+        "javascript",
+        "css"
+      ]
     }
   ],
   "words": [
@@ -27,13 +35,16 @@
     "firestore",
     "fullhd",
     "GLUY",
+    "grgr",
     "gtag",
     "Hatena",
+    "iroiro",
     "Kaereba",
     "Kaku",
     "kmix",
     "lifehack",
     "Longhi",
+    "mamehiko",
     "mercari",
     "minipakira",
     "MOJILOGO",
@@ -53,6 +64,7 @@
     "rphkh",
     "saisyo",
     "satofull",
+    "seirogan",
     "stylelint",
     "trdr",
     "Tweetable",
