@@ -1,4 +1,4 @@
-name: manually deploy storybook pages
+name: storybook (manual deployment)
 
 on: [workflow_dispatch]
 
@@ -6,9 +6,10 @@ jobs:
   setup-node:
     runs-on: ubuntu-20.04
     steps:
-      - name: checkout
+      - name: Checkout 🛎
         uses: actions/checkout@v2
-      - name: cache-volta
+
+      - name: Cache volta 📦
         id: cache-volta
         uses: actions/cache@v2
         with:
@@ -18,7 +19,8 @@ jobs:
             ~/.bash_profile
             node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-      - name: install volta
+
+      - name: Install volta ⚡️
         if: steps.cache-volta.outputs.cache-hit != 'true'
         run: |
           sudo apt-get update
@@ -26,7 +28,8 @@ jobs:
           touch ~/.bash_profile
           curl https://get.volta.sh | bash
           source ~/.bash_profile
-      - name: install dependencies
+
+      - name: Install dependencies 👨🏻‍💻
         if: steps.cache-volta.outputs.cache-hit != 'true'
         run: |
           yarn install
@@ -35,9 +38,9 @@ jobs:
     needs:
       - setup-node
     steps:
-      - name: checkout
+      - name: Checkout 🛎
         uses: actions/checkout@v2
-      - name: cache-volta
+      - name: Cache volta 📦
         id: cache-volta
         uses: actions/cache@v2
         with:
@@ -48,10 +51,10 @@ jobs:
             node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
       - run: source ~/.bash_profile
-      - name: build
+      - name: Build storybook 🏗
         run: |
           yarn run build-storybook
-      - name: 'Deploy Pages'
+      - name: Deploy pages 📄
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./storybook-static
