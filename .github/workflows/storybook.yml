@@ -33,6 +33,7 @@ jobs:
         if: steps.cache-volta.outputs.cache-hit != 'true'
         run: |
           yarn install
+
   build:
     runs-on: ubuntu-20.04
     needs:
@@ -40,6 +41,7 @@ jobs:
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
+
       - name: Cache volta 📦
         id: cache-volta
         uses: actions/cache@v2
@@ -51,9 +53,11 @@ jobs:
             node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
       - run: source ~/.bash_profile
+
       - name: Build storybook 🏗
         run: |
           yarn run build-storybook
+
       - name: Deploy pages 📄
         uses: peaceiris/actions-gh-pages@v3
         with:
