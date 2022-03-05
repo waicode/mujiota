@@ -20,6 +20,7 @@ export type Article = {
   imageFormat: string
   category: string
   tags?: Array<string>
+  toc?: Array<any>
 }
 // Articleの型ガード関数
 export const isArticle = (

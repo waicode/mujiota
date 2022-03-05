@@ -82,7 +82,7 @@ import { Article } from '~/store'
 import useSearchPosts from '@/composables/useSearchPosts'
 
 /**
- * 検索モーダル
+ * ## 検索モーダル
  *
  * 検索キーワードを入力し、ヒットした記事を表示するモーダル画面のコンポーネント。
  * 検索前の初期表示では、検索結果には全記事の一覧を投稿日時の降順で表示しておく。
