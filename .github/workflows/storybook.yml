@@ -52,6 +52,7 @@ jobs:
             ~/.bash_profile
             node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
       - run: source ~/.bash_profile
 
       - name: Build storybook 🏗
