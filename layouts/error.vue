@@ -1,11 +1,11 @@
 <template>
   <div class="MujiotaError">
-    <template v-if="error.statusCode === 404">
-      <h2>ページが見つかりませんでした</h2>
-      <p>お探しのページをキーワードで検索してみてください。</p>
-    </template>
+    <h2 v-if="error.statusCode === 404">ページが見つかりませんでした</h2>
+    <h2 v-else>エラーが発生しました</h2>
+    <p>お探しのページをキーワードで検索してみてください。</p>
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 
