@@ -17,11 +17,11 @@ export default async (
   searchText: Ref<string>,
   { app, $content }: Context
 ): Promise<Article[]> => {
-  const articlesFromContent = await $content('articles', { deep: true })
+  const articlesFromContent = (await $content('articles', { deep: true })
     .limit(app.$accessor.articles.length)
     .search(unref(searchText))
     .sortBy('createdAt', 'desc')
-    .fetch<Article>()
+    .fetch<Article>()) as Article[]
   // TODO: 本来はcontentだけで検索できるようにしたい
   const articlesFromState = app.$accessor.articles.filter(
     (data) =>
@@ -36,6 +36,6 @@ export default async (
         self.findIndex(
           (e) => e.id === element.id && e.slug === element.slug
         ) === index
-    )
-  return searchedArticles as Article[]
+    ) as Article[]
+  return searchedArticles
 }

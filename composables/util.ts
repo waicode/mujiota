@@ -227,3 +227,23 @@ export const randomString = (length = 10): string =>
  */
 export const getFileName = (path: string) =>
   path.split('/').reverse()[0].split('.')[0]
+
+/**
+ * 文字列が数字かどうかを判定。
+ * 0以上のゼロ埋めなし整数の場合は`true`を返却する。
+ *
+ * @param str 文字列
+ * @returns 判定結果
+ */
+export const isNumerical = (str: string) => /^([1-9]\d*|0)$/.test(str)
+
+/**
+ * 文字列が年月の形式（YYYYMM）かどうかを判定。
+ * 正しい形式なら`true`を返却する。
+ *
+ * @param yyyy 年（ゼロ埋めあり4桁）の文字列
+ * @param mm 月（ゼロ埋めあり2桁）の文字列
+ * @returns 判定結果
+ */
+export const isYyyyMm = (yyyy: string, mm: string) =>
+  /^[0-9]{4}$/.test(yyyy) && /^(0[1-9]|1[0-2])$/.test(mm)

@@ -8,7 +8,7 @@ import { Article } from '~/store'
  * @returns 全記事のリスト
  */
 export default async ({ $content }: Context): Promise<Article[]> => {
-  const articlesData = await $content('articles', { deep: true })
+  const articles = (await $content('articles', { deep: true })
     .only([
       'id',
       'slug',
@@ -21,6 +21,6 @@ export default async ({ $content }: Context): Promise<Article[]> => {
       'updatedAt',
     ])
     .sortBy('createdAt', 'desc')
-    .fetch<Article>()
-  return articlesData as Article[]
+    .fetch<Article>()) as Article[]
+  return articles
 }

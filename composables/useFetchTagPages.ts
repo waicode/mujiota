@@ -7,6 +7,7 @@ import { Article } from '~/store'
  * ## タグページ用の記事リスト取得
  *
  * @param tagName タグ名称
+ * @param $content
  * @returns タグページ用の記事リスト
  */
 export default async (

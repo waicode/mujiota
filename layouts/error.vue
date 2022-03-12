@@ -1,7 +1,9 @@
 <template>
-  <div class="MujiotaError">
-    <h2 v-if="error.statusCode === 404">ページが見つかりませんでした</h2>
-    <h2 v-else>エラーが発生しました</h2>
+  <div>
+    <h2 v-if="error.statusCode === 404" class="MujiotaError__Heading">
+      ページが見つかりませんでした
+    </h2>
+    <h2 v-else class="MujiotaError__Heading">エラーが発生しました</h2>
     <p>お探しのページをキーワードで検索してみてください。</p>
   </div>
 </template>
@@ -21,7 +23,7 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .MujiotaError {
-  h2 {
+  &__Heading {
     position: relative;
     padding-bottom: $scale12;
     margin-top: 0;
@@ -43,11 +45,6 @@ export default defineComponent({
         transparent 50%
       );
       background-size: 8px 8px;
-    }
-    a {
-      .icon {
-        display: none;
-      }
     }
   }
 }

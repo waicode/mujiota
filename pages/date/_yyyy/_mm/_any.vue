@@ -1,30 +1,23 @@
-<script>
-export default {
-  validate({ params }) {
-    return /^[0-9]{4}$/.test(params.yyyy) && /^(0[1-9]|1[0-2])$/.test(params.mm)
-  },
-  async asyncData({ $content, params, redirect, error }) {
-    let articles = []
-    try {
-      articles = await $content('articles', { deep: true })
-        .sortBy('createdAt', 'desc')
-        .fetch()
-      // eslint-disable-next-line no-useless-escape
-      const pattern = new RegExp(`^${params.yyyy}\-${params.mm}`)
-      articles = articles.filter((data) => data.createdAt.match(pattern))
+<template>
+  <div>
+    <!-- アーカイブページへリダイレクト -->
+  </div>
+</template>
+<script lang="ts">
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
+import useRedirectArchivePage from '~/composables/useRedirectArchivePage'
+import { isYyyyMm } from '~/composables/util'
 
-      if (articles.length > 0) {
-        redirect(301, `/date/${params.yyyy}/${params.mm}`)
-      } else {
-        error({
-          statusCode: 404,
-        })
-      }
-    } catch {
-      error({
-        statusCode: 404,
-      })
-    }
+export default defineComponent({
+  name: 'MujiotaArchivesRedirectPage',
+  validate({ params }) {
+    return isYyyyMm(params.yyyy, params.mm)
   },
-}
+  setup() {
+    const context = useContext()
+    useAsync(async () => useRedirectArchivePage(context as unknown as Context))
+  },
+})
 </script>
