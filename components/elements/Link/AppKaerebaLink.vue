@@ -45,14 +45,8 @@ import {
   PropType,
   unref,
 } from '@nuxtjs/composition-api'
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
 
-export const EC_MALL_ASP_TYPE = arrayToEnumObject([
-  'amazon',
-  'rakuten',
-  'yahoo',
-])
-export type EcMallAspType = ValueTypeOf<typeof EC_MALL_ASP_TYPE>
+import { EC_MALL_ASP_TYPE, EcMallAspType } from './AppKaerebaLinkComposable'
 
 /**
  * ## 物販アフィリエイト用リンクボックス

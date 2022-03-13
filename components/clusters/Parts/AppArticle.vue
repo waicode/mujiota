@@ -1,7 +1,7 @@
 <template>
   <article class="AppArticle">
     <NuxtLink
-      :to="`/${article.id}/${article.slug}`"
+      :to="`/${article.id}/${article.slug}/`"
       @click.native="$emit('link-click')"
     >
       <div class="columns">

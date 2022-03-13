@@ -1,7 +1,8 @@
 import type { Story } from '@storybook/vue'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { defineMeta } from '@/stories/helpers'
-import AppKaerebaLink, { EC_MALL_ASP_TYPE } from './AppKaerebaLink.vue'
+import { EC_MALL_ASP_TYPE } from './AppKaerebaLinkComposable'
+import AppKaerebaLink from './AppKaerebaLink.vue'
 
 const meta = defineMeta({
   title: '@elements/Link/AppKaerebaLink',

@@ -20,7 +20,7 @@ export default async ({ $content, params, redirect, error }: Context) => {
 
     if (articles && articles.length === 1) {
       const article = articles[0]
-      redirect(301, `/${article.id}/${article.slug}`)
+      redirect(301, `/${article.id}/${article.slug}/`)
     } else {
       error({
         statusCode: 404,

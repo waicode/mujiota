@@ -5,7 +5,7 @@
       <ul class="AppRelatedPosts__RelatedList">
         <template v-for="(article, index) in articles">
           <li :key="`li-${article.id}`">
-            <NuxtLink :to="`/${article.id}/${article.slug}`">
+            <NuxtLink :to="`/${article.id}/${article.slug}/`">
               <div class="AppRelatedPosts__ArticleWrapper">
                 <div class="AppRelatedPosts__ArticleEyecatch">
                   <AppAssetsImage
