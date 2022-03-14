@@ -15,7 +15,7 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import useCss from '~/composables/useCss'
 import useId from '~/composables/useId'
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## 写真イメージ

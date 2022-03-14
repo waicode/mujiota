@@ -25,7 +25,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        // fontawesome（CSS疑似要素で利用）
+        // fontawesome（Buefyの`<b-icon>`で利用）
         src: 'https://kit.fontawesome.com/29e08b7892.js',
         crossorigin: 'anonymous',
       },
@@ -42,6 +42,9 @@ export default {
         files: './**/*.{ts,vue}',
       },
       typescript: {
+        // `nuxt genarate`時のヒープメモリ不足エラーを回避するため
+        // 生成時はNODE_OPTIONSで最大メモリを指定すること
+        // `"NODE_OPTIONS=\"--max-old-space-size=4096\" nuxt generate"`
         memoryLimit: 4096,
       },
     },
@@ -66,6 +69,7 @@ export default {
     {
       path: '@/components',
       pathPrefix: false,
+      extensions: ['vue'],
     },
   ],
 

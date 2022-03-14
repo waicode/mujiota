@@ -5,6 +5,7 @@ import { Article } from '~/store'
 /**
  * ## 全記事リストの取得
  *
+ * @param context
  * @returns 全記事のリスト
  */
 export default async ({ $content }: Context): Promise<Article[]> => {

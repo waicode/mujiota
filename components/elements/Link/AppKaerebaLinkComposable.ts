@@ -1,4 +1,4 @@
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
+import { arrayToEnumObject, ValueTypeOf } from '~/utils/util'
 
 /**
  * ECモールASP種別。

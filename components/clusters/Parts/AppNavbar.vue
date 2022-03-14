@@ -55,7 +55,7 @@ import {
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 
-import { bemx } from '@/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## ナビバー

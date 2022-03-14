@@ -1,5 +1,5 @@
 <template>
-  <div class="any">
+  <div>
     <!-- 個別記事ページへリダイレクト -->
   </div>
 </template>
@@ -8,7 +8,7 @@
 import { Context } from '@nuxt/types'
 import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
 import useRedirectPost from '~/composables/useRedirectPost'
-import { isNumerical } from '~/composables/util'
+import { isNumerical } from '~/utils/util'
 
 export default defineComponent({
   name: 'MujiotaSlugRedirectPage',

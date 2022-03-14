@@ -1,4 +1,4 @@
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
+import { arrayToEnumObject, ValueTypeOf } from '~/utils/util'
 
 /**
  * 書籍取り扱いASP種別。

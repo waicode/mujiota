@@ -1,5 +1,5 @@
 import { onUnmounted } from '@nuxtjs/composition-api'
-import { randomString } from './util'
+import { randomString } from '../utils/util'
 
 /**
  * 貸出済のランダム文字列のSet。

@@ -18,7 +18,7 @@ import { defineComponent, computed, PropType } from '@nuxtjs/composition-api'
 import ChatIconSvg from '@/assets/images/shared/icon/ic_chat_24px.svg'
 import WarningIconSvg from '@/assets/images/shared/icon/ic_warning_24px.svg'
 
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
 import { SUPPLEMENT_TYPE, SupplementType } from './AppSupplementComposable'
 

@@ -120,6 +120,9 @@ export default defineComponent({
         line-height: $font-size-160rem;
         color: $sitemap-link-color;
         text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

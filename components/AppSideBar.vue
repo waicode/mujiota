@@ -32,11 +32,14 @@
     <div class="AppSideBar__RecommendAd">
       <AppSideBarRecommendAd />
     </div>
+    <div class="AppSideBar__AdsenseAd">
+      <AppSideBarAdsenseSquareAd />
+    </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## サイドバー

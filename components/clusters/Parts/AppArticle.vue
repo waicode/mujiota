@@ -153,7 +153,11 @@ export default defineComponent({
     flex-wrap: nowrap;
     padding: $scale4;
     padding-right: 0;
+    margin-left: $scale-minus6;
     font-size: $font-size-081rem;
+    .icon {
+      width: $font-size-124rem;
+    }
   }
   &__DatePublished {
     margin-right: $scale12;
@@ -162,6 +166,7 @@ export default defineComponent({
     display: flex;
     padding: $scale4;
     padding-left: 0;
+    margin-left: $scale-minus4;
     font-size: $font-size-081rem;
   }
   &__Tag {

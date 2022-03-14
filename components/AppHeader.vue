@@ -7,7 +7,7 @@
   </div>
 </template>
 <script lang="ts">
-import { bemx } from '@/composables/util'
+import { bemx } from '~/utils/util'
 import { defineComponent } from '@nuxtjs/composition-api'
 
 /**

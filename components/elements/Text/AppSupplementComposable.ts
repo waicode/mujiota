@@ -1,4 +1,4 @@
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
+import { arrayToEnumObject, ValueTypeOf } from '~/utils/util'
 
 /**
  * 補足説明種別。

@@ -8,7 +8,7 @@
 import { Context } from '@nuxt/types'
 import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
 import useRedirectArchivePage from '~/composables/useRedirectArchivePage'
-import { isYyyyMm } from '~/composables/util'
+import { isYyyyMm } from '~/utils/util'
 
 export default defineComponent({
   name: 'MujiotaArchivesRedirectPage',

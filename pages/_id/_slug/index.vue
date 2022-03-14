@@ -70,6 +70,7 @@ import {
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Context } from '@nuxt/types'
 
+import usePageUrl from '~/composables/usePageUrl'
 import useFetchPost from '~/composables/useFetchPost'
 import useFetchRelatedPosts from '~/composables/useFetchRelatedPosts'
 import useHeaderMeta from '~/composables/useHeaderMeta'
@@ -83,7 +84,7 @@ export default defineComponent({
   name: 'MujiotaIdSlugPage',
   setup() {
     const context = useContext()
-    const { $config, params, app, error } = context
+    const { params, app, error } = context
 
     const article = ref<Article>()
     const relatedArticles = ref<Article[]>()
@@ -99,37 +100,32 @@ export default defineComponent({
           params.value.id,
           context as unknown as Context
         )
-
         if (!article.value) {
           // 見つからない場合はNOTFOUND
           error({
             statusCode: 404,
           })
         }
-
-        pageUrl.value = `${$config.baseUrl}/${article.value.id}/${article.value.slug}`
-        imageUrl.value =
-          $config.baseUrl +
-          // eslint-disable-next-line import/no-dynamic-require, global-require
-          require(`~/assets/images/eyecatch/${article.value.id}/${article.value.slug}.${article.value.imageFormat}`)
+        // URL情報を取得
+        const urlObj = usePageUrl(article, context as unknown as Context)
+        pageUrl.value = urlObj.pageUrl
+        imageUrl.value = urlObj.imageUrl
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e)
       }
 
-      if (article.value) {
-        if (article.value.category) {
-          try {
-            // 関連記事の取得
-            relatedArticles.value = await useFetchRelatedPosts(
-              article.value.category,
-              article.value.id,
-              context as unknown as Context
-            )
-          } catch (e) {
-            // eslint-disable-next-line no-console
-            console.log(e)
-          }
+      if (article.value && article.value.category) {
+        try {
+          // 関連記事の取得
+          relatedArticles.value = await useFetchRelatedPosts(
+            article.value.category,
+            article.value.id,
+            context as unknown as Context
+          )
+        } catch (e) {
+          // eslint-disable-next-line no-console
+          console.log(e)
         }
 
         // メタ情報
@@ -189,7 +185,11 @@ export default defineComponent({
     flex-wrap: nowrap;
     padding: $scale4;
     padding-right: 0;
+    margin-left: $scale-minus4;
     font-size: $font-size-081rem;
+    .icon {
+      width: $font-size-124rem;
+    }
   }
   &__DatePublished {
     margin-right: $scale12;

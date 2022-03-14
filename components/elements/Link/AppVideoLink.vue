@@ -10,7 +10,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 
 import useId from '~/composables/useId'
 import useCss from '~/composables/useCss'
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## 動画用リンクボックス
