@@ -35,11 +35,11 @@ iPhone4S発売から早一週間。予約すれども、ソフトバンクショ
 
 フェムトセルとは、半径数十メートル程度の狭い範囲をカバーする通信エリアのことだそうです。名前がカッコイイですね。
 
-* <a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%83%A0%E3%83%88%E3%82%BB%E3%83%AB" target="_blank">フェムトセルのwiki</a>
+* <a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%83%A0%E3%83%88%E3%82%BB%E3%83%AB" target="_blank" rel="noopener">フェムトセルのwiki</a>
 
 以下のソフトバンクモバイル内のページから申込ができます。
 
-* <a href="http://mb.softbank.jp/mb/service/home_antenna_ft/" target="_blank">ホームアンテナFT &#8211; ソフトバンクモバイル</a>
+* <a href="http://mb.softbank.jp/mb/service/home_antenna_ft/" target="_blank" rel="noopener">ホームアンテナFT &#8211; ソフトバンクモバイル</a>
 
 早速、申し込んでました。（そしてついでに、ソフトバンクショップに行ってiPhone4Sを予約）上記ページにも詳細な記載がありますが、申込の際はインターネット接続環境の情報が必要になります。（例えばBフレッツなら、Cから始まるお客さまIDが必要）
 

@@ -5,7 +5,7 @@
       <ul class="AppRelatedPosts__RelatedList">
         <template v-for="(article, index) in articles">
           <li :key="`li-${article.id}`">
-            <NuxtLink :to="`/${article.id}/${article.slug}`">
+            <NuxtLink :to="`/${article.id}/${article.slug}/`">
               <div class="AppRelatedPosts__ArticleWrapper">
                 <div class="AppRelatedPosts__ArticleEyecatch">
                   <AppAssetsImage
@@ -17,7 +17,7 @@
                     {{ article.title }}
                   </h3>
                   <div class="AppRelatedPosts__ArticleDescription">
-                    {{ article.description }}
+                    <p>{{ article.description }}</p>
                   </div>
 
                   <div class="AppRelatedPosts__ArticleMeta">
@@ -27,7 +27,13 @@
                         itemprop="updatedAt"
                         :content="article.updatedAt"
                       >
-                        <b-icon pack="far" icon="calendar-alt" />
+                        <b-icon
+                          v-if="article.updatedAt === article.createdAt"
+                          pack="far"
+                          icon="calendar-alt"
+                        />
+                        <b-icon v-else pack="fas" icon="redo" />
+
                         <span>{{ article.updatedAt | dateFormatted }}</span>
                       </span>
                     </div>
@@ -130,6 +136,7 @@ export default defineComponent({
     color: $text;
   }
   &__ArticleDescription {
+    margin-bottom: $scale8;
     font-size: $font-size-092rem;
     font-weight: $font-weight-400;
     line-height: $line-height-160;
@@ -143,7 +150,11 @@ export default defineComponent({
   &__ArticleDate {
     display: flex;
     padding-top: $scale8;
+    margin-left: $scale-minus4;
     font-size: $font-size-081rem;
+    .icon {
+      width: $font-size-124rem;
+    }
   }
 }
 </style>

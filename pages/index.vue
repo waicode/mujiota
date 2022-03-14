@@ -42,7 +42,7 @@ export default defineComponent({
   name: 'MujiotaIndexPage',
   setup() {
     const context = useContext()
-    const { $config, store, app, error } = context
+    const { $config, app, error } = context
     const { title, meta } = useMeta()
 
     const { pageSize } = $config
@@ -67,7 +67,7 @@ export default defineComponent({
       meta.value = useHeaderMeta(metaData).meta
 
       // 現在の記事情報をリセット
-      store.commit('page/setArticle', { article: {} })
+      app.$accessor.setArticle({ article: {} })
     })
 
     fetch()

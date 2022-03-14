@@ -15,7 +15,7 @@ tags:
 
 ブログ記事でiPhoneの操作方法を説明する「キャプチャ画像」に使えます。こんなiPhoneの小ネタやら裏技やらが、きれいにまとまっている記事がありましたので、ご紹介。
 
-* <a href="http://rajic.2chblog.jp/archives/51818937.html" target="_blank">覚えておくと便利なiPhoneの小ネタ・裏技15選まとめ</a>
+* <a href="http://rajic.2chblog.jp/archives/51818937.html" target="_blank" rel="noopener">覚えておくと便利なiPhoneの小ネタ・裏技15選まとめ</a>
 
 一番驚いたのが「隠しコマンド」の存在！iPhoneに隠しコマンドなんてのがあるのとは知らなかった…
 

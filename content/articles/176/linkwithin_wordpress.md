@@ -34,7 +34,7 @@ WordPress版の場合は、ボタン押下後のページでプラグインア�
 
 プラグインコードの直接編集は慣れていないと抵抗ありますが、以下を参考にすれば簡単にできるかと思います。
 
-* <a href="http://www.abi-station.com/p/1129" target="_blank">「LinkWithin」をWordPressに入れて見出しの文字を変える方法</a>
+* <a href="http://www.abi-station.com/p/1129" target="_blank" rel="noopener">「LinkWithin」をWordPressに入れて見出しの文字を変える方法</a>
 
 表示箇所の設定ついては好みが分かれるところですが、TOPページに何個も並ぶのは見た目的にどうかなと思い、個別ページのみに表示するよう設定しました。プラグインの設定ページで、以下にチェックを入れればOK。
 
@@ -53,7 +53,7 @@ LinkWithinは手軽に設定できてそこそこ気にっていたのですが�
 
 上記の観点から、関連記事表示は別のWordPressプラグインである、
 
-* <a href="http://wordpress.org/extend/plugins/similar-posts/" target="_blank">Similar Posts</a>
+* <a href="http://wordpress.org/extend/plugins/similar-posts/" target="_blank" rel="noopener">Similar Posts</a>
 
 を使う事にしました。
 

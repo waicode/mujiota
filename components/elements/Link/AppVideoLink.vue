@@ -10,7 +10,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 
 import useId from '~/composables/useId'
 import useCss from '~/composables/useCss'
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## 動画用リンクボックス
@@ -40,15 +40,15 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const componentName = `AppVideoLink`
+    const componentName = 'AppVideoLink'
     const id = useId()
 
     // 背景色の指定がある場合のみ上書き
     if (props.backgroundColor) {
       useCss(
         () => `
-        .${componentName}--${id} .AppVideoLink__Video::before,
-        .${componentName}--${id} .AppVideoLink__Video::after {
+        .${componentName}--${id} .${componentName}__Video::before,
+        .${componentName}--${id} .${componentName}__Video::after {
           background-color: ${props.backgroundColor}
         }`
       )

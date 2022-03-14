@@ -18,10 +18,9 @@ import { defineComponent, computed, PropType } from '@nuxtjs/composition-api'
 import ChatIconSvg from '@/assets/images/shared/icon/ic_chat_24px.svg'
 import WarningIconSvg from '@/assets/images/shared/icon/ic_warning_24px.svg'
 
-import { arrayToEnumObject, bemx, ValueTypeOf } from '~/composables/util'
+import { bemx } from '~/utils/util'
 
-export const SUPPLEMENT_TYPE = arrayToEnumObject(['normal', 'warning'])
-export type SupplementType = ValueTypeOf<typeof SUPPLEMENT_TYPE>
+import { SUPPLEMENT_TYPE, SupplementType } from './AppSupplementComposable'
 
 /**
  * ## 補足説明

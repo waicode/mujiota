@@ -40,7 +40,7 @@ export default defineComponent({
   name: 'MujiotaSitemapPage',
   setup() {
     const context = useContext()
-    const { $config, store, app } = context
+    const { $config, app } = context
     const { title, meta } = useMeta()
 
     const articles = ref<Article[]>([])
@@ -87,7 +87,7 @@ export default defineComponent({
       categorisedArticles.value = results
 
       // 現在の記事情報をリセット
-      store.commit('page/setArticle', { article: {} })
+      app.$accessor.setArticle({ article: {} })
     })
 
     fetch()
@@ -120,6 +120,9 @@ export default defineComponent({
         line-height: $font-size-160rem;
         color: $sitemap-link-color;
         text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

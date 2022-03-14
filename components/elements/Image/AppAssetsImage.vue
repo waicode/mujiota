@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { computed, defineComponent } from '@nuxtjs/composition-api'
-import { getFileName } from '~/composables/util'
+import { getFileName } from '~/utils/util'
 
 /**
  * ## 画像イメージ

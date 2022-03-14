@@ -7,8 +7,7 @@ export default {
   privateRuntimeConfig: {},
 
   // Target: https://go.nuxtjs.dev/config-target
-  ssr: true,
-  target: 'server',
+  target: 'static',
 
   /**
    * 注意：除外ファイルは`.nuxtignore`を参照すること。
@@ -26,7 +25,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        // fontawesome（CSS疑似要素で利用）
+        // fontawesome（Buefyの`<b-icon>`で利用）
         src: 'https://kit.fontawesome.com/29e08b7892.js',
         crossorigin: 'anonymous',
       },
@@ -41,6 +40,12 @@ export default {
     typeCheck: {
       eslint: {
         files: './**/*.{ts,vue}',
+      },
+      typescript: {
+        // `nuxt genarate`時のヒープメモリ不足エラーを回避するため
+        // 生成時はNODE_OPTIONSで最大メモリを指定すること
+        // `"NODE_OPTIONS=\"--max-old-space-size=4096\" nuxt generate"`
+        memoryLimit: 4096,
       },
     },
   },
@@ -64,6 +69,7 @@ export default {
     {
       path: '@/components',
       pathPrefix: false,
+      extensions: ['vue'],
     },
   ],
 
@@ -107,32 +113,9 @@ export default {
     ],
   ],
 
-  generate: {
-    interval: 2000,
-    async routes() {
-      // eslint-disable-next-line global-require
-      const { $content } = require('@nuxt/content')
-      const files = await $content({ deep: true }).only(['path']).fetch()
-
-      return files.map((file) => {
-        if (file.path === '/index') {
-          return '/'
-        }
-        if (file.path.startsWith('/articles')) {
-          return file.path.replace('/articles', '')
-        }
-        if (file.path.startsWith('/pages')) {
-          return file.path.replace('/pages', '')
-        }
-        return file.path
-      })
-    },
-  },
-
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     markdown: {
-      apiPrefix: '_content',
       dir: 'content',
       fullTextSearchFields: ['title', 'description', 'text'],
       nestedProperties: [],

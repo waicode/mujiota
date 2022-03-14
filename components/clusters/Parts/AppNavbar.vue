@@ -55,14 +55,14 @@ import {
 import SearchIconSvg from '@/assets/images/shared/icon/ic_search_24px.svg'
 import SitemapIconSvg from '@/assets/images/shared/icon/sitemap-solid.svg'
 
-import { bemx } from '@/composables/util'
+import { bemx } from '~/utils/util'
 
 /**
  * ## ナビバー
  *
  * ヘッダーから呼ばれるナビバーのコンポーネント。
- * ロゴとメニューボタンで構成される。
- * ロゴを消す・メニューボタンの色を目立たなくする位置を指定する。
+ * ロゴとメニューボタンで構成され、画面上に固定表示される。
+ * スクロールでロゴを消す・メニューボタンを目立たなくするトップからの位置を指定する。
  */
 export default defineComponent({
   name: 'AppNavbar',

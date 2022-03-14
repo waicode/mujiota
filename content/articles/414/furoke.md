@@ -21,12 +21,12 @@ tags:
 
 ### ポリプロピレン湯桶
 
-* <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4549738980032" target="_blank">ポリプロピレン湯桶</a>
+* <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4549738980032" target="_blank" rel="noopener">ポリプロピレン湯桶</a>
 
 <app-capture-image article-id="414" img-file-name="muji-furo1.jpg" caption="ポリプロピレン湯桶"></app-capture-image>
 
 ### ポリプロピレン片手桶
 
-* <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4550002508234" target="_blank">ポリプロピレン片手桶</a>
+* <a href="https://www.muji.com/jp/ja/store/cmdty/detail/4550002508234" target="_blank" rel="noopener">ポリプロピレン片手桶</a>
 
 <app-capture-image article-id="414" img-file-name="muji-furo2.jpg" caption="ポリプロピレン片手桶"></app-capture-image>

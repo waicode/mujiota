@@ -5,29 +5,33 @@
         v-if="imgFileName"
         class="AppYomerebaLink__ImageLink column is-3-desktop is-5-tablet is-12-mobile"
       >
-        <a :href="titleLink" target="_blank">
+        <a :href="titleLink" target="_blank" rel="noopener">
           <AppAssetsImage :path="assetsImagePath" />
         </a>
       </div>
       <div class="column is-9-desktop is-7-tablet is-12-mobile">
         <div class="AppYomerebaLink__TitleLink">
-          <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
+          <a :href="titleLink" target="_blank" rel="noopener">{{
+            itemTitle
+          }}</a>
         </div>
         <div v-if="authorName" class="AppYomerebaLink__AuthorName">
           {{ authorName }}
         </div>
         <div class="AppYomerebaLink__SearchLinks">
           <div v-if="amazonItemId" class="AppYomerebaLink__ShopLinkAmazon">
-            <a :href="amazonUrl" target="_blank">Amazonで探す</a>
+            <a :href="amazonUrl" target="_blank" rel="noopener">Amazonで探す</a>
           </div>
           <div v-if="kindleItemId" class="AppYomerebaLink__ShopLinkKindle">
-            <a :href="kindleUrl" target="_blank">Kindleで探す</a>
+            <a :href="kindleUrl" target="_blank" rel="noopener">Kindleで探す</a>
           </div>
           <div v-if="rakutenItemId" class="AppYomerebaLink__ShopLinkRakuten">
-            <a :href="rakutenUrl" target="_blank">Rakutenで探す</a>
+            <a :href="rakutenUrl" target="_blank" rel="noopener"
+              >Rakutenで探す</a
+            >
           </div>
           <div v-if="koboItemId" class="AppYomerebaLink__ShopLinkKobo">
-            <a :href="koboUrl" target="_blank">koboで探す</a>
+            <a :href="koboUrl" target="_blank" rel="noopener">koboで探す</a>
           </div>
         </div>
       </div>
@@ -42,15 +46,8 @@ import {
   PropType,
   unref,
 } from '@nuxtjs/composition-api'
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
 
-export const BOOK_ASP_TYPE = arrayToEnumObject([
-  'amazon',
-  'kindle',
-  'rakuten',
-  'kobo',
-])
-export type BookAspType = ValueTypeOf<typeof BOOK_ASP_TYPE>
+import { BOOK_ASP_TYPE, BookAspType } from './AppYomerebaLinkComposable'
 
 /**
  * ## 書籍アフィリエイト用リンクボックス

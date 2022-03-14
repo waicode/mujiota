@@ -13,7 +13,7 @@ tags:
 
 下記サイトを参考にしています。サンプルコードも載っており、非常に分かりやすいです。
 
-* <a href="http://web.archive.org/web/20130627072916/http://5509.me:80/log/m5noticedisplay" target="_blank">指定位置でレイヤー表示して注意を引くjQueryプラグイン</a>
+* <a href="http://web.archive.org/web/20130627072916/http://5509.me:80/log/m5noticedisplay" target="_blank" rel="noopener">指定位置でレイヤー表示して注意を引くjQueryプラグイン</a>
 
 （追記：上記ページは既に参照不可となったため、キャッシュページへリンクしています。）
 

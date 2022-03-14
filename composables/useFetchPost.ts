@@ -13,12 +13,12 @@ export default async (
   id: Ref<string> | string,
   { $content }: Context
 ): Promise<Article> => {
-  const articleDataArray = await $content(
-    'articles',
-    unref(id)
-  ).fetch<Article>()
+  const articles = (await $content('articles', unref(id))
+    .where({
+      id: Number(unref(id)), // idの文字列が含まれるフォルダが複数ヒットするため条件にも指定
+    })
+    .fetch<Article>()) as Article[]
 
   // 配列から1件取り出す
-  const articles = articleDataArray as Article[]
   return articles[0]
 }

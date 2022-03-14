@@ -21,7 +21,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
-import { bemx } from '~/composables/util'
+import { bemx } from '~/utils/util'
 import { Archive } from '~/store'
 
 /**

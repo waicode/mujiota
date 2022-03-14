@@ -17,12 +17,12 @@ export default async (
   id: Ref<number> | number,
   { $content }: Context
 ): Promise<Article[]> => {
-  const relatedArticles = await $content('articles', { deep: true })
+  const relatedArticles = (await $content('articles', { deep: true })
     .where({
       category,
       id: { $ne: id }, // 表示している記事は除く
     })
-    .fetch<Article>()
+    .fetch<Article>()) as Article[]
 
-  return relatedArticles as Article[]
+  return relatedArticles
 }

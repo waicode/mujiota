@@ -29,10 +29,10 @@ iPhone3GSはケースが割れて以来、その「手触り」の良さにハ�
 
 私が確認したタイミングでは、上記には、すぐ発送してくれる店舗がありませんでしたが、以下の本家販売サイトには即出荷の在庫がありました。流石、本家です。
 
-* <a href="http://www.pawasapo.co.jp/" target="_blank">パワーサポート -POWER SUPPORT-</a>
+* <a href="http://www.pawasapo.co.jp/" target="_blank" rel="noopener">パワーサポート -POWER SUPPORT-</a>
 
 楽天のヘビーユーザーなので、基本的には楽天ポイントを使って買います。4S受け取り後、すぐにケースを装着したい想いがあったので、今回は本家から購入しました。なお、iPhone4⇒4S乗り換えで現在使っているケースをそのまま使おうとしている方は、以下を読んでおくと良いかと思います！
 
-* <a href="http://www.appbank.net/2011/10/21/iphone-news/316520.php" target="_blank">iPhone 4S のケースを選ぶ時に気をつけたい6つのこと</a>
+* <a href="http://www.appbank.net/2011/10/21/iphone-news/316520.php" target="_blank" rel="noopener">iPhone 4S のケースを選ぶ時に気をつけたい6つのこと</a>
 
 4と4Sでは微妙にスイッチの位置が違い、場合によってはケースが流用できない事もあるようです。

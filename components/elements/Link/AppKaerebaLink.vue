@@ -5,13 +5,15 @@
         v-if="imgFileName"
         class="AppKaerebaLink__ImageLink column is-3-desktop is-5-tablet is-12-mobile"
       >
-        <a :href="titleLink" target="_blank">
+        <a :href="titleLink" target="_blank" rel="noopener">
           <AppAssetsImage :path="assetsImagePath" />
         </a>
       </div>
       <div class="column is-9-desktop is-7-tablet is-12-mobile">
         <div class="AppKaerebaLink__TitleLink">
-          <a :href="titleLink" target="_blank">{{ itemTitle }}</a>
+          <a :href="titleLink" target="_blank" rel="noopener">{{
+            itemTitle
+          }}</a>
         </div>
         <div v-if="shopName" class="AppKaerebaLink__ShopName">
           {{ shopName }}
@@ -21,14 +23,19 @@
             <a
               :href="rakutenItemId ? rakutenProductUrl : rakutenSearchUrl"
               target="_blank"
+              rel="noopener"
               >Rakutenで探す</a
             >
           </div>
           <div class="AppKaerebaLink__ShoplinkAmazon">
-            <a :href="amazonSearchUrl" target="_blank">Amazonで探す</a>
+            <a :href="amazonSearchUrl" target="_blank" rel="noopener"
+              >Amazonで探す</a
+            >
           </div>
           <div class="AppKaerebaLink__ShoplinkYahoo">
-            <a :href="yahooSearchUrl" target="_blank">Yahooで探す</a>
+            <a :href="yahooSearchUrl" target="_blank" rel="noopener"
+              >Yahooで探す</a
+            >
             <span>
               <img :src="yahooAspImgUrl" height="1" width="1" border="0" />
             </span>
@@ -45,14 +52,8 @@ import {
   PropType,
   unref,
 } from '@nuxtjs/composition-api'
-import { arrayToEnumObject, ValueTypeOf } from '~/composables/util'
 
-export const EC_MALL_ASP_TYPE = arrayToEnumObject([
-  'amazon',
-  'rakuten',
-  'yahoo',
-])
-export type EcMallAspType = ValueTypeOf<typeof EC_MALL_ASP_TYPE>
+import { EC_MALL_ASP_TYPE, EcMallAspType } from './AppKaerebaLinkComposable'
 
 /**
  * ## 物販アフィリエイト用リンクボックス

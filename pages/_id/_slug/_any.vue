@@ -1,25 +1,23 @@
-<script>
-export default {
+<template>
+  <div>
+    <!-- 個別記事ページへリダイレクト -->
+  </div>
+</template>
+<script lang="ts">
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Context } from '@nuxt/types'
+import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
+import useRedirectPost from '~/composables/useRedirectPost'
+import { isNumerical } from '~/utils/util'
+
+export default defineComponent({
+  name: 'MujiotaSlugRedirectPage',
   validate({ params }) {
-    return /^\d+$/.test(params.id)
+    return isNumerical(params.id)
   },
-  async asyncData({ $content, params, redirect, error }) {
-    let articles = []
-    try {
-      articles = await $content('articles', params.id, { deep: true }).fetch()
-      if (articles.length === 1) {
-        const article = articles[0]
-        redirect(301, `/${article.id}/${article.slug}`)
-      } else {
-        error({
-          statusCode: 404,
-        })
-      }
-    } catch {
-      error({
-        statusCode: 404,
-      })
-    }
+  setup() {
+    const context = useContext()
+    useAsync(async () => useRedirectPost(context as unknown as Context))
   },
-}
+})
 </script>

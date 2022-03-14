@@ -1,5 +1,5 @@
 <template>
-  <div class="AppPhotoImage">
+  <div :class="className">
     <div class="AppPhotoImage__Wrapper">
       <div class="AppPhotoImage__Photo">
         <AppAssetsImage
@@ -13,6 +13,9 @@
 </template>
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
+import useCss from '~/composables/useCss'
+import useId from '~/composables/useId'
+import { bemx } from '~/utils/util'
 
 /**
  * ## 写真イメージ
@@ -52,6 +55,36 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    /**
+     * 背景色。
+     * デフォルトは`$bg-secondary-color`が適用される。
+     * 上書きしたい場合のみ、カラーコードで指定する。
+     */
+    backgroundColor: {
+      type: String,
+      default: undefined,
+    },
+  },
+  setup(props) {
+    const componentName = 'AppPhotoImage'
+    const id = useId()
+
+    // 背景色の指定がある場合のみ上書き
+    if (props.backgroundColor) {
+      useCss(
+        () => `
+        .${componentName}--${id} .${componentName}__Photo::before,
+        .${componentName}--${id} .${componentName}__Photo::after {
+          background-color: ${props.backgroundColor}
+        }`
+      )
+    }
+
+    const className = bemx(componentName, id)
+
+    return {
+      className,
+    }
   },
 })
 </script>

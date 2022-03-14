@@ -15,7 +15,7 @@ tags:
 
 感覚にまかせてサクっと作った割には、シンプルさと発信する感じが表現できたかなと、満足しています。このようなロゴや画像を作成する時は、Macの「Pixelmator」というアプリを使っています。
 
-* <a href="https://itunes.apple.com/jp/app/pixelmator/id407963104?mt=12" target="_blank">pixelmator</a>
+* <a href="https://itunes.apple.com/jp/app/pixelmator/id407963104?mt=12" target="_blank" rel="noopener">pixelmator</a>
 
 <app-capture-image article-id="536" img-file-name="Icon.175x175-75.png" caption="Pixelmator"></app-capture-image>
 
@@ -25,6 +25,6 @@ tags:
 
 pixelmator入門というサイトが、細かいところまで解説していて良い感じです。
 
-* <a href="http://blockworks.jp/pixelmator/" target="_blank">pixelmator入門</a>
+* <a href="http://blockworks.jp/pixelmator/" target="_blank" rel="noopener">pixelmator入門</a>
 
 Macを使っていて、画像編集ソフトをそれとなく探していた人は、一見の価値ありなツールです。

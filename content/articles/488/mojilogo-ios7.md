@@ -13,7 +13,7 @@ tags:
 
 特に機能は変更ありません。見た目がiOS7になりました。
 
-画面イメージは<a href="https://itunes.apple.com/app/id590388039" target="_blank">iTunesPreview</a>からどうぞ。
+画面イメージは<a href="https://itunes.apple.com/app/id590388039" target="_blank" rel="noopener">iTunesPreview</a>からどうぞ。
 
 MOJILOGOはStoryBoardを使って作成しています。iOS7になって、StoryBoardでのテキストの縦位置の定義が変更されました。（中央に揃うようになりました）
 

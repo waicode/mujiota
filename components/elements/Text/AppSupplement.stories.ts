@@ -1,7 +1,8 @@
 import type { Story } from '@storybook/vue'
 import { computed, defineComponent } from '@nuxtjs/composition-api'
 import { defineMeta } from '@/stories/helpers'
-import AppSupplement, { SUPPLEMENT_TYPE } from './AppSupplement.vue'
+import { SUPPLEMENT_TYPE } from './AppSupplementComposable'
+import AppSupplement from './AppSupplement.vue'
 
 const meta = defineMeta({
   title: '@elements/Text/AppSupplement',

@@ -1,8 +1,16 @@
-<script>
-export default {
+<template>
+  <div>
+    <!-- TOPページへリダイレクト -->
+  </div>
+</template>
+<script lang="ts">
+import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   name: 'MujiotaIndexPhpRedirectPage',
-  asyncData({ redirect }) {
-    redirect(301, `/`)
+  setup() {
+    const { redirect } = useContext()
+    useAsync(() => redirect(301, `/`))
   },
-}
+})
 </script>

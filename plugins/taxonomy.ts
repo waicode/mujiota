@@ -1,4 +1,4 @@
-import { keyEnumObject, ValueTypeOf } from '~/composables/util'
+import { keyEnumObject, ValueTypeOf } from '~/utils/util'
 
 /**
  * タグ情報。

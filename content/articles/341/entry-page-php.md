@@ -15,17 +15,17 @@ tags:
 
 この3Dタグクラウドは<strong>「wp-cumulus」</strong>というプラグインを利用し、phpタグ記述で表示しています。（フラッシュを利用）
 
-* <a href="http://wordpress.org/extend/plugins/wp-cumulus/" target="_blank">wp-cumulus</a>
+* <a href="http://wordpress.org/extend/plugins/wp-cumulus/" target="_blank" rel="noopener">wp-cumulus</a>
 
 よって<strong>phpタグを個別記事内に記述する必要</strong>がありますが、WordPressはデフォルトの設定だと個別記事ページにphpタグを記述することができません。そこで、ちょっとしたプラグインをインストールしました。いくつか選択肢がありますが、おそらく最も有名であろう<strong>「Exec-PHP」</strong>をインストール。
 
-* <a href="http://wordpress.org/extend/plugins/exec-php/" target="_blank">Exec-PHP</a>
+* <a href="http://wordpress.org/extend/plugins/exec-php/" target="_blank" rel="noopener">Exec-PHP</a>
 
 設定はすごく簡単。というか設定不要で、インストールするだけで個別記事内のphpタグを読み取り表示できるようになります。
 
 ちなみに「wp-cumulus」はそのままだと日本語化されないので、利用を考えている方は以下のページから日本語化されたswfファイルをダウンロードしてみてください。
 
-* <a href="http://darts-team.com/dartsblog/archives/391" target="_blank">WP-Cumulusの日本語版swf</a>
+* <a href="http://darts-team.com/dartsblog/archives/391" target="_blank" rel="noopener">WP-Cumulusの日本語版swf</a>
 
 ダウンロードしたtagcloud.swfをWP-Cumulusフォルダのtagcloud.swfに上書きすればOKです。
 
@@ -37,7 +37,7 @@ tags:
 
 「wp-cumulus」はWPプラグインリストから姿を消してしまったようなので<strong>「WP Category Tag Cloud」</strong>というプラグインに切り替えています。こちらはショートコードを使って個別記事に挿入できるので、PHPタグの記載が必要ありません。また、フラッシュを使っていないため、スマートフォンのブラウザでも3Dで表示されます。
 
-* <a href="https://ja.wordpress.org/plugins/wp-category-tag-could/" target="_blank">WP Category Tag Cloud</a>
+* <a href="https://ja.wordpress.org/plugins/wp-category-tag-could/" target="_blank" rel="noopener">WP Category Tag Cloud</a>
 
 正直、見た目は「wp-cumulus」の方が美しかったのですが、実用性を考えると現在は「WP Category Tag Cloud」が最良の選択でしょう。
 

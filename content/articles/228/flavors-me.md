@@ -20,10 +20,10 @@ tags:
 
 以下のサービスを連携させてみました。フィードを利用して無印発信も連携しています。
 
-* <a href="https://mujiota.com/" target="_blank">mujiota</a>
-* <a href="https://twitter.com/aiza_wai" target="_blank">twitter</a>
-* <a href="http://www.facebook.com/aizawai" target="_blank">Facebook</a>
-* <a href="https://ja.foursquare.com/aiza_wai" target="_blank">Foursquare</a>
-* <a href="http://instagr.am/" target="_blank">Instagram</a>
+* <a href="https://mujiota.com/" target="_blank" rel="noopener">mujiota</a>
+* <a href="https://twitter.com/aiza_wai" target="_blank" rel="noopener">twitter</a>
+* <a href="http://www.facebook.com/aizawai" target="_blank" rel="noopener">Facebook</a>
+* <a href="https://ja.foursquare.com/aiza_wai" target="_blank" rel="noopener">Foursquare</a>
+* <a href="http://instagr.am/" target="_blank" rel="noopener">Instagram</a>
 
 flavors.meは無料版の場合は5個まで連携可能です。年間20ドル払って有料版にするとこの制限が解除されたり、独自ドメイン運営やアクセス解析が可能になります。まだ本格的に使うというわけでもないので、とりあえずは無料版を試してみました。様々なSNSサービスを利用している人にとっては、自分自身のちょっとした「まとめ」サイトをかんたんにつくれます。

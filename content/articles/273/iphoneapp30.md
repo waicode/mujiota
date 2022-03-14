@@ -86,7 +86,7 @@ RSSを使ってからと言うもの、情報のインプット量が飛躍的�
 
 そのとなりは、あとで読むアプリの<strong>「Instapaper」</strong>です。気になる記事をReederから飛ばしてキャッシュすれば、オフラインでも記事が読めるようになります。
 
-<app-external-link title="Instapaper" note="Save Anything. Read Anywhere." link="https://www.instapaper.com/" img-file-name="instapaper.png"></app-external-link>
+<app-external-link title="Instapaper" note="Save Anything. Read Anywhere." link="https://www.instapaper.com/" img-file-name="instapapericon.png"></app-external-link>
 
 Reeder側では、左フリックで記事をInstapaperへ飛ばす設定をしています。
 

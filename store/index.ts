@@ -6,7 +6,6 @@ import { Context } from '@nuxt/types'
 // import { collection, DocumentData, getDocs } from 'firebase/firestore/lite'
 // import { db } from '~/plugins/firebase'
 
-import * as page from '~/store/page'
 import { Ref, unref } from '@nuxtjs/composition-api'
 
 // Articleの型定義
@@ -20,6 +19,7 @@ export type Article = {
   imageFormat: string
   category: string
   tags?: Array<string>
+  toc?: Array<any>
 }
 // Articleの型ガード関数
 export const isArticle = (
@@ -61,6 +61,7 @@ export const isArchive = (archive: Archive): archive is Archive =>
 
 export const state = () => ({
   initialized: false,
+  article: {} as Article,
   articles: [] as Array<Article>,
   tags: [] as Array<Tag>,
   archives: [] as Array<Archive>,
@@ -70,6 +71,9 @@ export const state = () => ({
 export const mutations = mutationTree(state, {
   setInitialized(state) {
     state.initialized = true
+  },
+  setArticle(state, { article }) {
+    state.article = article
   },
   setArticles(state, { articles }) {
     state.articles = articles
@@ -166,8 +170,4 @@ export const accessorType = getAccessorType({
   getters,
   mutations,
   actions,
-  modules: {
-    // The key (submodule) needs to match the Nuxt namespace (e.g. ~/store/submodule.ts)
-    page,
-  },
 })

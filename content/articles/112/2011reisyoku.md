@@ -35,7 +35,7 @@ tags:
 
 ニチレイは甘味系の冷食が豊富で、有名な商品では今川焼きも美味しいです。アレンジするなら、今川焼き（あすき）に、バターを乗せて抹茶塩かけるのがオススメ。（ただし、とっても高カロリーです）
 
-ニチレイの商品がリニューアルして、名前が<a href="http://www.nichireifoods.co.jp/product/detail/food_detail.html?sho_id=218" target="_blank">チーズワッフル</a>になったようです。
+ニチレイの商品がリニューアルして、名前が<a href="http://www.nichireifoods.co.jp/product/detail/food_detail.html?sho_id=218" target="_blank" rel="noopener">チーズワッフル</a>になったようです。
 
 ### 第３位 ニッスイ 大学いも
 

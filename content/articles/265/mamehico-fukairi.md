@@ -20,8 +20,8 @@ tags:
 
 三軒茶屋店も悪く無いですが、お店で飲むなら渋谷店に行くと雰囲気がとても良いです。
 
-* <a href="http://r.tabelog.com/tokyo/A1317/A131706/13021745/" target="_blank">カフェマメヒコ三軒茶屋店</a>
-* <a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2696830/" target="_blank">カフェマメヒコ渋谷店の食べログレビュー</a>
+* <a href="http://r.tabelog.com/tokyo/A1317/A131706/13021745/" target="_blank" rel="noopener">カフェマメヒコ三軒茶屋店</a>
+* <a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2696830/" target="_blank" rel="noopener">カフェマメヒコ渋谷店の食べログレビュー</a>
 
 マメヒコは深煎りよりも深い**冬煎り珈琲**と、あっさり味の**春煎り珈琲**も以前に飲みました。
 

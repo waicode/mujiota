@@ -1,7 +1,8 @@
 import type { Story } from '@storybook/vue'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { defineMeta } from '@/stories/helpers'
-import AppYomerebaLink, { BOOK_ASP_TYPE } from './AppYomerebaLink.vue'
+import { BOOK_ASP_TYPE } from './AppYomerebaLinkComposable'
+import AppYomerebaLink from './AppYomerebaLink.vue'
 
 const meta = defineMeta({
   title: '@elements/Link/AppYomerebaLink',
