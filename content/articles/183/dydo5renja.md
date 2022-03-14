@@ -19,7 +19,7 @@ tags:
 
 ちなみに最後にこの記事を書くことで手に入れたちょっとした豆知識を披露してみると「DyDo Drink」はダイドードリン<span class="b">「コ」</span>が正式な読み方です。
 
-* <a href="http://www.dydo.co.jp/index.html" target="_blank">DyDo Drink（ダイドードリンコ）</a>
+* <a href="http://www.dydo.co.jp/index.html" target="_blank" rel="noopener">DyDo Drink（ダイドードリンコ）</a>
 
 「ドリンク（Drink）」と「カンパニー（Company）」をプラスした造語だそうですよ。
 

@@ -3,12 +3,16 @@
     <div class="AppFooter__SocialIcons">
       <ul>
         <li class="AppFooter__TwitterIcon">
-          <a href="https://twitter.com/waicode37" target="_blank">
+          <a
+            href="https://twitter.com/waicode37"
+            target="_blank"
+            rel="noopener"
+          >
             <TwitterIconSvg />
           </a>
         </li>
         <li class="AppFooter__GithubIcon">
-          <a href="https://github.com/waicode" target="_blank">
+          <a href="https://github.com/waicode" target="_blank" rel="noopener">
             <GithubIconSvg />
           </a>
         </li>

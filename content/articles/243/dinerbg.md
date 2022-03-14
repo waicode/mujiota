@@ -23,7 +23,7 @@ tags:
 
 メニューの一番上に書いてある一番オーソドックスなバーガーです。ポテトサラダのようなソースが美味。レタス、トマト、オニオン、ピクルス、野菜いっぱい。くどすぎない、あっさり味のバーガーでした。
 
-お約束の<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank">食べログレビュー</a>も書きました。
+お約束の<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank" rel="noopener">食べログレビュー</a>も書きました。
 
 * <del datetime="2011-06-07T15:26:29+00:00">ダイナーバーガー</del>
 * <del datetime="2011-05-21T12:27:56+00:00">チーズバーガー</del>

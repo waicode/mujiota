@@ -17,6 +17,6 @@ iPhoneで撮影してみたものの、あまりよく見えない…
 
 ということで、ちゃんとしたのを見たい方は以下のリンクからどうぞ。
 
-* <a href="http://malion.exblog.jp/3569795/" target="_blank">もみじの花</a>
+* <a href="http://malion.exblog.jp/3569795/" target="_blank" rel="noopener">もみじの花</a>
 
 ちょっと得した気分の朝でした。

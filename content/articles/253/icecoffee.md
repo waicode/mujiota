@@ -38,7 +38,7 @@ tags:
 
 前日の夜に作って冷蔵庫で冷やしておいて、翌日の朝にマグに入れて持っていくって運用になりそうです。ホットと比べて「冷やす」という一手間がかかるものの、<span class="underline">前日に作って置いておける</span>のは嬉しいポイント。ホットだとアツアツを飲むためには、忙しい朝に淹れざるを得ないので。アイスコーヒーの作り方については、以下のサイトが参考になりました。
 
-* <a href="http://www.paocoffee.co.jp/aisu.html" target="_blank">アイスコーヒーの作り方</a>
+* <a href="http://www.paocoffee.co.jp/aisu.html" target="_blank" rel="noopener">アイスコーヒーの作り方</a>
 
 今回アイスコーヒー作りに使用したコーヒーメーカーは以下の記事でも紹介しているデロンギのコーヒーメーカーです。
 
@@ -46,7 +46,7 @@ tags:
 
 コーヒーメーカーを使わず、時間をかけて「水出し」で作ることもできます。水出しだとドリップより抽出されるカフェインが少ないので、夕方以降に飲むときは良いかもしれません。
 
-ちなみに、無印良品からも~水出しコーヒー~は販売されています。（追記：現在は本商品は販売終了しました。代わりに別の<a href="https://www.muji.com/jp/ja/store/cmdty/detail/4550182385151" target="_blank">水出しコーヒーバッグ</a>が販売中です。）
+ちなみに、無印良品からも~水出しコーヒー~は販売されています。（追記：現在は本商品は販売終了しました。代わりに別の<a href="https://www.muji.com/jp/ja/store/cmdty/detail/4550182385151" target="_blank" rel="noopener">水出しコーヒーバッグ</a>が販売中です。）
 
 <app-capture-image article-id="253" img-file-name="muji_water_coffee_2.jpg" caption="無印良品 水出しコーヒー　その１"></app-capture-image>
 

@@ -15,7 +15,7 @@ tags:
 プラグイン追加にはちょっとした設定が必要です。最近はTwitterも認証を厳しくしていようで、それに対応するプラグイン製作側も大変ですね。
 更新には比較的情報が新しい以下のサイトを参考にしました。とても分かりやすく記載されていたので、以下を見れば設定に迷う事は無いかと思います。
 
-* <a href="http://web.archive.org/web/20120104215930/http://scianto.net/archives/2010/12/22100057.php" target="_blank">WordPressとTwitterの連携に超便利なプラグイン「Tweetable」</a>
+* <a href="http://web.archive.org/web/20120104215930/http://scianto.net/archives/2010/12/22100057.php" target="_blank" rel="noopener">WordPressとTwitterの連携に超便利なプラグイン「Tweetable」</a>
 
 設定後の初投稿。うまくいくかな？
 
@@ -29,7 +29,7 @@ tags:
 
 追記です。（2016年5月）
 
-現在は「<a href="https://ja.wordpress.org/plugins/wp-to-twitter/" target="_blank">WP to Twitter</a>」というプラグインに切り替えました。
+現在は「<a href="https://ja.wordpress.org/plugins/wp-to-twitter/" target="_blank" rel="noopener">WP to Twitter</a>」というプラグインに切り替えました。
 
 * * *
 

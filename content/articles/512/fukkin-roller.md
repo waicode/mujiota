@@ -12,11 +12,11 @@ tags:
 
 腹筋ローラー、流行ってますね。そのためか、ネット上には誤った使い方を解説しているサイトも多いようです。「正しい使い方」を分かりやすく説明している記事をまとめてみました。正しい姿勢でやると、10回位でキツいです。
 
-* <a href="http://kntseikotu.blog116.fc2.com/blog-entry-627.html" target="_blank">ちょっと骨休め　腹筋ローラーの正しい使い方。</a>
+* <a href="http://kntseikotu.blog116.fc2.com/blog-entry-627.html" target="_blank" rel="noopener">ちょっと骨休め　腹筋ローラーの正しい使い方。</a>
 
 イラスト付き。ダメな例も書いてあり、とても分かりやすいです。
 
-* <a href="http://matome.naver.jp/odai/2137594234660640401" target="_blank">コスパ最強と話題の筋トレアイテム『腹筋ローラー』とは・・・？</a>
+* <a href="http://matome.naver.jp/odai/2137594234660640401" target="_blank" rel="noopener">コスパ最強と話題の筋トレアイテム『腹筋ローラー』とは・・・？</a>
 
 まとめ記事です。使い方に回数・頻度、注意点。動画もあり。他にもいろいろありましたが、上の２つの記事を確認すれば間違ないと思います。
 

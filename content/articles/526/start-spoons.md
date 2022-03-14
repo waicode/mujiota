@@ -15,7 +15,7 @@ tags:
 
 メジャー（お気に入り）は自分で測るモノ。という意味を込めてます。
 
-* <a href="http://mujiota.com/spoons/" target="_blank">メジャリングスプーン</a>
+* <a href="http://mujiota.com/spoons/" target="_blank" rel="noopener">メジャリングスプーン</a>
 
 前からつくりたいなと構想していたのですが、確固たるコンセプトやデザインがなかなか決まらず、悩んでいました。今日を持って、ようやくカタチにできました！
 

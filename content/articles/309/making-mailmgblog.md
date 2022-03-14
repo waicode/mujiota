@@ -25,13 +25,13 @@ WordPressを利用して構築しているこのバックナンバーブログ�
 
 無印発信メルマガバックナンバーブログの核を成すプラグインは、以下の3つです。
 
-* <a href="http://wppluginsj.sourceforge.jp/ktai_entry/" target="_blank">Ktai Entry</a>
-* <a href="http://fuzzmaster.jp/wp/2009/11/17/1860/" target="_blank">Advanced-Make-Clickable</a>
-* <a href="http://camcam.info/wordpress/101" target="_blank">brBrbr</a>
+* <a href="http://wppluginsj.sourceforge.jp/ktai_entry/" target="_blank" rel="noopener">Ktai Entry</a>
+* <a href="http://fuzzmaster.jp/wp/2009/11/17/1860/" target="_blank" rel="noopener">Advanced-Make-Clickable</a>
+* <a href="http://camcam.info/wordpress/101" target="_blank" rel="noopener">brBrbr</a>
 
 メール投稿⇒記事作成は<strong>「Ktai Entry」</strong>が可能にします。「Ktai Entry」は、メール投稿用のメールアドレスを指定し、そのメールアドレスにメールが配信されると、そのメール本文を、そのままブログの記事として投稿してくれるプラグインです。この「Ktai Entry」が、言ってみればメルマガバックナンバーブログの生命線で、このプラグインの機能はフル活用しています。
 
-カテゴリーやタグ指定も、このプラグインの機能を使って実現可能です。文頭に「CAT:」や「TAG:」の指定を入れることで、カテゴリー指定やタグ指定が可能となります。（無印発信は、現在はタグ指定のみ利用しています。）「Ktai Entry」の詳細な使い方についてはここでは記載を省きますが、利用する際は、<a href="http://wppluginsj.sourceforge.jp/ktai_entry/" target="_blank">プラグイン解説ページ</a>を参考に設定を行ってください。
+カテゴリーやタグ指定も、このプラグインの機能を使って実現可能です。文頭に「CAT:」や「TAG:」の指定を入れることで、カテゴリー指定やタグ指定が可能となります。（無印発信は、現在はタグ指定のみ利用しています。）「Ktai Entry」の詳細な使い方についてはここでは記載を省きますが、利用する際は、<a href="http://wppluginsj.sourceforge.jp/ktai_entry/" target="_blank" rel="noopener">プラグイン解説ページ</a>を参考に設定を行ってください。
 
 続いて<strong>「Advanced-Make-Clickable」</strong>ですが、このプラグインは、メルマガ上に記載するURLを自動的にリンク化してくれる機能を持ちます。メルマガに「＜a href=&#8221;～&#8221;＞＜/a＞」のリンクタグを書くわけにはいかないですが、これでメルマガ上の紹介URLも機能してくれるというわけです。
 

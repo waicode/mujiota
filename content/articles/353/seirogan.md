@@ -45,13 +45,13 @@ tags:
 
 木材の防腐剤等に使われる危険度の高いクレオソートは、前者の石炭クレオソートなのですが、正露丸で使われているクレオソートは後者の（日局）木クレオソートの方であり、「買ってはいけない！」は、この２つを混同して批判していたのです。この批判に対して大幸薬品は、正露丸で使っている植物性の（日局）木クレオソートは、工業用の石炭クレオソートとは根本的に違う事であることを示し、正露丸の安全性を主張しています。
 
-* <a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote01.html" target="_blank">木クレオソートの誤解</a>
+* <a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote01.html" target="_blank" rel="noopener">木クレオソートの誤解</a>
 
 よって、世に出まわっている正露丸危険説は、クレオソートの混同が招いた風評被害と位置付けて良いかと思います。ちなみに、このクレオソート論争がきっかけとなり、正露丸の成分は「<strong>（日局）木クレオソート</strong>」と表記が改められました。
 
 ## では、木クレオソートは安全か？
 
-<a href="http://ja.wikipedia.org/wiki/%E6%97%A5%E5%B1%80%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%88" target="_blank">木クレオソート</a>についても調べてみました。主成分は以下の通り。22化合物からなり、以下の6成分が8割を占めます。
+<a href="http://ja.wikipedia.org/wiki/%E6%97%A5%E5%B1%80%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%88" target="_blank" rel="noopener">木クレオソート</a>についても調べてみました。主成分は以下の通り。22化合物からなり、以下の6成分が8割を占めます。
 
 * グアイアコール（グアヤコール）
 * クレオソール（creosol、4-メチルグアヤコール）
@@ -62,9 +62,9 @@ tags:
 
 すると、いくつか気になる点が。
 
-<a href="http://ja.wikipedia.org/wiki/%E3%82%B0%E3%82%A2%E3%82%A4%E3%82%A2%E3%82%B3%E3%83%BC%E3%83%AB" target="_blank">グアイアコール</a>は歯医者で虫歯の治療の際に、麻酔や消毒に使われていた経緯があるそうですが、毒性があるため、現在ではあまり使われなくなっているそうです。また、<a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%83%8E%E3%83%BC%E3%83%AB" target="_blank">フェノール</a>についても、毒性および腐食性があり、皮膚に触れると薬傷をひきおこすため、毒物及び劇物取締法によって劇物に指定されているという経緯があります。
+<a href="http://ja.wikipedia.org/wiki/%E3%82%B0%E3%82%A2%E3%82%A4%E3%82%A2%E3%82%B3%E3%83%BC%E3%83%AB" target="_blank" rel="noopener">グアイアコール</a>は歯医者で虫歯の治療の際に、麻酔や消毒に使われていた経緯があるそうですが、毒性があるため、現在ではあまり使われなくなっているそうです。また、<a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A7%E3%83%8E%E3%83%BC%E3%83%AB" target="_blank" rel="noopener">フェノール</a>についても、毒性および腐食性があり、皮膚に触れると薬傷をひきおこすため、毒物及び劇物取締法によって劇物に指定されているという経緯があります。
 
-上記から判断するに、石炭クレオソート程の危険は無いにせよ、<strong>木クレオソートが毒性を持つ成分を含む事</strong>は、間違い無い事が分かりました。但し、フェノールについては、大幸薬品の<a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote01.html" target="_blank">木クレオソートの誤解</a>ページにて「経口投与した場合は、発がん性がない」「毒性発現量には達しない微量」等の記載があります。
+上記から判断するに、石炭クレオソート程の危険は無いにせよ、<strong>木クレオソートが毒性を持つ成分を含む事</strong>は、間違い無い事が分かりました。但し、フェノールについては、大幸薬品の<a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote01.html" target="_blank" rel="noopener">木クレオソートの誤解</a>ページにて「経口投与した場合は、発がん性がない」「毒性発現量には達しない微量」等の記載があります。
 
 木クレオソートには「殺菌作用」があり、多くの薬理学の書物において、木クレオソートは殺菌作用による下痢止め薬に分類されているそうです。この殺菌作用がお腹の中で働き、大腸菌等の悪玉菌を退治して腸内環境を整えていると仮定すると、正露丸を飲むことで、善玉菌である乳酸菌やビフィズス菌にも悪影響を与える可能性が危惧されます。
 
@@ -72,8 +72,8 @@ tags:
 
 正露丸に書かれている用法・容量を守って服用した場合、木クレオソートは胃から血中に吸収され、腸内に到達するのはごく微量であり、お腹の菌を殺す事は無いと解説されています。木クレオソートは、悪玉菌であれ善玉菌であれ、お腹の菌を殺すことなく、あくまで<strong>「腸の運動と機能を調節して腸のトラブルを改善する」</strong>との事です。
 
-* <a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote02.html" target="_blank">お腹の菌を殺さないの？</a>
-* <a href="http://www.seirogan.co.jp/products/seirogan/truth/work.html" target="_blank">効き目の秘密</a>
+* <a href="http://www.seirogan.co.jp/products/seirogan/truth/creosote02.html" target="_blank" rel="noopener">お腹の菌を殺さないの？</a>
+* <a href="http://www.seirogan.co.jp/products/seirogan/truth/work.html" target="_blank" rel="noopener">効き目の秘密</a>
 
 但し、正露丸を大量に摂取したために、腸管が壊死したという事例もあるので、用法・容量を守らなかった場合はこの限りではありません。（以下のページでは、大幸薬品・品質保証部の方が正露丸の安全性についてインタビューに回答していますが、質問項目の１つに上記の記述があります。）
 

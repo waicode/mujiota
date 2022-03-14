@@ -50,7 +50,7 @@ tags:
 
 以下のサイトを参考にしています。
 
-* <a href="http://www.soybeandai2.com/process/difference.html" target="_blank">【大豆と枝豆の違い】 - 大豆の恵み</a>
+* <a href="http://www.soybeandai2.com/process/difference.html" target="_blank" rel="noopener">【大豆と枝豆の違い】 - 大豆の恵み</a>
 
 同じ豆でも、栄養成分についてはかなり違いがありますね。やはり、<strong>全体的には栄養素は大豆の方が高い</strong>印象を受けます。たんぱく質、炭水化物、脂質が高く、それに伴ってカロリーも高くなっています。ただ、未成熟豆の枝豆についても、ビタミンAやCは大豆に比べて高くなっています！
 
@@ -62,7 +62,7 @@ tags:
 
 茶豆の中でも特に<strong>「ただちゃ豆」</strong>が有名です。
 
-* <a href="http://ja.wikipedia.org/wiki/%E3%81%A0%E3%81%A0%E3%81%A1%E3%82%83%E8%B1%86" target="_blank">wikipedia - だだちゃ豆</a>
+* <a href="http://ja.wikipedia.org/wiki/%E3%81%A0%E3%81%A0%E3%81%A1%E3%82%83%E8%B1%86" target="_blank" rel="noopener">wikipedia - だだちゃ豆</a>
 
 栽培地域が限られていて保存も困難なため、かつては、地元の人しか食べれないような「まぼろしの豆」でした。最近では、輸送の技術があがり全国的にその名が知られるようになり、食卓にも並ぶようになったそう。
 

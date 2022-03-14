@@ -17,7 +17,7 @@ tags:
 
 アツアツのチリソースとチェダーチーズのチリバーガーです。店員さんのオススメで、ケチャップなしマスタードのみで食。とてもおいしかったです。ただ、辛さがほとんど無かったのでもうちょっと辛くても良かったかも。
 
-<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank">食べログレビュー</a>も書いてます。
+<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank" rel="noopener">食べログレビュー</a>も書いてます。
 
 * ダイナーバーガー
 * <del datetime="2011-05-21T12:27:56+00:00">チーズバーガー</del>

@@ -29,4 +29,4 @@ Suicaも入れてるキーケースに入れる事を検討していたら、ピ
 
 LaCieからは他にも「コイン型USBメモリ」が発売されており、こちらもなかなか粋な仕様です。財布に入れて持ち歩くなら、間違いなくこちらをチョイスしていたと思います。
 
-<a href="https://www.elecom.co.jp/lacie/?loc=jp" target="_blank">LaCie</a>からは、こんな感じのちょっと小洒落たPCサプライ商品が数多く出ているので、この手の商品が好きな人はちょっと覗いてみてはいかがでしょうか。
+<a href="https://www.elecom.co.jp/lacie/?loc=jp" target="_blank" rel="noopener">LaCie</a>からは、こんな感じのちょっと小洒落たPCサプライ商品が数多く出ているので、この手の商品が好きな人はちょっと覗いてみてはいかがでしょうか。

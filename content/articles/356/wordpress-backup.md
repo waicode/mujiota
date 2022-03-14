@@ -14,8 +14,8 @@ tags:
 
 バックアップに使えるプラグインは数多く出ていますが、先人達の知恵をお借りし、以下の2つを選択・設定しました。
 
-* <a href="http://wordpress.org/extend/plugins/wp-dbmanager/" target="_blank">WP-DBManager</a>
-* <a href="http://www.blogtrafficexchange.com/wordpress-backup/" target="_blank">WordPress Backup (by BTE)</a>
+* <a href="http://wordpress.org/extend/plugins/wp-dbmanager/" target="_blank" rel="noopener">WP-DBManager</a>
+* <a href="http://www.blogtrafficexchange.com/wordpress-backup/" target="_blank" rel="noopener">WordPress Backup (by BTE)</a>
 
 ## DBデータのバックアップはWP-DBManager
 
@@ -29,8 +29,8 @@ tags:
 
 「WP-DBManager」の機能詳細や設定方法については、以下の記事が参考になるかと思います。
 
-* <a href="http://wordpress.org/plugins/wp-dbmanager/" target="_blank">バックアップ用プラグイン WP-DBManager</a>
-* <a href="http://www.ttcbn.net/no_second_life/archives/8281" target="_blank">WordPressのバックアップと最適化！ WP-DBManagerが最高すぎる件！！</a>
+* <a href="http://wordpress.org/plugins/wp-dbmanager/" target="_blank" rel="noopener">バックアップ用プラグイン WP-DBManager</a>
+* <a href="http://www.ttcbn.net/no_second_life/archives/8281" target="_blank" rel="noopener">WordPressのバックアップと最適化！ WP-DBManagerが最高すぎる件！！</a>
 
 ## ソースのバックアップはWordpress Backup (by BTE)
 
@@ -48,7 +48,7 @@ DBデータ以外のバックアップは<strong>「WordPress Backup (by BTE)」
 
 「Wordpress Backup (by BTE)」の詳細については、以下が参考になるかと思います。（「WP-DBManager」と比較すると、WEB上の解説ページ数が圧倒的に少ないので貴重です。）
 
-* <a href="http://www.ttcbn.net/no_second_life/archives/10840" target="_blank">テーマや画像、プラグインをバックアップしてくれる守護神！ その名も”WordPress Backup”</a>
+* <a href="http://www.ttcbn.net/no_second_life/archives/10840" target="_blank" rel="noopener">テーマや画像、プラグインをバックアップしてくれる守護神！ その名も”WordPress Backup”</a>
 
 普通なら骨が折れそうな「バックアップ環境構築」ですが、プラグイン利用によってものの数分で成し遂げてしまうあたり、やはりWordPressは秀逸だと思います。
 
@@ -58,6 +58,6 @@ DBデータ以外のバックアップは<strong>「WordPress Backup (by BTE)」
 
 Vue/Nuxt化に伴い、このブログではWordPressのバックアップ用プラグインは使わなくなりました。WordPressでバックアップする場合、最近は「All-in-One WP Migration」しか使っていないです。
 
-* <a href="https://ja.wordpress.org/plugins/all-in-one-wp-migration/" target="_blank">All-in-One WP Migration</a>
+* <a href="https://ja.wordpress.org/plugins/all-in-one-wp-migration/" target="_blank" rel="noopener">All-in-One WP Migration</a>
 
 1クリックでサイトを移動、転送、コピー、移行、バックアップできる優れ物。ただし、移行元と移行先でWordPress本体のバージョンが違い過ぎると失敗する可能性はありますのでご注意ください。

@@ -23,4 +23,4 @@ tags:
 
 <app-photo-image article-id="127" img-file-name="lata_bgr.jpg" caption="ラタトゥイユスイスチーズバーガーをテイクアウト"></app-photo-image>
 
-ベーカーバウンスのバーガーはいまのところ、どれもハズレ無し。せっかくなので<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank">食べログレビュー</a>も書いてみました。
+ベーカーバウンスのバーガーはいまのところ、どれもハズレ無し。せっかくなので<a href="http://tabelog.com/rvwr/yutabe/rvwdtl/2722190/" target="_blank" rel="noopener">食べログレビュー</a>も書いてみました。

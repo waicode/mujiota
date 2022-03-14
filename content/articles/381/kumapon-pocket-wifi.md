@@ -22,7 +22,7 @@ GMOとくとくBBが提供している、「イー･モバイル42M PocketWiFi�
 
 なお、通信制限される対象については以下に記載があります。
 
-* <a href="http://gmobb.jp/service/emobile/data.html" target="_blank">イー・モバイル42Mbpsプロトコル制限詳細</a>
+* <a href="http://gmobb.jp/service/emobile/data.html" target="_blank" rel="noopener">イー・モバイル42Mbpsプロトコル制限詳細</a>
 
 記載がざっくりしていて、実際のところはどうなのか気になるところですね。最初に購入する割引クーポンの値段が2000円程度だとしても、実質、安い方のプランなら月2000円強でPocketWiFiが利用する事ができます。これはかなりお得ではないでしょうか。というか、私はさっそく申し込んでしまいました。笑
 
@@ -32,7 +32,7 @@ GMOとくとくBBが提供している、「イー･モバイル42M PocketWiFi�
 
 興味ありの方は、以下より詳細内容を確認してみて下さい。
 
-* <a href="http://bit.ly/t5XPHX" target="_blank">割引クーポン「くまポン」でPocketWiFiが2年間半額！</a>
+* <a href="http://bit.ly/t5XPHX" target="_blank" rel="noopener">割引クーポン「くまポン」でPocketWiFiが2年間半額！</a>
 
 クーポン自体は「売切⇒再販」のサイクルを繰り返しているようなので、売切の場合でも、数日後に再販される可能性はあります。諦めずにチェックしてみてください。実は過去にUQWiMAXの「URoad-9000」を契約⇒すぐ解約して端末だけ保持しており、現状でも旅行等に備え「600円/1日」で日単位で契約してWiMAXサービスを利用できる状態にはしてありました。
 

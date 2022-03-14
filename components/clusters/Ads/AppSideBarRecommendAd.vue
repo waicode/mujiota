@@ -10,7 +10,8 @@
         <p class="AppSideBarRecommendAd__Banner">
           <a
             href="https://px.a8.net/svt/ejp?a8mat=2NP03M+DJM7EA+2CG0+64RJ5"
-            rel="nofollow"
+            target="_blank"
+            rel="nofollow noopener"
           >
             <img
               border="0"

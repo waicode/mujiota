@@ -21,7 +21,7 @@ Appbankさんにも紹介して頂きました。ありがとうございます�
 
 <app-external-link title="Appbank" note="MOJILOGO: 1文字ロゴをかんたんに作れるアプリ。無料。" link="http://www.appbank.net/2013/02/06/iphone-application/539593.php" img-file-name="appbank.png"></app-external-link>
 
-以下、<a href="https://itunes.apple.com/app/id590388039" target="_blank">iTunesPreview</a>のDescriptionから引用です。
+以下、<a href="https://itunes.apple.com/app/id590388039" target="_blank" rel="noopener">iTunesPreview</a>のDescriptionから引用です。
 
 > MOJILOGOは、好きな文字のロゴが簡単に作成できるアプリです。
 >

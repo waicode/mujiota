@@ -24,9 +24,9 @@ tags:
 
 Windowsでオススメのスクリーンキャプチャは、**FastStone（ファストストーン）**です。会社の先輩にその存在を教えてもらってからと言うもの、ずっと愛用しています。
 
-* <a href="https://www.faststone.org/" target="_blank">FastStone</a>
+* <a href="https://www.faststone.org/" target="_blank" rel="noopener">FastStone</a>
 
-英語のツールですが、日本の方が作ってくれた<a href="http://hibiheion.seesaa.net/category/1140609-1.html" target="_blank">日本語化パッチ</a>もあります。私は英語のまま使っていますが、特に不自由無く使えています。
+英語のツールですが、日本の方が作ってくれた<a href="http://hibiheion.seesaa.net/category/1140609-1.html" target="_blank" rel="noopener">日本語化パッチ</a>もあります。私は英語のまま使っていますが、特に不自由無く使えています。
 
 FastStoneは無料とは思えない程、とっても便利な高機能なスクリーンキャプチャです。画面全体に加え、以下を指定してキャプチャを撮る事ができます。
 
@@ -44,7 +44,7 @@ FastStoneは無料とは思えない程、とっても便利な高機能なス�
 
 Macでオススメのスクリーンキャプチャは、**Skitch（スキッチ）**です。
 
-* <a href="https://evernote.com/intl/jp/products/skitch" target="_blank">Skitch</a>
+* <a href="https://evernote.com/intl/jp/products/skitch" target="_blank" rel="noopener">Skitch</a>
 
 Mac使っている著名なブロガーほぼ全ての人が、このキャプチャソフトを使っているのは？と思う位、色んなブログ閲覧しているとこの**Skitch**で撮影したキャプチャを良く見かけます。このスクリーンキャプチャの魅力は、何と言っても「手軽」に「美しい」キャプチャ編集ができる事！個人的に秀逸だと思っているのは、文字入力した際に自動的に枠線が入る機能。
 
@@ -60,6 +60,6 @@ Mac使っている著名なブロガーほぼ全ての人が、このキャプ�
 
 ちなみに、Skitchの詳しい使い方については、以下のわかばマークのMacの備忘録で丁寧に解説されています。
 
-* <a href="http://wakabamac.blog95.fc2.com/blog-entry-622.html" target="_blank">わかばマークのMacの備忘録：Skitch説明ページ</a>
+* <a href="http://wakabamac.blog95.fc2.com/blog-entry-622.html" target="_blank" rel="noopener">わかばマークのMacの備忘録：Skitch説明ページ</a>
 
-私はAppStoreで有料版を買ってしまったのですが、Skitchの<a href=" http://bit.ly/iOtN0T" target="_blank">本家サイト</a>なら、無料版の「Skitch Lite」も配布されています。まずは試してみたいなら、無料版からぜひどうぞ。
+私はAppStoreで有料版を買ってしまったのですが、Skitchの<a href=" http://bit.ly/iOtN0T" target="_blank" rel="noopener">本家サイト</a>なら、無料版の「Skitch Lite」も配布されています。まずは試してみたいなら、無料版からぜひどうぞ。

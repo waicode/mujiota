@@ -42,7 +42,7 @@ iPadとiPad2のメリット・デメリットのまとめは以下の記事に�
 
 あと、ビックカメラのポイントが貯まっていたため、ポイントだけで買えた事も購入の後押しとなりました。
 
-お風呂のフタを堪能するため、話題のアプリ<a href="http://itunes.apple.com/jp/app/smarttub/id435173941" target="_blank">SmartTub</a>もインストールしました。（無料）
+お風呂のフタを堪能するため、話題のアプリ<a href="http://itunes.apple.com/jp/app/smarttub/id435173941" target="_blank" rel="noopener">SmartTub</a>もインストールしました。（無料）
 
 振るとアヒルが増えます。蓋を開けた時の音が妙にリアルです。
 

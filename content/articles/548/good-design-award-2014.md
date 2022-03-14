@@ -26,7 +26,7 @@ tags:
 
 最近はiPhoneのカメラが優秀になってきたので、それこそコンデジを持ち運ぶ機会が少なくなりましたが、こんなカメラだったら、あえて持ち運びたくなりそうです。
 
-* <a title="デジタルカメラ [dp Quattro] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/41091?token=lsZQb4WZ1U" target="_blank">デジタルカメラ [dp Quattro] | 受賞対象一覧 | Good Design Award</a>
+* <a title="デジタルカメラ [dp Quattro] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/41091?token=lsZQb4WZ1U" target="_blank" rel="noopener">デジタルカメラ [dp Quattro] | 受賞対象一覧 | Good Design Award</a>
 
 ## 鋳物ほうろう両手鍋（両手鍋）
 
@@ -46,7 +46,7 @@ tags:
 
 こちらの商品はまだ未発売で、2015年2月に発売予定です。あまりフィーチャーされずに会場にもちょこんと置いてあった両手鍋でしたが、個人的にはかなりグッと来ました。
 
-* <a title="両手鍋 [鋳物ほうろう両手鍋] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/40884?token=8JyIqDh3Ft" target="_blank">両手鍋 [鋳物ほうろう両手鍋] | 受賞対象一覧 | Good Design Award</a>
+* <a title="両手鍋 [鋳物ほうろう両手鍋] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/40884?token=8JyIqDh3Ft" target="_blank" rel="noopener">両手鍋 [鋳物ほうろう両手鍋] | 受賞対象一覧 | Good Design Award</a>
 
 ## 無印良品 しゃもじ置き付き炊飯器・３合（家電）
 
@@ -64,7 +64,7 @@ tags:
 
 ちなみに無印良品は、キッチン家電以外にも、空気清浄機・掛布団・スリッパなど数多くの商品が受賞しています。
 
-* <a title="家電 [無印良品　キッチン家電シリーズ] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/40981?token=9yb8E6JREc" target="_blank">家電 [無印良品　キッチン家電シリーズ] | 受賞対象一覧 | Good Design Award</a>
+* <a title="家電 [無印良品　キッチン家電シリーズ] | 受賞対象一覧 | Good Design Award" href="http://www.g-mark.org/award/describe/40981?token=9yb8E6JREc" target="_blank" rel="noopener">家電 [無印良品　キッチン家電シリーズ] | 受賞対象一覧 | Good Design Award</a>
 
 以上、Good Design Award 2014 の個人的にグッと来たデザイン３選でした。
 

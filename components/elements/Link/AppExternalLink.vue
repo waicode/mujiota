@@ -1,6 +1,6 @@
 <template>
   <div class="AppExternalLink">
-    <a :href="link" target="_blank" rel="nofollow">
+    <a :href="link" target="_blank" rel="nofollow noopener">
       <div class="AppExternalLink__Wrapper columns">
         <div
           class="AppExternalLink__LinkImage column is-3-desktop is-5-tablet is-12-mobile"
