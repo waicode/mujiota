@@ -19,7 +19,7 @@ const metaDefault: Meta = {
   baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   pageUrl: 'https://mujiota.com',
   ogType: 'blog',
-  ogImageUrl: 'https://mujiota.com/logo/mujiota-logo@2x.png',
+  ogImageUrl: 'https://mujiota.com/logo/mujiota-og.png',
   twitterUserName: '@waicode37',
 }
 
