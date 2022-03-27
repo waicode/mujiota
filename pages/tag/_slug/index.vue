@@ -33,6 +33,7 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchTagPages from '~/composables/useFetchTagPages'
 import { Article } from '~/store'
+import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
 
 /**
  * ## タグ用一覧ページ
@@ -70,7 +71,12 @@ export default defineComponent({
       posts.value = usePagenate(articles.value, pageSize)
 
       // メタ情報
-      const metaData = app.$getMeta(tagPageTitle, description, pageUrl)
+      const metaData = app.$getMeta(
+        tagPageTitle,
+        description,
+        pageUrl,
+        DEFAULT_OG_IMAGE_URL
+      )
       title.value = tagPageTitle
       meta.value = useHeaderMeta(metaData).meta
 

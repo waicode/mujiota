@@ -32,6 +32,7 @@ import { Context } from '@nuxt/types'
 import useHeaderMeta from '~/composables/useHeaderMeta'
 import useFetchPosts from '~/composables/useFetchPosts'
 import { Article } from '~/store'
+import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
 
 /**
  * ## サイトマップ
@@ -61,8 +62,12 @@ export default defineComponent({
       // メタ情報
       const SITEMAP_TITLE = 'サイトマップ'
       const SITEMAP_DESCRIPTION = '全記事の一覧です。'
-
-      const metaData = app.$getMeta(SITEMAP_TITLE, SITEMAP_DESCRIPTION, pageUrl)
+      const metaData = app.$getMeta(
+        SITEMAP_TITLE,
+        SITEMAP_DESCRIPTION,
+        pageUrl,
+        DEFAULT_OG_IMAGE_URL
+      )
       title.value = SITEMAP_TITLE
       meta.value = useHeaderMeta(metaData).meta
 
