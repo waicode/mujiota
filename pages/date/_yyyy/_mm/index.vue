@@ -34,6 +34,7 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchArchives from '~/composables/useFetchArchives'
 import { Article } from '~/store'
+import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
 
 /**
  * ## アーカイブ用一覧ページ
@@ -74,7 +75,12 @@ export default defineComponent({
       posts.value = usePagenate(articles.value, pageSize)
 
       // メタ情報
-      const metaData = app.$getMeta(archivesTitle, description, pageUrl)
+      const metaData = app.$getMeta(
+        archivesTitle,
+        description,
+        pageUrl,
+        DEFAULT_OG_IMAGE_URL
+      )
       title.value = archivesTitle
       meta.value = useHeaderMeta(metaData).meta
 
