@@ -61,9 +61,13 @@ export default defineComponent({
       // ページネーションの初期表示
       posts.value = usePagenate(articles.value, pageSize)
 
-      // メタ情報（トップページはデフォルトのままでOK）
-      const metaData = app.$getMeta()
-      title.value = 'mujiota.com'
+      // メタ情報
+      const TOP_TITLE = 'mujiota.com'
+      const TOP_DESCRIPTION =
+        'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。'
+      const TOP_URL = 'https://mujiota.com'
+      const metaData = app.$getMeta(TOP_TITLE, TOP_DESCRIPTION, TOP_URL)
+      title.value = TOP_TITLE
       meta.value = useHeaderMeta(metaData).meta
 
       // 現在の記事情報をリセット
