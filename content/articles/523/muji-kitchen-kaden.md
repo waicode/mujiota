@@ -4,7 +4,7 @@ slug: muji-kitchen-kaden
 title: 無印良品キッチン家電が深澤直人監修でリニューアル
 description: 無印良品のキッチン家電が2014年3月6日よりリニューアルされます。その名も「生活になじむ無印良品のキッチン家電」です。
 createdAt: 2014-02-11T12:59:20+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

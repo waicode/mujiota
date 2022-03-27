@@ -5,7 +5,7 @@ title: もみじの花が咲いていた
 description: 通勤経路にもみじの花が咲いていました。
 createdAt: 2011-04-20T15:32:00+09:00
 updatedAt: 2011-04-20T15:32:00+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

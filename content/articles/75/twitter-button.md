@@ -4,7 +4,7 @@ slug: twitter-button
 title: ついでにTwitterボタンも公式プラグインで設置
 description: Facebookいいねボタンと合わせて、Twitterボタンも設置しました。Twitter公式のプラグイン「WP Twitter Button」です。
 createdAt: 2011-04-05T17:54:29+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

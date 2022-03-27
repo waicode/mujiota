@@ -5,7 +5,7 @@ title: 最後に「にょきっ」とサンキューするブログカスタマ�
 description: 記事下まで画面をスクロールすると上から「にょきっ」とレイヤーを表示させる、jQueryを使ったカスタマイズです。
 createdAt: 2012-05-06T12:05:14+09:00
 updatedAt: 2016-04-25T15:12:33+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

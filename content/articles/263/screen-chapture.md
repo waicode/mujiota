@@ -4,7 +4,7 @@ slug: screen-chapture
 title: スクリーンキャプチャはFastStoneとSkitch
 description: 仕事とプライベート利用している使い勝手の良いスクリーンキャプチャをWindows版、Mac版それぞれ紹介します。
 createdAt: 2011-06-20T12:30:25+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

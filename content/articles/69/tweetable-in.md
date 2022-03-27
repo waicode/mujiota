@@ -4,7 +4,7 @@ slug: tweetable-in
 title: Tweetableを入れてみた
 description: ブログ⇒twitterへの連動更新プラグイン「Tweetable」を入れてみました。
 createdAt: 2011-04-04T14:37:27+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

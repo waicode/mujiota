@@ -5,7 +5,7 @@ title: Suicaをキーケースに入れたらカード収納付きiPhoneケー�
 description: Suicaをキーケースに入れて持ち運んでみたら、カード収納付きiPhoneケースより便利でした。
 createdAt: 2011-03-22T14:45:03+09:00
 updatedAt: 2011-03-22T14:45:03+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

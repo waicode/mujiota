@@ -5,7 +5,7 @@ title: エスプレッソマシーンで淹れたカフェモカ
 description: エスプレッソマシーンでつくった「カフェモカ」です。
 createdAt: 2011-04-04T13:51:11+09:00
 updatedAt: 2011-04-04T13:51:11+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

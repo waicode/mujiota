@@ -5,7 +5,7 @@ title: 無印発信が検索キーワード「無印」でランクイン
 description: 当サイトが検索キーワード「無印」で100位以内にランクインするようになりました！
 createdAt: 2011-05-30T23:00:27+09:00
 updatedAt: 2011-05-30T23:00:27+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

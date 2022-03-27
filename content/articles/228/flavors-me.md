@@ -4,7 +4,7 @@ slug: flavors-me
 title: 手軽に自分のまとめサイトが作れる「flavors.me」（追記：現在は利用不可）
 description: SNS連携型のプロフィールサイト作成サービス「flavors.me」でプロフィールページを作ってみました。
 createdAt: 2011-06-02T23:00:51+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -5,7 +5,7 @@ title: iPhoneアプリ「Tiny Planets」で作ったぐるぐにゃ春煎りコ�
 description: 三軒茶屋のマメヒコで飲んだ春煎りコーヒーの写真を加工してみました。
 createdAt: 2011-05-07T13:30:39+09:00
 updatedAt: 2016-05-06T15:32:11+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -5,7 +5,7 @@ title: 「.wmv」を「.mp4」に無料で効率よく変換するための備�
 description: 備忘録も兼ねてwmvファイルを効率良くmp4ファイルに変換する方法を書きます。有料ツールは使わず、無料ツールで実現しています。  
 createdAt: 2012-01-29T23:30:12+09:00
 updatedAt: 2012-01-29T23:30:12+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

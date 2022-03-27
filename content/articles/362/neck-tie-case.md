@@ -5,7 +5,7 @@ title: ダイソーのくるくるネクタイ収納ケース
 description: 今日は100円ショップ・ダイソーの素敵な商品をエントリー。くるくる回してネクタイを収納できる「ネクタイ収納ケース」です。
 createdAt: 2011-10-10T14:15:02+09:00
 updatedAt: 2011-10-10T14:15:02+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

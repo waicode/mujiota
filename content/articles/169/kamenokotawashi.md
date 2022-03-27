@@ -4,7 +4,7 @@ slug: kamenokotawashi
 title: あの伝説の亀の子束子（たわし）
 description: たわしを買いに行ったら「四畳半神話大系」で伝説と崇められていたあの「亀の子束子（たわし）」に出会いました。
 createdAt: 2011-05-12T13:30:28+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

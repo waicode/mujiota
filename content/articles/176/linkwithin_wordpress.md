@@ -5,7 +5,7 @@ title: LinkWithin（WordPress版）で手軽に関連記事表示（追記：現
 description: 「この記事を読んだ人は、こんな記事も読んでいます。」の関連記事を簡単に表示できる「LinkWithin」を入れてみました。  
 createdAt: 2011-05-15T13:00:49+09:00
 updatedAt: 2011-05-15T13:00:49+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

@@ -5,7 +5,7 @@ title: 無印良品の高度なFacebook連携
 description: 無印良品×Facebookの話です。
 createdAt: 2011-06-20T23:00:40+09:00
 updatedAt: 2011-06-20T23:00:40+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

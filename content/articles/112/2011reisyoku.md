@@ -5,7 +5,7 @@ title: 冷凍食品お気に入りランキング（2011年版）
 description: 一人暮らしも早２年。冷凍食品にはお世話になりっぱなしな今日この頃。独断と偏見をたっぷり含んでお気に入りの冷凍食品ランキングTOP３を紹介します。
 createdAt: 2011-04-23T13:30:57+09:00
 updatedAt: 2011-04-23T13:30:57+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

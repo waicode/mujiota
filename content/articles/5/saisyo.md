@@ -5,7 +5,7 @@ title: 無印発進
 description: ブログ「無印発信」を開設しました。
 createdAt: 2010-09-21T03:09:17+09:00
 updatedAt: 2021-07-29T21:33:00+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

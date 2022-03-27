@@ -5,7 +5,7 @@ title: 無印発信の新しいロゴを作ってみました。
 description: 計量スプーンロゴは別サイト「メジャリングスプーン」で使うので、無印発信の新しいロゴを作ってみました。
 createdAt: 2014-02-23T07:01:52+09:00
 updatedAt: 2014-02-23T07:01:52+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

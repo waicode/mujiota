@@ -5,7 +5,7 @@ title: 「下半身リズム運動」で脳からストレスを消せる？か�
 description: この記事は「脳からストレスを消す技術」の書評です。
 createdAt: 2011-06-13T00:00:12+09:00
 updatedAt: 2011-06-13T00:00:12+09:00
-imageFormat: png
+imageFormat: jpg
 category: 健康
 tags:
   - 健康

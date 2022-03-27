@@ -4,7 +4,7 @@ slug: fukkin-roller
 title: 腹筋ローラーの正しい使い方記事まとめ
 description: 腹筋ローラーを買いました。ネットを探し回って手に入れた「正しい腹筋ローラーの使い方」ついて書きます。背中を伸ばしたままは、NGだそうです。
 createdAt: 2013-11-25T23:32:04+09:00
-imageFormat: png
+imageFormat: jpg
 category: 健康
 tags:
   - 健康

@@ -5,7 +5,7 @@ title: ネットで買える安くておいしいコーヒー豆ランキング
 description: コーヒー好きの管理人が利用しているネットで買える「安くておいしいコーヒー豆」を紹介します。注文して失敗した「買ってはいけないコーヒー豆」も合わせて書いていきます。
 createdAt: 2016-07-30T02:21:37Z
 updatedAt: 2017-05-06T15:12:07Z
-imageFormat: png
+imageFormat: jpg
 category: コーヒー
 tags:
   - コーヒー

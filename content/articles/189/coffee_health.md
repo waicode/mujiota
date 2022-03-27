@@ -5,7 +5,7 @@ title: コーヒーは健康に良い飲み物？それとも悪い飲み物？
 description: 総じて「コーヒーは身体に良い」というのが現在の有力説だと思います。
 createdAt: 2011-05-22T23:00:00+09:00
 updatedAt: 2011-05-22T23:00:00+09:00
-imageFormat: png
+imageFormat: jpg
 category: コーヒー
 tags:
   - コーヒー

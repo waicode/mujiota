@@ -5,7 +5,7 @@ title: ラタトゥイユスイスチーズバーガーを食
 description: 三茶にある人気ハンバーガーショップ・ベーカーバウンスで「ラタトゥイユスイスチーズバーガー」を食べてきました。
 createdAt: 2011-05-01T12:53:34+09:00
 updatedAt: 2011-05-01T12:53:34+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

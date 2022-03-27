@@ -4,7 +4,7 @@ slug: ikea
 title: IKEAな気分に浸れるポスター
 description: IKEAみたいなポスター画像が1クリックでサクッとつくれます。
 createdAt: 2011-03-16T15:24:35+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

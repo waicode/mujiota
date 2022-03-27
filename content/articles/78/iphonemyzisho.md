@@ -5,7 +5,7 @@ title: iPhoneのマイ辞書登録が消えた
 description: この投稿はただの嘆きです。iPhoneアプリ、マイ辞書登録のデータがいきなり消えてしまいました…。
 createdAt: 2011-04-05T18:39:15+09:00
 updatedAt: 2011-04-05T18:39:15+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

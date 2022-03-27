@@ -5,7 +5,7 @@ title: 習慣・読書・整理をととのえるライフハック本３冊
 description: 今まで読んでみていいね！と思った習慣・読書・整理のライフハック本３冊を紹介します。
 createdAt: 2011-05-02T10:00:21+09:00
 updatedAt: 2011-05-02T10:00:21+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

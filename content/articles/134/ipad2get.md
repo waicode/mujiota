@@ -5,7 +5,7 @@ title: iPad2の購入フォトレポ
 description: 念願のiPad2を…買ってしまいました！１日遅れの購入フォトレポです。
 createdAt: 2011-05-05T14:03:46+09:00
 updatedAt: 2011-05-05T14:03:46+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

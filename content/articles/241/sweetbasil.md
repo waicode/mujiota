@@ -5,7 +5,7 @@ title: 観葉植物「スイートバジル」
 description: 観葉植物スイートバジルも仲間入り。
 createdAt: 2011-06-07T23:00:19+09:00
 updatedAt: 2011-06-07T23:00:19+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

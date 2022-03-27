@@ -5,7 +5,7 @@ title: 急にアクセスが増えたと思ったら
 description: ブログを開設してから少しずつアクセスは増えつづていましたが、本日急にアクセスが増えていました。
 createdAt: 2011-05-07T12:35:59+09:00
 updatedAt: 2011-05-07T12:35:59+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

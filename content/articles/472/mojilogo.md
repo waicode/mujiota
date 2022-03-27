@@ -5,7 +5,7 @@ title: iPhoneアプリ「MOJILOGO」をリリースしました
 description: 誰でも簡単に文字のロゴが作成できるアプリ「MOJILOGO」をリリースしました。はじめての個人開発アプリです。
 createdAt: 2013-03-26T15:44:38+09:00
 updatedAt: 2013-03-26T15:44:38+09:00
-imageFormat: png
+imageFormat: jpg
 category: 個人開発
 tags:
   - 個人開発

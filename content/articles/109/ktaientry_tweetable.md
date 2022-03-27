@@ -5,7 +5,7 @@ title: KtaiEntryはTweetableされない
 description: メール投稿が可能となるWordPressプラグインのKtaiEntry。便利ですが、どうやらTweetableの自動つぶやきは拾ってくれないよう。
 createdAt: 2011-04-23T13:30:57+09:00
 updatedAt: 2011-04-23T13:30:57+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

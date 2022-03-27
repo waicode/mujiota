@@ -5,7 +5,7 @@ title: 良品計画の配当金（第32期）
 description: 株式会社良品計画の配当金が届きました。
 createdAt: 2011-05-31T23:00:33+09:00
 updatedAt: 2011-05-31T23:00:33+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

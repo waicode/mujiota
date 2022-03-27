@@ -4,7 +4,7 @@ slug: wordpresshe
 title: そうだ、WordPressへ行こう。
 description: 無印発信は、WordPressへ移行します。
 createdAt: 2011-03-29T14:12:56+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

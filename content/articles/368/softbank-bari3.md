@@ -5,7 +5,7 @@ title: 自宅のソフトバンク電波を「バリ３」にする方法
 description: ソフトバンクは電波改善にとても力を入れていて、申し込みをすれば、無料でホームアンテナを立てることができます。
 createdAt: 2011-10-23T11:30:44+09:00
 updatedAt: 2011-10-23T11:30:44+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

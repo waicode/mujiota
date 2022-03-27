@@ -5,7 +5,7 @@ title: デロンギコーヒーメーカーとミル
 description: 毎朝活躍中のデロンギのコーヒーメーカーとミル（コーン式グライダー）です。
 createdAt: 2011-04-20T14:57:35+09:00
 updatedAt: 2016-07-30T13:45:42+09:00
-imageFormat: png
+imageFormat: jpg
 category: コーヒー
 tags:
   - コーヒー

@@ -5,7 +5,7 @@ title: きのこの山にしか見えない無印の白磁スタンドライト
 description: 間接照明を買いに行ったら、きのこの山にしか見えないスタンドライトが自宅に設置されることになりました。
 createdAt: 2011-05-07T13:30:39+09:00
 updatedAt: 2011-05-07T13:30:39+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

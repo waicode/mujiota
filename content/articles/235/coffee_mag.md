@@ -4,7 +4,7 @@ slug: coffee_mag
 title: おいしくコーヒーを飲むならサーモスマグが一番良い理由
 description: コーヒーをマグに持ち運んで飲むなら、かつてはサーモスマグ一択でした。追記した最近使っているコーヒーマグと合わせて紹介します。
 createdAt: 2011-06-04T23:00:24+09:00
-imageFormat: png
+imageFormat: jpg
 category: コーヒー
 tags:
   - コーヒー

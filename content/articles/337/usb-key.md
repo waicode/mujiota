@@ -5,7 +5,7 @@ title: USBメモリをキーケースに入れて持ち運ぶなら
 description: キーケースに入れると、まるで鍵。LaCieの鍵型USBメモリです。
 createdAt: 2011-09-07T12:00:51+09:00
 updatedAt: 2011-09-07T12:00:51+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

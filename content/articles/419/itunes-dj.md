@@ -5,7 +5,7 @@ title: iTunesを標準機能で手軽にDJっぽく曲をつなぐ方法
 description:  iTunesについてのTIPSです。iTunesの標準機能を使って、まるでDJがいるかのごとく手軽に曲と曲の切れ目を繋いで再生する方法を説明します。
 createdAt: 2012-05-11T11:00:16+09:00
 updatedAt: 2012-05-11T11:00:16+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

@@ -5,7 +5,7 @@ title: 三軒茶屋のチャンポン屋「長崎」
 description: 近所にある三軒茶屋「長崎」でチャンポンを食べてきました。
 createdAt: 2011-04-03T12:25:42+09:00
 updatedAt: 2011-04-03T12:25:42+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

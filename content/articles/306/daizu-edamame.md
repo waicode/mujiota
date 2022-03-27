@@ -5,7 +5,7 @@ title: 大豆と枝豆の豆知識
 description: 会社の先輩に教えてもらった豆知識をエントリー。大豆と枝豆は「同じ豆」だった。恥ずかしながら、完全に別物だと思ってました。
 createdAt: 2011-07-26T00:20:13+09:00
 updatedAt: 2011-07-26T00:20:13+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

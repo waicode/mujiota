@@ -5,7 +5,7 @@ title: モレスキンデビュー（ソフトカバー・プレーン・ラー�
 description: 会社の先輩に影響されて、モレスキンデビューしちゃいました。
 createdAt: 2011-05-05T14:03:46+09:00
 updatedAt: 2011-05-05T14:03:46+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -5,7 +5,7 @@ title: メルマガバックナンバーブログの作り方
 description: メルマガバックナンバーブログの作り方をご紹介します。
 createdAt: 2011-08-01T23:00:18+09:00
 updatedAt: 2016-04-30T09:20:22+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

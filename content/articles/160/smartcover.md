@@ -4,7 +4,7 @@ slug: smartcover
 title: スマートカバーを購入したら、本物のお風呂のフタも欲しくなった
 description: iPad2はほぼ自宅で使うし、そもそもケースは無しでいいかなと思っていました。でも結局、お風呂のフタと揶揄されるスマートカバーを買ってしまいました。
 createdAt: 2011-05-08T10:00:19+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

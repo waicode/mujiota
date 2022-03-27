@@ -5,7 +5,7 @@ title: 1袋39円のバナナを長持ちさせてみた
 description: 1袋39円という破格で売られていたバナナを、せっかくなので長持ちさせてみます。
 createdAt: 2011-07-12T13:00:45+09:00
 updatedAt: 2011-07-12T13:00:45+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

@@ -5,7 +5,7 @@ title: 手軽に風呂桶をカビにくくする方法
 description:  タオル掛けの部分に湯桶が思った以上にフィットします。下に置くより、ずっとカビにくいです。
 createdAt: 2012-05-08T12:00:57+09:00
 updatedAt: 2012-05-08T12:00:57+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

@@ -5,7 +5,7 @@ title: 観葉植物「アスパラガス」
 description: 自宅の観葉植物シリーズ。観賞用にも「アスパラガス」があるんですね。
 createdAt: 2011-03-18T13:10:04+09:00
 updatedAt: 2011-03-18T13:10:04+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

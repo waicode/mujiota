@@ -5,7 +5,7 @@ title: 良品計画の株主総会招集ご通知
 description: 良品計画の株主総会招集ご通知が来ました。
 createdAt: 2011-05-11T14:30:16+09:00
 updatedAt: 2011-05-11T14:30:16+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

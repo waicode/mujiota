@@ -5,7 +5,7 @@ title: ダイドードリンコから新発売した「秘密炭酸ゴレンジ�
 description: SEIYUで発見！思わず大人買い。ダイドードリンコから新発売、一発屋のにおいが漂う「秘密炭酸ゴレンジャー」です。
 createdAt: 2011-05-19T13:00:15+09:00
 updatedAt: 2011-05-19T13:00:15+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記
