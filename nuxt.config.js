@@ -81,6 +81,9 @@ export default {
         },
       },
     },
+    // CSSを別ファイル化
+    // extractCSS: https://nuxtjs.org/docs/configuration-glossary/configuration-build/#extractcss
+    extractCSS: true,
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
