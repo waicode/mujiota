@@ -5,7 +5,7 @@ title: 夏にオススメの冷凍ブルーベリー
 description: 夏に向けてお気に入りの冷凍食品を見つけました。スーパーの冷食コーナーでよく見かける「冷凍ブルーベリー」です。
 createdAt: 2011-06-14T23:30:00+09:00
 updatedAt: 2011-06-14T23:30:00+09:00
-imageFormat: png
+imageFormat: jpg
 category: 健康
 tags:
   - 健康

@@ -5,7 +5,7 @@ title: おしゃれなRSSアイコン素材
 description: 当ブログでも使っているおしゃれなRSSアイコンを紹介します。満足のクオリティに加え、その掲載数も圧巻です。
 createdAt: 2011-05-23T23:00:39+09:00
 updatedAt: 2016-05-06T12:12:13+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

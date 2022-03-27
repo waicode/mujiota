@@ -5,7 +5,7 @@ title: 「いーとてくのろじ」30日間食べ続けることができま�
 description: 2014年に入って、実はもう一つ新しいブログをはじめてました。毎日、最新のITニュースを紹介するブログ「いーとてくのろじ」です。
 createdAt: 2014-02-16T14:09:36+09:00
 updatedAt: 2014-02-16T14:09:36+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

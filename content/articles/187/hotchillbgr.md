@@ -5,7 +5,7 @@ title: ホットチリソースバーガーを食
 description: 三茶ハンバーガーショップ・ベーカーバウンズのハンバーガー食べましたシリーズ。「ホットチリソースバーガー」を食べました。
 createdAt: 2011-05-22T03:30:50+09:00
 updatedAt: 2011-05-22T03:30:50+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

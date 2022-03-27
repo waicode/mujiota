@@ -5,7 +5,7 @@ title: 「メジャリングスプーン」始めました。
 description: 新しくWebサイトを公開しました。その名も、メジャリングスプーン。モノの価値はしっかり自分で見極めて、自分の中でモノサシを持とう！
 createdAt: 2014-02-16T14:09:36+09:00
 updatedAt: 2014-02-16T14:09:36+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

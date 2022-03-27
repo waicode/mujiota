@@ -5,7 +5,7 @@ title: 観葉植物「ユーカリ」
 description: 新しい観葉植物ユーカリが仲間入り。
 createdAt: 2011-06-06T23:00:55+09:00
 updatedAt: 2011-06-06T23:00:55+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

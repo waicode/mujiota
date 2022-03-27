@@ -5,7 +5,7 @@ title: とろけるプリンで有名なパステルのパスタ（ずわい蟹�
 description: とろけるプリンで有名なパステルの新宿店で、ずわい蟹のトマトクリームパスタを食べてきました。
 createdAt: 2011-04-24T08:55:19+09:00
 updatedAt: 2011-04-24T08:55:19+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -5,7 +5,7 @@ title: トネリコを剪定したらキノコが生えてきた
 description: 最近元気が無くて葉っぱが落ちてきたトネリコ。これはまずい！と思いトネリコの葉を剪定したら、謎の因果関係でキノコが生えてきました。
 createdAt: 2011-05-23T23:00:39+09:00
 updatedAt: 2011-05-23T23:00:39+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

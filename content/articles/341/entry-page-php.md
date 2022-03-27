@@ -5,7 +5,7 @@ title: WordPressの個別記事ページにphpタグを表示させる方法
 description: サイドバーに置いた「3Dタグクラウド」がとても重いので、全ページに表示させないようにしました。
 createdAt: 2011-09-21T13:30:12+09:00
 updatedAt: 2016-04-28T9:32:11+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

@@ -5,7 +5,7 @@ title: 2011/03/21 (Mon from FastMemo
 description: ファストメモという最速でメモを入力できるアプリから投稿してみました。
 createdAt: 2011-03-18T13:10:04+09:00
 updatedAt: 2016-05-02T17:12:04+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

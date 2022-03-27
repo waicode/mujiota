@@ -5,7 +5,7 @@ title: 無印良品「シリコーン調理ケース」
 description: 無印良品からシリコーン調理ケースが新発売。レシピ本まで丁寧に用意してありました。
 createdAt: 2011-03-21T10:45:03+09:00
 updatedAt: 2011-03-21T10:45:03+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

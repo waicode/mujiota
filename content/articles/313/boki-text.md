@@ -5,7 +5,7 @@ title: 簿記テキストは「サクッとうかる」シリーズが良書
 description: 会計の知識を身につけるべく「簿記」の勉強をはじめていますが、「サクッとうかる」シリーズが良書でした。
 createdAt: 2011-08-13T23:30:02+09:00
 updatedAt: 2011-08-13T23:30:02+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

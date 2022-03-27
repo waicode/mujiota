@@ -5,7 +5,7 @@ title: 「Good Design Award 2014」で個人的にグッと来たデザイン３
 description: 全部で1200を超える受賞作品の中から、個人的にグッと来たデザインを３つご紹介します。
 createdAt: 2014-11-03T02:30:12+09:00
 updatedAt: 2014-11-03T02:30:12+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

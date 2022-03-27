@@ -5,7 +5,7 @@ title: 無印良品そっくりのタグが作れるMUJIジェネレーター
 description:  無印良品風のタグが作れる、MUJIジェネレーターで試しに無印発信のタグを作ってみました。
 createdAt: 2012-05-14T12:00:00+09:00
 updatedAt: 2016-04-30T19:12:11+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

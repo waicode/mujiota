@@ -4,7 +4,7 @@ slug: seirogan
 title: 正露丸が「身体に悪い」と言われる所以
 description: 「正露丸は危険！」「正露丸は身体に毒！」なんて噂を耳にします。「実際のところ、どうなんだ？」と言う話です。
 createdAt: 2011-09-30T13:00:46+09:00
-imageFormat: png
+imageFormat: jpg
 category: 健康
 tags:
   - 健康

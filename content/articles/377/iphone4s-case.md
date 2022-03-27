@@ -4,7 +4,7 @@ slug: iphone4s-case
 title: 限りなく外観を損なわないiPhone4Sケース
 description: 本当はiPhoneはそのまま持ち歩きたいけど、傷付くのが嫌で仕方なくケースをつけている方への耳寄り情報です。
 createdAt: 2011-10-30T14:23:31+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -5,7 +5,7 @@ title: マメヒコの深煎り珈琲豆
 description: マメヒコ三軒茶屋店で深煎り豆を購入しました。200gで1000円。
 createdAt: 2011-06-20T23:00:40+09:00
 updatedAt: 2011-06-20T23:00:40+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

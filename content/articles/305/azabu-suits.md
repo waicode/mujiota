@@ -5,7 +5,7 @@ title: 麻布テーラーでスーツを初オーダー
 description: パーソナルオーダースーツのお店「麻布テーラー」に行って、生まれて初めてオーダーメイドのスーツを注文しました。
 createdAt: 2011-07-24T09:00:31+09:00
 updatedAt: 2011-07-24T09:00:31+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

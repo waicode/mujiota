@@ -5,7 +5,7 @@ title: つづったーの表示がIEで崩れていた
 description: twitterのつぶやきを縦書きで和風に綴ってくれるWebサービスの「つづったー」ですが、CSSのメンテナンスがあまり行き届いておらず、IEでの表示が崩れているようです。
 createdAt: 2011-05-10T13:05:52+09:00
 updatedAt: 2016-05-06T17:12:13+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

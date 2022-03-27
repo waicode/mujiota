@@ -5,7 +5,7 @@ title: ダイナーバーガーを食
 description: 三茶の人気ハンバーガーショップ・ベーカーバウンスで「ダイナーバーガー」を食べてきました。
 createdAt: 2011-06-08T23:30:26+09:00
 updatedAt: 2011-06-08T23:30:26+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

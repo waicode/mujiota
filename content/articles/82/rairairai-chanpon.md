@@ -5,7 +5,7 @@ title: 来来来のチャンポン
 description: 三軒茶屋にはチャンポン屋がいっぱい。「来来来」でオーソドックスなチャンポンを食べたきました。
 createdAt: 2011-04-09T04:16:05+09:00
 updatedAt: 2011-04-09T04:16:05+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

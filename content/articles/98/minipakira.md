@@ -5,7 +5,7 @@ title: 観葉植物「ミニパキラ」
 description: 観葉植物シリーズ、ミニパキラです。
 createdAt: 2011-04-13T13:45:42+09:00
 updatedAt: 2011-04-13T13:45:42+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

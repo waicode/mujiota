@@ -5,7 +5,7 @@ title: おすすめしたい２つのケーブル＆コード整理グッズ（�
 description:  職場と自宅で使っているコード整理グッズのまとめです。ケーブル整理グッズはいろいろ試してきましたが、この２つに落ち着きました。
 createdAt: 2011-12-18T15:20:02+09:00
 updatedAt: 2011-12-18T15:20:02+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

@@ -5,7 +5,7 @@ title: インプットとアウトプットの原動力
 description: インプットとアウトプットは、相互作用的で、それらを支えているのは「楽しさ」とか「興味」とかそういう類のものなんだなと、最近、改めて実感。
 createdAt: 2011-05-16T14:51:17+09:00
 updatedAt: 2011-05-16T14:51:17+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

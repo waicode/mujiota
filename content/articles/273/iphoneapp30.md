@@ -4,7 +4,7 @@ slug: iphoneapp30
 title: 機能美とデザインで選ぶ、オススメiPhoneアプリ30選
 description: 数えてみたら、標準アプリ抜きで2ページでぴったり30個ありました。ホーム画面をさらしながら、ヘビーユースなiPhoneアプリを紹介します。
 createdAt: 2011-06-26T23:00:50+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

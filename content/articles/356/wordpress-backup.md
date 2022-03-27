@@ -4,7 +4,7 @@ slug: wordpress-backup
 title: WordPressでDBとソースのバックアップをとる方法
 description: 記事数が増えてきたので、今まで積み重ねてきた大切なデータを守るため「WordPressのバックアップ環境」を整えました。プラグインを使って行うバックアップのやり方を説明します。
 createdAt: 2011-09-21T13:30:12+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

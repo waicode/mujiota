@@ -5,7 +5,7 @@ title: 無印良品のトラベルグッズ
 description: 今週末、同期と共にギリシャへ旅立ちます。出発に備え、無印良品でトラベルグッズを3点購入しました。
 createdAt: 2011-09-05T22:30:52+09:00
 updatedAt: 2011-09-05T22:30:52+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

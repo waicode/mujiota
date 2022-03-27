@@ -5,7 +5,7 @@ title: 心
 description: 京都は嵐山、大悲閣・千光寺で出会った言葉です。心に、響くものがあり、肝に銘じていきます。
 createdAt: 2013-03-30T06:41:47+09:00
 updatedAt: 2013-03-30T06:41:47+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

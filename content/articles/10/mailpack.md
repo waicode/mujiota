@@ -5,7 +5,7 @@ title: MailPack改めKtaiEntryでメール投稿設定
 description: メール送信でブログが投稿ができるようになりました。
 createdAt: 2011-03-16T15:24:35+09:00
 updatedAt: 2011-03-16T15:24:35+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

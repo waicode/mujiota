@@ -5,7 +5,7 @@ title: 割引クーポン「くまポン」でPocketWiFiが2年間半額！
 description:  GMOが提供している割引クーポン共同購入サイト「くまポン」で、イーモバイルのPocketWiFiが2年間半額になるクーポンが販売されています。
 createdAt: 2011-11-21T00:00:44+09:00
 updatedAt: 2016-04-25T11:12:33+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

@@ -4,7 +4,7 @@ slug: fb-good-btn
 title: いいねボタン設置完了
 description: Facebookいいねボタンを設置しました。WordPressならプラグイン有効にするだけ。驚くほど簡単でした。
 createdAt: 2011-04-05T17:27:46+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

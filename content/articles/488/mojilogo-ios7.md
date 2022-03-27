@@ -5,7 +5,7 @@ title: MOJILOGOをアップデートしました。（iOS7対応）
 description: MOJILOGOをアップデートしiOS7に対応させました。
 createdAt: 2013-11-10T01:11:30+09:00
 updatedAt: 2013-11-10T01:11:30+09:00
-imageFormat: png
+imageFormat: jpg
 category: 個人開発
 tags:
   - 個人開発

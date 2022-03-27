@@ -5,7 +5,7 @@ title: オークションは「着払い」「送料定額」に統一すれば�
 description: オークションの配送方法や送料に関するちょっとしたTIPS。着払いか送料定額にすれば、最初の一手間を省けます。
 createdAt: 2011-03-22T14:45:03+09:00
 updatedAt: 2011-03-22T14:45:03+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

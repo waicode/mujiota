@@ -4,7 +4,7 @@ slug: google-plus1
 title: Google+1ボタンを設置してみた
 description: Google版いいね！ボタンである「Google+1ボタン」を設置してみました。
 createdAt: 2011-06-03T23:00:06+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

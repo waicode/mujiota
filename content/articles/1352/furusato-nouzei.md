@@ -5,7 +5,7 @@ title: ふるさと納税「さとふる」なら初心者でも迷わない設�
 description: CMでもお馴染みのふるさと納税ポータルサイトの「さとふる」を使ってみたら、はじめての人でも迷わない設計で、想像以上にお得で便利でした。
 createdAt: 2017-01-01T18:04:29Z
 updatedAt: 2019-10-13T06:16:35Z
-imageFormat: jpeg
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

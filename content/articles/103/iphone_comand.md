@@ -5,7 +5,7 @@ title: アプリ不要で便利に使えるiPhoneの隠しコマンド
 description: iPhoneにはほとんどボタンついていないですが、実は隠しコマンドが存在します。
 createdAt: 2011-04-22T13:00:58+09:00
 updatedAt: 2011-04-22T13:00:58+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

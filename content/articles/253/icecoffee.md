@@ -4,7 +4,7 @@ slug: icecoffee
 title: コーヒーメーカーでアイスコーヒーをつくる
 description: せっかくコーヒーメーカーを買ったので、今年の夏はアイスコーヒーもコーヒーメーカーで作っていきたいと思っています。
 createdAt: 2011-06-16T23:00:19+09:00
-imageFormat: png
+imageFormat: jpg
 category: コーヒー
 tags:
   - コーヒー

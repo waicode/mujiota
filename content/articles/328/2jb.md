@@ -5,7 +5,7 @@ title: ダブルビッグJバーガーを食
 description: ベーカーバウンスのメガマック的存在。お値段、1500円！
 createdAt: 2011-09-04T11:15:50+09:00
 updatedAt: 2011-09-04T11:15:50+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

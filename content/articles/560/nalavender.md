@@ -5,7 +5,7 @@ title: iPhoneアプリ「ナラベンダー」をリリースしました
 description: 個人で開発したiPhoneアプリ「ナラベンダー」をご紹介します。iOSリマインダーを使ってTODO管理ができるアプリです。
 createdAt: 2016-04-04T16:02:46+09:00
 updatedAt: 2017-05-05T16:18:07+09:00
-imageFormat: png
+imageFormat: jpg
 category: 個人開発
 tags:
   - 個人開発

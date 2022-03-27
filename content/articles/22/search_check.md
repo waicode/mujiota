@@ -4,7 +4,7 @@ slug: search_check
 title: 検索結果表示ブログパーツを設定してみました
 description: サイドバーに検索順位表示ツールを付けてみました。GoogleとYahoo!の両方について「無印発信」と「無印」で現在の検索結果が何位なのかを表示してくれます。
 createdAt: 2011-03-26T15:30:01+09:00
-imageFormat: png
+imageFormat: jpg
 category: ブログカスタマイズ
 tags:
   - ブログカスタマイズ

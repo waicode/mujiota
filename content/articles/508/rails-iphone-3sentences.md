@@ -5,7 +5,7 @@ title: RailsとiPhoneアプリ開発本、３文まとめ
 description: ここ最近は、技術書ばかり。ブクログの所感も溜まってきたので、RailsとiPhoneアプリ開発本のまとめを作成しました。
 createdAt: 2013-11-17T04:51:09+09:00
 updatedAt: 2013-11-17T04:51:09+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

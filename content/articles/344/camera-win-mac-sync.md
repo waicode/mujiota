@@ -5,7 +5,7 @@ title: デジカメとWindowsとMacの写真を「同期」する方法
 description: カメラとPCの写真の同期方法について書きます。「Eye-Fi」を使って自動同期しています。
 createdAt: 2011-09-24T23:30:33+09:00
 updatedAt: 2017-09-06T11:12:11+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

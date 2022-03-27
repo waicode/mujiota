@@ -5,7 +5,7 @@ title: 吉野家で食べる「低コスト・低炭水化物・高タンパク�
 description: 吉野家の牛鍋丼は名作だと思います。吉野家でよく頼む、低コスト・低炭水化物・高タンパクな組み合わせのメニューを紹介します。
 createdAt: 2011-08-15T10:00:36+09:00
 updatedAt: 2011-08-15T10:00:36+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

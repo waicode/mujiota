@@ -5,7 +5,7 @@ title: ガリガリ君を大人買い
 description: ガリガリ君を大人買いした記録を、せっかくなので残してみます。
 createdAt: 2011-03-22T14:45:03+09:00
 updatedAt: 2011-03-22T14:45:03+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

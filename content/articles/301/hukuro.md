@@ -5,7 +5,7 @@ title: 紙袋・ビニール袋をスマートに収納する方法
 description: 一人暮らしの自宅で実践している、紙とビニールの袋の収納術について書きます。
 createdAt: 2011-07-18T23:30:55+09:00
 updatedAt: 2011-07-18T23:30:55+09:00
-imageFormat: png
+imageFormat: jpg
 category: 生活術
 tags:
   - 生活術

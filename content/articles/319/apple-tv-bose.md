@@ -5,7 +5,7 @@ title: 自宅テレビをちょっとしたコンポとシアターにする方�
 description: 自宅テレビをちょっとしたコンポとシアターにする方法をご紹介。お手頃価格で、手に入ります。
 createdAt: 2011-08-30T23:30:03+09:00
 updatedAt: 2011-08-30T23:30:03+09:00
-imageFormat: png
+imageFormat: jpg
 category: 雑記
 tags:
   - 雑記

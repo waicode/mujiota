@@ -4,7 +4,7 @@ slug: cobon_soy_latte
 title: コーボンマーベルでつくる健康酵母ドリンク「アイスコーボンソイラテ」
 description: 健康に良いと言われている酵母ドリンクを豆乳で割って、ラテにしてみました。
 createdAt: 2011-05-22T23:00:00+09:00
-imageFormat: png
+imageFormat: jpg
 category: 健康
 tags:
   - コーヒー
