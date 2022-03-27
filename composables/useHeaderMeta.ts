@@ -40,17 +40,27 @@ export default (metaData: Meta) => {
         content: metaData.ogImageUrl,
       },
       {
-        hid: 'og:card',
+        hid: 'twitter:card',
         name: 'twitter:card',
         content: 'summary_large_image',
       },
       {
-        hid: 'og:site',
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: title,
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: metaData.description,
+      },
+      {
+        hid: 'twitter:site',
         name: 'twitter:site',
         content: metaData.twitterUserName,
       },
       {
-        hid: 'og:creator',
+        hid: 'twitter:creator',
         name: 'twitter:creator',
         content: metaData.twitterUserName,
       },
