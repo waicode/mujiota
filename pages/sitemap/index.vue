@@ -32,7 +32,7 @@ import { Context } from '@nuxt/types'
 import useHeaderMeta from '~/composables/useHeaderMeta'
 import useFetchPosts from '~/composables/useFetchPosts'
 import { Article } from '~/store'
-import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
+import { getDefaultOgImageUrl } from '~/plugins/meta'
 
 /**
  * ## サイトマップ
@@ -54,7 +54,7 @@ export default defineComponent({
     }
     const categorisedArticles = ref<CategorisedArticle[]>([])
 
-    const pageUrl = `${$config.baseURL}/sitemap`
+    const pageUrl = `${$config.baseUrl}/sitemap`
 
     const { fetch } = useFetch(async () => {
       articles.value = await useFetchPosts(context as unknown as Context)
@@ -66,7 +66,7 @@ export default defineComponent({
         SITEMAP_TITLE,
         SITEMAP_DESCRIPTION,
         pageUrl,
-        DEFAULT_OG_IMAGE_URL
+        getDefaultOgImageUrl($config.baseUrl)
       )
       title.value = SITEMAP_TITLE
       meta.value = useHeaderMeta(metaData).meta

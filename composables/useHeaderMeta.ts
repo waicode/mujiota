@@ -12,7 +12,7 @@ export default (metaData: Meta) => {
   const title =
     !metaData.title || metaData.title === metaData.siteName
       ? metaData.siteName
-      : `${metaData.title} - ${metaData.siteName}`
+      : metaData.title
 
   return {
     meta: [

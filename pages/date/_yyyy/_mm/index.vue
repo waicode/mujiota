@@ -34,7 +34,7 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchArchives from '~/composables/useFetchArchives'
 import { Article } from '~/store'
-import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
+import { getDefaultOgImageUrl } from '~/plugins/meta'
 
 /**
  * ## アーカイブ用一覧ページ
@@ -46,14 +46,14 @@ export default defineComponent({
     const { $config, params, app, error } = context
     const { title, meta } = useMeta()
 
-    const { pageSize } = $config
+    const { baseUrl, pageSize } = $config
 
     const year = params.value.yyyy
     const month = params.value.mm
     const monthStr = String(Number(month)) // ゼロサプレス
     const archivesTitle = `${year}年${monthStr}月の記事一覧`
     const description = `${year}年${monthStr}月に投稿された記事の一覧です。`
-    const pageUrl = `${$config.baseUrl}/date/${year}/${month}`
+    const pageUrl = `${baseUrl}/date/${year}/${month}`
 
     const articles = ref<Article[]>([])
     const posts = ref<Article[]>([])
@@ -79,7 +79,7 @@ export default defineComponent({
         archivesTitle,
         description,
         pageUrl,
-        DEFAULT_OG_IMAGE_URL
+        getDefaultOgImageUrl(baseUrl)
       )
       title.value = archivesTitle
       meta.value = useHeaderMeta(metaData).meta

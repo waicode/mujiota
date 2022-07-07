@@ -34,7 +34,7 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchPosts from '~/composables/useFetchPosts'
 import { Article } from '~/store'
-import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
+import { getDefaultOgImageUrl } from '~/plugins/meta'
 
 /**
  * ## トップページ
@@ -46,7 +46,7 @@ export default defineComponent({
     const { $config, app, error } = context
     const { title, meta } = useMeta()
 
-    const { pageSize } = $config
+    const { baseUrl, pageSize } = $config
 
     const articles = ref([] as Article[])
     const posts = ref([] as Article[])
@@ -66,12 +66,12 @@ export default defineComponent({
       const TOP_TITLE = 'mujiota.com'
       const TOP_DESCRIPTION =
         'MUJIを偏愛していた中の人が書く生活ネタ中心の雑記ブログ。最近はコーヒー・健康ネタが多めです。'
-      const TOP_URL = $config.baseURL
+      const TOP_URL = baseUrl
       const metaData = app.$getMeta(
         TOP_TITLE,
         TOP_DESCRIPTION,
         TOP_URL,
-        DEFAULT_OG_IMAGE_URL
+        getDefaultOgImageUrl(TOP_URL)
       )
       title.value = TOP_TITLE
       meta.value = useHeaderMeta(metaData).meta

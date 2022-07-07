@@ -33,7 +33,7 @@ import useHeaderMeta from '~/composables/useHeaderMeta'
 import usePagenate from '~/composables/usePagenate'
 import useFetchTagPages from '~/composables/useFetchTagPages'
 import { Article } from '~/store'
-import { DEFAULT_OG_IMAGE_URL } from '~/plugins/meta'
+import { getDefaultOgImageUrl } from '~/plugins/meta'
 
 /**
  * ## タグ用一覧ページ
@@ -45,10 +45,10 @@ export default defineComponent({
     const { $config, params, app, error } = context
     const { title, meta } = useMeta()
 
-    const { pageSize } = $config
+    const { baseUrl, pageSize } = $config
 
     const tagName = app.$getTagName(params.value.slug)
-    const pageUrl = `${$config.baseUrl}/tag/${params.value.slug}/`
+    const pageUrl = `${baseUrl}/tag/${params.value.slug}/`
     const tagPageTitle = `${tagName}の記事一覧`
     const description = `「${tagName}」タグが付いた記事の一覧です。`
 
@@ -75,7 +75,7 @@ export default defineComponent({
         tagPageTitle,
         description,
         pageUrl,
-        DEFAULT_OG_IMAGE_URL
+        getDefaultOgImageUrl(baseUrl)
       )
       title.value = tagPageTitle
       meta.value = useHeaderMeta(metaData).meta

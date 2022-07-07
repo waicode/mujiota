@@ -6,12 +6,12 @@ export type Meta = {
   pageUrl: string
   ogImageUrl: string
   siteName: string
-  baseUrl: string
   ogType: string
   twitterUserName: string
 }
 
-export const DEFAULT_OG_IMAGE_URL = `${process.env.BASE_URL}/logo/mujiota-og.png`
+export const getDefaultOgImageUrl = (baseUrl: string) =>
+  `${baseUrl}/logo/mujiota-og.png`
 
 const metaDefault: Meta = {
   title: '',
@@ -19,7 +19,6 @@ const metaDefault: Meta = {
   pageUrl: '',
   ogImageUrl: '',
   siteName: 'mujiota.com',
-  baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   ogType: 'blog',
   twitterUserName: '@waicode37',
 }
